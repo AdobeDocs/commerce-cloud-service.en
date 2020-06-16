@@ -1,14 +1,14 @@
 ---
-title: Acrobat Tutorials
+title: Magento Platform as a Service Overview
 description: A collection of videos and tutorials for Adobe Acrobat.
 ---
 
-# Adobe Acrobat Reader Enterprise
+# Magento Platform as a Service Overview
 
-Welcome to the [!DNL Acrobat] Tutorials Site.  Using these tutorials along with the [documentation](https://helpx.adobe.com/acrobat/user-guide.html) will give you a better understanding how to use Adobe Acrobat.
+Welcome to the guide
 
 MORE...
 
 <!--
-See other -learn tutorials landing pages to get ideas for additional content
+This is your user guide home page. It appears at the top of the list of articles in the TOC.md file.
 -->
