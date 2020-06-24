@@ -1,7 +1,7 @@
 ---
 cloud: document-cloud
-solution-title: Magento Test
-solution-hub-url: https://www.adobe.com
+solution-title: Magento Commerce
+solution-hub-url: https://devdocs.magento.com
 getting-started-title: Getting Started
 getting-started-url: https://www.adobe.com
 tutorials-title: Tutorials
