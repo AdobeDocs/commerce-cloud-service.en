@@ -2,7 +2,6 @@
 title: User management
 seo-title: User management for Magento on Cloud Manager
 description: Describes the user roles and accessibility levels.
-solution: Magento PaaS
 ---
 
 # User management

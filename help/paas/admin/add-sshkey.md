@@ -1,7 +1,6 @@
 ---
 title: SSH key
 description: Task to add an SSH key to the Magento on Cloud Manager environment.
-solution: Magento PaaS
 ---
 
 # SSH keys

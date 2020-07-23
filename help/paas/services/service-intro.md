@@ -1,7 +1,6 @@
 ---
 title: Configure services
 description: Introduction to services and service compatibility chart for Magento on Cloud Manager.
-solution: Magento PaaS
 ---
 
 # Configure services

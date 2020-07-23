@@ -1,7 +1,8 @@
 ---
 cloud: document-cloud
 solution-title: Magento PaaS
-solution-hub-url: https://docs-stg.corp.adobe.com/content/help/en/magento-paas/dev-docs/overview.html
+solution-hub-url: https://docs-stg.corp.adobe.com/content/help/en/magento-paas/paas-ui/overview.html
+solution-icon: assets/logo-adobe-magento.png
 getting-started-title: Getting Started
 getting-started-url: https://www.adobe.com
 tutorials-title: Tutorials
@@ -13,7 +14,7 @@ index: no
 
 # Metadata for internal use
 
-The metadata.md file includes repo-level metadata that passes through to user guide TOC.md files in the repo. If you want to change metadata.md content for any user guide, do so in any TOC.md file.
+The `metadata.md` file includes repo-level metadata that passes through to user guide `TOC.md` files in the repo. If you want to change metadata.md content for any user guide, do so in any `TOC.md` file.
 
 | metadata | what it does |
 |--- |--- |

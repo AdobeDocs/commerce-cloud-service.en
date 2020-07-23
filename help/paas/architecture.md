@@ -2,7 +2,6 @@
 title: Magento PaaS architecture
 seo-title: Magento PaaS architecture
 description: Describes the tech stack and the infrastructure for the Magento PaaS solution.
-solution: Magento PaaS
 ---
 
 # Magento PaaS architecture

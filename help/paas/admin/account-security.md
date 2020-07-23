@@ -1,9 +1,8 @@
 ---
 title: Account security
 seo-title: Account security for Magento on Cloud Manager
-description: Describes the various layers of security and the requirements for interacting with the Magento PaaS. 
+description: Describes the various layers of security and the requirements for interacting with the Magento PaaS.
 keywords: security;account;key
-solution: Magento PaaS
 ---
 
 # Account security
