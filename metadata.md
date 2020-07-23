@@ -1,7 +1,7 @@
 ---
 cloud: document-cloud
-solution-title: Magento Commerce
-solution-hub-url: https://devdocs.magento.com
+solution-title: Magento PaaS
+solution-hub-url: https://docs-stg.corp.adobe.com/content/help/en/magento-paas/dev-docs/overview.html
 getting-started-title: Getting Started
 getting-started-url: https://www.adobe.com
 tutorials-title: Tutorials

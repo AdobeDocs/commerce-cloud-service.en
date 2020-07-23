@@ -1,9 +1,12 @@
 ---
 title: SSH key
-description:
+description: Task to add an SSH key to the Magento on Cloud Manager environment.
+solution: Magento PaaS
 ---
 
-# SSH key
+# SSH keys
+
+You must enable two-factor authentication for your account..TBD
 
 **To add an existing SSH key:**
 

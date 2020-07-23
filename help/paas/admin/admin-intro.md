@@ -1,24 +1,17 @@
 ---
-title: Admin
-description:
+title: Account administration
+seo-title: Account administration in Magento Cloud Manager
+description: Introduction to account administration and first-time walk through.
+solution: Magento PaaS
 ---
 
 # Account administration
 
-Admins manage users and program access. Programs manage environments, pipelines, and Git repositories.
-
-As a License owner...
-
-A Magento Cloud program includes a Web Interface and CLI commands to fully manage all aspects of your project.
+A Magento program includes a Cloud Manager interface that helps you to fully manage environments, pipelines, and Git repositories. As a Business owner or Admin, you can provision and manage multiple programs, grant user access, and control the deployment-to-production process.
 
 ## First time log in
 
-When you log in to a new account for the first time, you added a Technical Admin.
+When you logged in to your new account for the first time, you went through an onboarding process similar to the following:
 
 ![onboarding](../../assets/flow-onboarding.png "Login flow")
 
-<!-- link definitions -->
-
-- link to user management
-- link to Web UI tour
-- link to local development

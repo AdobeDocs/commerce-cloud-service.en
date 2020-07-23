@@ -1,25 +1,30 @@
 ---
 title: User management
-description:
+seo-title: User management for Magento on Cloud Manager
+description: Describes the user roles and accessibility levels.
+solution: Magento PaaS
 ---
 
 # User management
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+As a Business Owner, you can manage user access to each program you provision, and you can manage the level of access a user has within a program or environment.
 
 ## Role-based access control
 
-The system role grants the user a level of access to the...
-The environment role grants the users a level of access specific to that environment. A user can be an Admin for one environment, but only a contributor for another. By default, a user is not assigned an environment role. The user is automatically granted the access level equal to their assigned system role.
+Magento Cloud Manager provides pre-defined roles that can be assigned at a program level or an environment level.
+
+The _program_ level grants the user a level of access across all environments in the program.
+
+The _environment_ level grants the user a more granular level of access specific to that environment. A user can be an Admin for one environment, but only a contributor for another. By default, a user is not assigned an environment role. The user is automatically granted the access level equal to their assigned program role.
 
 A user can have the following roles:
 
-| Role          | Level               | Definition                                       |
-| ------------- | ------------------- | ------------------------------------------------ |
-| Admin         | System, Environment |                                                  |
-| Contributor   | System, Environment | This is the default assigned role for new users. |
-| License owner | System              |                                                  |
-| Read-only     | System, Environment |                                                  |
-| Tech-admin    | System              |                                                  |
+| Role          | Level                | Description                                                                                                                                |
+| ------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Admin         | Program, Environment | (Program manager) Manages the Magento program, and manages users and pipelines.                                                            |
+| Contributor   | Program, Environment | (Developer) This is the default assigned program-level role for new users. Develops and tests application code and views logs and reports. |
+| License owner | Program              | (Business owner) Provisions new Magento programs and controls productions process.                                                         |
+| Read-only     | Program, Environment | View-only access for the program or environment.                                                                                           |
+| Tech-admin    | Program              | (Deployment Manager) Manages the Magento environment and deployment operations.                                                            |
 
 <!-- link definitions -->

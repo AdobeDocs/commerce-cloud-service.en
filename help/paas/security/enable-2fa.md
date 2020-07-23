@@ -1,6 +1,7 @@
 ---
 title: Enable two-factor authentication
 description: Enable 2fa for your Magento Cloud account.
+solution: Magento PaaS
 ---
 
 # Two-factor authentication

@@ -1,4 +1,4 @@
-# Contribute article
+# Magento Commerce on Cloud Manager documentation
 
 | Production | Stage |
 |---|---|
