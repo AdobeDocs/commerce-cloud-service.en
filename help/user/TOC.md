@@ -5,7 +5,7 @@ solution: Magento PaaS
 
 # Magento PaaS user guide {#user}
 
-- [Magento PaaS](overview.md)
+- [Magento PaaS user guide](/help/user/overview.md)
 - Getting Started {#getting-started}
   - [Architecture overview](architecture.md)
   - [Add user](/help/user/admin/user-management.md)

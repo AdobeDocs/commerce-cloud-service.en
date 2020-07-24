@@ -1,7 +1,7 @@
 ---
 cloud: document-cloud
 solution-title: Magento PaaS
-solution-hub-url: https://docs-stg.corp.adobe.com/content/help/en/magento-paas/paas-ui/overview.html
+solution-hub-url: https://docs-stg.corp.adobe.com/content/help/en/magento-paas/user/overview.html
 solution-icon: assets/logo-adobe-magento.png
 getting-started-title: Getting Started
 getting-started-url: https://www.adobe.com

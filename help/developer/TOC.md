@@ -5,7 +5,7 @@ solution: Magento PaaS
 
 # Magento PaaS developer guide {#developer}
 
-- [Magento PaaS Developer](overview.md)
+- [Magento PaaS Developer](/help/developer/overview.md)
 - Getting Started {#getting-started}
   - [Test Dev](test.md)
 - Resources {#resources}

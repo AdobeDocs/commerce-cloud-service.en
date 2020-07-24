@@ -3,7 +3,7 @@
 | Production | Stage |
 |---|---|
 | [![Build Status](https://docs.ci.corp.adobe.com/job/magento-paas.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/magento-paas.en_production/lastBuild) | [![Build Status](https://docs.ci.corp.adobe.com/job/collaborative-doc-instructions.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/magento-paas.en_stage/lastBuild) |
-|[Output Prod](https://docs.adobe.com/content/help/en/magento-paas/user/overview.html)|[Output Stg](https://docs-stg.corp.adobe.com/content/help/en/magento-paas/dev-docs/overview.html)|
+|[Output Prod](https://docs.adobe.com/content/help/en/magento-paas/user/overview.html)|[Output Stg](https://docs-stg.corp.adobe.com/content/help/en/magento-paas/user/overview.html)|
 
 <!--
 |[Output Prod](https://docs.adobe.com/content/help/en/document-cloud-learn/tutorials/overview.html)|[Output Stg](https://docs-stg.corp.adobe.com/content/help/en/document-cloud-learn/tutorials/overview.html)|
