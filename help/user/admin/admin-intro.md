@@ -12,4 +12,4 @@ A Magento program includes a Cloud Manager interface that helps you to fully man
 
 When you logged in to your new account for the first time, you went through an onboarding process similar to the following:
 
-![onboarding](../../assets/flow-onboarding.png "Login flow")
+![onboarding](assets/flow-onboarding.png "Login flow")
