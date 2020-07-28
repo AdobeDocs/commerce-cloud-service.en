@@ -6,8 +6,8 @@ solution: Magento PaaS
 # Magento PaaS user guide {#user}
 
 - [Magento PaaS user guide](overview.md)
+- [PaaS Architecture](architecture.md)
 - Getting Started {#getting-started}
-  - [Architecture overview](architecture.md)
   - [Add user](/help/user/admin/user-management.md)
   - [Enable two-factor authentication](/help/user/admin/enable-2fa.md)
   - [Add a SSH key](/help/user/admin/add-sshkey.md)
@@ -22,4 +22,4 @@ solution: Magento PaaS
   - [Performance monitoring](/help/user/reports/performance-monitoring.md)
 - Resources {#resources}
   - [Services](/help/user/services/service-intro.md)
-  - [Developer guide](/help/developer/local-development.md)
+  - [Magento PaaS developer guide](/help/developer/local-development.md)
