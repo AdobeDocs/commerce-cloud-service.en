@@ -1,6 +1,6 @@
 ---
 user-guide-title: Magento Commerce PaaS developer guide
-solution: Magento PaaS
+solution: Magento
 ---
 
 # Magento PaaS developer guide {#developer}

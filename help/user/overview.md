@@ -1,8 +1,6 @@
 ---
 title: Magento PaaS overview
 description: A Magento platform built on Adobe.
-seo-title: Magento Commerce on Adobe Cloud Manager
-seo-description: Magento Commerce built on Adobe Cloud Manager.
 ---
 
 # Magento PaaS user guide

@@ -1,11 +1,11 @@
 ---
-user-guide-title: Magento Commerce on Cloud Manager
-solution: Magento PaaS
+user-guide-title: Magento Commerce Manager guide
+solution: Magento
 ---
 
-# Magento PaaS user guide {#user}
+# Magento Commerce Manager guide {#user}
 
-- [Magento PaaS user guide](overview.md)
+- [Magento Commerce Manager guide](overview.md)
 - [PaaS Architecture](architecture.md)
 - Getting Started {#getting-started}
   - [Add user](/help/user/admin/user-management.md)

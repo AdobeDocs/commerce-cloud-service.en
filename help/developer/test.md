@@ -1,5 +1,5 @@
 ---
-title: PaaS API guide
+title: Magento PaaS API guide
 ---
 
 # PaaS test file

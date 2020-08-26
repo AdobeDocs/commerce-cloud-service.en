@@ -1,5 +1,5 @@
 ---
-title: Developer guide
+title: Magento PaaS Developer guide
 ---
 
 # Magento PaaS developer guide
