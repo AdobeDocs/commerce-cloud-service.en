@@ -22,9 +22,9 @@ The following table lists the services and the version support based on Magento 
 | `redis`         | 5.x                 | **Magento version 2.3.1 - 2.3.5**–4.x, 5.x<br>**Magento version 2.3.0**— 3.2, 4.0                                                                   | 3.2, 4.0, 5.0                                                                                                                                                                                                                                                                                              |
 | `varnish`       | 6.x                 | **Magento version 2.3.3 to 2.3.5**— 4.0, 5.0, 6.2<br>**Magento version 2.3.0 to 2.3.2**— 4.0, 5.0                                                   | 4.0, 5.0                                                                                                                                                                                                                                                                                                   |
 
-> [!TIP]
+>[!TIP]
 >
-> When you set up the Elasticsearch service, check to ensure that you use a version that is compatible with the installed [Elasticsearch PHP][es-php] client. See [Check Elasticsearch software compatibility][es-cloud].
+>When you set up the Elasticsearch service, check to ensure that you use a version that is compatible with the installed [Elasticsearch PHP][es-php] client. See [Check Elasticsearch software compatibility][es-cloud].
 
 <!-- link definitions -->
 
