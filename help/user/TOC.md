@@ -1,18 +1,18 @@
 ---
-user-guide-title: Magento Commerce on Cloud Manager
-solution: Magento PaaS
+user-guide-title: Magento Commerce Manager guide
+solution: Magento
 ---
 
-# Magento PaaS user guide {#user}
+# Magento Commerce Manager Guide {#user}
 
-- [Magento PaaS user guide](overview.md)
+- [Magento Commerce Manager Guide](overview.md)
 - [PaaS Architecture](architecture.md)
 - Getting Started {#getting-started}
   - [Add user](/help/user/admin/user-management.md)
   - [Enable two-factor authentication](/help/user/admin/enable-2fa.md)
   - [Add a SSH key](/help/user/admin/add-sshkey.md)
-- Program management {#program}
   - [Program UI](program-tour.md)
+- Program management {#program}
   - [Account administration](/help/user/admin/admin-intro.md)
   - [Environments](/help/user/environment/environment-intro.md)
   - [Pipelines](/help/user/pipelines/pipelines-intro.md)
@@ -22,4 +22,4 @@ solution: Magento PaaS
   - [Performance monitoring](/help/user/reports/performance-monitoring.md)
 - Resources {#resources}
   - [Services](/help/user/services/service-intro.md)
-  - [Magento PaaS developer guide](/help/developer/local-development.md)
+- PaaS APIs {#paas-api}
