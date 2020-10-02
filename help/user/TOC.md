@@ -3,9 +3,9 @@ user-guide-title: Magento Commerce Manager guide
 solution: Magento
 ---
 
-# Magento Commerce Manager guide {#user}
+# Magento Commerce Manager Guide {#user}
 
-- [Magento Commerce Manager guide](overview.md)
+- [Magento Commerce Manager Guide](overview.md)
 - [PaaS Architecture](architecture.md)
 - Getting Started {#getting-started}
   - [Add user](/help/user/admin/user-management.md)
@@ -22,3 +22,4 @@ solution: Magento
   - [Performance monitoring](/help/user/reports/performance-monitoring.md)
 - Resources {#resources}
   - [Services](/help/user/services/service-intro.md)
+- PaaS APIs {#paas-api}
