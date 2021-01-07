@@ -1,12 +1,12 @@
 ---
-user-guide-title: Magento Commerce Manager guide
+user-guide-title: Magento Commerce Manager Guide
 solution: Magento
 ---
 
 # Magento Commerce Manager Guide {#user}
 
 - [Magento Commerce Manager Guide](overview.md)
-- [PaaS Architecture](architecture.md)
+- [Skyline for Magento Architecture](architecture.md)
 - Getting Started {#getting-started}
   - [Add user](/help/user/admin/user-management.md)
   - [Enable two-factor authentication](/help/user/admin/enable-2fa.md)
@@ -22,4 +22,4 @@ solution: Magento
   - [Performance monitoring](/help/user/reports/performance-monitoring.md)
 - Resources {#resources}
   - [Services](/help/user/services/service-intro.md)
-- PaaS APIs {#paas-api}
+- Skyline for Magento API {#paas-api}
