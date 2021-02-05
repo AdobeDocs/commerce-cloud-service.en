@@ -1,12 +1,8 @@
 ---
-title: Magento PaaS architecture
+title: Magento on AEC architecture
 description: Describes the tech stack and the infrastructure for the Magento PaaS solution.
 ---
 
-# Magento PaaS architecture
+# Magento NextGen architecture
 
-## Tech Stack
-
-## Storage
-
-## Scalability
+The NextGen platform for Magento Commerce cloud is a Single-tenant, Triple-redundant, Vertical-scaling Architecture blah blah blah.

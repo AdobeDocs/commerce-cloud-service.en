@@ -1,25 +1,21 @@
 ---
-user-guide-title: Magento Commerce Manager Guide
+user-guide-title: Magento on Adobe Experience Cloud User Guide
 solution: Magento
 ---
 
-# Magento Commerce Manager Guide {#user}
+# Magento on Adobe Experience Cloud Guide {#user}
 
-- [Magento Commerce Manager Guide](overview.md)
-- [Skyline for Magento Architecture](architecture.md)
+- [Magento on Adobe Experience Cloud Guide](overview.md)
+- [Architecture](architecture.md)
 - Getting Started {#getting-started}
-  - [Add user](/help/user/admin/user-management.md)
-  - [Enable two-factor authentication](/help/user/admin/enable-2fa.md)
-  - [Add a SSH key](/help/user/admin/add-sshkey.md)
-  - [Program UI](program-tour.md)
-- Program management {#program}
-  - [Account administration](/help/user/admin/admin-intro.md)
-  - [Environments](/help/user/environment/environment-intro.md)
-  - [Pipelines](/help/user/pipelines/pipelines-intro.md)
-  - [Security](/help/user/admin/account-security.md)
-- Reports {#reports}
-  - [Logs](/help/user/reports/logs.md)
-  - [Performance monitoring](/help/user/reports/performance-monitoring.md)
+  - [Introduction](admin/admin-intro.md)
+  - [Commerce Program UI](getting-started/program-tour.md)
+- Building pipelines {#pipelines}
+  - [Pipelines](cicd/pipelines.md)
+- Managing environments {#environments}
+  - [Environments](configure/environments.md)
+- Monitoring your store {#monitor}
+  - [Activity](monitor/activity.md)
+  - [Logs](monitor/logs.md)
+  - [Performance monitoring](monitor/performance.md)
 - Resources {#resources}
-  - [Services](/help/user/services/service-intro.md)
-- Skyline for Magento API {#paas-api}
