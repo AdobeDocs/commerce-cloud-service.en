@@ -5,7 +5,9 @@ description: An introduction to pipeline management with Clound Manager UI for M
 
 # Pipelines
 
-The pipeline 
+The pipeline ...
 
 -  Build-only
 -  Deploy-only
+-  Build and Deploy
+-  Scheduling

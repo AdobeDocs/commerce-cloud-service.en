@@ -4,3 +4,5 @@ description: Describes the tech stack and the infrastructure for the Magento Paa
 ---
 
 # Magento cloud architecture
+
+The NextGen platform for Magento Commerce cloud is a Single-tenant, Triple-redundant, Vertical-scaling Architecture blah blah blah.
