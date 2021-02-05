@@ -1,7 +1,6 @@
 ---
-title: Account security
+title: Magento Account security
 description: Describes the various layers of security and the requirements for interacting with the Magento PaaS.
-keywords: security;account;key
 ---
 
 # Account security

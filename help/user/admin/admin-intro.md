@@ -5,7 +5,7 @@ description: Introduction to account administration and first-time walk through.
 
 # Account administration
 
-A Magento program includes a Cloud Manager interface that helps you to fully manage environments, pipelines, and Git repositories. As a Business owner or Administrator, you can provision and manage multiple programs, grant user access, and control the deployment-to-production process.
+A Magento program includes a Cloud Manager interface that helps you to fully manage environments, pipelines, and Git repositories. As a Business owner or Administrator, you can provision and manage multiple programs and grant user access from the Admin Console Experience.
 
 ## First time log in
 

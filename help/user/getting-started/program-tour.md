@@ -18,3 +18,5 @@ Next, provide a Program name and select the **Set up for production** objective.
 Your new program opens with the **Program overview** page. Program overview is a summary board that displays the status of your environments, pipelines, resources, and provides opportunities to learn and do more.
 
 ![commerce overview](../../assets/commerce-overview-new.png)
+
+<!-- link definitions -->
