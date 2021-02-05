@@ -1,12 +1,7 @@
 ---
-cloud: document-cloud
-solution-title: Magento PaaS
-solution-hub-url: https://docs-stg.corp.adobe.com/content/help/en/magento-paas/user/overview.html
-solution-icon: assets/logo-adobe-magento.png
-getting-started-title: Getting Started
-getting-started-url: https://www.adobe.com
-tutorials-title: Tutorials
-tutorials-url: https://www.adobe.com
+cloud: experience-cloud
+type: Documentation
+solution: Magento
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/magento-paas.en
 index: no

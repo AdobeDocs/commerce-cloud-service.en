@@ -1,5 +1,5 @@
 ---
-user-guide-title: Magento on Adobe Experience Cloud guide
+user-guide-title: Magento on Adobe Experience Cloud User Guide
 solution: Magento
 ---
 
