@@ -1,14 +1,14 @@
 ---
-user-guide-title: Magento on Adobe Experience Cloud User Guide
+user-guide-title: Magento Platform User Guide
 solution: Magento
 ---
 
-# Magento on Adobe Experience Cloud Guide {#user}
+# Magento on Adobe Experience Cloud {#user}
 
-- [Magento on Adobe Experience Cloud Guide](overview.md)
-- [Architecture](architecture.md)
+- [Magento Platform User Guide](magento-platform.md)
+- [Architecture](magento-platform-architecture.md)
 - Getting Started {#getting-started}
-  - [Introduction](admin/admin-intro.md)
+  - [Introduction](admin/commerce-manager.md)
   - [Commerce Program UI](getting-started/program-tour.md)
 - Building pipelines {#pipelines}
   - [Pipelines](cicd/pipelines.md)

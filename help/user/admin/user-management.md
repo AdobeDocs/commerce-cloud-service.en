@@ -1,11 +1,11 @@
 ---
-title: User management
+title: Commerce Manager User management
 description: Describes the user roles and accessibility levels.
 ---
 
 # User management
 
-As a Business Owner, you can manage user access to each program you provision, and you can manage the level of access a user has within a program or environment.
+As an Admin manager, you can manage user access to each program you provision, and you can manage the level of access a user has within a program or environment.
 
 ## Role-based access control
 

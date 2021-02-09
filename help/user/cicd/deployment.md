@@ -1,5 +1,5 @@
 ---
-title: Magento deployment process
+title: Magento Platform deployment process
 description: Learn about the build and deploy process for Magento on AEC.
 ---
 

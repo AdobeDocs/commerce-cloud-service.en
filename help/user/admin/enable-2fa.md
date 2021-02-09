@@ -1,5 +1,5 @@
 ---
-title: Enable two-factor authentication
+title: Commerce Manager Two-factor authentication
 description: Enable 2fa for your Magento Cloud account.
 ---
 

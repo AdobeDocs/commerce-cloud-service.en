@@ -1,6 +1,6 @@
 ---
 title: Magento Account security
-description: Describes the various layers of security and the requirements for interacting with the Magento PaaS.
+description: Describes the various layers of security and the requirements for interacting with the Magento.
 ---
 
 # Account security
@@ -9,7 +9,7 @@ Magento Commerce environments are Read Only; therefore, you must develop in a lo
 
 - Magento authentication keys (Composer keys)
 - Magento Encryption Key
-- NextGen account
+- Commerce Program account
 
 ## Magento authentication keys
 
@@ -19,6 +19,6 @@ Magento authentication keys are 32-character authentication tokens that provide 
 
 When importing an existing Magento system only, capture the Magento encryption key used to protect your access and data for the Magento database.
 
-## NextGen account
+## Commerce Program account
 
-The Business Owner or Admin (Super User) should invite you to the Magento Commerce on Cloud Manager program. When you receive the e-mail invitation, click the link and follow the prompts to create your account. See Set up an account for details.
+The Commerce Admin should invite you to the Magento Commerce on Cloud Manager program. When you receive the e-mail invitation, click the link and follow the prompts to create your account. See Set up an account for details.

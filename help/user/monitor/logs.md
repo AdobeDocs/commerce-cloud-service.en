@@ -1,6 +1,6 @@
 ---
 title: Logs
-description: Describe logs, log levels, log locations for Magento PaaS.
+description: Describe logs, log levels, log locations for Magento Commerce Platform.
 ---
 
 # Logs

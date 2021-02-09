@@ -1,6 +1,6 @@
 ---
 title: Commerce Program tour
-description: Quick tour of the Clound Manager UI for Magento.
+description: Quick tour of the Cloud Manager UI for Magento.
 ---
 
 # Commerce Program tour

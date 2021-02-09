@@ -1,6 +1,6 @@
 ---
 title: Pipelines
-description: An introduction to pipeline management with Clound Manager UI for Magento.
+description: An introduction to pipeline management with Cloud Manager UI for Magento.
 ---
 
 # Pipelines
