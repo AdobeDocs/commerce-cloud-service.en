@@ -18,7 +18,10 @@ The Magento Platform-as-a-Service (PaaS) is a fully managed hosting platform bui
 
 ## Magento on Adobe Experience Cloud guides {#magento-paas-guides}
 
-This guide assumes that you have some working knowledge and understanding of the Magento Commerce application.
+The Magento Platform user guide assumes that you have some working knowledge and understanding of the Magento Commerce application. The following guides are associated with the Magento on Adobe Experience Cloud product:
+
+- Magento Admin Console
+- Magento Platform API (`Adobe.io`)
 
 ## Magento Commerce guides {#magento-core-guides}
 
