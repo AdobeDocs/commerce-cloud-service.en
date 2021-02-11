@@ -3,9 +3,11 @@ title: Magento on Adobe Experience Cloud
 description: A Magento platform built on Adobe.
 ---
 
-# Magento Platform User Guide
+# Magento on Adobe Experience Cloud
 
 ![banner](../assets/banner-hex-violet.png)
+
+## Magento Platform User Guide
 
 The Magento Platform-as-a-Service (PaaS) is a fully managed hosting platform built on Ethos-Kubernetes and Adobe Cloud Manager that provides a **self-service** approach to managing your Magento Commerce application in a Cloud-native environment. From the Magento Commerce Program portal, you control the following:
 
