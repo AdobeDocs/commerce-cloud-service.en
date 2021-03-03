@@ -7,15 +7,15 @@ solution: Magento
 
 - [Magento Platform User Guide](magento-platform.md)
 - [Architecture](magento-platform-architecture.md)
-- Getting Started {#getting-started}
-  - [Introduction](admin/commerce-manager.md)
-  - [Commerce Program UI](getting-started/program-tour.md)
-- Building pipelines {#pipelines}
+- CICD {#pipelines}
   - [Pipelines](cicd/pipelines.md)
+  - [Deployment](cicd/deployment.md)
 - Managing environments {#environments}
   - [Environments](configure/environments.md)
-- Monitoring your store {#monitor}
+- Launch your store {#launch}
+- Monitor your store {#monitor}
   - [Activity](monitor/activity.md)
   - [Logs](monitor/logs.md)
   - [Performance monitoring](monitor/performance.md)
-- Resources {#resources}
+- Developer tools {#resources}
+  - [CLI](develop/cli.md)
