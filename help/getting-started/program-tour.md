@@ -9,7 +9,7 @@ Adobe Cloud Manager is a hub for your Adobe Cloud-based programs and products. F
 
 Choose [!UICONTROL Adobe Commerce] for your new program and continue through the steps.
 
-![Programs](../assets/create-cm-program.png)
+![Programs](../assets/program-create.png)
 
 Next, provide a [!UICONTROL Program name] and select the [!UICONTROL Set up for production] objective.
 
@@ -17,6 +17,6 @@ Next, provide a [!UICONTROL Program name] and select the [!UICONTROL Set up for 
 
 Your new program opens with the [!UICONTROL Program overview] page. Program overview is a summary board that displays the status of your environments, pipelines, resources, and provides opportunities to learn and do more.
 
-![Commerce overview](../assets/commerce-overview-new.png)
+![Commerce overview](../assets/program-newdashboard.png)
 
 <!-- link definitions -->
