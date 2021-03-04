@@ -1,4 +1,4 @@
-# Magento Commerce on AEM
+# Magento Commerce on AEC
 
 This site contains the latest Magento developer documentation for Skyline for Magento.
 

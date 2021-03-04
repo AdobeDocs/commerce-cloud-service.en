@@ -1,6 +1,6 @@
 ---
 user-guide-title: Magento Platform Getting Started
-solution: Magento
+product: magento
 ---
 
 # Getting started {#start}

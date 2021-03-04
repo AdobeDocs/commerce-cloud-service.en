@@ -1,6 +1,6 @@
 ---
 user-guide-title: Magento Platform User Guide
-solution: Magento
+product: magento
 ---
 
 # Magento on Adobe Experience Cloud {#user}

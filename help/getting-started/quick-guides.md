@@ -1,9 +1,11 @@
 ---
-title: Getting Started with Magento on AEC
+title: Getting Started
 description: Learn about the new self-service features of the Commerce program UI and build a store in minutes.
 ---
 
-# Magento on AEC starter guides {#magento-paas-start}
+# Getting Started with Magento on Experience Cloud
+
+![Banner](../assets/banner-hex-violet.png)
 
 <table>
 <tr>
