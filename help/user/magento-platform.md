@@ -24,7 +24,7 @@ The Magento Platform user guide assumes that you have some working knowledge and
 
 Select a Getting started workflow:
 
-<table>
+<table style="table-layout:fixed">
 <tr>
   <td>
     <a href="../getting-started/program-tour.md">
