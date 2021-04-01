@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 type: Documentation
 solution: Magento Commerce Cloud
 mini-toc-levels: 2
