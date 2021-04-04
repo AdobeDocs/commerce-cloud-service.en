@@ -1,8 +1,8 @@
 ---
 title: Magento on Adobe Experience Cloud
 description: A Magento platform built on Adobe.
+exl-id: 3531a0e2-d7ac-4bf4-a14b-4cbe5314b6f2
 ---
-
 # Magento on Adobe Experience Cloud
 
 ![Banner](../assets/banner-hex-violet.png)

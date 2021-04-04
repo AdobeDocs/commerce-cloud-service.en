@@ -1,8 +1,8 @@
 ---
 title: Performance monitoring
 description: Learn about Performance monitoring for Magento on Adobe Experience Cloud.
+exl-id: c193aa05-be11-41d7-8c4d-e62764eb1cf8
 ---
-
 # Performance monitoring
 
 Using this page to test a build.

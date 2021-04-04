@@ -1,8 +1,8 @@
 ---
 title: Getting Started
 description: Learn about the new self-service features of the Commerce program UI and build a store in minutes.
+exl-id: 9c0d5140-d4ca-4546-a060-1a2ed62aeef9
 ---
-
 # Getting Started with Magento on Experience Cloud
 
 ![Banner](../assets/banner-hex-violet.png)
