@@ -1,8 +1,8 @@
 ---
 title: Onboarding
 description: Use your credentials to access Cloud Manager and set up a Commerce program.
+exl-id: 6402fd95-4d17-459e-bb38-531950309383
 ---
-
 # Onboarding
 
 ## Adobe Identity

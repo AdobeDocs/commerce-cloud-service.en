@@ -1,9 +1,8 @@
 ---
 title: Commerce Program tour
 description: Quick tour of the Cloud Manager UI for Magento.
-exl-id: 8ea2d21e-2eb8-43f7-842e-1332d4138d1e
+exl-id: 6bf024e2-4a65-4145-9491-d7900673971d,8ea2d21e-2eb8-43f7-842e-1332d4138d1e
 ---
-
 # Adobe Commerce Program
 
 The Adobe Cloud Manager dashboard is a hub for your Adobe Cloud-based programs and products. Sign in to [Adobe Experience Cloud][cm-dash] for your organization and select [!UICONTROL Programs & Products]. 
