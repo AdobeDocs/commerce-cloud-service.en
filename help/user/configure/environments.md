@@ -5,8 +5,10 @@ exl-id: 2451a654-23b9-46ac-a15b-2ddbb99b7bb7
 ---
 # Environments
 
-
+Placeholder for environment concepts.
 
 ## Production and Staging environments
 
-You must create a Production and Staging environment before you can configure a production pipeline.
+>[!NOTE]
+>
+>You must create a Production and Staging environment before you can configure a production pipeline.

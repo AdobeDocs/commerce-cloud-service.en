@@ -1,17 +1,18 @@
 ---
-user-guide-title: Magento Platform User Guide
+user-guide-title: Adobe Commerce Management Guide
 product: magento
 ---
 
 # Magento on Adobe Experience Cloud {#user}
 
-- [Magento Platform User Guide](magento-platform.md)
+- [Commerce Management Guide](magento-platform.md)
+- [Getting started](../getting-started/commerce-start.md)
 - [Architecture](magento-platform-architecture.md)
-- CICD {#pipelines}
+- Manage environments {#environments}
+  - [Environments](configure/environments.md)
+- Manage pipelines {#pipelines}
   - [Pipelines](cicd/pipelines.md)
   - [Deployment](cicd/deployment.md)
-- Managing environments {#environments}
-  - [Environments](configure/environments.md)
 - Launch your store {#launch}
 - Monitor your store {#monitor}
   - [Activity](monitor/activity.md)

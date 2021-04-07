@@ -1,14 +1,21 @@
 ---
-title: Platform Architecture
-description: Describes the infrastructure for the Magento Platform solution.
+title: Commerce Platform Architecture
+description: Describes the infrastructure for the Adobe Commerce Platform solution.
 exl-id: 0dd3bd1b-e530-4436-b6c6-90f9f508e8a6
 ---
-# Magento Platform Architecture
 
-The Magento Platform is built on Ethos-Kubernetes and Adobe Cloud Manager to provide a cloud-native architecture.
+# Commerce PaaS Architecture
 
-## CICD
+The Commerce PaaS architecture is built on Ethos-Kubernetes and Adobe Cloud Manager to provide a cloud-native hosting environment with self-service capabilities.
 
-## Storage
+- **Ethos-Kubernetes**—
 
-## Scaling
+- **Admin Console**—Control access to the Commerce program and define roles.
+
+- **Cloud Manager**—Cloud Manager provides a basis for the new Commerce Program UI. 
+  - Environment access and controls
+  - CICD Pipeline optimization and scheduling
+  - Git management and activity logs
+  - Performance monitoring
+
+- **Magento Commerce**—

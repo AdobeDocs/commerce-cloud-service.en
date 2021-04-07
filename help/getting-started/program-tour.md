@@ -3,20 +3,28 @@ title: Commerce Program tour
 description: Quick tour of the Cloud Manager UI for Magento.
 exl-id: 8ea2d21e-2eb8-43f7-842e-1332d4138d1e
 ---
-# Commerce Program tour
 
-Adobe Cloud Manager is a hub for your Adobe Cloud-based programs and products. From the Cloud Manager card view, you can click on an existing program card or click [!UICONTROL Add program].
+# Adobe Commerce Program
 
-Choose [!UICONTROL Adobe Commerce] for your new program and continue through the steps.
+The Adobe Cloud Manager dashboard is a hub for your Adobe Cloud-based programs and products. Sign in to [Adobe Experience Cloud][cm-dash] for your organization and select [!UICONTROL Programs & Products]. 
 
-![Programs](../assets/program-create.png)
+From the Cloud Manager **Programs & Products** card view, you can click on an existing program card or click [!UICONTROL Add program] to create a new Commerce program.
 
-Next, provide a [!UICONTROL Program name] and select the [!UICONTROL Set up for production] objective.
+**To add a Commerce program:**
 
-## Commerce overview
+1. Click [!UICONTROL Add program].
+
+1. Choose [!UICONTROL Adobe Commerce] for your new program and continue through the steps.
+
+   ![Programs](../assets/program-create.png)
+
+1. Provide a [!UICONTROL Program name] and select the [!UICONTROL Set up for production] objective.
+
+## Program overview
 
 Your new program opens with the [!UICONTROL Program overview] page. Program overview is a summary board that displays the status of your environments, pipelines, resources, and provides opportunities to learn and do more.
 
 ![Commerce overview](../assets/program-newdashboard.png)
 
 <!-- link definitions -->
+[cm-dash]: https://my.cloudmanager.adobe.com

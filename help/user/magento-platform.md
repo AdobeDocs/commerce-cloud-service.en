@@ -1,15 +1,16 @@
 ---
-title: Magento on Adobe Experience Cloud
-description: A Magento platform built on Adobe.
+title: Commerce Management Guide
+description: Learn about building, deploying, and managing Magento on Adobe Experience Cloud.
 exl-id: 3531a0e2-d7ac-4bf4-a14b-4cbe5314b6f2
 ---
-# Magento on Adobe Experience Cloud
+
+# Adobe Commerce Management Guide
 
 ![Banner](../assets/banner-hex-violet.png)
 
-## Magento Platform User Guide
+## Magento on Adobe Experience Cloud
 
-The Magento Platform-as-a-Service (PaaS) is a fully managed hosting platform built on Ethos-Kubernetes and Adobe Cloud Manager that provides a **self-service** approach to managing your Magento Commerce application in a Cloud-native environment. From the Magento Commerce Program portal, you control the following:
+The Adobe Commerce Program is a fully managed hosting platform that provides a **self-service** approach to building, deploying, and managing your Magento Commerce application in a Cloud-native environment. From the Commerce Program portal, you control:
 
 - Performance monitoring
 - Environment access and controls
@@ -18,73 +19,20 @@ The Magento Platform-as-a-Service (PaaS) is a fully managed hosting platform bui
 - Self-service stack configurations
 - Multi-application support and micro-services
 
-## Magento on Adobe Experience Cloud guides {#magento-paas-guides}
+## The New Adobe Commerce Experience {#compare}
 
-The Magento Platform user guide assumes that you have some working knowledge and understanding of the Magento Commerce application.
+Use the [Getting Started with Adobe Commerce guide](../getting-started/commerce-start.md) to set up your new Commerce program.
 
-Select a Getting started workflow:
+Compare Commerce Cloud products here?
 
-<table style="table-layout:fixed">
-<tr>
-  <td>
-    <a href="../getting-started/program-tour.md">
-    <img alt="Checklist" src="../assets/card-start.png"/>
-    </a>
-    <div>
-    <a href="../getting-started/program-tour.md"><strong>Getting started</strong></a>
-    </div>
-    <em>Learn about the new self-service features of the Commerce program UI and build a store in minutes.</em>
-    <br>
-  </td>
-  <td>
-    <a href="../user/develop/cli.md">
-    <img alt="Tools" src="../assets/card-tool.png"/>
-    </a>
-    <div>
-    <a href="../user/develop/cli.md"><strong>Set up your Developer Tools</strong></a>
-    </div>
-    <em>Set up your development environment and test the CLI.</em>
-    <br>
-  </td>
-    <td>
-    <a href="../user/monitor/performance.md">
-    <img alt="Tools" src="../assets/card-store.png"/>
-    </a>
-    <div>
-    <a href="../user/monitor/performance.md"><strong>Monitor your store</strong></a>
-    </div>
-    <em>Learn how to access activity logs and set up performance monitoring.</em>
-    <br>
-  </td>
-</tr>
-</table>
+| Features    | Adobe Commerce | Magento Commerce Cloud |
+| ----------- | -------------- | ---------------------- |
+| Autoscaling | na             | na                     |
 
-- Magento Admin Console
-- Magento Platform API (`Adobe.io`)
+## Magento Commerce guides {#magento-guides}
 
-## Magento Commerce guides {#magento-core-guides}
+The Adobe Commerce guides assume that you have some working knowledge and understanding of the Magento Commerce application. You can refer to the Magento Commerce Developer and User guides below:
 
-<table>
-<tr>
-  <td>
-    <a href="https://devdocs.magento.com">
-    <img alt="Developer" src="../assets/card-dev.png"/>
-    </a>
-    <div>
-    <a href="https://devdocs.magento.com"><strong>Magento Commerce Developer guides</strong></a>
-    </div>
-    <em>Everything you need to build and manage a customized Magento store.</em>
-    <br>
-  </td>
-  <td>
-    <a href="https://docs.magento.com/user-guide">
-      <img alt="Magento" src="../assets/card-dev.png">
-    </a>
-    <div>
-    <a href="https://docs.magento.com/user-guide"><strong>Magento Commerce User guide</strong></a>
-    </div>
-    <em>Everything you need to customize your Magento store.</em>
-    <br>
-  </td>
-</tr>
-</table>
+[Magento Commerce Developer Guides](https://devdocs.magento.com)
+
+[Magento Commerce User Guides](https://docs.magento.com/user-guide)
