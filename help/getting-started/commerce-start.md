@@ -5,8 +5,6 @@ exl-id: 1a05a3dc-577e-40c4-bdfb-cfddfd833754,7de7ec68-e1e1-42b7-8810-a3039bf7e99
 ---
 # Getting Started with Adobe Commerce
 
-![Banner](../assets/banner-hex-violet.png)
-
 <table style="table-layout:fixed">
   <tr>
     <td>
