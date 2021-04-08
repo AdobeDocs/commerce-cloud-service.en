@@ -6,7 +6,7 @@ exl-id: 0dd3bd1b-e530-4436-b6c6-90f9f508e8a6
 
 # Commerce PaaS Architecture
 
-The Commerce PaaS architecture is built on Ethos-Kubernetes and Adobe Cloud Manager to provide a cloud-native hosting environment with self-service capabilities.
+The Commerce platform architecture is built on Ethos-Kubernetes and Adobe Cloud Manager to provide a cloud-native hosting environment with self-service capabilities.
 
 - **Ethos-Kubernetes**—
 
