@@ -1,6 +1,7 @@
 ---
 user-guide-title: Adobe Commerce Management Guide
 product: magento
+type: Documentation
 ---
 
 # Magento on Adobe Experience Cloud {#user}
