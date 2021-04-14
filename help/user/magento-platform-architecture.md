@@ -12,7 +12,8 @@ The Commerce platform architecture is built on Ethos-Kubernetes and Adobe Cloud 
 
 - **Admin Console**—Control access to the Commerce program and define roles.
 
-- **Cloud Manager**—Cloud Manager provides a basis for the new Commerce Program UI. 
+- **Cloud Manager**—Cloud Manager provides a basis for the new Commerce Program UI.
+
   - Environment access and controls
   - CICD Pipeline optimization and scheduling
   - Git management and activity logs

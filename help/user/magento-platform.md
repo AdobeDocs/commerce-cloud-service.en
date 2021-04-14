@@ -7,7 +7,7 @@ exl-id: 0a7aae26-ad6a-41f3-b10c-5ccce3869700,3531a0e2-d7ac-4bf4-a14b-4cbe5314b6f
 
 ![Banner](../assets/banner-hex-violet.png)
 
-## Magento on Adobe Experience Cloud
+## Magento on Adobe Experience Cloud Infrastructure
 
 The Adobe Commerce Program is a fully managed hosting platform that provides a **self-service** approach to building, deploying, and managing your Magento Commerce application in a Cloud-native environment. From the Commerce Program portal, you control:
 

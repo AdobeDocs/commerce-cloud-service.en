@@ -1,5 +1,6 @@
 ---
 user-guide-title: Adobe Commerce Management Guide
+user-guide-description: Learn how to manage the Commerce application in Experience Cloud infrastructure.
 product: magento
 type: Documentation
 ---
@@ -9,12 +10,13 @@ type: Documentation
 - [Commerce Management Guide](magento-platform.md)
 - [Getting started](../getting-started/commerce-start.md)
 - [Architecture](magento-platform-architecture.md)
-- Manage environments {#environments}
+- Environments {#environments}
   - [Environments](configure/environments.md)
-- Manage pipelines {#pipelines}
+- Pipelines {#pipelines}
   - [Pipelines](cicd/pipelines.md)
   - [Deployment](cicd/deployment.md)
-- Launch your store {#launch}
+- Storage {#storage}
+  - [Backup and Recovery](storage/backup-and-recovery.md)
 - Monitor your store {#monitor}
   - [Activity](monitor/activity.md)
   - [Logs](monitor/logs.md)

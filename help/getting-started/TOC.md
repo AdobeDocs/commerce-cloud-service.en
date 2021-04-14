@@ -10,5 +10,3 @@ product: magento
 - [Onboarding](onboarding.md)
 - [Tour the Commerce Program](program-tour.md)
 - [Access the Git repository](git-repository.md)
-- Create an environment {#add-env}
-- Build a pipeline {#add-pipe}
