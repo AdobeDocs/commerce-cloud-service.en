@@ -2,6 +2,7 @@
 user-guide-title: Commerce Getting Started Guide
 user-guide-description: Learn about managing your Adobe Commerce application in the Experience Cloud infrastructure.
 product: magento
+type: Documentation
 ---
 
 # Commerce Getting Started Guide {#start}
