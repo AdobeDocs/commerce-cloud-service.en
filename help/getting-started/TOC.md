@@ -1,9 +1,10 @@
 ---
-user-guide-title: Getting Started with Adobe Commerce
+user-guide-title: Commerce Getting Started Guide
+user-guide-description: Learn about managing your Adobe Commerce application in the Experience Cloud infrastructure.
 product: magento
 ---
 
-# Getting Started with Adobe Commerce {#start}
+# Commerce Getting Started Guide {#start}
 
 - [Welcome to Adobe Commerce Management](commerce-start.md)
 - [Onboarding](onboarding.md)
