@@ -6,7 +6,7 @@ Thumbs.db
 
 # VS-generated files #
 ######################
-adobe-paas.code-workspace
+*.code-workspace
 .vscode/spellright.dict
 
 # Packages #
