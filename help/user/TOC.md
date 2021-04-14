@@ -8,7 +8,6 @@ type: Documentation
 # Magento on Adobe Experience Cloud {#user}
 
 - [Commerce Management Guide](magento-platform.md)
-- [Getting started](../getting-started/commerce-start.md)
 - [Architecture](magento-platform-architecture.md)
 - Environments {#environments}
   - [Environments](configure/environments.md)
