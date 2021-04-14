@@ -1,8 +1,8 @@
 ---
 title: Backup database
 description: Step through the process of backing up your Magento database.
+exl-id: b5159bec-68ff-4995-bbc6-ad9296ad175f
 ---
-
 # Backup
 
 The backup and recovery approach uses a high-availability architecture combined with full-system backups. The backups replicate each Commerce Program—all data, code, and assets—across each AWS or Azure Availability Zone.
