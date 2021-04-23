@@ -3,7 +3,7 @@ title: Adobe Commerce Overview
 description: Learn about the new self-service features of the Commerce program UI and build and deploy a Magento store in minutes.
 exl-id: 1a05a3dc-577e-40c4-bdfb-cfddfd833754,7de7ec68-e1e1-42b7-8810-a3039bf7e992,d3c715f2-6d24-4c2f-951c-1a5bad397724
 ---
-# Getting Started with Adobe Commerce
+# Introduction to Adobe Commerce
 
 <table style="table-layout:fixed">
   <tr>
@@ -20,14 +20,18 @@ exl-id: 1a05a3dc-577e-40c4-bdfb-cfddfd833754,7de7ec68-e1e1-42b7-8810-a3039bf7e99
       </div><em>Set up your development environment and test the CLI.</em><br>
     </td>
     <td>
-      <a href="../user/monitor/performance.md"><img alt="Tools" src="../assets/card-store.png"></a>
+      <a href="../user/commerce-management.md"><img alt="Tools" src="../assets/card-store.png"></a>
       <div>
-      <a href="../user/monitor/performance.md"><strong>Monitor your store</strong></a>
-      </div><em>Learn how to access activity logs and set up performance monitoring.</em><br>
+      <a href="../user/commerce-management.md"><strong>Configure your store</strong></a>
+      </div><em>Continue with a deeper dive into Commerce Program configuration.</em><br>
     </td>
   </tr>
 </table>
 
->[!NOTE]
->
->The Adobe Commerce Management guide assumes that you have some working knowledge and understanding of the Magento Commerce application.
+## Magento Commerce guides {#magento-guides}
+
+The Adobe Commerce guides assume that you have some working knowledge and understanding of the Magento Commerce application. You can refer to the Magento Commerce Developer and User guides below:
+
+- [Magento Commerce Developer Guides](https://devdocs.magento.com)
+
+- [Magento Commerce User Guides](https://docs.magento.com/user-guide)

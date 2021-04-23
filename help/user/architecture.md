@@ -19,4 +19,9 @@ The Commerce platform architecture is built on Ethos-Kubernetes and Adobe Cloud 
   - Git management and activity logs
   - Performance monitoring
 
+  See the [Cloud Manager documentation][].
+
 - **Magento Commerce**—
+
+<!-- link definitions -->
+[Cloud Manager documentation]: https://www.adobe.io/apis/experiencecloud/cloud-manager.html

@@ -7,8 +7,8 @@ type: Documentation
 
 # Magento on Adobe Experience Cloud {#user}
 
-- [Commerce Management Guide](magento-platform.md)
-- [Architecture](magento-platform-architecture.md)
+- [Commerce Management Guide](commerce-management.md)
+- [Architecture](architecture.md)
 - Environments {#environments}
   - [Environments](configure/environments.md)
 - Pipelines {#pipelines}
