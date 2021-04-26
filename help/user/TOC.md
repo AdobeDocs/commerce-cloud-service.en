@@ -16,7 +16,7 @@ type: Documentation
   - [Deployment](cicd/deployment.md)
 - Storage {#storage}
   - [Backup and Recovery](storage/backup-and-recovery.md)
-- Monitor your store {#monitor}
+- Analysis {#monitor}
   - [Activity](monitor/activity.md)
   - [Logs](monitor/logs.md)
   - [Performance monitoring](monitor/performance.md)
