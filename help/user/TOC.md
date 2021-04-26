@@ -1,5 +1,5 @@
 ---
-user-guide-title: Adobe Commerce Management Guide
+user-guide-title: Commerce Management Guide
 user-guide-description: Learn how to manage the Commerce application in Experience Cloud infrastructure.
 product: magento
 type: Documentation
@@ -7,7 +7,7 @@ type: Documentation
 
 # Magento on Adobe Experience Cloud {#user}
 
-- [Commerce Management Guide](commerce-management.md)
+- [Commerce Management](commerce-management.md)
 - [Architecture](architecture.md)
 - Environments {#environments}
   - [Environments](configure/environments.md)
