@@ -13,6 +13,6 @@ type: Documentation
 - [Tour the Commerce Program](program-tour.md)
 - [Access the Git repository](git-repository.md)
 - [Create an Environment](create-environment.md)
-- [Create a Production Pipeline](create-pipeline.md)
+- [Set up a Pipeline](create-pipeline.md)
 - [Build and Deploy your Store](build-and-deploy-store.md)
 - [Monitor your Commerce Program](monitor-program.md)
