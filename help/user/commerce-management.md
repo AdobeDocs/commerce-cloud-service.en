@@ -20,7 +20,7 @@ Adobe Commerce is on a fully managed hosting platform that provides a **self-ser
 
 ## The New Adobe Commerce Experience
 
-Use the [Commerce Getting Started guide](../getting-started/commerce-start.md) to set up your new Commerce program and begin managing your Commerce application in a cloud-native environment.
+Use the Commerce Getting Started guide to set up your new Commerce program and begin managing your Commerce application in a cloud-native environment.
 
 ## Magento Commerce guides {#magento-guides}
 
