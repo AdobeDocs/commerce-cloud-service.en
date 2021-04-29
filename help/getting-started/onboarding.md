@@ -15,9 +15,9 @@ The _Admin Console_ provides pre-defined roles that can be assigned at the Comme
 
 The following table lists the available Commerce roles and the jobs they can perform:
 
-Role | Jobs | 
---- | ---
-**Business Owner** | <ul><li>Manage user access</li><li>Approve production deployments</li><li>Override failures</li></ul>
-**Program Manager** | <ul><li>Manage user access</li><li>Monitor activities</li><li>Manage failures</li></ul>
-**Deployment Manager** | <ul><li>Manages deployment operations</li><li>Manage staging and production deployments</li><li>Edit CI/CD Pipelines</li><li>Retrieve Git repository credentials</li><li>Manage failures</li></ul>
-**Developer** | <ul><li>Develop and test custom application code</li><li>Retrieve Git repository credentials</li><li>Monitor build status</li><li>Troubleshoot errors and failures</li></ul>
+| Role | Jobs | 
+| ---- | ---- |
+| **Business Owner** | <ul><li>Manage user access</li><li>Approve production deployments</li><li>Override failures</li></ul> |
+| **Program Manager** | <ul><li>Manage user access</li><li>Monitor activities</li><li>Manage failures</li></ul> |
+| **Deployment Manager** | <ul><li>Manages deployment operations</li><li>Manage staging and production deployments</li><li>Edit CI/CD Pipelines</li><li>Retrieve Git repository credentials</li><li>Manage failures</li></ul> |
+| **Developer** | <ul><li>Develop and test custom application code</li><li>Retrieve Git repository credentials</li><li>Monitor build status</li><li>Troubleshoot errors and failures</li></ul> |
