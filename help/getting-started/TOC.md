@@ -16,3 +16,4 @@ type: Documentation
 - [Set up a Pipeline](create-pipeline.md)
 - [Build and Deploy your Store](build-and-deploy-store.md)
 - [Monitor your Commerce Program](monitor-program.md)
+- [Dive deeper with Commerce Management](https://experienceleague.corp.adobe.com/docs/magento-paas/user/commerce-management.html)
