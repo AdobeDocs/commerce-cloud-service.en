@@ -1,8 +1,14 @@
-# Magento Commerce on AEC
+# Adobe Commerce on AEC
 
-This site contains the latest Magento developer documentation for Skyline for Magento.
+This site contains the latest developer documentation for Commerce on AEC, powered by  Magento.
 
-We welcome contributions from our community and from Adobe employees outside the documentation teams. 
+We welcome contributions from our community and from Adobe employees outside the documentation teams.
+
+Staging URLs:
+
+- [Commerce Getting Started](https://experienceleague.corp.adobe.com/docs/magento-paas/start/commerce-start.html)
+- [Commerce Management Guide](https://experienceleague.corp.adobe.com/docs/magento-paas/user/commerce-management.html)
+
 
 ## Adobe Open Source Code of Conduct
 
