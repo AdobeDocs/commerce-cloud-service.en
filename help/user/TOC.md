@@ -9,6 +9,7 @@ type: Documentation
 
 - [Commerce Management](commerce-management.md)
 - [Architecture](architecture.md)
+- [Getting Started](https://experienceleague.corp.adobe.com/docs/magento-paas/start/commerce-start.html)
 - Environments {#environments}
   - [Environments](configure/environments.md)
 - Pipelines {#pipelines}
