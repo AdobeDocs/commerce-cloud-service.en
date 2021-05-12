@@ -1,15 +1,15 @@
 ---
 title: Commerce Overview
-description: Learn about building, deploying, and managing Magento on Adobe Experience Cloud.
+description: Learn about building, deploying, and managing Commerce on Adobe Experience Cloud.
 exl-id: 0a7aae26-ad6a-41f3-b10c-5ccce3869700,3531a0e2-d7ac-4bf4-a14b-4cbe5314b6f2
 ---
-# Adobe Commerce Management Guide
+# Commerce on Experience Cloud
 
 ![Banner](../assets/banner-hex-violet.png)
 
-## Commerce on Adobe Experience Cloud Infrastructure
+## Commerce on Experience Cloud Infrastructure
 
-Adobe Commerce is on a fully managed hosting platform that provides a **self-service** approach to building, deploying, and managing your Magento Commerce application in a cloud-native environment. From the Adobe Commerce Program portal, you control:
+Commerce is on a fully managed hosting platform that provides a **self-service** approach to building, deploying, and managing your Magento Commerce application in a cloud-native environment. From the Commerce Program portal, you control:
 
 - Performance monitoring
 - Environment access and controls
@@ -18,13 +18,13 @@ Adobe Commerce is on a fully managed hosting platform that provides a **self-ser
 - Self-service stack configurations
 - Multi-application support and micro-services
 
-## The New Adobe Commerce Experience
+## The New Commerce Experience
 
 Use the [Commerce Getting Started guide](../getting-started/commerce-start.md) to set up your new Commerce program and begin managing your Commerce application in a cloud-native environment.
 
 ## Magento Commerce guides {#magento-guides}
 
-The Adobe Commerce guides assume that you have some working knowledge and understanding of the Magento Commerce application. You can refer to the Magento Commerce Developer and User guides below:
+The Commerce guides assume that you have some working knowledge and understanding of the Magento Commerce application. You can refer to the Magento Commerce Developer and User guides below:
 
 - [Magento Commerce Developer Guides](https://devdocs.magento.com)
 
