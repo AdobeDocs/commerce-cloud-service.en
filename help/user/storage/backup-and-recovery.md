@@ -1,6 +1,6 @@
 ---
 title: Backup database
-description: Step through the process of backing up your Magento database.
+description: Step through the process of backing up your Commerce database.
 exl-id: b5159bec-68ff-4995-bbc6-ad9296ad175f
 ---
 # Backup
@@ -9,7 +9,7 @@ The backup and recovery approach uses a high-availability architecture combined 
 
 In addition to the redundancy of the high-availability architecture, you can schedule incremental backups or perform a backup on demand. By default, backups are scheduled to run every hour.
 
-After a 24-hour period, we retain the backups according to the following schedule:
+After a 24-hour period, the infrastructure retains the backups according to the following schedule:
 
 | Time Period         | Backup Retention Policy |
 | ------------------- | ----------------------- |
@@ -19,11 +19,11 @@ After a 24-hour period, we retain the backups according to the following schedul
 | Weeks 8 through 12  | One bi-weekly backup    |
 | Weeks 12 through 22 | One backup per month    |
 
-Magento creates the backup using TBD.
+Commerce creates the backup using TBD.
 
 ## Recover backup
 
 There are two ways to recover backups:
 
-- manual recovery
-- automated recovery
+- Manual
+- Automated

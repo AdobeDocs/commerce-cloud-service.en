@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Commerce
-description: Learn about the new self-service features of the Commerce program UI and build and deploy a Magento store in minutes.
+description: Learn about the new self-service features of the Commerce program UI and build and deploy a Commerce store in minutes.
 exl-id: 1a05a3dc-577e-40c4-bdfb-cfddfd833754,7de7ec68-e1e1-42b7-8810-a3039bf7e992,d3c715f2-6d24-4c2f-951c-1a5bad397724
 ---
 # Getting Started with Commerce

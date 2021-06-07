@@ -11,4 +11,4 @@ Placeholder for environment concepts.
 
 >[!NOTE]
 >
->You must create a Production and Staging environment before you can configure a production pipeline.
+>Create a Production and Staging environment before configuring a production pipeline.

@@ -1,11 +1,11 @@
 ---
 title: Pipelines
-description: An introduction to pipeline management with Cloud Manager UI for Magento.
+description: An introduction to pipeline management with Cloud Manager UI for Commerce.
 exl-id: 6d08f838-3d78-4948-a285-61672d424dd1
 ---
 # Pipelines
 
-A pipeline automates the build and deploy process and the unit and performance testing process.
+A pipeline automates the build and deploy process and the unit and performance testing process. There are three types:
 
 -  Build-only
 -  Deploy-only
