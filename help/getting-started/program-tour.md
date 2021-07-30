@@ -12,12 +12,8 @@ A Commerce _program_ contains a code repository, the latest Commerce images, and
 **To add a Commerce program:**
 
 1. From the Cloud Manager **Programs & Products** card view, click [!UICONTROL **Add program**] to create a Commerce program.
-
 1. Choose [!UICONTROL **Adobe Commerce**] for your new program and continue through the steps.
-
 1. Provide a [!UICONTROL **Program name**] and select the [!UICONTROL **Set up for production**] objective.
-
-1. 
 
 ## Program overview
 
