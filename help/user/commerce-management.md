@@ -9,23 +9,23 @@ exl-id: 0a7aae26-ad6a-41f3-b10c-5ccce3869700,3531a0e2-d7ac-4bf4-a14b-4cbe5314b6f
 
 ## Commerce on Experience Cloud Infrastructure
 
-Commerce is on a fully managed hosting platform that provides a **self-service** approach to building, deploying, and managing your Magento Commerce application in a cloud-native environment. From the Commerce Program portal, you control:
+Commerce on AEC is a fully managed hosting platform that provides a **self-service** approach to building, deploying, and managing your Commerce application (powered by Magento) in a cloud-native environment. From the Commerce Program portal, you control:
 
-- Performance monitoring
 - Environment access and controls
 - CICD Pipeline optimization and scheduling
 - Capacity management with autoscale tooling
 - Self-service stack configurations
+- Performance monitoring
 - Multi-application support and micro-services
 
 ## The New Commerce Experience
 
-Use the [Commerce Getting Started guide](../getting-started/commerce-start.md) to set up your new Commerce program and begin managing your Commerce application in a cloud-native environment.
+Use the [Commerce Getting Started guide](../getting-started/commerce-start.md) to set up your new Cloud Manager program and begin managing your Commerce application in a cloud-native environment.
 
-## Magento Commerce guides {#magento-guides}
+## Commerce guides {#commerce-guides}
 
-The Commerce guides assume that you have some working knowledge and understanding of the Magento Commerce application. You can refer to the Magento Commerce Developer and User guides below:
+The Commerce guides assume that you have some working knowledge and understanding of the Commerce application powered by Magento. You can refer to the Commerce Developer and User guides below:
 
-- [Magento Commerce Developer Guides](https://devdocs.magento.com)
+- [Commerce Developer Guides](https://devdocs.magento.com)
 
-- [Magento Commerce User Guides](https://docs.magento.com/user-guide)
+- [Commerce User Guides](https://docs.magento.com/user-guide)

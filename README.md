@@ -1,6 +1,6 @@
-# Adobe Commerce on AEC
+# Commerce on Adobe Experience Cloud
 
-This site contains the latest developer documentation for Commerce on AEC, powered by  Magento.
+This site contains the latest developer documentation for Commerce on Experience Cloud, powered by Magento.
 
 We welcome contributions from our community and from Adobe employees outside the documentation teams.
 
