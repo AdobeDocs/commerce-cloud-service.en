@@ -7,9 +7,9 @@ type: Documentation
 
 # Commerce on Experience Cloud {#user}
 
-- [Commerce on AEC](commerce-management.md)
+- [Commerce on AEC](overview.md)
 - [Architecture](architecture.md)
-- [Getting Started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/commerce-start.html)
+- [Getting Started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.html)
 - Environments {#environments}
   - [Environments](configure/environments.md)
 - Pipelines {#pipelines}

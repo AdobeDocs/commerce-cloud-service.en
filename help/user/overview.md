@@ -1,7 +1,6 @@
 ---
 title: Commerce Overview
 description: Learn about building, deploying, and managing Commerce on Adobe Experience Cloud.
-exl-id: 0a7aae26-ad6a-41f3-b10c-5ccce3869700,3531a0e2-d7ac-4bf4-a14b-4cbe5314b6f2
 ---
 # Commerce on Experience Cloud
 
@@ -20,7 +19,7 @@ Commerce on AEC is a fully managed hosting platform that provides a **self-servi
 
 ## The New Commerce Experience
 
-Use the [Commerce Getting Started guide](../getting-started/commerce-start.md) to set up your new Cloud Manager program and begin managing your Commerce application in a cloud-native environment.
+Use the [Commerce Getting Started guide](../getting-started/overview.md) to set up your new Cloud Manager program and begin managing your Commerce application in a cloud-native environment.
 
 ## Commerce guides {#commerce-guides}
 
