@@ -1,7 +1,6 @@
 ---
 title: Commerce Command-line Tools
 description: Use the Commerce command-line tools to manage programs, environments, and pipelines for Commerce on AEC.
-exl-id: 368490cc-d97c-4ef0-8292-75c38cb3fe60
 ---
 # Command-line tools
 

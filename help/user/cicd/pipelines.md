@@ -1,7 +1,6 @@
 ---
 title: Pipelines
 description: An introduction to pipeline management with Cloud Manager UI for Commerce.
-exl-id: 6d08f838-3d78-4948-a285-61672d424dd1
 ---
 # Pipelines
 

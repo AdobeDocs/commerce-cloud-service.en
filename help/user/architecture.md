@@ -1,7 +1,6 @@
 ---
 title: Architecture for Commerce on AEC
 description: Describes the architecture for Commerce on the Adobe cloud infrastructure.
-exl-id: 0dd3bd1b-e530-4436-b6c6-90f9f508e8a6
 ---
 
 # Architecture for Commerce on AEC

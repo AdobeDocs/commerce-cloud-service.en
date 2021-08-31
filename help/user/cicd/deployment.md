@@ -1,7 +1,6 @@
 ---
 title: Build and Deploy Process
 description: Learn about the build and deploy process for Commerce on AEC.
-exl-id: 6e98f6ac-5b35-4c36-9eea-f1dfe223364b
 ---
 # Build and Deploy Process
 

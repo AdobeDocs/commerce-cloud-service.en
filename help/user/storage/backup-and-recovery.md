@@ -1,7 +1,6 @@
 ---
 title: Backup database
 description: Step through the process of backing up your Commerce database.
-exl-id: b5159bec-68ff-4995-bbc6-ad9296ad175f
 ---
 # Backup
 
