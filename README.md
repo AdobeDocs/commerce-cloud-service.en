@@ -6,8 +6,8 @@ We welcome contributions from our community and from Adobe employees outside the
 
 Staging URLs:
 
-- [Commerce Getting Started](https://experienceleague.corp.adobe.com/docs/magento-paas/start/commerce-start.html)
-- [Commerce Management Guide](https://experienceleague.corp.adobe.com/docs/magento-paas/user/commerce-management.html)
+- [Commerce Getting Started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/commerce-start.html)
+- [Commerce Management Guide](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/user/commerce-management.html)
 
 
 ## Adobe Open Source Code of Conduct

@@ -5,4 +5,4 @@ description: Learn how to review activity and monitor your Commerce program.
 
 # Monitor your Commerce Program
 
-Next step: [Learn how to manage Commerce on Experience Cloud](https://experienceleague.corp.adobe.com/docs/magento-paas/user/commerce-management.html)
+Next step: [Learn how to manage Commerce on Experience Cloud](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/user/commerce-management.html)

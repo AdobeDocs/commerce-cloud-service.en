@@ -9,7 +9,7 @@ type: Documentation
 
 - [Commerce on AEC](commerce-management.md)
 - [Architecture](architecture.md)
-- [Getting Started](https://experienceleague.corp.adobe.com/docs/magento-paas/start/commerce-start.html)
+- [Getting Started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/commerce-start.html)
 - Environments {#environments}
   - [Environments](configure/environments.md)
 - Pipelines {#pipelines}

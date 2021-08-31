@@ -3,7 +3,7 @@ cloud: Experience Cloud
 type: Documentation
 solution: Adobe Commerce
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/magento-paas.en
+git-repo: https://github.com/AdobeDocs/commerce-cloud-service.en
 index: no
 ---
 

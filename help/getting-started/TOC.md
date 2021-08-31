@@ -16,4 +16,4 @@ type: Documentation
 - [Set up a pipeline](create-pipeline.md)
 - [Build and deploy your store](build-and-deploy-store.md)
 - [Monitor your program](monitor-program.md)
-- [Manage Commerce on Experience Cloud](https://experienceleague.corp.adobe.com/docs/magento-paas/user/commerce-management.html)
+- [Manage Commerce on Experience Cloud](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/user/commerce-management.html)
