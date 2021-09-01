@@ -21,5 +21,5 @@ type: Documentation
   - [Activity](monitor/activity.md)
   - [Logs](monitor/logs.md)
   - [Performance monitoring](monitor/performance.md)
-- Developer tools {#resources}
+- Developer tools {#dev-tools}
   - [CLI](develop/cli.md)

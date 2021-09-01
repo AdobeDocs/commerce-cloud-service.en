@@ -4,7 +4,7 @@ description: Use the Commerce command-line tools to manage programs, environment
 ---
 # Command-line tools
 
-Add information here about the tools available for development.
+There are multiple command-line tools available. TBD
 
 ## Cloud Manager CLI tool
 

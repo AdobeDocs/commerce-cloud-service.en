@@ -20,9 +20,11 @@ The Commerce platform architecture, built on Ethos-Kubernetes and Adobe Cloud te
   - **PHP**—command-line capabilities
   - Secrets management
 
-- **Skyline Cloud Controller**—
+  See the [Kubernetes Infrastructure documentation][k8s].
 
-- [!DNL **AWS Managed Services**]—Provides a high-availability operational structure that includes the following services required to support Commerce.
+- **Skyline Provisioning Framework and Cloud Controller**—A provisioning framework manages the resources defined in a Kubernetes cluster and the cloud controller provides a platform that manages the application deployment on an ETHOS infrastructure.
+
+- **[!DNL AWS Managed Services]**—Provides a high-availability operational structure that includes the following services required to support Commerce:
 
   - **Aurora**—A fault-tolerant, relational database compatible with MySQL.
   - **Elasticsearch**—Powerful, multi-tenant search engine.
@@ -34,7 +36,7 @@ The Commerce platform architecture, built on Ethos-Kubernetes and Adobe Cloud te
 
 ## Software
 
-- **Cloud Manager**—Cloud Manager provides a basis for the new Commerce Program UI and includes self-service mechanisms for the following:
+- **Cloud Manager**—Cloud Manager provides a basis for the new Commerce program UI and includes self-service mechanisms for the following:
 
   - Environment access, variables, and controls
   - CICD Pipeline optimization and scheduling
@@ -52,9 +54,9 @@ The Commerce platform architecture, built on Ethos-Kubernetes and Adobe Cloud te
   - [New Relic][]—Software analytics service for analyzing Commerce interactions, such as database queries, customer transactions, and application dependency and event monitoring.
   - [SendGrid][]—SMTP proxy service provides email authentication and reputation monitoring.
 
-
 <!-- link definitions -->
 [Cloud Manager documentation]: https://www.adobe.io/apis/experiencecloud/cloud-manager.html
 [Fastly]: https://www.fastly.com
+[k8s]: https://developers.corp.adobe.com/adobe-platform/k8s-infrastructure/docs/index.md
 [New Relic]: https://newrelic.com
 [SendGrid]: https://sendgrid.com

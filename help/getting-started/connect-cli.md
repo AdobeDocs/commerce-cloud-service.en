@@ -5,37 +5,47 @@ description: Set up your development environment with the required command-line 
 
 # Set up local development
 
-Adobe Commerce environments are Read Only. You can write and test code in your local environment using the command line. Install the following tools before continuing:
+Adobe Commerce environments are Read Only. You can write and test code on your local machine using the command line. Install the following tools before continuing:
 
 - [Node.js version 14, 12, or 10](https://nodejs.org/en/download/package-manager/)
 - [Adobe I/O Extensible CLI (AIO)](https://github.com/adobe/aio-cli)
 - [Cloud Manager plugin for AIO](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
+Step through the following sections to gather your credentials; use your credentials to create a configuration file; and set default values for your local development environment.
+
 ## Gather credentials
 
-Before accessing the Cloud Manager tool and Commerce repository from the command line, you must add a REST API for a server-to-server Service Account integration to your project. After this one-time setup, you do not have to authenticate again.
+Your development _project_ is a collection of products and services for customizing your application. Before accessing the Cloud Manager tool from the command line, you must add a REST API for a Service Account (server-to-server) integration to your project.
+
+The Service Account credentials contain a Client ID and secret, Technical Account ID,  Organization ID, and public key. These credentials are used to authenticate requests to the Cloud Manager API. After this one-time setup, you do not have to add this service and authentication again.
 
 **To add a service account integration**:
 
-1. Log in to the Developer Console for your organization. (Location advice TBD)
-1. Select the project. Optionally, you can create a project.
+1. Log in to the _Developer Console_ for your organization. (Location advice TBD)
+
+1. Select a project. Optionally, you can create a project.
+
 1. Click **[!UICONTROL Add API]**.
+
 1. Select **[!UICONTROL Experience Cloud]**, choose **[!UICONTROL Cloud Manager]**, and click **[!UICONTROL Next]**.
+
 1. Select the server-to-server **[!UICONTROL Service Account]** integration.
-1. Select Option 1 and **[!UICONTROL Generate keypair]** to generate a keypair and download the configuration file that contains a copy of your private key.
-1. Click Next.
+
+1. Select **[!UICONTROL Option 1: Generate keypair]** to generate a keypair and download the configuration file that contains a copy of your private key.
+
+1. Click **[!UICONTROL Next]**.
+
 1. Select the **[!UICONTROL Deployment Manager]** product profile. (Advisement TBD)
+
 1. Click **[!UICONTROL Save configured API]**.
 
-The Service Account credentials contain a Client ID and secret, Technical Account ID,  Organization ID, and public key that are used to authenticate requests to Cloud Manager API.
+## Create a configuration file
 
-## Connect the Cloud Manager API
-
-You connect to the Cloud Manager API using the files that you downloaded while creating the service account integration in the _Gather credentials_ section.
+You connect to the Cloud Manager API using the files that you downloaded while adding the Service Account integration in the _Gather credentials_ section. The ZIP file includes the `certificate_pub.cert` and `private.key` files.
 
 **To create a configuration file for CLI integration**:
 
-1. Create a file named `config.json` and save in your local `.config` folder.
+1. Create a file named `config.json` and save in your local `config` folder.
 
 1. Open `config.json` and add the following:
 
@@ -53,12 +63,93 @@ You connect to the Cloud Manager API using the files that you downloaded while c
     }
     ```
 
-    Fill in the String values with the values from your credentials. From the project overview in the Developer console, click the **[!UICONTROL Service Account (JWT)]** under the _[!UICONTROL Credentials]_ section.
+    Fill in the string values with your corresponding credentials.
+    
+   >[!TIP]
+   >
+   >To find your credentials, select your project in the Developer console. In your project overview, click the **[!UICONTROL Service Account (JWT)]** under the _Credentials_ section.
+
 
 1. Save the `config.json` file.
 
-To connect Cloud Manager API:
+1. Add the `certificate_pub.cert` and `private.key` files to the same `config` folder.
 
-1. TBD
+1. Set the default configuration file.
 
-Next step: [Create a default environment](create-environment.md)
+   ```bash
+   aio config:set ims.contexts.aio-cli-plugin-cloudmanager config/config.json --file --json
+   ```
+
+1. Set the private key.
+
+   ```bash
+   aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key config/private.key --file
+   ```
+
+## Set default environment values
+
+The following steps set your organization, program, and environment IDs in the configuration file.
+
+1. Set your organization URL.
+
+   ```bash
+   aio config:set cloudmanager.base_url  https://cloudmanager-dev.tenant.io
+   ```
+
+1. Verify the CLI and find your program ID.
+
+   ```bash
+   aio cloudmanager:list-programs
+   ```
+
+   Note your program ID from the response:
+
+   ```terminal
+   Program Id  Name                  Enabled 
+   00001       Program 1             true    
+   00002       Program 2             true 
+   ```
+
+1. Set the default program ID.
+
+   ```bash
+   aio config:set cloudmanager_programid [PROGRAM-ID]
+   ```
+
+1. Find your environment ID. A default environment has been provided during the program initialization.
+
+   ```bash
+   aio cloudmanager:program:list-environments
+   ```
+
+   Note your environment ID from the response:
+
+   ```terminal
+   Environment Id Name            Type Description
+   100001         my-environment  dev  This is a test environment.
+   ```
+
+1. Set the following default environment ID.
+
+   ```bash
+   aio config:set cloudmanager_environmentid [ENVIRONMENT-ID]
+   ```
+
+1. Verify the Cloud Manager settings.
+
+   ```bash
+   aio config:list | grep "cloudmanager_"
+   ```
+
+   Sample response:
+
+   ```terminal
+   cloudmanager_programid: "00002",
+   cloudmanager_environmentid: "100001"
+   ```
+
+>[!TIP]
+>
+>The next step helps you to understand what an environment is and how you can customize an environment using variables.
+>
+>**Next step**: [Create a default environment](create-environment.md)

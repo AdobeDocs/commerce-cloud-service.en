@@ -7,4 +7,10 @@ description: Create a development environment and learn about images and environ
 
 An _environment_ is a single cluster of virtual machines.
 
-Next step: [Set up a non-production pipeline](create-pipeline.md)
+>[!IMPORTANT]
+>
+>State the difference between a git branch and an environment.
+
+>[!TIP]
+>
+>**Next step**: [Set up a non-production pipeline](create-pipeline.md)

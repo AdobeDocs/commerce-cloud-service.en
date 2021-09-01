@@ -4,7 +4,7 @@ description: Use your credentials to access Cloud Manager and set up a Commerce 
 ---
 # Onboarding to Experience Cloud
 
-After Adobe provisions an organization for your company, you as a Business Owner, or your designated System Administrator, should receive an email confirming your Administrative rights. Follow the directions in the email to access the Adobe Admin Console.
+After Adobe provisions an organization (tenant) for your company, you as a Business Owner, or your designated System Administrator, should receive an email confirming your Administrative rights. To access the Adobe Admin Console, follow the instructions in the email.
 
 ## Access management with Admin Console
 
@@ -20,7 +20,7 @@ The following table lists the available Commerce roles and the jobs they can per
 
 ### Add a user to your organization
 
-Every user must have an Adobe ID and must be a member of your Organization before you can grant them access to your Commerce Program. 
+Every user must have an Adobe ID and must be a member of your Organization before you can grant them access to your Commerce program. 
 
 **To add a user**:
 
@@ -30,7 +30,12 @@ Every user must have an Adobe ID and must be a member of your Organization befor
 1. Select the **Adobe Commerce** product, and then select the profile for this user.
 1. Click **[!UICONTROL Save]** to add the new user to your team.
 
-Next step: [Tour the Commerce Program UI](tour-program.md)
+>[!TIP]
+>
+>Now you can access the Cloud Manager tool and begin your Commerce program.
+>
+>**Next step**: [Tour the Commerce program UI](tour-program.md)
+
 
 <!-- link definitions -->
 [Admin Console]: https://adminconsole.adobe.com/

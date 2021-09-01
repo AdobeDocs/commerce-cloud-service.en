@@ -4,7 +4,7 @@ description: Step through the process of backing up your Commerce database.
 ---
 # Backup
 
-The backup and recovery approach uses a high-availability architecture combined with full-system backups. The backups replicate each Commerce Program—all data, code, and assets—across each AWS or Azure Availability Zone.
+The backup and recovery approach uses a high-availability architecture combined with full-system backups. The backups replicate each Commerce program—all data, code, and assets—across each AWS or Azure Availability Zone.
 
 In addition to the redundancy of the high-availability architecture, you can schedule incremental backups or perform a backup on demand. By default, backups are scheduled to run every hour.
 

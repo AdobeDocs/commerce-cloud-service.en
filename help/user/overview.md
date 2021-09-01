@@ -8,7 +8,7 @@ description: Learn about building, deploying, and managing Commerce on Adobe Exp
 
 ## Commerce on Experience Cloud Infrastructure
 
-Commerce on AEC is a fully managed hosting platform that provides a **self-service** approach to building, deploying, and managing your Commerce application (powered by Magento) in a cloud-native environment. From the Commerce Program portal, you control:
+Commerce on AEC is a fully managed hosting platform that provides a **self-service** approach to building, deploying, and managing your Commerce application (powered by Magento) in a cloud-native environment. From the Commerce program portal, you control:
 
 - Environment access and controls
 - CICD Pipeline optimization and scheduling
