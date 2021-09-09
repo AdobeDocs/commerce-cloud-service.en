@@ -36,6 +36,5 @@ Every user must have an Adobe ID and must be a member of your Organization befor
 >
 >**Next step**: [Tour the Commerce program UI](tour-program.md)
 
-
 <!-- link definitions -->
 [Admin Console]: https://adminconsole.adobe.com/

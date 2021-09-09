@@ -22,7 +22,7 @@ A Commerce _program_ contains a code repository, the latest Commerce images, and
 
 ## Program overview
 
-Your new program opens with the _[!UICONTROL Program overview]_ page, which is a summary board that displays the status of your resources and provides opportunities to learn and do more. Program provisioning takes time; after the setup is complete, you should see a suggested activity space and three main tiles: **[!UICONTROL Environments]**, **[!UICONTROL Pipelines]**, and **[!UICONTROL Useful Resources]**.
+Your new program opens with the _[!UICONTROL Program Overview]_ page, which is a summary board that displays the status of your resources and provides opportunities to learn and do more. Program provisioning takes time; after the setup is complete, you should see a suggested activity space and three main tiles: **[!UICONTROL Environments]**, **[!UICONTROL Pipelines]**, and **[!UICONTROL Useful Resources]**.
 
 ![Commerce overview](../assets/program-newdashboard.png)
 
