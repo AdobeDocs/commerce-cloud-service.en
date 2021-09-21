@@ -10,7 +10,7 @@ The _Git repository_ contains the source files to build and customize your Comme
 
 1. In the program UI, click **[!UICONTROL {} Access Repo Info]** in the _Access Git & Pull Code_ suggested action space, or in the _Pipelines_ tile.
 
-1. Click **[!UICONTROL Generate password]**. This generates a personal access token (PAT) and is required to access the repository from the command line.
+1. Click **[!UICONTROL Generate password]**, which generates a personal access token (PAT) and is required to access the repository from the command line.
 1. Make note of the Username, Password, and URL.
 1. Copy the Git command line.
 1. Open a terminal and paste the Git command line. You can append a new directory name for your program.
@@ -46,6 +46,14 @@ All Commerce repositories include essential files for application configuration:
 | `composer.json`           | Fetches the Commerce code and the necessary configuration scripts to build and deploy the application. |
 | `composer.lock`           | Stores version dependencies for every package. |
 | `magento-vars.php`        | A file used to define multiple stores and sites using variables. |
+
+## Managing Git
+
+There are no AIO CLI commands for managing your Git code repository. You can use standard Git commands for maintaining your cloned instance. Use the following command to verify your local and remote configuration:
+
+```bash
+git remote show origin
+```
 
 >[!TIP]
 >

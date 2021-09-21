@@ -88,7 +88,7 @@ You connect to the Cloud Manager API using the files that you downloaded while a
 
 ## Set default environment values
 
-The following steps set your organization, program, and environment IDs in the configuration file.
+You can set local default values for program ID and environment ID to avoid repeating them with each command. The following steps set your organization base URL, program, and environment IDs in the configuration file.
 
 1. Set your organization URL.
 
@@ -150,6 +150,6 @@ The following steps set your organization, program, and environment IDs in the c
 
 >[!TIP]
 >
->The next step helps you to understand what an environment is and how you can customize an environment using variables.
+>The next step helps you to understand what an environment is and how you can customize an environment using the command line.
 >
 >**Next step**: [Create a default environment](create-environment.md)

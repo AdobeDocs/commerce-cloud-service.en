@@ -22,4 +22,5 @@ type: Documentation
   - [Logs](monitor/logs.md)
   - [Performance monitoring](monitor/performance.md)
 - Developer tools {#dev-tools}
-  - [CLI](develop/cli.md)
+  - [Cloud Manager CLI](develop/cli.md)
+  - [ece-tools package](develop/ece-tools.md)

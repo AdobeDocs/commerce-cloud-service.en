@@ -4,7 +4,7 @@ description: Use your credentials to access Cloud Manager and set up a Commerce 
 ---
 # Onboarding to Experience Cloud
 
-After Adobe provisions an organization (tenant) for your company, you as a Business Owner, or your designated System Administrator, should receive an email confirming your Administrative rights. To access the Adobe Admin Console, follow the instructions in the email.
+After Adobe provisions an Experience Cloud organization (tenant) for your company, you as a Business Owner, or your designated System Administrator, should receive an email confirming your Administrative rights. To access the Adobe Admin Console, follow the instructions in the email.
 
 ## Access management with Admin Console
 
@@ -12,11 +12,11 @@ You control user access to your organization using the _Admin Console_. As a Bus
 
 The following table lists the available Commerce roles and the jobs they can perform:
 
-| Role | Jobs | 
-| ---- | ---- |
-| **Business Owner** | <ul><li>Manage user access</li><li>Approve production deployments</li><li>Override failures</li></ul> |
-| **Deployment Manager** | <ul><li>Manages deployment operations</li><li>Manage staging and production deployments</li><li>Edit CI/CD Pipelines</li><li>Retrieve Git repository credentials</li><li>Manage failures</li></ul> |
-| **Developer** | <ul><li>Develop and test custom application code</li><li>Retrieve Git repository credentials</li><li>Monitor build status</li><li>Troubleshoot errors and failures</li></ul> |
+| Adobe Role | Jobs | Commerce Role |
+| ---- | ---- | ---- |
+| **Business Owner** | <ul><li>Manage user access</li><li>Approve production deployments</li><li>Override failures</li></ul> | |
+| **Deployment Manager** | <ul><li>Manages deployment operations</li><li>Manage staging and production deployments</li><li>Edit CI/CD Pipelines</li><li>Retrieve Git repository credentials</li><li>Manage failures</li></ul> | System Administrator |
+| **Developer** | <ul><li>Develop and test custom application code</li><li>Retrieve Git repository credentials</li><li>Monitor build status</li><li>Troubleshoot errors and failures</li></ul> | |
 
 ### Add a user to your organization
 
@@ -29,6 +29,12 @@ Every user must have an Adobe ID and must be a member of your Organization befor
 1. Fill out the user's email, name, and SSO ID.
 1. Select the **Adobe Commerce** product, and then select the profile for this user.
 1. Click **[!UICONTROL Save]** to add the new user to your team.
+
+## Access the Developer Console
+
+The Adobe Developer Console gives you access to developer resources, such as APIs and services, that help you build, integrate, and extend Adobe products. You must have a _Developer_ role or _System Administrator_ role to access the Adobe Developer Console for your organization.
+
+Later in the Getting Started workflow, it is important for you to have access to the Developer console so that you can set up your credentials.
 
 >[!TIP]
 >
