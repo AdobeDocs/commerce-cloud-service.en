@@ -8,23 +8,33 @@ description: Learn about building, deploying, and managing Commerce on Adobe Exp
 
 ## Commerce on Experience Cloud Infrastructure
 
-Commerce on AEC is a fully managed hosting platform that provides a **self-service** approach to building, deploying, and managing your Commerce application (powered by Magento) in a cloud-native environment. From the Commerce program portal, you control:
+Commerce on Adobe Experience Cloud (AEC) is a fully managed hosting platform that provides a **self-service** approach to building, deploying, and managing your Commerce application (powered by Magento) in a cloud-native environment. From the program portal, you control:
 
 - Environment access and controls
 - CICD Pipeline optimization and scheduling
 - Capacity management with autoscale tooling
 - Self-service stack configurations
 - Performance monitoring
+- Domain management
 - Multi-application support and micro-services
 
 ## The New Commerce Experience
+
+Monolithic applications are resource-intensive and difficult to scale and serve rapidly. By leveraging the Adobe Experience Cloud ecosystem, Commerce customers gain unparalleled acceess to SaaS-based microservices that are rich, intelligent and performant.
+
+Commerce on AEC leverages Unified Shell to provide productivity features and a consistent interface elements to enhance the AEC user experience. Unified Shell delivers the application within an iframe on the `experience.adobe.com` URL path.
 
 Use the [Commerce Getting Started guide](../getting-started/overview.md) to set up your new Cloud Manager program and begin managing your Commerce application in a cloud-native environment.
 
 ## Commerce guides {#commerce-guides}
 
-The Commerce guides assume that you have some working knowledge and understanding of the Commerce application powered by Magento. You can refer to the Commerce Developer and User guides below:
+The Commerce on Experience Cloud guides assume that you have some working knowledge and understanding of the Commerce application powered by Magento. You can refer to the Commerce Developer and User guides below:
 
-- [Commerce Developer Guides](https://devdocs.magento.com)
+- [Commerce Developer Guides](https://devdocs.magento.com)\*
 
 - [Commerce User Guides](https://docs.magento.com/user-guide)
+
+>[!TIP]
+>
+>\*
+>When reviewing the developer documentation, keep in mind that the Cloud guide does not apply to Commerce on Experience Cloud.
