@@ -20,15 +20,15 @@ Commerce on Adobe Experience Cloud (AEC) is a fully managed hosting platform tha
 
 ## The New Commerce Experience
 
-Monolithic applications are resource-intensive and difficult to scale and serve rapidly. By leveraging the Adobe Experience Cloud ecosystem, Commerce customers gain unparalleled acceess to SaaS-based microservices that are rich, intelligent and performant.
+Monolithic applications are resource-intensive and difficult to scale and serve rapidly. By leveraging the Adobe Experience Cloud ecosystem, Commerce customers gain unparalleled access to SaaS-based microservices that are rich, intelligent, and performant.
 
-Commerce on AEC leverages Unified Shell to provide productivity features and a consistent interface elements to enhance the AEC user experience. Unified Shell delivers the application within an iframe on the `experience.adobe.com` URL path.
+Commerce on AEC leverages Unified Shell to provide productivity features and consistent interface elements to enhance the AEC user experience. Unified Shell delivers the application within an iframe on the `experience.adobe.com` URL path.
 
 Use the [Commerce Getting Started guide](../getting-started/overview.md) to set up your new Cloud Manager program and begin managing your Commerce application in a cloud-native environment.
 
 ## Commerce guides {#commerce-guides}
 
-The Commerce on Experience Cloud guides assume that you have some working knowledge and understanding of the Commerce application powered by Magento. You can refer to the Commerce Developer and User guides below:
+The Commerce on Experience Cloud guide assumes that you have some working knowledge and understanding of the Commerce application powered by Magento. You can refer to the Commerce Developer and User guides below:
 
 - [Commerce Developer Guides](https://devdocs.magento.com)\*
 
