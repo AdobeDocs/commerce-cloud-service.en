@@ -7,7 +7,7 @@ description: Set up your development environment with the required command-line 
 
 Adobe Commerce environments are Read Only. You can write and test code on your local machine using the command line. Install the following tools before continuing:
 
-- [Node.js version 14, 12, or 10](https://nodejs.org/en/download/package-manager/)
+- [Node.js version 14 or 12](https://nodejs.org/en/download/package-manager/)
 - [Adobe I/O Extensible CLI (AIO)](https://github.com/adobe/aio-cli)
 - [Cloud Manager plugin for AIO](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
