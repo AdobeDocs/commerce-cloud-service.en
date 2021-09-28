@@ -23,4 +23,5 @@ type: Documentation
   - [Performance monitoring](monitor/performance.md)
 - Developer tools {#dev-tools}
   - [Commerce CLI](develop/cli.md)
+  - [CLI Authentication](develop/cli-authentication.md)
   - [ece-tools package](develop/ece-tools.md)

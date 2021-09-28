@@ -7,7 +7,6 @@ description: Create a development environment and learn about images and environ
 
 An _environment_ is a single cluster of virtual machines that support services for customizing, testing, and deploying the Commerce application. Your program can have one production environment, one staging environment, and one or more development (non-production) environments. As a part of the initial program setup, Cloud Manager creates a _development_ environment to deploy a pre-built Commerce image from the code repository.
 
-
 Your Cloud Manager Program Overview page and Environments page contain a list of environment names with their storefront URL, region, and status. Access the (...) shortcut menu to the right of any environment to choose **[!UICONTROL View Details]**, **[!UICONTROL Download Logs]**, or **[!UICONTROL Delete]**.
 
 ## Environment details
