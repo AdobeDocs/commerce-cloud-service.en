@@ -11,18 +11,21 @@ The _Git repository_ contains the source files to build and customize your Comme
 1. In the program UI, click **[!UICONTROL {} Access Repo Info]** in the _Access Git & Pull Code_ suggested action space, or in the _Pipelines_ tile.
 
 1. Click **[!UICONTROL Generate password]**, which generates a personal access token (PAT) and is required to access the repository from the command line.
+
 1. Make note of the Username, Password, and URL.
+
 1. Copy the Git command line.
-1. Open a terminal and paste the Git command line. You can append a new directory name for your program.
+
+1. Open a terminal and paste the contents from the Git command-line field. You can append a new directory name for your program.
 
    ```bash
-   $ git clone https://git.cloudmanager.adobe.com/tenant/programName-programID-uk30899/ MyProgram
+   $ git clone https://git.cloudmanager.adobe.com/tenant/programName-programID-ukID/ MyProgramName
    ```
 
-1. When prompted, enter your Username and Password.
+1. If prompted, enter your Username and Password copied from the **[!UICONTROL {} Access Repo Info]** popup.
 
    ```terminal
-   Cloning into 'DocsAug20'...
+   Cloning into 'MyProgramName'...
    Username for 'https://git.cloudmanager.adobe.com': <user-org-com>
    Password for 'https://user-org-com@git.cloudmanager.adobe.com': <password>
    ...

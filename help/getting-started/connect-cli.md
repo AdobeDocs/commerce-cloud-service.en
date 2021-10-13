@@ -33,18 +33,18 @@ As noted in the Cloud Manager plugin readme file, there are two methods of authe
 
 ## Recap
 
-At this point in the Getting Started workflow, you have completed the following:
+In the Getting Started workflow, you have completed the following:
 
 - toured your program UI in Cloud Manager
 - cloned your project to a local machine
 - installed the CLI tools
-- authenticated and verified the connection between your local environment and the remote environment
+- authenticated and verified the connection between your local environment and the remote organization
 
 Now you are ready to interact with your Commerce application.
 
 >[!TIP]
 >
->The next step helps you to understand what an environment is and how you can customize an environment using the command line.
+>The next step helps you to understand what an environment is and how to view details.
 >
 >**Next step**: [Create a default environment](create-environment.md)
 

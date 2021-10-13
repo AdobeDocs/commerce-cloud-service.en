@@ -49,4 +49,5 @@ The _Pipelines_ tab is available after you create a pipeline.
 >**Next step**: [Access and Clone the Git repository](clone-git-repo.md)
 
 <!-- link definitions -->
+
 [cm-dash]: https://my.cloudmanager.adobe.com

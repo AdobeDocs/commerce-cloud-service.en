@@ -3,15 +3,25 @@ title: Create an environment
 description: Create a development environment and learn about images and environment types.
 ---
 
-# Create a default environment
+# Create an environment
 
-An _environment_ is a single cluster of virtual machines that support services for customizing, testing, and deploying the Commerce application. Your program can have one production environment, one staging environment, and one or more development (non-production) environments. As a part of the initial program setup, Cloud Manager creates a _development_ environment to deploy a pre-built Commerce image from the code repository.
+An _environment_ is a single cluster of virtual machines that support services for customizing, testing, and deploying the Commerce application. Your program can have one production environment, one staging environment, and one or more development (non-production) environments.
 
-Your Cloud Manager Program Overview page and Environments page contain a list of environment names with their storefront URL, region, and status. Access the (...) shortcut menu to the right of any environment to choose **[!UICONTROL View Details]**, **[!UICONTROL Download Logs]**, or **[!UICONTROL Delete]**.
+As a part of the initial program setup, you must create a _development_ environment to deploy a pre-built Commerce image from the code repository.
 
-## Environment details
+**To create an environment**:
 
-You can view details about an environment using the Cloud Manager program UI or the CLI.
+1. In the program UI, click **[!UICONTROL Add Environment]**.
+
+1. Select **Development** from the _[!UICONTROL Environment type]_ list.
+
+1. Add an environment _name_ and _description_, choose a _[!UICONTROL Cloud region]_, and click **[!UICONTROL Save]**.
+
+1. The new environment is in the _[!UICONTROL Environments]_ list and displays the _Coming Up_ status.
+
+## Details view
+
+Your Cloud Manager Program Overview page and Environments page contain a list of environment names with their storefront URL, region, and status. Access the (...) shortcut menu to the right of any environment to choose **[!UICONTROL View Details]**, **[!UICONTROL Download Logs]**, or **[!UICONTROL Delete]**. You can view details about an environment using the Cloud Manager program UI or the CLI.
 
 ### View environment details in program
 
