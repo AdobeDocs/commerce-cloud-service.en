@@ -17,7 +17,6 @@ Commerce on AEC uses Unified Shell to provide productivity features and consiste
 - Capacity management with autoscale tooling
 - Self-service stack configurations
 - Performance monitoring
-- Domain management
 - Multi-application support and micro-services
 
 Use the [Commerce Getting Started guide](../getting-started/overview.md) to set up your new Cloud Manager program and begin managing your Commerce application in a cloud-native environment.
