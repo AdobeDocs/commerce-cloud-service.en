@@ -1,5 +1,5 @@
 ---
-title: Performance monitoring
+title: Performance Monitoring
 description: Learn about Performance monitoring for Commerce on Adobe Experience Cloud.
 ---
 # Performance monitoring

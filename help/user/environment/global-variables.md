@@ -1,5 +1,5 @@
 ---
-title: Global variables
+title: Global Variables
 description: List of variables that control actions in the deployment process.
 ---
 

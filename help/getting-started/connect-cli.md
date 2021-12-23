@@ -13,7 +13,7 @@ Adobe Commerce environments are Read Only. However, you can write and test code 
 
 ## Authentication
 
-As noted in the Cloud Manager plugin readme file, there are two methods of authentication. The _browser-based_ method uses your personal permissions, and the [_service account_ method](../user/develop/cli-authentication.md#service-account-authentication) is ideal for automation tasks. For the Getting Started workflow, use the AIO tool to launch the browser-based authentication process.
+As noted in the Cloud Manager plugin readme file, there are two methods of authentication. The _browser-based_ method uses your personal permissions, and the [_service account_ method](../user/dev-tools/aio-cli-authentication.md#service-account-authentication) is ideal for automation tasks. For the Getting Started workflow, use the AIO tool to launch the browser-based authentication process.
 
 **To log in with your Adobe ID**:
 
@@ -35,7 +35,7 @@ As noted in the Cloud Manager plugin readme file, there are two methods of authe
 
 In the Getting Started workflow, you have completed the following:
 
-- toured your program UI in Cloud Manager
+- toured your program interface in Cloud Manager
 - cloned your project to a local machine
 - installed the CLI tools
 - authenticated and verified the connection between your local environment and the remote organization

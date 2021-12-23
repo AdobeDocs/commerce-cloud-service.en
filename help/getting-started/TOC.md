@@ -14,7 +14,7 @@ type: Documentation
 - [Set up local development](connect-cli.md)
 - [Create an environment](create-environment.md)
 - [Access the storefront](access-storefront.md)
-- [Set up a pipeline](create-pipeline.md)
+- [Create a pipeline](create-pipeline.md)
 - [Build and deploy your store](build-and-deploy-store.md)
 - [Monitor your program](monitor-program.md)
 - [Manage Commerce on Experience Cloud](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/user/overview.html)

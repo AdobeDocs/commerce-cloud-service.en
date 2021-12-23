@@ -4,7 +4,7 @@ description: Use the Commerce command-line tools to manage programs, environment
 ---
 # Commerce command-line tools
 
-Commerce provides a command-line interface to perform installation and configuration tasks. Because Commerce on Experience Cloud has a Cloud Manager program UI, some of those commands are now included in the Cloud Manager plugin.
+Commerce provides a command-line tool to help with installation and configuration tasks. Because Commerce on Experience Cloud has a Cloud Manager program interface, some of those commands are now included in the Cloud Manager plugin.
 
 As stated in the Getting started workflow, you must install the following tools to begin using the CLI:
 
@@ -24,11 +24,11 @@ aio cloudmanager:list-programs
 
 >[!TIP]
 >
->If you are experiencing problems with the CLI, see [Command-line authentication](cli-authentication.md) or try updating the CLI tools.
+>If you are experiencing problems with the CLI, see [Command-line authentication](aio-cli-authentication.md) or try updating the Adobe I/O CLI tools.
 
 ## Commerce commands
 
-Commerce commands are part of the Cloud Manager plugin. Use the following to list the available Commerce commands:
+Commerce commands are part of the Cloud Manager plugin. The `bin/magento` commands are essential to interacting with the Commerce application. Use the following to list the available `bin/magento` commands:
 
 ```bash
 aio cloudmanager:commerce:bin-magento
@@ -64,9 +64,14 @@ Enabling maintenance mode takes your site offline and allows write access for up
 - `disable`—Disable maintenance mode. Site becomes available.
 - `status`—Verify that maintenance mode is active or not active, and view a list of exempt IP addresses from an allowlist.
 
+>[!TIP]
+>
+>Although the commands available to Commerce on Experience Cloud are limited, you can see the comprehensive list of [`bin/magento` commands][bin-cli] in the _Commerce developer reference_.
+
 <!-- link definitions -->
 
 [aio-cli]: https://github.com/adobe/aio-cli
 [cm-plugin]: https://github.com/adobe/aio-cli-plugin-cloudmanager
 [node]: https://nodejs.org/en/download/package-manager/
 [import-dump]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-import.html
+[bin-cli]: https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html

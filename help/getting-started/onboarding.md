@@ -40,7 +40,7 @@ Later in the Getting Started workflow, it is important for you to have access to
 >
 >Now you can access the Cloud Manager tool and begin your Commerce program.
 >
->**Next step**: [Tour the Commerce program UI](tour-program.md)
+>**Next step**: [Tour the Commerce program interface](tour-program.md)
 
 <!-- link definitions -->
 [Admin Console]: https://adminconsole.adobe.com/

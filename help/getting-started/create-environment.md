@@ -11,7 +11,7 @@ As a part of the initial program setup, you must create a _development_ environm
 
 **To create an environment**:
 
-1. In the program UI, click **[!UICONTROL Add Environment]**.
+1. In the Program Overview _Environments_ section, click **[!UICONTROL Add Environment]**.
 
 1. Select **Development** from the _[!UICONTROL Environment type]_ list.
 
@@ -21,7 +21,7 @@ As a part of the initial program setup, you must create a _development_ environm
 
 ## Details view
 
-Your Cloud Manager Program Overview page and Environments page contain a list of environment names with their storefront URL, region, and status. Access the (...) shortcut menu to the right of any environment to choose **[!UICONTROL View Details]**, **[!UICONTROL Download Logs]**, or **[!UICONTROL Delete]**. You can view details about an environment using the Cloud Manager program UI or the CLI.
+Your Cloud Manager Program Overview page and Environments page contain a list of environment names with their storefront URL, region, and status. Access the (...) shortcut menu to the right of any environment to choose **[!UICONTROL View Details]**, **[!UICONTROL Download Logs]**, or **[!UICONTROL Delete]**. You can view details about an environment using the Cloud Manager program interface or the CLI.
 
 ### View environment details in program
 

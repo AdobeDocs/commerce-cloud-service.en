@@ -1,8 +1,8 @@
 ---
-title: Backup database
+title: Backup Database
 description: Step through the process of backing up your Commerce database.
 ---
-# Backup
+# Backup and recovery
 
 The backup and recovery approach uses a high-availability architecture combined with full-system backups. The backups replicate each Commerce program—all data, code, and assets—across each AWS or Azure Availability Zone.
 

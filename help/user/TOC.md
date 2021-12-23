@@ -9,19 +9,20 @@ type: Documentation
 
 - [Commerce on AEC](overview.md)
 - [Architecture](architecture.md)
-- [Getting Started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.html)
-- Environments {#environments}
-  - [Environments](configure/environments.md)
-- Pipelines {#pipelines}
-  - [Pipelines](cicd/pipelines.md)
-  - [Deployment](cicd/deployment.md)
+- [Getting started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.html)
+- Environment {#environment}
+  - [Development environments](environment/types.md)
+- Configure {#configure}
+  - [Global variables](environment/global-variables.md)
+- CI/CD {#cicd}
+  - [Manage pipelines](cicd/manage-pipelines.md)
 - Storage {#storage}
-  - [Backup and Recovery](storage/backup-and-recovery.md)
-- Analysis {#monitor}
+  - [Backup and recovery](storage/backup-and-recovery.md)
+- Monitor {#monitor}
   - [Activity](monitor/activity.md)
   - [Logs](monitor/logs.md)
-  - [Performance monitoring](monitor/performance.md)
+  - [Performance](monitor/performance.md)
 - Developer tools {#dev-tools}
-  - [Commerce CLI](develop/cli.md)
-  - [CLI Authentication](develop/cli-authentication.md)
-  - [ece-tools package](develop/ece-tools.md)
+  - [CLI authentication](dev-tools/aio-cli-authentication.md)
+  - [Commerce CLI](dev-tools/commerce-cli.md)
+  - [Ece-tools package](dev-tools/ece-tools.md)

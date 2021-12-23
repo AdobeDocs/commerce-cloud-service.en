@@ -4,11 +4,11 @@ description: Clone the git code repository and apply credentials.
 ---
 # Access and Clone the Git Repository
 
-The _Git repository_ contains the source files to build and customize your Commerce application. Before you can clone the repository, you must install a [Git client][git]. A username, password generator, and repository URL are provided in your Cloud Manager program UI.
+The _Git repository_ contains the source files to build and customize your Commerce application. Before you can clone the repository, you must install a [Git client][git]. A username, password generator, and repository URL are provided in your Cloud Manager program interface.
 
 **To clone the Git repository**:
 
-1. In the program UI, click **[!UICONTROL {} Access Repo Info]** in the _Access Git & Pull Code_ suggested action space, or in the _Pipelines_ tile.
+1. In the program interface, click **[!UICONTROL {} Access Repo Info]** in the _Access Git & Pull Code_ suggested action space, or in the _Pipelines_ tile.
 
 1. Click **[!UICONTROL Generate password]**, which generates a personal access token (PAT) and is required to access the repository from the command line.
 
@@ -58,9 +58,15 @@ There are no AIO CLI commands for managing your Git code repository. You can use
 git remote show origin
 ```
 
+As a best practice, create a branch to begin working with the code.
+
+```bash
+git checkout -b my-newbranch
+```
+
 >[!TIP]
 >
->At this point, you have cloned your new repository and downloaded the Commerce code. You are not connected to an environment. The next step helps you through setting up your CLI tools and connecting to the Cloud Manager program.
+>You have cloned your new repository and downloaded the Commerce code; however, you are not connected to an environment. The next step helps you to set up your CLI tools and connect to the Cloud Manager program.
 >
 >**Next step**: [Set up and connect the CLI tools](connect-cli.md)
 

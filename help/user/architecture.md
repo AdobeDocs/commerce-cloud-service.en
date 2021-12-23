@@ -11,7 +11,7 @@ The Commerce platform architecture, built on Ethos-Kubernetes and Adobe Experien
 
 ## Experience Cloud
 
-- **Cloud Manager**—Cloud Manager provides a basis for the new Commerce program UI and includes self-service mechanisms for the following:
+- **Cloud Manager**—Cloud Manager provides a basis for the new Commerce program interface and includes self-service mechanisms for the following:
 
   - Environment access, variables, and controls
   - CICD Pipeline optimization and scheduling

@@ -1,5 +1,5 @@
 ---
-title: Command-line authentication
+title: Command-line Authentication
 description: Learn how to set up a service account integration for constructing automation tasks.
 ---
 
