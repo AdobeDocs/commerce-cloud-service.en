@@ -13,3 +13,7 @@ Placeholder for environment concepts.
 >[!NOTE]
 >
 >You must create a Production and Staging environment before configuring a production pipeline.
+
+Testing snippets:
+
+{{call-support}}
