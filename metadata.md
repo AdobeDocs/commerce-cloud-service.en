@@ -1,7 +1,7 @@
 ---
 cloud: Experience Cloud
 type: Documentation
-solution: Adobe Commerce
+solution: Commerce
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-cloud-service.en
 index: no
