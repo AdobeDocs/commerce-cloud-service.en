@@ -11,7 +11,6 @@ The License Owner is the person in your business or finance organization that ma
 To quickly onboard your project, so you can begin developing your site for live deployment, you must complete required setup and onboarding tasks. Typically, the License Owner begins the process by securing Admin access and creating Technical Admin users that can help with setup, customization, and development work.
 
 If you need to change the License Owner on your account, you must contact your Adobe Commerce Customer Success Manager.
-Sign up for a Cloud account
-If you do not have an Adobe Commerce on cloud infrastructure account, contact Sales. We will create your account and send you a welcome email that provides instructions to access the project.
+Sign up for a Cloud account. If you do not have an Adobe Commerce on cloud infrastructure account, contact Sales. We create your account and send you a welcome email that provides instructions to access the project.
 
-The person who signs up for a Adobe Commerce on cloud infrastructure account is referred to as the License Owner.
+The person who signs up for an Adobe Commerce on cloud infrastructure account is referred to as the License Owner.

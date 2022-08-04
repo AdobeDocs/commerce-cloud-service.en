@@ -10,7 +10,7 @@ Use the [Commerce Getting Started guide](../getting-started/overview.md) to set 
 
 ## Commerce guides {#commerce-guides}
 
-The Commerce on Cloud infrstructure guide assumes that you have some working knowledge and understanding of the Commerce application powered by Magento. You can refer to the Commerce Developer and User guides below:
+The Commerce on Cloud infrastructure guide assumes that you have some working knowledge and understanding of the Commerce application powered by Magento. You can refer to the Commerce Developer and User guides below:
 
 - [Commerce Developer Guides](https://devdocs.magento.com)
 
