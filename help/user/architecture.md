@@ -1,26 +1,11 @@
 ---
-title: Architecture for Commerce on AEC
-description: Describes the architecture for Commerce on the Adobe cloud infrastructure.
+title: Architecture for Commerce on cloud infrastructure
+description: Describes the architecture for Commerce on the cloud infrastructure.
 ---
 
-# Architecture for Commerce on AEC
+# Commerce architecture
 
 The Commerce platform architecture, built on Ethos-Kubernetes and Adobe Experience Cloud technology, provides a cloud-native hosting environment with self-service capabilities.
-
-![Tech Stack](../assets/maci-stack.svg)
-
-## Experience Cloud
-
-- **Cloud Manager**—Cloud Manager provides a basis for the new Commerce program interface and includes self-service mechanisms for the following:
-
-  - Environment access, variables, and controls
-  - CICD Pipeline optimization and scheduling
-  - Activity and performance monitoring
-  - Git source repository access management
-
-    See the [Cloud Manager documentation][].
-
-- **Admin Console**—Control team access to the Commerce program and define roles.
 
 ## Tools and integrations
 
@@ -38,23 +23,10 @@ The Commerce platform architecture, built on Ethos-Kubernetes and Adobe Experien
   - **Redis**—(ElastiCache) session and search caching.
   - **S3**—Simple storage service that provides the option to store files and schedule imports/exports in a persistent, remote storage container that is version controlled, backed up, and encrypted.
 
-
-- **Ethos-Kubernetes**—Ethos-managed clusters and Kubernetes operators orchestrate the Commerce stack and provide a stateless, read-only environment including:
-
-  - **Contour**—ingress controller, load balancer with routing and SSL termination
-  - **NGINX**—web server with PHP binaries
-  - **PHP**—command-line capabilities
-  - Secrets management
-
-  See the [Kubernetes Infrastructure documentation][k8s].
-
 - **Git**—Each Commerce program uses a Git-based source repository.
 
-- **Skyline Provisioning Framework and Cloud Controller**—A provisioning framework manages the resources defined in a Kubernetes cluster and the cloud controller provides a platform that manages the application deployment on an ETHOS infrastructure.
-
 <!-- link definitions -->
-[Cloud Manager documentation]: https://www.adobe.io/apis/experiencecloud/cloud-manager.html
+
 [Fastly]: https://www.fastly.com
-[k8s]: https://developers.corp.adobe.com/adobe-platform/k8s-infrastructure/docs/index.md
 [New Relic]: https://newrelic.com
 [SendGrid]: https://sendgrid.com
