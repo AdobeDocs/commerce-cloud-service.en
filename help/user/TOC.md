@@ -9,7 +9,7 @@ type: Documentation
 
 - [Commerce](overview.md)
 - [Architecture](architecture.md)
-- [Getting started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/getting-started/overview.md)
+- [Getting started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 - Developer tools {#dev-tools}
   - [Ece-tools package](dev-tools/ece-tools.md)
 - Monitor {#monitor}
