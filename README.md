@@ -1,13 +1,4 @@
-# Commerce on Adobe Experience Cloud
-
-This site contains the latest developer documentation for Commerce on Experience Cloud, powered by Magento.
-
-Adobe welcomes contributions from the community and from Adobe employees outside the documentation teams.
-
-Staging URLs:
-
-- [Commerce Getting Started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.html)
-- [Commerce Management Guide](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/user/overview.html)
+# Commerce on Cloud
 
 ## Adobe Open Source Code of Conduct
 
