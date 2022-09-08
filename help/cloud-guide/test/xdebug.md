@@ -1,6 +1,6 @@
 ---
 title: Test
-description:
+description: This is a test file.
 ---
 
 # Configure Xdebug

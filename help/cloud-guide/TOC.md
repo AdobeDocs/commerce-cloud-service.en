@@ -8,7 +8,7 @@ type: Documentation
 # Commerce on Cloud Infrastructure {#cloud}
 
 + [Commerce](overview.md)
-+ Architecture {architecture}
++ Architecture {#architecture}
     + [Cloud infrastrucure](architecture/cloud-architecture.md)
 + [Getting started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Developer tools {#dev-tools}
