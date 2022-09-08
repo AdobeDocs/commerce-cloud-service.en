@@ -14,3 +14,9 @@ If you need to change the License Owner on your account, you must contact your A
 Sign up for a Cloud account. If you do not have an Adobe Commerce on cloud infrastructure account, contact Sales. We create your account and send you a welcome email that provides instructions to access the project.
 
 The person who signs up for an Adobe Commerce on cloud infrastructure account is referred to as the License Owner.
+
+**To do blah**:
+
+1. Change to the blah directory.
+
+1. Click start.
