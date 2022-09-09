@@ -9,7 +9,8 @@ type: Documentation
 
 + [Commerce](overview.md)
 + Architecture {#architecture}
-    + [Cloud infrastrucure](architecture/cloud-architecture.md)
+    + [Cloud infrastructure](architecture/cloud-architecture.md)
+    + [Split-tier architecture](architecture/split-tier-architecture.md)
 + [Getting started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Developer tools {#dev-tools}
     + [Ece-tools package](dev-tools/ece-tools.md)
