@@ -14,6 +14,18 @@ type: Documentation
 + [Getting started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Developer tools {#dev-tools}
     + [Ece-tools package](dev-tools/ece-tools.md)
++ Application {#app-config}
+    + [Configure application deployment](application/application-yaml.md)
+    + [PHP settings](application/php-settings.md)
+    + Properties {#properties}
+        + [Crons](application/crons-property.md)
+        + [Firewall (Starter only)](application/firewall-property.md)
+        + [Hooks](application/hooks-property.md)
+        + [Variables](application/variables.md)
+        + [Web](application/web-property.md)
+        + [Workers](application/workers.md)
+    + [Set cache for static files](application/set-cache.md)
++ Environment {#env-config}
 + Monitor {#monitor}
     + [Activity](monitor/activity.md)
     + [Logs](monitor/logs.md)
