@@ -18,6 +18,7 @@ type: Documentation
     + [Configure application deployment](application/application-yaml.md)
     + [PHP settings](application/php-settings.md)
     + Properties {#properties}
+        + [Application properties](application/properties.md)
         + [Crons](application/crons-property.md)
         + [Firewall (Starter only)](application/firewall-property.md)
         + [Hooks](application/hooks-property.md)
