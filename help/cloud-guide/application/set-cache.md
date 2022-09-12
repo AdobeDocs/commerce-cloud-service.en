@@ -13,20 +13,20 @@ The cache TTL (time-to-live) for your media and static files is set in the `.ma
 
 1. Specify the TTL time (in seconds) in the `web` section of the `.magento.app.yaml` file. You can add the `expires` key under `locations` or under `"/media"` and `"/static"`.
 
-    To prevent the cache from expiring, use the `expires: -1` key-value pair. See the following example:
+   To prevent the cache from expiring, use the `expires: -1` key-value pair. See the following example:
 
-    ```yaml
-    # The configuration of app when it is exposed to the web.
-    web:
-      locations:
-        "/media":
-          ...
-          expires: -1
+   ```yaml
+   # The configuration of app when it is exposed to the web.
+   web:
+     locations:
+       "/media":
+         ...
+         expires: -1
 
-        "/static":
-          ...
-          expires: -1
-      ```
+       "/static":
+         ...
+         expires: -1
+   ```
 
 1. Add, commit, and push your code changes.
 
