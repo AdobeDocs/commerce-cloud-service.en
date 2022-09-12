@@ -21,7 +21,7 @@ Use the following properties for further application configuration:
 - [Hooks](hooks-property.md) to customize shell commands for the build, deploy, and post-deploy phases
 - [Mounts](#mounts) to set paths
 - [Relationships](#relationships) to map services
-- [Variables](variables.md) to apply an environment variable for a specific Commerce version
+- [Variables](variables-property.md) to apply an environment variable for a specific Commerce version
 
 >[!NOTE]
 >

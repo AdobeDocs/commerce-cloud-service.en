@@ -12,9 +12,9 @@ The `.magento.app.yaml` has many default values, see [a sample `.magento.app.yam
 Use the `.magento.app.yaml` file to define the following configuration values:
 
 -  [Properties](properties.md)—Define property values for application instance.
--  [Variables](variables.md)—Review environment variables required for the application instance.
+-  [Variables](variables-property.md)—Review environment variables required for the application instance.
 -  [PHP Application](php-settings.md)—Configure runtime PHP options.
--  [Workers](workers.md)—Create a worker instance and understand background tasks.
+-  [Workers](workers-property.md)—Create a worker instance and understand background tasks.
 -  [Set Cache For Static Files](set-cache.md)—Set cache TTL for your media and static files.
 
 ## Configuration updates to Pro environments

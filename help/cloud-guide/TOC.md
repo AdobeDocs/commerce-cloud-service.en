@@ -21,9 +21,9 @@ type: Documentation
         + [Crons](application/crons-property.md)
         + [Firewall (Starter only)](application/firewall-property.md)
         + [Hooks](application/hooks-property.md)
-        + [Variables](application/variables.md)
+        + [Variables](application/variables-property.md)
         + [Web](application/web-property.md)
-        + [Workers](application/workers.md)
+        + [Workers](application/workers-property.md)
     + [Set cache for static files](application/set-cache.md)
 + Environment {#env-config}
 + Monitor {#monitor}
