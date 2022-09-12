@@ -1,6 +1,6 @@
 ---
 title: Hooks property
-description: See examples on how to configure the hooks property in the application configuration file.
+description: See examples on how to configure the hooks property in the Commerce application configuration file.
 ---
 
 # Hooks property

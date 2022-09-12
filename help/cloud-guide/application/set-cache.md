@@ -1,6 +1,6 @@
 ---
 title: Set cache for static files
-description: Learn to modify cache storage expiration 
+description: Learn to set cache storage options in the Commerce application configuration file.
 ---
 
 # Set cache for static files

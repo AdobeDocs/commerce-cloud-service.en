@@ -1,6 +1,6 @@
 ---
 title: Crons property
-description: See examples on how to configure the `crons` property in the application configuration file.
+description: See examples on how to configure the `crons` property in the Commerce application configuration file.
 ---
 
 # Crons property

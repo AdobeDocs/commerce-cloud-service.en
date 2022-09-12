@@ -33,5 +33,5 @@ type: Documentation
 + Storage {#storage}
     + [Backup and recovery](storage/backup-and-recovery.md)
 + Test {#test}
-    + [Xdebug](test/xdebug.md)
+    + [XDebug](test/xdebug.md)
 + [Release notes](release-notes/cloud-tools.md)

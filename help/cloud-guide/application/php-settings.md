@@ -1,6 +1,6 @@
 ---
 title: PHP settings
-description:
+description: Learn about the optimal PHP settings for Commerce application configuration in the cloud infrastructure.
 ---
 
 # PHP settings
@@ -112,4 +112,4 @@ For Pro projects, the following extensions require additional support to install
 
 >[!WARNING]
 >
->PHP compiled with debug is not supported and the Probe may conflict with XDebug or XHProf. Disable those extensions when enabling the Probe. The Probe conflicts with some PHP extensions like Pinba or IonCube.
+>PHP compiled with debug is not supported and the Probe may conflict with [!DNL XDebug] or [!DNL XHProf]. Disable those extensions when enabling the Probe. The Probe conflicts with some PHP extensions like Pinba or IonCube.

@@ -1,8 +1,27 @@
 ---
 title: Properties
-description:
+description: Use the property list as a reference when configurion the Commerce application for build and deploy to the cloud infrastructure.
 ---
-Use the following properties to build your application configuration file. The `name`, `type`, `disk`, and one `web` or `worker` block is required.
+
+# Properties for application configuration
+
+The `.magento.app.yaml` file uses properties to support the Commerce application. The following properties are required:
+
+- [Name](#name) for the application
+- [Type](#type-and-build) to set the base container image
+- [Disk](#disk) to define the persistent disk size
+- [Web](web-property.md) or [workers](workers-property.md) to handle external requests
+
+Use the following properties for further application configuration:
+
+- [Access](#access) to customize user roles
+- [Crons](crons-property.md) to update specs and schedule cron jobs
+- [Dependencies](#dependencies) to include additional dependencies
+- [Firewall (Starter only)](firewall-property.md) to control outbound traffic
+- [Hooks](hooks-property.md) to customize shell commands for the build, deploy, and post-deploy phases
+- [Mounts](#mounts) to set paths
+- [Relationships](#relationships) to map services
+- [Variables](variables.md) to apply an environment variable for a specific Commerce version
 
 >[!NOTE]
 >
@@ -66,20 +85,36 @@ hooks:
         composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
 ```
 
-## `access`
+## `dependencies`
 
-The `access` property indicates a minimum user role level that is allowed SSH access to the environments. The available user roles are:
+Enables you to specify dependencies that your application might need during the build process.
 
--  `admin`—Can change settings and execute actions in the environment. Also has _contributor_ and _viewer_ rights.
--  `contributor`—Can push code to this environment and branch from the environment. Also has _viewer_ rights.
--  `viewer`—Can view the environment only.
+Adobe Commerce supports dependencies on the following languages:
 
-The default user role is `contributor`, which restricts the SSH access from users with only _viewer_ rights. You can change the user role to `viewer` to allow SSH access for users with only _viewer_ rights:
+-  PHP
+-  Ruby
+-  Node.js
+
+Those dependencies are independent of the eventual dependencies of your application, and are available in the `PATH`, during the build process and in the runtime environment of your application.
+
+You can specify those dependencies as follows:
 
 ```yaml
-access:
-    ssh: viewer
+ruby:
+   sass: "~3.4"
+nodejs:
+   grunt-cli: "~0.3"
 ```
+
+## `disk`
+
+Defines the persistent disk size of the application in MB.
+
+```yaml
+disk: 5120
+```
+
+The minimal recommended disk size is 256MB. If you see the error `UserError: Error building the project: Disk size may not be smaller than 128MB`, increase the size to 256MB.
 
 ## `relationships`
 
@@ -104,19 +139,6 @@ relationships:
 
 See [Services](https://devdocs.magento.com/cloud/project/services.html) for a full list of currently supported service types and endpoints.
 
-## `web`
-
-
-## `disk`
-
-Defines the persistent disk size of the application in MB.
-
-```yaml
-disk: 5120
-```
-
-The minimal recommended disk size is 256MB. If you see the error `UserError: Error building the project: Disk size may not be smaller than 128MB`, increase the size to 256MB.
-
 ## `mounts`
 
 An object whose keys are paths relative to the root of the application. The mount is a writable area on the disk for files. The following is a default list of mounts configured in the `magento.app.yaml` file using the `volume_id[/subpath]` syntax:
@@ -139,35 +161,23 @@ The format for adding your mount to this list is as follows:
 -  `shared`—Shares a volume between your applications inside an environment.
 -  `disk`—Defines the size available for the shared volume.
 
-You can make the mount web accessible by adding it to the [`web`](#web) block of locations.
+You can make the mount web accessible by adding it to the [`web`](web-property.md) block of locations.
 
 >[!WARNING]
 >
 >Once your site has data, do not change the `subpath` portion of the mount name. This value is the unique identifier for the files area. If you change this name, you will lose all site data stored at the old location.
 
-## `dependencies`
+## `access`
 
-Enables you to specify dependencies that your application might need during the build process.
+The `access` property indicates a minimum user role level that is allowed SSH access to the environments. The available user roles are:
 
-Adobe Commerce supports dependencies on the following languages:
+-  `admin`—Can change settings and execute actions in the environment. Also has _contributor_ and _viewer_ rights.
+-  `contributor`—Can push code to this environment and branch from the environment. Also has _viewer_ rights.
+-  `viewer`—Can view the environment only.
 
--  PHP
--  Ruby
--  Node.js
-
-Those dependencies are independent of the eventual dependencies of your application, and are available in the `PATH`, during the build process and in the runtime environment of your application.
-
-You can specify those dependencies as follows:
+The default user role is `contributor`, which restricts the SSH access from users with only _viewer_ rights. You can change the user role to `viewer` to allow SSH access for users with only _viewer_ rights:
 
 ```yaml
-ruby:
-   sass: "~3.4"
-nodejs:
-   grunt-cli: "~0.3"
+access:
+    ssh: viewer
 ```
-
-## `hooks`
-
-## `crons`
-
-## `firewall`

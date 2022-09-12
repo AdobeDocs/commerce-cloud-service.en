@@ -1,7 +1,10 @@
 ---
-title: Variables
-description:
+title: Variables property
+description: Use the variables property to customize the build and deploy the application.
 ---
+
+# Variable property
+
 The following environment variables are included in the `.magento.app.yaml` file.
 
 Required for Adobe Commerce 2.2.x to 2.3.x:

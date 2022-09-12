@@ -1,9 +1,9 @@
 ---
 title: Workers
-description:
+description: Learn how to configure the workers property in the Commerce application configuration file.
 ---
 
-# Workers
+# Workers property
 
 You can define zero or multiple work instances for each application. A worker instance runs as a container, independent from the web instance and without a running Nginx instance. Also, you do not need to set up a web server on the worker instance (using Node.js or Go) because the router cannot direct public requests to the worker.
 

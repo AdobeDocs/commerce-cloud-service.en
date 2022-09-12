@@ -1,6 +1,6 @@
 ---
 title: Web property
-description: See examples on how to configure the web property in the application configuration file.
+description: See examples on how to configure the web property in the Commerce application configuration file.
 ---
 
 # Web property

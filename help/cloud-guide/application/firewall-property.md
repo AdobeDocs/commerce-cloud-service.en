@@ -1,6 +1,6 @@
 ---
 title: Firewall property
-description: See examples on how to configure the firewall property in the application configuration file.
+description: See examples on how to configure the firewall property in the Commerce application configuration file.
 ---
 
 # Firewall property
