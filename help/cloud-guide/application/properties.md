@@ -5,7 +5,7 @@ description: Use the property list as a reference when configurion the Commerce 
 
 # Properties for application configuration
 
-The `.magento.app.yaml` file uses properties to support the Commerce application. The following properties are required:
+The `.magento.app.yaml` file uses properties to manage environment support for the Commerce application. The following properties are required:
 
 - [Name](#name) for the application
 - [Type](#type-and-build) to set the base container image
