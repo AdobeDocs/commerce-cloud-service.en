@@ -9,7 +9,7 @@ description: Learn how to enable the Elasticsearch service for Adobe Commerce on
 
 {{elasticsearch-support}}
 
-For Adobe Commerce version 2.4.4 and later, see [Set up OpenSearch service](services-opensearch.md).
+For Adobe Commerce version 2.4.4 and later, see [Set up OpenSearch service](opensearch.md).
 
 - Elasticsearch performs quick and advanced searches on products in the product catalog
 - Elasticsearch Analyzers support multiple languages

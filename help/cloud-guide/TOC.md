@@ -30,11 +30,11 @@ type: Documentation
     + [Configure environment deployment](environment/environment-yaml.md)
 + Services {#service-config}
     + [Configure services](services/services-yaml.md)
-    + [Elasticsearch](services/services-elasticsearch.md)
-    + [MySQL](services/services-mysql.md)
-    + [OpenSearch](services/services-opensearch.md)
-    + [RabbitMQ](services/services-rabbitmq.md)
-    + [Redis](services/services-redis.md)
+    + [Elasticsearch](services/elasticsearch.md)
+    + [MySQL](services/mysql.md)
+    + [OpenSearch](services/opensearch.md)
+    + [RabbitMQ](services/rabbitmq.md)
+    + [Redis](services/redis.md)
 + Monitor {#monitor}
     + [Activity](monitor/activity.md)
     + [Logs](monitor/logs.md)
