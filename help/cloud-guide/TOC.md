@@ -27,12 +27,21 @@ type: Documentation
         + [Workers](application/workers-property.md)
     + [Set cache for static files](application/set-cache.md)
 + Environment {#env-config}
+    + [Configure environment deployment](environment/environment-yaml.md)
++ Services {#service-config}
+    + [Configure services](services/services-yaml.md)
+    + [Elasticsearch](services/services-elasticsearch.md)
+    + [MySQL](services/services-mysql.md)
+    + [OpenSearch](services/services-opensearch.md)
+    + [RabbitMQ](services/services-rabbitmq.md)
+    + [Redis](services/services-redis.md)
 + Monitor {#monitor}
     + [Activity](monitor/activity.md)
     + [Logs](monitor/logs.md)
     + [Performance](monitor/performance.md)
 + Storage {#storage}
     + [Backup and recovery](storage/backup-and-recovery.md)
+    + [Profile database queries](storage/profile-database-queries.md)
 + Test {#test}
     + [XDebug](test/xdebug.md)
 + [Release notes](release-notes/cloud-tools.md)

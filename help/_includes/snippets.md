@@ -1,5 +1,11 @@
 # Cloud snippets
 
+## Elasticsearch warning {#elasticsearch-support}
+
+>[!WARNING]
+>
+>Elasticsearch 7.11 and later is not supported for Adobe Commerce on cloud infrastructure. Adobe Commerce and Magento Open Source versions 2.4.4, 2.4.3-p2, and 2.3.7-p3 support the OpenSearch service. The on-premises installations continue to support Elasticsearch.
+
 ## Scenario-based deployment {#scenarios}
 
 >[!NOTE]
@@ -11,6 +17,26 @@
 >[!WARNING]
 >
 >Some **Pro projects** require a support ticket to update the route configuration in the `routes.yaml` file and the cron configuration in the `.magento.app.yaml` file. Adobe recommends updating and testing YAML configuration files in an Integration environment, then deploying changes to the Staging environment. If you discover that your configuration changes are not applied to Staging sites after you redeploy and do not see any related error messages in the log, then you **MUST** submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) that describes the attempted configuration changes. Include any updated YAML configuration files in the ticket.
+
+## Pro services support {#pro-update-service}
+
+>[!TIP]
+>
+>For Pro projects, you must submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project.
+
+## Service instruction {#service-instruction}
+
+Use the following instructions for service setup on Pro Integration environments and Starter environments, including the `master` branch.
+
+>[!NOTE]
+>
+>You must submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#support-tickets) to change the service configuration on Pro Production and Staging environments.
+
+## Service change {#change-service-version}
+
+>[!TIP]
+>
+>After initial service setup, you can change the software version for an installed service by updating the `services.yaml` and `.magento.app.yaml` configuration files. See [Change service version](/help/cloud-guide/services/services-yaml.md#change-service-version).
 
 ## Update to ece-tools {#ece-tools-package}
 
