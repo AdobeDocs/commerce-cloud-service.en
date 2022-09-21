@@ -1,8 +1,7 @@
 ---
 user-guide-title: Commerce on Cloud Infrastructure Guide
-user-guide-description: Learn how to manage the Commerce application on Cloud infrastructure.
+user-guide-description: Learn how to manage the Adobe Commerce application on cloud infrastructure.
 product: magento
-type: Documentation
 ---
 
 # Commerce on Cloud Infrastructure {#cloud}
