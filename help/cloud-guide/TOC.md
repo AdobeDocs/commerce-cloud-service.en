@@ -19,7 +19,7 @@ type: Documentation
     + [PHP settings](application/php-settings.md)
     + Properties {#properties}
         + [Application properties](application/properties.md)
-        + [Crons](application/crons-property.md)
+        + [Cron](application/crons-property.md)
         + [Firewall (Starter only)](application/firewall-property.md)
         + [Hooks](application/hooks-property.md)
         + [Variables](application/variables-property.md)
@@ -37,11 +37,12 @@ type: Documentation
     + [RabbitMQ](services/rabbitmq.md)
     + [Redis](services/redis.md)
 + Monitor {#monitor}
+    + [Logs](monitor/log-locations.md)
     + [Performance](monitor/performance.md)
 + Storage {#storage}
     + [Backup and recovery](storage/backup-and-recovery.md)
     + [Manage disk space](storage/manage-disk-space.md)
     + [Profile database queries](storage/profile-database-queries.md)
 + Test {#test}
-    + [XDebug](test/xdebug.md)
+    + [Xdebug](test/xdebug.md)
 + [Release notes](release-notes/cloud-tools.md)

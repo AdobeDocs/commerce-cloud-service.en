@@ -6,11 +6,14 @@
 >
 >Elasticsearch 7.11 and later is not supported for Adobe Commerce on cloud infrastructure. Adobe Commerce and Magento Open Source versions 2.4.4, 2.4.3-p2, and 2.3.7-p3 support the OpenSearch service. The on-premises installations continue to support Elasticsearch.
 
-## Scenario-based deployment {#scenarios}
+## Merge options {#merge-options}
 
->[!NOTE]
->
->With [!DNL ece-tools] 2002.1.0 and later, you can use the scenario-based deployment feature to customize the build, deploy, and post-deploy processes for your Adobe Commerce on cloud infrastructure project. See [Scenario-based deployment](https://devdocs.magento.com/cloud/deploy/scenario-based-deployment.html).
+By default, the deployment process overwrites all settings in the `env.php` file; however, you can choose to merge one or more values for a service configuration without overwriting all of the values.
+
+Set the `_merge` option to one of the following:
+
+-  `true`—**Merge** the configured service values with the environment variable values.
+-  `false`—**Overwrite** the configured service values with the environment variable values.
 
 ## Pro self-service warning {#pro-self-service-warning}
 
@@ -23,6 +26,18 @@
 >[!TIP]
 >
 >For Pro projects, you must submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project.
+
+## SCD timing {#scd-timing-warning}
+
+>[!WARNING]
+>
+>If you have issues with static content files in your application after deployment, such as missing custom theme files, increase the maximum expected execution time to 900 seconds or higher.
+
+## Scenario-based deployment {#scenarios}
+
+>[!NOTE]
+>
+>With [!DNL ece-tools] 2002.1.0 and later, you can use the scenario-based deployment feature to customize the build, deploy, and post-deploy processes for your Adobe Commerce on cloud infrastructure project. See [Scenario-based deployment](https://devdocs.magento.com/cloud/deploy/scenario-based-deployment.html).
 
 ## Service instruction {#service-instruction}
 
