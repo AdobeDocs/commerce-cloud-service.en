@@ -23,7 +23,7 @@ The `.magento.env.yaml` file contains two sections: `stage` and `log`. The `stag
 - `log`—Use the log section to configure [notifications](https://devdocs.magento.com/cloud/env/setup-notifications.html), including notification types and level of detail.
     - `slack`—Configure a message to send to a Slack bot.
     - `email`—Configure an email to send to one or more email recipients.
-    - [logging handlers](https://devdocs.magento.com/cloud/env/log-handlers.html)—Configure hardware and software application messages sent to a remote logging server.
+    - [logging handlers](../environment/log-handlers.md)—Configure hardware and software application messages sent to a remote logging server.
 
 ### Environment variables
 
