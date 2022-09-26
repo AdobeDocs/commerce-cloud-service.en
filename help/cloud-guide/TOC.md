@@ -32,7 +32,7 @@ product: magento
     + [Notifications](environment/set-up-notifications.md)
     + [Log handlers](environment/log-handlers.md)
     + [Environment variables](environment/variables-intro.md)
-    + Variable reference {env-variables}
+    + Variable reference {#env-variables}
         + [ADMIN](environment/variables-admin.md)
         + [MAGENTO_CLOUD](environment/variables-cloud.md)
         + [Global](environment/variables-global.md)

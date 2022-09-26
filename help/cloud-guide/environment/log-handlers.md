@@ -1,6 +1,6 @@
 ---
 title: Log handlers
-descriptions: Learn how to configure log handlers for Adobe Commerce on cloud infrastructure.
+description: Learn how to configure log handlers for Adobe Commerce on cloud infrastructure.
 ---
 
 # Log handlers

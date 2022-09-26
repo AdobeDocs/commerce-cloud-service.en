@@ -1,6 +1,6 @@
 ---
 title: Set up notifications
-description:
+description: Learn how to configure notifications for Adobe Commerce on cloud infrastructure environments.
 ---
 
 # Set up notifications
