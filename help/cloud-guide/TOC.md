@@ -28,7 +28,7 @@ product: magento
     + [Set cache for static files](application/set-cache.md)
 + Environment {#env-config}
     + [Working with variables](environment/working-with-variables.md)
-    + [Configure environment deployment](environment/magento-environment-yaml.md)
+    + [Configure environment deployment](environment/magento-env-yaml.md)
 + Services {#service-config}
     + [Configure services](services/services-yaml.md)
     + [Elasticsearch](services/elasticsearch.md)
