@@ -21,7 +21,7 @@ php ./vendor/bin/ece-tools list
 
 The `ece-tools` package contains commands to perform operations for the build, deploy, and post-deploy stages of launching your Adobe Commerce on cloud infrastructure application. For example, the `php ./vendor/bin/ece-tools build` command begins the application build process.
 
-By default, these `ece-tools` commands are in the [hooks property][hooks] of the `.magento.app.yaml` configuration file.
+By default, these `ece-tools` commands are in the [hooks property](../application/hooks-property.md) of the `.magento.app.yaml` configuration file.
 
 ## Docker configuration generator
 
@@ -29,7 +29,7 @@ The `ece-tools` package includes a dependency for the [magento/magento-cloud-doc
 
 ## Services, routes, and variables
 
-You can use the `ece-tools` package to display detailed information about the Base64-encoded [Cloud variables][cloudvar] used in any Cloud environment. The following command shows all services, routes, and variables.
+You can use the `ece-tools` package to display detailed information about the Base64-encoded [Cloud variables](../environment/variables-cloud.md) used in any Cloud environment. The following command shows all services, routes, and variables.
 
 ```bash
 php ./vendor/bin/ece-tools env:config:show
@@ -92,10 +92,8 @@ The `ece-tools` package includes a dependency for the [magento/magento-cloud-pat
 <!-- link definitions -->
 
 [Apply patches]: https://devdocs.magento.com/cloud/project/project-patch.html
-[cloudvar]: https://devdocs.magento.com/cloud/env/variables-cloud.html
 [docker]: https://devdocs.magento.com/cloud/docker/docker-development.html
 [ece-repo]: https://github.com/magento/ece-tools
-[hooks]: https://devdocs.magento.com/cloud/project/magento-app-properties.html#hooks
 [magento/magento-cloud-docker]: https://github.com/magento/magento-cloud-docker
 [magento/magento-cloud-patches]: https://github.com/magento/magento-cloud-patches
 [wizard]: https://devdocs.magento.com/cloud/deploy/smart-wizards.html

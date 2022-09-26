@@ -11,7 +11,7 @@ The MQF uses [RabbitMQ](https://www.rabbitmq.com/) as the messaging broker, whic
 
 >[!WARNING]
 >
->If you prefer using an existing AMQP-based service, like RabbitMQ, instead of relying on Adobe Commerce on cloud infrastructure to create it for you, use the [`QUEUE_CONFIGURATION`](https://devdocs.magento.com/cloud/env/variables-deploy.html#queue_configuration) environment variable to connect it to your site.
+>If you prefer using an existing AMQP-based service, like RabbitMQ, instead of relying on Adobe Commerce on cloud infrastructure to create it for you, use the [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration) environment variable to connect it to your site.
 
 {{service-instruction}}
 

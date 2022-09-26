@@ -108,7 +108,7 @@ The current default storage amount per project is 5 GB, or 512 0MB. You can dist
 
 In Adobe Commerce on cloud infrastructure projects, service [relationships](../application/properties.md#relationships) configured in the `.magento.app.yaml` file determine which services are available to your application.
 
-You can retrieve the configuration data for all service relationships from the [`$MAGENTO_CLOUD_RELATIONSHIPS`](https://devdocs.magento.com/cloud/env/variables-cloud.html) environment variable. The configuration data includes service name, type, and version along with any required connection details such as port number and login credentials.
+You can retrieve the configuration data for all service relationships from the [`$MAGENTO_CLOUD_RELATIONSHIPS`](../environment/variables-cloud.md) environment variable. The configuration data includes service name, type, and version along with any required connection details such as port number and login credentials.
 
 **To verify relationships in local environment**:
 

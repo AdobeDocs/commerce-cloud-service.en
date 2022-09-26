@@ -76,7 +76,7 @@ Re-deploying environment project-integration-ID
 
 >[!TIP]
 >
->When you configure your Cloud environment, you can set up [log-based Slack and email notifications][slacklog] for build and deploy actions.
+>When you configure your Cloud environment, you can set up [log-based Slack and email notifications](../environment/set-up-notifications.md) for build and deploy actions.
 
 ### Error logs
 
@@ -183,6 +183,5 @@ Service logs are archived and saved for different periods of time, depending on 
 <!--Link definitions-->
 
 [Error reference]: https://devdocs.magento.com/cloud/reference/ece-tools-error-reference.html
-[slacklog]: https://devdocs.magento.com/cloud/env/setup-notifications.html
 [database issues]: https://support.magento.com/hc/en-us/articles/360041739651-Most-common-database-issues-in-Magento-Commerce-Cloud
 [deployment troubleshooter]: https://support.magento.com/hc/en-us/articles/360040986912-Magento-deployment-troubleshooter

@@ -20,21 +20,21 @@ The `.magento.env.yaml` file contains two sections: `stage` and `log`. The `stag
     - `build`—Controls actions in the build phase only. If you do not specify settings in this section, the build phase uses settings from the global section.
     - `deploy`—Controls actions in the deploy phase only. If you do not specify settings in this section, the deploy phase uses settings from the global section.
     - `post-deploy`—Controls actions _after_ deploying your application and _after_ the container begins accepting connections.
-- `log`—Use the log section to configure [notifications](https://devdocs.magento.com/cloud/env/setup-notifications.html), including notification types and level of detail.
+- `log`—Use the log section to configure [notifications](set-up-notifications.md), including notification types and level of detail.
     - `slack`—Configure a message to send to a Slack bot.
     - `email`—Configure an email to send to one or more email recipients.
     - [logging handlers](log-handlers.md)—Configure hardware and software application messages sent to a remote logging server.
 
 ### Environment variables
 
-The `ece-tools` package sets values in the `env.php` file based on values from [Cloud variables](https://devdocs.magento.com/cloud/env/variables-cloud.html), variables set in the Project Web interface, and the `.magento.env.yaml` configuration file. The environment variables in the `.magento.env.yaml` file customize the Cloud environment by overriding your existing Commerce configuration. If a default value is `Not Set`, then the `ece-tools` package takes **NO** action and uses the Commerce default or the value from the MAGENTO_CLOUD_RELATIONSHIPS configuration. If the default value is set, then the `ece-tools` package takes the action to set that default.
+The `ece-tools` package sets values in the `env.php` file based on values from [Cloud variables](variables-cloud.md), variables set in the Project Web interface, and the `.magento.env.yaml` configuration file. The environment variables in the `.magento.env.yaml` file customize the Cloud environment by overriding your existing Commerce configuration. If a default value is `Not Set`, then the `ece-tools` package takes **NO** action and uses the Commerce default or the value from the MAGENTO_CLOUD_RELATIONSHIPS configuration. If the default value is set, then the `ece-tools` package takes the action to set that default.
 
 The following topics contain detailed definitions, such as whether a default value is set or not set, of all variables that you can use in the `.magento.env.yaml` file:
 
--  [Global](https://devdocs.magento.com/cloud/env/variables-global.html)—variables control actions in each phase: build, deploy, and post-deploy
--  [Build](https://devdocs.magento.com/cloud/env/variables-build.html)—variables control build actions
--  [Deploy](https://devdocs.magento.com/cloud/env/variables-deploy.html)—variables control deploy actions
--  [Post-deploy](https://devdocs.magento.com/cloud/env/variables-post-deploy.html)—variables control actions after deploy
+-  [Global](variables-global.md)—variables control actions in each phase: build, deploy, and post-deploy
+-  [Build](variables-build.md)—variables control build actions
+-  [Deploy](variables-deploy.md)—variables control deploy actions
+-  [Post-deploy](variables-post-deploy.md)—variables control actions after deploy
 
 ### Create configuration file from CLI
 

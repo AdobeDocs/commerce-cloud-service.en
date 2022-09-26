@@ -177,7 +177,7 @@ If you need to restart the [Elasticsearch](https://www.elastic.co) service, you 
 
 ## Additional search configuration
 
--  By default, the search configuration for Cloud environments regenerates each time you deploy. You can use the `SEARCH_CONFIGURATION` deploy variable to retain custom search settings between deployments. See [Deploy variables](https://devdocs.magento.com/cloud/env/variables-deploy.html#search_configuration).
+-  By default, the search configuration for Cloud environments regenerates each time you deploy. You can use the `SEARCH_CONFIGURATION` deploy variable to retain custom search settings between deployments. See [Deploy variables](../environment/variables-deploy.md#search_configuration).
 
 -  After you set up the Elasticsearch service for your project, use the Admin UI to test the Elasticsearch connection and customize Elasticsearch settings for Adobe Commerce.
 

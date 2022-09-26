@@ -394,7 +394,7 @@ stage:
 
 >[!NOTE]
 >
->If you specify `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` as the Redis backend model to enable [L2 cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html), `ece-tools` generates the cache configuration automatically. See an example [configuration file](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) in the _Adobe Commerce Configuration Guide_. To override the generated cache configuration, use the [CACHE_CONFIGURATION](#cacheconfiguration) deploy variable.
+>If you specify `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` as the Redis backend model to enable [L2 cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html), `ece-tools` generates the cache configuration automatically. See an example [configuration file](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) in the _Adobe Commerce Configuration Guide_. To override the generated cache configuration, use the [CACHE_CONFIGURATION](#cache_configuration) deploy variable.
 
 ## `REDIS_USE_SLAVE_CONNECTION`
 
