@@ -13,6 +13,7 @@ product: magento
 + [Getting started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Developer tools {#dev-tools}
     + [Ece-tools package](dev-tools/ece-tools.md)
+    + [magento-cloud CLI](dev-tools/magento-cloud-cli.md)
 + Application {#app-config}
     + [Configure application deployment](application/magento-app-yaml.md)
     + [PHP settings](application/php-settings.md)

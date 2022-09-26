@@ -1,26 +1,23 @@
 ---
-group: cloud-guide
 title: ADMIN variables
-functional_areas:
-  - Cloud
-  - Configuration
+description: See a list of environment variables used when installing Adobe Commerce on cloud infrastructure.
 ---
 
 # Admin variables
 
-Users that have administrative access to the Adobe Commerce on cloud infrastructure project can use the following project environment variables to override the configuration settings for the administrative user account to access the Admin UI. See [Change the ADMIN variables]({{ site.baseurl }}/cloud/before/before-setup-env-2_clone.html).
+Users that have administrative access to the Adobe Commerce on cloud infrastructure project can use the following project environment variables to override the configuration settings for the administrative user account to access the Admin UI. See [Change the ADMIN variables](https://devdocs.magento.com/cloud/before/before-setup-env-2_clone.html).
 
 ## Admin credentials
 
 Use the ADMIN variables in the following table to override credentials for the Admin user during installation.
 
-If you want to change the values after installation, connect to your environment using ssh and use the Adobe Commerce CLI [`admin:user` command]({{ site.baseurl }}/guides/v2.4/install-gde/install/cli/install-cli-subcommands-admin.html#create-or-edit-an-administrator) to create or edit the Admin user credentials.
+If you want to change the values after installation, connect to your environment using ssh and use the Adobe Commerce CLI [`admin:user` command](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html) to create or edit the Admin user credentials.
 
 | Variable       | Default                     | Description |
 | -------------- | --------------------------- | ----------- |
 |`ADMIN_USERNAME`| License Owner email address | A username for the administrative user with the ability to create other users, including administrative users.|
 |`ADMIN_EMAIL`   |                             | Email address for the administrative user. This address is used to send password reset notifications.|
-|`ADMIN_PASSWORD`|                             | Password for the administrative user. When the project is created a random password is generated and an email is sent to the {{ site.data.var.ece }} License Owner. During project creation, the License Owner should have already changed the password. You might need to contact the License Owner for the updated password.|
+|`ADMIN_PASSWORD`|                             | Password for the administrative user. When the project is created a random password is generated and an email is sent to the License Owner. During project creation, the License Owner should have already changed the password. You might need to contact the License Owner for the updated password.|
 |`ADMIN_LOCALE`  | `en_US`                     | The default locale used by the Admin.|
 
 ## Admin URL
@@ -35,5 +32,6 @@ If you need to change the Admin URL after installation, use the `magento-cloud v
 magento-cloud variable:set ADMIN_URL magento_A8v10 -e master
 ```
 
-{:.bs-callout-info}
-The `ADMIN_URL` value accepts letters (a-z or A-Z), numbers (0-9) or underscore character (_) for a custom admin path. Spaces or other characters are **not** accepted.
+>[!NOTE]
+>
+>The `ADMIN_URL` value accepts letters (a-z or A-Z), numbers (0-9) or underscore character (_) for a custom admin path. Spaces or other characters are **not** accepted.

@@ -127,7 +127,7 @@ You can use the same CLI command to view a deploy log from the Staging environme
 magento-cloud log platform/<project_id>_stg/deploy
 ```
 
-{%include cloud/note-error-message-reference-ece-tools.md%}
+{{scd-timing-warning}}
 
 ## Application logs
 
@@ -135,15 +135,15 @@ Similar to deploy logs, application logs are unique for each environment. For Pr
 
 The following table lists application log locations on each environment:
 
-Log file            | Starter and Pro Integration | Pro Staging                                       | Pro Production
-------------------- | --------------------------- | ------------------------------------------------- | -------------------------------------------
-**Deploy log**      | `/var/log/deploy.log`       | First node only:<br>`/var/log/platform/<project_id>_stg/deploy.log`   | First node only:<br>`/var/log/platform/<project_id>/deploy.log`
-**Post-deploy log**      | `/var/log/post_deploy.log`       | First node only:<br>`/var/log/platform/<project_id>_stg/post_deploy.log`   | First node only:<br>`/var/log/platform/<project_id>/post_deploy.log`
-**Cron log**        | `/var/log/cron.log`         | First node only:<br>`/var/log/platform/<project_id>_stg/cron.log`     | First node only:<br>`/var/log/platform/<project_id>/cron.log`
-**Nginx access log**| `/var/log/access.log`       | `/var/log/platform/<project_id>_stg/access.log`   | `/var/log/platform/<project_id>/access.log`
-**Nginx error log** | `/var/log/error.log`        | `/var/log/platform/<project_id>_stg/error.log`    | `/var/log/platform/<project_id>/error.log`
-**PHP access log**  | `/var/log/php.access.log`   | `/var/log/platform/<project_id>_stg/php.access.log` | `/var/log/platform/<project_id>/php.access.log`
-**PHP FPM log**     | `/var/log/app.log`          | `/var/log/platform/<project_id>_stg/php5-fpm.log` | `/var/log/platform/<project_id>/php5-fpm.log`
+| Log file            | Starter and Pro Integration | Pro Staging                                       | Pro Production |
+| ------------------- | --------------------------- | ------------------------------------------------- | ------------------------------------------- |
+| **Deploy log**      | `/var/log/deploy.log`       | First node only:<br>`/var/log/platform/<project_id>_stg/deploy.log` | First node only:<br>`/var/log/platform/<project_id>/deploy.log` |
+| **Post-deploy log** | `/var/log/post_deploy.log`  | First node only:<br>`/var/log/platform/<project_id>_stg/post_deploy.log` | First node only:<br>`/var/log/platform/<project_id>/post_deploy.log` |
+| **Cron log**        | `/var/log/cron.log`         | First node only:<br>`/var/log/platform/<project_id>_stg/cron.log` | First node only:<br>`/var/log/platform/<project_id>/cron.log` |
+| **Nginx access log**| `/var/log/access.log`       | `/var/log/platform/<project_id>_stg/access.log`   | `/var/log/platform/<project_id>/access.log` |
+| **Nginx error log** | `/var/log/error.log`        | `/var/log/platform/<project_id>_stg/error.log`    | `/var/log/platform/<project_id>/error.log` |
+| **PHP access log**  | `/var/log/php.access.log`   | `/var/log/platform/<project_id>_stg/php.access.log` | `/var/log/platform/<project_id>/php.access.log` |
+| **PHP FPM log**     | `/var/log/app.log`          | `/var/log/platform/<project_id>_stg/php5-fpm.log` | `/var/log/platform/<project_id>/php5-fpm.log` |
 
 The application logs are compressed and archived once per day and kept for one year. The compressed logs are named using a unique ID that corresponds to the `Number of Days Ago + 1`. For example, on Pro production environments a PHP access log for 21 days in the past is stored and named as follows:
 

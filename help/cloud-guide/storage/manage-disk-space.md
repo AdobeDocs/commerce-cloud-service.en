@@ -3,6 +3,8 @@ title: Manage disk space
 description: Learn how to manage disk space using the command-line interface.
 ---
 
+# Manage disk space
+
 You can find the total storage capacity for your Cloud project in your Adobe Commerce on cloud infrastructure contract and on your [account page](https://accounts.magento.cloud/user). Each project card in your account shows the number of _environments_, the _storage_ capacity in GB, and the number of _users_.
 
 ## Check Integration environment
@@ -27,7 +29,7 @@ Checking database service mysql...
 +----------------+-----------------+--------+
 ```
 
-All the mounts share the same disk. You can check disk space usage for mounts using the `magento-cloud` CLI.
+All the mounts share a disk. You can check disk space usage for mounts using the `magento-cloud` CLI.
 
 **To check approximate disk space usage for mounts:**
 
@@ -52,7 +54,7 @@ Checking disk usage for all mounts on <project>-<environment>-mymagento@ssh.us.m
 
 ## Check dedicated clusters
 
-For Pro Staging and Production environments, you can check disk space usage in each environment using the _disk free_ command, which reports the amount of disk space used by the file system. You must use SSH to log in to a remote environment.
+For Pro Staging and Production environments, you can check disk space usage in each environment using the `disk free` command, which reports the amount of disk space used by the file system. You must use SSH to log in to a remote environment.
 
 ```bash
 df -h
