@@ -84,7 +84,7 @@ The following example shows an email-only configuration:
 
 >[!NOTE]
 >
-Adobe Commerce on cloud infrastructure only sends emails during the deployment phase.
+>Adobe Commerce on cloud infrastructure only sends emails during the deployment phase.
 
 ```yaml
 log:
