@@ -8,7 +8,7 @@ You can use the following services to monitor performance of your cloud environm
 
 - **[Health notifications](https://devdocs.magento.com/cloud/integrations/health-notifications.html)**–Monitor disk space on Integration environments.
 
-- **[New Relic services for performance monitoring](new-relic.md)**–Monitor application performance on Staging and Production environments using the New Relic Application Performance Monitoring service. Additionally, on Pro Production environments, you can also use New Relic Infrastructure (NRI) for dynamic server monitoring.
+- **[New Relic services for performance monitoring](https://devdocs.magento.com/cloud/project/new-relic.html)**–Monitor application performance on Staging and Production environments using the New Relic Application Performance Monitoring service. Additionally, on Pro Production environments, you can also use New Relic Infrastructure (NRI) for dynamic server monitoring.
 
 ## Managed Alerts
 
