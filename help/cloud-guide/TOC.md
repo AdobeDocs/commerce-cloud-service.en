@@ -13,7 +13,9 @@ product: magento
 + [Getting started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Developer tools {#dev-tools}
     + [Ece-tools package](dev-tools/ece-tools.md)
-    + [magento-cloud CLI](dev-tools/magento-cloud-cli.md)
+    + Cloud CLI {#cloud-cli}
+        + [magento-cloud CLI](dev-tools/magento-cloud-cli.md)
+        + [Variable levels and options](environment/variable-levels.md)
 + Application {#app-config}
     + [Configure application deployment](application/magento-app-yaml.md)
     + [PHP settings](application/php-settings.md)
@@ -27,18 +29,18 @@ product: magento
         + [Workers](application/workers-property.md)
     + [Set cache for static files](application/set-cache.md)
 + Environment {#env-config}
-    + [Working with variables](environment/working-with-variables.md)
     + [Configure environment deployment](environment/magento-env-yaml.md)
-    + [Notifications](environment/set-up-notifications.md)
-    + [Log handlers](environment/log-handlers.md)
-    + [Environment variables](environment/variables-intro.md)
-    + Variable reference {#env-variables}
+    + Override variables {#stage}
+        + [Environment variables](environment/variables-intro.md)
         + [ADMIN](environment/variables-admin.md)
         + [MAGENTO_CLOUD](environment/variables-cloud.md)
         + [Global](environment/variables-global.md)
         + [Build](environment/variables-build.md)
         + [Deploy](environment/variables-deploy.md)
         + [Post-deploy](environment/variables-post-deploy.md)
+    + Configure notifications {#log}
+        + [Notifications](environment/set-up-notifications.md)
+        + [Log handlers](environment/log-handlers.md)
 + Services {#service-config}
     + [Configure services](services/services-yaml.md)
     + [Elasticsearch](services/elasticsearch.md)

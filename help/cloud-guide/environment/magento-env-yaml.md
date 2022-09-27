@@ -23,7 +23,7 @@ The `.magento.env.yaml` file contains two sections: `stage` and `log`. The `stag
 - `log`—Use the log section to configure [notifications](set-up-notifications.md), including notification types and level of detail.
     - `slack`—Configure a message to send to a Slack bot.
     - `email`—Configure an email to send to one or more email recipients.
-    - [logging handlers](log-handlers.md)—Configure hardware and software application messages sent to a remote logging server.
+    - [log handlers](log-handlers.md)—Configure hardware and software application messages sent to a remote logging server.
 
 ### Environment variables
 
@@ -143,7 +143,7 @@ Make any corrections, commit, and push the changes. If you do not receive an err
 
 ## Configuration management optimization
 
-If you have enabled Configuration Management after dumping the configurations, you should move the SCD_* variables from the deploy to the build stage.
+If you have enabled Configuration Management after dumping the configurations, you should move the SCD_* variables from the deploy to the build stage. See [Static content deployment strategies](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html).
 
 >Before Configuration Management:
 
