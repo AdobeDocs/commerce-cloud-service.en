@@ -5,23 +5,23 @@ description: Use the property list as a reference when configurion the Commerce 
 
 # Properties for application configuration
 
-The `.magento.app.yaml` file uses properties to manage environment support for the Commerce application. The following properties are required:
+The `.magento.app.yaml` file uses properties to manage environment support for the Commerce application. 
 
-- [Name](#name) for the application
-- [Type](#type-and-build) to set the base container image
-- [Disk](#disk) to define the persistent disk size
-- [Web](web-property.md) or [workers](workers-property.md) to handle external requests
-
-Use the following properties for further application configuration:
-
-- [Access](#access) to customize user roles
-- [Crons](crons-property.md) to update specs and schedule cron jobs
-- [Dependencies](#dependencies) to include additional dependencies
-- [Firewall (Starter only)](firewall-property.md) to control outbound traffic
-- [Hooks](hooks-property.md) to customize shell commands for the build, deploy, and post-deploy phases
-- [Mounts](#mounts) to set paths
-- [Relationships](#relationships) to map services
-- [Variables](variables-property.md) to apply an environment variable for a specific Commerce version
+| Name   | Description                       | Default | Required |
+| ------ | --------------------------------- | ------- | -------- |
+| [`access`](#access) | Customize user roles | -- | No |
+| [`crons`](crons-property.md) | Update specs and schedule cron jobs | -- | No |
+| [`dependencies`](#dependencies) | Enable additional dependencies | `php:composer/composer: '2.2.4'` | No |
+| [`disk`](#disk) | Define the persistent disk size | `5120` | Yes |
+| [`firewall`](firewall-property.md) | (Starter only) Control outbound traffic | -- | No |
+| [`hooks`](hooks-property.md) | Customize shell commands for the build, deploy, and post-deploy phases | -- | No |
+| [`mounts`](#mounts) | Set paths | `"var": "shared:files/var"`<br>`"app/etc": "shared:files/etc"`<br>`"pub/media": "shared:files/media"`<br>`"pub/static": "shared:files/static"` | No |
+| [`name`](#name) | Define the application name | `mymagento` | Yes |
+| [`relationships`](#relationships) | Map services | `database: "mysql:mysql"`<br>`redis: "redis:redis"`<br>`opensearch: "opensearch:opensearch"` | No |
+| [`type`](#type-and-build) | Set the base container image | `php:8.1` | Yes |
+| [`variables`](variables-property.md) | Apply an environment variable for a specific Commerce version | -- | No |
+| [`web`](web-property.md) | Handle external requests | -- | Yes |
+| [`workers`](workers-property.md) | Handle external requests | -- | Yes, if not using web |
 
 >[!NOTE]
 >
