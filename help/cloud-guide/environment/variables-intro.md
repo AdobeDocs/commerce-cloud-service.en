@@ -21,8 +21,8 @@ The types of environment variables include:
 
 Variables are _hierarchical_, which means that if a variable is not overridden, it is inherited from the parent environment.
 
-You can set [ADMIN variables](variables-admin.md) from the Project Web interface or using the Adobe Commerce CLI. You can manage other environment variables from the [`.magento.env.yaml`](magento-env-yaml.md) file to manage build and deploy actions across all of your environments—including Pro Staging and Production—without requiring a support ticket.
+You can set [ADMIN variables](variables-admin.md) from the Project Web interface or using the Adobe Commerce CLI. You can manage other environment variables from the [`.magento.env.yaml`](configure-env-yaml.md) file to manage build and deploy actions across all of your environments—including Pro Staging and Production—without requiring a support ticket.
 
 >[!TIP]
 >
->YAML files are case sensitive and do not allow tabs. Be careful to use consistent indentation throughout the `.magento.env.yaml` file or your configuration may not work as expected. The examples in our documentation and in the sample file use _two-space_ indentation. Use the [ece-tools validate command](magento-env-yaml.md#validate-configuration-file) to check your configuration.
+>YAML files are case sensitive and do not allow tabs. Be careful to use consistent indentation throughout the `.magento.env.yaml` file or your configuration may not work as expected. The examples in our documentation and in the sample file use _two-space_ indentation. Use the [ece-tools validate command](configure-env-yaml.md#validate-configuration-file) to check your configuration.

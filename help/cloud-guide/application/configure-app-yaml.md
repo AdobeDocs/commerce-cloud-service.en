@@ -19,7 +19,7 @@ Use the `.magento.app.yaml` file to define the following configuration values:
 
 ## Configuration updates to Pro environments
 
-For Adobe Commerce on cloud infrastructure Pro Staging and Production environments, you can update many configuration options in your local development environment and commit the changes to apply them to these environments. However, you must submit a [Support ticket](https://support.magento.com/hc/en-us) to update the following configuration options:
+For Adobe Commerce on cloud infrastructure Pro Staging and Production environments, you can update many configuration options in your local development environment and commit the changes to apply them to these environments. However, you must submit a submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to update the following configuration options:
 
 - Install or update services in the `.magento/services.yaml` file.
 - Change the configuration for the `mounts` and `disk` properties in the `.magento.app.yaml` file.

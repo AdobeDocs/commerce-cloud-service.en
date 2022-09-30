@@ -11,13 +11,17 @@ product: magento
     + [Cloud infrastructure](architecture/cloud-architecture.md)
     + [Split-tier architecture](architecture/split-tier-architecture.md)
 + [Getting started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
++ Cloud project {#project}
 + Developer tools {#dev-tools}
-    + [Ece-tools package](dev-tools/ece-tools.md)
-    + Cloud CLI {#cloud-cli}
-        + [magento-cloud CLI](dev-tools/magento-cloud-cli.md)
+    + Ece-tools package {#ece-tools}
+        + [Ece-tools overview](dev-tools/ece-tools.md)
+        + [Error messages](dev-tools/error-messages.md)
+    + Cloud CLI {#cli}
+        + [CLI overview](dev-tools/cloud-cli.md)
         + [Variable levels and options](environment/variable-levels.md)
++ Integrations {#integrations}
 + Application {#app-config}
-    + [Configure application deployment](application/magento-app-yaml.md)
+    + [Configure application deployment](application/configure-app-yaml.md)
     + [PHP settings](application/php-settings.md)
     + Properties {#properties}
         + [Application properties](application/properties.md)
@@ -29,7 +33,7 @@ product: magento
         + [Workers](application/workers-property.md)
     + [Set cache for static files](application/set-cache.md)
 + Environment {#env-config}
-    + [Configure environment deployment](environment/magento-env-yaml.md)
+    + [Configure environment deployment](environment/configure-env-yaml.md)
     + Override variables {#stage}
         + [Environment variables](environment/variables-intro.md)
         + [ADMIN](environment/variables-admin.md)
@@ -48,13 +52,15 @@ product: magento
     + [OpenSearch](services/opensearch.md)
     + [RabbitMQ](services/rabbitmq.md)
     + [Redis](services/redis.md)
++ Fastly services {#fastly}
++ Deployment {#deployment}
++ Test {#test}
+    + [Xdebug](test/debug.md)
 + Monitor {#monitor}
     + [Logs](monitor/log-locations.md)
     + [Performance](monitor/performance.md)
+    + [New Relic service](monitor/new-relic.md)
 + Storage {#storage}
-    + [Backup and recovery](storage/backup-and-recovery.md)
     + [Manage disk space](storage/manage-disk-space.md)
     + [Profile database queries](storage/profile-database-queries.md)
-+ Test {#test}
-    + [Xdebug](test/xdebug.md)
 + [Release notes](release-notes/cloud-tools.md)

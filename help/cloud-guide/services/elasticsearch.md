@@ -243,5 +243,5 @@ See the following Adobe Commerce Support articles for help with troubleshooting 
 -  [Elasticsearch 5 is configured, but search page does not load with "Fielddata is disabled..." error](https://support.magento.com/hc/en-us/articles/360027356612-Elasticsearch-5-is-configured-but-search-page-does-not-load-with-Fielddata-is-disabled-error)
 -  [Catalog pagination doesn't work when Elasticsearch 6.x is used](https://support.magento.com/hc/en-us/articles/360035142371)
 -  [Elasticsearch with ElasticSuite crashes or out of memory](https://support.magento.com/hc/en-us/articles/360035266131-Elasticsearch-with-ElasticSuite-crashes-or-out-of-memory)
--  [Elasticsearch in Magento troubleshooter](https://support.magento.com/hc/en-us/articles/360040757112-Elasticsearch-in-Magento-troubleshooter)
+-  [Elasticsearch in Adobe Commerce troubleshooter](https://support.magento.com/hc/en-us/articles/360040757112-Elasticsearch-in-Magento-troubleshooter)
 -  [Elasticsearch Index Status is `yellow` or `red`](https://support.magento.com/hc/en-us/articles/360039837952-Elasticsearch-Index-Status-is-yellow-or-red-)
