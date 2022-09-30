@@ -27,6 +27,12 @@ Set the `_merge` option to one of the following:
 >
 >For Pro projects, you must submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project.
 
+## Redeploy warning {#redeploy-warning}
+
+>[!WARNING]
+>
+>Updating the environment configuration triggers a redeployment, which takes your site offline until deployment completes. Adobe recommends completing this work during off-peak hours to avoid service disruptions.
+
 ## SCD timing {#scd-timing-warning}
 
 >[!WARNING]

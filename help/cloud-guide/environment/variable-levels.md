@@ -5,7 +5,7 @@ description: Learn about the different variable levels and options used in custo
 
 # Variable levels
 
-Project variables apply to all environments. Environment variables apply to a specific environment or branch. An environment _inherits_ variable definitions from the parent environment. You can override an inherited value by defining the variable specifically for the environment. For example, to set variables for development, define the variable values in the `.magento.env.yaml` file in the Integration environment. All environments branching from the Integration environment inherit those values. See [Deployment configuration](magento-env-yaml.md) for details about configuring your environment using the `.magento.env.yaml` file.
+Project variables apply to all environments. Environment variables apply to a specific environment or branch. An environment _inherits_ variable definitions from the parent environment. You can override an inherited value by defining the variable specifically for the environment. For example, to set variables for development, define the variable values in the `.magento.env.yaml` file in the Integration environment. All environments branching from the Integration environment inherit those values. See [Deployment configuration](configure-env-yaml.md) for details about configuring your environment using the `.magento.env.yaml` file.
 
 To set variables using the CLI, first choose one of the following levels:
 

@@ -15,7 +15,7 @@ stage:
 
 For more information about customizing the build and deploy process:
 
-- [Deployment configuration](magento-env-yaml.md)
+- [Deployment configuration](configure-env-yaml.md)
 - [Deployment process](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html)
 
 ## `TTFB_TESTED_PAGES`
