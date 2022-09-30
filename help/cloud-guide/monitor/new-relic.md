@@ -194,7 +194,7 @@ We recommend reviewing tracked data:
 
 -  **Highest throughput**—Identify pages hit the most based on the size and frequency of bytes transmitted.
 
-All collected data details the time spent on an actions that transmit data, queries, or _Redis_ data. If queries cause issues, New Relic provides information to track and respond to those issues.
+All collected data details the time spent on actions that transmit data, queries, or _Redis_ data. If queries cause issues, New Relic provides information to track and respond to those issues.
 
 For details on using this data to troubleshoot application performance issues, see [Troubleshoot performance using New Relic](https://support.magento.com/hc/en-us/articles/360042149832#low_user_satisfaction) in the _Adobe Commerce Help Center_.
 
@@ -294,7 +294,7 @@ New Relic provides templates for configuring different types of notification cha
 
 1. Use your New Relic credentials to [log in to your New Relic account][New Relic login].
 
-1. Create a new notification channel.
+1. Create a notification channel.
 
    -  In the Explorer navigation menu, click **Alerts & AI**.
 
@@ -334,7 +334,7 @@ See the following New Relic documentation topics for additional information:
 
 Do not modify any alerts included in the Managed Alerts for Magento Commerce policy. We update and improve the alert conditions in this policy over time, which overwrites any customizations you add to the policy.
 
-Instead of modifying an existing alert, you can create a new alert policy. Then, copy the alert conditions to the new policy. See [Update policies or conditions][] in the New Relic documentation.
+Instead of modifying an existing alert, you can create an alert policy. Then, copy the alert conditions to the new policy. See [Update policies or conditions][] in the New Relic documentation.
 
 >[!TIP]
 >
