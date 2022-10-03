@@ -13,12 +13,10 @@ product: magento
 + [Getting started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Cloud project {#project}
 + Developer tools {#dev-tools}
-    + Ece-tools package {#ece-tools}
-        + [Ece-tools overview](dev-tools/ece-tools.md)
-        + [Error messages](dev-tools/error-messages.md)
-    + Cloud CLI {#cli}
-        + [CLI overview](dev-tools/cloud-cli.md)
-        + [Variable levels and options](environment/variable-levels.md)
+    + [Ece-tools package](dev-tools/ece-tools.md)
+    + [Error messages](dev-tools/error-messages.md)
+    + [Cloud CLI](dev-tools/cloud-cli.md)
+    + [Variable levels and options](environment/variable-levels.md)
 + Integrations {#integrations}
 + Application {#app-config}
     + [Configure application deployment](application/configure-app-yaml.md)

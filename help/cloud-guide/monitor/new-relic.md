@@ -1,9 +1,9 @@
 ---
-title: New Relic services
+title: New Relic service
 description: Learn how to access your New Relic dashboard and analyze data from your Adobe Commerce on cloud infrastructure project
 ---
 
-# New Relics
+# New Relic service
 
 All Adobe Commerce on cloud infrastructure projects include access to the following New Relic services to help manage, monitor, and troubleshoot your applications and infrastructure by collecting, viewing, and analyzing data.
 
