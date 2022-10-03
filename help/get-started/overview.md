@@ -1,9 +1,9 @@
 ---
-title: Getting Started with Commerce
+title: Get Started with Commerce
 description: See the new self-service Commerce on Cloud infrastructure, and learn how to build and deploy a Commerce store in minutes.
 ---
 
-# Getting Started
+# Get Started
 
 Welcome to Adobe Commerce!
 

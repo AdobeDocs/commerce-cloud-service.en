@@ -34,7 +34,7 @@ Monolithic applications are resource-intensive and difficult to scale and serve 
 
 >microservices list or drawing goes here
 
-Use the [Commerce Getting Started guide](../getting-started/overview.md) to set up your new Cloud program and begin managing your Commerce application in a cloud-native environment.
+Use the [Commerce Get Started guide](../get-started/overview.md) to set up your new Cloud program and begin managing your Commerce application in a cloud-native environment.
 
 ## Commerce guides
 

@@ -10,7 +10,7 @@ product: magento
 + Architecture {#architecture}
     + [Cloud infrastructure](architecture/cloud-architecture.md)
     + [Split-tier architecture](architecture/split-tier-architecture.md)
-+ [Getting started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
++ [Get started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Cloud project {#project}
 + Developer tools {#dev-tools}
     + [Ece-tools package](dev-tools/ece-tools.md)
