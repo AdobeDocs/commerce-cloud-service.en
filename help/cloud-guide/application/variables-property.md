@@ -3,7 +3,7 @@ title: Variables property
 description: Use the variables property to customize the build and deploy the application.
 ---
 
-# Variable property
+# Variables property
 
 The following environment variables are included in the `.magento.app.yaml` file.
 

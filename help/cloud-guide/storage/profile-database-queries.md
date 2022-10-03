@@ -33,7 +33,7 @@ When writing to a database, it may help to run profiling to identify the impact 
    SET @@profiling = 1;
    ```
 
-## Example log
+> Sample log
 
 ```sql
 MariaDB [6fck2obu3244c]> show profiles;
