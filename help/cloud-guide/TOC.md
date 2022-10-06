@@ -16,7 +16,7 @@ product: magento
     + [Split-tier architecture](architecture/split-tier-architecture.md)
 + [Get started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Cloud project {#project}
-    + [Project overview](project/cloud-project.md)
+    + [Project overview](project/overview.md)
     + Project structure
     + Configure project
     + Manage user access
