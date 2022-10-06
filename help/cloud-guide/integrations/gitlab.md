@@ -96,7 +96,7 @@ magento-cloud integration:add --type=gitlab --project=<project-ID> --token=<your
 
 >[!WARNING]
 >
->The `magento-cloud integration` command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with the code from your GitLab repository. This includes all branches, including the Production branch. This action happens instantly and cannot be undone. As a best practice, it is very important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your GitLab repository before adding the GitLab integration.
+>The `magento-cloud integration` command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with the code from your GitLab repository. This includes all branches, including the Production branch. This action happens instantly and cannot be undone. As a best practice, it is important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your GitLab repository before adding the GitLab integration.
 
 **To enable the GitLab integration**:
 
@@ -154,7 +154,7 @@ In order to communicate events —such as a push or merge requests— with your 
 
 ### Test the integration
 
-After configuring the GitLab integration, you can verify the integration is operational using the `magento-cloud` CLI:
+After configuring the GitLab integration, you can verify that the integration is operational using the `magento-cloud` CLI:
 
 ```bash
 magento-cloud integration:validate

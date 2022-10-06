@@ -3,7 +3,7 @@ title: Bitbucket integration
 description: Learn how to integrate your Adobe Commerce on cloud infrastructure project with Bitbucket.
 ---
 
-# Bitbucket intregration
+# Bitbucket integration
 
 You can configure your Bitbucket repository to automatically build and deploy an environment when you push code changes. This integration synchronizes your Bitbucket repository with your Adobe Commerce on cloud infrastructure account.
 
@@ -123,7 +123,7 @@ The Bitbucket integration requires an [OAuth consumer](https://confluence.atlass
 
    >[!WARNING]
    >
-   >The following command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with code from your Bitbucket repository. This includes all branches, including the Production branch. This action happens instantly and cannot be undone. As a best practice, it is very important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your Bitbucket repository **before** adding the Bitbucket integration.
+   >The following command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with code from your Bitbucket repository. This includes all branches, including the Production branch. This action happens instantly and cannot be undone. As a best practice, it is important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your Bitbucket repository **before** adding the Bitbucket integration.
 
    ```bash
    magento-cloud project:curl -p '<project-ID>' /integrations -i -X POST -d "$(< bitbucket.json)"
@@ -177,7 +177,7 @@ In order to communicate events—such as a push—with your Cloud Git server, is
 
 ### Test the integration
 
-After configuring the Bitbucket integration, you can verify the integration is operational using the `magento-cloud` CLI:
+After configuring the Bitbucket integration, you can verify that the integration is operational using the `magento-cloud` CLI:
 
 ```bash
 magento-cloud integration:validate

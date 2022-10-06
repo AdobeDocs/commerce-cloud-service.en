@@ -19,7 +19,7 @@ You must obtain a GitHub token and a webhook to continue the process.
 
 ## Generate a GitHub token
 
-You must be a member of a group with write-access to the GitHub repository, so that you can _push_ to the repository. See [GitHub: Create](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
+You must be a member of a group with write-access to the GitHub repository, so that you can _push_ to the repository. See [GitHub: Create](https://docs.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
 
 ## Prepare your repository
 
@@ -80,7 +80,7 @@ The following enables the GitHub integration and provides a Payload URL to use w
 
 >[!WARNING]
 >
->The following command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with code from your GitHub repository. This includes all branches, including the Production branch. This action happens instantly and cannot be undone. As a best practice, it is very important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your GitHub repository **before** adding the GitHub integration.
+>The following command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with code from your GitHub repository. This includes all branches, including the Production branch. This action happens instantly and cannot be undone. As a best practice, it is important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your GitHub repository **before** adding the GitHub integration.
 
 **To enable the GitHub integration**:
 
@@ -143,7 +143,7 @@ In order to communicate events—such as a push—with your Cloud Git server, yo
 
 ## Test the integration
 
-After configuring the GitHub integration, you can verify the integration is operational using the `magento-cloud` CLI:
+After configuring the GitHub integration, you can verify that the integration is operational using the `magento-cloud` CLI:
 
 ```bash
 magento-cloud integration:validate

@@ -5,7 +5,7 @@ description: Learn about third-party integration options for your Adobe Commerce
 
 # Integrations overview
 
-Integrations are useful for leveraging the functionality of external services—such as Git hosting or Slack bots—and maintaining your current development processes, such as using the code review pull request function in GitHub. You can add the following integrations to your Adobe Commerce on cloud infrastructure project:
+Integrations are useful for using external services—such as Git hosting or Slack bots—and maintaining your current development processes, such as using the code review pull request function in GitHub. You can add the following integrations to your Adobe Commerce on cloud infrastructure project:
 
 -  [Health notifications](health-notifications.md):
    -  Email
@@ -145,7 +145,7 @@ Integration integration-ID (webhook) updated
 | `environment.route.delete`  | A route has been deleted using the management console |
 | `environment.route.update`  | A route has been modified using the management console |
 | `environment.subscription.update` | The master environment has been resized because the subscription has changed, but here are no content changes |
-| `environment.synchronize`   | An environment has had data or code re-copied from its parent environment |
+| `environment.synchronize`   | An environment has had data or code recopied from its parent environment |
 | `environment.update.http_access` | HTTP access rules for an environment have been modified |
 | `environment.update.restrict_robots` | The block-all-robots feature has been enabled or disabled |
 | `environment.update.smtp`   | Sending of emails has been enabled or disabled for an environment |
