@@ -12,13 +12,17 @@ product: magento
     + [Split-tier architecture](architecture/split-tier-architecture.md)
 + [Get started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Cloud project {#project}
+    + [Project overview](project/cloud-project.md)
 + Developer tools {#dev-tools}
-    + [Ece-tools package](dev-tools/ece-tools.md)
-    + [Error messages](dev-tools/error-messages.md)
-    + [Cloud CLI](dev-tools/cloud-cli.md)
+    + Ece-tools {#ece-tools}
+        + [Package overview](dev-tools/ece-tools.md)
+        + [One-time upgrade to use Ece-tools](dev-tools/install-ece-tools.md)
+        + [Update Ece-tools package](dev-tools/update-ece-tools.md)
+    + Cloud CLI {#cloud-cli}
+        + [Overview of `magento-cloud`](dev-tools/cloud-cli.md)
     + [Variable levels and options](environment/variable-levels.md)
 + Integrations {#integrations}
-+ Application {#app-config}
++ Application {#config-app}
     + [Configure application deployment](application/configure-app-yaml.md)
     + [PHP settings](application/php-settings.md)
     + Properties {#properties}
@@ -30,7 +34,7 @@ product: magento
         + [Web](application/web-property.md)
         + [Workers](application/workers-property.md)
     + [Set cache for static files](application/set-cache.md)
-+ Environment {#env-config}
++ Environment {#config-env}
     + [Configure environment deployment](environment/configure-env-yaml.md)
     + Override variables {#stage}
         + [Environment variables](environment/variables-intro.md)
@@ -43,22 +47,30 @@ product: magento
     + Configure notifications {#log}
         + [Notifications](environment/set-up-notifications.md)
         + [Log handlers](environment/log-handlers.md)
-+ Services {#service-config}
++ Routes {#config-routes}
+    + [Configure routes](routes/routes.md)
+    + [Caching](routes/caching.md)
+    + [Redirects](routes/redirects.md)
+    + [Server-side includes](routes/server-side-includes.md)
++ Services {#config-service}
     + [Configure services](services/services-yaml.md)
     + [Elasticsearch](services/elasticsearch.md)
     + [MySQL](services/mysql.md)
     + [OpenSearch](services/opensearch.md)
     + [RabbitMQ](services/rabbitmq.md)
     + [Redis](services/redis.md)
-+ Fastly services {#fastly}
-+ Deployment {#deployment}
++ Fastly services {#cdn}
++ Deployment {#deploy}
 + Test {#test}
     + [Xdebug](test/debug.md)
++ Launch site {#launch}
 + Monitor {#monitor}
     + [Logs](monitor/log-locations.md)
+    + [Error messages](dev-tools/error-messages.md)
     + [Performance](monitor/performance.md)
     + [New Relic service](monitor/new-relic.md)
 + Storage {#storage}
     + [Manage disk space](storage/manage-disk-space.md)
     + [Profile database queries](storage/profile-database-queries.md)
-+ [Release notes](release-notes/cloud-tools.md)
++ Release notes {#release-notes}
+    + [Cloud tools suite](release-notes/cloud-tools.md)

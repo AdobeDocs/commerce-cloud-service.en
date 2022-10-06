@@ -101,9 +101,9 @@ Are you sure you want to redeploy the environment <environment_name>? [Y/n]
 
 ## Git commands
 
-You may notice that some of these commands are similar to Git commands. The `magento-cloud` commands directly connect to the Git-based Cloud project with additional features. If you create a branch without using the `magento-cloud` CLI, it is not "activated" and will not automatically build when you push changes to the remote environment. The `magento-cloud` CLI command includes activation.
+You may notice that some of these commands are similar to Git commands. The `magento-cloud` commands directly connect to the Git-based Cloud project with additional features. If you create a branch without using the `magento-cloud` CLI, it is not "activated" and does not automatically build when you push changes to the remote environment. The `magento-cloud` CLI command includes activation.
 
-To create a new branch, use the `magento-cloud` command so the branch is activated.
+To create a branch, use the `magento-cloud` command so the branch is activated.
 
 ```bash
 magento-cloud environment:branch <NAME> <PARENT_BRANCH>
@@ -114,7 +114,7 @@ For branch status:
 -  Use the `magento-cloud env` command to view a list of the environment branches and their status: active or inactive.
 -  Use the `magento-cloud environment:activate` command to activate an environment branch.
 
-Pushing an empty Git commit forces a redeployment. For example:
+Push an empty Git commit to trigger a deployment. For example:
 
 ```bash
 git commit --allow-empty -m "redeploy" && git push <BRANCH_NAME>
