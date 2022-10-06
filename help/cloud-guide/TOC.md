@@ -12,14 +12,13 @@ product: magento
     + [Split-tier architecture](architecture/split-tier-architecture.md)
 + [Get started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Cloud project {#project}
-    + [Project overview](project/cloud-project.md)
 + Developer tools {#dev-tools}
     + Ece-tools {#ece-tools}
         + [Package overview](dev-tools/ece-tools.md)
         + [One-time upgrade to use Ece-tools](dev-tools/install-ece-tools.md)
         + [Update Ece-tools package](dev-tools/update-ece-tools.md)
     + Cloud CLI {#cloud-cli}
-        + [Overview of `magento-cloud`](dev-tools/cloud-cli.md)
+        + [Overview of CLI](dev-tools/cloud-cli.md)
     + [Variable levels and options](environment/variable-levels.md)
 + Integrations {#integrations}
 + Application {#config-app}
@@ -66,7 +65,7 @@ product: magento
 + Launch site {#launch}
 + Monitor {#monitor}
     + [Logs](monitor/log-locations.md)
-    + [Error messages](dev-tools/error-messages.md)
+    + [Error messages](monitor/error-messages.md)
     + [Performance](monitor/performance.md)
     + [New Relic service](monitor/new-relic.md)
 + Storage {#storage}
