@@ -8,7 +8,7 @@
 
 ## Merge options {#merge-options}
 
-By default, the deployment process overwrites all settings in the `env.php` file; however, you can choose to merge one or more values for a service configuration without overwriting all of the values.
+By default, the deployment process overwrites all settings in the `env.php` file; however, you can choose to merge one or more values for a service configuration without overwriting all values.
 
 Set the `_merge` option to one of the following:
 
@@ -32,6 +32,13 @@ Set the `_merge` option to one of the following:
 >[!WARNING]
 >
 >Updating the environment configuration triggers a redeployment, which takes your site offline until deployment completes. Adobe recommends completing this work during off-peak hours to avoid service disruptions.
+
+## Route placeholders {#route-placeholder}
+
+>[!NOTE]
+>
+>The following route configuration examples use route templates with placeholders. The `{default}` placeholder represents the default domain configured for your site. If your project has multiple domains, use the `{all}` placeholder to configure routing for the default domain and all aliases. See [Configure routes](/help/cloud-guide/routes/routes.md.
+
 
 ## SCD timing {#scd-timing-warning}
 
@@ -63,4 +70,10 @@ Use the following instructions for service setup on Pro Integration environments
 
 >[!NOTE]
 >
->If you use a version of Adobe Commerce on cloud infrastructure that does not contain the `ece-tools` package, then you must perform a one-time [upgrade](https://devdocs.magento.com/cloud/project/ece-tools-upgrade-project.html) to your cloud project to remove deprecated packages. If you currently use the `ece-tools` package and you need to update it, see [Update ece-tools version](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+>If you use a version of Adobe Commerce on cloud infrastructure that does not contain the `ece-tools` package, then you must perform a one-time [upgrade](/help/cloud-guide/dev-tools/install-ece-tools.md) to your cloud project to remove deprecated packages. If you currently use the `ece-tools` package and you need to update it, see [Update ece-tools version](/help/cloud-guide/dev-tools/update-ece-tools.md).
+
+## Upgrade tip {#upgrade-tip}
+
+>[!TIP]
+>
+>Before beginning an upgrade or a patching process, create an active branch from the Integration environment and check out the new branch to your local workstation. Dedicating a branch to the upgrade or the patch process helps to avoid interference with your work in progress.
