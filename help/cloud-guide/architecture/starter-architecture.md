@@ -106,6 +106,7 @@ You use the following files to configure the software versions that you want to 
 You can create a snapshot of your database and file system using the Project Web Interface or the CLI. The snapshot includes your deployed code, installed software and services, and data. See [Snapshots and backup management][].
 
 ## Prepare for development
+
 The following workflow summarizes the process to branch your code, develop, and deploy your store:
 
 1. Set up your local environment
