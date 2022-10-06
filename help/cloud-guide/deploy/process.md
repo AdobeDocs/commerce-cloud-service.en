@@ -38,8 +38,5 @@ You can test the optimal configuration for the state of your project by running 
 
 [Build phase]: ../../assets/status-build.png
 [Deploy phase]: ../../assets/status-deploy.png
-{width="80px"}
 [Post-deploy phase]: ../../assets/status-post-deploy.png
-{width="80px"}
 [Verify state]: ../../assets/status-verify.png
-{width="80px"}
