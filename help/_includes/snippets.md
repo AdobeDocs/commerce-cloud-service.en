@@ -15,6 +15,12 @@ Set the `_merge` option to one of the following:
 -  `true`—**Merge** the configured service values with the environment variable values.
 -  `false`—**Overwrite** the configured service values with the environment variable values.
 
+## Private repository {#private-repository}
+
+>[!NOTE]
+>
+>We strongly recommend using a private repository for your Adobe Commerce on cloud infrastructure project to protect any proprietary information or development work, such as extensions and sensitive configurations.
+
 ## Pro self-service warning {#pro-self-service-warning}
 
 >[!WARNING]
