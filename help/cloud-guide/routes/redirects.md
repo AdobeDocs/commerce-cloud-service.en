@@ -54,14 +54,14 @@ Two keys are available under `redirects`:
 
    The value object has the following properties:
 
-   Property  | Description
-   ----------| -----------
-   `to`      | Required, a partial absolute path, URL with protocol and host, or pattern that specifies the target destination for the redirect rule.
-   `regexp`| Optional, defaults to `false`. Specifies whether the path key should be interpreted as a PCRE regular expression.
-   `prefix` | Specifies whether the redirect applies to both the path and all its children, or just the path itself. Defaults to `true`. This value is not supported if `regexp` is `true`.
-   `append_suffix`| Determines if the suffix is carried over with the redirect. Defaults to `true`. This value is not supported if the `regexp` key is `true` or* if the `prefix` key is `false`.
-   `code`    | Specifies the HTTP status code. Valid status codes are [`301` (Moved Permanently)](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.2), [`302`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.3), [`307`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.8), and [`308`](https://www.rfc-editor.org/rfc/rfc7238). Defaults to `302`.
-   `expires`| Optional, specifies the amount of time to cache the redirect in the browser. Defaults to the `expires` value defined directly under the `redirects` key, but at this level you can fine-tune the cache expiration for individual partial redirects.
+   | Property   | Description |
+   | ---------- | ----------- |
+   | `to`       | Required, a partial absolute path, URL with protocol and host, or pattern that specifies the target destination for the redirect rule. |
+   | `regexp`   | Optional, defaults to `false`. Specifies whether the path key should be interpreted as a PCRE regular expression. |
+   | `prefix`   | Specifies whether the redirect applies to both the path and all its children, or just the path itself. Defaults to `true`. This value is not supported if `regexp` is `true`. |
+   | `append_suffix`| Determines if the suffix is carried over with the redirect. Defaults to `true`. This value is not supported if the `regexp` key is `true` or* if the `prefix` key is `false`. |
+   | `code`     | Specifies the HTTP status code. Valid status codes are [`301` (Moved Permanently)](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.2), [`302`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.3), [`307`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.8), and [`308`](https://www.rfc-editor.org/rfc/rfc7238). Defaults to `302`. |
+   | `expires`  | Optional, specifies the amount of time to cache the redirect in the browser. Defaults to the `expires` value defined directly under the `redirects` key, but at this level you can fine-tune the cache expiration for individual partial redirects. |
 
 ## Examples of partial-route redirects
 
@@ -130,7 +130,7 @@ http://{default}/:
     paths:
         "/from": { to: "https://example.com/" }
         "/here": { to: "https://example.com/there", expires: "2w" }
-  ```
+```
 
 This configuration works as follows:
 

@@ -251,8 +251,8 @@ http://add-theme-projectID.us.magento.com/
 If you define the following route template:
 
 ```text
- http://www.{default}/
- ```
+http://www.{default}/
+```
 
 The route resolves to the following URL:
 
