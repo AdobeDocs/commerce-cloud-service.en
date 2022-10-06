@@ -16,6 +16,12 @@ product: magento
     + [Split-tier architecture](architecture/split-tier-architecture.md)
 + [Get started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Cloud project {#project}
+    + [Project overview](project/cloud-project.md)
+    + Project structure
+    + Configure project
+    + Manage user access
+    + Enable MFA for SSH
+    + Manage branches
 + Developer tools {#dev-tools}
     + Ece-tools {#ece-tools}
         + [Package overview](dev-tools/ece-tools.md)
@@ -56,7 +62,7 @@ product: magento
         + [Notifications](environment/set-up-notifications.md)
         + [Log handlers](environment/log-handlers.md)
 + Routes {#config-routes}
-    + [Configure routes](routes/routes.md)
+    + [Configure routes](routes/routes-yaml.md)
     + [Caching](routes/caching.md)
     + [Redirects](routes/redirects.md)
     + [Server-side includes](routes/server-side-includes.md)
@@ -88,3 +94,4 @@ product: magento
     + [Profile database queries](storage/profile-database-queries.md)
 + Release notes {#release-notes}
     + [Cloud tools suite](release-notes/cloud-tools.md)
+    
