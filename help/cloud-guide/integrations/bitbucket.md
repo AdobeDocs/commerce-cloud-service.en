@@ -207,7 +207,7 @@ The Bitbucket integration cannot activate new environments in your Adobe Commerc
 
 **To activate a branch created with Bitbucket**:
 
-1. Use the magento-cloud CLI to push the branch.
+1. Use the `magento-cloud` CLI to push the branch.
 
    ```bash
    magento-cloud environment:push from-bitbucket
