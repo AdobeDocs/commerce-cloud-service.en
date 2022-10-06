@@ -1,32 +1,46 @@
 ---
-title: Architecture for Commerce on cloud infrastructure
-description: Describes the architecture for Commerce on the cloud infrastructure.
+title: Cloud architecture for Commerce
+description: Learn how the Starter and Pro plan's architecture contrast for Commerce Cloud. 
 ---
 
-# Commerce architecture
+# Cloud architecture for Commerce
 
-The Commerce platform architecture, built on Ethos-Kubernetes and Adobe Experience Cloud technology, provides a cloud-native hosting environment with self-service capabilities.
+Adobe Commerce on cloud infrastructure has a Starter and a Pro plan. Each plan has a unique architecture to drive your Adobe Commerce development and deployment process. Both the Starter plan and the Pro plan architecture deploy databases, web server, and caching servers across multiple environments for end-to-end testing while supporting continuous integration.
 
-## Tools and integrations
+For comparison, each plan includes the following infrastructure features and supported products.
 
-- [Fastly][]—CDN service, WAF management, image optimization, and other security features.
-- [New Relic][]—Software analytics service for analyzing Commerce interactions, such as database queries, customer transactions, and application dependency and event monitoring.
-- [SendGrid][]—SMTP proxy service provides email authentication and reputation monitoring.
+| DELETE | Starter| Pro |
+| -------- | --------------------------------- | --------------------------------------------- |
+| Core features | <ul><li>[All Adobe Commerce features](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)</li><li>PayPal Onboarding Tool</li><li>[Commerce Reporting](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li></ul> | <ul><li>[All Adobe Commerce features](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)</li><li>PayPal Onboarding Tool</li><li>[Commerce Reporting](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li><li>[B2B module](https://business.adobe.com/products/magento/b2b-ecommerce.html?_ga=2.105948422.442698376.1665067470-1322106587.1655147209)</li></ul> |
+| Infrastructure and deployment | <ul><li>Continuous cloud integration tools with unlimited users</li><li>Fastly Content Delivery Network (CDN), Image Optimization (IO), and added security with generous bandwidth allowances. The Web Application Firewall (WAF) service is available on Production environments only.</li><li>[New Relic](../monitor/new-relic.md) APM (Performance Monitoring) on 3 branches: master and 2 of your choice<br>Platform-as-a-service (PaaS) based Production, Staging, and development environments (4 total active environments) optimized for Adobe Commerce</li><li>Egress filtering (outbound firewall)</li></ul> | <ul><li>Continuous cloud integration tools with unlimited users</li><li>Fastly Content Delivery Network (CDN), Image Optimization (IO), and added security with generous bandwidth allowances. The Web Application Firewall (WAF) service is available on Production environments only.</li><li>[New Relic](../monitor/new-relic.md) Infrastructure on Production + APM (Performance Monitoring) on Staging and Production. The [Managed alerts](../monitor/new-relic.md#monitor-performance-with-managed-alerts) for Adobe Commerce policy implements monitoring best practices to proactively notify you about application and infrastructure issues affecting site performance.</li><li>Platform-as-a-service (PaaS) based Integration development environments (2 total active environments) optimized for Adobe Commerce</li><li>Infrastructure-as-a-Service (IaaS)—dedicated virtual infrastructure for Production environments and for Staging environments</li></ul> |
+| High availability infrastructure || High availability architecture with a three-server setup in the underlying Infrastructure-as-a-Service (IaaS) to provide enterprise grade reliability and availability |
+| Dedicated hardware | | Isolated and dedicated hardware setup in the underlying Infrastructure-as-a-Service (IaaS) to provide even higher levels of reliability and availability |
+| 24x7 email support | 24x7 monitoring and email support for the core application and the cloud infrastructure | 24x7 monitoring and email support for the core application and the cloud infrastructure |
+| A dedicated Customer Technical Advisor (CTA) | | Dedicated technical account management for the initial launch period, starting with your subscription until your initial site launch |
+| Add-ons\*| <ul><li>[B2B module](https://magento.com/business-needs/b2b-commerce)</li></ul> |
 
-## Infrastructure
+\* _Available for an additional fee_
 
-- **[!DNL AWS Managed Services]**—Provides a high-availability operational structure that includes the following services required to support Commerce:
+## Starter projects
 
-    - **Aurora**—A fault-tolerant, relational database compatible with MySQL.
-    - **Elasticsearch**—Powerful, multi-tenant search engine.
-    - **RabbitMQ**—A native message queue for Commerce that enables a module to publish messages to queues and consumers to receive messages asynchronously.
-    - **Redis**—(ElastiCache) session and search caching.
-    - **S3**—Simple storage service that provides the option to store files and schedule imports/exports in a persistent, remote storage container that is version controlled, backed up, and encrypted.
+The [Starter plan architecture](starter-architecture.md) has four environments:
 
-- **Git**—Each Commerce program uses a Git-based source repository.
+-  **Integration**—The Integration environment provides two testable environments. Each environment includes an active Git branch, database, web server, caching, some services, environment variables, and configurations.
 
-<!-- link definitions -->
+-  **Staging**—As code and extensions pass your tests, you can merge your Integration branch to a Staging environment, which becomes your pre-Production testing environment. It includes the `staging` active branch, database, web server, caching, third-party services, environment variables, configurations, and services, such as Fastly and New Relic.
 
-[Fastly]: https://www.fastly.com
-[New Relic]: https://newrelic.com
-[SendGrid]: https://sendgrid.com
+-  **Production**—When code is ready and tested, all code merges to `master` for deployment to the Production live site. This environment includes your active `master` branch, database, web server, caching, third-party services, environment variables, and configurations.
+
+-  **Inactive**—You can have an unlimited number of inactive branches.
+
+## Pro projects
+
+The [Pro plan architecture](pro-architecture.md) has a global master with three environments:
+
+-  **Integration**—The Integration environment provides a testable environment that includes a database, web server, caching, some services, environment variables, and configurations. You can develop, deploy, and test your code before merging to the Staging environment.
+
+   -  _Inactive_—You can have an unlimited number of inactive branches based on the Integration environment, but only one active branch (not including Integration itself).
+
+-  **Staging**—The Staging environment is for pre-Production testing and includes a database, web server, caching, third-party services, environment variables, configurations, and services, such as Fastly.
+
+-  **Production**—The Production environment includes a three-node, high-availability architecture for your data, services, caching, and store. This is your live, public store environment with environment variables, configurations, and third-party services.
