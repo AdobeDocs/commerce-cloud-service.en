@@ -21,6 +21,11 @@ product: magento
         + [Overview of CLI](dev-tools/cloud-cli.md)
     + [Variable levels and options](environment/variable-levels.md)
 + Integrations {#integrations}
+    + [Overview](integrations/overview.md)
+    + [Bitbucket](integrations/bitbucket.md)
+    + [GitHub](integrations/github.md)
+    + [GitLab](integrations/gitlab.md)
+    + [Health notifications](integrations/health-notifications.md)
 + Application {#config-app}
     + [Configure application deployment](application/configure-app-yaml.md)
     + [PHP settings](application/php-settings.md)
