@@ -65,6 +65,12 @@ product: magento
     + [Redis](services/redis.md)
 + Fastly services {#cdn}
 + Deployment {#deploy}
+    + [Optimization](deploy/optimization.md)
+    + [Deployment process](deploy/process.md)
+    + [Scenario-based deployment](deploy/scenario-based.md)
+    + [Zero downtime deployment](deploy/reduce-downtime.md)
+    + [Static content deployment](deploy/static-content.md)
+    + [Smart wizards](deploy/smart-wizards.md)
 + Test {#test}
     + [Xdebug](test/debug.md)
 + Launch site {#launch}
