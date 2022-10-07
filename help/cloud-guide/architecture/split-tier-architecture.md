@@ -43,7 +43,7 @@ Minimally, Pro projects with the Scaled architecture have six nodes available.
 
 -  3 service nodes m5.2xlarge (8 CPU, 32 Gb RAM)
 
-Each project is unique, however, and requires performance monitoring to properly analyze resource management. Each account includes the [New Relic service]((../monitor/new-relic.md)), which automatically connects with the application data and performance analytics to provide dynamic server monitoring. Specifically, you can use the New Relic service to monitor CPU and RAM utilization to determine which nodes require additional resources. As a resource reaches capacity or you notice a degradation in performance based on the analytics, you can create a request to scale your infrastructure to meet the demand.
+Each project is unique, however, and requires performance monitoring to properly analyze resource management. Each account includes the [New Relic service](../monitor/new-relic.md), which automatically connects with the application data and performance analytics to provide dynamic server monitoring. Specifically, you can use the New Relic service to monitor CPU and RAM utilization to determine which nodes require additional resources. As a resource reaches capacity or you notice a degradation in performance based on the analytics, you can create a request to scale your infrastructure to meet the demand.
 
 ### SSH access
 

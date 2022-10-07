@@ -306,7 +306,7 @@ New Relic provides templates for configuring different types of notification cha
 
    -  On the _Create notification channel_ page, select the channel type and complete the steps to configure, create, save, and send a test notification to verify that the channel works.
 
-   - Click **Create Channel**.
+   -  Click **Create Channel**.
 
 1. Specify the alerts to send to the channel.
 

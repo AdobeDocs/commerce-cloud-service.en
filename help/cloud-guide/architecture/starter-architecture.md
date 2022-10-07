@@ -85,7 +85,7 @@ Adobe Commerce on cloud infrastructure uses the Debian GNU/Linux operating syste
 
 -  [MySQL](../services/mysql.md)
 
--  [Redis]( ../services/redis.md)
+-  [Redis](../services/redis.md)
 
 -  [RabbitMQ](../services/rabbitmq.md)
 
