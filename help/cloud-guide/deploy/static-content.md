@@ -66,4 +66,3 @@ When using the SCD on-demand strategy, it helps to preload the cache with pages 
 Sometimes you can choose to skip generating static content completely. You can set the [SKIP_SCD](../environment/variables-build.md#skipscd) environment variable in the global stage to ignore other configurations related to SCD. This does not affect existing content in the `~/pub/static` directory.
 
 [SCD Load Comparison]: ../../assets/scd-load-times.png
-{width="700px"}
