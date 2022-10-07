@@ -165,7 +165,7 @@ We recommend adding all of your products, catalogs, site content, and so on dire
 
 As you develop features, add extensions, and design themes, having real data to work with is helpful. At any time, you can create a database dump from the Production environment and push that to your Staging and Integration environments as needed.
 
-{% include cloud/data-collection.md %}
+{{cloud-data-collection}}
 
 ![Pull and sanitize production data](../../assets/cloud_workflow-data-code-process.png)
 

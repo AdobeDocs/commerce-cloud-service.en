@@ -15,7 +15,7 @@ The following graphic demonstrates the Pro develop and deploy workflow, which us
 
 The Integration environment provides a single, base integration branch containing your Adobe Commerce on cloud infrastructure code. You can create one additional active environment branch. This allows for up to two active branches deployed to Platform-as-a-Service (PaaS) containers. There is no limit on the number of inactive environments.
 
-{% include cloud/note-enhanced-integration-envs-kb.md%}
+{{#enhanced-integration-envs}}
 
 The Adobe Commerce on cloud infrastructure environments support a flexible, continuous integration process. Begin by cloning the `integration` branch to your local project folder. Create a new branch, or multiple branches, to develop new features, configure changes, add extensions, and deploy updates:
 
