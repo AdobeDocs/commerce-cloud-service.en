@@ -15,8 +15,9 @@ stage:
 
 For more information about customizing the build and deploy process:
 
-- [Deployment configuration](configure-env-yaml.md)
-- [Deployment process](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html)
+-  [Deployment configuration](configure-env-yaml.md)
+
+-  [Deployment process](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html)
 
 The following variables were removed in v2.2:
 

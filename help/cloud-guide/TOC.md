@@ -8,7 +8,11 @@ product: magento
 
 + [Commerce](overview.md)
 + Architecture {#architecture}
-    + [Cloud infrastructure](architecture/cloud-architecture.md)
+    + [Architecture](architecture/cloud-architecture.md)
+    + [Starter architecture](architecture/starter-architecture.md)
+    + [Starter develop and deploy workflow](architecture/starter-develop-deploy-workflow.md)
+    + [Pro architecture](architecture/pro-architecture.md)
+    + [Pro develop and deploy workflow](architecture/pro-develop-deploy-workflow.md)
     + [Split-tier architecture](architecture/split-tier-architecture.md)
 + [Get started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Cloud project {#project}
