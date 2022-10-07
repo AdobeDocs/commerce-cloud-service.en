@@ -101,9 +101,9 @@ Configure your store settings from the Admin panel for the Integration environme
 For the best information on configurations, review the documentation for Adobe Commerce and the installed extensions. Here are some links and ideas to help you get kickstarted:
 
 -  [Best practices for store configuration](https://devdocs.magento.com/cloud/configure/configure-best-practices.html) for specific best practices in the cloud
--  [Basic configuration]({{ site.user_guide_url }}/configuration/configuration-basic.html) for store admin access, name, languages, currencies, branding, sites, store views and more
--  [Theme]({{ site.user_guide_url }}/design/design-theme.html) for your look and feel of the site and stores including CSS and layouts
--  [System configuration]({{ site.user_guide_url }}/system/system.html) for roles, tools, notifications, and your encryption key for your database
+-  [Basic configuration](https://docs.magento.com/user-guide/configuration/configuration-basic.html) for store admin access, name, languages, currencies, branding, sites, store views and more
+-  [Theme](https://docs.magento.com/user-guide/design/design-theme.html) for your look and feel of the site and stores including CSS and layouts
+-  [System configuration](https://docs.magento.com/user-guide/system/system.html) for roles, tools, notifications, and your encryption key for your database
 -  Extension settings using their documentation
 
 Beyond just store settings, you can further configure multiple sites and stores, configured services, and more. See [Configure your store](https://devdocs.magento.com/cloud/configure/configuration-overview.html).
