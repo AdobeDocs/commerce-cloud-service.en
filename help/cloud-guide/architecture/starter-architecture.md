@@ -51,7 +51,7 @@ You can have up to **two** active Integration environments. You create an Integr
 
 You can have an unlimited number of inactive branches for code storage. To access, view, and test an inactive branch, you must activate it.
 
-{{#enhanced-integration-envs}}
+{{enhanced-integration-envs}}
 
 ## Production and Staging technology stack
 

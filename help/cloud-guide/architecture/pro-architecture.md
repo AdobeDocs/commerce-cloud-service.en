@@ -68,7 +68,7 @@ For best performance in the Integration environment follow these best practices:
 
 -  You cannot restore the Integration database from Production or Staging
 
-{{#enhanced-integration-envs}}
+{{enhanced-integration-envs}}
 
 ## Staging environment
 
