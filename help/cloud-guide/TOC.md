@@ -21,7 +21,7 @@ product: magento
     + Configure project
     + Manage user access
     + Enable MFA for SSH
-    + Manage branches
+    +[ Manage branches in the UI](project/console-branches.md)
 + Developer tools {#dev-tools}
     + Ece-tools {#ece-tools}
         + [Package overview](dev-tools/ece-tools.md)
