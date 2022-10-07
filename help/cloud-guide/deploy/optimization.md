@@ -5,7 +5,7 @@ description: Learn about ways to optimize the deployment process for Adobe Comme
 
 # Optimize deployment
 
-Site performance can suffer during the deployment process. The length of time a site is in maintenance mode when deploying to a production site depends on many factors, such as environment configuration and the amount of content a site contains. The first best practice for optimizing your Cloud deployment is to [upgrade to use `ece-tools`](https://devdocs.magento.com/cloud/project/ece-tools-upgrade-project.html) to benefit from the package features, such as commands to create a backup of the database and verify environment configuration.
+Site performance can suffer during the deployment process. The length of time a site is in maintenance mode when deploying to a production site depends on many factors, such as environment configuration and the amount of content a site contains. The first best practice for optimizing your Cloud deployment is to [upgrade to use `ece-tools`](../dev-tools/install-ece-tools.md) to benefit from the package features, such as commands to create a backup of the database and verify environment configuration.
 
 The following topics can help you to better understand how to optimize the deployment process:
 

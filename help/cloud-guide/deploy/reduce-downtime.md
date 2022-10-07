@@ -11,7 +11,7 @@ During the deployment process, all connections queue for up to 5 minutes preserv
 
 Use the following steps to reduce the amount of time it takes your store to deploy an update to Production:
 
-1. [Upgrade to the `ece-tools` package](https://devdocs.magento.com/cloud/project/ece-tools-upgrade-project.html) or [update the `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html)
+1. [Upgrade to the `ece-tools` package](../dev-tools/install-ece-tools.md) or [update the `ece-tools` version](../dev-tools/update-ece-tools.md)
    Your Adobe Commerce on cloud infrastructure project must have the latest `ece-tools` package so that you have the tools available to configure an optimal deployment. If you have the latest `ece-tools`, continue to the next step.
 
    >[!NOTE]
@@ -21,7 +21,7 @@ Use the following steps to reduce the amount of time it takes your store to depl
 1. [Configure static content deployment](static-content.md)
    If static content deployment fails in the deploy phase, your site gets stuck in maintenance mode. When a failure occurs during the build phase, the process avoids downtime because it never begins the deploy phase. [Generating static content during the build phase with minified HTML](static-content.md#setting-the-scd-on-build), also known as the ideal state, is the optimal configuration for zero-downtime deployments and _prevents_ downtime if a failure occurs.
 
-1. [Configure the post-deploy hook](https://devdocs.magento.com/cloud/project/magento-app-properties.html#hooks)
+1. [Configure the post-deploy hook](../application/hooks-property.md)
    You must configure the post-deploy hook to clean and warm the cache. By default, cache clean occurs during the deploy phase when the site is down. Moving the cache clean to the post-deploy phase means that your cache remains live until the deploy phase is complete, and then you can safely clean the cache.
 
    Customize the list of pages used to preload the cache with the [WARM_UP_PAGES environment variable](../environment/variables-post-deploy.md#warmuppages).
