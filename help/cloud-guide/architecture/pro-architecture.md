@@ -219,7 +219,7 @@ Edit the following YAML files to configure specific software versions to use in 
 
 -  [`.magento.app.yaml`](https://devdocs.magento.com/cloud/project/magento-app.html)—application build and deployment
 
--  [`routes.yaml`](../routes/routes.md)—url processing
+-  [`routes.yaml`](../routes/routes-yaml.md)—url processing
 
 -  [`services.yaml`](../services/services-yaml.md)—supported services
 

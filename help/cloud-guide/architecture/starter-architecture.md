@@ -97,7 +97,7 @@ You use the following files to configure the software versions that you want to 
 
 -  [`.magento.app.yaml`](https://devdocs.magento.com/cloud/project/magento-app.html)
 
--  [`routes.yaml`](../routes/routes.md)
+-  [`routes.yaml`](../routes/routes-yaml.md)
 
 -  [`services.yaml`](../services/services-yaml.md)
 
