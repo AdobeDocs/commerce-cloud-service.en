@@ -29,7 +29,6 @@ product: magento
         + [Update Ece-tools package](dev-tools/update-ece-tools.md)
     + Cloud CLI {#cloud-cli}
         + [Overview of CLI](dev-tools/cloud-cli.md)
-        + Manage branches in the CLI
     + [Variable levels and options](environment/variable-levels.md)
 + Integrations {#integrations}
     + [Overview](integrations/overview.md)
@@ -93,6 +92,7 @@ product: magento
 + Storage {#storage}
     + [Manage disk space](storage/manage-disk-space.md)
     + [Profile database queries](storage/profile-database-queries.md)
+    + [Snapshots and backup management](storage/snapshots.md)
 + Release notes {#release-notes}
     + [Cloud tools suite](release-notes/cloud-tools.md)
     
