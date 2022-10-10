@@ -33,16 +33,16 @@ You can configure your local environment to generate the SSH certificate automat
 
 1. On your local work environment, create a file named `config.yaml` in the `.magento-cloud` folder in your home directory if it does not exist.
 
-    ```bash
-    touch ~/.magento-cloud/config.yaml
-    ```
+   ```bash
+   touch ~/.magento-cloud/config.yaml
+   ```
 
 1. Edit the `config.yaml` file to add the following configuration.
 
-    ```yaml
+   ```yaml
    api:
       auto_load_ssh_cert: true
-    ```
+   ```
 
 1. Use the `magento-cloud` CLI to authenticate again:
 
@@ -331,16 +331,16 @@ During the SSH certificate generation, the `magento-cloud` CLI adds an additiona
 
 1. Create the `config` file if it does not exists.
 
-    ```bash
-    touch ~/.ssh/config
-    ```
+   ```bash
+   touch ~/.ssh/config
+   ```
 
 1. Add an `IdentityFile` configuration.
 
-    ```yaml
+   ```yaml
    Host *
      IdentityFile ~/.ssh/id_rsa
-    ```
+   ```
 
 >[!NOTE]
 >
