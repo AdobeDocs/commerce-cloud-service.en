@@ -16,6 +16,12 @@ product: magento
     + [Split-tier architecture](architecture/split-tier-architecture.md)
 + [Get started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Cloud project {#project}
+    + [Project overview](project/overview.md)
+    + [Project structure](project/file-structure.md)
+    + [User access](project/user-access.md)
+    + [Multi-factor authentication](project/multi-factor-authentication.md)
+    + [Outgoing emails](project/outgoing-emails.md)
+    + [Environments in the UI](project/console-branches.md)
 + Developer tools {#dev-tools}
     + Ece-tools {#ece-tools}
         + [Package overview](dev-tools/ece-tools.md)
@@ -47,7 +53,7 @@ product: magento
     + Override variables {#stage}
         + [Environment variables](environment/variables-intro.md)
         + [ADMIN](environment/variables-admin.md)
-        + [MAGENTO_CLOUD](environment/variables-cloud.md)
+        + [Cloud variables](environment/variables-cloud.md)
         + [Global](environment/variables-global.md)
         + [Build](environment/variables-build.md)
         + [Deploy](environment/variables-deploy.md)
@@ -56,7 +62,7 @@ product: magento
         + [Notifications](environment/set-up-notifications.md)
         + [Log handlers](environment/log-handlers.md)
 + Routes {#config-routes}
-    + [Configure routes](routes/routes.md)
+    + [Configure routes](routes/routes-yaml.md)
     + [Caching](routes/caching.md)
     + [Redirects](routes/redirects.md)
     + [Server-side includes](routes/server-side-includes.md)
@@ -86,5 +92,7 @@ product: magento
 + Storage {#storage}
     + [Manage disk space](storage/manage-disk-space.md)
     + [Profile database queries](storage/profile-database-queries.md)
+    + [Snapshots and backup management](storage/snapshots.md)
 + Release notes {#release-notes}
     + [Cloud tools suite](release-notes/cloud-tools.md)
+    

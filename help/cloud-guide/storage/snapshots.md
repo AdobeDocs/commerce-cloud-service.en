@@ -7,7 +7,7 @@ description: Learn how to manually back up and restore your Adobe Commerce on cl
 
 You can back up and restore specific environments at any time using a snapshot. Snapshot options are available for all Starter environments and Pro Integration environments. The snapshot feature does not apply to the Pro Staging and Production environments.
 
-The Pro Staging and Production environments receive regular backups for disaster recovery purposes by default, see [Pro Backup & Disaster Recovery](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#backup-and-disaster-recovery). However, these backups are not publicly accessible because they are stored in a separate system. You can open a ticket to request a backup with a specific date, time, and timezone. Then we can extract it from the external system and provide it to you.
+The Pro Staging and Production environments receive regular backups for disaster recovery purposes by default, see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery). However, these backups are not publicly accessible because they are stored in a separate system. You can open a ticket to request a backup with a specific date, time, and timezone. Then we can extract it from the external system and provide it to you.
 
 >[!TIP]
 >
