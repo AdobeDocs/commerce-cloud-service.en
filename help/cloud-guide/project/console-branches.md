@@ -150,7 +150,7 @@ If your project needs to access multiple repositories, you can choose to attach 
 
 ### Enter your GitHub deploy key
 
-On GitHub, deploy keys are read-only by default. Your project will not push code to the private repository.
+On GitHub, deploy keys are read-only by default.
 
 **To enter your project public key as a GitHub deploy key**:
 

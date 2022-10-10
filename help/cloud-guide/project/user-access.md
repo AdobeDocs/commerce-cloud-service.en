@@ -128,7 +128,7 @@ You can use the Project Web UI to add permissions and use the _Edit_ feature to 
 
 ### Add users from the Project Web UI
 
-1. Log in to [your account](https://account.magento.com).
+1. Log in to [your account](https://account.magento.com/customer/account/login).
 
 1. On the _My Account_ page, click the [!UICONTROL Magento] tab to see the projects in your account.
 
