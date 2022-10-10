@@ -9,7 +9,7 @@ Adobe Commerce on cloud infrastructure has a Starter and a Pro plan. Each plan h
 
 For comparison, each plan includes the following infrastructure features and supported products.
 
-| DELETE | Starter| Pro |
+| | Starter| Pro |
 | -------- | --------------------------------- | --------------------------------------------- |
 | Core features | <ul><li>[All Adobe Commerce features](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)</li><li>PayPal Onboarding Tool</li><li>[Commerce Reporting](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li></ul> | <ul><li>[All Adobe Commerce features](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)</li><li>PayPal Onboarding Tool</li><li>[Commerce Reporting](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li><li>[B2B module](https://business.adobe.com/products/magento/b2b-ecommerce.html?_ga=2.105948422.442698376.1665067470-1322106587.1655147209)</li></ul> |
 | Infrastructure and deployment | <ul><li>Continuous cloud integration tools with unlimited users</li><li>Fastly Content Delivery Network (CDN), Image Optimization (IO), and added security with generous bandwidth allowances. The Web Application Firewall (WAF) service is available on Production environments only.</li><li>[New Relic](../monitor/new-relic.md) APM (Performance Monitoring) on 3 branches: master and 2 of your choice<br>Platform-as-a-service (PaaS) based Production, Staging, and development environments (4 total active environments) optimized for Adobe Commerce</li><li>Egress filtering (outbound firewall)</li></ul> | <ul><li>Continuous cloud integration tools with unlimited users</li><li>Fastly Content Delivery Network (CDN), Image Optimization (IO), and added security with generous bandwidth allowances. The Web Application Firewall (WAF) service is available on Production environments only.</li><li>[New Relic](../monitor/new-relic.md) Infrastructure on Production + APM (Performance Monitoring) on Staging and Production. The [Managed alerts](../monitor/new-relic.md#monitor-performance-with-managed-alerts) for Adobe Commerce policy implements monitoring best practices to proactively notify you about application and infrastructure issues affecting site performance.</li><li>Platform-as-a-service (PaaS) based Integration development environments (2 total active environments) optimized for Adobe Commerce</li><li>Infrastructure-as-a-Service (IaaS)—dedicated virtual infrastructure for Production environments and for Staging environments</li></ul> |
@@ -17,7 +17,7 @@ For comparison, each plan includes the following infrastructure features and sup
 | Dedicated hardware | | Isolated and dedicated hardware setup in the underlying Infrastructure-as-a-Service (IaaS) to provide even higher levels of reliability and availability |
 | 24x7 email support | 24x7 monitoring and email support for the core application and the cloud infrastructure | 24x7 monitoring and email support for the core application and the cloud infrastructure |
 | A dedicated Customer Technical Advisor (CTA) | | Dedicated technical account management for the initial launch period, starting with your subscription until your initial site launch |
-| Add-ons\*| <ul><li>[B2B module](https://magento.com/business-needs/b2b-commerce)</li></ul> |
+| Add-ons\*| <ul><li>[B2B module](https://business.adobe.com/products/magento/b2b-ecommerce.html)</li></ul> |
 
 \* _Available for an additional fee_
 
@@ -35,11 +35,11 @@ The [Starter plan architecture](starter-architecture.md) has four environments:
 
 ## Pro projects
 
-The [Pro plan architecture](pro-architecture.md) has a global master with three environments:
+The [Pro plan architecture](pro-architecture.md) has a global `master` with three environments:
 
 -  **Integration**—The Integration environment provides a testable environment that includes a database, web server, caching, some services, environment variables, and configurations. You can develop, deploy, and test your code before merging to the Staging environment.
 
-   -  _Inactive_—You can have an unlimited number of inactive branches based on the Integration environment, but only one active branch (not including Integration itself).
+    - _Inactive_—You can have an unlimited number of inactive branches based on the Integration environment, but only one active branch (not including Integration itself).
 
 -  **Staging**—The Staging environment is for pre-Production testing and includes a database, web server, caching, third-party services, environment variables, configurations, and services, such as Fastly.
 

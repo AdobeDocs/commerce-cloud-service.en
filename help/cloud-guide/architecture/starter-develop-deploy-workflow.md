@@ -1,11 +1,11 @@
 ---
-title: Starter develop and deploy workflow
+title: Starter project workflow
 description: Learn how to use the Starter development and deployment workflows.
 ---
 
-# Starter develop and deploy workflow
+# Starter project workflow
 
-The Adobe Commerce on cloud infrastructure includes a single Git repository with a master branch for the Production environment that can be branched to create Staging and Integration environments for testing and development work. You can have up to four active environments, including a `master` environment for your production server. See [Starter architecture](starter-architecture.md) for an overview.
+The Adobe Commerce on cloud infrastructure includes a single Git repository with a `master` branch for the Production environment that can be branched to create Staging and Integration environments for testing and development work. You can have up to four active environments, including a `master` environment for your production server. See [Starter architecture](starter-architecture.md) for an overview.
 
 For your environments, we recommend following a Development > Staging > Production workflow to develop and deploy your site.
 
@@ -15,11 +15,11 @@ For your environments, we recommend following a Development > Staging > Producti
 
 For your branches, you can follow any development methodology. For example, you can follow an Agile methodology such as scrum to create branches for every sprint.
 
-From each sprint, you can create branches for every user story. All the stories become testable. You can continually merge to the sprint branch and validate that branch on a continuous basis. When the sprint ends, you can merge the sprint branch to master to deploy all sprint changes to production without having to deal with a testing bottleneck.
+From each sprint, you can create branches for every user story. All the stories become testable. You can continually merge to the sprint branch and validate that branch on a continuous basis. When the sprint ends, you can merge the sprint branch to `master` to deploy all sprint changes to production without having to deal with a testing bottleneck.
 
 ## Development workflow
 
-Development and deployment on Starter plans begin with your initial project. You create your project with the "blank site", which is a Adobe Commerce on cloud infrastructure template code repo with a fully prepared store. This creates a `master` branch with a copy of the code from your Production environment.
+Development and deployment on Starter plans begin with your initial project. You create your project with the "blank site", which is an Adobe Commerce on cloud infrastructure template code repo with a fully prepared store. This creates a `master` branch with a copy of the code from your Production environment.
 
 The development workflow uses the following process:
 
@@ -29,7 +29,7 @@ The development workflow uses the following process:
 -  [Generate configuration](#generate-configuration-management-files) management files
 -  [Push code](#push-code-and-test) and configuration to build and deploy to the Staging and Production environments
 
-![Develop and deploy workflow](../../assets/cloud_workflow-starter.png)
+![Develop and deploy workflow](../../assets/starter-workflow.png)
 
 You also have a few optional steps to help develop and test your code and your store data:
 
@@ -49,32 +49,30 @@ git fetch origin
 ```
 
 ```bash
-git pull origin <environment ID>
+git pull origin <environment-ID>
 ```
 
 The first time you start working in branches for your Starter project, you need to create a `staging` branch. This creates a code branch matching the `master` branch that deploys to a Staging environment to test configuration and code changes before deploying to the Production environment.
 
-Next, create branches from `staging` to develop code, add extensions, and configure 3rd party integrations. Anytime you need to develop custom code, add extensions, integrate with a 3rd party service, work in a development branch created from the `staging` branch. You will have four active Integration environments available. When you push an active branch, one of these Integration environments automatically deploys your code to test.
-
-We walk you through the process when you [set up your local](https://devdocs.magento.com/cloud/setup/first-time-setup.html) environment.
+Next, create branches from `staging` to develop code, add extensions, and configure third-party integrations. Anytime you need to develop custom code, add extensions, integrate with a third-party service, work in a development branch created from the `staging` branch. You have four active Integration environments available. When you push an active branch, one of these Integration environments automatically deploys your code to test.
 
 The format of the Git branch command is:
 
 ```bash
-git checkout <branch name>
+git checkout <branch-name>
 ```
 
-The format of the Magento Cloud CLI branch command is:
+The format of the Cloud CLI branch command is:
 
 ```bash
-magento-cloud environment:branch <environment name> <parent environment ID>
+magento-cloud environment:branch <environment-name> <parent-environment-ID>
 ```
 
-![Branch from Master](../../assets/cloud_workflow-branching.png)
+![Branch from Master](../../assets/starter-branching.png)
 
 ### Develop code
 
-It's the time you have been waiting for...writing code. Using this base branch of Adobe Commerce on cloud infrastructure code, you can start installing extensions, developing custom code, adding themes, and much more.
+Using this base branch of Adobe Commerce on cloud infrastructure code, you can start installing extensions, developing custom code, adding themes, and much more.
 
 We recommend using a branching strategy with your development work. Using one branch to do all of your work all at once might make testing difficult. For example, you could follow continuous integration and sprint methodologies to work:
 
@@ -82,23 +80,23 @@ We recommend using a branching strategy with your development work. Using one br
 -  Push this code, test, and merge to Staging then Production
 -  Fully configure your services in `services.yaml` and add a theme
 -  Push this code, test, and merge to Staging then Production
--  Integrate with a 3rd party service
+-  Integrate with a third-party service
 -  Push this code, test, and merge to Staging then Production
 
-And so on until you have your store fully built, configured, and ready to launch. But keep reading, we have even better options for your store and code configuration!
+And so on, until you have your store fully built, configured, and ready to launch. But keep reading, we have even better options for your store and code configuration.
 
 >[!NOTE]
 >
 >Do not complete any configurations in your local workstation yet.
 
-![Develop code and push to deploy](../../assets/cloud_workflow-push-code.png)
+![Push code from local](../../assets/starter-push-code.png)
 
 ### Configure store
 
 When you are ready to configure your store, push all your code to the Integration environment.
-Configure your store settings from the Admin panel for the Integration environment, not in your local environment. You can find the URL in the Project Web Interface. The Store Admin URL is located on the branch page.
+Configure your store settings from the Admin panel for the Integration environment, not in your local environment. You can find the URL by clicking **Access site** in the Project Web Interface
 
-For the best information on configurations, review the documentation for Adobe Commerce and the installed extensions. Here are some links and ideas to help you get kickstarted:
+For the best information on configurations, review the documentation for Adobe Commerce and the installed extensions. Here are some links and ideas to help you get started:
 
 -  [Best practices for store configuration](https://devdocs.magento.com/cloud/configure/configure-best-practices.html) for specific best practices in the cloud
 -  [Basic configuration](https://docs.magento.com/user-guide/configuration/configuration-basic.html) for store admin access, name, languages, currencies, branding, sites, store views and more
@@ -125,17 +123,15 @@ You generate the file in the Integration environment where you configured Adobe 
 
 **Important notes** on Configuration Management:
 
--  Any configuration setting included in the file generated from the `app:config:dump` command is locked from editing, or read-only, in the deployed environment. This is one reason we recommend using the `.vendor/bin/ece-tools config:dump` command.
+-  Any configuration setting included in the file generated from the `app:config:dump` command is locked from editing, or read-only, in the deployed environment. This is one reason that Adobe recommends using the `.vendor/bin/ece-tools config:dump` command.
 
-   For example, we will have you install a module for Fastly in your development environment. You can only configure this module in the Staging and Production environment. Using the `.vendor/bin/ece-tools config:dump` command keeps those default fields editable when you deploy your development changes to the Staging and Production environment.
+   For example, you install a module for Fastly in your development environment. You can only configure this module in the Staging and Production environment. Using the `.vendor/bin/ece-tools config:dump` command keeps those default fields editable when you deploy your development changes to the Staging and Production environment.
 
 -  The generated file can be long depending on the size of your deployment. The `.vendor/bin/ece-tools config:dump` command generates a much smaller file than the file generated by the `app:config:dump` command.
 
-![Generate configuration management file](../../assets/cloud_workflow-config-mgmt.png)
+If you are using Adobe Commerce version 2.2 or later, the configuration management commands provide an additional feature to protect sensitive data, like sandbox credentials for a PayPal module. During the export process, any values that contain sensitive data are exported to separate configuration file—`env.php` in the `app/etc/` directory. This file remains in your local environment and does not get copied when you push your code to another branch. You can also create environment variables with CLI commands in all Adobe Commerce on cloud infrastructure versions.
 
-If you are using Adobe Commerce on cloud infrastructure version 2.2 or later, the configuration management commands provide an additional feature to protect sensitive data, like sandbox credentials for a PayPal module. During the export process, any values that contain sensitive data are exported to separate configuration file—`env.php` in the `app/etc/` directory. This file remains in your local environment and does not get copied when you push your code to another branch. You can also create environment variables with CLI commands in all Adobe Commerce on cloud infrastructure versions.
-
-![Environment variables generate](../../assets/cloud_workflow-env-variables.png)
+![Environment variables generate](../../assets/starter-env-variables.png)
 
 For more information, see [Configuration Management](https://devdocs.magento.com/cloud/live/sens-data-over.html).
 
@@ -157,21 +153,21 @@ We recommend installing sample data in your local and Integration environments. 
 
 For instructions, see [Install optional sample data](https://devdocs.magento.com/cloud/howtos/sample-data.html).
 
-![Install optional sample data](../../assets/cloud_workflow-sample-data.png)
+![Install optional sample data](../../assets/starter-sample-data.png)
 
 ### Optional: Pull production data
 
-We recommend adding all of your products, catalogs, site content, and so on directly to the Production environment. By adding this data to the Production environment, you can provide updated prices, coupons, inventory stock, sales announcements, information about future offerings, and much more for your customers. This data does not include extension configurations, which you configure in your local development branch.
+We recommend adding all of your products, catalogs, site content, and so on, directly to the Production environment. By adding this data to the Production environment, you can provide updated prices, coupons, inventory stock, sales announcements, information about future offerings, and much more for your customers. This data does not include extension configurations, which you configure in your local development branch.
 
 As you develop features, add extensions, and design themes, having real data to work with is helpful. At any time, you can create a database dump from the Production environment and push that to your Staging and Integration environments as needed.
 
 {{cloud-data-collection}}
 
-![Pull and sanitize production data](../../assets/cloud_workflow-data-code-process.png)
+![Pull and sanitize production data](../../assets/starter-data-code-process.png)
 
 >[!NOTE]
 >
->Before pushing the data to another environment, you should consider sanitizing your data. You have a couple of options including [using support utilities](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-spt-util.html) or developing a script to scrub out customer data.
+>Before pushing the data to another environment, you should consider sanitizing your data. You have a couple of options including [using support utilities](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) or developing a script to scrub out customer data.
 
 >[!WARNING]
 >
@@ -185,13 +181,13 @@ When you push branched code from your local environment to the remote branch, a 
 
 Build scripts:
 
--  Your site on the target environment continue running during a build
+-  The site in the target environment continues running during a build
 
 -  Check and run Adobe Commerce on cloud infrastructure patches and hotfixes
 
 -  Compile your code with a build and deploy log
 
--  Check for Configuration Management, if there static content deploy occurs during this phase
+-  Check for Configuration Management, if the static content deployment occurs during this phase
 
 -  Create or use a slug of unchanged code to speed up the process
 
@@ -209,27 +205,27 @@ Deploy scripts:
 
 When fully completed, your store comes back online, live, with all of your updated code and configurations.
 
-To learn more, see [Deployment process](https://devdocs.magento.com/cloud/reference/discover-deploy.html).
+See [Deployment process](../deploy/process.md).
 
 ### Push to Staging and test
 
-You should always push all of your code in iterations to your Staging environment for full testing. The first time you use this environment, you will need to configure a few services including [Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) and [New Relic](../monitor/new-relic.md). We also recommend configuring payment gateways, shipping, notifications, and other vital services with sandbox or testing credentials.
+Always push your code in iterations to the Staging environment for full testing. The first time you use this environment, you need to configure a few services including [Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) and [New Relic](../monitor/new-relic.md). We also recommend configuring payment gateways, shipping, notifications, and other vital services with sandbox or testing credentials.
 
 Staging is a pre-production environment, providing all services and settings as close to Production as possible. Thoroughly test every service, verify your performance testing tools, perform UAT testing as an administrator and customers, until you feel your store is ready for Production.
 
-To learn more, see [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html).
+See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html).
 
-### Push to Master / Production
+### Push to Production
 
-When you push to the `master` branch, you are pushing to the Production environment. Complete configuration and testing activities in the Production environment like you did in the Staging environment with one important difference. In the Production environment use live credentials for configuration and testing. The moment you launch your site, customers must be able to complete purchases and administrators should be able to manage your live store.
+When you push to the `master` branch, you are pushing to the Production environment. Complete configuration and testing activities in the Production environment like you did in the Staging environment with one important difference. In the Production environment, use live credentials for configuration and testing. The moment you launch your site, customers must be able to complete purchases and administrators should be able to manage your live store.
 
-To learn more, see [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html).
+See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html).
 
 ### Site launch
 
 We provide a clear walk-through for going live and launching, which requires more steps than pressing a button. After you complete these steps, your store can serve up products in your customized theme for sale immediately.
 
-To learn more, see [Site launch](https://devdocs.magento.com/cloud/live/live.html).
+See [Site launch](https://devdocs.magento.com/cloud/live/live.html).
 
 ## Continuous integration
 
@@ -245,4 +241,4 @@ Adobe Commerce on cloud infrastructure environments support continuous integrati
 
 -  Deploy to Production
 
-For more information, see [Continuous integration](https://devdocs.magento.com/cloud/deploy/continuous-deployment.html).
+See [Continuous integration](https://devdocs.magento.com/cloud/deploy/continuous-deployment.html).
