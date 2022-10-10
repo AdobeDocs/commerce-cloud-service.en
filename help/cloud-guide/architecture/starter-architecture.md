@@ -5,25 +5,25 @@ description: Learn about the environments supported by Starter architecture.
 
 # Starter architecture
 
-Your Adobe Commerce on cloud infrastructure Starter architecture supports up to **four** environments, including a Master environment that contains the initial project code, the Staging environment, and up to two Integration environments.
+Your Adobe Commerce on cloud infrastructure Starter architecture supports up to **four** environments, including a `master` environment that contains the initial project code, the Staging environment, and up to two Integration environments.
 
-All environments are in PaaS (Platform-as-a-Service) containers. These containers are deployed inside highly restricted containers on a grid of servers. These environments are read-only, accepting deployed code changes from branches pushed from your local workspace.  Each environment provides a database and web server.
+All environments are in PaaS (Platform-as-a-Service) containers. These containers are deployed inside highly restricted containers on a grid of servers. These environments are read-only, accepting deployed code changes from branches pushed from your local workspace. Each environment provides a database and web server.
 
-You can use any development and branching methodology you like. When you get initial access to your project, we strongly recommend that you create a Staging environment from the Master environment. Then, create the Integration environment by branching from Staging.
+You can use any development and branching methodology you like. When you get initial access to your project, we strongly recommend that you create a Staging environment from the `master` environment. Then, create the Integration environment by branching from Staging.
 
 ## Starter environment architecture
 
 The following diagram shows the hierarchical relationships of the Starter environments.
 
-![High-level view of Starter project](../../assets/cloud_arch-starter.png)
+![High-level view of Starter project](../../assets/starter-architecture.png)
 
 ## Production environment
 
 The Production environment provides the source code to deploy Adobe Commerce to the Cloud infrastructure that runs your public-facing single and multi-site storefronts. The Production environment uses code from the `master` branch to configure and enable the web server, database, configured services, and your application code.
 
-Because the production environment is read-only, you must make changes in the Integration environment and deploy across the architecture from the Integration environment to Staging, and finally to the Production environment. See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) and [Site launch](https://devdocs.magento.com/cloud/live/live.html).
+Because the Production environment is read-only, make changes in the Integration environment and deploy across the architecture from the Integration to Staging, and finally to the Production environment. See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) and [Site launch](https://devdocs.magento.com/cloud/live/live.html).
 
-We highly recommend fully testing in your Staging environment and branch before pushing to the `master` branch which deploys to the Production environment.
+Adobe recommends fully testing in your Staging environment branch before pushing to the `master` branch, which deploys to the Production environment.
 
 ## Staging environment
 
@@ -33,7 +33,7 @@ Additional sections in this guide provide instructions for final code deployment
 
 >[!WARNING]
 >
->We highly recommend testing every merchant and customer interaction in the Staging environment prior to deploying to the Production environment. See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) and [Test deployment](https://devdocs.magento.com/cloud/live/stage-prod-test.html).
+>Adobe recommends testing every merchant and customer interaction in the Staging environment before deploying to the Production environment. See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) and [Test deployment](https://devdocs.magento.com/cloud/live/stage-prod-test.html).
 
 ## Integration environment
 
@@ -55,7 +55,7 @@ You can have an unlimited number of inactive branches for code storage. To acces
 
 ## Production and Staging technology stack
 
-The Production and Staging environments include the following technologies. You can modify and configure these technologies through the [`.magento.app.yaml`](https://devdocs.magento.com/cloud/project/magento-app.html) file.
+The Production and Staging environments include the following technologies. You can modify and configure these technologies through the [`.magento.app.yaml`](../application/configure-app-yaml.md) file.
 
 -  Fastly for HTTP caching and CDN
 -  Nginx web server speaking to PHP-FPM, one instance with multiple workers
@@ -81,7 +81,7 @@ Each service runs in a separate, secure container. Containers are managed togeth
 
 Adobe Commerce on cloud infrastructure uses the Debian GNU/Linux operating system and the [NGINX](https://glossary.magento.com/nginx) web server. You cannot upgrade this software, but you can configure versions for the following:
 
--  [PHP](https://devdocs.magento.com/cloud/project/magento-app.html)
+-  [PHP](../application/php-settings.md)
 
 -  [MySQL](../services/mysql.md)
 
@@ -91,11 +91,11 @@ Adobe Commerce on cloud infrastructure uses the Debian GNU/Linux operating syste
 
 -  [Elasticsearch](../services/elasticsearch.md)
 
-In the Staging and Production environments, you use Fastly for CDN and caching. When your environment is initially provisioned, we install the latest version of the Fastly CDN extension. You can upgrade the extension to get the latest bug fixes and improvements. See [Fastly CDN module for Magento 2](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html#fastly-cdn-module-for-magento-2). You also have access to [New Relic](../monitor/new-relic.md#configure-new-relic-for-starter-environments.md) for performance management.
+In the Staging and Production environments, you use Fastly for CDN and caching. When your environment is initially provisioned, we install the latest version of the Fastly CDN extension. You can upgrade the extension to get the latest bug fixes and improvements. See [Fastly CDN module for Magento 2](https://github.com/fastly/fastly-magento2). Also, you have access to [New Relic](../monitor/new-relic.md#configure-new-relic-for-starter-environments.md) for performance monitoring.
 
 You use the following files to configure the software versions that you want to use in your implementation.
 
--  [`.magento.app.yaml`](https://devdocs.magento.com/cloud/project/magento-app.html)
+-  [`.magento.app.yaml`](../application/configure-app-yaml.md)
 
 -  [`routes.yaml`](../routes/routes-yaml.md)
 
@@ -103,7 +103,7 @@ You use the following files to configure the software versions that you want to 
 
 ### Backup and disaster recovery
 
-You can create a snapshot of your database and file system using the Project Web Interface or the CLI. The snapshot includes your deployed code, installed software and services, and data. See [Snapshots and backup management](https://devdocs.magento.com/cloud/project/project-webint-snap.html).
+You can create a snapshot of your database and file system using the Project Web Interface or the CLI. The snapshot includes your deployed code, installed software and services, and data. See [Snapshots and backup management](../storage/snapshots.md).
 
 ## Prepare for development
 
@@ -125,7 +125,7 @@ See the following sections for detailed instructions and walk-throughs to develo
 
 -  [Docker development](https://devdocs.magento.com/cloud/docker/docker-development.html) (local development environment enabled by Cloud Docker for Commerce)
 
--  [Manage branches](https://devdocs.magento.com/cloud/env/environments-start.html)
+-  [Manage branches](../project/console-branches.md)
 
 -  [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html)
 

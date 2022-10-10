@@ -1,15 +1,15 @@
 ---
-title: Pro develop and deploy workflow
+title: Pro project workflow
 description: Learn how to use the Pro development and deployment workflows.
 ---
 
-# Pro develop and deploy workflow
+# Pro project workflow
 
-The Adobe Commerce on cloud infrastructure Pro plan includes a single Git repository with a Global Master and three main environments: the **Integration** environment for development and testing, the **Staging** environment for testing with all services, and the **Production** environment for launching and maintaining your live site. See [Pro architecture](pro-architecture.md) for an overview.
+The Pro project includes a single Git repository with a Global `master` and three main environments: the **Integration** environment for development and testing, the **Staging** environment for testing with all services, and the **Production** environment for launching and maintaining your live site. See [Pro architecture](pro-architecture.md) for an overview.
 
 The following graphic demonstrates the Pro develop and deploy workflow, which uses a simple, git-branching approach. You [develop](#development-workflow) code using an Active branch based on the Integration environment branch, _pushing_ and _pulling_ code changes to and from your remote, Active branch. You deploy verified code by _merging_ the remote branch to the base branch, which activates an automated [build and deploy](#deployment-workflow) process for that environment.
 
-![High-level view of Pro architecture development workflow](../../assets/cloud_pro-dev-workflow.png)
+![High-level view of Pro architecture development workflow](../../assets/pro-dev-workflow.png)
 
 ## Development workflow
 
@@ -17,7 +17,7 @@ The Integration environment provides a single, base integration branch containin
 
 {{enhanced-integration-envs}}
 
-The Adobe Commerce on cloud infrastructure environments support a flexible, continuous integration process. Begin by cloning the `integration` branch to your local project folder. Create a new branch, or multiple branches, to develop new features, configure changes, add extensions, and deploy updates:
+The project environments support a flexible, continuous integration process. Begin by cloning the `integration` branch to your local project folder. Create a branch, or multiple branches, to develop new features, configure changes, add extensions, and deploy updates:
 
 -  **Fetch** changes from `integration`
 
@@ -31,7 +31,7 @@ The Adobe Commerce on cloud infrastructure environments support a flexible, cont
 
 With a developed code branch and the corresponding configuration files, your code changes are ready to merge to the `integration` branch for more comprehensive testing. The Integration environment is also best for:
 
--  **Integrating third party services**—Not all services are available in the PaaS environment.
+-  **Integrating third-party services**—Not all services are available in the PaaS environment.
 
 -  **Generating configuration management files**—Some configuration settings are _Read Only_ in a deployed environment.
 
@@ -49,7 +49,7 @@ Build script actions:
 
 -  Compile code with a build and deploy log
 
--  Check for Configuration Management, static content deploy occurs during this phase
+-  Check for Configuration Management, static content deployment occurs during this phase
 
 -  Create or use a slug of unchanged code to speed up the process
 
@@ -65,7 +65,7 @@ Deploy script actions:
 
 -  Configure routing for traffic
 
-After the build and deploy process, your store comes back online with your latest code changes and configurations. See [Deployment process](https://devdocs.magento.com/cloud/reference/discover-deploy.html).
+After the build and deploy process, your store comes back online with your latest code changes and configurations. See [Deployment process](../deploy/process.md).
 
 ### Merge to Integration
 
@@ -73,7 +73,7 @@ Combine all verified code changes by merging your Active development branch into
 
 ### Merge to Staging
 
-Staging is a pre-production environment that provides all services and settings as close to the Production environment as possible. You should always push your code changes from the Integration environment to the Staging environment so that you can perform thorough testing with all services. The first time you use the Staging environment, you must configure services, such as [Fastly CDN](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) and [New Relic](../monitor/new-relic.md). Also, we recommend configuring payment gateways, shipping, notifications, and other vital services with sandbox or testing credentials.
+Staging is a pre-production environment that provides all services and settings as close to the Production environment as possible. Always push your code changes from the Integration environment to the Staging environment so that you can perform thorough testing with all services. The first time you use the Staging environment, you must configure services, such as [Fastly CDN](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) and [New Relic](../monitor/new-relic.md). Also, we recommend configuring payment gateways, shipping, notifications, and other vital services with sandbox or testing credentials.
 
 It is best to thoroughly test every service, verify your performance testing tools, and perform UAT testing as an administrator and as a customer, until you feel that your store is ready for the Production environment. See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html).
 
@@ -86,6 +86,6 @@ After thorough testing in the Staging environment, merge to the Production envir
 
 ### Merge to Global Master
 
-You should always push a copy of the Production code to the Global Master in case there is an emergent need to debug the Production environment without interrupting services.
+Always push a copy of the Production code to the Global `master` in case there is an emergent need to debug the Production environment without interrupting services.
 
-Do **not** create a branch from Global Master. Use the `integration` branch to create new, active branches for development and fixes.
+Do **not** create a branch from Global `master`. Use the `integration` branch to create new, active branches for development and fixes.

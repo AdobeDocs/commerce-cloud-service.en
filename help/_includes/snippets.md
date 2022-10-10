@@ -25,7 +25,7 @@ Set the `_merge` option to one of the following:
 
 >[!WARNING]
 >
->Some **Pro projects** require a support ticket to update the route configuration in the `routes.yaml` file and the cron configuration in the `.magento.app.yaml` file. Adobe recommends updating and testing YAML configuration files in an Integration environment, then deploying changes to the Staging environment. If you discover that your configuration changes are not applied to Staging sites after you redeploy and do not see any related error messages in the log, then you **MUST** submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) that describes the attempted configuration changes. Include any updated YAML configuration files in the ticket.
+>Some **Pro projects** require a support ticket to update the route configuration in the `routes.yaml` file and the cron configuration in the `.magento.app.yaml` file. Adobe recommends updating and testing YAML configuration files in an Integration environment, then deploying changes to the Staging environment. If your changes are not applied to Staging sites after you redeploy and there are no related error messages in the log, then you **MUST** submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) that describes the attempted configuration changes. Include any updated YAML configuration files in the ticket.
 
 ## Pro services support {#pro-update-service}
 
@@ -64,7 +64,7 @@ Use the following instructions for service setup on Pro Integration environments
 
 >[!NOTE]
 >
->You must submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#support-tickets) to change the service configuration on Pro Production and Staging environments.
+>Submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#support-tickets) to change the service configuration on Pro Production and Staging environments.
 
 ## Service change {#change-service-version}
 
@@ -84,7 +84,7 @@ Use the following instructions for service setup on Pro Integration environments
 >
 >Before beginning an upgrade or a patching process, create an active branch from the Integration environment and check out the new branch to your local workstation. Dedicating a branch to the upgrade or the patch process helps to avoid interference with your work in progress.
 
-## Enhanced Integration Envs {#enhanced-integration-envs}
+## Enhanced Integration {#enhanced-integration-envs}
 
 >[!NOTE]
 >
@@ -92,9 +92,9 @@ Use the following instructions for service setup on Pro Integration environments
 
 ## Cloud Data Collection {#cloud-data-collection}
 
-To help export Production data as test data to use in Staging and Integration environments, [Run the support utilities](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-spt-util.html):
+To help export Production data as test data to use in Staging and Integration environments:
 
--  [CLI commands](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-spt-util.html#config-cli-spt-utils-db) (Recommended) to export a protected backup of customer and store data using your Adobe Commerce encryption key
+-  [Run the support utilities](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) CLI commands (Recommended) to export a protected backup of customer and store data using your Adobe Commerce encryption key
 
 -  [Data Collection](https://docs.magento.com/user-guide/system/support-data-collector.html) tool for generating and exporting data
 

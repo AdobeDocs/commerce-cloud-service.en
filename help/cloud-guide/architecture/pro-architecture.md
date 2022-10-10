@@ -34,7 +34,7 @@ The following table summarizes the differences between environments:
 
 Your project is a single Git repository with three, main environment branches for Integration, Staging, and Production. The following diagram shows the hierarchical relationship of the environments:
 
-![High-level view of Pro Environment architecture](../../assets/cloud_pro-branch-architecture.png)
+![High-level view of Pro Environment architecture](../../assets/pro-branch-architecture.png)
 
 ## Integration environment
 
@@ -102,15 +102,15 @@ See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.h
 
 ## Production environment
 
-The Production environment runs your public-facing single and multi-site storefronts. This environment runs on dedicated IaaS hardware featuring redundant, high-availability nodes for continuous access and failover protection for your customers. The Production environment includes all services in the Staging environment, plus the [New Relic Infrastructure (NRI)](https://newrelic.com/platform/infrastructure) service, which automatically connects with the application data and performance analytics to provide dynamic server monitoring.
+The Production environment runs your public-facing single and multi-site storefronts. This environment runs on dedicated IaaS hardware featuring redundant, high-availability nodes for continuous access and failover protection for your customers. The Production environment includes all services in the Staging environment, plus the [New Relic Infrastructure (NRI)](../monitor/new-relic.md#new-relic-infrastructure) service, which automatically connects with the application data and performance analytics to provide dynamic server monitoring.
 
 You cannot create a branch from the Production environment branch. You must push code changes from the Staging environment branch to the Production environment branch.
 
 ### Redundant hardware
 
-Rather than running a traditional, active-passive master or a master-slave setup, Adobe Commerce on cloud infrastructure runs a redundant architecture where all three instances accept reads and writes. This architecture offers zero downtime when scaling and provides guaranteed transactional integrity.
+Rather than running a traditional, active-passive `master` or a primary-secondary setup, Adobe Commerce on cloud infrastructure runs a redundant architecture where all three instances accept reads and writes. This architecture offers zero downtime when scaling and provides guaranteed transactional integrity.
 
-Because of our unique, redundant hardware, we can provide you with three gateway servers. Most external services enable you to add multiple IP addresses to an [allowlist](https://glossary.magento.com/whitelist), so having more than one fixed IP address is not a problem.
+Because of our unique, redundant hardware, we can provide you with three gateway servers. Most external services enable you to add multiple IP addresses to an allowlist, so having more than one fixed IP address is not a problem.
 
 The three gateways map to the three servers in your Production environment cluster and retain static IP addresses. It is fully redundant and highly available at every level:
 
@@ -141,7 +141,7 @@ Adobe Commerce on cloud infrastructure creates the backup using snapshots to enc
 
 >[!TIP]
 >
->On Pro Staging and Production environments, you must [Submit a support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to restore an environment from an automatic backup. You can create a backup of the database and code for your Production and Staging environments using `magento-cloud` CLI commands. See [Dump your database](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump) and [`bin/magento setup:backup`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupbackup). For Integration environments, we highly recommend that you create a snapshot as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Snapshots and backup management](https://devdocs.magento.com/cloud/project/project-webint-snap.html).
+>On Pro Staging and Production environments, you must [Submit a support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to restore an environment from an automatic backup. You can create a backup of the database and code for your Production and Staging environments using `magento-cloud` CLI commands. See [Dump your database](../storage/snapshots.md#dump-your-database) and [`bin/magento setup:backup`](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html#setup%3Abackup). For Integration environments, we highly recommend that you create a snapshot as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Snapshots and backup management](../storage/snapshots.md).
 
 ### Production technology stack
 
@@ -171,7 +171,7 @@ The Production environment has three virtual machines (VMs) behind an Elastic Lo
 
 The following figure shows the technologies used in the Production environment:
 
-![Production technology stack](../../assets/cloud_stack-diagram.png)
+![Production technology stack](../../assets/az-stack-diagram.png)
 
 ### Pro cluster scaling
 
@@ -189,19 +189,19 @@ If you expect a significant increase in traffic for an event or other reason, yo
 
 ## Master environment
 
-On Pro plan projects, the Master branch provides an active PaaS environment with your Production environment. Always push a copy of the Production code to the Master environment in case you need to debug the Production environment without interrupting services.
+On Pro plan projects, the `master` branch provides an active PaaS environment with your Production environment. Always push a copy of the Production code to the `master` environment in case that you need to debug the Production environment without interrupting services.
 
 **Caveats:**
 
--  Do **not** create a branch from Master. Use the Integration environment branch to create new, active branches.
+-  Do **not** create a branch based on the `master` branch. Use the Integration environment branch to create new, active branches.
 
--  Do not use the Master environment for development, UAT, or performance testing
+-  Do not use the `master` environment for development, UAT, or performance testing
 
 ## Software versions
 
 Adobe Commerce on cloud infrastructure uses the Debian GNU/Linux operating system and the [NGINX](https://glossary.magento.com/nginx) web server. You cannot upgrade this software, but you can configure versions for the following:
 
--  [PHP](https://devdocs.magento.com/cloud/project/magento-app.html)
+-  [PHP](../application/php-settings.md)
 
 -  [MySQL](../services/mysql.md)
 
@@ -217,10 +217,10 @@ For the Staging and Production environments, we recommend installing the latest 
 
 Edit the following YAML files to configure specific software versions to use in your implementation.
 
--  [`.magento.app.yaml`](https://devdocs.magento.com/cloud/project/magento-app.html)—application build and deployment
+-  [`.magento.app.yaml`](../application/configure-app-yaml.md)—application build and deployment
 
 -  [`routes.yaml`](../routes/routes-yaml.md)—url processing
 
 -  [`services.yaml`](../services/services-yaml.md)—supported services
 
--  [`.magento.env.yaml`](https://devdocs.magento.com/cloud/project/magento-env-yaml.html)—unified configs for Adobe Commerce on cloud infrastructure 2.2 and later
+-  [`.magento.env.yaml`](../environment/configure-env-yaml.md)—unified configs for Adobe Commerce on cloud infrastructure 2.2 and later
