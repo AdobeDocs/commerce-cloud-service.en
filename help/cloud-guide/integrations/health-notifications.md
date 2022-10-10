@@ -25,7 +25,7 @@ magento-cloud integration:add --type health.email --from-address you@example.com
 
 ## Slack channel notifications
 
-Slack is an external service that uses interactive apps called bots to post messages in a chat room. Before you can receive health notifications in Slack, you must create a new, custom [bot user](https://api.slack.com/bot-users) for your Slack group. After you configure the bot user for your channel, or channels, save the [bot token](https://api.slack.com/docs/token-types#bot) provided by Slack to register your integration. The following example registers health notifications in a Slack channel:
+Slack is an external service that uses interactive apps called bots to post messages in a chat room. Before you can receive health notifications in Slack, you must create a custom [bot user](https://api.slack.com/bot-users) for your Slack group. After you configure the bot user for your channel, or channels, save the [bot token](https://api.slack.com/docs/token-types#bot) provided by Slack to register your integration. The following example registers health notifications in a Slack channel:
 
 ```bash
 magento-cloud integration:add --type health.slack --token SLACK_BOT_TOKEN --channel '#slack-channel-name'
