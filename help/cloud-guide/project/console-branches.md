@@ -17,16 +17,16 @@ This topic discusses how to use the Project Web Interface to:
 >
 >You cannot create branches from Pro Staging and Production environments.
 
-## Add or delete an environment
+## Create or delete an environment
 
-The branching strategy uses a common Git workflow where you develop code and add extension in a development branch. See [Starter](https://devdocs.magento.com/cloud/architecture/starter-architecture.html) and [Pro](https://devdocs.magento.com/cloud/architecture/starter-develop-deploy-workflow.html) architecture overviews.
+The branching strategy uses a common Git workflow where you develop code and add extension in a development branch. See [Starter](../architecture/starter-architecture.md) and [Pro](../architecture/starter-develop-deploy-workflow.md) architecture overviews.
 
 -  For Starter, create a `staging` branch from the `master` branch, then branch from `staging` for development.
 -  For Pro, create a development branch from the Integration environment.
 
 Your account supports a limited number of active Git branches and an unlimited number of inactive development branches. Manage active and inactive branches by adding or deleting a branch. When deleted, a branch is deactivated and remains listed in the project branches list as _inactive_. You can activate the inactive branch later or you can [delete the branch](../dev-tools/cloud-cli.md#) using the CLI.
 
-If you need additional environments for development, enter a [Support ticket](https://devdocs.magento.com/cloud/trouble/trouble.html) for more information.
+If you need additional environments for development, enter a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
 
 **To add a branch**:
 

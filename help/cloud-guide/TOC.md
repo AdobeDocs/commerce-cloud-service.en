@@ -17,11 +17,11 @@ product: magento
 + [Get started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.md)
 + Cloud project {#project}
     + [Project overview](project/overview.md)
-    + Project structure
-    + Configure project
-    + Manage user access
-    + Enable MFA for SSH
-    +[ Manage branches in the UI](project/console-branches.md)
+    + [Project structure](project/file-structure.md)
+    + [User access](project/user-access.md)
+    + [Multi-factor authentication](project/multi-factor-authentication.md)
+    + [Outgoing emails](project/outgoing-emails.md)
+    + [Environments in the UI](project/console-branches.md)
 + Developer tools {#dev-tools}
     + Ece-tools {#ece-tools}
         + [Package overview](dev-tools/ece-tools.md)
@@ -29,6 +29,7 @@ product: magento
         + [Update Ece-tools package](dev-tools/update-ece-tools.md)
     + Cloud CLI {#cloud-cli}
         + [Overview of CLI](dev-tools/cloud-cli.md)
+        + Manage branches in the CLI
     + [Variable levels and options](environment/variable-levels.md)
 + Integrations {#integrations}
     + [Overview](integrations/overview.md)
@@ -53,7 +54,7 @@ product: magento
     + Override variables {#stage}
         + [Environment variables](environment/variables-intro.md)
         + [ADMIN](environment/variables-admin.md)
-        + [MAGENTO_CLOUD](environment/variables-cloud.md)
+        + [Cloud variables](environment/variables-cloud.md)
         + [Global](environment/variables-global.md)
         + [Build](environment/variables-build.md)
         + [Deploy](environment/variables-deploy.md)
