@@ -218,7 +218,8 @@ There are two options for storing the API token.
 >
 >If an API token is stored, the `magento-cloud` CLI automatically authenticates and there is no need to perform the `mgc login` command.
 
->Option 1: Create an environment variable to store the API token
+
+**Option 1**: Create an environment variable to store the API token
 
 Write the token to your bash_profile
 
@@ -226,20 +227,20 @@ Write the token to your bash_profile
 echo "export MAGENTO_CLOUD_CLI_TOKEN=<your api token>" >> ~/.bash_profile
 ```
 
->Option 2: Add the token to the `config.yaml` file
+**Option 2**: Add the token to the `config.yaml` file
 
 1. On your local work environment, create a file named `config.yaml` in the `.magento-cloud` folder in your home directory if it does not exist.
 
-    ```bash
-    touch ~/.magento-cloud/config.yaml
-    ```
+   ```bash
+   touch ~/.magento-cloud/config.yaml
+   ```
 
 1. Edit the `config.yaml` file to add the following configuration.
 
-    ```yaml
+   ```yaml
    api:
       token: <your api token>
-    ```
+   ```
 
 >Sample bash script
 
