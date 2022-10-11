@@ -100,4 +100,5 @@ product: magento
     + [Cloud Docker for Commerce](release-notes/mcd-release-notes.md)
     + [Cloud Components for Commerce](release-notes/mcc-release-notes.md)
     + [Backward incompatible changes](release-notes/backward-incompatible-changes.md)
+    + [Release note archive](release-notes/cloud-release-archive.md)
     
