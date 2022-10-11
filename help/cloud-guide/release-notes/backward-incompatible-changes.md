@@ -37,8 +37,8 @@ The following table provides information about environment variables and other e
 
 The following table summarizes CLI command changes in ece-tools v2002.1.0 that might require you to update commands or scripts.
 
- |Command| Replacement|
- |-------- |-------|
+|Command| Replacement|
+|-------- |-------|
 |`m2-ece-build` | `vendor/bin/ece-tools build`|
 |`m2-ece-deploy` | `vendor/bin/ece-tools deploy`|
 |`m2-ece-scd-dump` | `vendor/bin/ece-tools config:dump`|
