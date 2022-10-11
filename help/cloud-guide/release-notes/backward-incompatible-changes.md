@@ -17,7 +17,7 @@ The new architecture should not affect your install or update processes.  Howeve
 
 We changed the minimum PHP version requirement from 7.0.x to 7.1.x for Cloud projects that use `ece-tools` v2002.1.0 and later. If your environment configuration specifies PHP 7.0, update the [php configuration](https://devdocs.magento.com/cloud/project/magento-app-php-application.html) in the `.magento.app.yaml` file.
 
->[!WARNING}
+>[!WARNING]
 >
 >Because of the PHP version requirement change, `ece-tools` 2002.1.0 supports only Adobe Commerce on cloud infrastructure projects running Adobe Commerce 2.1.15 or later. If your project uses an earlier release, you must [upgrade](https://devdocs.magento.com/cloud/project/project-upgrade.html) before you update to `ece-tools` 2002.1.0.
 
@@ -25,26 +25,26 @@ We changed the minimum PHP version requirement from 7.0.x to 7.1.x for Cloud pro
 
 The following table provides information about environment variables and other environment configuration files that were removed or deprecated in `ece-tools` v2002.1.0.
 
-Item | Replacement
--------- | -------
-`SCD_EXCLUDE_THEMES` variable | [`SCD_MATRIX`](../environment/variables-build.md#scd_matrix)
-`STATIC_CONTENT_THREADS` variable | [`SCD_THREADS`](../environment/variables-build.md#scd_threads)
-`DO_DEPLOY_STATIC_CONTENT` variable | [`SKIP_SCD`](../environment/variables-build.md#skip_scd)
-`STATIC_CONTENT_SYMLINK` variable | None. Now, the build always creates a symlink to the static content directory `pub/static`.
-`build_options.ini` file | Use the [`.magento.env.yaml`](https://devdocs.magento.com/cloud/project/magento-env-yaml.html) file to configure environment variables to manage build and deploy actions across all your environments.<br><br>If you build a Cloud environment that includes the `build_options.ini` file, the build fails.
+| Item | Replacement |
+| -------- | ------- |
+|`SCD_EXCLUDE_THEMES` variable | [`SCD_MATRIX`](../environment/variables-build.md#scd_matrix)|
+|`STATIC_CONTENT_THREADS` variable | [`SCD_THREADS`](../environment/variables-build.md#scd_threads)|
+|`DO_DEPLOY_STATIC_CONTENT` variable | [`SKIP_SCD`](../environment/variables-build.md#skip_scd)|
+|`STATIC_CONTENT_SYMLINK` variable | None. Now, the build always creates a symlink to the static content directory `pub/static`.|
+|`build_options.ini` file | Use the [`.magento.env.yaml`](https://devdocs.magento.com/cloud/project/magento-env-yaml.html) file to configure environment variables to manage build and deploy actions across all your environments.<br><br>If you build a Cloud environment that includes the `build_options.ini` file, the build fails.|
 
 ### CLI command changes
 
 The following table summarizes CLI command changes in ece-tools v2002.1.0 that might require you to update commands or scripts.
 
- Command| Replacement
- -------- |-------
-`m2-ece-build` | `vendor/bin/ece-tools build`
-`m2-ece-deploy` | `vendor/bin/ece-tools deploy`
-`m2-ece-scd-dump` | `vendor/bin/ece-tools config:dump`
-`vendor/bin/ece-tools patch` | `vendor/bin/ece-patches apply`
-`vendor/bin/ece-tools docker:build` | `vendor/bin/ece-docker build:compose`
-`vendor/bin/ece-tools docker:config:convert` | `vendor/bin/ece-docker  image:generate:php`
+ |Command| Replacement|
+ |-------- |-------|
+|`m2-ece-build` | `vendor/bin/ece-tools build`|
+|`m2-ece-deploy` | `vendor/bin/ece-tools deploy`|
+|`m2-ece-scd-dump` | `vendor/bin/ece-tools config:dump`|
+|`vendor/bin/ece-tools patch` | `vendor/bin/ece-patches apply`|
+|`vendor/bin/ece-tools docker:build` | `vendor/bin/ece-docker build:compose`|
+|`vendor/bin/ece-tools docker:config:convert` | `vendor/bin/ece-docker  image:generate:php`|
 
 In earlier ece-tools releases, you could use the `m2-ece-build` and `m2-ece-deploy` commands to configure deployment hooks in the `.magento.app.yaml` file. When you update to v2002.1.0, check the `hooks` configuration in the `.magento.app.yaml` file for the obsolete commands, and replace them if needed.
 

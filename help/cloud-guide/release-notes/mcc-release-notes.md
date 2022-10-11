@@ -16,7 +16,7 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.0.12 {#latest}
+## v1.0.12
 
 Release date: September 13, 2022
 

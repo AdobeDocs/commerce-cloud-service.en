@@ -91,7 +91,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  ![new icon](../../assets/fix.svg) <!-- MAGECLOUD-3832 -->Updated the Sodium library from version 1.0.11 to version 1.0.18, and updated the Sodium PHP extension.
 
-      >[!WARNING}
+      >[!WARNING]
       >
       >Adobe Commerce on cloud infrastructure customers must submit a support ticket to upgrade the libsodium package on Pro Production and Staging environments prior to upgrading to Adobe Commerce 2.3.2. Currently, you cannot upgrade Starter environments to Adobe Commerce 2.3.2.
 
@@ -239,7 +239,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/fix.svg) **Environment variable updates**—Changed the following environment variables:
 
-   -  <!-- MAGECLOUD-2466 -->**[WARM_UP_PAGES](../environment/variables-post-deploy.md)**—Added the capability to preload the cache for specified pages on all domains defined for a Adobe Commerce store. Previously, if your site was configured with multiple domains, the post-deploy process failed to preload the cache for the specified pages on non-default domains and returned the following error in the post-deploy log: `ERROR: Warming up failed: <uri>`
+   -  **[WARM_UP_PAGES](../environment/variables-post-deploy.md)**—Added the capability to preload the cache for specified pages on all domains defined for a Adobe Commerce store. Previously, if your site was configured with multiple domains, the post-deploy process failed to preload the cache for the specified pages on non-default domains and returned the following error in the post-deploy log: `ERROR: Warming up failed: <uri>`<!-- MAGECLOUD-2466 -->
 
    -  <!-- MAGECLOUD-2823 -->**SCD_COMPRESSION_LEVEL**—Updated the documentation and the sample `.magento.env.yaml` file with the correct default values for SCD compression level. See the definitions in the [build variables](../environment/variables-build.md#scd_compression_level) and the [deploy variables](../environment/variables-deploy.md#scd_compression_level) content.
 
@@ -679,7 +679,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 ## v2002.0.0
 
->[!WARNING}
+>[!WARNING]
 >
 >This package is no longer compatible with other versions of Adobe Commerce on cloud infrastructure and **should not** be used.
 

@@ -20,7 +20,8 @@ The Magento Cloud Patches package is a dependency for the ece-tools package and 
 The `magento/magento-cloud-patches` package uses the following version sequence: `<major>.<minor>.<patch>`
 
 <!--Add release notes below-->
-## v1.0.19 {#latest}
+
+## v1.0.19
 
 Release date: September 13, 2022
 
