@@ -609,12 +609,14 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  **Configuration scanning**—We now scan for critical components during the build/deploy process and halt the process if the scan fails, which prevents unnecessary downtime due to the site being in maintenance mode.
 
--  **Build/deploy notifications**—We added a configuration file that you can use to [set up Slack and/or email notifications](../environment/setup-notifications.md) for build/deploy actions in all your environments.
+-  **Build/deploy notifications**—We added a configuration file that you can use to [set up Slack and/or email notifications](../environment/set-up-notifications.md) for build/deploy actions in all your environments.
 
 -  **Static content compression**—We now compress static content using [gzip](https://www.gnu.org/software/gzip/) during the build and deploy phases. This compression, coupled with Fastly compression, helps reduce the size of your store and increase deployment speed. If necessary, you can disable compression using a [build option](../environment/variables-build.md) or [deploy variable](../environment/variables-deploy.md). See the following topics for more information:
 
-   -  [Application environment variables](../environment/environment-vars_magento.md)
+   -  [Application environment variables](https://devdocs.magento.com/cloud/env/environment-vars_magento.html)
+
    -  [Static content deployment performance](https://devdocs.magento.com/cloud/live/sens-data-over.html#scd-performance)
+
    -  [Deployment process](https://devdocs.magento.com/cloud/reference/discover-deploy.html)
 
 -  **Configuration management**—We now auto-generate an `app/etc/config.php` file in your Git repository during the build phase if it does not already exist. The auto-generated file includes only a list of modules and extensions. If the file already exists, the build phase continues as normal. If you follow [Configuration Management](https://devdocs.magento.com/cloud/live/sens-data-over.html) at a later time, the commands update the file without requiring additional steps. Refer to [Deployment process](https://devdocs.magento.com/cloud/reference/discover-deploy.html) for more information.
