@@ -1,7 +1,8 @@
 ---
 title: Release notes archive for ece-tools
 description: Learn about archived improvements for ece-tools.
-hide: true
+hide: yes
+hidefromtoc: yes
 ---
 
 # Release notes archive for ece-tools
