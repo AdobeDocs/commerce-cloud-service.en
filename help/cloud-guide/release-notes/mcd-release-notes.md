@@ -319,7 +319,7 @@ Release date: Feb 5, 2020
 
       -  ![new icon](../../assets/new.svg) **Updated the container base image to use official image**—The [Cloud TLS container] image is now based on the official `debian:jessie` Docker image.—<!--MAGECLOUD-4163-->
 
-      -  ![new icon](../../assets/new.svg) **Added support for the [Pound TLS Termination Proxy]**—The [Pound configuration file][`pound.cfg`] adds the following ENV variables to customize the Docker configuration for the TLS container:
+      -  ![new icon](../../assets/new.svg) **Added support for the [Pound TLS Termination Proxy]**—The [Pound configuration file](https://github.com/magento/magento-cloud-docker/blob/1.0/images/tls/) adds the following ENV variables to customize the Docker configuration for the TLS container:
 
          -  **`TimeOut`**—Sets the Time to First Byte (TTFB) timeout value. The default value is 300 seconds.
 
@@ -349,7 +349,7 @@ Release date: Feb 5, 2020
 
    -  ![new icon](../../assets/fix.svg) Renamed the `./bin/docker` file to `./bin/magento-docker` to fix an issue that caused some Docker environments to break because the `./bin/docker` file overwrites existing Docker binary files. This is a [backward incompatible change](backward-incompatible-changes.md) that requires updates to your scripts and commands.<!-- MAGECLOUD-4038 -->
 
-   -  ![new icon](../../assets/new.svg) **Added a service configuration option to expose the database port to the host**—Use the `--expose-db-port=<PORT>` option to expose the database port to the host when building the `docker-compose.yml` file: `bin/ece-docker build:compose --expose-db-port=<PORT>`<!--MAGECLOUD-4454--> [Fix submitted by Adarsh Manickam from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/101).
+   -  ![new icon](../../assets/new.svg) **Added a service configuration option to expose the database port to the host**—Use the `--expose-db-port= [Fix submitted by Adarsh Manickam from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/101).<PORT>` option to expose the database port to the host when building the `docker-compose.yml` file: `bin/ece-docker build:compose --expose-db-port=<PORT>`<!--MAGECLOUD-4454-->
 
    -  ![new icon](../../assets/new.svg) **New post-deploy command**—Previously, the post-deploy hooks defined in the `.magento.app.yaml` file ran automatically after you deployed Adobe Commerce to a Cloud Docker container using the `cloud-deploy` command. Now, you must issue a separate `cloud-post-deploy` command to run the post-deploy hooks after you deploy. See the updated launch instructions for [developer] and [production] mode.<!--MAGECLOUD-3996-->
 
@@ -375,4 +375,3 @@ Release date: Feb 5, 2020
 [Cloud TLS container]: https://devdocs.magento.com/cloud/docker/docker-containers-service.html#tls-container
 [Cloud Varnish container]: https://devdocs.magento.com/cloud/docker/docker-containers-service.html#varnish-container
 [Pound TLS Termination Proxy]: https://github.com/mnuessler/docker-tls-termination-proxy/blob/master/README.md
-[`pound.cfg`]: https://github.com/magento/magento-cloud-docker/blob/1.0/images/tls/pound.cfg
