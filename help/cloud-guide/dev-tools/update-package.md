@@ -27,7 +27,7 @@ An update to the `ece-tools` package also updates the other [Cloud Suite for Com
 
    >[!NOTE]
    >
-   >If you cannot update beyond `ece-tools` version 2002.0.8, see [Upgrade project to use Ece-tools package](install-ece-tools.md).
+   >If you cannot update beyond `ece-tools` version 2002.0.8, see [Upgrade project to use Ece-tools package](install-package.md).
 
 1. Add, commit, and push code changes.
 
