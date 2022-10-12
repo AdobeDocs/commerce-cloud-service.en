@@ -1,11 +1,11 @@
 ---
-title: Backward incompatible changes
-description: Learn about backwards compatibility when upgrading existing Cloud projects.
+title: Backward-incompatible changes
+description: Learn about backward compatibility when upgrading existing Cloud projects.
 ---
 
-# Backward incompatible changes
+# Backward-incompatible changes
 
-Use the following information to learn about backward incompatible changes that might require you to adjust Cloud configuration and processes for existing Cloud projects when you upgrade to the latest release of the `ece-tools` package or other Cloud Suite for Commerce packages.
+Backward-incompatible changes might require you to adjust Cloud configuration and processes for existing Cloud projects when you upgrade to the latest release of the `ece-tools` package or other Cloud Suite for Commerce packages.
 
 ## Changes to `ece-tools` package
 
@@ -84,7 +84,7 @@ In earlier ece-tools releases, you could use the `m2-ece-build` and `m2-ece-depl
 
       If you want to keep a container created by a docker-compose operation, use the `docker-compose run` command instead of the `bin/magento-docker` command.
 
-   -  **Running post-deploy hooks**–The `cloud-deploy` command no longer runs post deploy hooks. You must use the new `cloud-post-deploy` command to run post deploy hooks after you deploy. Update your scripts to add the command to run post deploy hooks.
+   -  **Running post-deploy hooks**–The `cloud-deploy` command no longer runs post-deploy hooks. Use the new `cloud-post-deploy` command to run post-deploy hooks after you deploy. Update your scripts to add the command to run post-deploy hooks.
 
       ```shell
       bin/magento-docker ece-deploy
@@ -93,7 +93,7 @@ In earlier ece-tools releases, you could use the `m2-ece-build` and `m2-ece-depl
 
       Alternatively, if you use `docker-compose` commands directly, run the `docker-compose run deploy cloud-post-deploy` command after the deploy command.
 
--  **Refreshing the database**–The Database container is now stored in a persistent Docker volume named `magento-db`. When you refresh the Docker environment, the database is no longer deleted automatically. If needed, use one of the following commands to manually remove it.
+-  **Refreshing the database**–The Database container is now stored in the `magento-db` persistent Docker volume. When you refresh the Docker environment, the database is no longer deleted automatically. If needed, use one of the following commands to manually remove it.
 
    -  Remove the `magento-db` container:
 

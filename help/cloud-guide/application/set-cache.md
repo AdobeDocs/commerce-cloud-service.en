@@ -9,7 +9,7 @@ The cache TTL (time-to-live) for your media and static files is set in the `.ma
 
 >[!NOTE]
 >
->Before updating your Production environment, we highly recommend testing changes in your Staging environment first. You must submit a support ticket to update the configuration on these environments.
+>Before updating your Production environment, we highly recommend testing changes in your Staging environment first. You must [Submit a support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to update the configuration on these environments.
 
 1. Specify the TTL time (in seconds) in the `web` section of the `.magento.app.yaml` file. You can add the `expires` key under `locations` or under `"/media"` and `"/static"`.
 
