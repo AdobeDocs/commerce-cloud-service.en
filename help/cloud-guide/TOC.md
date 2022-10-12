@@ -95,4 +95,10 @@ product: magento
     + [Snapshots and backup management](storage/snapshots.md)
 + Release notes {#release-notes}
     + [Cloud tools suite](release-notes/cloud-tools.md)
+    + [ece-tools](release-notes/ece-release-notes.md)
+    + [Cloud Patches for Commerce](release-notes/mcp-release-notes.md)
+    + [Cloud Docker for Commerce](release-notes/mcd-release-notes.md)
+    + [Cloud Components for Commerce](release-notes/mcc-release-notes.md)
+    + [Backward incompatible changes](release-notes/backward-incompatible-changes.md)
+    + [Release note archive](release-notes/cloud-release-archive.md)
     
