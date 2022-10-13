@@ -89,13 +89,13 @@ Make a final pass to validate the Production configuration for the store(s).You 
 
 The following are recommended changes and checks:
 
--  [Completed Outgoing email testing](https://devdocs.magento.com/cloud/project/sendgrid.html)
+-  [Completed Outgoing email testing](../project/outgoing-emails.md)
 
 -  [Secure configuration for Admin credentials and Base Admin URL](https://docs.magento.com/user-guide/stores/security-admin.html)
 
 -  [Optimize all images for the web](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html)
 
--  [Check minification settings for HTML, Javascript, and CSS](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html)
+-  [Check minification settings for HTML, Javascript, and CSS](../deploy/static-content.md)
 
 ## Verify Fastly caching
 
@@ -127,13 +127,13 @@ You can also test using the following 3rd party options:
 
 -  [Secure configuration for Admin URL](https://docs.magento.com/m2/ee/user_guide/stores/store-urls-custom-admin.html)
 
--  [Remove any users no longer on the Adobe Commerce on cloud infrastructure project](https://devdocs.magento.com/cloud/project/user-admin.html)
+-  [Remove any users no longer on the Adobe Commerce on cloud infrastructure project](../project/user-access.md)
 
 -  [Configure two-factor authentication](https://devdocs.magento.com/guides/v2.3/security/two-factor-authentication.html)
 
 ## Performance monitoring
 
-You can use New Relic services for performance monitoring on Pro and Starter environments. On Pro plan accounts, we provide the Managed alerts for Adobe Commerce alert policy to monitor application and infrastructure performance using New Relic APM and Infrastructure agents. For details on using these services, see [Monitor performance with Managed Alerts](https://devdocs.magento.com/cloud/project/new-relic.html#monitor-performance-with-managed-alerts).
+You can use New Relic services for performance monitoring on Pro and Starter environments. On Pro plan accounts, we provide the Managed alerts for Adobe Commerce alert policy to monitor application and infrastructure performance using New Relic APM and Infrastructure agents. For details on using these services, see [Monitor performance with Managed Alerts](../monitor/new-relic.md#monitor-performance-with-managed-alerts).
 
 ### Next step
 
