@@ -5,7 +5,7 @@ description: Learn how to review items for site launch.
 
 # Launch checklist
 
-Before you deploy to the Production environment, download the [Launch checklist](../../assets/magento-commerce-cloud-prelaunch-checklist.pdf), and use it with these instructions to confirm that you have completed all required configuration and testing. See an overview of the complete deployment process for Starter and Pro at [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html).
+Before you deploy to the Production environment, download the [Launch checklist](../../assets/adobe-commerce-cloud-prelaunch-checklist.pdf), and use it with these instructions to confirm that you have completed all required configuration and testing. See an overview of the complete deployment process for Starter and Pro at [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html).
 
 ## Completely test in Production
 
@@ -125,7 +125,7 @@ You can also test using the following 3rd party options:
 
 -  [Secure configuration for Admin user](https://docs.magento.com/user-guide/stores/security-admin.html)
 
--  [Secure configuration for Admin URL](https://docs.magento.com/m2/ee/user_guide/stores/store-urls-custom-admin.html)
+-  [Secure configuration for Admin URL](https://docs.magento.com/user-guide/stores/store-urls-custom-admin.html)
 
 -  [Remove any users no longer on the Adobe Commerce on cloud infrastructure project](../project/user-access.md)
 
