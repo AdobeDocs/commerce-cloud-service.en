@@ -84,6 +84,9 @@ product: magento
 + Test {#test}
     + [Xdebug](test/debug.md)
 + Launch site {#launch}
+    + [Site launch](launch/index.md)
+    + [Launch checklist](launch/site-launch-checklist.md)
+    + [Launch steps](launch/launch-steps.md)
 + Monitor {#monitor}
     + [Logs](monitor/log-locations.md)
     + [Error messages](monitor/error-messages.md)

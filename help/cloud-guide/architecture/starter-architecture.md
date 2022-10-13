@@ -21,7 +21,7 @@ The following diagram shows the hierarchical relationships of the Starter enviro
 
 The Production environment provides the source code to deploy Adobe Commerce to the Cloud infrastructure that runs your public-facing single and multi-site storefronts. The Production environment uses code from the `master` branch to configure and enable the web server, database, configured services, and your application code.
 
-Because the Production environment is read-only, make changes in the Integration environment and deploy across the architecture from the Integration to Staging, and finally to the Production environment. See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) and [Site launch](https://devdocs.magento.com/cloud/live/live.html).
+Because the Production environment is read-only, make changes in the Integration environment and deploy across the architecture from the Integration to Staging, and finally to the Production environment. See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) and [Site launch](../launch/index.md).
 
 Adobe recommends fully testing in your Staging environment branch before pushing to the `master` branch, which deploys to the Production environment.
 
@@ -129,4 +129,4 @@ See the following sections for detailed instructions and walk-throughs to develo
 
 -  [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html)
 
--  [Site launch](https://devdocs.magento.com/cloud/live/live.html)
+-  [Site launch](../launch/index.md)
