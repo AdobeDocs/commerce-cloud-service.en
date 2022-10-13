@@ -27,6 +27,7 @@ product: magento
         + [Package overview](dev-tools/package-overview.md)
         + [One-time upgrade to use Ece-tools](dev-tools/install-package.md)
         + [Update Ece-tools package](dev-tools/update-package.md)
+    + [Restore environment](dev-tools/restore-environment.md)
 + Integrations {#integrations}
     + [Overview](integrations/overview.md)
     + [Bitbucket](integrations/bitbucket.md)
