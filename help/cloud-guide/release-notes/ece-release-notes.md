@@ -163,7 +163,7 @@ Release date: August 5, 2020
 
 **Validation and log improvements**—
 
--  ![new icon](../../assets/new.svg) Added the `schema.error.yaml` file that includes all error and warning notifications that can occur during the build, deploy, and post-deploy process along with suggestions for resolving the errors.  The information in this file is also available in the _Cloud Guide for Commerce_. See [Error message reference for ece-tools](https://devdocs.magento.com/cloud/reference/ece-tools-error-reference.html).<!--MCLOUD-5878-->
+-  ![new icon](../../assets/new.svg) Added the `schema.error.yaml` file that includes all error and warning notifications that can occur during the build, deploy, and post-deploy process along with suggestions for resolving the errors. The information in this file is also available in the _Cloud Guide for Commerce_. See [Error message reference for ece-tools](https://devdocs.magento.com/cloud/reference/ece-tools-error-reference.html).<!--MCLOUD-5878-->
 
 -  ![new icon](../../assets/new.svg) Changed the Cloud error log (`/var/log/cloud.error.log`) entries to JSON format to make the log easier to parse programmatically.<!--MCLOUD-5879-->
 
@@ -268,7 +268,7 @@ Release date: February 6, 2020
 
    -  ![new icon](../../assets/new.svg) Now you can customize the build, deploy, and post-deploy processes using XML configuration files to override or customize the default configuration.
 
-   -  ![new icon](../../assets/new.svg) **Changed the `hooks` configuration in `.magento.app.yaml`**—We updated the `hooks` configuration format to support scenario-based deployments.  The legacy format from earlier ece-tools 2002.0.x release is still supported. However, you must update to the new format to use the scenario-based deployment feature. See [Scenario-based deployments](../deploy/scenario-based.md#add-scenarios-using-build-and-deploy-hooks).
+   -  ![new icon](../../assets/new.svg) **Changed the `hooks` configuration in `.magento.app.yaml`**—We updated the `hooks` configuration format to support scenario-based deployments. The legacy format from earlier ece-tools 2002.0.x release is still supported. However, you must update to the new format to use the scenario-based deployment feature. See [Scenario-based deployments](../deploy/scenario-based.md#add-scenarios-using-build-and-deploy-hooks).
 
 >[!NOTE]
 >
@@ -300,7 +300,7 @@ Release date: February 6, 2020
 
 -  ![new icon](../../assets/new.svg) **CLI command updates**—
 
-   -  ![new icon](../../assets/new.svg) **New cron command**—You can now manually manage cron processing in your Adobe Commerce on cloud infrastructure environment using the `cron:disable` and `cron:enable` commands. Use the disable command to stop all active cron processes and disable all cron jobs.  Use the enable command to re-enable cron jobs when you are ready.  See [Disable cron jobs](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs).
+   -  ![new icon](../../assets/new.svg) **New cron command**—You can now manually manage cron processing in your Adobe Commerce on cloud infrastructure environment using the `cron:disable` and `cron:enable` commands. Use the disable command to stop all active cron processes and disable all cron jobs. Use the enable command to re-enable cron jobs when you are ready. See [Disable cron jobs](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs).
 
    -  ![new icon](../../assets/new.svg) **Improved error reporting**—Added better logging for CLI command failures that occur during ece-tools processing.<!--MAGECLOUD-4849-->
 

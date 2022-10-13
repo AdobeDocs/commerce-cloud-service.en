@@ -67,7 +67,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/new.svg) Updated interactive validations for service compatibility to reflect supported versions for the new Adobe Commerce 2.3.3 and 2.2.10 releases. See [System requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in the _Installation guide_ for recommended versions.<!-- MAGECLOUD-4018 -->
 
--  ![new icon](../../assets/fix.svg) Improved the log message returned when the cron job management process in the deploy phase tries to stop a cron job that has already finished to clarify that this issue is not an error.  Changed the log level from `INFO` to `DEBUG`.<!-- MAGECLOUD-3653-->
+-  ![new icon](../../assets/fix.svg) Improved the log message returned when the cron job management process in the deploy phase tries to stop a cron job that has already finished to clarify that this issue is not an error. Changed the log level from `INFO` to `DEBUG`.<!-- MAGECLOUD-3653-->
 
 -  ![new icon](../../assets/fix.svg) Fixed an issue when running the `setup:upgrade` command that did not interrupt the deployment process when a failure occurred during the `app:config:import` task.<!-- MAGECLOUD-3806 -->
 
@@ -131,7 +131,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 ## v2002.0.19
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that overwrites the `env.php` file during a deploy, resulting in a loss of custom configurations.  This update ensures that Adobe Commerce on cloud infrastructure updates the `env.php` file with every deployment, while preserving custom configurations.<!-- MAGECLOUD-3668 -->
+-  ![new icon](../../assets/fix.svg) Fixed an issue that overwrites the `env.php` file during a deploy, resulting in a loss of custom configurations. This update ensures that Adobe Commerce on cloud infrastructure updates the `env.php` file with every deployment, while preserving custom configurations.<!-- MAGECLOUD-3668 -->
 
 ## v2002.0.18
 
