@@ -143,7 +143,7 @@ Release date: November 9, 2020
 
       -  **Elasticsearch plugin configuration**—Added support to use the Elasticsearch plugin configuration information from the `services.yaml` file to generate the `docker-compose.yaml` file for a Cloud Docker for Commerce environment. See [Elasticsearch plugins](https://devdocs.magento.com/cloud/docker/docker-containers-service.html#elasticsearch-plugins).<!--MCLOUD-2789-->
 
-      -  **Elasticsearch plugin support**—Added support for the following Elasticsearch plugins: `analysis-icu`, `analysis-phonetic`, `analysis-stempel`, and `analysis-nori`.  The `analysis-icu` and `analysis-phonetic` plugins are installed by default. You can add or remove the `analysis-stempel` and `analysis-nori` plugins as needed.<!--MCLOUD-2789-->
+      -  **Elasticsearch plugin support**—Added support for the following Elasticsearch plugins: `analysis-icu`, `analysis-phonetic`, `analysis-stempel`, and `analysis-nori`. The `analysis-icu` and `analysis-phonetic` plugins are installed by default. You can add or remove the `analysis-stempel` and `analysis-nori` plugins as needed.<!--MCLOUD-2789-->
 
    -  ![new icon](../../assets/new.svg) **CLI container**
 
@@ -289,7 +289,7 @@ Release date: June 25, 2020
 
 Release date: Feb 5, 2020
 
--  ![new icon](../../assets/new.svg) **Created a separate package to deliver `Cloud Docker for Commerce`**—Moved the source code to deliver Cloud Docker for Commerce from the `ece-tools` repository to the [new `magento-cloud-docker` repository](https://github.com/magento/magento-cloud-docker) to maintain code quality and provide independent releases.  The new package is a dependency for ece-tools v2002.1.0 and later.
+-  ![new icon](../../assets/new.svg) **Created a separate package to deliver `Cloud Docker for Commerce`**—Moved the source code to deliver Cloud Docker for Commerce from the `ece-tools` repository to the [new `magento-cloud-docker` repository](https://github.com/magento/magento-cloud-docker) to maintain code quality and provide independent releases. The new package is a dependency for ece-tools v2002.1.0 and later.
 
    When you update ece-tools, you also update the `magento/magento-cloud-docker` package to version 1.0.0. If you used Cloud Docker for Commerce with an earlier `ece-tools` release (2002.0.x), review the [backward incompatibilities](backward-incompatible-changes.md) and update your project as scripts, commands, and processes as needed.
 
@@ -363,7 +363,7 @@ Release date: Feb 5, 2020
 
 -  ![new icon](../../assets/new.svg) **Validation improvements**—
 
-   -  ![new icon](../../assets/new.svg) Added validation to the deployment process for local Docker development environments to verify that the Cloud environment configuration includes the encryption key required to decrypt the database.  Now, you get an error message in the log if the environment configuration does not specify a value for the encryption key.<!--MAGECLOUD-4423-->
+   -  ![new icon](../../assets/new.svg) Added validation to the deployment process for local Docker development environments to verify that the Cloud environment configuration includes the encryption key required to decrypt the database. Now, you get an error message in the log if the environment configuration does not specify a value for the encryption key.<!--MAGECLOUD-4423-->
 
    -  ![new icon](../../assets/new.svg) Added a container health check to the Elasticsearch service to ensure that the service is ready before continuing with build and deploy processing. If the health check returns an error, the container restarts automatically.<!--MAGECLOUD-4456-->
 
