@@ -179,7 +179,7 @@ To set up port forwarding (SSH tunneling) on Windows, you must configure your Wi
 
 1. Enter the following information:
 
-   -  **Hostname (or IP address)** field: Enter the [SSH URL](https://devdocs.magento.com/cloud/env/environments-ssh.html) for your Cloud server
+   -  **Hostname (or IP address)** field: Enter the [SSH URL](../development/secure-connections.md#connect-to-a-remote-environment) for your Cloud server
    -  **Port** field: Enter `22`
 
    ![Set up Putty](../../assets/xdebug-putty-session.png)
@@ -213,7 +213,7 @@ To set up port forwarding (SSH tunneling) on Windows, you must configure your Wi
 
 ## SSH access to Xdebug environments
 
-For initiating debugging, performing setup, and more, you need the SSH commands for accessing the environments. You can get this information, through the [Project Web Interface](https://devdocs.magento.com/cloud/project/projects.html) and your project spreadsheet.
+For initiating debugging, performing setup, and more, you need the SSH commands for accessing the environments. You can get this information, through the [Project Web Interface](../development/secure-connections.md#use-an-ssh-command) and your project spreadsheet.
 
 For Starter environments and Pro Integration environments, you can use the following `magento-cloud` CLI command to SSH into those environments:
 
@@ -224,7 +224,7 @@ magento-cloud environment:ssh --pipe -e <environment-ID>
 To use Xdebug, SSH to the environment as follows:
 
 ```bash
-ssh -R <xdebug listen port>:<host>:<xdebug listen port> <SSH URL>
+ssh -R <xdebug listen port>:<host>:<xdebug listen port> <SSH-URL>
 ```
 
 For example,

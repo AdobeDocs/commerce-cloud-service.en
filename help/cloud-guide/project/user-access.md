@@ -176,7 +176,7 @@ After you add a user to a Cloud project, ask the user to review their account se
 
 -  **Enable TFA**—Adobe recommends adding TFA to all accounts to meet security and compliance standards. Projects configured with [MFA enforcement](multi-factor-authentication.md) require TFA on accounts that use SSH to access the projects.
 
--  **Enable SSH keys**—Users that require access to Adobe Commerce on cloud infrastructure source code repositories and infrastructure must enable SSH keys on their account. See [Enable SSH keys](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html).
+-  **Enable SSH keys**—Users that require access to Adobe Commerce on cloud infrastructure source code repositories must enable SSH keys on their account. See [Secure connections](../development/secure-connections.md).
 
 -  **Create an API token**—Users must generate an API token that is used for SSH access to an environment. You need the token to enable authentication workflows for automated processes.
 
