@@ -20,7 +20,7 @@ product: magento
     + [User access](project/user-access.md)
     + [Multi-factor authentication](project/multi-factor-authentication.md)
     + [Outgoing emails](project/outgoing-emails.md)
-    + [Environments in the UI](project/console-branches.md)
+    + [Branch management](project/console-branches.md)
 + Developer tools {#dev-tools}
     + [Cloud CLI](dev-tools/cloud-cli.md)
     + Ece-tools {#ece-tools}
@@ -29,6 +29,7 @@ product: magento
         + [Update Ece-tools package](dev-tools/update-package.md)
     + [Regional IP addresses](dev-tools/regional-ip-addresses.md)
 + Local development {#develop}
+    + [Clone and branch management](development/cli-branches.md)
     + [Secure connections](development/secure-connections.md)
     + [Restore environment](development/restore-environment.md)
 + Integrations {#integrations}
@@ -80,8 +81,8 @@ product: magento
     + Overview
     + Best practices
     + Custom theme
-    + PayPal payment methods
-    + B2B
+    + [PayPal payment methods](store/paypal.md)
+    + [B2B module](store/b2b-module.md)
     + Multiple sites
 + Deployment {#deploy}
     + [Optimization](deploy/optimization.md)
@@ -91,6 +92,7 @@ product: magento
     + [Static content deployment](deploy/static-content.md)
     + [Smart wizards](deploy/smart-wizards.md)
 + Test {#test}
+    + [Sample data](test/sample-data.md)
     + [Xdebug](test/debug.md)
 + Launch site {#launch}
     + [Site launch](launch/index.md)
