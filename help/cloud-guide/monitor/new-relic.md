@@ -179,7 +179,7 @@ New Relic connects and monitors your infrastructure and application using PHP ag
 
 On the APM Applications page, use the [New Relic APM Overview] to view information about your application.
 
-![Cloud project New Relic overview page](../../assets/new-relic-dashboard.png)
+![Cloud project New Relic overview page](../../assets/new-relic/dashboard.png)
 
 From this view, you can track and find the following types of information:
 
@@ -217,7 +217,7 @@ You can use the New Relic Logs application to search across the aggregated log d
 1. To review infrastructure log data for cloud services, enter the query string `has: "filePath"` in the _Find logs where_ field. Then, click **Query logs**.
    The names of the log files are stored in the `filePath` field, with full paths to the log file.
 
-   ![Cloud project New Relic service log data](../../assets/new-relic-log-query.png)
+   ![Cloud project New Relic service log data](../../assets/new-relic/log-query.png)
 
 1. To review Fastly log data, enter the query string `has: "client_ip"` in the _Find logs where_ field. Then, click **Query logs**.
 
@@ -225,11 +225,11 @@ You can use the New Relic Logs application to search across the aggregated log d
 
    For example, to query the Fastly data by country code, select the _Geo Country Code_ attribute.
 
-   ![Cloud project New Relic CDN log attribute filter](../../assets/new-relic-fastly-countrycode-filter.png)
+   ![Cloud project New Relic CDN log attribute filter](../../assets/new-relic/fastly-countrycode-filter.png)
 
 The following example shows a New Relic Insights dashboard created from queries against the Fastly CDN log data:
 
-![Cloud project New Relic CDN Logs dashboard](../../assets/new-relic-cdn-logs-dashboard.png)
+![Cloud project New Relic CDN Logs dashboard](../../assets/new-relic/cdn-logs-dashboard.png)
 
 See [Get started with log management][New Relic Logs] and [Introduction to New Relic's query language][nrql] on the _New Relic Docs_ site.
 
@@ -272,7 +272,7 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
    -  In the _Policy_ list, select **Managed Alerts for Magento Commerce** policy.
 
-      ![Generated alert policies](../../assets/managed-alerts-policy.png)
+      ![Generated alert policies](../../assets/new-relic/managed-alerts-policy.png)
 
       >[!NOTE]
       >
@@ -302,7 +302,7 @@ New Relic provides templates for configuring different types of notification cha
 
    -  Click **New notification channel** on the right-hand side.
 
-      ![New Relic notification channel](../../assets/new-relic-add-notification-channel.png)
+      ![New Relic notification channel](../../assets/new-relic/add-notification-channel.png)
 
    -  On the _Create notification channel_ page, select the channel type and complete the steps to configure, create, save, and send a test notification to verify that the channel works.
 
@@ -314,7 +314,7 @@ New Relic provides templates for configuring different types of notification cha
 
    -  On the _Alert policies_ tab, click **Add alert policies**.
 
-      ![New Relic create notification channel](../../assets/new-relic-add-alerts-to-notification-channel.png)
+      ![New Relic create notification channel](../../assets/new-relic/add-alerts-to-notification-channel.png)
 
    -  Select the **Managed Alerts for Magento Commerce** alert policy.
 

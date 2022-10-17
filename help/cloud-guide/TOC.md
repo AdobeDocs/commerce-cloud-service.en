@@ -20,6 +20,7 @@ product: magento
     + [User access](project/user-access.md)
     + [Multi-factor authentication](project/multi-factor-authentication.md)
     + [Outgoing emails](project/outgoing-emails.md)
+    + [SenGrid mail service](project/sendgrid.md)
     + [Branch management](project/console-branches.md)
 + Developer tools {#dev-tools}
     + [Cloud CLI](dev-tools/cloud-cli.md)
@@ -77,7 +78,7 @@ product: magento
     + [RabbitMQ](services/rabbitmq.md)
     + [Redis](services/redis.md)
 + Fastly services {#cdn}
-+ Store configuration {#store}
++ Store configuration {#configure-store}
     + Overview
     + Best practices
     + Custom theme
