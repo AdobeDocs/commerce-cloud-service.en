@@ -80,7 +80,7 @@ You can set the following configuration options for each environment:
 |            | **Outgoing emails**: Setting this option to `On` enables support for sending emails from the environment using the SMTP protocol. See [Outgoing emails](outgoing-emails.md). |
 |            | **Indexing by search engines**: Setting this option to `On` enables the search engine visibility. |
 |            | **HTTP access control**: Setting this option to `On` enables you to configure security for the Project Web Interface using a login and IP address access control. |
-| Variables  | View, create, and manage environment variables available for the environment  at runtime. See [Variable levels](../environment/variable-levels.md). |
+| Variables  | View, create, and manage environment variables available for the environment at runtime. See [Variable levels](../environment/variable-levels.md). |
 | Routes     | View a list of configured routes. See [Configure routes](../routes/routes-yaml.md). |
 | Users      | View a list of users granted environment level access. It is best to [Manage users with the CLI](user-access.md#manage-users-with-the-cli). |
 

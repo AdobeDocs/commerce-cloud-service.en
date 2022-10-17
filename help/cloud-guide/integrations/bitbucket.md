@@ -203,7 +203,7 @@ Or you can test it by pushing a simple change to your Bitbucket repository.
 
 ## Create a Cloud branch
 
-The Bitbucket integration cannot activate new environments in your Adobe Commerce on cloud infrastructure project. If you create an environment with Bitbucket, you must activate the environment manually. To avoid this extra step, it is best practice to create environments using the `magento-cloud` CLI tool or the Project Web UI.
+The Bitbucket integration cannot activate new environments in your Adobe Commerce on cloud infrastructure project. If you create an environment with Bitbucket, you must activate the environment manually. To avoid this extra step, it is best practice to create environments using the `magento-cloud` CLI tool or the Project Web Interface.
 
 **To activate a branch created with Bitbucket**:
 

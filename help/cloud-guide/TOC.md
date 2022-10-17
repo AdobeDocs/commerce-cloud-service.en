@@ -30,6 +30,8 @@ product: magento
         + [Update Ece-tools package](dev-tools/update-package.md)
     + [Regional IP addresses](dev-tools/regional-ip-addresses.md)
 + Local development {#develop}
+    + [Overview](development/local-development.md)
+    + [Authentication keys](development/authentication-keys.md)
     + [Clone and branch management](development/cli-branches.md)
     + [Secure connections](development/secure-connections.md)
     + [Restore environment](development/restore-environment.md)
@@ -80,11 +82,11 @@ product: magento
 + Fastly services {#cdn}
 + Store configuration {#configure-store}
     + Overview
-    + Best practices
-    + Custom theme
+    + [Best practices](store/best-practices.md)
+    + [Custom theme](store/custom-theme.md)
     + [PayPal payment methods](store/paypal.md)
     + [B2B module](store/b2b-module.md)
-    + Multiple sites
+    + [Multiple sites](store/multi-sites.md)
 + Deployment {#deploy}
     + [Optimization](deploy/optimization.md)
     + [Deployment process](deploy/process.md)
