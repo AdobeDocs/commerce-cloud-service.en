@@ -21,7 +21,7 @@ The following table describes the files included in a cloud project:
 | `.magento.env.yaml`       | Configuration file for the build, deploy, and post-deploy phases. The `ece-tools` package includes a sample of this file. See [Configure environments](../environment/configure-env-yaml.md). |
 | `composer.json`           | Fetches Adobe Commerce and the configuration scripts to prepare your application. See [Prepare your install](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html). |
 | `composer.lock`           | Stores version dependencies for every package. |
-| `magento-vars.php`        | A file used to define [multiple stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) and sites using variables. |
+| `magento-vars.php`        | A file used to define [multiple stores](../store/multiple-sites.md) and sites using variables. |
 
 >[!NOTE]
 >

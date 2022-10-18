@@ -59,7 +59,7 @@ This ensures net-new customers or existing customers who have not made a purchas
 
 ## Store views 
 
-You can set up and run several stores with a single implementation of Adobe Commerce on cloud infrastructure. See [Set up multiple websites or stores](multi-sites.md).
+You can set up and run several stores with a single implementation of Adobe Commerce on cloud infrastructure. See [Set up multiple websites or stores](multiple-sites.md).
 
 For stores that do not interact with each other, you can create multiple _websites_. Each website has specific articles, customer data, checkout, and shopping cart that are not shared with other websites in Adobe Commerce.
 

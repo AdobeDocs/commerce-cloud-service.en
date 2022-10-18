@@ -151,7 +151,7 @@ If you need some example data when developing your store, you can install our sa
 
 We recommend installing sample data in your local and Integration environments. If you use this data in Staging or Production, you need to remove the sample information and products before going live.
 
-For instructions, see [Install optional sample data](https://devdocs.magento.com/cloud/howtos/sample-data.html).
+For instructions, see [Install optional sample data](../test/sample-data.md).
 
 ![Install optional sample data](../../assets/starter-sample-data.png)
 

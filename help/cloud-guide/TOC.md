@@ -81,12 +81,13 @@ product: magento
     + [Redis](services/redis.md)
 + Fastly services {#cdn}
 + Store configuration {#configure-store}
-    + Overview
+    + [Overview](store/overview.md)
     + [Best practices](store/best-practices.md)
     + [Custom theme](store/custom-theme.md)
-    + [PayPal payment methods](store/paypal.md)
+    + [Extensions](store/extensions.md)
     + [B2B module](store/b2b-module.md)
-    + [Multiple sites](store/multi-sites.md)
+    + [Multiple sites](store/multiple-sites.md)
+    + [PayPal payment methods](store/paypal.md)
 + Deployment {#deploy}
     + [Optimization](deploy/optimization.md)
     + [Deployment process](deploy/process.md)
