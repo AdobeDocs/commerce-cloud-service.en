@@ -34,6 +34,7 @@ product: magento
     + [Authentication keys](development/authentication-keys.md)
     + [Clone and branch management](development/cli-branches.md)
     + [Secure connections](development/secure-connections.md)
+    + [PrivateLink service](development/privatelink-service.md)
     + [Restore environment](development/restore-environment.md)
 + Integrations {#integrations}
     + [Overview](integrations/overview.md)
@@ -46,7 +47,7 @@ product: magento
     + [PHP settings](application/php-settings.md)
     + Properties {#properties}
         + [Application properties](application/properties.md)
-        + [Cron](application/crons-property.md)
+        + [Crons](application/crons-property.md)
         + [Firewall (Starter only)](application/firewall-property.md)
         + [Hooks](application/hooks-property.md)
         + [Variables](application/variables-property.md)

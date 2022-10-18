@@ -182,7 +182,7 @@ To set up port forwarding (SSH tunneling) on Windows, you must configure your Wi
    -  **Hostname (or IP address)** field: Enter the [SSH URL](../development/secure-connections.md#connect-to-a-remote-environment) for your Cloud server
    -  **Port** field: Enter `22`
 
-   ![Set up Putty](../../assets/xdebug-putty-session.png)
+   ![Set up Putty](../../assets/xdebug/putty-session.png)
 
 1. In the _Category_ pane, click **Connection** > **SSH** > **Tunnels**.
 
@@ -194,7 +194,7 @@ To set up port forwarding (SSH tunneling) on Windows, you must configure your Wi
 
 1. Click **Add**.
 
-   ![Create an SSH tunnel in Putty](../../assets/xdebug-putty-tunnels.png)
+   ![Create an SSH tunnel in Putty](../../assets/xdebug/putty-tunnels.png)
 
 1. In the _Category_ pane, click **Session**.
 
@@ -202,7 +202,7 @@ To set up port forwarding (SSH tunneling) on Windows, you must configure your Wi
 
 1. Click **Save**.
 
-   ![Save your SSH tunnel](../../assets/xdebug-putty-session-save.png)
+   ![Save your SSH tunnel](../../assets/xdebug/putty-session-save.png)
 
 1. To test the SSH tunnel, click **Load**, then click **Open**.
 
@@ -347,7 +347,7 @@ This section discusses how to use Xdebug in Chrome using the Xdebug Helper exten
 
 1. Enable the extension in Chrome as shown in the following figure.
 
-   ![Enable the Xdebug extension in Chrome](../../assets/xdebug-enable-chrome-ext.png)
+   ![Enable the Xdebug extension in Chrome](../../assets/xdebug/enable-chrome-ext.png)
 
 1. In Chrome, right-click on the green helper icon in the Chrome toolbar.
 
@@ -357,7 +357,7 @@ This section discusses how to use Xdebug in Chrome using the Xdebug Helper exten
 
 1. Click **Save**.
 
-   ![Xdebug Helper options](../../assets/xdebug-helper-options.png)
+   ![Xdebug Helper options](../../assets/xdebug/helper-options.png)
 
 1. Open your PhpStorm project.
 
