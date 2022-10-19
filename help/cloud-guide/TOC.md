@@ -30,7 +30,7 @@ product: magento
         + [Update Ece-tools package](dev-tools/update-package.md)
     + [Regional IP addresses](dev-tools/regional-ip-addresses.md)
 + Local development {#develop}
-    + [Overview](development/local-development.md)
+    + [Overview](development/overview.md)
     + [Authentication keys](development/authentication-keys.md)
     + [Clone and branch management](development/cli-branches.md)
     + [Secure connections](development/secure-connections.md)
@@ -97,6 +97,7 @@ product: magento
     + [Static content deployment](deploy/static-content.md)
     + [Smart wizards](deploy/smart-wizards.md)
 + Test {#test}
+    + [Testing guidance](test/guidance.md)
     + [Sample data](test/sample-data.md)
     + [Xdebug](test/debug.md)
 + Launch site {#launch}
