@@ -10,9 +10,9 @@ product: magento
 + Architecture {#architecture}
     + [Architecture](architecture/cloud-architecture.md)
     + [Starter architecture](architecture/starter-architecture.md)
-    + [Starter develop-and-deploy workflow](architecture/starter-develop-deploy-workflow.md)
+    + [Starter workflow](architecture/starter-develop-deploy-workflow.md)
     + [Pro architecture](architecture/pro-architecture.md)
-    + [Pro develop-and-deploy workflow](architecture/pro-develop-deploy-workflow.md)
+    + [Pro workflow](architecture/pro-develop-deploy-workflow.md)
     + [Split-tier architecture](architecture/split-tier-architecture.md)
 + Cloud project {#project}
     + [Project overview](project/overview.md)
