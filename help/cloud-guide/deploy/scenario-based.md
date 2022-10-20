@@ -12,7 +12,7 @@ This feature uses **scenarios** and **steps** in the configuration:
 
 -  **Step configuration**–Each scenario uses a sequence of *steps* that programmatically describe the operations required to complete deployment tasks. You configure the steps in an XML-based scenario configuration file.
 
-Adobe Commerce on cloud infrastructure provides a set of [default scenarios] and [default steps] in the `ece-tools` package. You can customize deployment behavior by creating custom XML configuration files to override or customize the default configuration. You can also use scenarios and steps to run code from custom modules.
+Adobe Commerce on cloud infrastructure provides a set of [default scenarios](https://github.com/magento/ece-tools/tree/2002.1/scenario) and [default steps](https://github.com/magento/ece-tools/tree/2002.1/src/Step) in the `ece-tools` package. You can customize deployment behavior by creating custom XML configuration files to override or customize the default configuration. You can also use scenarios and steps to run code from custom modules.
 
 ## Add scenarios using build and deploy hooks
 
@@ -117,7 +117,7 @@ hooks:
 
 Custom scenarios can replace default steps to provide custom implementation. To do so, use the default step name as the name for the custom step.
 
-For example, in the [default deploy scenario] the `enable-maintenance-mode` step runs the default [EnableMaintenanceMode PHP script].
+For example, in the [default deploy scenario][] the `enable-maintenance-mode` step runs the default [EnableMaintenanceMode PHP script][].
 
 ```xml
 <step name="enable-maintenance-mode" type="Magento\MagentoCloud\Step\EnableMaintenanceMode" priority="300"/>
@@ -149,7 +149,7 @@ In this example, the `enable-maintenance-mode` step moves to the beginning of th
 
 ### Example: Extend the deploy scenario
 
-The following example customizes the [default deploy scenario] with the following changes:
+The following example customizes the [default deploy scenario][] with the following changes:
 
 -  Replaces the `remove-deploy-failed-flag` step with a custom step
 -  Skips the `clean-redis-cache` substep in the pre-deploy step
@@ -212,7 +212,7 @@ hooks:
 
 >[!TIP]
 >
->You can review the [default scenarios] and [default step configuration] in the `ece-tools` GitHub repository to determine which scenarios and steps to customize for your project build, deploy, and post-deploy tasks.
+>You can review the [default scenarios](https://github.com/magento/ece-tools/tree/2002.1/scenario) and [default step configuration](https://github.com/magento/ece-tools/tree/2002.1/src/Step) in the `ece-tools` GitHub repository to determine which scenarios and steps to customize for your project build, deploy, and post-deploy tasks.
 
 ## Add a custom module to extend `ece-tools`
 
@@ -266,8 +266,7 @@ To use the custom module with Adobe Commerce on cloud infrastructure, you must r
 
 To learn more about dependency injection, see [Symfony Dependency Injection](https://symfony.com/doc/current/components/dependency_injection.html).
 
-[default scenarios]: https://github.com/magento/ece-tools/tree/2002.1/scenario
-[default steps]: https://github.com/magento/ece-tools/tree/2002.1/src/Step
+<!-- link definitions -->
+
 [default deploy scenario]: https://github.com/magento/ece-tools/blob/develop/scenario/deploy.xml
 [EnableMaintenanceMode PHP script]: https://github.com/magento/ece-tools/blob/develop/src/Step/EnableMaintenanceMode.php
-[hooks configuration]: https://devdocs.magento.com/cloud/project/magento-app-properties.html#hooks

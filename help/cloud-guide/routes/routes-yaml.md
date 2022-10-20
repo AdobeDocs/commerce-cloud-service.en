@@ -94,7 +94,7 @@ https://refactorcss-oy3m2pq-mswy7hzcuhcjw.us.magentosite.cloud/
 
 >[!NOTE]
 >
->If your Cloud project supports multiple stores, follow the route configuration instructions for [multiple websites or stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html).
+>If your Cloud project supports multiple stores, follow the route configuration instructions for [multiple websites or stores](../store/multiple-sites.md).
 
 ### Trailing slash
 

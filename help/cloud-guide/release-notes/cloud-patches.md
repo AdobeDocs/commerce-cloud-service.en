@@ -21,7 +21,7 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.19
+## v1.0.19 {#latest}
 
 Release date: September 13, 2022
 

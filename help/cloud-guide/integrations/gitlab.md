@@ -20,9 +20,9 @@ You must obtain a GitLab token and a webhook to continue the process.
 ## Prerequisites
 
 -  Administrator access to the Adobe Commerce on cloud infrastructure project
--  [`magento-cloud` CLI](https://devdocs.magento.com/cloud/before/before-workspace-magento-prereqs.html#cloud-ssh-cli-cli-install) tool in your local environment
+-  [`magento-cloud` CLI](../dev-tools/cloud-cli.md) tool in your local environment
 -  A GitLab account
--  A [GitLab personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) with write-access to the GitLab repository, selected scopes must be at least: `api` and `read_repository`.
+-  A GitLab personal access token with write-access to the GitLab repository, selected scopes must be at least: `api` and `read_repository`.
 
 ## Prepare your repository
 

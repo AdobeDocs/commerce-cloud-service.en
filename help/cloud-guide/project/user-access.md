@@ -122,11 +122,11 @@ To update user environment permissions to `admin` on the `Production` environmen
 magento-cloud user:update alice@example.com -r production:a
 ```
 
-## Manage users from the Project Web UI
+## Manage users from the Project Web Interface
 
-You can use the Project Web UI to add permissions and use the _Edit_ feature to modify permissions for an existing user.
+You can use the Project Web Interface to add permissions and use the _Edit_ feature to modify permissions for an existing user.
 
-### Add users from the Project Web UI
+### Add users from the Project Web Interface
 
 1. Log in to [your account](https://account.magento.com/customer/account/login).
 
@@ -144,7 +144,7 @@ You can use the Project Web UI to add permissions and use the _Edit_ feature to 
 
 ### Add a project-level user
 
-1. In the Project Web UI, click the settings icon in the top navigation bar.
+1. In the Project Web Interface, click the settings icon in the top navigation bar.
 
 1. In the _Users_ tab, click **Add User**.
 
@@ -176,7 +176,7 @@ After you add a user to a Cloud project, ask the user to review their account se
 
 -  **Enable TFA**—Adobe recommends adding TFA to all accounts to meet security and compliance standards. Projects configured with [MFA enforcement](multi-factor-authentication.md) require TFA on accounts that use SSH to access the projects.
 
--  **Enable SSH keys**—Users that require access to Adobe Commerce on cloud infrastructure source code repositories and infrastructure must enable SSH keys on their account. See [Enable SSH keys](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html).
+-  **Enable SSH keys**—Users that require access to Adobe Commerce on cloud infrastructure source code repositories must enable SSH keys on their account. See [Secure connections](../development/secure-connections.md).
 
 -  **Create an API token**—Users must generate an API token that is used for SSH access to an environment. You need the token to enable authentication workflows for automated processes.
 
@@ -191,7 +191,7 @@ Adobe Commerce on cloud infrastructure supports TFA using any of the following a
 -  [FreeOTP (Android)](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp)
 -  [GAuth Authenticator (Firefox OS, desktop, others)](https://github.com/gbraad/gauth)
 
-Instructions for installing the authenticator application and enabling TFA are available on the _Account settings_ page in the Project Web UI.
+Instructions for installing the authenticator application and enabling TFA are available on the _Account settings_ page in the Project Web Interface.
 
 **To enable TFA on your user account**:
 

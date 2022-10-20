@@ -73,4 +73,4 @@ web:
 
 >[!NOTE]
 >
->This example shows the default web configuration for a Cloud project configured to support a single domain. For a project that requires support for multiple websites or stores, the `web` configuration must be set up to support shared domains. See [Configure locations for shared domains](https://devdocs.magento.com/cloud/project/project-multi-sites.html#locations).
+>This example shows the default web configuration for a Cloud project configured to support a single domain. For a project that requires support for multiple websites or stores, the `web` configuration must be set up to support shared domains. See [Configure locations for shared domains](../store/multiple-sites.md#configure-locations-for-shared-domains).

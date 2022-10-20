@@ -72,7 +72,7 @@ The `properties` in the above example modifies the default `optimizer` settings 
 
 Optionally, you can set up multiple users with different permissions for accessing the `main` database.
 
-By default, there is one endpoint named `mysql` that has administrator access to the database. To set up multiple database users, you must define multiple endpoints in the `services.yaml` file and declare the relationships in the `.magento.app.yaml` file. For Pro Staging and Production environments, submit a Support ticket to request the additional user.
+By default, there is one endpoint named `mysql` that has administrator access to the database. To set up multiple database users, you must define multiple endpoints in the `services.yaml` file and declare the relationships in the `.magento.app.yaml` file. For Pro Staging and Production environments, [Submit a support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to request the additional user.
 
 Use a nested array to define the endpoints for specific user access. Each endpoint can designate access to one or more schemas (databases) and different levels of permission on each.
 

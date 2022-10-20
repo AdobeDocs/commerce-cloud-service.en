@@ -30,7 +30,7 @@ If you need additional environments for development, enter a [Support ticket](ht
 
 **To add a branch**:
 
-1. Log in to [the Project Web UI](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
 1. Click on the project.
 1. In the left environment list, click the name of the parent environment.
 
@@ -50,7 +50,7 @@ If you need additional environments for development, enter a [Support ticket](ht
 
 **To delete an environment and make it inactive**:
 
-1. Log in to [the Project Web UI](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
 1. Click on the project.
 1. In the left environment list, click the name of the branch to delete.
 1. Click **Configure environment**.
@@ -74,7 +74,7 @@ For Pro plan, you can also sync from Staging and Production to your Integration 
 
 **To sync an environment**:
 
-1. Log in to [the Project Web UI](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
 1. Click on the project.
 1. In the left environment list, click the name of the branch to sync.
 1. Click ![Sync an environment](../../assets/icon-sync.png) (sync).
@@ -91,7 +91,7 @@ Merging an environment (or branch) is the same as `git push origin`. You merge t
 
 **To merge with parent environment**:
 
-1. Log in to [the Project Web UI](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
 1. Click on the project.
 1. In the left environment list, click the name of the branch to merge.
 1. Click ![Merge an environment](../../assets/icon-merge.png) (merge).
@@ -111,7 +111,7 @@ For **Pro**, you can review the following logs in each environment:
 
 **To view logs in the Project Web Interface**:
 
-1. Log in to [the Project Web UI](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
 1. Click on the project.
 1. In the left environment list, click the name of the branch to view logs.
 
@@ -139,7 +139,7 @@ If your project needs to access multiple repositories, you can choose to attach 
 
 **To find your project SSH public key**:
 
-1. Log in to [the Project Web UI](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
 1. Click on the project.
 1. Click ![Configure project](../../assets/icon-configure.png) next to the project name.
 1. Click **Deploy Key**.

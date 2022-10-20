@@ -88,7 +88,7 @@ When MFA is enabled on a project, any user that connects to a Cloud environment 
 For Adobe Commerce on cloud infrastructure projects enabled for MFA enforcement, SSH access requires the following permissions and account settings:
 
 -  [Admin or contributor access to the environment](user-access.md)
--  [SSH access key configured on account](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html#ssh-add-to-account)
+-  [SSH access key configured on account](../development/secure-connections.md#add-an-ssh-public-key-to-your-account)
 -  [TFA enabled on account](user-access.md#enable-tfa-for-cloud-accounts)
 
 **To connect using SSH with TFA user account credentials**:
@@ -310,7 +310,7 @@ Hello user-test (UUID: abaacca12-5cd1-4b123-9096-411add578998), you successfully
 oh2wi6klp5ytk-mc-35985-integration-nnulm4a--mymagento@ssh.eu-3.magento.cloud: Permission denied (publickey).
 ```
 
-To fix the problem, you might need to add the SSH key to your current session, or update the SSH configuration file to load your SSH keys automatically. See [Add a public SSH key](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html#ssh-add-to-account).
+To fix the problem, you might need to add the SSH key to your current session, or update the SSH configuration file to load your SSH keys automatically. See [Add a public SSH key](../development/secure-connections.md#add-an-ssh-public-key-to-your-account).
 
 ### Unable to access projects without MFA
 
@@ -320,7 +320,7 @@ If you authenticate to a project with multi-factor authentication (MFA) enabled,
 ssh abcdef7uyxabce-master-7rqtabc--mymagento@ssh.us-3.magento.cloud
 ```
 
->Sample response:
+Sample response:
 
 ```terminal
 abcdef7uyxabce-master-7rqtabc--mymagento@ssh.us-3.magento.cloud: Permission denied (publickey).

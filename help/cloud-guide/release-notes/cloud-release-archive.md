@@ -95,7 +95,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
       >[!WARNING]
       >
-      >Adobe Commerce on cloud infrastructure customers must submit a support ticket to upgrade the libsodium package on Pro Production and Staging environments prior to upgrading to Adobe Commerce 2.3.2. Currently, you cannot upgrade Starter environments to Adobe Commerce 2.3.2.
+      >Adobe Commerce on cloud infrastructure customers must [Submit a support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to upgrade the libsodium package on Pro Production and Staging environments prior to upgrading to Adobe Commerce 2.3.2. Currently, you cannot upgrade Starter environments to Adobe Commerce 2.3.2.
 
    -  ![new icon](../../assets/fix.svg) Added the `analysis-icu` and the `analysis-phonetic` Elasticsearch plugins to all Docker images.<!-- MAGECLOUD-3446 -->
 

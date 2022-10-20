@@ -11,7 +11,7 @@ During the deployment process, all connections queue for up to 5 minutes preserv
 
 Use the following steps to reduce the amount of time it takes your store to deploy an update to Production:
 
-1. [Upgrade to the `ece-tools` package](../dev-tools/install-ece-tools.md) or [update the `ece-tools` version](../dev-tools/update-ece-tools.md)
+1. [Upgrade to the `ece-tools` package](../dev-tools/install-package.md) or [update the `ece-tools` version](../dev-tools/update-package.md)
    Your Adobe Commerce on cloud infrastructure project must have the latest `ece-tools` package so that you have the tools available to configure an optimal deployment. If you have the latest `ece-tools`, continue to the next step.
 
    >[!NOTE]

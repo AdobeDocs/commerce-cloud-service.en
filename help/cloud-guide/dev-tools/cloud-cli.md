@@ -75,16 +75,6 @@ The `magento-cloud environment:list` command displays environment hierarchies, w
 magento-cloud environment:list
 ```
 
-### Common environment commands
-
-| Action                              | Command                                                               |
-| ----------------------------------- | ----------------------------------------------------------------------- |
-| Checkout environment                | `magento-cloud environment:checkout`                 |
-| Merge change to parent environment  | `magento-cloud environment:merge -p -e` |
-| Synchronize with parent environment | `magento-cloud environment:synchronize -p -e {code|data}` |
-| List environment variables          | `magento-cloud variable:list`                                         |
-| Set a variable value                | `magento-cloud variable:set`         |
-
 ### Redeploy the environment
 
 Trigger a redeployment without using a push. Verify and confirm the environment to redeploy. Do not use redeploy if there is a build in a pending state.
@@ -96,7 +86,7 @@ magento-cloud environment:redeploy
 Sample response:
 
 ```terminal
-Are you sure you want to redeploy the environment <environment_name>? [Y/n]
+Are you sure you want to redeploy the environment <environment-name>? [Y/n]
 ```
 
 ## Git commands
@@ -106,7 +96,7 @@ You may notice that some of these commands are similar to Git commands. The `mag
 To create a branch, use the `magento-cloud` command so the branch is activated.
 
 ```bash
-magento-cloud environment:branch <NAME> <PARENT_BRANCH>
+magento-cloud environment:branch <new-name> <parent-branch>
 ```
 
 For branch status:
@@ -117,7 +107,7 @@ For branch status:
 Push an empty Git commit to trigger a deployment. For example:
 
 ```bash
-git commit --allow-empty -m "redeploy" && git push <BRANCH_NAME>
+git commit --allow-empty -m "redeploy" && git push <branch-name>
 ```
 
 Some actions, such as adding a user, do not result in deployment.

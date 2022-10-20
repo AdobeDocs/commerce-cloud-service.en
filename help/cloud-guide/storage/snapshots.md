@@ -138,14 +138,7 @@ For help, use the command: `php vendor/bin/ece-tools db-dump --help`
 
 **To create a database dump in the Staging or Production environment**:
 
-1. [Use SSH to log in to the remote environment](https://devdocs.magento.com/cloud/env/environments-ssh.html) that contains the database to copy:
-
-   -  **Staging:** `ssh -A <project ID>_stg@<project ID>.ent.magento.cloud`
-   -  **Production:** `ssh -A <project ID>@<project ID>.ent.magento.cloud`
-
-   ```bash
-   magento-cloud environment:ssh
-   ```
+1. [Use SSH to log in to the remote environment](../development/secure-connections.md#use-an-ssh-command) that contains the database to copy.
 
 1. Create a backup of the database. To choose a target directory for the DB dump, use the `--dump-directory` option.
 

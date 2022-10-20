@@ -148,7 +148,7 @@ stage:
 
 >[!WARNING]
 >
->You must set the `CRYPT_KEY` value through the Project Web UI instead of the `.magento.env.yaml` file to avoid exposing the key in the source code repository for your environment. See [Set environment and project variables](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var).
+>You must set the `CRYPT_KEY` value through the Project Web Interface instead of the `.magento.env.yaml` file to avoid exposing the key in the source code repository for your environment. See [Set environment and project variables](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var).
 
 When you move the database from one environment to another without an installation process, you need the corresponding cryptographic information. Adobe Commerce uses the encryption key value set in the Web UI as the `crypt/key` value in the `env.php` file.
 

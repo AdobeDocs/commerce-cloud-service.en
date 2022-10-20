@@ -1,21 +1,21 @@
 ---
-title: Backward incompatible changes
-description: Learn about backwards compatibility when upgrading existing Cloud projects.
+title: Backward-incompatible changes
+description: Learn about backward compatibility when upgrading existing Cloud projects.
 ---
 
-# Backward incompatible changes
+# Backward-incompatible changes
 
-Use the following information to learn about backward incompatible changes that might require you to adjust Cloud configuration and processes for existing Cloud projects when you upgrade to the latest release of the `ece-tools` package or other Cloud Suite for Commerce packages.
+Backward-incompatible changes might require you to adjust Cloud configuration and processes for existing Cloud projects when you upgrade to the latest release of the `ece-tools` package or other Cloud Suite for Commerce packages.
 
-## ece-tools changes
+## Changes to `ece-tools` package
 
 Some functionality previously included in the `ece-tools` package is now provided in separate packages. These packages are composer dependencies for `ece-tools`, which are installed and updated automatically when you install or update ece-tools.
 
-The new architecture should not affect your install or update processes.  However, you might need to change some command syntax and processes when working with your Adobe Commerce on cloud infrastructure project. For details, review the following backward incompatible changes information and the [Cloud Suite release notes](cloud-tools.md).
+The new architecture should not affect your install or update processes. However, you might need to change some command syntax and processes when working with your Adobe Commerce on cloud infrastructure project. For details, review the following backward incompatible changes information and the [Cloud Suite release notes](cloud-tools.md).
 
 ### Service version requirement changes
 
-We changed the minimum PHP version requirement from 7.0.x to 7.1.x for Cloud projects that use `ece-tools` v2002.1.0 and later. If your environment configuration specifies PHP 7.0, update the [php configuration](https://devdocs.magento.com/cloud/project/magento-app-php-application.html) in the `.magento.app.yaml` file.
+We changed the minimum PHP version requirement from 7.0.x to 7.1.x for Cloud projects that use `ece-tools` v2002.1.0 and later. If your environment configuration specifies PHP 7.0, update the [php configuration](../application/php-settings.md) in the `.magento.app.yaml` file.
 
 >[!WARNING]
 >
@@ -25,20 +25,20 @@ We changed the minimum PHP version requirement from 7.0.x to 7.1.x for Cloud pro
 
 The following table provides information about environment variables and other environment configuration files that were removed or deprecated in `ece-tools` v2002.1.0.
 
-| Item | Replacement |
-| -------- | ------- |
+| Item     | Replacement |
+| -------- | ----------- |
 |`SCD_EXCLUDE_THEMES` variable | [`SCD_MATRIX`](../environment/variables-build.md#scd_matrix)|
 |`STATIC_CONTENT_THREADS` variable | [`SCD_THREADS`](../environment/variables-build.md#scd_threads)|
 |`DO_DEPLOY_STATIC_CONTENT` variable | [`SKIP_SCD`](../environment/variables-build.md#skip_scd)|
 |`STATIC_CONTENT_SYMLINK` variable | None. Now, the build always creates a symlink to the static content directory `pub/static`.|
-|`build_options.ini` file | Use the [`.magento.env.yaml`](https://devdocs.magento.com/cloud/project/magento-env-yaml.html) file to configure environment variables to manage build and deploy actions across all your environments.<br><br>If you build a Cloud environment that includes the `build_options.ini` file, the build fails.|
+|`build_options.ini` file | Use the [`.magento.env.yaml`](../application/configure-app-yaml.md) file to configure environment variables to manage build-and-deploy actions across all your environments.<br><br>If you build a Cloud environment that includes the `build_options.ini` file, the build fails.|
 
 ### CLI command changes
 
 The following table summarizes CLI command changes in ece-tools v2002.1.0 that might require you to update commands or scripts.
 
-|Command| Replacement|
-|-------- |-------|
+|Command  | Replacement |
+|-------- | ----------- |
 |`m2-ece-build` | `vendor/bin/ece-tools build`|
 |`m2-ece-deploy` | `vendor/bin/ece-tools deploy`|
 |`m2-ece-scd-dump` | `vendor/bin/ece-tools config:dump`|
@@ -50,7 +50,7 @@ In earlier ece-tools releases, you could use the `m2-ece-build` and `m2-ece-depl
 
 ## Cloud Patches changes
 
--  **Remove downloaded patches**–The `magento/magento-cloud-patches` package bundles all patches available from the [software downloads](https://magento.com/tech-resources/download) page and applies them automatically when you deploy to the Cloud. To prevent patch conflicts after upgrading to ece-tools 2002.1.0 or later, remove any Adobe-supplied patches that you downloaded and added to your project manually.
+-  **Remove downloaded patches**–The `magento/magento-cloud-patches` package bundles all patches available from the [software downloads](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html) page and applies them automatically when you deploy to the Cloud. To prevent patch conflicts after upgrading to ece-tools 2002.1.0 or later, remove any Adobe-supplied patches that you downloaded and added to your project manually.
 
 -  **Updating the apply patches command**–We moved the command for applying patches from the `vendor/bin/ece-tools` directory to the `vendor/bin/ece-patches` directory. If you use this command to apply patches manually, use the new path.
 
@@ -74,17 +74,17 @@ In earlier ece-tools releases, you could use the `m2-ece-build` and `m2-ece-depl
       php ./vendor/bin/ece-docker list
       ```
 
-   -  **Updating the Magento Cloud docker-compose commands**–We renamed the path to the command file from `./bin/docker` to `./bin/magento-docker`.  Update your scripts and commands to use the new path.
+   -  **Updating the Cloud docker-compose commands**–We renamed the path to the command file from `./bin/docker` to `./bin/magento-docker`. Update your scripts and commands to use the new path.
 
    -  **Cron container no longer included in default Docker configuration**–Now, you must add the `--with-cron` option to the `ece-docker build:compose` command to include the Cron container in the Docker environment configuration. See [Manage cron jobs](https://devdocs.magento.com/cloud/docker/docker-manage-cron-jobs.html).
 
-    Any scripts that previously generated containers with crons will now be lacking crons.
+      Scripts that previously generated containers with cron jobs are now without the cron container.
 
-   -  **Using temporary containers**–In previous versions, the containers created by `bin/magento-docker` command operations were not removed, so you could use them for other operations.  Now, the `magento-docker` commands remove any containers they create after the command completes.
+   -  **Using temporary containers**–In previous versions, the containers created by `bin/magento-docker` command operations were not removed, so you could use them for other operations. Now, the `magento-docker` commands remove any containers they create after the command completes.
 
       If you want to keep a container created by a docker-compose operation, use the `docker-compose run` command instead of the `bin/magento-docker` command.
 
-   -  **Running post-deploy hooks**–The `cloud-deploy` command no longer runs post deploy hooks. You must use the new `cloud-post-deploy` command to run post deploy hooks after you deploy. Update your scripts to add the command to run post deploy hooks.
+   -  **Running post-deploy hooks**–The `cloud-deploy` command no longer runs post-deploy hooks. Use the new `cloud-post-deploy` command to run post-deploy hooks after you deploy. Update your scripts to add the command to run post-deploy hooks.
 
       ```shell
       bin/magento-docker ece-deploy
@@ -93,7 +93,7 @@ In earlier ece-tools releases, you could use the `m2-ece-build` and `m2-ece-depl
 
       Alternatively, if you use `docker-compose` commands directly, run the `docker-compose run deploy cloud-post-deploy` command after the deploy command.
 
--  **Refreshing the database**–The Database container is now stored in a persistent Docker volume named `magento-db`. When you refresh the Docker environment, the database is no longer deleted automatically. If needed, use one of the following commands to manually remove it.
+-  **Refreshing the database**–The Database container is now stored in the `magento-db` persistent Docker volume. When you refresh the Docker environment, the database is no longer deleted automatically. If needed, use one of the following commands to manually remove it.
 
    -  Remove the `magento-db` container:
 
@@ -107,4 +107,4 @@ In earlier ece-tools releases, you could use the `m2-ece-build` and `m2-ece-depl
       docker-compose down -v
       ```
 
--  **Override file synchronization settings for archive and backup files**–Archive and backup files with the following extensions are no longer synchronized when using docker-sync or mutagen:  `*.sql`, `*.gz`, `*.zip`, and `*.bz2`.  You can override the default file synchronization for these file types by renaming the file to end with a different extension. For example: `synchronize-me.zip-backup`
+-  **Override file synchronization settings for archive and backup files**–Archive and backup files with the following extensions are no longer synchronized when using docker-sync or mutagen:  SQL, GZ, ZIP, and BZ2. You can override the default file synchronization for these file types by renaming the file to end with a different extension. For example: `synchronize-me.zip-backup`
