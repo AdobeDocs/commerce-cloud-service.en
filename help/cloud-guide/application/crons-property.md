@@ -15,7 +15,7 @@ The `crons` property describes processes that are triggered on a schedule and us
 A cron job is well suited for the following tasks:
 
 -  They need to happen on a fixed schedule, not continually.
--  The task itself is not especially long, as a running cron job will block a new deployment.
+-  The task itself is not especially long, as a running cron job blocks a new deployment.
 -  Or it is long, but can be easily divided into many small queued tasks.
 -  A delay between when a task is registered and when it actually happens is acceptable.
 
@@ -50,7 +50,7 @@ Although you can use crontab to review configuration on Pro plan projects, Adobe
 
 **To review cron configuration on Pro environments**:
 
-1. Use [SSH](secure-connections.md#use-an-ssh-command) to log in to the remote environment.
+1. Use [SSH](../development/secure-connections.md#use-an-ssh-command) to log in to the remote environment.
 
 1. List the scheduled cron processes.
 

@@ -28,4 +28,4 @@ There are specific configuration files that manage certain deployment behaviors 
 
 ## Configuration management
 
-After configuring the store options, services, and integrations, use configuration management to deploy these configurations across all environments consistently and with minimal downtime. See [Configuration Management](store-settings.md).
+After configuring the store options, services, and integrations, use configuration management to deploy these configurations across all environments consistently and with minimal downtime. See Configuration Management.

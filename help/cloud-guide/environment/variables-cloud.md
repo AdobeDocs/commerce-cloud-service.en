@@ -44,7 +44,7 @@ Since values can change over time, it is best to inspect the variable at runtime
 
 ## Viewing environment variables
 
-You can use the `env:config:show` command from [the `ece-tools` package](../dev-toolspackage-overview.md) to show a list of variables for the current environment.
+You can use the `env:config:show` command from [the `ece-tools` package](../dev-tools/package-overview.md) to show a list of variables for the current environment.
 
 ```bash
 php ./vendor/bin/ece-tools env:config:show variables
