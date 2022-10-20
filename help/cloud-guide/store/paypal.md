@@ -18,8 +18,8 @@ While we recommend having a PayPal merchant account prepared and configured, you
 
 PayPal onboarding supports connecting with the following accounts:
 
--  PayPal Business account
--  PayPal personal account, converting to a Business account. If you have an existing personal PayPal account, you can log in with those credentials and upgrade this account to a business account as you complete the sync.
+*  PayPal Business account
+*  PayPal personal account, converting to a Business account. If you have an existing personal PayPal account, you can log in with those credentials and upgrade this account to a business account as you complete the sync.
 
 If you do not have an existing PayPal account, create a one. Enter an e-mail address for a new account. If a matching PayPal account is not found, follow the prompts to create a PayPal Business account. Or you can create an account directly through [PayPal](https://www.paypal.com/us/webapps/mpp/account-selection).
 

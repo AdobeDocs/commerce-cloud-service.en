@@ -3,7 +3,7 @@ title: Authentication keys
 description: Learn how to apply authentication keys to a development project in Adobe COmmerce on cloud infrastructure.
 ---
 
-## Authentication keys
+# Authentication keys
 
 You must have an authentication key to access the Adobe Commerce repository and to enable install and update commands for your Adobe Commerce on cloud infrastructure project. There are two methods for specifying Composer authorization credentials.
 

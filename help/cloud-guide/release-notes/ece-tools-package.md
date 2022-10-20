@@ -260,7 +260,7 @@ Release date: February 6, 2020
 
    -  ![new icon](../../assets/new.svg) **Added separate package for Magento Cloud Docker**—Decoupled the Docker package from the `ece-tools` package to maintain code quality and provide independent releases. Updates and fixes related to `ece-tools` are managed from the [magento-cloud-docker](https://github.com/magento/magento-cloud-docker) GitHub repository.<!--MAGECLOUD-2927-->
 
-   -  ![new icon](../../assets/new.svg) **Updated patching capabilities**—Moved the patching functionality from the ece-tools package to a separate [magento-cloud-patches](https://github.com/magento/magento-cloud-patches) package. During deployment, `ece-tools` uses the new package to apply patches. See [Cloud patches release notes](mcp-release-notes.md).<!--MAGECLOUD-4567-->
+   -  ![new icon](../../assets/new.svg) **Updated patching capabilities**—Moved the patching functionality from the ece-tools package to a separate [magento-cloud-patches](https://github.com/magento/magento-cloud-patches) package. During deployment, `ece-tools` uses the new package to apply patches. See [Cloud patches release notes](cloud-patches.md).<!--MAGECLOUD-4567-->
 
    -  ![new icon](../../assets/new.svg) **Updated Composer dependencies**—Updated the `composer.json` file for Adobe Commerce on cloud infrastructure with a dependency for the `magento/magento-cloud-docker` package. Now, `ece-tools` includes dependencies for all packages in the [`Cloud Suite for Commerce`](cloud-tools.md). These packages are installed and updated automatically when you install or update `ece-tools`.
 
@@ -300,13 +300,13 @@ Release date: February 6, 2020
 
 -  ![new icon](../../assets/new.svg) **CLI command updates**—
 
-   -  ![new icon](../../assets/new.svg) **New cron command**—You can now manually manage cron processing in your Adobe Commerce on cloud infrastructure environment using the `cron:disable` and `cron:enable` commands. Use the disable command to stop all active cron processes and disable all cron jobs. Use the enable command to re-enable cron jobs when you are ready. See [Disable cron jobs](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs).
+   -  ![new icon](../../assets/new.svg) **New cron command**—You can now manually manage cron processing in your Adobe Commerce on cloud infrastructure environment using the `cron:disable` and `cron:enable` commands. Use the disable command to stop all active cron processes and disable all cron jobs. Use the enable command to re-enable cron jobs when you are ready. See [Disable cron jobs](../application/crons-property.md#disable-cron-jobs).
 
    -  ![new icon](../../assets/new.svg) **Improved error reporting**—Added better logging for CLI command failures that occur during ece-tools processing.<!--MAGECLOUD-4849-->
 
    -  ![new icon](../../assets/new.svg) **Remove deprecated build commands**— Removed the following build commands: `m2-ece-build`, `m2-ece-deploy`, `m2-ece-scd-dump`, and renamed `ece-tools docker` commands to `ece-docker`. See [Backward incompatible changes](backward-incompatible-changes.md)<!--MAGECLOUD-4392-->
 
--  ![new icon](../../assets/new.svg) Removed the deprecated `build_options.ini` file and added validation to fail the build if the file exists. Use the [.magento.env.yaml](https://devdocs.magento.com/cloud/project/magento-env-yaml.html) file to configure build options.
+-  ![new icon](../../assets/new.svg) Removed the deprecated `build_options.ini` file and added validation to fail the build if the file exists. Use the [.magento.env.yaml](../environment/configure-env-yaml.md) file to configure build options.
 
 -  ![new icon](../../assets/fix.svg) Fixed an issue that caused the build process to fail when the `config.php` file is empty.<!--MAGECLOUD-4127-->
 

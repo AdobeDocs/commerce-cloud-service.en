@@ -130,7 +130,7 @@ On the Adobe Commerce on cloud infrastructure platform, you configure custom cro
 >
 >The default cron interval for all environments is one minute. The default cron interval in all other regions is five minutes for Pro Integration environments and one minute for Pro Staging and Production environments. You cannot configure more frequent intervals than the default minimums.
 
-On Adobe Commerce Pro projects, the [auto-crons feature](#verify-cron-configuration-on-pro-staging-and-production) must be enabled on your Adobe Commerce on cloud infrastructure project before you can add custom cron jobs to Staging and Production environments using `.magento.app.yaml`. If this feature is not enabled, submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to enable auto-crons.
+On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must be enabled on your Adobe Commerce on cloud infrastructure project before you can add custom cron jobs to Staging and Production environments using `.magento.app.yaml`. If this feature is not enabled, submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to enable auto-crons.
 
 **To add custom cron jobs**:
 
@@ -158,7 +158,7 @@ On Adobe Commerce Pro projects, the [auto-crons feature](#verify-cron-configurat
        productcatalog:
            spec: '20 */8 * * *'
            cmd: 'bin/magento export:start catalog_product_category'
-    ```
+   ```
 
 1. Add, commit, and push code changes.
 

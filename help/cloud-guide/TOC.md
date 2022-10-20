@@ -14,6 +14,14 @@ product: magento
     + [Pro architecture](architecture/pro-architecture.md)
     + [Pro workflow](architecture/pro-develop-deploy-workflow.md)
     + [Split-tier architecture](architecture/split-tier-architecture.md)
++ Release notes {#release-notes}
+    + [Cloud tools suite](release-notes/cloud-tools.md)
+    + [ece-tools package](release-notes/ece-tools-package.md)
+    + [Cloud Patches](release-notes/cloud-patches.md)
+    + [Cloud Docker](release-notes/cloud-docker.md)
+    + [Cloud Components](release-notes/cloud-components.md)
+    + [Backward-incompatible changes](release-notes/backward-incompatible-changes.md)
+    + [Release note archive](release-notes/cloud-release-archive.md)
 + Cloud project {#project}
     + [Project overview](project/overview.md)
     + [Project structure](project/file-structure.md)
@@ -113,11 +121,3 @@ product: magento
     + [Manage disk space](storage/manage-disk-space.md)
     + [Profile database queries](storage/profile-database-queries.md)
     + [Snapshots and backup management](storage/snapshots.md)
-+ Release notes {#release-notes}
-    + [Cloud tools suite](release-notes/cloud-tools.md)
-    + [ece-tools package](release-notes/ece-release-notes.md)
-    + [Cloud Patches](release-notes/mcp-release-notes.md)
-    + [Cloud Docker](release-notes/mcd-release-notes.md)
-    + [Cloud Components](release-notes/mcc-release-notes.md)
-    + [Backward-incompatible changes](release-notes/backward-incompatible-changes.md)
-    + [Release note archive](release-notes/cloud-release-archive.md)
