@@ -1,6 +1,6 @@
 ---
-title: SendGrid SMTP Proxy
-description:
+title: SendGrid mail service
+description: Learn about the SendGrid mail service for Adobe Commerce on cloud infrastructure and how you can test your DNS configuration.
 ---
 
 # SendGrid mail service

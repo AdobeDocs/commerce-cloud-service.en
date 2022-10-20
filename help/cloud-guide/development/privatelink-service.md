@@ -5,7 +5,7 @@ description: Learn how to use the PrivateLink service to establish a secure conn
 
 # PrivateLink service
 
-Adobe Commerce on cloud infrastructure supports integration with the [AWS PrivateLink](https://aws.amazon.com/privatelink/) or [Azure Private Link](https://docs.microsoft.com/en-us/azure/private-link/) service to allow Cloud customers to establish secure, private communication between Adobe Commerce on cloud infrastructure environments and services and applications hosted on external systems. Both the Adobe Commerce application and external systems must be accessible through private VPC endpoints configured within the same Cloud region (AWS or Azure).
+Adobe Commerce on cloud infrastructure supports integration with the [AWS PrivateLink](https://aws.amazon.com/privatelink/) or [Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/) service. You can use PrivateLink to establish secure, private communication between Adobe Commerce on cloud infrastructure environments and services and applications hosted on external systems. Both the Adobe Commerce application and external systems must be accessible through Virtual Private Cloud (VPC) endpoints configured within the same Cloud region (AWS or Azure).
 
 ## Features and support
 
@@ -35,14 +35,14 @@ There are two PrivateLink connection types available—shown in the following ne
 
 Choose one of the PrivateLink connection types best suited for your Adobe Commerce on cloud infrastructure environments:
 
--  **Unidirectional PrivateLink**–Choose this configuration to retrieve data securely from a Adobe Commerce on cloud infrastructure store.
+-  **Unidirectional PrivateLink**–Choose this configuration to retrieve data securely from an Adobe Commerce on cloud infrastructure store.
 -  **Bidirectional PrivateLink**–Choose this configuration to establish secure connections to and from systems outside of the Adobe Commerce on cloud infrastructure environment. The bidirectional option requires two connections:
    -  A connection between the customer VPC and the Adobe VPC
    -  A connection between the Adobe VPC and the customer VPC
 
 >[!TIP]
 >
->Work with your network administrator or Cloud platform provider for help with selecting the PrivateLink connection type, or help with VPC setup and administration. See Cloud platform PrivateLink documentation: [AWS PrivateLink](https://aws.amazon.com/privatelink/) or [Azure Private Link](https://docs.microsoft.com/en-us/azure/private-link/).
+>Work with your network administrator or Cloud platform provider for help with selecting the PrivateLink connection type, or help with VPC setup and administration. See Cloud platform PrivateLink documentation: [AWS PrivateLink](https://aws.amazon.com/privatelink/) or [Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/).
 
 ## Request PrivateLink enablement
 
@@ -168,7 +168,7 @@ You can use the Telnet application to test the connection to the VPC endpoint se
    * Closing connection 0
    ```
 
-1. Verify the service is listening on VM.
+1. Verify that the service is listening on VM.
 
    ```bash
    netstat -na | grep <port>
@@ -196,7 +196,7 @@ You can use the Telnet application to test the connection to the VPC endpoint se
 
 ## Change PrivateLink configuration
 
-Submit a Adobe Commerce Support ticket to change an existing PrivateLink configuration. For example, you can request changes like the following:
+Submit an Adobe Commerce Support ticket to change an existing PrivateLink configuration. For example, you can request changes like the following:
 
 -  Remove the PrivateLink connection from the Adobe Commerce on cloud infrastructure Pro Production or Staging environment.
 -  Change the customer Cloud platform account number for accessing the Adobe endpoint service.

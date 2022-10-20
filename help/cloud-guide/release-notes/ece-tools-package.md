@@ -20,7 +20,7 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.1.12
+## v2002.1.12 {#latest}
 
 Release date: September 13, 2022
 
@@ -151,7 +151,7 @@ Release date: November 9, 2020
 
 **CLI command updates**—
 
--  ![new icon](../../assets/new.svg) Added CLI commands (`cloud:config:create` and `cloud:config:update`) to create and update the `.magento.env.yaml` file with a configuration that can include one or more build, deploy, and post-deploy variables. See [Create configuration file from CLI](https://devdocs.magento.com/cloud/project/magento-env-yaml.html#create-configuration-file-from-cli).<!--MCLOUD-7072-->
+-  ![new icon](../../assets/new.svg) Added CLI commands (`cloud:config:create` and `cloud:config:update`) to create and update the `.magento.env.yaml` file with a configuration that can include one or more build, deploy, and post-deploy variables. See [Create configuration file from CLI](../environment/configure-env-yaml.md#create-configuration-file-from-cli).<!--MCLOUD-7072-->
 
 **Environment variable updates**—
 
