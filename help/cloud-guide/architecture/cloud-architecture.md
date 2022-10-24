@@ -9,11 +9,11 @@ Adobe Commerce on cloud infrastructure has a Starter and a Pro plan. Each plan h
 
 For comparison, each plan includes the following infrastructure features and supported products.
 
-| | Starter| Pro |
-| -------- | --------------------------------- | --------------------------------------------- |
+|          | Starter             | Pro                |
+| -------- | --------------------| ------------------ |
 | Core features | <ul><li>[All Adobe Commerce features](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)</li><li>PayPal Onboarding Tool</li><li>[Commerce Reporting](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li></ul> | <ul><li>[All Adobe Commerce features](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)</li><li>PayPal Onboarding Tool</li><li>[Commerce Reporting](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li><li>[B2B module](https://business.adobe.com/products/magento/b2b-ecommerce.html?_ga=2.105948422.442698376.1665067470-1322106587.1655147209)</li></ul> |
-| Infrastructure and deployment | <ul><li>Continuous cloud integration tools with unlimited users</li><li>Fastly Content Delivery Network (CDN), Image Optimization (IO), and added security with generous bandwidth allowances. The Web Application Firewall (WAF) service is available on Production environments only.</li><li>[New Relic](../monitor/new-relic.md) APM (Performance Monitoring) on 3 branches: master and 2 of your choice<br>Platform-as-a-service (PaaS) based Production, Staging, and development environments (4 total active environments) optimized for Adobe Commerce</li><li>Egress filtering (outbound firewall)</li></ul> | <ul><li>Continuous cloud integration tools with unlimited users</li><li>Fastly Content Delivery Network (CDN), Image Optimization (IO), and added security with generous bandwidth allowances. The Web Application Firewall (WAF) service is available on Production environments only.</li><li>[New Relic](../monitor/new-relic.md) Infrastructure on Production + APM (Performance Monitoring) on Staging and Production. The [Managed alerts](../monitor/new-relic.md#monitor-performance-with-managed-alerts) for Adobe Commerce policy implements monitoring best practices to proactively notify you about application and infrastructure issues affecting site performance.</li><li>Platform-as-a-service (PaaS) based Integration development environments (2 total active environments) optimized for Adobe Commerce</li><li>Infrastructure-as-a-Service (IaaS)—dedicated virtual infrastructure for Production environments and for Staging environments</li></ul> |
-| High availability infrastructure || High availability architecture with a three-server setup in the underlying Infrastructure-as-a-Service (IaaS) to provide enterprise grade reliability and availability |
+| Infrastructure and deployment | <ul><li>Continuous cloud integration tools with unlimited users</li><li>Fastly Content Delivery Network (CDN), Image Optimization (IO), and added security with generous bandwidth allowances. The Web Application Firewall (WAF) service is available on Production environments only.</li><li>[New Relic](../monitor/new-relic.md) APM (Performance Monitoring) on 3 branches: `master` and 2 of your choice<br>Platform-as-a-service (PaaS) based Production, Staging, and development environments (4 total active environments) optimized for Adobe Commerce</li><li>Egress filtering (outbound firewall)</li></ul> | <ul><li>Continuous cloud integration tools with unlimited users</li><li>Fastly Content Delivery Network (CDN), Image Optimization (IO), and added security with generous bandwidth allowances. The Web Application Firewall (WAF) service is available on Production environments only.</li><li>[New Relic](../monitor/new-relic.md) Infrastructure on Production + APM (Performance Monitoring) on Staging and Production. The [Managed alerts policy](../monitor/new-relic.md#monitor-performance-with-managed-alerts) for Adobe Commerce policy implements monitoring best practices to proactively notify you about application and infrastructure issues affecting site performance.</li><li>Platform-as-a-service (PaaS) based Integration development environments (2 total active environments) optimized for Adobe Commerce</li><li>Infrastructure-as-a-Service (IaaS)—dedicated virtual infrastructure for Production environments and for Staging environments</li></ul> |
+| High availability infrastructure | | High availability architecture with a three-server setup in the underlying Infrastructure-as-a-Service (IaaS) to provide enterprise grade reliability and availability |
 | Dedicated hardware | | Isolated and dedicated hardware setup in the underlying Infrastructure-as-a-Service (IaaS) to provide even higher levels of reliability and availability |
 | 24x7 email support | 24x7 monitoring and email support for the core application and the cloud infrastructure | 24x7 monitoring and email support for the core application and the cloud infrastructure |
 | A dedicated Customer Technical Advisor (CTA) | | Dedicated technical account management for the initial launch period, starting with your subscription until your initial site launch |
@@ -44,3 +44,34 @@ The [Pro plan architecture](pro-architecture.md) has a global `master` with thre
 -  **Staging**—The Staging environment is for pre-Production testing and includes a database, web server, caching, third-party services, environment variables, configurations, and services, such as Fastly.
 
 -  **Production**—The Production environment includes a three-node, high-availability architecture for your data, services, caching, and store. This is your live, public store environment with environment variables, configurations, and third-party services.
+
+## Supported software and services
+
+Adobe Commerce on cloud infrastructure uses:
+
+- Operating system: Debian GNU/Linux
+- Web server: Nginx
+- Database: MySQL (MariaDB)
+- Content Delivery Network (CDN): Fastly CDN
+
+You can configure the following services:
+
+- [PHP](../application/php-settings.md)
+- [MySQL](../services/mysql.md)
+- [Redis](../services/redis.md)
+- [RabbitMQ](../services/rabbitmq.md)
+- [Elasticsearch](../services/elasticsearch.md)
+- [OpenSearch](../services/opensearch.md)
+
+>[!NOTE]
+>
+>See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation guide_ for recommended versions.
+
+The Fastly CDN module is used for CDN and caching services on Staging and Production environments. See [Configure Fastly services](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html).
+
+For information about configuring the software versions to use in your implementation, see the following Adobe Commerce on cloud infrastructure configuration files:
+
+- [Application configuration (.magento.app.yaml)](../application/configure-app-yaml.md)
+- [Environment configuration (.magento.env.yaml)](../environment/configure-env-yaml.md)
+- [Routes configuration (routes.yaml)](../routes/routes-yaml.md)
+- [Services configuration (services.yaml)](../services/services-yaml.md)

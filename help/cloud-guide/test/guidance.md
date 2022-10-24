@@ -7,6 +7,16 @@ description: Read about testing types and best practices for launching Adobe Com
 
 After configuring and customizing your Adobe Commerce on cloud infrastructure project, it is a best practice to test your application thoroughly before launching the store website. Testing helps to properly manage expectations of the cluster size and appropriately scale for future business needs.
 
+## Functional testing
+
+While in development, it is important to perform end-to-end functional testing on your Adobe Commerce on cloud infrastructure project. See the following guidance for performing functional testing in the Docker environment:
+
+-  **Application testing**—Use the [Magento Functional Testing Framework (MFTF)](https://devdocs.magento.com/cloud/docker/docker-test-app-mftf.html) for application testing in Cloud Docker environment.
+
+-  **Code testing**—Use the [Codeception testing framework for PHP](https://devdocs.magento.com/cloud/docker/docker-test-magecloud-pkg-code.html) for validating code that is intended for contribution to Cloud package repositories.
+
+## Best practices before launch
+
 Consider the following testing types as a best practice to perform before site launch:
 
 -  **Load test**—Conduct a load test to understand the behavior of the system under an expected load. For example, test a concurrent number of active users on the application, having each user perform a specific number of transactions within the set duration. This test reveals the response time of important business-critical transactions, such as the database or application server behavior. A load test can help to identify bottlenecks.

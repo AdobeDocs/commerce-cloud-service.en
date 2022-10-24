@@ -66,3 +66,7 @@ You can use the Docker environment to emulate the Adobe Commerce on cloud infras
 
 -  [Docker architecture and common commands](https://devdocs.magento.com/cloud/docker/docker-development.html)
 -  [Launch Docker development environment](https://devdocs.magento.com/cloud/docker/docker-config.html)
+
+>[!TIP]
+>
+>For information about using Git-based hosting services with Adobe Commerce on cloud infrastructure, see [Integrations](../integrations/overview.md).

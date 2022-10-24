@@ -20,11 +20,11 @@ Changing a service configuration causes a deployment to provision the environmen
 
 The cloud infrastructure supports and deploys the following services:
 
-- [`mysql`](mysql.md)
-- [`redis`](redis.md)
-- [`elasticsearch`](elasticsearch.md)
-- [`opensearch`](opensearch.md)
-- [`rabbitmq`](rabbitmq.md)
+- [MySQL](mysql.md)
+- [Redis](redis.md)
+- [RabbitMQ](rabbitmq.md)
+- [Elasticsearch](elasticsearch.md)
+- [OpenSearch](opensearch.md)
 
 You can view default versions and disk values in the current, [default `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). The following sample shows the `mysql`, `redis`, `opensearch` or `elasticsearch`, and `rabbitmq` services defined in the `services.yaml` configuration file:
 
