@@ -35,7 +35,7 @@ Critical patch for Adobe Commerce 2.4.5:
 
 -  **Issue with orders using Braintree payments**—This patch resolves a critical issue preventing admins from placing new orders or reorders.<!-- MCLOUD-9137 -->
 
-See [Admin can't create order/reorder when Braintree payment enabled](https://support.magento.com/hc/en-us/articles/8322266352525).
+See [Admin can't create order/reorder when Braintree payment enabled](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html).
 
 ## v1.0.17
 

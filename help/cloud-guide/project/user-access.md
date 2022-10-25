@@ -233,7 +233,7 @@ Instructions for installing the authenticator application and enabling TFA are a
 
       >[!WARNING]
       >
-      >If you lose access to an account with TFA and have no recovery codes, you must contact your project administrator, or [submit a Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to reset the TFA application.
+      >If you lose access to an account with TFA and have no recovery codes, you must contact your project administrator, or [submit a Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to reset the TFA application.
 
 1. After completing the TFA setup, click **Save** to update your account.
 

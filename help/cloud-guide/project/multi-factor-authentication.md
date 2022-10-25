@@ -11,7 +11,7 @@ When MFA is enabled on a project, all Adobe Commerce on cloud infrastructure acc
 
 >[!NOTE]
 >
->MFA is not enabled on Cloud projects by default. The Account owner for the Adobe Commerce on cloud infrastructure project must [submit a Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to enable it. When MFA is enabled, all users must have two-factor authentication (TFA) enabled on their Adobe Commerce on cloud infrastructure account for SSH access to the project environments.
+>MFA is not enabled on Cloud projects by default. The Account owner for the Adobe Commerce on cloud infrastructure project must [submit a Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable it. When MFA is enabled, all users must have two-factor authentication (TFA) enabled on their Adobe Commerce on cloud infrastructure account for SSH access to the project environments.
 
 ## Certificates for SSH access
 

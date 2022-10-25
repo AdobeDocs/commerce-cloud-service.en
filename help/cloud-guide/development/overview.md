@@ -58,7 +58,7 @@ Before setting up a workspace, gather the following credentials and accounts:
 
 -  **Adobe Commerce Encryption Key**
 
-    When importing an existing system only, capture the encryption key used to protect your access and data for the database. For details on this key, see [Resolve issues with encryption key](https://support.magento.com/hc/en-us/articles/360033978652)
+    When importing an existing system only, capture the encryption key used to protect your access and data for the database. For details on this key, see [Resolve issues with encryption key](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html)
 
 ## Launch a Docker environment
 

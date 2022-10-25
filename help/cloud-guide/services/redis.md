@@ -87,9 +87,9 @@ Redis server v=5.0.5 sha=947ee0b5:0 malloc=jemalloc-5.1.0 bits=64 build=c1ca234c
 
 See the following Adobe Commerce Support articles for help with troubleshooting Redis problems:
 
--  [Redis issue delay Admin login or checkout](https://support.magento.com/hc/en-us/articles/360000448493)
--  [Extended Redis cache implementation Magento Commerce and Cloud 2.3.5+](https://support.magento.com/hc/en-us/articles/360049292532-Extended-Redis-cache-implementation-Magento-Commerce-and-Cloud-2-3-5-)
--  [MDVA-30102 Magento patch: Redis cache getting full](https://support.magento.com/hc/en-us/articles/360050393371)
--  [Managed alerts on Magento Commerce: Redis memory warning alert](https://support.magento.com/hc/en-us/articles/360049928852)
--  [Managed alerts on Magento Commerce: Redis memory critical alert](https://support.magento.com/hc/en-us/articles/360049936112)
--  [Redis troubleshooter](https://support.magento.com/hc/en-us/articles/360046673932-Redis-troubleshooter)
+-  [Redis issue delay Admin login or checkout](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html)
+-  [Extended Redis cache implementation Magento Commerce and Cloud 2.3.5+](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/redis/extended-redis-cache-implementation-magento-commerce-2.3.5.html)
+-  [MDVA-30102 Magento patch: Redis cache getting full](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/mdva-30102-magento-patch-redis-cache-getting-full.html)
+-  [Managed alerts on Magento Commerce: Redis memory warning alert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html)
+-  [Managed alerts on Magento Commerce: Redis memory critical alert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html)
+-  [Redis troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-troubleshooter.html)

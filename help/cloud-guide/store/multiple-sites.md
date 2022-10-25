@@ -39,11 +39,11 @@ The process to add a domain depends on the type of Cloud account:
 
 -  For Pro Staging and Production
 
-   Add the new domain to Fastly, see [Manage domains][], or open a support ticket to request assistance. In addition, you must [submit a Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to request new domains to be added to a cluster.
+   Add the new domain to Fastly, see [Manage domains][], or open a support ticket to request assistance. In addition, you must [submit a Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request new domains to be added to a cluster.
 
 -  For Starter Production only
 
-   Add the new domain to Fastly, see [Manage domains][], or [submit a Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to request assistance. In addition, you must add the new domain to the **Domains** tab in the Project Web Interface: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+   Add the new domain to Fastly, see [Manage domains][], or [submit a Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request assistance. In addition, you must add the new domain to the **Domains** tab in the Project Web Interface: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Configure local installation
 

@@ -183,5 +183,5 @@ Service logs are archived and saved for different periods of time, depending on 
 <!--Link definitions-->
 
 [Error reference]: https://devdocs.magento.com/cloud/reference/ece-tools-error-reference.html
-[database issues]: https://support.magento.com/hc/en-us/articles/360041739651-Most-common-database-issues-in-Magento-Commerce-Cloud
-[deployment troubleshooter]: https://support.magento.com/hc/en-us/articles/360040986912-Magento-deployment-troubleshooter
+[database issues]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html
+[deployment troubleshooter]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html

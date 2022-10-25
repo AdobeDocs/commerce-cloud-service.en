@@ -23,4 +23,4 @@ Consider the following testing types as a best practice to perform before site l
 
 -  **Stress test**—Challenge the upper limits of capacity within the system to determine if the system performs sufficiently when the current load goes well above the expected maximum.
 
--  **Penetration test**—Is an authorized simulated cyber attack on a computer system designed to evaluate the security of the system. The penetration test helps to identify weaknesses or vulnerabilities, including the potential for unauthorized parties to gain access to system features and data. [Submit a support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) before testing.
+-  **Penetration test**—Is an authorized simulated cyber attack on a computer system designed to evaluate the security of the system. The penetration test helps to identify weaknesses or vulnerabilities, including the potential for unauthorized parties to gain access to system features and data. [Submit a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) before testing.
