@@ -42,6 +42,11 @@ product: magento
     + [Authentication keys](development/authentication-keys.md)
     + [Clone and branch management](development/cli-branches.md)
     + [Secure connections](development/secure-connections.md)
+    + Import code {#import}
+        + [Existing code overview]
+        + Create a project
+        + Add existing code
+        + Migrate database and files
     + [PrivateLink service](development/privatelink-service.md)
     + [Restore environment](development/restore-environment.md)
 + Integrations {#integrations}
@@ -109,9 +114,9 @@ product: magento
     + [Sample data](test/sample-data.md)
     + [Xdebug](test/debug.md)
 + Launch site {#launch}
-    + [Site launch](launch/index.md)
-    + [Launch checklist](launch/site-launch-checklist.md)
-    + [Launch steps](launch/launch-steps.md)
+    + [Overview](launch/overview.md)
+    + [Launch checklist](launch/checklist.md)
+    + [Launch steps](launch/steps.md)
 + Monitor {#monitor}
     + [Logs](monitor/log-locations.md)
     + [Error messages](monitor/error-messages.md)

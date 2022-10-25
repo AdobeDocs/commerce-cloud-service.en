@@ -1,6 +1,6 @@
 ---
 title: Launch checklist
-description: Learn how to review items for site launch.
+description: Review checklist items for site launch.
 ---
 
 # Launch checklist
@@ -41,11 +41,11 @@ When you are ready to launch your site, you must update the DNS configuration to
 
    -  Set all necessary redirects, especially if you are migrating from an existing site
 
-   -  Set the zone’s root resource record to address the hostname
+   -  Set the zone's root resource record to address the hostname
 
    -  Lower the value for the Time-to-Live (TTL) to refresh DNS information to point customers to the correct Production store
 
-      We recommend a significantly lower TTL value when switching the DNS record. This value tells the DNS how long to cache the DNS record. When shortened, it refreshes the DNS faster. For example, you can change the TTL value from 3 days to 10 minutes when you are updating your site. Be advised that shortening the TTL value adds load to the  DNS infrastructure. You should restore the previous higher value after site launch.
+      We recommend a significantly lower TTL value when switching the DNS record. This value tells the DNS how long to cache the DNS record. When shortened, it refreshes the DNS faster. For example, you can change the TTL value from three days to 10 minutes when you are updating your site. Be advised that shortening the TTL value adds load to the  DNS infrastructure. Restore the previous, higher value after site launch.
 
 1. Add CNAME records to point the top-level domains and subdomains for your Production environment to the Fastly service `prod.magentocloud.map.fastly.net`, for example:
 
@@ -85,7 +85,7 @@ When you are ready to launch your site, you must update the DNS configuration to
 
 ## Verify Production configuration
 
-Make a final pass to validate the Production configuration for the store(s).You can make changes to the configuration  in the Production environment. If settings are read-only, you may need to open an SSH connection and use CLI commands to change the configuration, or make configuration changes in your local environment. After you complete the updates, you can deploy the changes to Staging and Production environments.
+Make a final pass to validate the Production configuration for one or more stores. You can update the configuration in the Production environment. If settings are read-only, you may need to open an SSH connection and use CLI commands to change the configuration, or make configuration changes in your local environment. After you complete the updates, you can deploy the changes to Staging and Production environments.
 
 The following are recommended changes and checks:
 
@@ -95,13 +95,13 @@ The following are recommended changes and checks:
 
 -  [Optimize all images for the web](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html)
 
--  [Check minification settings for HTML, Javascript, and CSS](../deploy/static-content.md)
+-  [Check minification settings for HTML, JavaScript, and CSS](../deploy/static-content.md)
 
 ## Verify Fastly caching
 
 -  Test and verify that Fastly caching is working correctly on the Production site. For detailed tests and checks, see [Fastly testing](https://devdocs.magento.com/cloud/live/stage-prod-test.html#fastly).
 
--  [Ensure that the latest version of the Fastly CDN Module for Magento 2 is installed in your Production environment](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#upgrade)
+-  [Ensure that the latest version of the Fastly CDN Module for Commerce is installed in your Production environment](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#upgrade)
 
 -  [Ensure that the most current version of the Fastly VCL code has been uploaded](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#upload-vcl-snippets)
 
@@ -109,19 +109,19 @@ The following are recommended changes and checks:
 
 We recommend that you review the [Performance Toolkit](https://github.com/magento/magento2/tree/2.4/setup/performance-toolkit) options as part of your pre-launch readiness process.
 
-You can also test using the following 3rd party options:
+You can also test using the following third-party options:
 
--  [Siege](https://www.joedog.org/siege-home/): Traffic shaping and testing software to push your store to the limit. Hit your site with a configurable number of simulated clients. Siege supports basic authentication, cookies, HTTP, HTTPS and FTP protocols.
+-  [Siege](https://www.joedog.org/siege-home/): Traffic shaping and testing software to push your store to the limit. Hit your site with a configurable number of simulated clients. Siege supports basic authentication, cookies, HTTP, HTTPS, and FTP protocols.
 
 -  [Jmeter](https://jmeter.apache.org/): Excellent load testing to help gauge performance for spiked traffic, like for flash sales. Create custom tests to run against your site.
 
--  [New Relic](https://support.newrelic.com/) (provided): Helps locate processes and areas of the site causing slow performance with tracked time spent per action like transmitting data, queries, Redis, and so on.
+-  [New Relic](https://support.newrelic.com/s/) (provided): Helps locate processes and areas of the site causing slow performance with tracked time spent per action like transmitting data, queries, Redis, and so on.
 
 -  [WebPageTest](https://www.webpagetest.org/) and [Pingdom](https://www.pingdom.com/): Real-time analysis of your site pages load time with different origin locations. Pingdom may cost a fee. WebPageTest is a free tool.
 
 ## Security configuration
 
--  [Set up your Security Scan](index.md#set-up-the-security-scan-tool)
+-  [Set up your Security Scan](overview.md#set-up-the-security-scan-tool)
 
 -  [Secure configuration for Admin user](https://docs.magento.com/user-guide/stores/security-admin.html)
 
@@ -137,4 +137,4 @@ You can use New Relic services for performance monitoring on Pro and Starter env
 
 ### Next step
 
-[Launch steps](launch-steps.md)
+[Launch steps](steps.md)

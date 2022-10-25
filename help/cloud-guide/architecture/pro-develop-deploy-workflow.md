@@ -82,7 +82,7 @@ It is best to thoroughly test every service, verify your performance testing too
 After thorough testing in the Staging environment, merge to the Production environment and thoroughly test using live credentials. The moment you launch your production site, customers must be able to complete purchases and administrators must be able to manage the live store. We provide a detailed, clear walk-through for deploying your store and going live:
 
 -  See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html)
--  See [Site launch](../launch/index.md)
+-  See [Site launch](../launch/overview.md)
 
 ### Merge to Global Master
 

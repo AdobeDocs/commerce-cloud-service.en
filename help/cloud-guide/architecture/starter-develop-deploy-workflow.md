@@ -225,7 +225,7 @@ See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.h
 
 We provide a clear walk-through for going live and launching, which requires more steps than pressing a button. After you complete these steps, your store can serve up products in your customized theme for sale immediately.
 
-See [Site launch](../launch/index.md).
+See [Site launch](../launch/overview.md).
 
 ## Continuous integration
 

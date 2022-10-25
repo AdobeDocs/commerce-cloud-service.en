@@ -11,7 +11,7 @@ If you checked this information before deploying and testing in Staging, conside
 
 ## Why test fully in Integration, Staging, and Production?
 
-We strongly recommend testing in the Integration, Staging, and Production environments due to the complexity of ensuring that your custom code, themes, extensions, and third-party integrations all work together to operate your stores. The following are common issues you can discover and resolve when you complete testing in the Integration and Staging environments before updating your Production environment:
+We strongly recommend testing in the Integration, Staging, and Production environments due to the complexity of ensuring that your custom code, themes, extensions, and third-party integrations all work together to operate your stores. The following are common issues that you can discover and resolve when you complete testing in the Integration and Staging environments before updating your Production environment:
 
 -  Staging supports all Production services, features, database data, technology stack, architecture, and more. It mirrors Production, which means if errors occur in Staging, you have a warning before they occur in Production.
 
@@ -19,7 +19,7 @@ We strongly recommend testing in the Integration, Staging, and Production enviro
 
 -  Integration environments do not support some services that are available in Staging and Production, like Fastly and New Relic.
 
--  [Fully test](https://devdocs.magento.com/cloud/live/stage-prod-test.html#loadtest) your site with a variety of tools in Staging for load, stress, performance, and site assets.
+-  [Fully test](https://devdocs.magento.com/cloud/live/stage-prod-test.html#loadtest) your site with various tools in Staging for load, stress, performance, and site assets.
 
 -  Because Integration environments may only have databases populated with test data, not matching a production-like environment, you might find additional errors or unexpected behavior when testing in Staging or Production environments.
 
@@ -102,4 +102,4 @@ When you are ready to begin the site launch process, see the following:
 
 -  [Launch checklist](site-launch-checklist.md)
 
--  [Launch steps](launch-steps.md)
+-  [Launch steps](steps.md)
