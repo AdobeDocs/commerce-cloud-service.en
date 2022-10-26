@@ -29,7 +29,7 @@ When you log in to the [Project Web interface](https://accounts.magento.cloud/us
 
 For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branches you create display as children from the `master` branch. Adobe recommends creating a Staging branch, then branching from `staging` for your Integration development. See [Starter architecture](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
-![Starter access](../../assets/starter-project-access.png)
+![Starter access](../../assets/starter/project-access.png)
 
 For **Pro**, there is a hierarchy of branches starting from Production to Staging to Integration. The ![Enterprise icon](../../assets/icon-deploy.png) icon indicates that these branches deploy to a dedicated server, used by Staging and Production. Any branches you create display as children from Integration. See [Pro architecture](https://devdocs.magento.com/cloud/architecture/pro-architecture.html).
 

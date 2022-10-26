@@ -15,7 +15,7 @@ You can use any development and branching methodology you like. When you get ini
 
 The following diagram shows the hierarchical relationships of the Starter environments.
 
-![High-level view of Starter project](../../assets/starter-architecture.png)
+![High-level view of Starter project](../../assets/starter/architecture.png)
 
 ## Production environment
 

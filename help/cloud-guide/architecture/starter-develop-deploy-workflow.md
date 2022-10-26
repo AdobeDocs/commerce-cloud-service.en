@@ -29,7 +29,7 @@ The development workflow uses the following process:
 -  [Generate configuration](#generate-configuration-management-files) management files
 -  [Push code](#push-code-and-test) and configuration to build and deploy to the Staging and Production environments
 
-![Develop and deploy workflow](../../assets/starter-workflow.png)
+![Develop and deploy workflow](../../assets/starter/workflow.png)
 
 You also have a few optional steps to help develop and test your code and your store data:
 
@@ -68,7 +68,7 @@ The format of the Cloud CLI branch command is:
 magento-cloud environment:branch <environment-name> <parent-environment-ID>
 ```
 
-![Branch from Master](../../assets/starter-branching.png)
+![Branch from Master](../../assets/starter/branching.png)
 
 ### Develop code
 
@@ -89,12 +89,12 @@ And so on, until you have your store fully built, configured, and ready to launc
 >
 >Do not complete any configurations in your local workstation yet.
 
-![Push code from local](../../assets/starter-push-code.png)
+![Push code from local](../../assets/starter/push-code.png)
 
 ### Configure store
 
 When you are ready to configure your store, push all your code to the Integration environment.
-Configure your store settings from the Admin panel for the Integration environment, not in your local environment. You can find the URL by clicking **Access site** in the Project Web Interface
+Configure your store settings from the Admin for the Integration environment, not in your local environment. You can find the URL by clicking **Access site** in the Project Web Interface
 
 For the best information on configurations, review the documentation for Adobe Commerce and the installed extensions. Here are some links and ideas to help you get started:
 
@@ -131,7 +131,7 @@ You generate the file in the Integration environment where you configured Adobe 
 
 If you are using Adobe Commerce version 2.2 or later, the configuration management commands provide an additional feature to protect sensitive data, like sandbox credentials for a PayPal module. During the export process, any values that contain sensitive data are exported to separate configuration file—`env.php` in the `app/etc/` directory. This file remains in your local environment and does not get copied when you push your code to another branch. You can also create environment variables with CLI commands in all Adobe Commerce on cloud infrastructure versions.
 
-![Environment variables generate](../../assets/starter-env-variables.png)
+![Environment variables generate](../../assets/starter/env-variables.png)
 
 For more information, see [Configuration Management](https://devdocs.magento.com/cloud/live/sens-data-over.html).
 
@@ -153,7 +153,7 @@ We recommend installing sample data in your local and Integration environments. 
 
 For instructions, see [Install optional sample data](../test/sample-data.md).
 
-![Install optional sample data](../../assets/starter-sample-data.png)
+![Install optional sample data](../../assets/starter/sample-data.png)
 
 ### Optional: Pull production data
 
@@ -163,7 +163,7 @@ As you develop features, add extensions, and design themes, having real data to 
 
 {{cloud-data-collection}}
 
-![Pull and sanitize production data](../../assets/starter-data-code-process.png)
+![Pull and sanitize production data](../../assets/starter/data-code-process.png)
 
 >[!NOTE]
 >

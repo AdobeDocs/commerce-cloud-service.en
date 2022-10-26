@@ -5,7 +5,7 @@ description: Set up PayPal payment methods for Adobe Commerce on cloud infrastru
 
 # Set up PayPal payment methods
 
-Adobe Commerce on cloud infrastructure provides an on-boarding tool to configure PayPal Express Checkout accounts directly through the Admin panel. This tool is available for ECE 2.1.8 and later. To better support going live and testing PayPal payment methods, you can enable and configure your PayPal Express Checkout account for sandbox or production accounts.
+Adobe Commerce on cloud infrastructure provides an on-boarding tool to configure PayPal Express Checkout accounts directly through the Admin. This tool is available for ECE 2.1.8 and later. To better support going live and testing PayPal payment methods, you can enable and configure your PayPal Express Checkout account for sandbox or production accounts.
 
 You can configure either the sandbox or production account in every environment:
 
@@ -14,7 +14,7 @@ You can configure either the sandbox or production account in every environment:
 
 ## PayPal account
 
-While we recommend having a PayPal merchant account prepared and configured, you can create an account or upgrade a personal account through the Admin panel.
+While we recommend having a PayPal merchant account prepared and configured, you can create an account or upgrade a personal account through the Admin.
 
 PayPal onboarding supports connecting with the following accounts:
 

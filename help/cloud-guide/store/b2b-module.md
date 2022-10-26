@@ -72,7 +72,7 @@ When you install the B2B module using Composer, the deployment process automatic
 
 ## Configure the B2B module
 
-After installing the B2B for Adobe Commerce module, you must [start the message consumers](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html#start-message-consumers) so that you can enable the _Shared Catalog_ module, and you must [enable the B2B module in the Admin panel](https://experienceleague.adobe.com/docs/commerce-admin/b2b/enable-basic-features.html).
+After installing the B2B for Adobe Commerce module, you must [start the message consumers](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html#start-message-consumers) so that you can enable the _Shared Catalog_ module, and you must [enable the B2B features](https://experienceleague.adobe.com/docs/commerce-admin/b2b/enable-basic-features.html).
 
 <!-- link definitions -->
 
