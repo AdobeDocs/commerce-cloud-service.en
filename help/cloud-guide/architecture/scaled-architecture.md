@@ -1,9 +1,9 @@
 ---
-title: Split-tier architecture
+title: Scaled architecture
 description: Learn about the split-tier architecture and how it scales to meet demand.
 ---
 
-# Split-tier Architecture
+# Scaled Architecture
 
 The Cloud infrastructure scales according to your resource needs to achieve greater efficiency. The Adobe Commerce on cloud infrastructure monitors your applications and can adjust capacity to maintain steady, predictable performance. Converting to this architecture helps to mitigate problems, such as latency or large spikes in traffic.
 
