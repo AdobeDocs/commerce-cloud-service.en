@@ -68,7 +68,7 @@ We recommend working in a development branch when adding the B2B module to your 
 
 ## Enable the B2B module
 
-When you install the B2B module using Composer, the deployment process automatically enables the module. If you already have the B2B module installed, you can enable or disable the module using the CLI. See [Manage extensions][].
+When you install the B2B module using Composer, the deployment process automatically enables the module. If you already have the B2B module installed, you can enable or disable the module using the CLI. See [Manage extensions](extensions.md).
 
 ## Configure the B2B module
 
@@ -76,5 +76,4 @@ After installing the B2B for Adobe Commerce module, you must [start the message 
 
 <!-- link definitions -->
 
-[Manage extensions]: https://devdocs.magento.com/cloud/howtos/install-components.html#manage-extensions
 [trouble]: https://devdocs.magento.com/cloud/trouble/trouble_comp-deploy-fail.html

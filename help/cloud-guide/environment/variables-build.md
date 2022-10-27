@@ -269,7 +269,11 @@ Enable or disable the [Symfony](https://symfony.com/doc/current/console/verbosit
 >
 >To use VERBOSE_COMMANDS to control the detail in command output for both successful and failed `bin/magento` CLI commands, you must set [MIN_LOGGING_LEVEL](variables-global.md#minlogginglevel) `debug`.
 
-Choose the level of detail provided in the logs: `-v`, `-vv`, or `-vvv`.
+Choose the level of detail provided in the logs:
+
+- `-v`= normal output
+- `-vv`= more verbose output
+- `-vvv` = verbose output ideal for debug
 
 ```yaml
 stage:

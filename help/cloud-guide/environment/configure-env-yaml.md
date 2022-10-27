@@ -43,13 +43,13 @@ You can generate a `.magento.env.yaml` configuration file for a Cloud environmen
 >Creates a configuration file
 
 ```bash
-php ./vendor/bin/ece-tools cloud:config:create
+php ./vendor/bin/ece-tools cloud:config:create `<configuration-json>`
 ```
 
->Updates values in the configuration file
+>Update values in the configuration file
 
 ```bash
-php ./vendor/bin/ece-tools cloud:config:update
+php ./vendor/bin/ece-tools cloud:config:update `<configuration-json>`
 ```
 
 Both commands require a single argument: a JSON-formatted array that specifies a value for at least one build, deploy, or post-deploy variable. For example, the following command sets values for the `SCD_THREADS` and `CLEAN_STATIC_FILES` variables:
