@@ -1,9 +1,9 @@
 ---
 title: Upgrade project to use Ece-tools
-description: Learn how to upgrade your Adobe Commerce on cloud infrastructure project to use the Ece-tools package and take advantage of the latest fixes and features.
+description: Learn how to upgrade your Adobe Commerce on cloud infrastructure project to use the ECE-Tools package and take advantage of the latest fixes and features.
 ---
 
-# Upgrade project to use Ece-tools package
+# Upgrade project to use ECE-Tools package
 
 Adobe deprecated the `magento/magento-cloud-configuration` and `magento/ece-patches` packages in favor of the `ece-tools` package, which simplifies many cloud processes. If you use an older Adobe Commerce on cloud infrastructure project that does _not_ contain the `ece-tools` package, then you must perform a one-time, manual _upgrade_ process to your project.
 

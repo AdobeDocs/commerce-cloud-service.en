@@ -16,7 +16,7 @@ product: magento
     + [Split-tier architecture](architecture/split-tier-architecture.md)
 + Release notes {#release-notes}
     + [Cloud tools suite](release-notes/cloud-tools.md)
-    + [ece-tools package](release-notes/ece-tools-package.md)
+    + [ECE-Tools package](release-notes/ece-tools-package.md)
     + [Cloud Patches](release-notes/cloud-patches.md)
     + [Cloud Docker](release-notes/cloud-docker.md)
     + [Cloud Components](release-notes/cloud-components.md)
@@ -32,10 +32,10 @@ product: magento
     + [Branch management](project/console-branches.md)
 + Developer tools {#dev-tools}
     + [Cloud CLI](dev-tools/cloud-cli.md)
-    + Ece-tools {#ece-tools}
+    + ECE-Tools {#ECE-Tools}
         + [Package overview](dev-tools/package-overview.md)
-        + [One-time upgrade to use Ece-tools](dev-tools/install-package.md)
-        + [Update Ece-tools package](dev-tools/update-package.md)
+        + [One-time upgrade to use ECE-Tools](dev-tools/install-package.md)
+        + [Update ECE-Tools package](dev-tools/update-package.md)
     + [Regional IP addresses](dev-tools/regional-ip-addresses.md)
 + Local development {#develop}
     + [Overview](development/overview.md)

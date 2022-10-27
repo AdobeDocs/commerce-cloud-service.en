@@ -21,7 +21,13 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.19 {#latest}
+## v1.0.20 {#latest}
+
+Release date: October 27, 2022
+
+-  **Added L2 cache improvements patch**—This patch fixes an issue with flushing the local L2 cache for Commerce version 2.4.0 and 2.4.1.<!-- MCLOUD-7845 -->
+
+## v1.0.19
 
 Release date: September 13, 2022
 
@@ -41,7 +47,7 @@ See [Admin can't create order/reorder when Braintree payment enabled](https://ex
 
 Release date: May 24, 2022
 
-Fixed constraints for security patches in the patches.json file.
+Fixed constraints for security patches in the `patches.json` file.
 
 ## v1.0.16
 

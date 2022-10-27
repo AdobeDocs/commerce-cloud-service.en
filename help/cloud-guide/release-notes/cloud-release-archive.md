@@ -21,17 +21,17 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  ![new icon](../../assets/new.svg) Updated the `composer.json` file for the `ece-tools` package to add a dependency for the `magento/magento-cloud-patches` v1.0.0 package.
 
-   -  ![new icon](../../assets/fix.svg) Fixed an issue that caused the `ece-tools` patching process to break when applying patch sets on top of security-only releases, starting with version 2.3.2-p2 and later. This issue was introduced by the new versioning scheme adopted for [security-only patches](https://devdocs.magento.com/guides/v2.3/release-notes/bk-release-notes.html#security-only-patches).<!--MAGECLOUD-4661-->
+   -  ![fix icon](../../assets/fix.svg) Fixed an issue that caused the `ece-tools` patching process to break when applying patch sets on top of security-only releases, starting with version 2.3.2-p2 and later. This issue was introduced by the new versioning scheme adopted for [security-only patches](https://devdocs.magento.com/guides/v2.3/release-notes/bk-release-notes.html#security-only-patches).<!--MAGECLOUD-4661-->
 
--  ![new icon](../../assets/fix.svg) **Patches and critical fixes**–Update your Cloud environments with `ece-tools` version 2002.0.22 to apply the following patches and critical fixes. These patches are included in the `magento/magento-cloud-patches` v1.0.0 package.
+-  ![fix icon](../../assets/fix.svg) **Patches and critical fixes**–Update your Cloud environments with `ece-tools` version 2002.0.22 to apply the following patches and critical fixes. These patches are included in the `magento/magento-cloud-patches` v1.0.0 package.
 
-   -  ![new icon](../../assets/fix.svg) **Page Builder security patches for 2.3.1.x and 2.3.2.x releases**–Fixes an issue in Page Builder preview that allows unauthenticated users to access some templating methods that can be used to trigger arbitrary code execution over the network (RCE) resulting in global information leaks. This issue can occur when using unsupported versions of Page Builder with Adobe Commerce versions 2.3.1 and 2.3.2.<!--MAGECLOUD-4649-->
+   -  ![fix icon](../../assets/fix.svg) **Page Builder security patches for 2.3.1.x and 2.3.2.x releases**–Fixes an issue in Page Builder preview that allows unauthenticated users to access some templating methods that can be used to trigger arbitrary code execution over the network (RCE) resulting in global information leaks. This issue can occur when using unsupported versions of Page Builder with Adobe Commerce versions 2.3.1 and 2.3.2.<!--MAGECLOUD-4649-->
 
-   -  ![new icon](../../assets/fix.svg) **MSI patches**–Fixes issues that caused indexing errors and performance issues when using default inventory settings for managing stock.<!--MAGECLOUD-4428-->
+   -  ![fix icon](../../assets/fix.svg) **MSI patches**–Fixes issues that caused indexing errors and performance issues when using default inventory settings for managing stock.<!--MAGECLOUD-4428-->
 
-   -  ![new icon](../../assets/fix.svg) **Backward Compatibility of new Mail Interfaces**-Fixes a backward incompatibility issue caused by the `Magento\Framework\Mail\EmailMessageInterface` PHP interface introduced in Adobe Commerce v2.3.3. In the scope of this patch, the new `EmailMessageInterface` inherits from the old `MessageInterface`, and Adobe Commerce core modules are reverted to depend on `MessageInterface`.<!--MAGECLOUD-4422-->
+   -  ![fix icon](../../assets/fix.svg) **Backward Compatibility of new Mail Interfaces**-Fixes a backward incompatibility issue caused by the `Magento\Framework\Mail\EmailMessageInterface` PHP interface introduced in Adobe Commerce v2.3.3. In the scope of this patch, the new `EmailMessageInterface` inherits from the old `MessageInterface`, and Adobe Commerce core modules are reverted to depend on `MessageInterface`.<!--MAGECLOUD-4422-->
 
-   -  ![new icon](../../assets/fix.svg) **Catalog pagination does not work on Elasticsearch 6.x**–Fixes a critical issue with search result pagination that affects customers using Elasticsearch 6.x as the catalog search engine.<!--MAGECLOUD-4448-->
+   -  ![fix icon](../../assets/fix.svg) **Catalog pagination does not work on Elasticsearch 6.x**–Fixes a critical issue with search result pagination that affects customers using Elasticsearch 6.x as the catalog search engine.<!--MAGECLOUD-4448-->
 
 ## v2002.0.21
 
@@ -55,9 +55,9 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  ![new icon](../../assets/new.svg) Added the **CONSUMERS_WAIT_FOR_MAX_MESSAGES** environment variable to configure how consumers process messages from the message queue when using the `CRON_CONSUMERS_RUNNER` environment variable to manage cron jobs. See the variable description in the [deploy variables](../environment/variables-deploy.md#consumers_wait_for_max_messages) topic.<!-- MAGECLOUD-4071 -->
 
-   -  ![new icon](../../assets/fix.svg) Fixed an issue that can cause database deadlock errors when the `consumers_runner` cron job starts multiple instances of the same consumer on different nodes. Now, if you have enabled the [**CRON_CONSUMERS_RUNNER**](../environment/variables-deploy.md#cron_consumers_runner) deploy variable in your environment, the `consumers_runner` job uses the `single-thread` option to start one instance of each consumer on only one node.<!-- MAGECLOUD-3913 -->
+   -  ![fix icon](../../assets/fix.svg) Fixed an issue that can cause database deadlock errors when the `consumers_runner` cron job starts multiple instances of the same consumer on different nodes. Now, if you have enabled the [**CRON_CONSUMERS_RUNNER**](../environment/variables-deploy.md#cron_consumers_runner) deploy variable in your environment, the `consumers_runner` job uses the `single-thread` option to start one instance of each consumer on only one node.<!-- MAGECLOUD-3913 -->
 
-   -  ![new icon](../../assets/fix.svg) Fixed an issue affecting [**WARM_UP_PAGES**](../environment/variables-post-deploy.md#warm_up_pages) functionality that uses a default store URL. Now, if the `config:show:default-url` command cannot fetch a base URL, then the URL from the MAGENTO_CLOUD_ROUTES variable is used.<!-- MAGECLOUD-3866 -->
+   -  ![fix icon](../../assets/fix.svg) Fixed an issue affecting [**WARM_UP_PAGES**](../environment/variables-post-deploy.md#warm_up_pages) functionality that uses a default store URL. Now, if the `config:show:default-url` command cannot fetch a base URL, then the URL from the MAGENTO_CLOUD_ROUTES variable is used.<!-- MAGECLOUD-3866 -->
 
 -  ![new icon](../../assets/new.svg) Updated the logging information returned by the `module:refresh` command. Now, you can see a detailed list of enabled modules in the `cloud.log` file.<!-- MAGECLOUD-2514 -->
 
@@ -67,15 +67,15 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/new.svg) Updated interactive validations for service compatibility to reflect supported versions for the new Adobe Commerce 2.3.3 and 2.2.10 releases. See [System requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in the _Installation guide_ for recommended versions.<!-- MAGECLOUD-4018 -->
 
--  ![new icon](../../assets/fix.svg) Improved the log message returned when the cron job management process in the deploy phase tries to stop a cron job that has already finished to clarify that this issue is not an error. Changed the log level from `INFO` to `DEBUG`.<!-- MAGECLOUD-3653-->
+-  ![fix icon](../../assets/fix.svg) Improved the log message returned when the cron job management process in the deploy phase tries to stop a cron job that has already finished to clarify that this issue is not an error. Changed the log level from `INFO` to `DEBUG`.<!-- MAGECLOUD-3653-->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue when running the `setup:upgrade` command that did not interrupt the deployment process when a failure occurred during the `app:config:import` task.<!-- MAGECLOUD-3806 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue when running the `setup:upgrade` command that did not interrupt the deployment process when a failure occurred during the `app:config:import` task.<!-- MAGECLOUD-3806 -->
 
 -  ![new icon](../../assets/new.svg) Changed the default log level for the file handler to `debug` to reduce the amount of detail in the log displayed in the Project Web Interface, while still providing detailed information for debugging.<!-- MAGECLOUD-3871 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that caused an error with static content deployment during build. After an installation and `ece-tools` config dump, an error occurred if there was no locale specified for the admin user in the `config.php` file. Now, there is a default locale for the admin user in the `config.php` file.<!-- MAGECLOUD-3957 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that caused an error with static content deployment during build. After an installation and `ece-tools` config dump, an error occurred if there was no locale specified for the admin user in the `config.php` file. Now, there is a default locale for the admin user in the `config.php` file.<!-- MAGECLOUD-3957 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an `Undefined index error` that occurs when a `magento-cloud` CLI command fails in an environment that is not configured with a secure URL (https). Now, the ece-tools package uses the base URL (http) if the secure URL is not available.<!-- MAGECLOUD-4009 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an `Undefined index error` that occurs when a `magento-cloud` CLI command fails in an environment that is not configured with a secure URL (https). Now, the ece-tools package uses the base URL (http) if the secure URL is not available.<!-- MAGECLOUD-4009 -->
 
 ## v2002.0.20
 
@@ -89,17 +89,17 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  ![new icon](../../assets/new.svg) Added the ability to use Mutagen.io to synchronize files during development between the local host and Docker.<!-- MAGECLOUD-3559 -->
 
-   -  ![new icon](../../assets/fix.svg) Corrected the default path when using the Docker environment. Now, when you use SSH to log in to the Docker container, you are at the project root in the `/app` directory, as expected.<!-- MAGECLOUD-3582 -->
+   -  ![fix icon](../../assets/fix.svg) Corrected the default path when using the Docker environment. Now, when you use SSH to log in to the Docker container, you are at the project root in the `/app` directory, as expected.<!-- MAGECLOUD-3582 -->
 
-   -  ![new icon](../../assets/fix.svg) Updated the Sodium library from version 1.0.11 to version 1.0.18, and updated the Sodium PHP extension.<!-- MAGECLOUD-3832 -->
+   -  ![fix icon](../../assets/fix.svg) Updated the Sodium library from version 1.0.11 to version 1.0.18, and updated the Sodium PHP extension.<!-- MAGECLOUD-3832 -->
 
       >[!WARNING]
       >
       >Adobe Commerce on cloud infrastructure customers must [Submit a support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to upgrade the libsodium package on Pro Production and Staging environments prior to upgrading to Adobe Commerce 2.3.2. Currently, you cannot upgrade Starter environments to Adobe Commerce 2.3.2.
 
-   -  ![new icon](../../assets/fix.svg) Added the `analysis-icu` and the `analysis-phonetic` Elasticsearch plugins to all Docker images.<!-- MAGECLOUD-3446 -->
+   -  ![fix icon](../../assets/fix.svg) Added the `analysis-icu` and the `analysis-phonetic` Elasticsearch plugins to all Docker images.<!-- MAGECLOUD-3446 -->
 
-   -  ![new icon](../../assets/fix.svg) Improved validations: When using options for the `docker:build` command, you must provide a value when using an option. Also, added validation for the Node version when using the `docker:build run` command.<!-- MAGECLOUD-3486 & MAGECLOUD-3678 -->
+   -  ![fix icon](../../assets/fix.svg) Improved validations: When using options for the `docker:build` command, you must provide a value when using an option. Also, added validation for the Node version when using the `docker:build run` command.<!-- MAGECLOUD-3486 & MAGECLOUD-3678 -->
 
 -  ![new icon](../../assets/new.svg) **Environment variable updates**—
 
@@ -109,29 +109,29 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  ![new icon](../../assets/new.svg) Added the **TTFB_TESTED_PAGES** post-deploy variable to configure _Time to First Byte_  page tests to check application performance on sites deployed to Cloud infrastructure. See the variable description in [post-deploy variables](../environment/variables-post-deploy.md).<!-- MAGECLOUD-3643 -->
 
-   -  ![new icon](../../assets/fix.svg) Fixed an issue with multi-threaded SCD, which caused random failures in static content deployment. The workaround involved setting the **SCD_THREADS** variable to `1`. You can now increase the count as needed. See the definitions in the [deploy variables](../environment/variables-deploy.md#scd_threads) and the [build variables](../environment/variables-build.md#scd_threads).<!-- MAGECLOUD-3611 -->
+   -  ![fix icon](../../assets/fix.svg) Fixed an issue with multi-threaded SCD, which caused random failures in static content deployment. The workaround involved setting the **SCD_THREADS** variable to `1`. You can now increase the count as needed. See the definitions in the [deploy variables](../environment/variables-deploy.md#scd_threads) and the [build variables](../environment/variables-build.md#scd_threads).<!-- MAGECLOUD-3611 -->
 
-   -  ![new icon](../../assets/fix.svg) You can configure the **WARM_UP_PAGES** environment variable to cache single pages, multiple domains, and multiple pages. See the expanded definition in the [post-deploy variables](../environment/variables-post-deploy.md#warm_up_pages) content.<!-- MAGECLOUD-3258 -->
+   -  ![fix icon](../../assets/fix.svg) You can configure the **WARM_UP_PAGES** environment variable to cache single pages, multiple domains, and multiple pages. See the expanded definition in the [post-deploy variables](../environment/variables-post-deploy.md#warm_up_pages) content.<!-- MAGECLOUD-3258 -->
 
--  ![new icon](../../assets/fix.svg) Added the `pub/static/.htaccess` file to the exclude list. [Fix submitted by Björn Kraus of PHOENIX MEDIA GmbH](https://github.com/magento/ece-tools/pull/455).<!-- MAGECLOUD-3545/Github#455 -->
+-  ![fix icon](../../assets/fix.svg) Added the `pub/static/.htaccess` file to the exclude list. [Fix submitted by Björn Kraus of PHOENIX MEDIA GmbH](https://github.com/magento/ece-tools/pull/455).<!-- MAGECLOUD-3545/Github#455 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an error when all validation messages were showing as `Critical` if at least one critical level validator returned an error.<!-- MAGECLOUD-3178 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an error when all validation messages were showing as `Critical` if at least one critical level validator returned an error.<!-- MAGECLOUD-3178 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that caused a deployment failure if the base URL did not exist in the database.<!-- MAGECLOUD-3075 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that caused a deployment failure if the base URL did not exist in the database.<!-- MAGECLOUD-3075 -->
 
 -  ![new icon](../../assets/new.svg) Added a new **`env:config:show` command** to the `ece-tools` package that displays environment services, routes, or variables. See [Services, routes, and variables](https://devdocs.magento.com/cloud/reference/ece-tools-reference.html#services-routes-and-variables). [Feature submitted by Vladimir Kerkhoff](https://github.com/magento/ece-tools/pull/486).<!-- MAGECLOUD-3451 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that caused a critical error when attempting to install Adobe Commerce 2.2.6 or earlier with `ece-tools` develop after shell refactoring.<!-- MAGECLOUD-3665 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that caused a critical error when attempting to install Adobe Commerce 2.2.6 or earlier with `ece-tools` develop after shell refactoring.<!-- MAGECLOUD-3665 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that caused Adobe Commerce 2.1.x and 2.2.x installations to fail with a warning about using a deprecated version of Carbon.<!-- MAGECLOUD-3704 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that caused Adobe Commerce 2.1.x and 2.2.x installations to fail with a warning about using a deprecated version of Carbon.<!-- MAGECLOUD-3704 -->
 
--  ![new icon](../../assets/fix.svg) Decreased the `cloud.log` log level for shell output from `info` to `debug`.<!-- MAGECLOUD-3277 -->
+-  ![fix icon](../../assets/fix.svg) Decreased the `cloud.log` log level for shell output from `info` to `debug`.<!-- MAGECLOUD-3277 -->
 
--  ![new icon](../../assets/fix.svg) Added the `--remove-definers (-d)` option to the `ece-tools db-dump` command to remove definers from the dump file.<!-- MAGECLOUD-3510 -->
+-  ![fix icon](../../assets/fix.svg) Added the `--remove-definers (-d)` option to the `ece-tools db-dump` command to remove definers from the dump file.<!-- MAGECLOUD-3510 -->
 
 ## v2002.0.19
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that overwrites the `env.php` file during a deploy, resulting in a loss of custom configurations. This update ensures that Adobe Commerce on cloud infrastructure updates the `env.php` file with every deployment, while preserving custom configurations.<!-- MAGECLOUD-3668 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that overwrites the `env.php` file during a deploy, resulting in a loss of custom configurations. This update ensures that Adobe Commerce on cloud infrastructure updates the `env.php` file with every deployment, while preserving custom configurations.<!-- MAGECLOUD-3668 -->
 
 ## v2002.0.18
 
@@ -145,13 +145,13 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  ![new icon](../../assets/new.svg) **Docker build modes**—Now you can choose to launch the Docker environment in [Production mode or Developer mode](https://devdocs.magento.com/cloud/docker/docker-launch.html#set-the-launch-mode). Developer mode supports active development with full, writable filesystem permissions.<!-- MAGECLOUD-3152/3511 -->
 
-   -  ![new icon](../../assets/fix.svg) Fixed an issue that caused Docker deploy to fail with a `Name or service not known` error if the cache is configured for a service that is not available. Now, you can remove a service from the [`.magento/services.yaml` file](https://devdocs.magento.com/cloud/project/services.html). The Docker configuration generator updates the service in the `docker/config.php.dist` file automatically.<!-- MAGECLOUD-3369 -->
+   -  ![fix icon](../../assets/fix.svg) Fixed an issue that caused Docker deploy to fail with a `Name or service not known` error if the cache is configured for a service that is not available. Now, you can remove a service from the [`.magento/services.yaml` file](https://devdocs.magento.com/cloud/project/services.html). The Docker configuration generator updates the service in the `docker/config.php.dist` file automatically.<!-- MAGECLOUD-3369 -->
 
    -  ![new icon](../../assets/new.svg) Added interactive validations for service compatibility. Now, if a requested service is incompatible with the Adobe Commerce version or other services, the _interactive mode_ prompts the user with a message and a choice to continue. See the [Service versions](https://devdocs.magento.com/cloud/docker/docker-containers.html#service-containers) available for Docker. Use the `-n` option to skip the interactivity for CICD purposes.<!-- MAGECLOUD-3251 -->
 
-   -  ![new icon](../../assets/fix.svg) Fixed an issue with the Docker compose `db-dump` command that erased existing dumps.<!-- MAGECLOUD-3366 -->
+   -  ![fix icon](../../assets/fix.svg) Fixed an issue with the Docker compose `db-dump` command that erased existing dumps.<!-- MAGECLOUD-3366 -->
 
-   -  ![new icon](../../assets/fix.svg) Fixed an issue that assigned Redis `session`, `default`, and `page_cache` cache storage to the same database ID.<!-- MAGECLOUD-3172 -->
+   -  ![fix icon](../../assets/fix.svg) Fixed an issue that assigned Redis `session`, `default`, and `page_cache` cache storage to the same database ID.<!-- MAGECLOUD-3172 -->
 
 -  ![new icon](../../assets/new.svg) **Environment variable updates**—
 
@@ -161,17 +161,17 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
       -  ![new icon](../../assets/new.svg) Added the **MAGENTO_CLOUD_LOCKS_DIR** environment variable to configure the path to the mount point for the lock provider on the cloud infrastructure. The lock provider prevents the launch of duplicate cron jobs and cron groups. This variable is supported on Adobe Commerce version 2.2.5 and later and automatically configured. See the definition in [Cloud variables](../environment/variables-cloud.md).<!-- MAGECLOUD-3135 -->
 
-      -  ![new icon](../../assets/fix.svg) Changed the **SCD_THREADS** environment variable default values to automatically determine the optimal value based on the detected CPU thread count. See the updated definitions in the [deploy variables](../environment/variables-deploy.md#scd_threads) and the [build variables](../environment/variables-build.md#scd_threads).<!-- MAGECLOUD-3382 -->
+      -  ![fix icon](../../assets/fix.svg) Changed the **SCD_THREADS** environment variable default values to automatically determine the optimal value based on the detected CPU thread count. See the updated definitions in the [deploy variables](../environment/variables-deploy.md#scd_threads) and the [build variables](../environment/variables-build.md#scd_threads).<!-- MAGECLOUD-3382 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue with a patch for DB Isolation Mechanism that caused an error when upgrading to Adobe Commerce on cloud infrastructure version 2002.0.16.<!-- MAGECLOUD-3383 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue with a patch for DB Isolation Mechanism that caused an error when upgrading to Adobe Commerce on cloud infrastructure version 2002.0.16.<!-- MAGECLOUD-3383 -->
 
--  ![new icon](../../assets/fix.svg) Added a patch that replaces _Google Image Charts_ with _Image-Charts_. See the DevBlog article [Google Image Charts deprecation and update for M1](https://community.magento.com/t5/Magento-DevBlog/Google-Image-Charts-deprecation-and-update-for-M1/ba-p/125006).<!-- MAGECLOUD-3456 -->
+-  ![fix icon](../../assets/fix.svg) Added a patch that replaces _Google Image Charts_ with _Image-Charts_. See the DevBlog article [Google Image Charts deprecation and update for M1](https://community.magento.com/t5/Magento-DevBlog/Google-Image-Charts-deprecation-and-update-for-M1/ba-p/125006).<!-- MAGECLOUD-3456 -->
 
--  ![new icon](../../assets/fix.svg) Added validation for the [SEARCH_CONFIGURATION variable](../environment/variables-deploy.md#search_configuration). Deploy fails when the 'engine' option is not set and `_merge` is not required.<!-- MAGECLOUD-3470 -->
+-  ![fix icon](../../assets/fix.svg) Added validation for the [SEARCH_CONFIGURATION variable](../environment/variables-deploy.md#search_configuration). Deploy fails when the 'engine' option is not set and `_merge` is not required.<!-- MAGECLOUD-3470 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that exposed sensitive data after an exception occurs. Now the sensitive information is masked appropriately.<!-- MAGECLOUD-3525 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that exposed sensitive data after an exception occurs. Now the sensitive information is masked appropriately.<!-- MAGECLOUD-3525 -->
 
--  ![new icon](../../assets/fix.svg) Improved the fault-tolerant settings of the Magento Open Source package. In the case when Adobe Commerce cannot read data from the Redis `slave` instance, a reading is made from the Redis `master` instance. See [REDIS_USE_SLAVE_CONNECTION](../environment/variables-deploy.md#redis_use_slave_connection).<!-- MAGECLOUD-2899 -->
+-  ![fix icon](../../assets/fix.svg) Improved the fault-tolerant settings of the Magento Open Source package. In the case when Adobe Commerce cannot read data from the Redis `slave` instance, a reading is made from the Redis `master` instance. See [REDIS_USE_SLAVE_CONNECTION](../environment/variables-deploy.md#redis_use_slave_connection).<!-- MAGECLOUD-2899 -->
 
 ## v2002.0.17
 
@@ -193,9 +193,9 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/new.svg) **New environment variable**—Previously, there was a hard-coded timeout for SCD compression. Now you can configure the SCD compression timeout using the **SCD_COMPRESSION_TIMEOUT** environment variable. See the definitions in the [build variables](../environment/variables-build.md#scd_compression_timeout) and the [deploy variables](../environment/variables-deploy.md#scd_compression_timeout) content.<!-- MAGECLOUD-2870 -->
 
--  ![new icon](../../assets/fix.svg) Added the `--use-rewrites` option to the install command so that it uses web server rewrites for generated links in the storefront and Admin access to improve security and customer experience.<!-- MAGECLOUD-3246 -->
+-  ![fix icon](../../assets/fix.svg) Added the `--use-rewrites` option to the install command so that it uses web server rewrites for generated links in the storefront and Admin access to improve security and customer experience.<!-- MAGECLOUD-3246 -->
 
--  ![new icon](../../assets/fix.svg) Added timestamps to the `var/log/install_upgrade.log` file so that it shows dates for installation and upgrade events.<!-- MAGECLOUD-2895 -->
+-  ![fix icon](../../assets/fix.svg) Added timestamps to the `var/log/install_upgrade.log` file so that it shows dates for installation and upgrade events.<!-- MAGECLOUD-2895 -->
 
 ## v2002.0.16
 
@@ -213,17 +213,17 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/new.svg) The compression process in deploying static content now includes all assets—natively generated or customized—and occurs during the build phase at the beginning of the [`build:transfer` section](https://devdocs.magento.com/cloud/project/magento-app-properties.html#hooks). Previously, the compression process occurred before applying custom minification and bundling of static assets. [Fix submitted by Rafael Garcia Lepper from Tryzens Limited](https://github.com/magento/ece-tools/pull/413).<!-- MAGECLOUD-3104 -->
 
--  ![new icon](../../assets/fix.svg) Fixed a database connection error that occurred during deployment immediately after configuring an additional database and service relationship. Also, this fix addresses an issue that occurred during the configuration process of Commerce Reporting for Starter. For Starter, this upgrade is a "must have" for using Commerce Reporting.<!-- MAGECLOUD-3035 -->
+-  ![fix icon](../../assets/fix.svg) Fixed a database connection error that occurred during deployment immediately after configuring an additional database and service relationship. Also, this fix addresses an issue that occurred during the configuration process of Commerce Reporting for Starter. For Starter, this upgrade is a "must have" for using Commerce Reporting.<!-- MAGECLOUD-3035 -->
 
--  ![new icon](../../assets/fix.svg) Fixed a validation issue with the database configuration that caused the deploy process to fail.<!-- MAGECLOUD-3003 -->
+-  ![fix icon](../../assets/fix.svg) Fixed a validation issue with the database configuration that caused the deploy process to fail.<!-- MAGECLOUD-3003 -->
 
--  ![new icon](../../assets/fix.svg) Updated the constraint with the appropriate version of the `symfony/yaml` package to use with [PHP constants](https://devdocs.magento.com/cloud/project/magento-env-yaml.html#php-constants). Constant parsing does not work when using a `symfony/yaml` package version earlier than 3.2. [Fix submitted by Vladimir Kerkhoff](https://github.com/magento/ece-tools/pull/404).<!-- MAGECLOUD-2956 -->
+-  ![fix icon](../../assets/fix.svg) Updated the constraint with the appropriate version of the `symfony/yaml` package to use with [PHP constants](https://devdocs.magento.com/cloud/project/magento-env-yaml.html#php-constants). Constant parsing does not work when using a `symfony/yaml` package version earlier than 3.2. [Fix submitted by Vladimir Kerkhoff](https://github.com/magento/ece-tools/pull/404).<!-- MAGECLOUD-2956 -->
 
 -  ![new icon](../../assets/new.svg) **Environment configuration check**—Added validation to check the PHP version and warn users if they are not using the latest recommended version.<!--MAGECLOUD-2903-->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue with processing malformed JSON variables. Now, if a JSON variable causes a syntax error, a warning appears in the `cloud.log` file and deployment continues using the default variable.<!-- MAGECLOUD-2851 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue with processing malformed JSON variables. Now, if a JSON variable causes a syntax error, a warning appears in the `cloud.log` file and deployment continues using the default variable.<!-- MAGECLOUD-2851 -->
 
--  ![new icon](../../assets/fix.svg) Fixed a connection error that occurred during deployment immediately after disabling the Redis service.<!-- MAGECLOUD-2747 -->
+-  ![fix icon](../../assets/fix.svg) Fixed a connection error that occurred during deployment immediately after disabling the Redis service.<!-- MAGECLOUD-2747 -->
 
 -  ![new icon](../../assets/new.svg) **Logging changes**—Updated the [log level](../environment/log-handlers.md#log-levels) from `Info` to `Notice` for the following build and deploy process events:<!--MAGECLOUD-2925-->
 
@@ -239,7 +239,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  **[X_FRAME_CONFIGURATION global variable](../environment/variables-global.md#x_frame_configuration)**—Use this variable to change the `X-Frame-Options` header configuration for rendering a Adobe Commerce page in a `<frame>`, `<iframe>`, or `<object>`.<!-- MAGECLOUD-3048 -->
 
--  ![new icon](../../assets/fix.svg) **Environment variable updates**—Changed the following environment variables:
+-  ![fix icon](../../assets/fix.svg) **Environment variable updates**—Changed the following environment variables:
 
    -  **[WARM_UP_PAGES](../environment/variables-post-deploy.md)**—Added the capability to preload the cache for specified pages on all domains defined for a Adobe Commerce store. Previously, if your site was configured with multiple domains, the post-deploy process failed to preload the cache for the specified pages on non-default domains and returned the following error in the post-deploy log: `ERROR: Warming up failed: <uri>`<!-- MAGECLOUD-2466 -->
 
@@ -277,29 +277,29 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/new.svg) **New environment variable**—By default, only the Production environment has Google Analytics enabled. You can enable Google Analytics on the Staging and Integration environments using the  [ENABLE_GOOGLE_ANALYTICS environment variable](../environment/variables-deploy.md#enable_google_analytics).<!--MAGECLOUD-2879-->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that removed customized cron configurations from the `env.php` file after a redeployment. Now, custom cron configurations safely remain in the `env.php` file.<!-- MAGECLOUD-2923 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that removed customized cron configurations from the `env.php` file after a redeployment. Now, custom cron configurations safely remain in the `env.php` file.<!-- MAGECLOUD-2923 -->
 
--  ![new icon](../../assets/fix.svg) Fixed inconsistencies in the messages and [log levels](../environment/log-handlers.md#log-levels) for build, deploy, and post-deploy phases. Increased beginning and ending log message levels from **info** to **notice** for all phases and sub-phases. Added beginning and ending log messages, where appropriate.<!-- MAGECLOUD-2919 -->
+-  ![fix icon](../../assets/fix.svg) Fixed inconsistencies in the messages and [log levels](../environment/log-handlers.md#log-levels) for build, deploy, and post-deploy phases. Increased beginning and ending log message levels from **info** to **notice** for all phases and sub-phases. Added beginning and ending log messages, where appropriate.<!-- MAGECLOUD-2919 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue involving cron processes that prevented the start of the post-deploy phase, when configured. Now, if you have the post-deploy hook enabled, the cron processes are enabled again at the beginning of the post-deploy phase.<!-- MAGECLOUD-2862 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue involving cron processes that prevented the start of the post-deploy phase, when configured. Now, if you have the post-deploy hook enabled, the cron processes are enabled again at the beginning of the post-deploy phase.<!-- MAGECLOUD-2862 -->
 
--  ![new icon](../../assets/fix.svg) Resolved an issue that prevented a successful installation of Adobe Commerce when specifying a custom database configuration. Previously, the installation process used the database configuration from the [MAGENTO_CLOUD_RELATIONSHIP variable](../environment/variables-cloud.md) even if you designated customized connection information in the [DATABASE_CONFIGURATION environment variable](../environment/variables-deploy.md#database_configuration).<!--MAGECLOUD-2736-->
+-  ![fix icon](../../assets/fix.svg) Resolved an issue that prevented a successful installation of Adobe Commerce when specifying a custom database configuration. Previously, the installation process used the database configuration from the [MAGENTO_CLOUD_RELATIONSHIP variable](../environment/variables-cloud.md) even if you designated customized connection information in the [DATABASE_CONFIGURATION environment variable](../environment/variables-deploy.md#database_configuration).<!--MAGECLOUD-2736-->
 
--  ![new icon](../../assets/fix.svg) Corrected the `config:dump` command so that it includes each website locale in the `system` section of the `config.php` file.<!--MAGECLOUD-2740-->
+-  ![fix icon](../../assets/fix.svg) Corrected the `config:dump` command so that it includes each website locale in the `system` section of the `config.php` file.<!--MAGECLOUD-2740-->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that resulted in _warm-up_ errors during the post-deploy phase by correcting the source base URL reference.<!--MAGECLOUD-2797-->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that resulted in _warm-up_ errors during the post-deploy phase by correcting the source base URL reference.<!--MAGECLOUD-2797-->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that generated files improperly during the `setup:di:compile` process, which affected the Amazon Pay module.<!--MAGECLOUD-2850-->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that generated files improperly during the `setup:di:compile` process, which affected the Amazon Pay module.<!--MAGECLOUD-2850-->
 
 ## v2002.0.14
 
 -  ![new icon](../../assets/new.svg) **Verify Ideal State**—The `ideal-state` wizard now verifies the current configuration during each deployment and provides clear instructions for updating the configuration to achieve a faster, zero-downtime deployment.<!--MAGECLOUD-2372-->
 
--  ![new icon](../../assets/fix.svg) **PCI Compliance**—Updated the messaging protocols for Adobe Commerce on cloud infrastructure to require Transport Layer Security (TLS) version 1.2 when connecting with third-party messaging services. If you are using a message service that does not support TLS version 1.2, you must upgrade your service. Otherwise, the following error message displays when your Adobe Commerce application tries to connect to the message server to send an email: `Unable to connect via TLS`.<!--MAGECLOUD-2521-->
+-  ![fix icon](../../assets/fix.svg) **PCI Compliance**—Updated the messaging protocols for Adobe Commerce on cloud infrastructure to require Transport Layer Security (TLS) version 1.2 when connecting with third-party messaging services. If you are using a message service that does not support TLS version 1.2, you must upgrade your service. Otherwise, the following error message displays when your Adobe Commerce application tries to connect to the message server to send an email: `Unable to connect via TLS`.<!--MAGECLOUD-2521-->
 
 -  ![new icon](../../assets/new.svg) **Deployment improvement**—Added validation to warn customers if a Staging or Production environment has `dev`, `debug`, or `debug_logging` options enabled to prevent performance issues caused by excessive logging activity.<!--MAGECLOUD-2517-->
 
--  ![new icon](../../assets/fix.svg) **Deployment fixes**—
+-  ![fix icon](../../assets/fix.svg) **Deployment fixes**—
 
    -  Now maintenance mode is enabled at the start of the deploy phase and disabled at the end. If the deployment fails, the site remains in maintenance mode until the deployment issues are resolved. Previously, the site returned to production mode even if the deployment failed.<!--MAGECLOUD-2603-->
 
@@ -311,7 +311,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  Fixed an issue with the shared configuration settings in the `app/etc/config.php` file that caused `recursion detected` errors during deployment.<!--MAGECLOUD-2173-->
 
--  ![new icon](../../assets/fix.svg) **Cron-related fixes**—
+-  ![fix icon](../../assets/fix.svg) **Cron-related fixes**—
 
    -  Fixed a cron scheduling issue that prevented jobs from running if you specify a cron frequency other than the default (1 minute).<!--MAGECLOUD-2602-->
 
@@ -319,9 +319,9 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  Fixed the cron job workflow in versions 2.2.x to unlock frozen cron jobs so that they can be stopped before beginning deployment. Previously, a frozen cron job caused the deployment to stall.<!--MAGECLOUD-2501-->
 
--  ![new icon](../../assets/fix.svg) Changed the format of the `config.php` file generated by the `vendor/bin/ece-tools config:dump` command to use short array syntax and 4-space indentation to comply with Adobe Commerce coding standards.<!--MAGECLOUD-2527-->
+-  ![fix icon](../../assets/fix.svg) Changed the format of the `config.php` file generated by the `vendor/bin/ece-tools config:dump` command to use short array syntax and 4-space indentation to comply with Adobe Commerce coding standards.<!--MAGECLOUD-2527-->
 
--  ![new icon](../../assets/fix.svg) Fixed a deployment error that occurs when the `.magento.env.yaml` contains `{{ base_url }}` and `{{ unsecure_base_url }}` placeholders for web configurations instead of the default URL configuration for a Adobe Commerce on cloud infrastructure project./<!--MAGECLOUD-2607-->
+-  ![fix icon](../../assets/fix.svg) Fixed a deployment error that occurs when the `.magento.env.yaml` contains `{{ base_url }}` and `{{ unsecure_base_url }}` placeholders for web configurations instead of the default URL configuration for a Adobe Commerce on cloud infrastructure project./<!--MAGECLOUD-2607-->
 
 ## v2002.0.13
 
@@ -341,11 +341,11 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  Secure site access—Added SSL support to access your Adobe Commerce store and Admin panel.<!--MAGECLOUD--2360-->
 
--  ![new icon](../../assets/fix.svg) **Improved Adobe Commerce on cloud infrastructure extension support**—Downgraded the minimum version requirement for the guzzlehttp/guzzle package in the Adobe Commerce on cloud infrastructure [composer.json file](https://devdocs.magento.com/cloud/reference/cloud-composer.html) to version 6.2 so that the `ece-tools` package is compatible with more extensions.<!--MAGECLOUD-2205-->
+-  ![fix icon](../../assets/fix.svg) **Improved Adobe Commerce on cloud infrastructure extension support**—Downgraded the minimum version requirement for the guzzlehttp/guzzle package in the Adobe Commerce on cloud infrastructure [composer.json file](https://devdocs.magento.com/cloud/reference/cloud-composer.html) to version 6.2 so that the `ece-tools` package is compatible with more extensions.<!--MAGECLOUD-2205-->
 
 -  ![new icon](../../assets/new.svg) **Apply custom changes to your Adobe Commerce application during the build phase**—We split the build phase into two separate processes so that you can use hooks to apply custom changes to the generated static content before packaging the application for deployment. The _build:generate_ process generates code, applies patches, and generates static content. The _build:transfer_ process transfers the generated code and static content to the final destination. See [Application hooks](https://devdocs.magento.com/cloud/project/magento-app-properties.html#hooks).<!--MAGECLOUD-2363-->
 
--  ![new icon](../../assets/fix.svg) **Environment configuration checks**—Improved validation of the environment configuration to warn customers about version incompatibilities and configuration errors before building and deploying Adobe Commerce on cloud infrastructure.
+-  ![fix icon](../../assets/fix.svg) **Environment configuration checks**—Improved validation of the environment configuration to warn customers about version incompatibilities and configuration errors before building and deploying Adobe Commerce on cloud infrastructure.
 
    -  Added version-specific validation to identify unsupported or deprecated environment variables and values.<!--MAGECLOUD-2183-->
 
@@ -361,13 +361,13 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  Improved validation of environment variables to identify configuration settings that can cause conflicts during the build, deploy, and post-deploy phases. For example, a warning message displays during the install and upgrade process if the global setting for static content deployment conflicts with settings on the build or deploy phase.<!--MAGECLOUD-2156-->
 
--  ![new icon](../../assets/fix.svg) **Environment variable updates**—Changed the following environment variables:
+-  ![fix icon](../../assets/fix.svg) **Environment variable updates**—Changed the following environment variables:
 
    -  **[SKIP_HTML_MINIFICATION global variable](../environment/variables-global.md#skip_html_minification)**—Changed the default value to `true` to enable on-demand HTML content minification, which minimizes downtime when deploying to Staging and Production environments. This configuration is required for zero-downtime deployments.<!--MAGECLOUD-2435-->
 
    -  **[CLEAN_STATIC_FILES deploy variable](../environment/variables-deploy.md#clean_static_files)**—Added the capability to manage the clean static files processing for static content generated during the build phase based on the CLEAN_STATIC_FILES environment variable setting. Previously, static content files generated during the build phase were always cleaned.<!--MAGECLOUD-1506-->
 
--  ![new icon](../../assets/fix.svg) **Logging**—Made the following changes to improve log messages and reduce log size:
+-  ![fix icon](../../assets/fix.svg) **Logging**—Made the following changes to improve log messages and reduce log size:
 
    -  Deployment failure log entries now include the command output from the operations that cause the failures even if your environment configuration does not specify debug level logging. See [`MIN_LOGGING_LEVEL`](../environment/variables-global.md#min_logging_level).<!--MAGECLOUD-2489-->
 
@@ -377,7 +377,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  Eliminated unnecessary verbosity and updated the priority levels for some log statements.<!--MAGECLOUD-2227-->
 
--  ![new icon](../../assets/fix.svg) **Cron-specific fixes**—
+-  ![fix icon](../../assets/fix.svg) **Cron-specific fixes**—
 
    -  Changed the default cron job configuration settings for history lifetime from 3d (4320 min) to 1h (60 min) to prevent performance issues and deployment failures that can occur when the cron queue fills too quickly.<!--MAGECLOUD-2427-->
 
@@ -385,15 +385,15 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  Fixed an issue with the locking mechanism for scheduling consumers launched by cron jobs in Adobe Commerce versions 2.2.0 and later to prevent cron jobs from launching duplicate consumers.<!--MAGECLOUD-2464-->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue with the [static content compression process](../environment/variables-intro.md) (`gzip`) that caused `not overwritten` and `no such file or directory` errors when referencing the compressed file during the deployment process.<!-- MAGECLOUD-2182-->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue with the [static content compression process](../environment/variables-intro.md) (`gzip`) that caused `not overwritten` and `no such file or directory` errors when referencing the compressed file during the deployment process.<!-- MAGECLOUD-2182-->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that prevented the `php ./vendor/bin/ece-tools config:dump` command from removing redundant sections from the `config.php` file during the dump process if the store locale is not specified. Now you can easily move your configuration files between environments. After you update to `ece-tools` v2002.0.13, regenerate older `config.php` files with the improved `config:dump` command. See [Configuration management for store settings](https://devdocs.magento.com/cloud/live/sens-data-over.html).<!--MAGECLOUD-2444-->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that prevented the `php ./vendor/bin/ece-tools config:dump` command from removing redundant sections from the `config.php` file during the dump process if the store locale is not specified. Now you can easily move your configuration files between environments. After you update to `ece-tools` v2002.0.13, regenerate older `config.php` files with the improved `config:dump` command. See [Configuration management for store settings](https://devdocs.magento.com/cloud/live/sens-data-over.html).<!--MAGECLOUD-2444-->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that caused an error during the deploy phase if the route configuration in the `.magento/routes.yaml` file redirects from an [apex](https://blog.cloudflare.com/zone-apex-naked-domain-root-domain-cname-supp/) domain to a `www` domain.<!--MAGECLOUD-2556-->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that caused an error during the deploy phase if the route configuration in the `.magento/routes.yaml` file redirects from an [apex](https://blog.cloudflare.com/zone-apex-naked-domain-root-domain-cname-supp/) domain to a `www` domain.<!--MAGECLOUD-2556-->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue with the `_merge` option for the [`SEARCH_CONFIGURATION`](../environment/variables-deploy.md#search_configuration) variable that caused incorrect merge results if you do not include the `engine` parameter in the updated `.magento.env.yaml` configuration file. Now, the merge operation correctly overwrites only the values you specify in the updated `.magento.env.yaml` without requiring you to set the `engine` parameter.<!--MAGECLOUD-2520-->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue with the `_merge` option for the [`SEARCH_CONFIGURATION`](../environment/variables-deploy.md#search_configuration) variable that caused incorrect merge results if you do not include the `engine` parameter in the updated `.magento.env.yaml` configuration file. Now, the merge operation correctly overwrites only the values you specify in the updated `.magento.env.yaml` without requiring you to set the `engine` parameter.<!--MAGECLOUD-2520-->
 
--  ![new icon](../../assets/fix.svg) Fixed a Redis configuration issue that incorrectly enabled session locking for Adobe Commerce on cloud infrastructure versions 2.2.1 and later, which can cause slow performance and timeouts. Now, session locking is disabled by default. The issue was caused by a change in the default behavior of the `disable_locking` parameter introduced in v1.3.4 of the Redis session handler package. See [colinmollenhour/php-redis-session-abstract package](https://github.com/colinmollenhour/php-redis-session-abstract).<!-- MAGECLOUD-2515-->
+-  ![fix icon](../../assets/fix.svg) Fixed a Redis configuration issue that incorrectly enabled session locking for Adobe Commerce on cloud infrastructure versions 2.2.1 and later, which can cause slow performance and timeouts. Now, session locking is disabled by default. The issue was caused by a change in the default behavior of the `disable_locking` parameter introduced in v1.3.4 of the Redis session handler package. See [colinmollenhour/php-redis-session-abstract package](https://github.com/colinmollenhour/php-redis-session-abstract).<!-- MAGECLOUD-2515-->
 
 ## v2002.0.12
 
@@ -425,15 +425,15 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  The new [MIN_LOGGING_LEVEL](../environment/variables-global.md#min_logging_level) variable overrides the minimum logging level for all output streams without making changes to the code.<!-- MAGECLOUD-2129 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that caused downtime between the deploy and post-deploy phase. Now, the post-deploy phase begins _immediately_ after the deploy phase ends.
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that caused downtime between the deploy and post-deploy phase. Now, the post-deploy phase begins _immediately_ after the deploy phase ends.
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that did not clean the successful cron jobs, those with `status = success`, from the schedule.<!-- MAGECLOUD-2268 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that did not clean the successful cron jobs, those with `status = success`, from the schedule.<!-- MAGECLOUD-2268 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue with the `post_deploy` hook that cleared the cache in the deploy phase instead of the post-deploy phase of the project.<!-- MAGECLOUD-2113 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue with the `post_deploy` hook that cleared the cache in the deploy phase instead of the post-deploy phase of the project.<!-- MAGECLOUD-2113 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue when using SCD with multiple locales, which generated the same `js-translation.json` file for each locale.<!-- MAGECLOUD-2034 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue when using SCD with multiple locales, which generated the same `js-translation.json` file for each locale.<!-- MAGECLOUD-2034 -->
 
--  ![new icon](../../assets/fix.svg) Optimized the `db:dump` command in the `ece-tools` package to avoid locking tables and increase speed.<!-- MAGECLOUD-2033 -->
+-  ![fix icon](../../assets/fix.svg) Optimized the `db:dump` command in the `ece-tools` package to avoid locking tables and increase speed.<!-- MAGECLOUD-2033 -->
 
 ## v2002.0.11
 
@@ -447,17 +447,17 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/new.svg) **Symfony Console support**—Added support for Symfony Console 4 with Adobe Commerce 2.3.<!-- MAGECLOUD-1966 -->
 
--  ![new icon](../../assets/fix.svg) **Cron scheduling optimizations**—Improved the queue management and enhanced logging to help with debugging cron-related issues.<!-- MAGECLOUD-1607 -->
+-  ![fix icon](../../assets/fix.svg) **Cron scheduling optimizations**—Improved the queue management and enhanced logging to help with debugging cron-related issues.<!-- MAGECLOUD-1607 -->
 
--  ![new icon](../../assets/fix.svg) Deployment validation fails if an `ADMIN_EMAIL` or `ADMIN_USERNAME` value is the same as an existing administrator account.<!-- MAGECLOUD-1221 -->
+-  ![fix icon](../../assets/fix.svg) Deployment validation fails if an `ADMIN_EMAIL` or `ADMIN_USERNAME` value is the same as an existing administrator account.<!-- MAGECLOUD-1221 -->
 
--  ![new icon](../../assets/fix.svg) Removed SOLR support for 2.2.x versions. 2.1.x versions retain the ability to enable SOLR.<!-- MAGECLOUD-1282 -->
+-  ![fix icon](../../assets/fix.svg) Removed SOLR support for 2.2.x versions. 2.1.x versions retain the ability to enable SOLR.<!-- MAGECLOUD-1282 -->
 
--  ![new icon](../../assets/fix.svg) The first installation of the Staging & Production environments of a PRO project now includes different index prefixes for ElasticSearch to prevent possible conflicts while identifying records belonging to each environment.<!-- MAGECLOUD-1489 -->
+-  ![fix icon](../../assets/fix.svg) The first installation of the Staging & Production environments of a PRO project now includes different index prefixes for ElasticSearch to prevent possible conflicts while identifying records belonging to each environment.<!-- MAGECLOUD-1489 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that interrupted the build phase for legacy architecture during static content deployment.<!-- MAGECLOUD-2021 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that interrupted the build phase for legacy architecture during static content deployment.<!-- MAGECLOUD-2021 -->
 
--  ![new icon](../../assets/fix.svg) **Cron-specific Improvements**—Re-worked the cron implementation:<!-- MAGECLOUD-1607 -->
+-  ![fix icon](../../assets/fix.svg) **Cron-specific Improvements**—Re-worked the cron implementation:<!-- MAGECLOUD-1607 -->
 
    -  Fixed an issue that caused the cron queue to fill quickly. Now it clears the outdated cron jobs in a more reliable way.
 
@@ -467,7 +467,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  **NOTE**—This release addresses many cron-related issues. If you currently use some cron-related patches in _m2-hotfixes_, remove them.
 
--  ![new icon](../../assets/fix.svg) **SCD-specific improvements**—
+-  ![fix icon](../../assets/fix.svg) **SCD-specific improvements**—
 
    -  You can use the `VERBOSE_COMMANDS` and the `SCD_COMPRESSION_LEVEL` environment variables during both *build* and *deploy* phases.<!-- MAGECLOUD-1819 -->
 
@@ -499,15 +499,15 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  `WARM_UP_PAGES`—You can list the pages to use to pre-load the cache. Available in the new [Post-deploy variables](../environment/variables-post-deploy.md).
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that involved a locally applied patch breaking the deployment on an instance. Now, ece-tools can detect that a patch has been applied.<!-- MAGECLOUD-982 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that involved a locally applied patch breaking the deployment on an instance. Now, ece-tools can detect that a patch has been applied.<!-- MAGECLOUD-982 -->
 
--  ![new icon](../../assets/fix.svg) Fixed a conflict between JavaScript bundling and GZIP functionality. Now these features work correctly together.<!-- MAGECLOUD-1735 -->
+-  ![fix icon](../../assets/fix.svg) Fixed a conflict between JavaScript bundling and GZIP functionality. Now these features work correctly together.<!-- MAGECLOUD-1735 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that caused ece-tools CLI commands to fail when using earlier PHP 7.0.x versions.<!-- MAGECLOUD-1744 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that caused ece-tools CLI commands to fail when using earlier PHP 7.0.x versions.<!-- MAGECLOUD-1744 -->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue that prevented static content deployment with the compact strategy in multiple threads.<!-- MAGECLOUD-1822 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that prevented static content deployment with the compact strategy in multiple threads.<!-- MAGECLOUD-1822 -->
 
--  ![new icon](../../assets/fix.svg) Fixed a Redis session locking issue that caused an Admin login delay. Also, the fix is available for 2.1.x.<!-- MAGECLOUD-1853 -->
+-  ![fix icon](../../assets/fix.svg) Fixed a Redis session locking issue that caused an Admin login delay. Also, the fix is available for 2.1.x.<!-- MAGECLOUD-1853 -->
 
 ## v2002.0.9
 
@@ -521,21 +521,21 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/new.svg) **Search, AMQP, and Redis service improvements**—We unified the service configuration flow so that it now behaves the same way for all services. Manually editing the `env.php` file to configure services is no longer supported. You must use environment variables or the `.magento.env.yaml` file instead.<!-- MAGECLOUD-1437 -->
 
--  ![new icon](../../assets/fix.svg) **Environment variables**—
+-  ![fix icon](../../assets/fix.svg) **Environment variables**—
 
    -  The use of `env:STATIC_CONTENT_THREADS` was deprecated and will be removed in a future release. Use the [SCD_THREADS](../environment/variables-deploy.md#scd_threads) instead.<!-- MAGECLOUD-1507 -->
 
    -  The `STATIC_CONTENT_EXCLUDE_THEMES` environment variable was deprecated. You must use the `SCD_EXCLUDE_THEMES` environment variable instead.<!-- MAGECLOUD-1640 -->
 
--  ![new icon](../../assets/fix.svg) **Logging**—We simplified logging around built-in patching operations.<!-- MAGECLOUD-1674 -->
+-  ![fix icon](../../assets/fix.svg) **Logging**—We simplified logging around built-in patching operations.<!-- MAGECLOUD-1674 -->
 
--  ![new icon](../../assets/fix.svg) We removed `developer` mode support and the `APPLICATION_MODE` environment variable because they were causing unexpected behavior.<!-- MAGECLOUD-1615 -->
+-  ![fix icon](../../assets/fix.svg) We removed `developer` mode support and the `APPLICATION_MODE` environment variable because they were causing unexpected behavior.<!-- MAGECLOUD-1615 -->
 
--  ![new icon](../../assets/fix.svg) We fixed an issue that was causing static content deployment failures related to Redis. Now, multi-threaded static content deployment runs as designed.<!-- MAGECLOUD-1630 -->
+-  ![fix icon](../../assets/fix.svg) We fixed an issue that was causing static content deployment failures related to Redis. Now, multi-threaded static content deployment runs as designed.<!-- MAGECLOUD-1630 -->
 
--  ![new icon](../../assets/fix.svg) We fixed an issue that was preventing users from saving modifications to configuration fields in the Admin, which are marked as sensitive after running the `app:config:dump` command.<!-- MAGECLOUD-1175 -->
+-  ![fix icon](../../assets/fix.svg) We fixed an issue that was preventing users from saving modifications to configuration fields in the Admin, which are marked as sensitive after running the `app:config:dump` command.<!-- MAGECLOUD-1175 -->
 
--  ![new icon](../../assets/fix.svg) We added support for an earlier version of `symfony/yaml` to fix conflicts with some packages, which are not yet compatible with the latest version.<!-- MAGECLOUD-1674 -->
+-  ![fix icon](../../assets/fix.svg) We added support for an earlier version of `symfony/yaml` to fix conflicts with some packages, which are not yet compatible with the latest version.<!-- MAGECLOUD-1674 -->
 
 ## v2002.0.8
 

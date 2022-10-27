@@ -12,7 +12,7 @@ The `magento/magento-cloud-components` package uses the following version sequen
 The release notes include:
 
 -  ![new icon](../../assets/new.svg) New features
--  ![new icon](../../assets/fix.svg) Fixes and improvements
+-  ![fix icon](../../assets/fix.svg) Fixes and improvements
 
 <!--Add release notes below-->
 
@@ -20,13 +20,13 @@ The release notes include:
 
 Release date: September 13, 2022
 
--  ![new icon](../../assets/fix.svg) **Errors on warmup**—Fixed an issue that attempted to [warmup](../environment/variables-post-deploy.md#warm_up_pages) when the page visibility is set to [**Not Visible Individually**](https://docs.magento.com/user-guide/system/data-attributes-product.html#simple-product-csv-file-structure) in the Admin, resulting in `ERROR: Warming up failed: <link to page>` errors in the deployment log.<!-- MCLOUD-9134 -->
+-  ![fix icon](../../assets/fix.svg) **Errors on warmup**—Fixed an issue that attempted to [warmup](../environment/variables-post-deploy.md#warm_up_pages) when the page visibility is set to [**Not Visible Individually**](https://docs.magento.com/user-guide/system/data-attributes-product.html#simple-product-csv-file-structure) in the Admin, resulting in `ERROR: Warming up failed: <link to page>` errors in the deployment log.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 
 Release date: August 4, 2022
 
--  ![new icon](../../assets/fix.svg) **Added Support for Symfony 5.4 compatibility**—Fixes for compatibility with Symfony 5.4.<!-- AC-3550 -->
+-  ![fix icon](../../assets/fix.svg) **Added Support for Symfony 5.4 compatibility**—Fixes for compatibility with Symfony 5.4.<!-- AC-3550 -->
 
 ## v1.0.10
 
@@ -38,13 +38,13 @@ Release date: March 10, 2022
 
 Release date: October 25, 2021
 
--  ![new icon](../../assets/fix.svg) **Update Monolog**—Updated the minimum version required for the `monolog` package to `^2.3`.<!-- ACMP-1263 -->
+-  ![fix icon](../../assets/fix.svg) **Update Monolog**—Updated the minimum version required for the `monolog` package to `^2.3`.<!-- ACMP-1263 -->
 
 ## v1.0.8
 
 Release date: July 29, 2021
 
--  ![new icon](../../assets/fix.svg) **Removed trailing slashes from auto-generated URLs**—Removed the trailing slashes from Category Page URLs generated during cache warm up.<!--MCLOUD-7192-->
+-  ![fix icon](../../assets/fix.svg) **Removed trailing slashes from auto-generated URLs**—Removed the trailing slashes from Category Page URLs generated during cache warm up.<!--MCLOUD-7192-->
 
 ## v1.0.7
 
@@ -52,7 +52,7 @@ Release date: September 9, 2020
 
 -  ![new icon](../../assets/new.svg) **Logging improvements**—Reduce the size of the `cache.log` file to improve performance.<!--MCLOUD-6859-->
 
--  ![new icon](../../assets/fix.svg) Fixed a type error in the cache configuration values that caused the `php bin/magento cache:evict` CLI command to fail.
+-  ![fix icon](../../assets/fix.svg) Fixed a type error in the cache configuration values that caused the `php bin/magento cache:evict` CLI command to fail.
 
 ## v1.0.6
 
@@ -60,13 +60,13 @@ Release date: August 5, 2020
 
 -  ![new icon](../../assets/new.svg) **Improve Redis performance**—Added the `./bin/magento cache:evict` command to remove expired Redis keys, which reduces Redis memory usage to improve performance.<!--MCLOUD-6023-->
 
--  ![new icon](../../assets/fix.svg) Removed support for *New Relic Logs in Context* to fix a performance issue.<!--MCLOUD-6422-->
+-  ![fix icon](../../assets/fix.svg) Removed support for *New Relic Logs in Context* to fix a performance issue.<!--MCLOUD-6422-->
 
 ## v1.0.5
 
 Release date: June 25, 2020
 
--  ![new icon](../../assets/fix.svg) Fixed an issue introduced in magento/magento-cloud-components version 1.0.4 that caused the flush cache operation to fail during the deploy phase, interrupting the deployment process.
+-  ![fix icon](../../assets/fix.svg) Fixed an issue introduced in magento/magento-cloud-components version 1.0.4 that caused the flush cache operation to fail during the deploy phase, interrupting the deployment process.
 
 ## v1.0.4
 
@@ -80,7 +80,7 @@ Release date: June 25, 2020
 
 Release date: February 27, 2020
 
--  ![new icon](../../assets/fix.svg) Fixed a compatibility issue to support `ece-tools` 2002.0.x releases that use older PHP versions.
+-  ![fix icon](../../assets/fix.svg) Fixed a compatibility issue to support `ece-tools` 2002.0.x releases that use older PHP versions.
 
 ## v1.0.2
 
@@ -88,13 +88,13 @@ Release date: February 6, 2020
 
 -  ![new icon](../../assets/new.svg) Extended the functionality of the `WARM_UP_PAGES` environment variable to support cache preloading for specific product pages. See the [post-deploy variables](../environment/variables-post-deploy.md#warm_up_pages) topic for a detailed feature description.<!--MAGECLOUD-4444-->
 
--  ![new icon](../../assets/fix.svg) Fixed an issue where an invalid store URL causes the post-deploy hook to fail when using the `WARM_UP_PAGES` functionality to populate the cache. This issue occurred only when URL rewrites were disabled.<!-- MAGECLOUD-4094 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue where an invalid store URL causes the post-deploy hook to fail when using the `WARM_UP_PAGES` functionality to populate the cache. This issue occurred only when URL rewrites were disabled.<!-- MAGECLOUD-4094 -->
 
 ## v1.0.1
 
 Release date: July 23, 2019
 
--  ![new icon](../../assets/fix.svg) Fixed an issue affecting [**WARM_UP_PAGES**](../environment/variables-post-deploy.md#warm_up_pages) functionality that uses a default store URL. Now, if the `config:show:default-url` command cannot fetch a base URL, then the URL from the MAGENTO_CLOUD_ROUTES variable is used.<!-- MAGECLOUD-3866 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue affecting [**WARM_UP_PAGES**](../environment/variables-post-deploy.md#warm_up_pages) functionality that uses a default store URL. Now, if the `config:show:default-url` command cannot fetch a base URL, then the URL from the MAGENTO_CLOUD_ROUTES variable is used.<!-- MAGECLOUD-3866 -->
 
 ## v1.0.0
 
