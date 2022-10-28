@@ -76,7 +76,7 @@ Use the following instructions for service setup on Pro Integration environments
 
 >[!NOTE]
 >
->If you use a version of Adobe Commerce on cloud infrastructure that does not contain the `ece-tools` package, then you must perform a one-time [upgrade](/help/cloud-guide/dev-tools/install-package.md) to your cloud project to remove deprecated packages. If you currently use the `ece-tools` package and you need to update it, see [Update ECE-Tools version](/help/cloud-guide/dev-tools/update-package.md).
+>If you use a version of Adobe Commerce on cloud infrastructure that does not contain the `ece-tools` package, then you must perform a [one-time upgrade](/help/cloud-guide/dev-tools/install-package.md) to your cloud project to remove deprecated packages. If you currently use the `ece-tools` package and you need to update it, see [Update the ECE-Tools package](/help/cloud-guide/dev-tools/update-package.md).
 
 ## Upgrade tip {#upgrade-tip}
 

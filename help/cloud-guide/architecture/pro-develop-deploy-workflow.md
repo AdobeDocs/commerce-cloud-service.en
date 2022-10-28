@@ -39,7 +39,7 @@ With a developed code branch and the corresponding configuration files, your cod
 
 ## Deployment workflow
 
-Every time you push code from your local workstation to the remote environment or merge code to a base environment branch, the build and deploy scripts generate new code and provision configured services to the remote environment.
+Every time you push code from your local workstation to the remote environment or merge code to an environment branch, the build and deploy scripts generate new code and provision the configured services to the remote environment.
 
 Build script actions:
 

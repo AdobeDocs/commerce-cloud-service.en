@@ -25,13 +25,13 @@ Once you add, commit, and push the updated code, the deployment process automati
 
 ### Cloud metapackage
 
-Adobe Commerce on cloud infrastructure uses a metapackage to specify version constraints for required packages using the following constraint syntax:
+Adobe Commerce on cloud infrastructure uses a metapackage that requires `magento/product-enterprise-edition`. To get the latest updates for a specific version of Commerce, use the following constraint syntax:
 
 ```text
 >=current_version <next_version
 ```
 
-At any given version, this package requires the same version of `magento/product-enterprise-edition`. For example, to use Adobe Commerce version 2.4.5, the `composer.json` must specify a requirement for the following:
+For example, to use the latest Adobe Commerce version 2.4.5, set `2.4.5` as the "current" version and `2.4.6` as the "next" version in the `composer.json` file:
 
 ```text
 "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6"

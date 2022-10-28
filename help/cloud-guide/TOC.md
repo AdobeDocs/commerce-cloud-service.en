@@ -42,13 +42,11 @@ product: magento
     + [Authentication keys](development/authentication-keys.md)
     + [Clone and branch management](development/cli-branches.md)
     + [Secure connections](development/secure-connections.md)
-    + Import code {#import}
-        + [Existing code overview]
-        + Create a project
-        + Add existing code
-        + Migrate database and files
     + [PrivateLink service](development/privatelink-service.md)
     + [Restore environment](development/restore-environment.md)
+    + Upgrades and patches {#upgrade}
+        + [Upgrade Commerce](development/commerce-version.md)
+        + [Apply patches](development/apply-patches.md)
 + Integrations {#integrations}
     + [Overview](integrations/overview.md)
     + [Bitbucket](integrations/bitbucket.md)

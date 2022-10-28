@@ -469,13 +469,13 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![fix icon](../../assets/fix.svg) **SCD-specific improvements**—
 
-   -  You can use the `VERBOSE_COMMANDS` and the `SCD_COMPRESSION_LEVEL` environment variables during both *build* and *deploy* phases.<!-- MAGECLOUD-1819 -->
+   -  You can use the `VERBOSE_COMMANDS` and the `SCD_COMPRESSION_LEVEL` environment variables during both _build_ and de_ploy phases.<!-- MAGECLOUD-1819 -->
 
    -  Fixed an issue that caused deployment to fail with a random error when encountering an unexpected value for the `SCD_COMPRESSION_LEVEL` environment variable. Improved the configuration validation to provide meaningful notifications. See [`SCD_COMPRESSION_LEVEL`](../environment/variables-build.md#scd_compression_level) for acceptable values.<!-- MAGECLOUD-2043 -->
 
    -  Fixed the behavior of the `SCD_COMPRESSION_LEVEL` environment variable configuration flow so the overrides work as expected.<!-- MAGECLOUD-2044 -->
 
-   -  Fixed an issue that prevented the configuration of the `SCD_THREADS` environment variable in the `.magento.env.yaml` file *deploy* stage.<!-- MAGECLOUD-2046 -->
+   -  Fixed an issue that prevented the configuration of the `SCD_THREADS` environment variable in the `.magento.env.yaml` file _deploy_ stage.<!-- MAGECLOUD-2046 -->
 
 ## v2002.0.10
 
@@ -483,7 +483,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  **New environment variable**—Added the `SCD_ON_DEMAND` global environment variable to generate static content when requested.<!-- MAGECLOUD-1738 -->
 
-   -  **Post-deploy hook**—Added a `post_deploy` hook for the `.magento.app.yaml` file that clears the cache and pre-loads (warms) the cache *after* the container begins accepting connections. It is available only for Pro projects that contain Staging and Production environments in the Project Web Interface and for Starter projects. Although not required, this works in tandem with the `SCD_ON_DEMAND` environment variable.<!-- MAGECLOUD-1788 -->
+   -  **Post-deploy hook**—Added a `post_deploy` hook for the `.magento.app.yaml` file that clears the cache and pre-loads (warms) the cache _after_ the container begins accepting connections. It is available only for Pro projects that contain Staging and Production environments in the Project Web Interface and for Starter projects. Although not required, this works in tandem with the `SCD_ON_DEMAND` environment variable.<!-- MAGECLOUD-1788 -->
 
 -  ![new icon](../../assets/new.svg) **Optimization**—Optimized moving or copying files during deployment to improve deployment speed and decrease loads on the file system.<!-- MAGECLOUD-1842 -->
 
@@ -545,7 +545,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 **New features:**
 
--  >**Improved logging**<!-- MAGECLOUD-1253 -MAGECLOUD-1495--
+-  **Improved logging**<!-- MAGECLOUD-1253 -MAGECLOUD-1495 -->
    -  We improved log messaging to provide better explanations when the build or deploy process overrides an environment variable.
    -  You can now view installation and upgrade progress in real time. Tail the `install_update.log` file to view progress. For example,
 
@@ -581,17 +581,17 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  We fixed a Redis session _locking_ issue that caused an _Admin_ login delay. Not available in 2.1.<!--  MAGECLOUD-1582  -->
 
--  We fixed an implementation issue related to versioning that was causing a conflict with other Composer-based patching modules.<!--MAGECLOUD-1450-->
+-  We fixed an implementation issue related to versioning that was causing a conflict with other Composer-based patching modules.<!-- MAGECLOUD-1450 -->
 
--  We fixed an issue that was causing PHP memory issues during import.<!--MAGECLOUD-1310-->
+-  We fixed an issue that was causing PHP memory issues during import.<!-- MAGECLOUD-1310 -->
 
--  Removed patch; fixing bug in `colinmollenhour/credis` v1.6 to enable support for Adobe Commerce on cloud infrastructure 2.2.1. Not available in 2.1.<!--MAGECLOUD-1033-->
+-  Removed patch; fixing bug in `colinmollenhour/credis` v1.6 to enable support for Adobe Commerce on cloud infrastructure 2.2.1. Not available in 2.1.<!-- MAGECLOUD-1033 -->
 
 ## v2002.0.7
 
 **Resolved issues:**
 
--  We removed `var/view_preprocessed` symlinking to fix an issue that was causing JavaScript minification conflicts.<!-- MAGECLOUD-1454-->
+-  We removed `var/view_preprocessed` symlinking to fix an issue that was causing JavaScript minification conflicts.<!-- MAGECLOUD-1454 -->
 
 ## v2002.0.6
 
@@ -653,13 +653,13 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 **Resolved issues:**
 
--  We fixed an issue that was causing pages to time out because Redis was taking too long to read/write. You can now use the `disable_locking` parameter in Redis configurations to prevent this issue.<!--MAGECLOUD-1311-->
+-  We fixed an issue that was causing pages to time out because Redis was taking too long to read/write. You can now use the `disable_locking` parameter in Redis configurations to prevent this issue.<!-- MAGECLOUD-1311 -->
 
 ## v2002.0.2
 
 **Resolved issues:**
 
--  The RabbitMQ configuration process now obtains all required parameters automatically.<!--MAGECLOUD-1246-->
+-  The RabbitMQ configuration process now obtains all required parameters automatically.<!-- MAGECLOUD-1246 -->
 
 ## v2002.0.1
 
@@ -671,15 +671,15 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 **Resolved issues:**
 
--  Refactored the `ece-tools` package to make it compatible with Adobe Commerce on cloud infrastructure 2.2.0 and higher.<!-- MAGECLOUD-919 & MAGECLOUD-1030-->
+-  Refactored the `ece-tools` package to make it compatible with Adobe Commerce on cloud infrastructure 2.2.0 and higher.<!-- MAGECLOUD-919 & MAGECLOUD-1030 -->
 
--  We fixed an issue that was preventing `ece-tools` from halting execution and throwing an exception if no patches can be applied.<!-- MAGECLOUD-1186-->
+-  We fixed an issue that was preventing `ece-tools` from halting execution and throwing an exception if no patches can be applied.<!-- MAGECLOUD-1186 -->
 
--  We fixed an issue that was causing exceptions to be thrown when  dependency injection (di) compilation is skipped during builds.<!-- MAGECLOUD-1047 & MAGECLOUD-1049-->
+-  We fixed an issue that was causing exceptions to be thrown when  dependency injection (di) compilation is skipped during builds.<!-- MAGECLOUD-1047 & MAGECLOUD-1049 -->
 
--  We fixed an issue that was causing the deploy process to overwrite custom Redis configurations in the `env.php` file.<!-- MAGECLOUD-1019-->
+-  We fixed an issue that was causing the deploy process to overwrite custom Redis configurations in the `env.php` file.<!-- MAGECLOUD-1019 -->
 
--  We fixed an issue that was causing redirect loops due to disabled by default secure admin.<!--MAGECLOUD-1020-->
+-  We fixed an issue that was causing redirect loops due to disabled by default secure admin.<!-- MAGECLOUD-1020 -->
 
 ## v2002.0.0
 
