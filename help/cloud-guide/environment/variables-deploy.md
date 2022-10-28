@@ -83,13 +83,13 @@ Use this environment variable to confirm message queues are running after a depl
 
 -  `cron_run`—A boolean value that enables or disables the `consumers_runner` cron job (default = `false`).
 -  `max_messages`—A number specifying the maximum number of messages each consumer must process before terminating (default = `1000`). Although we do not recommend it, you can use `0` to prevent the consumer from terminating.
--  `consumers`—An array of strings specifying which consumer(s) to run. An empty array runs _all_ consumers.
+-  `consumers`—An array of strings specifying which consumers to run. An empty array runs _all_ consumers.
 
--  `multiple_processes`-A number specifying the number of processes to spawn for each consumer. Supported in Magento **2.4.4** or greater.
+-  `multiple_processes`-A number specifying the number of processes to spawn for each consumer. Supported in Commerce **2.4.4** or greater.
 
 >[!NOTE]
 >
->To return a list of message queue `consumers`, run the `./bin/magento queue:consumers:list` command.
+>To return a list of message queue `consumers`, run the `./bin/magento queue:consumers:list` command in the remote environment.
 
 Example array that runs specific `consumers` and the `multiple_processes` to spawn for each consumer:
 
@@ -100,11 +100,11 @@ stage:
       cron_run: true
       max_messages: 1000
       consumers:
-        - consumer1
-        - consumer2
+        - example_consumer_1
+        - example_consumer_2
 -     multiple_processes:
-        consumer1: 4
-        consumer2: 3
+        example_consumer_1: 4
+        example_consumer_2: 3
 ```
 
 Example of an empty array that runs all `consumers`:
