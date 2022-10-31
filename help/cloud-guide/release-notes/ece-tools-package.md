@@ -145,13 +145,13 @@ Release date: November 9, 2020
 
 **Validation and log improvements**—
 
--  ![new icon](../../assets/new.svg) Added search-engine validation to ensure that `elasticsearch` is set for Adobe Commerce on cloud infrastructure 2.4 and later. If the validation fails, the deployment is stopped with a critical error message suggesting fixes for the issue. See [Critical Errors, Deploy stage](https://devdocs.magento.com/cloud/reference/ece-tools-error-reference.html#deploy-stage).<!--MCLOUD-6937-->
+-  ![new icon](../../assets/new.svg) Added search-engine validation to ensure that `elasticsearch` is set for Adobe Commerce on cloud infrastructure 2.4 and later. If the validation fails, the deployment is stopped with a critical error message suggesting fixes for the issue. See [Critical Errors, Deploy stage](../dev-tools/error-reference.md#deploy-stage).<!--MCLOUD-6937-->
 
 -  ![new icon](../../assets/new.svg) Added Elasticsearch validation to check the compatibility between the Elasticsearch service version and the Adobe Commerce version.<!--MCLOUD-7193-->
 
--  ![new icon](../../assets/new.svg) Updated the Elasticsearch compatibility error message to show the versions of Elasticsearch that are compatible with the Adobe Commerce Elasticsearch module. The error message now provides the specific Elasticsearch versions to install in your Cloud infrastructure so that it is compatible with the Elasticsearch module used by your version of Adobe Commerce. See [Warning Errors, Deploy stage](https://devdocs.magento.com/cloud/reference/ece-tools-error-reference.html#deploy-stage-1).<!--MCLOUD-6698-->
+-  ![new icon](../../assets/new.svg) Updated the Elasticsearch compatibility error message to show the versions of Elasticsearch that are compatible with the Adobe Commerce Elasticsearch module. The error message now provides the specific Elasticsearch versions to install in your Cloud infrastructure so that it is compatible with the Elasticsearch module used by your version of Adobe Commerce. See [Warning Errors, Deploy stage](../dev-tools/error-reference.md#deploy-stage-1).<!--MCLOUD-6698-->
 
--  ![new icon](../../assets/new.svg) Added warning errors `2026` and `2027` for invalid `MAGE_MODE` environment variable setting. The only valid value is `production`. Before this fix, `MAGE_MODE` could be set to `developer` without deployment errors, only to cause errors later when trying to write to read-only files. See [Warning Errors](https://devdocs.magento.com/cloud/reference/ece-tools-error-reference.html#warning-errors).<!--MCLOUD-6708-->
+-  ![new icon](../../assets/new.svg) Added warning errors `2026` and `2027` for invalid `MAGE_MODE` environment variable setting. The only valid value is `production`. Before this fix, `MAGE_MODE` could be set to `developer` without deployment errors, only to cause errors later when trying to write to read-only files. See [Warning Errors](../dev-tools/error-reference.md#warning-errors).<!--MCLOUD-6708-->
 
 -  ![fix icon](../../assets/fix.svg) Fixed validation for Redis, RabbitMQ and MySQL services to ensure these versions are compatible with the Adobe Commerce version. Valid versions of these services are now written to the `cloud.log`.<!--MCLOUD-7098-->
 
@@ -171,7 +171,7 @@ Release date: August 5, 2020
 
 **Validation and log improvements**—
 
--  ![new icon](../../assets/new.svg) Added the `schema.error.yaml` file that includes all error and warning notifications that can occur during the build, deploy, and post-deploy process along with suggestions for resolving the errors. The information in this file is also available in the _Cloud Guide for Commerce_. See [Error message reference for ece-tools](https://devdocs.magento.com/cloud/reference/ece-tools-error-reference.html).<!--MCLOUD-5878-->
+-  ![new icon](../../assets/new.svg) Added the `schema.error.yaml` file that includes all error and warning notifications that can occur during the build, deploy, and post-deploy process along with suggestions for resolving the errors. The information in this file is also available in the _Cloud Guide for Commerce_. See [Error message reference for ece-tools](../dev-tools/error-reference.md).<!--MCLOUD-5878-->
 
 -  ![new icon](../../assets/new.svg) Changed the Cloud error log (`/var/log/cloud.error.log`) entries to JSON format to make the log easier to parse programmatically.<!--MCLOUD-5879-->
 
@@ -191,7 +191,7 @@ Release date: June 25, 2020
 
 -  ![new icon](../../assets/new.svg) **Infrastructure updates**—
 
-   -  ![new icon](../../assets/new.svg) **Logging improvements**—Improved log tracking capability by assigning exit codes to critical deploy errors and exposing the exit codes in error message notifications and log events. See [Error message reference for ece-tools](https://devdocs.magento.com/cloud/reference/ece-tools-error-reference.html).<!-- MCLOUD-5637, 5531-->
+   -  ![new icon](../../assets/new.svg) **Logging improvements**—Improved log tracking capability by assigning exit codes to critical deploy errors and exposing the exit codes in error message notifications and log events. See [Error message reference for ece-tools](../dev-tools/error-reference.md).<!-- MCLOUD-5637, 5531-->
 
    -  ![new icon](../../assets/new.svg) Improved the process for database dumps (`vendor/bin/ece-tools db-dump`) and updated log messages to clarify that the database dump operation switches the application to maintenance mode, stops consumer queue processes, and disables cron jobs before the dump begins.<!--MCLOUD-5324, MCLOUD-2062-->
 

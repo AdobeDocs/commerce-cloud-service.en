@@ -80,7 +80,7 @@ Re-deploying environment project-integration-ID
 
 ### Error logs
 
-Error and warning messages generated during the deployment process are written to both the `var/log/cloud.log` and the `var/log/cloud.error.log` files. The Cloud error log file contains only errors and warnings from the latest deployment. An empty file indicates a successful deployment with no errors. See [Error message reference for ece-tools][Error reference].
+Error and warning messages generated during the deployment process are written to both the `var/log/cloud.log` and the `var/log/cloud.error.log` files. The Cloud error log file contains only errors and warnings from the latest deployment. An empty file indicates a successful deployment with no errors. See [Error message reference for ece-tools](../dev-tools/error-reference.md).
 
 The following logs have a common location for all Cloud projects:
 
@@ -182,6 +182,5 @@ Service logs are archived and saved for different periods of time, depending on 
 
 <!--Link definitions-->
 
-[Error reference]: https://devdocs.magento.com/cloud/reference/ece-tools-error-reference.html
 [database issues]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html
 [deployment troubleshooter]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html

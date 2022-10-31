@@ -36,6 +36,7 @@ product: magento
         + [Package overview](dev-tools/package-overview.md)
         + [One-time upgrade to use ECE-Tools](dev-tools/install-package.md)
         + [Update ECE-Tools package](dev-tools/update-package.md)
+        + [Error reference](dev-tools/error-reference.md)
     + [Regional IP addresses](dev-tools/regional-ip-addresses.md)
 + Local development {#develop}
     + [Overview](development/overview.md)
@@ -117,7 +118,6 @@ product: magento
     + [Launch steps](launch/steps.md)
 + Monitor {#monitor}
     + [Logs](monitor/log-locations.md)
-    + [Error messages](monitor/error-messages.md)
     + [Performance](monitor/performance.md)
     + [New Relic service](monitor/new-relic.md)
 + Storage {#storage}
