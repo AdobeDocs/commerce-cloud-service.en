@@ -13,7 +13,7 @@ product: magento
     + [Starter workflow](architecture/starter-develop-deploy-workflow.md)
     + [Pro architecture](architecture/pro-architecture.md)
     + [Pro workflow](architecture/pro-develop-deploy-workflow.md)
-    + [Split-tier architecture](architecture/split-tier-architecture.md)
+    + [Scaled architecture](architecture/scaled-architecture.md)
 + Release notes {#release-notes}
     + [Cloud tools suite](release-notes/cloud-tools.md)
     + [ECE-Tools package](release-notes/ece-tools-package.md)
@@ -32,16 +32,21 @@ product: magento
     + [Branch management](project/console-branches.md)
 + Developer tools {#dev-tools}
     + [Cloud CLI](dev-tools/cloud-cli.md)
-    + ECE-Tools {#ECE-Tools}
+    + ECE-Tools {#ece-tools}
         + [Package overview](dev-tools/package-overview.md)
         + [One-time upgrade to use ECE-Tools](dev-tools/install-package.md)
         + [Update ECE-Tools package](dev-tools/update-package.md)
         + [Error reference](dev-tools/error-reference.md)
     + [Regional IP addresses](dev-tools/regional-ip-addresses.md)
-+ Local development {#develop}
++ Development {#develop}
     + [Overview](development/overview.md)
     + [Authentication keys](development/authentication-keys.md)
     + [Clone and branch management](development/cli-branches.md)
+    + Import code {#import}
+        + [Existing code]
+        + Create a project
+        + Add existing code
+        + Migrate database and files
     + [Secure connections](development/secure-connections.md)
     + [PrivateLink service](development/privatelink-service.md)
     + [Protective block](development/protective-block.md)
@@ -114,6 +119,7 @@ product: magento
     + [Zero downtime deployment](deploy/reduce-downtime.md)
     + [Static content deployment](deploy/static-content.md)
     + [Smart wizards](deploy/smart-wizards.md)
+    + [Deploy to Staging and Production](deploy/staging-production.md)
 + Test {#test}
     + [Testing guidance](test/guidance.md)
     + [Sample data](test/sample-data.md)
