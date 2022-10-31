@@ -23,4 +23,6 @@ Consider the following testing types as a best practice to perform before site l
 
 -  **Stress test**—Challenge the upper limits of capacity within the system to determine if the system performs sufficiently when the current load goes well above the expected maximum.
 
+-  **Security Scan**—Adobe provides a free [Security Scan Tool](../launch/overview.md#set-up-the-security-scan-tool) for your sites.
+
 -  **Penetration test**—Is an authorized simulated cyber attack on a computer system designed to evaluate the security of the system. The penetration test helps to identify weaknesses or vulnerabilities, including the potential for unauthorized parties to gain access to system features and data. [Submit a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) before testing.

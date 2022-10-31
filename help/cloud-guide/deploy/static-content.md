@@ -25,7 +25,7 @@ You can save **more** deployment time and disk space by reducing the number of u
 
 Deployment strategies differ based on whether you choose to generate static content during the _build_ phase, the _deploy_ phase, or _on-demand_. As seen in the following chart, generating static content during the deploy phase is the least optimal choice. Even with minified HTML, each content file must be copied to the mounted `~/pub/static` directory, which can take a long time. Generating static content on demand seems like the optimal choice. However, if the content file does not exist in the cache it generates at the moment it is requested, which adds load time to the user experience. Therefore, generating static content during the build phase is the most optimal.
 
-![SCD Load Comparison]
+![SCD Load Comparison](../../assets/scd-load-times.png)
 
 ### Setting the SCD on build
 
@@ -35,7 +35,14 @@ Generating static content requires access to themes and locales. Adobe Commerce 
 
 **To configure your project to generate SCD on build**:
 
-1. Log in to your Cloud environment using SSH and move locales to the file system, then update the [`config.php` file](https://devdocs.magento.com/cloud/project/project-upgrade.html).
+1. On your local workstation, change to your project directory.
+1. Use SSH to log in to the remote environment.
+
+   ```bash
+   magento-cloud ssh
+   ```
+
+1. Move locales to the file system, then update the [`config.php` file](../development/commerce-version.md#create-a-configphp-file).
 
 1. The `.magento.env.yaml` configuration file should contain the following values:
 
@@ -43,7 +50,7 @@ Generating static content requires access to themes and locales. Adobe Commerce 
    -  [SKIP_SCD](../environment/variables-build.md#skip_scd) on build stage is `false`
    -  [SCD_STRATEGY](../environment/variables-build.md#scd_strategy) is `compact`
 
-1. Verify configuration of the [Post-deploy hook](https://devdocs.magento.com/cloud/project/magento-app-properties.html#hooks) in the `.magento.app.yaml` file.
+1. Verify configuration of the [Post-deploy hook](../application/hooks-property.md) in the `.magento.app.yaml` file.
 
 1. Verify your settings by running the [Smart wizard for the ideal state](smart-wizards.md).
 
@@ -64,5 +71,3 @@ When using the SCD on-demand strategy, it helps to preload the cache with pages 
 ### Skipping SCD
 
 Sometimes you can choose to skip generating static content completely. You can set the [SKIP_SCD](../environment/variables-build.md#skipscd) environment variable in the global stage to ignore other configurations related to SCD. This does not affect existing content in the `~/pub/static` directory.
-
-[SCD Load Comparison]: ../../assets/scd-load-times.png

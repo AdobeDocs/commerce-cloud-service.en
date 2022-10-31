@@ -7,6 +7,8 @@ description: Customize your Adobe Commerce store on cloud infrastructure.
 
 There are many ways to customize your store, such as adding a custom theme, installing an extension, or enforcing a specific configuration across cloud infrastructure environments. You can configure settings for specific services directly in Staging and Production environments. You can set up multiple websites and stores. The Store configuration section helps you to configure these options in your local workstation and deploying specific settings across environments.
 
+To access your storefront, use the `magento-cloud url` command and answer the prompts. Or you can find the url in the Project web interface under **Access site**.
+
 ## Configure store options
 
 Store options include the following:
@@ -28,4 +30,4 @@ There are specific configuration files that manage certain deployment behaviors 
 
 ## Configuration management
 
-After configuring the store options, services, and integrations, use configuration management to deploy these configurations across all environments consistently and with minimal downtime. See Configuration Management.
+After configuring the store options, services, and integrations, use configuration management to deploy these configurations across all environments consistently and with minimal downtime. See [Configuration Management](store-settings.md).

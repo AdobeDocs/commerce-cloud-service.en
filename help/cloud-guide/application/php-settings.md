@@ -5,7 +5,7 @@ description: Learn about the optimal PHP settings for Commerce application confi
 
 # PHP settings
 
-You can choose which [version of PHP](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) to run in your `.magento.app.yaml` file:
+You can choose which [version of PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) to run in your `.magento.app.yaml` file:
 
 ```yaml
 name: mymagento
@@ -52,7 +52,7 @@ These settings allow PHP processes to cache paths to files instead of looking th
 
 >[!NOTE]
 >
->For a list of recommended PHP configuration settings, see [Required PHP settings](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+>For a list of recommended PHP configuration settings, see [Required PHP settings](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html) in the _Installation guide_.
 
 ### Check custom php.ini settings
 
@@ -99,7 +99,7 @@ The following table shows the supported PHP extensions when deploying Adobe Comm
 |--------------------|---------------------|---------------------|
 | `bcmath`<br>`bz2`<br>`calendar`<br>`exif`<br>`gd`<br>`gettext`<br> `intl`<br> `mysqli`<br> `pcntl`<br> `pdo_mysql`<br> `soap`<br> `sockets`<br>  `sysvmsg`<br> `sysvsem`<br> `sysvshm`<br> `opcache`<br> `zip` | `ctype`<br> `curl`<br>`date`<br> `dom`<br> `fileinfo`<br> `filter`<br> `ftp`<br> `hash`<br> `iconv`<br> `json`<br> `mbstring`<br> `mysqlnd`<br> `openssl`<br> `pcre`<br> `pdo`<br> `pdo_sqlite`<br> `phar`<br>`posix`<br> `readline`<br> `session`<br> `sqlite3`<br> `tokenizer`<br> `xml`<br> `xmlreader`<br> `xmlwriter`<br> |`geoip`<br>`gmp`<br> `igbinary`<br> `imagick`<br>`imap`<br> `ldap`<br> `mailparse`<br> `mcrypt`<br> `msgpack`<br> `mysqli`<br> `oauth`<br> `pdo_mysql`<br> `propro`<br> `pspell`<br> `raphf`<br> `recode`<br> `redis`<br> `shmop` `sockets`<br> `sodium`<br> `ssh2`<br>`tidy`<br> `xdebug`<br> `xmlrpc`<br> `xsl`<br> `yaml` |
 
-PHP module requirements are tied to the Adobe Commerce version. See [PHP requirements](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+PHP module requirements are tied to the Adobe Commerce version. See [PHP requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html).
 
 ### Extension support
 

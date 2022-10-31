@@ -29,7 +29,7 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 
 ## `name`
 
-The `name` property provides the application name used in the [`routes.yaml`](https://devdocs.magento.com/cloud/project/routes.html) file to define the HTTP upstream (by default, `mymagento:http`). For example, if the value of `name` is `app`, you must use `app:http` in the upstream field.
+The `name` property provides the application name used in the [`routes.yaml`](../routes/routes-yaml.md) file to define the HTTP upstream (by default, `mymagento:http`). For example, if the value of `name` is `app`, you must use `app:http` in the upstream field.
 
 >[!WARNING]
 >
@@ -137,7 +137,7 @@ relationships:
     rabbitmq: "rabbitmq:rabbitmq"
 ```
 
-See [Services](https://devdocs.magento.com/cloud/project/services.html) for a full list of currently supported service types and endpoints.
+See [Services](../services/services-yaml.md) for a full list of currently supported service types and endpoints.
 
 ## `mounts`
 

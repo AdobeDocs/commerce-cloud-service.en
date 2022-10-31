@@ -9,7 +9,7 @@ The [ece-tools](https://github.com/magento/ece-tools) package is a set of script
 
 >[!NOTE]
 >
->See [Upgrades and patches](https://devdocs.magento.com/cloud/project/project-upgrade-parent.html) for information about updating to the latest release of the `ece-tools` package.
+>See [Upgrade ECE-Tools](../dev-tools/update-package.md) for information about updating to the latest release of the `ece-tools` package.
 
 The `ece-tools` package uses the following release versioning sequence: `200<major>.<minor>.<patch>`
 
@@ -33,7 +33,7 @@ Release date: October 27, 2022
 Release date: September 13, 2022
 
 -  ![new icon](../../assets/new.svg) **Enable `synchronous_replication`**—ECE-Tools sets `synchronous_replication=>true` in the `app/etc/env.php` file when `MYSQL_USE_SLAVE_CONNECTION` is enabled. This configuration affects only Magento 2.4.6+. See the `MYSQL_USE_SLAVE_CONNECTION` variable description in the [Deploy variables](../environment/variables-deploy.md#mysql_use_slave_connection).<!-- MCLOUD-9142 -->
--  ![new icon](../../assets/new.svg) **OpenSearch**—Added functionality to configure and set the `opensearch` engine for the next Adobe Commerce release 2.4.6. See [Set up OpenSearch service](https://devdocs.magento.com/cloud/project/services-opensearch.html).<!-- MCLOUD-9236 -->
+-  ![new icon](../../assets/new.svg) **OpenSearch**—Added functionality to configure and set the `opensearch` engine for the next Adobe Commerce release 2.4.6. See [Set up OpenSearch service](../services/opensearch.md).<!-- MCLOUD-9236 -->
 
 ## v2002.1.11
 

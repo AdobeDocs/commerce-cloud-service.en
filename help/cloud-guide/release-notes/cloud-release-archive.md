@@ -399,9 +399,9 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/new.svg) **Docker Compose for Cloud**—Added a command—`docker:build`—to generate a [Docker Compose](https://devdocs.magento.com/cloud/docker/docker-config.html) configuration from the Cloud `ece-tools` repository.<!-- MAGECLOUD-2250 -->
 
--  ![new icon](../../assets/new.svg) **Change Locales**—Now you can [change store locale](https://devdocs.magento.com/cloud/live/sens-data-over.html#change-locales) without the exporting and importing configuration process. While the application is in Production and the SCD_ON_DEMAND is enabled, the store and admin locale options are available.<!-- MAGECLOUD-2019 -->
+-  ![new icon](../../assets/new.svg) **Change Locales**—Now you can change store locale without the exporting and importing configuration process. While the application is in Production and the SCD_ON_DEMAND is enabled, the store and admin locale options are available.<!-- MAGECLOUD-2019 -->
 
--  ![new icon](../../assets/new.svg) <!-- MAGECLOU-1998 -->**Site map and Robots**—Created a [workflow](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) to add a `robots.txt` file and generate a `sitemap.xml` file for a single domain configuration without requiring a change to the infrastructure.
+-  ![new icon](../../assets/new.svg) <!-- MAGECLOU-1998 -->**Site map and Robots**—Created a [workflow](../store/robots-sitemap.md) to add a `robots.txt` file and generate a `sitemap.xml` file for a single domain configuration without requiring a change to the infrastructure.
 
 -  ![new icon](../../assets/new.svg) **Wizards**—Added two [wizards](../deploy/smart-wizards.md) to help you with Cloud configuration:<!-- MAGECLOUD-1910 -->
 
@@ -409,7 +409,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  `master-slave`—configure load balancing for database and Redis
 
--  ![new icon](../../assets/new.svg) **Module Refresh**—Added a Cloud command—`module:refresh`—to enable modules that were disabled or not explicitly enabled, similar to the way that it is done automatically during a build. See [Build and deploy on local in Build phase](https://devdocs.magento.com/cloud/live/live-sanity-check.html#build).<!-- MAGECLOUD-1521 -->
+-  ![new icon](../../assets/new.svg) **Module Refresh**—Added a Cloud command—`module:refresh`—to enable modules that were disabled or not explicitly enabled, similar to the way that it is done automatically during a build.<!-- MAGECLOUD-1521 -->
 
 -  ![new icon](../../assets/new.svg) Added the ability to choose to merge or overwrite configuration for services using the `_merge` option in [CACHE](../environment/variables-deploy.md#cache_configuration), [SESSION](../environment/variables-deploy.md#session_configuration), [QUEUE](../environment/variables-deploy.md#queue_configuration), and [SEARCH](../environment/variables-deploy.md#search_configuration) configurations.<!-- MAGECLOUD-2105 -->
 
@@ -513,7 +513,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 >[!NOTE]
 >
->You must [upgrade the Adobe Commerce on cloud infrastructure metapackage](https://devdocs.magento.com/cloud/project/project-upgrade-parent.html) to get this and all future updates.
+>You must [upgrade the Adobe Commerce on cloud infrastructure metapackage](../dev-tools/install-package.md#update-the-metapackage) to get this and all future updates.
 
 -  ![new icon](../../assets/new.svg) **ece-tools**—The `ece-tools` package now supports Adobe Commerce 2.1.x.<!-- MAGECLOUD-1086 -->
 
@@ -541,7 +541,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 >[!NOTE]
 >
->We merged [`vendor/magento/ece-patches`](https://devdocs.magento.com/cloud/composer-packages/ece-patches.html) with `vendor/magento/ece-tools` in this release. You no longer need to update the `vendor/magento/ece-patches` package separately.
+>We merged `vendor/magento/ece-patches` with `vendor/magento/ece-tools` in this release. You no longer need to update the `vendor/magento/ece-patches` package separately.
 
 **New features:**
 
@@ -613,17 +613,17 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  **Static content compression**—We now compress static content using [gzip](https://www.gnu.org/software/gzip/) during the build and deploy phases. This compression, coupled with Fastly compression, helps reduce the size of your store and increase deployment speed. If necessary, you can disable compression using a [build option](../environment/variables-build.md) or [deploy variable](../environment/variables-deploy.md). See the following topics for more information:
 
-   -  [Application environment variables](https://devdocs.magento.com/cloud/env/environment-vars_magento.html)
+   -  [Application environment variables](../application/variables-property.md)
 
-   -  [Static content deployment performance](https://devdocs.magento.com/cloud/live/sens-data-over.html#scd-performance)
+   -  [Static content deployment performance](../deploy/static-content.md)
 
    -  [Deployment process](https://devdocs.magento.com/cloud/reference/discover-deploy.html)
 
--  **Configuration management**—We now auto-generate an `app/etc/config.php` file in your Git repository during the build phase if it does not already exist. The auto-generated file includes only a list of modules and extensions. If the file already exists, the build phase continues as normal. If you follow [Configuration Management](https://devdocs.magento.com/cloud/live/sens-data-over.html) at a later time, the commands update the file without requiring additional steps. Refer to [Deployment process](https://devdocs.magento.com/cloud/reference/discover-deploy.html) for more information.
+-  **Configuration management**—We now auto-generate an `app/etc/config.php` file in your Git repository during the build phase if it does not already exist. The auto-generated file includes only a list of modules and extensions. If the file already exists, the build phase continues as normal. If you follow [Configuration Management](../store/store-settings.md) at a later time, the commands update the file without requiring additional steps. Refer to [Deployment process](https://devdocs.magento.com/cloud/reference/discover-deploy.html) for more information.
 
 -  **Database dumps**—We added a `magento/ece-tools` CLI command for creating database dumps in all environments. For Pro plan Production environments, this command only dumps from one of three high-availability nodes, so production data written to a different node during the dump may not be copied. We recommend putting the application in maintenance mode before doing a database dump in Production environments. See [Snapshots and backup management](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump) for more information.
 
--  **Cron interval limitations lifted**—The default cron interval for all environments provisioned in the us-3, eu-3, and ap-3 regions is 1 minute. The default cron interval in all other regions is 5 minutes for Pro Integration environments and 1 minute for Pro Staging and Production environments. To modify your existing cron jobs, edit your settings in `.magento.app.yaml` or create a support ticket for Production/Staging environments. Refer to [Set up cron jobs](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html) for more information.
+-  **Cron interval limitations lifted**—The default cron interval for all environments provisioned in the us-3, eu-3, and ap-3 regions is 1 minute. The default cron interval in all other regions is 5 minutes for Pro Integration environments and 1 minute for Pro Staging and Production environments. To modify your existing cron jobs, edit your settings in `.magento.app.yaml` or create a support ticket for Production/Staging environments. Refer to [Set up cron jobs](../application/crons-property.md#set-up-cron-jobs) for more information.
 
 **Resolved issues:**
 

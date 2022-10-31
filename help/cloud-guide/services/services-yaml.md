@@ -61,7 +61,7 @@ Use the following format:
 
 The `service-id` value identifies the service in the project. You can only use lowercase alphanumeric characters: `a` to `z` and `0` to `9`, such as `redis`.
 
-This _service-id_ value is used in the [`relationships`](https://devdocs.magento.com/cloud/project/magento-app-properties.html#relationships) property of the `.magento.app.yaml` configuration file:
+This _service-id_ value is used in the [`relationships`](../application/properties.md#relationships) property of the `.magento.app.yaml` configuration file:
 
 ```yaml
 relationships:

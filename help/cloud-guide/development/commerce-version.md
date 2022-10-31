@@ -155,7 +155,7 @@ Always review the values contained in the [.magento.app.yaml](../application/con
 
 1. Add the following environment variables to the end of the file. 
 
-   For Adobe Commerce 2.2.x - 2.3.x–
+   For Adobe Commerce 2.2.x through 2.3.x–
 
    ```yaml
    variables:
@@ -163,7 +163,7 @@ Always review the values contained in the [.magento.app.yaml](../application/con
            CONFIG__DEFAULT__PAYPAL_ONBOARDING__MIDDLEMAN_DOMAIN: 'payment-broker.magento.com'
            CONFIG__STORES__DEFAULT__PAYMENT__BRAINTREE__CHANNEL: 'Magento_Enterprise_Cloud_BT'
            CONFIG__STORES__DEFAULT__PAYPAL__NOTATION_CODE: 'Magento_Enterprise_Cloud'
-    ```
+   ```
 
    For Adobe Commerce 2.4.x–
 
@@ -172,7 +172,7 @@ Always review the values contained in the [.magento.app.yaml](../application/con
        env:
            CONFIG__DEFAULT__PAYPAL_ONBOARDING__MIDDLEMAN_DOMAIN: 'payment-broker.magento.com'
            CONFIG__STORES__DEFAULT__PAYPAL__NOTATION_CODE: 'Magento_Enterprise_Cloud'
-    ```
+   ```
 
 1. Save the file. Do not commit or push changes to the remote environment yet.
 

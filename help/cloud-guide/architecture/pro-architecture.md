@@ -38,7 +38,7 @@ Your project is a single Git repository with three, main environment branches fo
 
 ## Integration environment
 
-The Integration environment runs in a Linux container (LXC) on a grid of servers known as Platform-as-a-Service (PaaS). Each environment includes a web server and database to test your site. See [Regional IP Addresses](https://devdocs.magento.com/cloud/env/environments-start.html#regional-ip-addresses) for a list of AWS and Azure IP addresses.
+The Integration environment runs in a Linux container (LXC) on a grid of servers known as Platform-as-a-Service (PaaS). Each environment includes a web server and database to test your site. See [Regional IP Addresses](../dev-tools/regional-ip-addresses.md) for a list of AWS and Azure IP addresses.
 
 **Recommended use cases:**
 
@@ -92,7 +92,7 @@ The Staging environment matches the Production architecture and is designed for 
 
 -  Customize cron configuration and test cron jobs
 
-See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) and [Test deployment](https://devdocs.magento.com/cloud/live/stage-prod-test.html).
+See [Deployment workflow](pro-develop-deploy-workflow.md#deployment-workflow) and [Test deployment](../test/staging-production.md).
 
 **Caveats:**
 

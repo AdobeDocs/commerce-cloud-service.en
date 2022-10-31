@@ -102,6 +102,7 @@ product: magento
     + [Extensions](store/extensions.md)
     + [B2B module](store/b2b-module.md)
     + [Multiple sites](store/multiple-sites.md)
+    + [Site map and search engine robots](store/robots-sitemap.md)
     + [PayPal payment methods](store/paypal.md)
 + Deployment {#deploy}
     + [Optimization](deploy/optimization.md)

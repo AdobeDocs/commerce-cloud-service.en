@@ -136,7 +136,7 @@ Accessing the MariaDB database directly requires you to use a SSH to log in to t
    magento-cloud ssh
    ```
 
-1. Retrieve the MySQL login credentials from the `database` and `type` properties in the [$MAGENTO_CLOUD_RELATIONSHIPS](https://devdocs.magento.com/cloud/project/magento-app-properties.html#relationships) variable.
+1. Retrieve the MySQL login credentials from the `database` and `type` properties in the [$MAGENTO_CLOUD_RELATIONSHIPS](../application/properties.md#relationships) variable.
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp

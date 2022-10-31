@@ -23,7 +23,7 @@ The following instructions use a combination of `magento-cloud` CLI commands and
 
 **To clone a project master environment**:
 
-1. Log in to your local workstation with a [file system owner](https://docs.magento.com/cloud/before/before-workspace-file-sys-owner.html) account.
+1. Log in to your local workstation with a [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) account.
 
 1. Change to the web server or virtual host _docroot_ directory.
 

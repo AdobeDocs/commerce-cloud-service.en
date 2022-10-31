@@ -195,7 +195,7 @@ elasticsearch:
             - analysis-phonetic
 ```
 
-If you use the ElasticSuite third-party plugin, you must [update the `ece-tools` package](https://devdocs.magento.com/cloud/project/ece-tools-update.html) to version 2002.0.19 or later.
+If you use the ElasticSuite third-party plugin, you must [update the `ece-tools` package](../dev-tools/update-package.md) to version 2002.0.19 or later.
 When setting up ElasticSuite, add the configuration settings to the `ELASTICSUITE_CONFIGURATION` deploy variable. This configuration saves the settings across deployments.
 
 ### Remove plugins for Elasticsearch

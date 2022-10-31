@@ -17,7 +17,7 @@ Once configured, you can debug CLI commands, web requests, and code. Remember th
 
 ## Requirements
 
-To run and use Xdebug, you need the SSH URL for the environment. You can locate the information through the [Project Web Interface](https://devdocs.magento.com/cloud/project/projects.html) or your Cloud Onboarding UI.
+To run and use Xdebug, you need the SSH URL for the environment. You can locate the information through the [Project Web Interface](../project/overview.md) or your Cloud Onboarding UI.
 
 ## Configure Xdebug
 
@@ -243,7 +243,7 @@ To use Xdebug specifically on Pro plan Staging and Production environment, you c
 
 You need the following:
 
--  SSH commands for accessing the environments. You can get this information, through the [Project Web Interface](https://devdocs.magento.com/cloud/project/projects.html) or your cloud Onboarding UI.
+-  SSH commands for accessing the environments. You can get this information, through the [Project Web Interface](../project/overview.md) or your cloud Onboarding UI.
 -  The `xdebug_key` value we set when configuring the Staging and Pro environments.
 
    The `xdebug_key` can be found by using SSH to log in to the primary node and executing:

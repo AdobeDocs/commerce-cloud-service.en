@@ -64,7 +64,7 @@ To install a theme manually, you must have the theme's code in a compressed arch
 
 ## Install a theme using Composer
 
-Installing a theme using Composer is the same as installing any other extension using Composer. See [Install, manage, and upgrade modules](https://devdocs.magento.com/cloud/howtos/install-components.html) for details.
+Installing a theme using Composer is the same as installing any other extension using Composer. See [Install, manage, and upgrade modules](extensions.md) for details.
 
 To install a theme using Composer:
 

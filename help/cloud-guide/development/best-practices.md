@@ -48,4 +48,4 @@ Follow best practices for builds and deployment, and use the [Upgrades and patch
         - Check the `cron` logs and the `cron_schedule` table in the Adobe Commerce database to verify cron status, and rerun cron jobs as needed.
       See [Logging](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html#logging) in the _Configuration Guide_.
 
-    - Complete post-upgrade User Acceptance Testing UAT on Staging and Production environments and fix any issues related to third-party and custom extension upgrades. See [User Acceptance Testing (UAT)](../test/live-sanity-check.md).
+    - Complete post-upgrade User Acceptance Testing UAT on Staging and Production environments and fix any issues related to third-party and custom extension upgrades. 

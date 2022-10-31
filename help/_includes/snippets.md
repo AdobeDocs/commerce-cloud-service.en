@@ -56,7 +56,7 @@ Set the `_merge` option to one of the following:
 
 >[!NOTE]
 >
->With [!DNL ece-tools] 2002.1.0 and later, you can use the scenario-based deployment feature to customize the build, deploy, and post-deploy processes for your Adobe Commerce on cloud infrastructure project. See [Scenario-based deployment](https://devdocs.magento.com/cloud/deploy/scenario-based-deployment.html).
+>With [!DNL ece-tools] 2002.1.0 and later, you can use the scenario-based deployment feature to customize the build, deploy, and post-deploy processes for your Adobe Commerce on cloud infrastructure project. See [Scenario-based deployment](help/cloud-guide/deploy/scenario-based.md).
 
 ## Service instruction {#service-instruction}
 
