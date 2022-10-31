@@ -44,8 +44,10 @@ product: magento
     + [Clone and branch management](development/cli-branches.md)
     + [Secure connections](development/secure-connections.md)
     + [PrivateLink service](development/privatelink-service.md)
+    + [Protective block](development/protective-block.md)
     + [Restore environment](development/restore-environment.md)
     + Upgrades and patches {#upgrade}
+        + [Best practices](development/best-practices.md)
         + [Upgrade Commerce](development/commerce-version.md)
         + [Apply patches](development/apply-patches.md)
 + Integrations {#integrations}
@@ -104,6 +106,7 @@ product: magento
 + Deployment {#deploy}
     + [Optimization](deploy/optimization.md)
     + [Deployment process](deploy/process.md)
+    + [Deployment best practices](deploy/best-practices.md)
     + [Scenario-based deployment](deploy/scenario-based.md)
     + [Zero downtime deployment](deploy/reduce-downtime.md)
     + [Static content deployment](deploy/static-content.md)
