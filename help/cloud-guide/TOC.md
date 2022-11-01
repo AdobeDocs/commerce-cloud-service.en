@@ -118,6 +118,7 @@ product: magento
     + [Testing guidance](test/guidance.md)
     + [Sample data](test/sample-data.md)
     + [Xdebug](test/debug.md)
+    + [Staging and Production](test/staging-and-production.md)
 + Launch site {#launch}
     + [Overview](launch/overview.md)
     + [Launch checklist](launch/checklist.md)

@@ -1,13 +1,13 @@
 ---
 title: Cloud Patches for Commerce
-description: Learn about the latest improvements to the Magento Cloud Patches package.
+description: Learn about the latest improvements to the Cloud Patches package.
 ---
 
 # Cloud Patches for Commerce
 
-The [Magento Cloud Patches](https://github.com/magento/magento-cloud-patches) package provides a set of required patches which improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes.
+The [Cloud Patches](https://github.com/magento/magento-cloud-patches) package provides a set of required patches which improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes.
 
-The Magento Cloud Patches package is a dependency for the ece-tools package and is installed and updated when you install or update the ece-tools package. You can also use and manage Cloud Patches for Commerce as a stand-alone package to apply patches to a Adobe Commerce project that is not on the Cloud platform. These release notes describe the latest improvements to this package.
+The Cloud Patches for Commerce package is a dependency for the ece-tools package and is installed and updated when you install or update the ece-tools package. You can also use and manage Cloud Patches for Commerce as a stand-alone package to apply patches to a Adobe Commerce project that is not on the Cloud platform. These release notes describe the latest improvements to this package.
 
 >[!TIP]
 >

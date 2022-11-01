@@ -26,7 +26,7 @@ Use the Adobe Commerce on cloud infrastructure Project Portal (Onboarding UI) to
 
 **To open the Cloud Project portal**:
 
-1. Log in to your [Adobe Commerce on cloud infrastructure account](https://accounts.magento.cloud/user).
+1. Log in to your [Adobe Commerce on cloud infrastructure account](https://account.magento.com/customer/account/).
 
 1. On the _My Account_ page, click the Magento tab to see the projects in your account.
 

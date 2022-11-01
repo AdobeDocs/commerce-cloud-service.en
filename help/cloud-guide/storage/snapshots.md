@@ -24,7 +24,7 @@ You have up to **seven days** to _restore_ a snapshot.
 Adobe provides two methods for creating and managing snapshots:
 
 -  Project Web Interface
--  Magento Cloud CLI
+-  Cloud CLI
 
 ## Create a snapshot
 
@@ -83,7 +83,7 @@ Adobe provides two methods for creating and managing snapshots:
 1. Click **restore** next to the snapshot.
 1. Review the Snapshot restore date and click **Restore**.
 
-**To restore a snapshot using the Magento Cloud CLI**:
+**To restore a snapshot using the Cloud CLI**:
 
 1. Open a terminal and navigate to your project.
 1. Checkout the environment branch to restore.

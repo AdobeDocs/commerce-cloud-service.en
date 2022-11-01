@@ -24,7 +24,7 @@ The release notes include:
 
 Release date: October 27, 2022
 
--  ![new icon](../../assets/new.svg)**Added support for Adobe I/O Events for Adobe Commerce**. Extension developers can now use the [Adobe I/O Events](https://developer.adobe.com/events/docs/) framework to send Commerce event information from Cloud instances to their applications written for [Adobe App Builder](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events for Adobe Commerce is currently in Partner Preview.<!-- CEXT-932 -->
+-  ![new icon](../../assets/new.svg)**Added support for Adobe I/O Events for Adobe Commerce**. Extension developers can now use the [Adobe I/O Events](https://developer.adobe.com/events/docs/) framework to send Commerce event information from Cloud instances to their applications written for [Adobe App Builder](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events for Adobe Commerce is in Partner Preview.<!-- CEXT-932 -->
 -  ![new icon](../../assets/new.svg)**Validator for OPcache configuration**—Added a validator to check the OPcache configuration for excluded paths.<!-- MCLOUD-9485 -->
 -  ![fix icon](../../assets/fix.svg)**Fixed an issue with GraphQL cache configuration**—Now ECE-Tools keeps the GraphQL `id_salt` value in `cache` configuration in the `app/etc/env.php` file.<!-- MCLOUD-9486 -->
 
@@ -32,16 +32,16 @@ Release date: October 27, 2022
 
 Release date: September 13, 2022
 
--  ![new icon](../../assets/new.svg) **Enable `synchronous_replication`**—ECE-Tools sets `synchronous_replication=>true` in the `app/etc/env.php` file when `MYSQL_USE_SLAVE_CONNECTION` is enabled. This configuration affects only Magento 2.4.6+. See the `MYSQL_USE_SLAVE_CONNECTION` variable description in the [Deploy variables](../environment/variables-deploy.md#mysql_use_slave_connection).<!-- MCLOUD-9142 -->
+-  ![new icon](../../assets/new.svg) **Enable `synchronous_replication`**—ECE-Tools sets `synchronous_replication=>true` in the `app/etc/env.php` file when `MYSQL_USE_SLAVE_CONNECTION` is enabled. This configuration affects only Commerce 2.4.6+. See the `MYSQL_USE_SLAVE_CONNECTION` variable description in the [Deploy variables](../environment/variables-deploy.md#mysql_use_slave_connection).<!-- MCLOUD-9142 -->
 -  ![new icon](../../assets/new.svg) **OpenSearch**—Added functionality to configure and set the `opensearch` engine for the next Adobe Commerce release 2.4.6. See [Set up OpenSearch service](../services/opensearch.md).<!-- MCLOUD-9236 -->
 
 ## v2002.1.11
 
 Release date: August 4, 2022
 
--  ![fix icon](../../assets/fix.svg) **ElasticSuite Validator and Opensearch**—Fixed ElasticSuite integrity check validator issue when Opensearch is installed.<!-- MCLOUD-8767 -->
+-  ![fix icon](../../assets/fix.svg) **ElasticSuite Validator and OpenSearch**—Fixed ElasticSuite integrity check validator issue when OpenSearch is installed.<!-- MCLOUD-8767 -->
 -  ![fix icon](../../assets/fix.svg) **Return types for deploy commands**—Fixed return types for deploy commands.<!-- AC-3208 -->
--  ![fix icon](../../assets/fix.svg) **RabbitMQ issue with new Magento 2.4.5 installation**—Fixed RabbitMQ crash issue on new Magento 2.4.5. installation.<!-- MCLOUD-9059 -->
+-  ![fix icon](../../assets/fix.svg) **RabbitMQ issue with new Commerce 2.4.5 installation**—Fixed RabbitMQ crash issue on new Commerce 2.4.5. installation.<!-- MCLOUD-9059 -->
 
 ## v2002.1.10
 
@@ -145,7 +145,7 @@ Release date: November 9, 2020
 
 **Validation and log improvements**—
 
--  ![new icon](../../assets/new.svg) Added search-engine validation to ensure that `elasticsearch` is set for Adobe Commerce on cloud infrastructure 2.4 and later. If the validation fails, the deployment is stopped with a critical error message suggesting fixes for the issue. See [Critical Errors, Deploy stage](../dev-tools/error-reference.md#deploy-stage).<!--MCLOUD-6937-->
+-  ![new icon](../../assets/new.svg) Added search-engine validation to ensure that `elasticsearch` is set for Adobe Commerce on cloud infrastructure 2.4 and later. If the validation fails, the deployment is stopped with a critical error message that suggests fixes for the issue. See [Critical Errors, Deploy stage](../dev-tools/error-reference.md#deploy-stage).<!--MCLOUD-6937-->
 
 -  ![new icon](../../assets/new.svg) Added Elasticsearch validation to check the compatibility between the Elasticsearch service version and the Adobe Commerce version.<!--MCLOUD-7193-->
 
@@ -153,7 +153,7 @@ Release date: November 9, 2020
 
 -  ![new icon](../../assets/new.svg) Added warning errors `2026` and `2027` for invalid `MAGE_MODE` environment variable setting. The only valid value is `production`. Before this fix, `MAGE_MODE` could be set to `developer` without deployment errors, only to cause errors later when trying to write to read-only files. See [Warning Errors](../dev-tools/error-reference.md#warning-errors).<!--MCLOUD-6708-->
 
--  ![fix icon](../../assets/fix.svg) Fixed validation for Redis, RabbitMQ and MySQL services to ensure these versions are compatible with the Adobe Commerce version. Valid versions of these services are now written to the `cloud.log`.<!--MCLOUD-7098-->
+-  ![fix icon](../../assets/fix.svg) Fixed validation for Redis, RabbitMQ, and MySQL services to ensure that these versions are compatible with the Adobe Commerce version. Valid versions of these services are now written to the `cloud.log`.<!--MCLOUD-7098-->
 
 -  ![fix icon](../../assets/fix.svg) Updated the `cloud.log` to include the concurrent requests limit for sending requests during cache warmup. This value is configured in the [WARM_UP_CONCURRENCY](../environment/variables-post-deploy.md#warm_up_concurrency) post-deploy variable.<!--MCLOUD-5563-->
 
@@ -191,7 +191,7 @@ Release date: June 25, 2020
 
 -  ![new icon](../../assets/new.svg) **Infrastructure updates**—
 
-   -  ![new icon](../../assets/new.svg) **Logging improvements**—Improved log tracking capability by assigning exit codes to critical deploy errors and exposing the exit codes in error message notifications and log events. See [Error message reference for ece-tools](../dev-tools/error-reference.md).<!-- MCLOUD-5637, 5531-->
+   -  ![new icon](../../assets/new.svg) **Logging improvements**—Improved log-tracking capability by assigning exit codes to critical deploy errors and exposing the exit codes in error message notifications and log events. See [Error message reference for ece-tools](../dev-tools/error-reference.md).<!-- MCLOUD-5637, 5531-->
 
    -  ![new icon](../../assets/new.svg) Improved the process for database dumps (`vendor/bin/ece-tools db-dump`) and updated log messages to clarify that the database dump operation switches the application to maintenance mode, stops consumer queue processes, and disables cron jobs before the dump begins.<!--MCLOUD-5324, MCLOUD-2062-->
 
@@ -266,7 +266,7 @@ Release date: February 6, 2020
 
 -  ![new icon](../../assets/new.svg) **Infrastructure updates**—
 
-   -  ![new icon](../../assets/new.svg) **Added separate package for Magento Cloud Docker**—Decoupled the Docker package from the `ece-tools` package to maintain code quality and provide independent releases. Updates and fixes related to `ece-tools` are managed from the [magento-cloud-docker](https://github.com/magento/magento-cloud-docker) GitHub repository.<!--MAGECLOUD-2927-->
+   -  ![new icon](../../assets/new.svg) **Added separate package for Cloud Docker for Commerce**—Decoupled the Docker package from the `ece-tools` package to maintain code quality and provide independent releases. Updates and fixes related to `ece-tools` are managed from the [magento-cloud-docker](https://github.com/magento/magento-cloud-docker) GitHub repository.<!--MAGECLOUD-2927-->
 
    -  ![new icon](../../assets/new.svg) **Updated patching capabilities**—Moved the patching functionality from the ece-tools package to a separate [magento-cloud-patches](https://github.com/magento/magento-cloud-patches) package. During deployment, `ece-tools` uses the new package to apply patches. See [Cloud patches release notes](cloud-patches.md).<!--MAGECLOUD-4567-->
 
@@ -294,7 +294,7 @@ Release date: February 6, 2020
 
 >[!NOTE]
 >
->See [Service versions](https://devdocs.magento.com/cloud/project/services.html) for a list of services used in Adobe Commerce on cloud infrastructure and their version compatibility with the Magento Cloud template.
+>See [Service versions](https://devdocs.magento.com/cloud/project/services.html) for a list of services used in Adobe Commerce on cloud infrastructure and their version compatibility with the Cloud template.
 
 -  ![new icon](../../assets/new.svg) **Environment variable updates**—
 

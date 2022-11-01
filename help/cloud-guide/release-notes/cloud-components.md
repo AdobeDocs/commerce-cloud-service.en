@@ -1,6 +1,6 @@
 ---
 title: Cloud Components for Commerce
-description: Learn about the latest improvements to the Magento Cloud Components package.
+description: Learn about the latest improvements to the Cloud Components package.
 ---
 
 # Cloud Components for Commerce

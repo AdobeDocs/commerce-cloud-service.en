@@ -91,7 +91,7 @@ Release date: April 20, 2021
 
 -  ![new icon](../../assets/new.svg) **Updated `host.docker.internal` to be platform independent**—You can now create the same Docker Compose scripts for Ubuntu, Windows, and macOS. Using Xdebug on Ubuntu no longer requires a separate environment variable. [Fix submitted by Igor Vitol](https://github.com/magento/magento-cloud-docker/pull/299).<!--Issue #298-->
 -  ![new icon](../../assets/new.svg) **Updated init-docker.sh**—Added the `mounts` object to the `MAGENTO_CLOUD_APPLICATION` environment variable. [Fix submitted by Chiranjeevi](https://github.com/magento/magento-cloud-docker/pull/299).<!--Issue #299-->
--  ![new icon](../../assets/new.svg) **Updated init-docker.sh**—Updated the `init-docker.sh` script with PHP 7.4 and Magento Cloud Docker 1.2.1 versions. [Fix submitted by Adarsh Manickam](https://github.com/magento/magento-cloud-docker/pull/300).<!--Issue #300-->
+-  ![new icon](../../assets/new.svg) **Updated init-docker.sh**—Updated the `init-docker.sh` script with PHP 7.4 and Cloud Docker 1.2.1 versions. [Fix submitted by Adarsh Manickam](https://github.com/magento/magento-cloud-docker/pull/300).<!--Issue #300-->
 -  ![new icon](../../assets/new.svg) **Sodium enabled by default**—Enabled the `sodium` PHP extension by default within PHP Docker images.<!--MCLOUD-7548-->
 -  ![new icon](../../assets/new.svg) **`custom-registry` option**—Added a `--custom-registry` option to `php ./vendor/bin/ece-docker build:compose` command for using your own images registry.<!--MCLOUD-7476-->
 
@@ -153,7 +153,7 @@ Release date: November 9, 2020
 
    -  ![new icon](../../assets/new.svg) **CLI container**
 
-      -  **Run commands inside Docker PHP containers**—Now you can use the Magento Cloud Docker CLI to run commands inside PHP containers in your Docker environment without having to install PHP on the host. For example, the following command builds the configuration:  `./bin/magento-docker php 7.3 vendor/bin/ece-docker build:compose`. See [Magento Cloud Docker CLI](https://devdocs.magento.com/cloud/docker/docker-quick-reference.html#magento-cloud-docker-cli). [Fix submitted by G Arvind from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/209).<!--MCLOUD-5982-->
+      -  **Run commands inside Docker PHP containers**—Now you can use the Cloud Docker CLI to run commands inside PHP containers in your Docker environment without having to install PHP on the host. For example, the following command builds the configuration:  `./bin/magento-docker php 7.3 vendor/bin/ece-docker build:compose`. See [Magento Cloud Docker CLI](https://devdocs.magento.com/cloud/docker/docker-quick-reference.html#magento-cloud-docker-cli). [Fix submitted by G Arvind from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/209).<!--MCLOUD-5982-->
 
       -  Added the OpenSSH-client to PHP CLI containers. Now, you can use ssh-agent forwarding for Composer if the `composer.json` file contains private git repositories that require an ssh client to use Composer commands.<!--MCLOUD-6008-->
 
@@ -220,7 +220,7 @@ Release date: June 25, 2020
 
 -  ![new icon](../../assets/new.svg) **Container updates**
 
-   -  **Varnish**—Now Varnish is the default cache when you deploy Adobe Commerce in a Cloud Docker environment using a supported version of the Magento Cloud application template. See [Varnish container](https://devdocs.magento.com/cloud/docker/docker-containers-service.html#varnish-container).<!--MCLOUD-2634-->
+   -  **Varnish**—Now Varnish is the default cache when you deploy Adobe Commerce in a Cloud Docker environment using a supported version of the Cloud application template. See [Varnish container](https://devdocs.magento.com/cloud/docker/docker-containers-service.html#varnish-container).<!--MCLOUD-2634-->
 
    -  Added the `--no-varnish` option to skip Varnish service installation when you generate the Cloud Docker configuration file.<!--MCLOUD-2634-->
 
@@ -287,7 +287,7 @@ Release date: June 25, 2020
 
 -  ![fix icon](../../assets/fix.svg) Added support for multiple MySQL users in the Cloud Docker environment. In earlier releases, the `build:compose` operation failed if the `magento.app.yaml` file specified multiple database users. [Fix submitted by G Arvind from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/181).<!--MCLOUD-5670-->
 
--  ![fix icon](../../assets/fix.svg) Removed `rsyslog` from the Cloud Docker for Commerce PHP containers to resolve compatibility issues that caused warning notifications during deployment. Magento Cloud Docker does not use the rsyslog utility.<!--MCLOUD-6173-->
+-  ![fix icon](../../assets/fix.svg) Removed `rsyslog` from the Cloud Docker for Commerce PHP containers to resolve compatibility issues that caused warning notifications during deployment. Cloud Docker does not use the rsyslog utility.<!--MCLOUD-6173-->
 
 ## v1.0.0
 
