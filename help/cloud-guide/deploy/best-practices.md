@@ -47,7 +47,7 @@ We highly recommend the following best practices and considerations for your dep
    >
    >Run the [smart wizard](../deploy/smart-wizards.md) commands to ensure that your cloud project configuration follows best practices for build and deployment configuration, including static content deployment (SCD) strategy.
 
--  **After completing testing in local and Integration environments, deploy and test in the Staging environment**–See [Staging and Production testing](../test/stage-prod-test.md).
+-  **After completing testing in local and Integration environments, deploy and test in the Staging environment**–See [Staging and Production testing](../test/staging-and-production.md).
 
 -  **Check Production environment configuration**–Before deploying to Production, complete the following tasks:
 

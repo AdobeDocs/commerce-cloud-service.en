@@ -92,7 +92,7 @@ The Staging environment matches the Production architecture and is designed for 
 
 -  Customize cron configuration and test cron jobs
 
-See [Deployment workflow](pro-develop-deploy-workflow.md#deployment-workflow) and [Test deployment](../test/staging-production.md).
+See [Deployment workflow](pro-develop-deploy-workflow.md#deployment-workflow) and [Test deployment](../test/staging-and-production.md).
 
 **Caveats:**
 
@@ -183,7 +183,7 @@ Adobe Commerce can scale from the smallest Pro12 cluster to the largest Pro120 c
 
 Our redundant architecture means that we can offer to upscale without downtime. When upscaling, we rotate each of the three instances to upgrade capacity without impacting site operation.
 
-For example, you can add extra web servers to an existing cluster should the constriction be at the PHP level rather than the database level. This provides _horizontal scaling_ to complement the vertical scaling provided by extra CPUs on the database level. See [Scaled architecture](split-tier-architecture.md).
+For example, you can add extra web servers to an existing cluster should the constriction be at the PHP level rather than the database level. This provides _horizontal scaling_ to complement the vertical scaling provided by extra CPUs on the database level. See [Scaled architecture](scaled-architecture.md).
 
 If you expect a significant increase in traffic for an event or other reason, you can request a temporary increase in capacity. See [How to request temporary upsize](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) in the _Commerce Help Center_.
 

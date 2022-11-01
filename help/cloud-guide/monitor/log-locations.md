@@ -173,7 +173,7 @@ Service logs are archived and saved for different periods of time, depending on 
 
 >[!TIP]
 >
->Log file locations in the scaled architecture depend on the node type. See [Log locations in the Scaled architecture](../architecture/split-tier-architecture.md#log-locations) topic.
+>Log file locations in the scaled architecture depend on the node type. See [Log locations in the Scaled architecture](../architecture/scaled-architecture.md#log-locations) topic.
 
 ## Related topics in our support knowledge base
 

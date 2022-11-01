@@ -100,6 +100,6 @@ The scan results also provide suggested remediation steps for each failed securi
 
 When you are ready to begin the site launch process, see the following:
 
--  [Launch checklist](site-launch-checklist.md)
+-  [Launch checklist](checklist.md)
 
 -  [Launch steps](steps.md)
