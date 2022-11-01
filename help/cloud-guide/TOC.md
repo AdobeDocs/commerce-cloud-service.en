@@ -42,11 +42,6 @@ product: magento
     + [Overview](development/overview.md)
     + [Authentication keys](development/authentication-keys.md)
     + [Clone and branch management](development/cli-branches.md)
-    + Import code {#import}
-        + [Existing code]
-        + Create a project
-        + Add existing code
-        + Migrate database and files
     + [Secure connections](development/secure-connections.md)
     + [PrivateLink service](development/privatelink-service.md)
     + [Protective block](development/protective-block.md)

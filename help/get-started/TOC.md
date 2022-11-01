@@ -9,4 +9,3 @@ type: Documentation
 
 - [Get Started with Commerce](overview.md)
 - [Onboarding](onboarding.md)
-- [Customize Commerce](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/cloud/overview.html)

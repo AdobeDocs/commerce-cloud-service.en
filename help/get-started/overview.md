@@ -11,8 +11,9 @@ Getting Started steps you through procedures to initialize your Commerce account
 
 This guide assumes that you have some working knowledge and understanding of the Commerce application powered by Magento. You can refer to the latest Commerce Developer and Commerce User guides:
 
-- [Commerce Developer Guides](https://devdocs.magento.com)
-- [Commerce User Guides](https://docs.magento.com/user-guide)
+- [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs) (Adobe Developer site)—Develop, customize, integrate, extend, and use advanced capabilities 
+
+- [Adobe Commerce Documentation](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League)—Plan, implement, operate, upgrade, and maintain your Commerce projects 
 
 >[!TIP]
 >
