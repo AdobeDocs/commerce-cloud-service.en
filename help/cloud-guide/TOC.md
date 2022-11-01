@@ -109,8 +109,7 @@ product: magento
     + [Multiple sites](store/multiple-sites.md)
     + [Site map and search engine robots](store/robots-sitemap.md)
     + [PayPal payment methods](store/paypal.md)
-    + [Store settings](store/store-settings.md)
-    + [Store settings example](store/store-settings-example.md)
+    + [Configuration management](store/store-settings.md)
 + Deployment {#deploy}
     + [Optimization](deploy/optimization.md)
     + [Deployment process](deploy/process.md)

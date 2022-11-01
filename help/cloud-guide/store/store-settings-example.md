@@ -1,6 +1,7 @@
 ---
 title: Example of managing system-specific settings
 description: See an example of how to manage and synchronize store configuration settings across all Adobe Commerce on cloud infrastructure environments.
+hidefromtoc: yes
 ---
 
 # Example of managing system-specific settings

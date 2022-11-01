@@ -1,15 +1,11 @@
 ---
-title: Configuration management for store settings
+title: Store configuration management
 description: Learn how to manage and synchronize store configuration settings across all Adobe Commerce on cloud infrastructure environments.
 ---
 
-# Configuration management for store settings
+# Store configuration management
 
-Configuration management provides a way to deploy consistent store settings across your environments with minimal downtime using Pipeline deployment. Adobe Commerce on cloud infrastructure project includes the build server, build and deploy scripts, and deployment environments designed with the [pipeline deployment strategy](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in mind. 
-
->[!NOTE]
->
->You must have [environment Admin privileges](../project/user-access.md) to complete configuration management tasks.
+The default configurations for your store are stored in a `config.xml` for the appropriate module. When you change settings in the Commerce Admin or the CLI `bin/magento config:set` command, the changes are reflected in the core database, specifically the `core_config_data` table. These settings overwrite the default configurations stored in the `config.xml` file.
 
 Store settings, which refer to the configurations in the Admin **Stores** > **Settings** > **Configuration** section, are stored in files based on the type of configuration:
 
@@ -18,15 +14,17 @@ Store settings, which refer to the configurations in the Admin **Stores** > **Se
 
 >[!NOTE]
 >
->Because Adobe Commerce on cloud infrastructure supports only the production and maintenance modes, the **Advanced** > **Developer** section is not accessible in the Admin. You can configure additional settings using [environment variables](../environment/configure-env-yaml.md).
+>Because Adobe Commerce on cloud infrastructure supports only the production and maintenance modes, the **Advanced** > **Developer** section is not accessible in the Admin. You must have [environment Admin privileges](../project/user-access.md) to complete configuration management tasks. You can configure additional settings using [environment variables](../environment/configure-env-yaml.md).
 
-## Consistent configuration
+Configuration management provides a way to deploy consistent store settings across your environments with minimal downtime using Pipeline deployment. Adobe Commerce on cloud infrastructure project includes the build server, build and deploy scripts, and deployment environments designed with the [pipeline deployment strategy](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in mind. 
 
-The default configurations for your store are stored in a `config.xml` for the appropriate module. When you update configurations using the Admin or the CLI `bin/magento config:set` command, the changes are reflected in the database.
+## Configuration dump
+
+There are two convenient ways to generate a `config.php` file that contains all the current store configurations. When working on a local workstations, you can use the Cloud CLI, and when working on the remote environment, use the ECE-Tools command.
 
 ### ECE-Tools dump
 
-Use the `ece-tools` command in the remote environment to generate a `config.php` file:
+You can use the following `ece-tools` command to generate a `config.php` file that contains all the current store configurations:
 
 ```bash
 ./vendor/bin/ece-tools config:dump
