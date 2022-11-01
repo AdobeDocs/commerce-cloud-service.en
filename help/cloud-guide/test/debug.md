@@ -9,34 +9,34 @@ description: Learn how to configure the Xdebug extension for debugging your Adob
 
 >[!NOTE]
 >
->You can configure Xdebug to run in the Cloud Docker environment for local debugging without changing your Adobe Commerce on cloud infrastructure project configuration. See [Configure Xdebug for Docker](https://devdocs.magento.com/cloud/docker/docker-development-debug.html).
+>You can configure [!DNL Xdebug] to run in the Cloud Docker environment for local debugging without changing your Adobe Commerce on cloud infrastructure project configuration. See [Configure Xdebug for Docker](https://devdocs.magento.com/cloud/docker/docker-development-debug.html).
 
-To enable Xdebug, you must configure a file in your Git repository, configure your IDE, and set up port forwarding. You can configure some settings in the `magento.app.yaml` file. After editing, you can push the Git changes across all Starter environments and Pro Integration environments to enable Xdebug. You do not need to do this for Pro Staging & Production environments as Xdebug is always available.
+To enable [!DNL Xdebug], you must configure a file in your Git repository, configure your IDE, and set up port forwarding. You can configure some settings in the `magento.app.yaml` file. After editing, you can push the Git changes across all Starter environments and Pro Integration environments to enable [!DNL Xdebug]. You do not need to do this for Pro Staging & Production environments as [!DNL Xdebug] is always available.
 
-Once configured, you can debug CLI commands, web requests, and code. Remember that all cloud infrastructure environments are read-only. Clone the code to your local development environment to perform debugging. For Pro Staging and Production environments, we include [additional instructions](#debug-for-pro-staging-and-production) for Xdebug.
+Once configured, you can debug CLI commands, web requests, and code. Remember that all cloud infrastructure environments are read-only. Clone the code to your local development environment to perform debugging. For Pro Staging and Production environments, we include [additional instructions](#debug-for-pro-staging-and-production) for [!DNL Xdebug].
 
 ## Requirements
 
-To run and use Xdebug, you need the SSH URL for the environment. You can locate the information through the [Project Web Interface](https://devdocs.magento.com/cloud/project/projects.html) or your Cloud Onboarding UI.
+To run and use [!DNL Xdebug], you need the SSH URL for the environment. You can locate the information through the [Project Web Interface](../project/overview.md) or your Cloud Onboarding UI.
 
 ## Configure Xdebug
 
-To configure Xdebug, you need to do the following:
+To configure [!DNL Xdebug], you need to do the following:
 
 -  Work in a branch to push file updates
--  Enable Xdebug for environments
+-  Enable [!DNL Xdebug] for environments
 -  Configure your IDE
 -  Set up port forwarding
 
 ### Get started with a branch
 
-To add Xdebug, Adobe recommends working in [a development branch](../dev-tools/cloud-cli.md#create-an-environment-branch).
+To add [!DNL Xdebug], Adobe recommends working in [a development branch](../dev-tools/cloud-cli.md#create-an-environment-branch).
 
 ### Enable Xdebug in your environment
 
-You can enable Xdebug directly to all Starter environments and Pro Integration environments. This configuration step is not required for Pro Production & Staging environments. See [Debug for Pro Staging and Production](#debug-for-pro-staging-and-production).
+You can enable [!DNL Xdebug] directly to all Starter environments and Pro Integration environments. This configuration step is not required for Pro Production & Staging environments. See [Debug for Pro Staging and Production](#debug-for-pro-staging-and-production).
 
-To enable Xdebug for your project, add `xdebug` to the `runtime:extensions` section of the `.magento.app.yaml` file.
+To enable [!DNL Xdebug] for your project, add `xdebug` to the `runtime:extensions` section of the `.magento.app.yaml` file.
 
 **To enable Xdebug**:
 
@@ -71,11 +71,11 @@ To enable Xdebug for your project, add `xdebug` to the `runtime:extensions` sect
    git push origin <environment-ID>
    ```
 
-When deployed to Starter environments and Pro Integration environments, Xdebug is now available. Continue configuring your IDE. For PhpStorm, see [Configure PhpStorm](#configure-phpstorm).
+When deployed to Starter environments and Pro Integration environments, [!DNL Xdebug] is now available. Continue configuring your IDE. For PhpStorm, see [Configure PhpStorm](#configure-phpstorm).
 
 ### Configure PhpStorm
 
-The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to properly work with Xdebug.
+The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to properly work with [!DNL Xdebug].
 
 **To configure PhpStorm to work with Xdebug**:
 
@@ -105,13 +105,13 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
       -  Production: `/app/<project_code>/`
       -  Staging:  `/app/<project_code>_stg/`
 
-1. Change the Xdebug port to 9000 in the **Languages & Frameworks** > **PHP** > **Debug** > **Xdebug** > **Debug Port** panel.
+1. Change the [!DNL Xdebug] port to 9000 in the **Languages & Frameworks** > **PHP** > **Debug** > **Xdebug** > **Debug Port** panel.
 
 1. Click **Apply**.
 
 ### Set up port forwarding
 
-You must map the XDEBUG connection from the server to your local system. To do any type of debugging, you must forward port 9000 from your Adobe Commerce on cloud infrastructure server to your local machine. See one of the following sections:
+You must map the `XDEBUG` connection from the server to your local system. To do any type of debugging, you must forward port 9000 from your Adobe Commerce on cloud infrastructure server to your local machine. See one of the following sections:
 
 -  [Port forwarding on Mac or UNIX](#port-forwarding-on-mac-or-unix)
 -  [Port forwarding on Windows](#port-forwarding-on-windows)
@@ -221,7 +221,7 @@ For Starter environments and Pro Integration environments, you can use the follo
 magento-cloud environment:ssh --pipe -e <environment-ID>
 ```
 
-To use Xdebug, SSH to the environment as follows:
+To use [!DNL Xdebug], SSH to the environment as follows:
 
 ```bash
 ssh -R <xdebug listen port>:<host>:<xdebug listen port> <SSH-URL>
@@ -237,13 +237,13 @@ ssh -R 9000:localhost:9000 pwga8A0bhuk7o-mybranch@ssh.us.magentosite.cloud
 
 >[!NOTE]
 >
->On Pro Staging & Production environments, Xdebug is always available as these environments have a special setup for Xdebug. All normal web requests are routed to a dedicated PHP process that does not have Xdebug. Therefore, these requests are processed normally and are not subject to the performance degradation when Xdebug is loaded. When a web request is sent that has the Xdebug key, it is routed to a separate PHP process that has Xdebug loaded.
+>On Pro Staging & Production environments, [!DNL Xdebug] is always available as these environments have a special setup for [!DNL Xdebug]. All normal web requests are routed to a dedicated PHP process that does not have [!DNL Xdebug]. Therefore, these requests are processed normally and are not subject to the performance degradation when [!DNL Xdebug] is loaded. When a web request is sent that has the [!DNL Xdebug] key, it is routed to a separate PHP process that has [!DNL Xdebug] loaded.
 
-To use Xdebug specifically on Pro plan Staging and Production environment, you create a separate SSH tunnel and web session only you have access to. This usage differs from typical access, only providing access to you and not to all users.
+To use [!DNL Xdebug] specifically on Pro plan Staging and Production environment, you create a separate SSH tunnel and web session only you have access to. This usage differs from typical access, only providing access to you and not to all users.
 
 You need the following:
 
--  SSH commands for accessing the environments. You can get this information, through the [Project Web Interface](https://devdocs.magento.com/cloud/project/projects.html) or your cloud Onboarding UI.
+-  SSH commands for accessing the environments. You can get this information, through the [Project Web Interface](../project/overview.md) or your cloud Onboarding UI.
 -  The `xdebug_key` value we set when configuring the Staging and Pro environments.
 
    The `xdebug_key` can be found by using SSH to log in to the primary node and executing:
@@ -276,9 +276,9 @@ You need the following:
    ?XDEBUG_SESSION_START=KEY
    ```
 
-   This sets the cookie that sends browser requests to trigger Xdebug.
+   This sets the cookie that sends browser requests to trigger [!DNL Xdebug].
 
-1. Complete your debugging with Xdebug.
+1. Complete your debugging with [!DNL Xdebug].
 
 1. When you are ready to end the session, use the following command to remove the cookie and end debugging through the browser where `KEY` is value for `xdebug_key`.
 
@@ -319,7 +319,7 @@ To debug CLI commands:
    php -d xdebug.profiler_enable=On -d xdebug.max_nesting_level=9999 bin/magento cache:clean
    ```
 
-   On Pro Staging and Production environments, you must specify the path to the Xdebug php configuration file when debugging CLI commands, for example:
+   On Pro Staging and Production environments, you must specify the path to the [!DNL Xdebug] PHP configuration file when debugging CLI commands, for example:
 
    ```bash
    php -c /etc/platform/USERNAME/php.xdebug.ini bin/magento cache:clean
@@ -333,11 +333,11 @@ The following steps help you debug web requests.
 
 1. Right click, select the options menu, and set the IDE key to **PHPSTORM**.
 
-1. Install the Xdebug client on the browser. Configure and enable it.
+1. Install the [!DNL Xdebug] client on the browser. Configure and enable it.
 
 ### Example: Chrome setup
 
-This section discusses how to use Xdebug in Chrome using the Xdebug Helper extension. For information about Xdebug tools for other browsers, consult the browser documentation.
+This section discusses how to use [!DNL Xdebug] in Chrome using the [!DNL Xdebug] Helper extension. For information about [!DNL Xdebug] tools for other browsers, consult the browser documentation.
 
 **To use Xdebug Helper with Chrome**:
 

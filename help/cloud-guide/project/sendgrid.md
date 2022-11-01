@@ -38,7 +38,7 @@ For SendGrid to send transactional emails on your behalf, you must configure you
 
 **To enable domain authentication**:
 
-1. Open a [support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) and request to enable the DKIM on a specific domain.
+1. Open a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) and request to enable the DKIM on a specific domain.
 1. Update your DNS configuration with the `TXT` and `CNAME` records provided to you in the support ticket.
 
 **Example `TXT` record with account ID**:
@@ -104,7 +104,7 @@ The 12,000 transactional email threshold refers to the number of transactional e
 
 1. Check the `/var/log/mail.log` for `authentication failed : Maxium credits exceeded` entries.
 
-If you see any `authentication failed` log entries, you can [submit a support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to request a credit allotment increase.
+If you see any `authentication failed` log entries, you can [submit a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a credit allotment increase.
 
 ## Email sending reputation
 

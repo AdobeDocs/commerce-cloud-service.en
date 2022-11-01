@@ -17,14 +17,14 @@ A _snapshot_ is a complete backup of an environment that includes all persistent
 
 >[!WARNING]
 >
->If you want to rollback to previous code or remove added extensions in an environment, restoring a snapshot is not the recommended method. See [Rollbacks to remove code](#rollbacks-to-remove-code). If you must restore an unstable environment that does not have a snapshot, see [Restore an environment](https://devdocs.magento.com/cloud/env/restore-environment.html).
+>If you want to rollback to previous code or remove added extensions in an environment, restoring a snapshot is not the recommended method. See [Rollbacks to remove code](#rollbacks-to-remove-code). If you must restore an unstable environment that does not have a snapshot, see [Restore an environment](../development/restore-environment.md).
 
 You have up to **seven days** to _restore_ a snapshot.
 
 Adobe provides two methods for creating and managing snapshots:
 
 -  Project Web Interface
--  Magento Cloud CLI
+-  Cloud CLI
 
 ## Create a snapshot
 
@@ -83,7 +83,7 @@ Adobe provides two methods for creating and managing snapshots:
 1. Click **restore** next to the snapshot.
 1. Review the Snapshot restore date and click **Restore**.
 
-**To restore a snapshot using the Magento Cloud CLI**:
+**To restore a snapshot using the Cloud CLI**:
 
 1. Open a terminal and navigate to your project.
 1. Checkout the environment branch to restore.
@@ -173,4 +173,4 @@ Adobe recommends creating a snapshot of the environment and a backup of the data
 
 If you must restore a snapshot specifically to remove new code and added extensions, the process can be complicated depending on the number of changes and when you roll back. Some rollbacks might require database changes.
 
-Specifically for code, you should investigate reverting code changes from your branch before redeploying. If not, every deploy pushes the master branch (code and extensions) to the target environment again. See the [Deployment Process](https://devdocs.magento.com/cloud/reference/discover-deploy.html).
+Specifically for code, you should investigate reverting code changes from your branch before redeploying. If not, every deploy pushes the master branch (code and extensions) to the target environment again. See the [Deployment Process](../deploy/process.md).

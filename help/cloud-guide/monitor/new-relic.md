@@ -29,7 +29,7 @@ Pro projects include the [New Relic Infrastructure (NRI)][nri] service, which au
 
 >[!NOTE]
 >
->For Pro accounts, if New Relic APM is not installed on the Staging and Production environments or New Relic Infrastructure is not available in the Production environment, submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to request installation.
+>For Pro accounts, if New Relic APM is not installed on the Staging and Production environments or New Relic Infrastructure is not available in the Production environment, submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request installation.
 
 ## New Relic Logs
 
@@ -196,7 +196,7 @@ We recommend reviewing tracked data:
 
 All collected data details the time spent on actions that transmit data, queries, or _Redis_ data. If queries cause issues, New Relic provides information to track and respond to those issues.
 
-For details on using this data to troubleshoot application performance issues, see [Troubleshoot performance using New Relic](https://support.magento.com/hc/en-us/articles/360042149832#low_user_satisfaction) in the _Adobe Commerce Help Center_.
+For details on using this data to troubleshoot application performance issues, see [Troubleshoot performance using New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) in the _Adobe Commerce Help Center_.
 
 >[!NOTE]
 >
@@ -346,7 +346,7 @@ Instead of modifying an existing alert, you can create an alert policy. Then, co
 [Adobe Partnership Owner Account]: https://account.newrelic.com/accounts/1311131/users
 [Alerts concepts and workflow]: https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/learn-alerts/alerts-concepts-workflow/
 [Apdex score]: https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/
-[Managed Alerts for Adobe Commerce]: https://support.magento.com/hc/en-us/articles/360045806832
+[Managed Alerts for Adobe Commerce]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html
 [New Relic APM]: https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/
 [New Relic APM Overview]: https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/apm-summary-page-view-transaction-apdex-usage-data/
 [nri]: https://newrelic.com/platform/infrastructure

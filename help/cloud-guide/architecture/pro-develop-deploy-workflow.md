@@ -39,7 +39,7 @@ With a developed code branch and the corresponding configuration files, your cod
 
 ## Deployment workflow
 
-Every time you push code from your local workstation to the remote environment or merge code to a base environment branch, the build and deploy scripts generate new code and provision configured services to the remote environment.
+Every time you push code from your local workstation to the remote environment or merge code to an environment branch, the build and deploy scripts generate new code and provision the configured services to the remote environment.
 
 Build script actions:
 
@@ -75,14 +75,14 @@ Combine all verified code changes by merging your Active development branch into
 
 Staging is a pre-production environment that provides all services and settings as close to the Production environment as possible. Always push your code changes from the Integration environment to the Staging environment so that you can perform thorough testing with all services. The first time you use the Staging environment, you must configure services, such as [Fastly CDN](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) and [New Relic](../monitor/new-relic.md). Also, we recommend configuring payment gateways, shipping, notifications, and other vital services with sandbox or testing credentials.
 
-It is best to thoroughly test every service, verify your performance testing tools, and perform UAT testing as an administrator and as a customer, until you feel that your store is ready for the Production environment. See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html).
+It is best to thoroughly test every service, verify your performance testing tools, and perform UAT testing as an administrator and as a customer, until you feel that your store is ready for the Production environment. See [Deploy your store](../deploy/staging-production.md).
 
 ### Merge to Production
 
 After thorough testing in the Staging environment, merge to the Production environment and thoroughly test using live credentials. The moment you launch your production site, customers must be able to complete purchases and administrators must be able to manage the live store. We provide a detailed, clear walk-through for deploying your store and going live:
 
--  See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html)
--  See [Site launch](../launch/index.md)
+-  See [Deploy your store](../deploy/staging-production.md)
+-  See [Site launch](../launch/overview.md)
 
 ### Merge to Global Master
 

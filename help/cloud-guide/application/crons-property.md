@@ -5,11 +5,11 @@ description: See examples on how to configure the `crons` property in the Commer
 
 # Crons property
 
-Adobe Commerce uses cron jobs for numerous features to schedule activities. We recommend you run `cron` as the [file system owner](https://devdocs.magento.com/cloud/before/before-workspace-file-sys-owner.html). Do _not_ run cron as `root` or as the web server user.
+Adobe Commerce uses cron jobs for numerous features to schedule activities. We recommend you run `cron` as the [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html). Do _not_ run cron as `root` or as the web server user.
 
 The `crons` property describes processes that are triggered on a schedule and uses the following:
 
--  `spec`—The cron specification. For Starter environments and Pro Integration environments, the minimum interval is once per five minutes and once per one minute in Pro Staging and Production environments. You must complete [additional configurations](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#add-cron) for cron configuration in those environments.
+-  `spec`—The cron specification. For Starter environments and Pro Integration environments, the minimum interval is once per five minutes and once per one minute in Pro Staging and Production environments. You must complete [additional configurations](../application/crons-property.md#set-up-cron-jobs) for cron configuration in those environments.
 -  `cmd`—The command to execute.
 
 A cron job is well suited for the following tasks:
@@ -60,7 +60,7 @@ Although you can use crontab to review configuration on Pro plan projects, Adobe
 
    >[!NOTE]
    >
-   >If the `crontab -l` command returns a `Command not found` error, you must submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to enable the auto-crons self-service configuration option on your Adobe Commerce on cloud infrastructure project.
+   >If the `crontab -l` command returns a `Command not found` error, you must submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable the auto-crons self-service configuration option on your Adobe Commerce on cloud infrastructure project.
 
 The following example shows the crontab output for an environment that has only the default `crons` configuration:
 
@@ -130,7 +130,7 @@ On the Adobe Commerce on cloud infrastructure platform, you configure custom cro
 >
 >The default cron interval for all environments is one minute. The default cron interval in all other regions is five minutes for Pro Integration environments and one minute for Pro Staging and Production environments. You cannot configure more frequent intervals than the default minimums.
 
-On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must be enabled on your Adobe Commerce on cloud infrastructure project before you can add custom cron jobs to Staging and Production environments using `.magento.app.yaml`. If this feature is not enabled, submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to enable auto-crons.
+On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must be enabled on your Adobe Commerce on cloud infrastructure project before you can add custom cron jobs to Staging and Production environments using `.magento.app.yaml`. If this feature is not enabled, submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable auto-crons.
 
 **To add custom cron jobs**:
 
@@ -198,12 +198,12 @@ You can manually disable cron jobs before you complete maintenance tasks like re
 
 ## Troubleshooting cron jobs
 
-Adobe has updated the Adobe Commerce on cloud infrastructure package to optimize cron processing on the Adobe Commerce on cloud infrastructure platform and to fix cron-related issues. If you encounter problems with cron processing, make sure that your project is using the most current version of the `ece-tools` package. See [Upgrades and patches](https://devdocs.magento.com/cloud/project/project-upgrade-parent.html).
+Adobe has updated the Adobe Commerce on cloud infrastructure package to optimize cron processing on the Adobe Commerce on cloud infrastructure platform and to fix cron-related issues. If you encounter problems with cron processing, make sure that your project is using the most current version of the `ece-tools` package. See [Updat ECE-Tools](../dev-tools/update-package.md).
 
 You can review cron processing information in the application-level log files for each environment. See [Application logs](../monitor/log-locations.md#application-logs).
 
 See the following Adobe Commerce Support articles for help with troubleshooting cron-related problems:
 
--  [Cron tasks lock tasks from other groups](https://support.magento.com/hc/en-us/articles/360029219812-Cron-tasks-lock-tasks-from-other-groups)
+-  [Cron tasks lock tasks from other groups](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html)
 
--  [Reset stuck cron jobs manually on the cloud](https://support.magento.com/hc/en-us/articles/360000097713-Reset-stuck-Magento-cron-jobs-manually-on-Cloud)
+-  [Reset stuck cron jobs manually on the cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html)

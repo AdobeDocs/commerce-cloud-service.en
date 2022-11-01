@@ -9,7 +9,7 @@ When writing to a database, it may help to run profiling to identify the impact 
 
 **To enable database query profiling**:
 
-1. [Log in to the database](https://devdocs.magento.com/cloud/env/environments-start.html#interact-with-remote-environments).
+1. [Log in to the database](../services/mysql.md#connect-to-the-database).
 
 1. Enable profiling.
 

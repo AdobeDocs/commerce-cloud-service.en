@@ -1,13 +1,13 @@
 ---
 title: Restore an environment
-description: Learn how to uninstall the Adobe Commerce application from a cloud infrastrucutre project and restore an environment to a stable state.
+description: Learn how to uninstall the Adobe Commerce application from a cloud infrastructure project and restore an environment to a stable state.
 ---
 
 # Restore an environment
 
 If you encounter issues in the Integration environment and do not have a [valid snapshot](../storage/snapshots.md), try restoring your environment using one of the following methods:
 
-- Unistall Commerce (SSH)
+- Uninstall the Commerce application
 - Force a redeployment
 - Manually reset the database
 
@@ -90,7 +90,7 @@ To reset your branch:
 
 1. Choose a commit hash that represents the last known stable state of your code.
 
-   To reset your branch to its original initialized state, find the very first commit that created your branch.
+   To reset your branch to its original initialized state, find the first commit that created your branch.
 
    ```terminal
    commit 398c8fd3a46534fc88d6de250c5d081d5be3c852
@@ -106,13 +106,21 @@ To reset your branch:
    git reset --h <commit-hash>
    ```
 
-1. Push your changes to trigger a redeploy, which reinstalls Adobe Commerce.
+1. Push your changes to trigger a redeployment, which reinstalls Adobe Commerce.
 
    ```bash
    git push --force <origin> <branch>
    ```
 
-## Uninstall failed
+## Force a redeployment
+
+If you have attempted to uninstall Adobe Commerce and your deployment continues to fail, you can try to manually force a redeployment.
+
+```bash
+git commit --allow-empty -m "<message>" && git push <origin> <branch>
+```
+
+## Reset the database
 
 If you have attempted to uninstall Adobe Commerce and the command failed or could not complete, you might need to manually reset the database.
 
@@ -151,16 +159,8 @@ If you have attempted to uninstall Adobe Commerce and the command failed or coul
    -  `env.php`
    -  `env.php.bak`
 
-1. Log out and trigger a redeploy.
+1. Log out and trigger a redeployment.
 
    ```bash
    magento-cloud environment:redeploy
    ```
-
-## Force a redeployment
-
-If you have attempted to uninstall Adobe Commerce and your deployment continues to fail, you can try to manually force a redeployment.
-
-```bash
-git commit --allow-empty -m "<message>" && git push <origin> <branch>
-```

@@ -25,13 +25,13 @@ Once you add, commit, and push the updated code, the deployment process automati
 
 ### Cloud metapackage
 
-Adobe Commerce on cloud infrastructure uses a metapackage to specify version constraints for required packages using the following constraint syntax:
+Adobe Commerce on cloud infrastructure uses a metapackage that requires `magento/product-enterprise-edition`. To get the latest updates for a specific version of Commerce, use the following constraint syntax:
 
 ```text
 >=current_version <next_version
 ```
 
-At any given version, this package requires the same version of `magento/product-enterprise-edition`. For example, to use Adobe Commerce version 2.4.5, the `composer.json` must specify a requirement for the following:
+For example, to use the latest Adobe Commerce version 2.4.5, set `2.4.5` as the "current" version and `2.4.6` as the "next" version in the `composer.json` file:
 
 ```text
 "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6"
@@ -58,7 +58,7 @@ Before setting up a workspace, gather the following credentials and accounts:
 
 -  **Adobe Commerce Encryption Key**
 
-    When importing an existing system only, capture the encryption key used to protect your access and data for the database. For details on this key, see [Resolve issues with encryption key](https://support.magento.com/hc/en-us/articles/360033978652)
+    When importing an existing system only, capture the encryption key used to protect your access and data for the database. For details on this key, see [Resolve issues with encryption key](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html)
 
 ## Launch a Docker environment
 
@@ -66,3 +66,7 @@ You can use the Docker environment to emulate the Adobe Commerce on cloud infras
 
 -  [Docker architecture and common commands](https://devdocs.magento.com/cloud/docker/docker-development.html)
 -  [Launch Docker development environment](https://devdocs.magento.com/cloud/docker/docker-config.html)
+
+>[!TIP]
+>
+>For information about using Git-based hosting services with Adobe Commerce on cloud infrastructure, see [Integrations](../integrations/overview.md).

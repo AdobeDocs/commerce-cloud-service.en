@@ -23,7 +23,7 @@ The following instructions use a combination of `magento-cloud` CLI commands and
 
 **To clone a project master environment**:
 
-1. Log in to your local workstation with a [file system owner](https://docs.magento.com/cloud/before/before-workspace-file-sys-owner.html) account.
+1. Log in to your local workstation with a [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) account.
 
 1. Change to the web server or virtual host _docroot_ directory.
 
@@ -71,19 +71,25 @@ The following instructions use a combination of `magento-cloud` CLI commands and
    git pull origin <environment-ID>
    ```
 
+>[!TIP]
+>
+>For information about using Git-based hosting services with Adobe Commerce on cloud infrastructure, see [Integrations](../integrations/overview.md).
+
 ## Create a branch for development
 
 After cloning your project and updating the Adobe Commerce administrator account configuration, you can branch for development. As stated earlier, you must create an environment using the `magento-cloud environment:branch <branch-name>` command or the Project Web Interface for the environment to become _active_.
 
 -  For [Starter](../architecture/starter-develop-deploy-workflow.md#clone-and-branch), consider creating a branch for `staging`, then create a development branch based on the `staging` branch.
--  For [Pro](../architecture/pro-develop-deploy-workflow.md#development-workflow), create development branches based on the Integration environment.
+-  For [Pro](../architecture/pro-develop-deploy-workflow.md#development-workflow), create development branches based on the `Integration` branch.
 
-**To branch from `master` branch**:
+**To create a development branch**:
 
-1. Create a new environment from the `master` branch.
+1. On your local workstation, change to your project directory.
+
+1. Create an environment based on the branch recommended for your project workflow.
 
    ```bash
-   magento-cloud branch <new-environment-name> master
+   magento-cloud branch <new-environment-name> integration
    ```
 
 1. Update dependencies.
@@ -91,6 +97,8 @@ After cloning your project and updating the Adobe Commerce administrator account
    ```bash
    composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
    ```
+
+1. [_optional_] Create a [snapshot](../storage/snapshots.md) of the environment.
 
 ### Merge a branch
 

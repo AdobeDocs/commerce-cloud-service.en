@@ -1,11 +1,13 @@
 ---
 title: Variables property
-description: Use the variables property to customize the build and deploy the application.
+description: Use the variables property to customize store configuration options for the Commerce application.
 ---
 
 # Variables property
 
-The following environment variables are included in the `.magento.app.yaml` file.
+You can use application-based environment variables to customize store configurations. These variables use a specific syntax. See [Override configuration settings](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html) in the _Configuration guide_.
+
+The following environment variables included in the `.magento.app.yaml` file are required for specific versions of the Commerce application.
 
 Required for Adobe Commerce 2.2.x to 2.3.x:
 

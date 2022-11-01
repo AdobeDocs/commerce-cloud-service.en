@@ -1,9 +1,9 @@
 ---
 title: Upgrade project to use Ece-tools
-description: Learn how to upgrade your Adobe Commerce on cloud infrastructure project to use the Ece-tools package and take advantage of the latest fixes and features.
+description: Learn how to upgrade your Adobe Commerce on cloud infrastructure project to use the ECE-Tools package and take advantage of the latest fixes and features.
 ---
 
-# Upgrade project to use Ece-tools package
+# Upgrade project to use ECE-Tools package
 
 Adobe deprecated the `magento/magento-cloud-configuration` and `magento/ece-patches` packages in favor of the `ece-tools` package, which simplifies many cloud processes. If you use an older Adobe Commerce on cloud infrastructure project that does _not_ contain the `ece-tools` package, then you must perform a one-time, manual _upgrade_ process to your project.
 
@@ -37,11 +37,11 @@ If you want to install Adobe Commerce `2.3.5-p2`, set `current_version` to `2.3.
 
 You can always find the latest metapackage constraint in the [`magento-cloud` template](https://github.com/magento/magento-cloud/blob/master/composer.json).
 
-The following example places a constraint for the Adobe Commerce on cloud infrastructure metapackage to any version greater than or equal to the current version 2.3.4 and lower than next version 2.3.5:
+The following example places a constraint for the Adobe Commerce on cloud infrastructure metapackage to any version greater than or equal to the current version 2.4.5 and lower than next version 2.4.6:
 
 ```json
 "require": {
-    "magento/magento-cloud-metapackage": ">=2.3.4 <2.3.5"
+    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6"
 },
 ```
 
@@ -54,7 +54,7 @@ To upgrade your project to use the `ece-tools` package, you must update the meta
 1. Update the `magento/magento-cloud-metapackage` version constraint in the `composer.json` file.
 
     ```bash
-    composer require "magento/magento-cloud-metapackage":">=2.3.4 <2.3.5" --no-update
+    composer require "magento/magento-cloud-metapackage":">=2.4.5 <2.4.6" --no-update
     ```
 
 1. Update the metapackage.

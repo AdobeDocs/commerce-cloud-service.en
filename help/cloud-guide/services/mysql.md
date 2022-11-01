@@ -72,7 +72,7 @@ The `properties` in the above example modifies the default `optimizer` settings 
 
 Optionally, you can set up multiple users with different permissions for accessing the `main` database.
 
-By default, there is one endpoint named `mysql` that has administrator access to the database. To set up multiple database users, you must define multiple endpoints in the `services.yaml` file and declare the relationships in the `.magento.app.yaml` file. For Pro Staging and Production environments, [Submit a support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to request the additional user.
+By default, there is one endpoint named `mysql` that has administrator access to the database. To set up multiple database users, you must define multiple endpoints in the `services.yaml` file and declare the relationships in the `.magento.app.yaml` file. For Pro Staging and Production environments, [Submit a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request the additional user.
 
 Use a nested array to define the endpoints for specific user access. Each endpoint can designate access to one or more schemas (databases) and different levels of permission on each.
 
@@ -136,7 +136,7 @@ Accessing the MariaDB database directly requires you to use a SSH to log in to t
    magento-cloud ssh
    ```
 
-1. Retrieve the MySQL login credentials from the `database` and `type` properties in the [$MAGENTO_CLOUD_RELATIONSHIPS](https://devdocs.magento.com/cloud/project/magento-app-properties.html#relationships) variable.
+1. Retrieve the MySQL login credentials from the `database` and `type` properties in the [$MAGENTO_CLOUD_RELATIONSHIPS](../application/properties.md#relationships) variable.
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
@@ -192,13 +192,13 @@ Accessing the MariaDB database directly requires you to use a SSH to log in to t
 
 ## Connect to secondary database
 
-Sometimes, you have to connect to the secondary database to improve database performance or resolve database locking issues. If this configuration is required, use `"port" : 3304` to establish the connection. See the [Adobe Commerce on cloud infrastructure best practice](https://support.magento.com/hc/en-us/articles/360049045351) article in the _Adobe Commerce Help Center_.
+Sometimes, you have to connect to the secondary database to improve database performance or resolve database locking issues. If this configuration is required, use `"port" : 3304` to establish the connection. See the [Adobe Commerce on cloud infrastructure best practice](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/magento-commerce-cloud-best-practice-for-slave-connection.html) article in the _Adobe Commerce Help Center_.
 
 ## Troubleshooting
 
 See the following Adobe Commerce Support articles for help with troubleshooting MySQL problems:
 
--  [Checking slow queries and processes MySQL](https://support.magento.com/hc/en-us/articles/360030903091-Checking-slow-queries-and-processes-MySQL-)
--  [Create database dump on Cloud](https://support.magento.com/hc/en-us/articles/360003254334-Create-database-dump-on-Cloud)
--  [Data Migration Tool troubleshooting](https://support.magento.com/hc/en-us/articles/360033020451-Data-Migration-Tool-troubleshooting)
--  [Adobe Commerce upgrade: compact to dynamic tables 2.2.x, 2.3.x to 2.4.x](https://support.magento.com/hc/en-us/articles/360048389631-Magento-upgrade-compact-to-dynamic-tables-2-2-x-2-3-x-to-2-4-x-)
+-  [Checking slow queries and processes MySQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html)
+-  [Create database dump on Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html)
+-  [Data Migration Tool troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+-  [Adobe Commerce upgrade: compact to dynamic tables 2.2.x, 2.3.x to 2.4.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/magento-upgrade-compact-to-dynamic-tables-2.2.x-2.3.x-2.4.x.html)

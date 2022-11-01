@@ -32,7 +32,7 @@ OpenSearch enables you to take data from any source, any format, and search and 
        disk: 1024
    ```
 
-   For Pro projects, you must submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to change the OpenSearch version in the Staging and Production environments.
+   For Pro projects, you must submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the OpenSearch version in the Staging and Production environments.
 
 1. Set the `relationships` property in the `.magento.app.yaml` file.
 

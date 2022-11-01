@@ -29,7 +29,7 @@ The development workflow uses the following process:
 -  [Generate configuration](#generate-configuration-management-files) management files
 -  [Push code](#push-code-and-test) and configuration to build and deploy to the Staging and Production environments
 
-![Develop and deploy workflow](../../assets/starter-workflow.png)
+![Develop and deploy workflow](../../assets/starter/workflow.png)
 
 You also have a few optional steps to help develop and test your code and your store data:
 
@@ -68,7 +68,7 @@ The format of the Cloud CLI branch command is:
 magento-cloud environment:branch <environment-name> <parent-environment-ID>
 ```
 
-![Branch from Master](../../assets/starter-branching.png)
+![Branch from Master](../../assets/starter/branching.png)
 
 ### Develop code
 
@@ -89,22 +89,22 @@ And so on, until you have your store fully built, configured, and ready to launc
 >
 >Do not complete any configurations in your local workstation yet.
 
-![Push code from local](../../assets/starter-push-code.png)
+![Push code from local](../../assets/starter/push-code.png)
 
 ### Configure store
 
 When you are ready to configure your store, push all your code to the Integration environment.
-Configure your store settings from the Admin panel for the Integration environment, not in your local environment. You can find the URL by clicking **Access site** in the Project Web Interface
+Configure your store settings from the Admin for the Integration environment, not in your local environment. You can find the URL by clicking **Access site** in the Project Web Interface
 
 For the best information on configurations, review the documentation for Adobe Commerce and the installed extensions. Here are some links and ideas to help you get started:
 
--  [Best practices for store configuration](https://devdocs.magento.com/cloud/configure/configure-best-practices.html) for specific best practices in the cloud
+-  [Best practices for store configuration](../store/best-practices.md) for specific best practices in the cloud
 -  [Basic configuration](https://docs.magento.com/user-guide/configuration/configuration-basic.html) for store admin access, name, languages, currencies, branding, sites, store views and more
 -  [Theme](https://docs.magento.com/user-guide/design/design-theme.html) for your look and feel of the site and stores including CSS and layouts
 -  [System configuration](https://docs.magento.com/user-guide/system/system.html) for roles, tools, notifications, and your encryption key for your database
 -  Extension settings using their documentation
 
-Beyond just store settings, you can further configure multiple sites and stores, configured services, and more. See [Configure your store](https://devdocs.magento.com/cloud/configure/configuration-overview.html).
+Beyond just store settings, you can further configure multiple sites and stores, configured services, and more. See [Configure your store](../store/overview.md).
 
 Now you need to get these settings into your code. We have a helpful command to do this, keep reading.
 
@@ -112,7 +112,7 @@ Now you need to get these settings into your code. We have a helpful command to 
 
 If you are familiar with Adobe Commerce, you may be concerned about how to get your configuration settings from your database in development to the Staging and Production environments. Previously, you had to copy all your configuration settings down on paper or to a file, and then manually apply the settings to other environments. Or you may have dumped your database and pushed that data to another environment.
 
-Adobe Commerce on cloud infrastructure provides a set of two [Configuration Management](https://devdocs.magento.com/cloud/live/sens-data-over.html) commands that export configuration settings from your environment into a file. These commands are only available for **Adobe Commerce on cloud infrastructure 2.2 and later**.
+Adobe Commerce on cloud infrastructure provides a set of two [Configuration Management](../store/store-settings.md) commands that export configuration settings from your environment into a file. These commands are only available for **Adobe Commerce on cloud infrastructure 2.2 and later**.
 
 -  `php .vendor/bin/ece-tools config:dump`: Recommended. Exports only the configuration settings you have entered or modified from defaults into a configuration file.
 -  `php bin/magento app:config:dump`: Exports every configuration setting, including modified and default, into a configuration file.
@@ -131,9 +131,9 @@ You generate the file in the Integration environment where you configured Adobe 
 
 If you are using Adobe Commerce version 2.2 or later, the configuration management commands provide an additional feature to protect sensitive data, like sandbox credentials for a PayPal module. During the export process, any values that contain sensitive data are exported to separate configuration file—`env.php` in the `app/etc/` directory. This file remains in your local environment and does not get copied when you push your code to another branch. You can also create environment variables with CLI commands in all Adobe Commerce on cloud infrastructure versions.
 
-![Environment variables generate](../../assets/starter-env-variables.png)
+![Environment variables generate](../../assets/starter/env-variables.png)
 
-For more information, see [Configuration Management](https://devdocs.magento.com/cloud/live/sens-data-over.html).
+See [Configuration Management](../store/store-settings.md).
 
 ### Push code and test
 
@@ -153,7 +153,7 @@ We recommend installing sample data in your local and Integration environments. 
 
 For instructions, see [Install optional sample data](../test/sample-data.md).
 
-![Install optional sample data](../../assets/starter-sample-data.png)
+![Install optional sample data](../../assets/starter/sample-data.png)
 
 ### Optional: Pull production data
 
@@ -163,7 +163,7 @@ As you develop features, add extensions, and design themes, having real data to 
 
 {{cloud-data-collection}}
 
-![Pull and sanitize production data](../../assets/starter-data-code-process.png)
+![Pull and sanitize production data](../../assets/starter/data-code-process.png)
 
 >[!NOTE]
 >
@@ -213,19 +213,19 @@ Always push your code in iterations to the Staging environment for full testing.
 
 Staging is a pre-production environment, providing all services and settings as close to Production as possible. Thoroughly test every service, verify your performance testing tools, perform UAT testing as an administrator and customers, until you feel your store is ready for Production.
 
-See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html).
+See [Deploy your store](../deploy/staging-production.md).
 
 ### Push to Production
 
 When you push to the `master` branch, you are pushing to the Production environment. Complete configuration and testing activities in the Production environment like you did in the Staging environment with one important difference. In the Production environment, use live credentials for configuration and testing. The moment you launch your site, customers must be able to complete purchases and administrators should be able to manage your live store.
 
-See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html).
+See [Deploy your store](../deploy/staging-production.md).
 
 ### Site launch
 
 We provide a clear walk-through for going live and launching, which requires more steps than pressing a button. After you complete these steps, your store can serve up products in your customized theme for sale immediately.
 
-See [Site launch](../launch/index.md).
+See [Site launch](../launch/overview.md).
 
 ## Continuous integration
 
@@ -240,5 +240,3 @@ Adobe Commerce on cloud infrastructure environments support continuous integrati
 -  Deploy and test in Staging
 
 -  Deploy to Production
-
-See [Continuous integration](https://devdocs.magento.com/cloud/deploy/continuous-deployment.html).

@@ -15,13 +15,13 @@ You can use any development and branching methodology you like. When you get ini
 
 The following diagram shows the hierarchical relationships of the Starter environments.
 
-![High-level view of Starter project](../../assets/starter-architecture.png)
+![High-level view of Starter project](../../assets/starter/architecture.png)
 
 ## Production environment
 
 The Production environment provides the source code to deploy Adobe Commerce to the Cloud infrastructure that runs your public-facing single and multi-site storefronts. The Production environment uses code from the `master` branch to configure and enable the web server, database, configured services, and your application code.
 
-Because the Production environment is read-only, make changes in the Integration environment and deploy across the architecture from the Integration to Staging, and finally to the Production environment. See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) and [Site launch](../launch/index.md).
+Because the Production environment is read-only, make changes in the Integration environment and deploy across the architecture from the Integration to Staging, and finally to the Production environment. See [Deploy your store](../deploy/staging-production.md) and [Site launch](../launch/overview.md).
 
 Adobe recommends fully testing in your Staging environment branch before pushing to the `master` branch, which deploys to the Production environment.
 
@@ -33,7 +33,7 @@ Additional sections in this guide provide instructions for final code deployment
 
 >[!WARNING]
 >
->Adobe recommends testing every merchant and customer interaction in the Staging environment before deploying to the Production environment. See [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) and [Test deployment](https://devdocs.magento.com/cloud/live/stage-prod-test.html).
+>Adobe recommends testing every merchant and customer interaction in the Staging environment before deploying to the Production environment. See [Deploy your store](../deploy/staging-production.md) and [Test deployment](https://devdocs.magento.com/cloud/live/stage-prod-test.html).
 
 ## Integration environment
 
@@ -127,6 +127,6 @@ See the following sections for detailed instructions and walk-throughs to develo
 
 -  [Manage branches](../project/console-branches.md)
 
--  [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html)
+-  [Deploy your store](../deploy/staging-production.md)
 
--  [Site launch](../launch/index.md)
+-  [Site launch](../launch/overview.md)

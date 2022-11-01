@@ -1,13 +1,13 @@
 ---
 title: Cloud Patches for Commerce
-description: Learn about the latest improvements to the Magento Cloud Patches package.
+description: Learn about the latest improvements to the Cloud Patches package.
 ---
 
 # Cloud Patches for Commerce
 
-The [Magento Cloud Patches](https://github.com/magento/magento-cloud-patches) package provides a set of required patches which improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes.
+The [Cloud Patches](https://github.com/magento/magento-cloud-patches) package provides a set of required patches which improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes.
 
-The Magento Cloud Patches package is a dependency for the ece-tools package and is installed and updated when you install or update the ece-tools package. You can also use and manage Cloud Patches for Commerce as a stand-alone package to apply patches to a Adobe Commerce project that is not on the Cloud platform. These release notes describe the latest improvements to this package.
+The Cloud Patches for Commerce package is a dependency for the ece-tools package and is installed and updated when you install or update the ece-tools package. You can also use and manage Cloud Patches for Commerce as a stand-alone package to apply patches to a Adobe Commerce project that is not on the Cloud platform. These release notes describe the latest improvements to this package.
 
 >[!TIP]
 >
@@ -21,7 +21,13 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.19 {#latest}
+## v1.0.20 {#latest}
+
+Release date: October 27, 2022
+
+-  **Added L2 cache improvements patch**—This patch fixes an issue with flushing the local L2 cache for Commerce version 2.4.0 and 2.4.1.<!-- MCLOUD-7845 -->
+
+## v1.0.19
 
 Release date: September 13, 2022
 
@@ -35,13 +41,13 @@ Critical patch for Adobe Commerce 2.4.5:
 
 -  **Issue with orders using Braintree payments**—This patch resolves a critical issue preventing admins from placing new orders or reorders.<!-- MCLOUD-9137 -->
 
-See [Admin can't create order/reorder when Braintree payment enabled](https://support.magento.com/hc/en-us/articles/8322266352525).
+See [Admin can't create order/reorder when Braintree payment enabled](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html).
 
 ## v1.0.17
 
 Release date: May 24, 2022
 
-Fixed constraints for security patches in the patches.json file.
+Fixed constraints for security patches in the `patches.json` file.
 
 ## v1.0.16
 

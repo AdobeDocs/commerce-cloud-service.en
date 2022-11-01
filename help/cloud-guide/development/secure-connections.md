@@ -24,7 +24,7 @@ You must add your SSH public key to your Adobe Commerce on cloud infrastructure 
 
 >[!NOTE]
 >
->For Pro Staging and Production environments, you must [submit a Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) with your **public** key attached. **Never provide your private SSH key.**
+>For Pro Staging and Production environments, you must [submit a Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with your **public** key attached. **Never provide your private SSH key.**
 
 You can add SSH keys to your account using one of the following methods:
 
@@ -134,7 +134,7 @@ Adobe Commerce on cloud infrastructure supports accessing your environments usin
 
 >[!NOTE]
 >
->For Pro Staging and Production, you must [submit a Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) with your **public** key attached. **Never provide your private SSH key.**
+>For Pro Staging and Production, you must [submit a Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with your **public** key attached. **Never provide your private SSH key.**
 
 When configuring sFTP, use the information from your SSH access environment command (`<project-id>-<environment-id>--<app-name>@ssh<cloud-host>`).
 
@@ -148,7 +148,7 @@ Depending on the client, you may need to enter additional options and setup to c
 
 For **Starter environments and Pro Integration environments**, you may also want to consider [adding a `mount`](../application/properties.md#mounts) for access to a specific directory. You would add the mount to your `.magento.app.yaml` file. For a list of writable directories, see [Project structure](../project/file-structure.md). This mount point only works in those environments.
 
-For **Pro Staging and Production environments**, you must [submit a Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to request sFTP access. We can create a mount point and provide access to the specific `pub/media` folder.
+For **Pro Staging and Production environments**, you must [submit a Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request sFTP access. We can create a mount point and provide access to the specific `pub/media` folder.
 
 ## SSH tunneling
 

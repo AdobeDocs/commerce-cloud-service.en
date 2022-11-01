@@ -16,7 +16,7 @@ Use the following steps to reduce the amount of time it takes your store to depl
 
    >[!NOTE]
    >
-   >Even though it is a best practice to use the latest `ece-tools` package, the zero-downtime deployment method works with `ece-tools` [version 2002.0.13](https://devdocs.magento.com/cloud/release-notes/cloud-release-archive.html#v2002013) and later.
+   >Even though it is a best practice to use the latest `ece-tools` package, the zero-downtime deployment method works with `ece-tools` [version 2002.0.13](../release-notes/cloud-release-archive.md#v2002013) and later.
 
 1. [Configure static content deployment](static-content.md)
    If static content deployment fails in the deploy phase, your site gets stuck in maintenance mode. When a failure occurs during the build phase, the process avoids downtime because it never begins the deploy phase. [Generating static content during the build phase with minified HTML](static-content.md#setting-the-scd-on-build), also known as the ideal state, is the optimal configuration for zero-downtime deployments and _prevents_ downtime if a failure occurs.

@@ -25,11 +25,11 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 
 >[!NOTE]
 >
->For Pro Staging and Production environments, you must submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
+>For Pro Staging and Production environments, you must submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
 
 ## `name`
 
-The `name` property provides the application name used in the [`routes.yaml`](https://devdocs.magento.com/cloud/project/routes.html) file to define the HTTP upstream (by default, `mymagento:http`). For example, if the value of `name` is `app`, you must use `app:http` in the upstream field.
+The `name` property provides the application name used in the [`routes.yaml`](../routes/routes-yaml.md) file to define the HTTP upstream (by default, `mymagento:http`). For example, if the value of `name` is `app`, you must use `app:http` in the upstream field.
 
 >[!WARNING]
 >
@@ -137,7 +137,7 @@ relationships:
     rabbitmq: "rabbitmq:rabbitmq"
 ```
 
-See [Services](https://devdocs.magento.com/cloud/project/services.html) for a full list of currently supported service types and endpoints.
+See [Services](../services/services-yaml.md) for a full list of currently supported service types and endpoints.
 
 ## `mounts`
 
