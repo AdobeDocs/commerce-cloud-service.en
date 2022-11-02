@@ -143,7 +143,7 @@ You can apply patches manually in a local environment and test them before you d
 
 **To apply patches in a remote environment**:
 
-1. Add the` QUALITY_PATCHES` variable to the `.magento.env.yaml` file and list the required patches underneath.
+1. Add the `QUALITY_PATCHES` variable to the `.magento.env.yaml` file and list the required patches underneath.
 
    ```yaml
    stage:
