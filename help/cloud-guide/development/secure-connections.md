@@ -136,7 +136,7 @@ Adobe Commerce on cloud infrastructure supports accessing your environments usin
 >
 >For Pro Staging and Production, you must [submit a Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with your **public** key attached. **Never provide your private SSH key.**
 
-When configuring sFTP, use the information from your SSH access environment command (`<project-id>-<environment-id>--<app-name>@ssh<cloud-host>`).
+When configuring sFTP, use the information from your SSH access environment command: `<project-id>-<environment-id>--<app-name>@ssh<cloud-host>`
 
 -  **Username**: All content before the `@` in your SSH access destination.
 -  **Password**: You do not need a password for sFTP. sFTP access uses the SSH key based authentication.

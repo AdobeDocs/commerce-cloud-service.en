@@ -11,9 +11,9 @@ Project-level access provides role-based access to a specific project. Environme
 
 | Role               | Scope       | Access     | SSH     |
 | ------------------ | ----------- | ---------- | ------- |
-| **Account owner**  | Project     | Perform any task in any project or environment, including deleting it.<br>Adobe assigns this role to the License Owner associated with the email address, name, and information of the person who registered the account. Submit a Support ticket to modify settings or change the Account owner. | -- |
-| **Super User**     | Project     | Access all project settings and environments. Super users can change settings and perform administrator tasks on any environment, including creating and restoring [snapshots](../storage/snapshots.md) and managing users. | -- |
-| **Project viewer** | Project     | View-only access to all project environments. Users with this role cannot perform tasks on any environment. Can be granted write access to a specific environment type. | -- |
+| **Account owner**  | Project     | Perform any task in any project or environment, including deleting it.<br>Adobe assigns this role to the License Owner associated with the email address, name, and information of the person who registered the account. Submit a Support ticket to modify settings or change the Account owner. | — |
+| **Super User**     | Project     | Access all project settings and environments. Super users can change settings and perform administrator tasks on any environment, including creating and restoring [snapshots](../storage/snapshots.md) and managing users. | — |
+| **Project viewer** | Project     | View-only access to all project environments. Users with this role cannot perform tasks on any environment. Can be granted write access to a specific environment type. | — |
 | **Admin**          | Environment | Change settings, push code, perform tasks and branch management, including merging with the parent environment | Yes |
 | **Contributor**    | Environment | Push code and branch the environment; cannot change settings or execute actions | Yes |
 | **Viewer**         | Environment | View-only access to an environment | No |

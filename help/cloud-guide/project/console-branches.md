@@ -36,7 +36,10 @@ If you need additional environments for development, enter a [Support ticket](ht
 
    Your new branch is cloned from this environment. Choose a parent environment that is similar to the environment that you are about to create.
 
-1. Click ![Create a branch](../../assets/icon-branch.png) (branch).
+1. Click (branch).
+
+   ![Create a branch](../../assets/icon-branch.png)
+
 1. In the _New environment name_ field, enter a branch name. Often, the environment name is the same as the ID.
 
    The environment _name_ is different from the environment _ID_ only if you use spaces or capital letters in the environment name. An environment ID consists of all lowercase letters, numbers, and allowed symbols. Capital letters in an environment name are converted to lowercase in the ID; spaces in an environment name are converted to dashes.
@@ -77,7 +80,10 @@ For Pro plan, you can also sync from Staging and Production to your Integration 
 1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
 1. Click on the project.
 1. In the left environment list, click the name of the branch to sync.
-1. Click ![Sync an environment](../../assets/icon-sync.png) (sync).
+1. Click (sync).
+
+    ![Sync an environment](../../assets/icon-sync.png)
+
 1. Select the items to sync.
 
    - `code`—syncs updated code from the parent branch.
@@ -94,7 +100,10 @@ Merging an environment (or branch) is the same as `git push origin`. You merge t
 1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
 1. Click on the project.
 1. In the left environment list, click the name of the branch to merge.
-1. Click ![Merge an environment](../../assets/icon-merge.png) (merge).
+1. Click (merge).
+
+   ![Merge an environment](../../assets/icon-merge.png)
+
 1. Click **Merge** to confirm the action.
 
 ## View logs

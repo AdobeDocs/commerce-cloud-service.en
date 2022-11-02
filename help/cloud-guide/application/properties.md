@@ -9,19 +9,19 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 
 | Name   | Description                       | Default | Required |
 | ------ | --------------------------------- | ------- | -------- |
-| [`access`](#access) | Customize user roles | -- | No |
-| [`crons`](crons-property.md) | Update specs and schedule cron jobs | -- | No |
+| [`access`](#access) | Customize user roles | — | No |
+| [`crons`](crons-property.md) | Update specs and schedule cron jobs | — | No |
 | [`dependencies`](#dependencies) | Enable additional dependencies | `php:composer/composer: '2.2.4'` | No |
 | [`disk`](#disk) | Define the persistent disk size | `5120` | Yes |
-| [`firewall`](firewall-property.md) | (Starter only) Control outbound traffic | -- | No |
-| [`hooks`](hooks-property.md) | Customize shell commands for the build, deploy, and post-deploy phases | -- | No |
+| [`firewall`](firewall-property.md) | (Starter only) Control outbound traffic | — | No |
+| [`hooks`](hooks-property.md) | Customize shell commands for the build, deploy, and post-deploy phases | — | No |
 | [`mounts`](#mounts) | Set paths | `"var": "shared:files/var"`<br>`"app/etc": "shared:files/etc"`<br>`"pub/media": "shared:files/media"`<br>`"pub/static": "shared:files/static"` | No |
 | [`name`](#name) | Define the application name | `mymagento` | Yes |
 | [`relationships`](#relationships) | Map services | `database: "mysql:mysql"`<br>`redis: "redis:redis"`<br>`opensearch: "opensearch:opensearch"` | No |
 | [`type`](#type-and-build) | Set the base container image | `php:8.1` | Yes |
-| [`variables`](variables-property.md) | Apply an environment variable for a specific Commerce version | -- | No |
-| [`web`](web-property.md) | Handle external requests | -- | Yes |
-| [`workers`](workers-property.md) | Handle external requests | -- | Yes, if not using web |
+| [`variables`](variables-property.md) | Apply an environment variable for a specific Commerce version | — | No |
+| [`web`](web-property.md) | Handle external requests | — | Yes |
+| [`workers`](workers-property.md) | Handle external requests | — | Yes, if not using web |
 
 >[!NOTE]
 >
