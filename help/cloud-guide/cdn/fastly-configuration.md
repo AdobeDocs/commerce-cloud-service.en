@@ -39,6 +39,8 @@ Use the following methods to find and save the Fastly service ID and API token f
 
 **To view your Fastly credentials**:
 
+The method for viewing credentials is different for Pro and Starter projects.
+
 - IaaS-mounted shared directory—On Pro projects, use SSH to connect to your server and get the Fastly credentials from the `/mnt/shared/fastly_tokens.txt` file. Staging and Production environments have unique credentials. You must get the credentials for each environment.
 
 - Local workspace—From the command line, use the `magento-cloud` CLI to [list and review](../environment/variables-cloud.md#viewing-environment-variables) Fastly environment variables.
@@ -49,10 +51,9 @@ Use the following methods to find and save the Fastly service ID and API token f
 
 - Project Web UI—Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
 
-  - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
+  - ```CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY```
 
-  - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
-
+  - ```CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID```
 
 >[!NOTE]
 >
@@ -60,8 +61,7 @@ Use the following methods to find and save the Fastly service ID and API token f
 
 ## Enable Fastly caching
 
-**Prerequisites:**
-
+You need the following components to enable and configure Fastly services:
 -  Latest version of the [Fastly CDN for Magento 2 module](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2) installed in the Staging and Production environments. See [Upgrade Fastly](#upgrade-the-fastly-module).
 
 -  [Fastly credentials](#get-fastly-credentials) for Adobe Commerce on cloud infrastructure Staging and Production environments
@@ -157,12 +157,12 @@ During the initial Fastly setup process, you can use the following URLs to confi
 
 - For Pro Staging and Production:
 
-  - `mcprod.<your-domain>.com`
-  - `mcstaging.<your-domain>.com`
+  - ```mcprod.<your-domain>.com```
+  - ```mcstaging.<your-domain>.com```
 
 - For Starter Production only:
 
-  - `mcprod.<your-domain>.com`
+  - ```mcprod.<your-domain>.com```
 
 
 >[!NOTE]
@@ -201,6 +201,7 @@ Update your DNS configuration to route traffic from your store URLs to the Fastl
    >[!NOTE]
    >
    >If you plan to use apex domains (`your-domain.com`) for your Production site, you must configure DNS address records (A records) to point to the Fastly server IP addresses. See [Update DNS configuration with production settings](../launch/checklist.md#to-update-dns-configuration-for-site-launch).
+
 
 1. Add ACME challenge CNAME records for domain validation and pre-provisioning of Production SSL/TLS certificates, for example:
 
