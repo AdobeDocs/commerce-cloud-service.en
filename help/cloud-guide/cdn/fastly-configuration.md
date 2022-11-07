@@ -49,9 +49,10 @@ Use the following methods to find and save the Fastly service ID and API token f
 
 - Project Web UI—Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
 
-   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
+  - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
 
-   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
+  - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
+
 
 >[!NOTE]
 >
@@ -155,12 +156,14 @@ When domain validation completes, Adobe provisions the Let's Encrypt TLS/SSL cer
 During the initial Fastly setup process, you can use the following URLs to configure and test Fastly caching in Staging and Production environments:
 
 - For Pro Staging and Production:
+
   - `mcprod.<your-domain>.com`
   - `mcstaging.<your-domain>.com`
 
 - For Starter Production only:
-  - `mcprod.<your-domain>.com`
 
+  - `mcprod.<your-domain>.com`
+  
 >[!NOTE]
 >
 >You cannot specify a custom domain for a non-production environment on Starter projects.

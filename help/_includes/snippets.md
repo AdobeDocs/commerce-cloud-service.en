@@ -104,7 +104,7 @@ To migrate this data, see [Migrate and deploy static files and data](https://dev
 
 ## Prerequisites {#custom-vcl-prerequisites}
 
-- Your environment must be configured to use the Fastly CDN. See [Configure Fastly services](fastly-configuration.md).
+- Your environment must be configured to use the Fastly CDN. See [Configure Fastly services](/help/cloud-guide/cdn/fastly-configuration.md).
 
 -  Ensure that you are running the latest version of the Fastly CDN module for Magento 2. See [Upgrade the Fastly Module](/help/cloud-guide/cdn/fastly-configuration.md#upgrade-fastly-module).
 
