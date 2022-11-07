@@ -175,7 +175,7 @@ For both Starter and Pro projects, you can use the Domains option to add and man
 
 >[!NOTE]
 >
->For Pro plan projects, submit {{commerce-support-ticket}} to update the Fastly domain configuration for your project.
+>For Pro plan projects, submit an Adobe Commerce Support ticket to update the Fastly domain configuration for your project.
 
 **To manage Fastly domain configuration from the Admin**:
 
