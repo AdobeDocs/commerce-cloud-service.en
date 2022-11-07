@@ -75,7 +75,7 @@ Then, inspect the response to troubleshoot issues with the uncached content.
 
 {{$include /help/_includes/modify-vcl-snippet.md}}
 
-{{$include /help/_includes/modify-vcl-snippet.md}}
+{{$include /help/_includes/delete-vcl-snippet.md}}
 
 <!--External link definitions-->
 [Fastly VCL reference]: https://docs.fastly.com/vcl/
