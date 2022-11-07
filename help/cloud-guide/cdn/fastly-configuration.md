@@ -49,9 +49,11 @@ Use the following methods to find and save the Fastly service ID and API token f
 
 - Project Web UI—Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
 
-   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
+  - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
 
-   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
+  - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
+
+
 
 >[!NOTE]
 >
@@ -61,7 +63,7 @@ Use the following methods to find and save the Fastly service ID and API token f
 
 **Prerequisites:**
 
--  Latest version of the [Fastly CDN for Magento 2 module](fastly.md#fastly-cdn-module-for-magento-2) installed in the Staging and Production environments. See [Upgrade Fastly](#upgrade-fastly-module).
+-  Latest version of the [Fastly CDN for Magento 2 module](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2) installed in the Staging and Production environments. See [Upgrade Fastly](#upgrade-the-fastly-module).
 
 -  [Fastly credentials](#get-fastly-credentials) for Adobe Commerce on cloud infrastructure Staging and Production environments
 
@@ -155,11 +157,14 @@ When domain validation completes, Adobe provisions the Let's Encrypt TLS/SSL cer
 During the initial Fastly setup process, you can use the following URLs to configure and test Fastly caching in Staging and Production environments:
 
 - For Pro Staging and Production:
+
   - `mcprod.<your-domain>.com`
   - `mcstaging.<your-domain>.com`
 
 - For Starter Production only:
+
   - `mcprod.<your-domain>.com`
+
 
 >[!NOTE]
 >

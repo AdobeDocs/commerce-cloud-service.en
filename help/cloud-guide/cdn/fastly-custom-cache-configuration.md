@@ -193,9 +193,11 @@ For both Starter and Pro projects, you can use the Domains option to add and man
 
    ![Add Fastly domain configuration for Starter](../../assets/cdn/fastly-starter-activate-domain.png)
 
+
    >[!NOTE]
    >
    >If the same domain has been configured on a different Fastly account, you must submit a ticket to request Domain Delegation before you can add the domain to Adobe Commerce. See [Multiple Fastly accounts and assigned domains](fastly.md#multiple-fastly-accounts-and-assigned-domains).
+
 
 1. Click **Activate** to update the Fastly domain configuration.
 
