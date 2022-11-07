@@ -209,7 +209,7 @@ See [Deployment process](../deploy/process.md).
 
 ### Push to Staging and test
 
-Always push your code in iterations to the Staging environment for full testing. The first time you use this environment, you need to configure a few services including [Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) and [New Relic](../monitor/new-relic.md). We also recommend configuring payment gateways, shipping, notifications, and other vital services with sandbox or testing credentials.
+Always push your code in iterations to the Staging environment for full testing. The first time you use this environment, you need to configure a few services including [Fastly](/help/cloud-guide/cdn/fastly.md) and [New Relic](../monitor/new-relic.md). We also recommend configuring payment gateways, shipping, notifications, and other vital services with sandbox or testing credentials.
 
 Staging is a pre-production environment, providing all services and settings as close to Production as possible. Thoroughly test every service, verify your performance testing tools, perform UAT testing as an administrator and customers, until you feel your store is ready for Production.
 

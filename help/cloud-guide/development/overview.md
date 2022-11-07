@@ -16,9 +16,9 @@ Adobe Commerce on cloud infrastructure uses Composer to manage the dependencies 
 
 **Common commands:**
 
-| Command | Description |
-| ------- | ----------- |
-| `composer update` | Updates to the latest versions of the dependencies reflected in the `composer.json` file. This updates the `composer.lock` file. |
+| Command            | Description                                                                                                                                              |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `composer update`  | Updates to the latest versions of the dependencies reflected in the `composer.json` file. This updates the `composer.lock` file.                         |
 | `composer install` | Reads the `composer.lock` file to download dependencies. It is a best practice to keep an up-to-date copy of `composer.lock` in your project repository. |
 
 Once you add, commit, and push the updated code, the deployment process automatically runs the `composer install` command during the [build phase](../deploy/process.md#build-phase-build-phase).
@@ -41,7 +41,7 @@ The main packages of this metapackage are the following:
 
 -  **vendor/magento/ece-tools**—The `ece-tools` package is compatible with Adobe Commerce version 2.1.4 and later to provide a rich set of features you can use to manage your Adobe Commerce on cloud infrastructure project. It contains scripts and Adobe Commerce on cloud infrastructure commands designed to help manage your code and automatically build and deploy your projects. See [Ece-tools package overview](../dev-tools/package-overview.md).
 -  **vendor/magento/product-enterprise-edition**—This metapackage requires application components, including modules, frameworks, themes, and so on.
--  **vendor/fastly2/magento2**—This module manages the Fastly CDN & services for the Pro Staging and Production and Starter Production environments. See [Fastly Documentation](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html).
+-  **vendor/fastly2/magento2**—This module manages the Fastly CDN and services for the Pro Staging and Production and Starter Production environments. See [Fastly services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 -  **vendor/magento/module-paypal-on-boarding**—This module provides PayPal payment gateway checkout by connecting to your PayPal merchant account. See [PayPal On-Boarding tool](../store/paypal.md).
 
 ## Gather credentials

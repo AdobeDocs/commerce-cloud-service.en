@@ -17,14 +17,14 @@ Your Adobe Commerce on cloud infrastructure Pro architecture supports multiple e
 
 The following table summarizes the differences between environments:
 
-|| INTEGRATION | STAGING | PRODUCTION |
-| -------------------------------------- | ------- | ----------------- | --- |
-| Supports settings management in the UI | Yes     | Limited           | Limited |
-| Supports multiple branches             | Yes     | No (Staging only) | No (Production only) |
-| Uses YAML files for configuration      | Yes     | No                | No |
-| Runs on dedicated IaaS hardware        | No      | Yes               | Yes |
-| Includes Fastly CDN                    | No      | Yes               | Yes |
-| Includes New Relic                     | No      | APM               | APM + NRI |
+|                                        | INTEGRATION | STAGING           | PRODUCTION           |
+|----------------------------------------|-------------|-------------------|----------------------|
+| Supports settings management in the UI | Yes         | Limited           | Limited              |
+| Supports multiple branches             | Yes         | No (Staging only) | No (Production only) |
+| Uses YAML files for configuration      | Yes         | No                | No                   |
+| Runs on dedicated IaaS hardware        | No          | Yes               | Yes                  |
+| Includes Fastly CDN                    | No          | Yes               | Yes                  |
+| Includes New Relic                     | No          | APM               | APM + NRI            |
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Your Pro plan backup and recovery approach uses a high-availability architecture
 In addition to the redundancy of the high-availability architecture, Adobe Commerce on cloud infrastructure provides incremental backups, which include the file system and the database, according to the following schedule:
 
 | Time Period        | Backup Retention Policy |
-| ------------------ | ----------------------- |
+|--------------------|-------------------------|
 | Day 1 through 3    | One backup per hour     |
 | Days 4 through 7   | One backup per day      |
 | Weeks 2 through 6  | One backup per week     |
@@ -213,7 +213,7 @@ Adobe Commerce on cloud infrastructure uses the Debian GNU/Linux operating syste
 
 -  [OpenSearch](../services/opensearch.md)
 
-For the Staging and Production environments, we recommend installing the latest version of the Fastly CDN module. See [Fastly in Cloud](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html#fastly-cdn-module-for-magento-2).
+For the Staging and Production environments, we recommend installing the latest version of the Fastly CDN module. See [Fastly services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 
 Edit the following YAML files to configure specific software versions to use in your implementation.
 

@@ -99,3 +99,71 @@ To help export Production data as test data to use in Staging and Integration en
 -  [Data Collection](https://docs.magento.com/user-guide/system/support-data-collector.html) tool for generating and exporting data
 
 To migrate this data, see [Migrate and deploy static files and data](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html).
+
+<!--Fastly-related snippets-->
+
+## Prerequisites {#custom-vcl-prerequisites}
+
+- Your environment must be configured to use the Fastly CDN. See [Configure Fastly services](fastly-configuration.md).
+
+-  Ensure that you are running the latest version of the Fastly CDN module for Magento 2. See [Upgrade the Fastly Module](/help/cloud-guide/cdn/fastly-configuration.md#upgrade-fastly-module).
+
+-  Verify the environment configuration for the Fastly service. See [Check Fastly caching](/help/cloud-guide/launch/checklist.md#verify-fastly-caching).
+
+-  You must have Admin credentials to access the Staging and Production environments.
+
+## Admin login {#admin-login-step}
+
+1. [Log in](/help/get-started/onboarding.md#access-your-admin-panel) to the Admin.
+
+## Modify the custom VCL snippet {#modify-custom-vcl-snippet}
+
+1. [Log in](/help/get-started/onboarding.md#access-your-admin-panel) to the Admin.
+
+1. Click **Stores** > **Settings** > **Configuration** > **Advanced** > **System**.
+
+1. Expand **Full Page Cache** > **Fastly Configuration** > **Custom VCL Snippets**.
+
+   ![Manage custom VCL snippets]
+
+1. In the _Action_ column, click the settings icon next to the snippet to edit.
+
+1. After the page reloads, click **Upload VCL to Fastly** in the _Fastly Configuration_ section.
+
+1. After the upload completes, refresh the cache according to the notification at the top of the page.
+
+>[!WARNING]
+>
+>The _Custom VCL snippets_ UI option shows only the snippets added through the Adobe Commerce Admin. If you add snippets using the Fastly API, use the API to [manage them](/help/cloud-guide/cdn/fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api).
+
+## Delete the custom VCL snippet {#delete-custom-vcl-snippet}
+
+1. [Log in](/help/get-started/onboarding.md#access-your-admin-panel) to the Admin.
+
+1. Click **Stores** > **Settings** > **Configuration** > **Advanced** > **System**.
+
+1. Expand **Full Page Cache** > **Fastly Configuration** > **Custom VCL Snippets**.
+
+   ![Manage custom VCL snippets](/help/assets/cdn/fastly-manage-snippets.png)
+
+1. In the _Action_ column, click the trash icon next to the snippet to delete.
+
+1. On the next modal window, click **DELETE** and activate a new version.
+
+>[!WARNING]
+>
+>The _Custom VCL snippets_ UI option shows only the snippets added through the Adobe Commerce Admin. If you add snippets using the Fastly API, use the API to [manage them](/help/cloud-guide/cdn/fastly-vcl-custom-snippets.md#manage-vcl-using-the-api).
+
+
+## Automate custom VCL snippet deployment {#automate-vcl-snippet-deployment}
+
+>[!NOTE]
+>
+>Instead of manually uploading custom VCL snippets, you can add snippets to the `$MAGENTO_CLOUD_APP_DIR/var/vcl_snippets_custom` directory in your environment. Snippets in this directory upload automatically when you click _upload VCL to Fastly_ in the Commerce Admin. See [Automated custom VCL snippets deployment](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md#automated-custom-vcl-snippets-deployment) in the Fastly CDN module for Magento 2 documentation.
+
+
+<!--Snippets for commonly referenced links-->
+
+## Adobe Commerce Support ticket {#commerce-support-ticket}
+
+[an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)

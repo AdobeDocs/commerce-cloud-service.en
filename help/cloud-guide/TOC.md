@@ -95,6 +95,21 @@ product: magento
     + [RabbitMQ](services/rabbitmq.md)
     + [Redis](services/redis.md)
 + Fastly services {#cdn}
+    + [Overview](cdn/fastly.md)
+    + Fastly Setup {#setup-fastly}
+        + [Configure Fastly services](cdn/fastly-configuration.md)
+        + [Customize cache configuration](cdn/fastly-custom-cache-configuration.md)
+        + [Customize error and maintenance pages](cdn/fastly-custom-response.md)
+    + [Web Application Firewall](cdn/fastly-waf-service.md)
+    + [Image Optimization](cdn/fastly-image-optimization.md)
+    + Customize with VCL {#custom-vcl-snippets}
+        + [Get started](cdn/fastly-vcl-custom-snippets.md)
+        + [Reroute requests to a CMS backend](cdn/fastly-vcl-wordpress.md)
+        + [Block referral spam](cdn/fastly-vcl-badreferer.md)
+        + [IP allowlist](cdn/fastly-vcl-allowlist.md)
+        + [IP blocklist](cdn/fastly-vcl-blocking.md)
+        + [Bypass Fastly cache](cdn/fastly-vcl-bypass-to-origin.md)
+    + [Fastly troubleshooting](cdn/fastly-troubleshooting.md)
 + Store configuration {#configure-store}
     + [Overview](store/overview.md)
     + [Best practices](store/best-practices.md)
