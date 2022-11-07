@@ -125,12 +125,10 @@ Fastly validates the updated VCL version during the upload process. If the valid
 
 {{automate-vcl-snippet-deployment}}
 
-## Modify custom VCL snippet
 
-{{modify-custom-vcl-snippet}}
+{{$include /help/_includes/modify-vcl-snippet.md}}
 
-## Delete-custom-vcl-snippet
+{{$include /help/includes/delete-vcl-snippet.md}}
 
-{{delete-custom-vcl-snippet}}
 
 

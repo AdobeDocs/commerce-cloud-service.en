@@ -138,11 +138,9 @@ This example uses the two-character ISO 3166-1 country code for the country asso
 
 {{automate-vcl-snippet-deployment}}
 
-## Modify custom VCL snippet
+{{$include /help/_includes/modify-vcl-snippet.md}}
 
-{{modify-custom-vcl-snippet}}
+{{$include /help/includes/delete-vcl-snippet.md}}
 
-## Delete-custom-vcl-snippet
 
-{{delete-custom-vcl-snippet}}
 
