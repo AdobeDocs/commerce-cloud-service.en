@@ -166,4 +166,4 @@ To migrate this data, see [Migrate and deploy static files and data](https://dev
 
 ## Adobe Commerce Support ticket {#commerce-support-ticket}
 
-[an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)
+[an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)
