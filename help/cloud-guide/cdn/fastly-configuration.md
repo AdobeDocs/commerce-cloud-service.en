@@ -161,16 +161,10 @@ During the initial Fastly setup process, you can use the following URLs to confi
   - `mcstaging.<your-domain>.com`
 
 - For Starter Production only:
-<<<<<<< HEAD
 
   - `mcprod.<your-domain>.com`
 
 
-=======
-
-  - `mcprod.<your-domain>.com`
-  
->>>>>>> a55492cc6b9b5057b0ec5f4ab5310c33ae4e196f
 >[!NOTE]
 >
 >You cannot specify a custom domain for a non-production environment on Starter projects.
