@@ -198,7 +198,7 @@ For both Starter and Pro projects, you can use the Domains option to add and man
 
 >[!NOTE]
 >
->If the same domain has been configured on a different Fastly account, you must submit a ticket to request Domain Delegation before you can add the domain to Adobe Commerce. See [Multiple Fastly accounts and assigned domains](fastly.md#multiple-fastly-accounts-and-assigned-domains).
+>If the same domain has been configured on a different Fastly account, you must submit a ticket to request Domain Delegation before you can add the domain to Adobe Commerce. See [Multiple Fastly accounts and assigned domains](/help/cloud-guide/cdn/fastly.md#multiple-fastly-accounts-and-assigned-domains).
 
 
 ## Enable Maintenance Mode

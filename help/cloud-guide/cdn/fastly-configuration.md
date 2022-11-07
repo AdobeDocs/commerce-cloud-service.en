@@ -51,9 +51,9 @@ The method for viewing credentials is different for Pro and Starter projects.
 
 - Project Web UI—Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
 
-  - ```CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY```
+   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
 
-  - ```CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID```
+   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
 
 >[!NOTE]
 >
@@ -157,12 +157,12 @@ During the initial Fastly setup process, you can use the following URLs to confi
 
 - For Pro Staging and Production:
 
-  - ```mcprod.<your-domain>.com```
-  - ```mcstaging.<your-domain>.com```
+   - ```mcprod.<your-domain>.com```
+   - ```mcstaging.<your-domain>.com```
 
 - For Starter Production only:
 
-  - ```mcprod.<your-domain>.com```
+   - ```mcprod.<your-domain>.com```
 
 
 >[!NOTE]
