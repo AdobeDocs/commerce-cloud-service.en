@@ -15,45 +15,45 @@ Fastly provides the following services to optimize and secure content delivery o
 
 - **Cache management**—Cache your site pages, assets, CSS, and more in back-end data centers that you set up to reduce bandwidth load and costs
 
-  - Use [Fastly custom VCL snippets](/help/cloud-guide/cdn/fastly-vcl-custom-snippets.md) (Varnish 2.1 compliant) to modify how caching responds to requests
+  - Use [Fastly custom VCL snippets](fastly-vcl-custom-snippets.md) (Varnish 2.1 compliant) to modify how caching responds to requests
 
-  - Set up [GeoIP service support](/help/cloud-guide/cdn/fastly-custom-cache-configuration.md#configure-geoip-handling)
+  - Set up [GeoIP service support](fastly-custom-cache-configuration.md#configure-geoip-handling)
 
-  - [Force unencrypted requests over to TLS](/help/cloud-guide/cdn/fastly-custom-cache-configuration.md#force-tls)
+  - [Force unencrypted requests over to TLS](fastly-custom-cache-configuration.md#force-tls)
 
-  - [Customize Fastly timeout](/help/cloud-guide/cdn/fastly-custom-cache-configuration.md#extend-fastly-timeout) settings to prevent 503 responses on bulk operation requests
+  - [Customize Fastly timeout](fastly-custom-cache-configuration.md#extend-fastly-timeout) settings to prevent 503 responses on bulk operation requests
 
-  - Create [custom error response pages](/help/cloud-guide/cdn/fastly-custom-response.md)
+  - Create [custom error response pages](fastly-custom-response.md)
 
 - **Security**—After you enable Fastly services for Adobe Commerce sites, additional security features are available to protect your sites and network:
 
-  - [Web Application Firewall](/help/cloud-guide/cdn/fastly-waf-service.md) (WAF)—Managed web application firewall service that provides PCI-compliant protection to block malicious traffic before it can damage your production Adobe Commerce on cloud infrastructure sites and network. The WAF service is available on Pro and Starter Production environments only.
+  - [Web Application Firewall](fastly-waf-service.md) (WAF)—Managed web application firewall service that provides PCI-compliant protection to block malicious traffic before it can damage your production Adobe Commerce on cloud infrastructure sites and network. The WAF service is available on Pro and Starter Production environments only.
 
   - [Distributed Denial of Service (DDoS) protection](#ddos-protection)—Built-in DDoS protection against common attacks like Ping of Death, Smurf attacks, and other ICMP-based flood attacks.
 
-  - [SSL/TLS certificates](/help/cloud-guide/cdn/fastly-configuration.md#provision-ssltls-certificates)—The Fastly service requires an SSL/TLS certificate to serve secure traffic over HTTPS.
+  - [SSL/TLS certificates](fastly-configuration.md#provision-ssltls-certificates)—The Fastly service requires an SSL/TLS certificate to serve secure traffic over HTTPS.
   
     Adobe Commerce provides a Domain-validated Let's Encrypt SSL/TLS certificate for each Staging and Production environment. Adobe Commerce completes domain validation and certificate provisioning during the Fastly set up process.
 
 - **Origin cloaking**—Prevents traffic from bypassing the Fastly WAF and hides the IP addresses of your origin servers to protect them from direct access and DDoS attacks.
 
-  Origin cloaking is enabled by default on Adobe Commerce on cloud infrastructure Pro Production projects. To enable origin cloaking on Adobe Commerce on cloud infrastructure Starter Production projects, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). If you have traffic that does not require caching, you can customize the Fastly service configuration to allow requests to [bypass the Fastly cache](/help/cloud-guide/cdn/fastly-vcl-bypass-to-origin.md).
+  Origin cloaking is enabled by default on Adobe Commerce on cloud infrastructure Pro Production projects. To enable origin cloaking on Adobe Commerce on cloud infrastructure Starter Production projects, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). If you have traffic that does not require caching, you can customize the Fastly service configuration to allow requests to [bypass the Fastly cache](fastly-vcl-bypass-to-origin.md).
 
-- **[Image optimization](/help/cloud-guide/cdn/fastly-image-optimization.md)**—Offloads image processing and resizing load to the Fastly service so that servers can process orders and conversions more efficiently.
+- **[Image optimization](fastly-image-optimization.md)**—Offloads image processing and resizing load to the Fastly service so that servers can process orders and conversions more efficiently.
 
-- **[Fastly CDN and WAF logs](/help/cloud-guide/monitor/new-relic.md#new-relic-logs)**—For Adobe Commerce on cloud infrastructure Pro projects, you can use the New Relic Logs service to review and analyze Fastly CDN and WAF log data.
+- **[Fastly CDN and WAF logs](../../monitor/new-relic.md#new-relic-logs)**—For Adobe Commerce on cloud infrastructure Pro projects, you can use the New Relic Logs service to review and analyze Fastly CDN and WAF log data.
 
 ## Fastly CDN module for Magento 2
 
 Fastly services for Adobe Commerce on cloud infrastructure use the [Fastly CDN module for Magento 2] installed in the following environments: Pro Staging and Production, Starter Production (`master` branch).
 
-On initial provisioning or upgrade of your Adobe Commerce project, Adobe installs the latest version of the Fastly CDN module in your Staging and Production environments. When Fastly releases module updates, you receive notifications in the Admin for your environments. Adobe recommends that you update your environments to use the latest release. See [Upgrade Fastly](/help/cloud-guide/cdn/fastly-configuration.md#upgrade-the-fastly-module).
+On initial provisioning or upgrade of your Adobe Commerce project, Adobe installs the latest version of the Fastly CDN module in your Staging and Production environments. When Fastly releases module updates, you receive notifications in the Admin for your environments. Adobe recommends that you update your environments to use the latest release. See [Upgrade Fastly](fastly-configuration.md#upgrade-the-fastly-module).
 
 ## Fastly service account and credentials
 
 Adobe Commerces on cloud infrastructure projects do not require a dedicated Fastly account or account owner. Instead, each Staging and Production environment has unique Fastly credentials (API token and service ID) to configure and manage Fastly services from the Admin. You also need the credentials to submit Fastly API requests.
 
-During project provisioning, Adobe adds your project to the Fastly service account for Adobe Commerce on cloud infrastructure and adds the Fastly credentials to the configuration for the Staging and Production environments. See [Get Fastly credentials](/help/cloud-guide/cdn/fastly-configuration.md#get-fastly-credentials).
+During project provisioning, Adobe adds your project to the Fastly service account for Adobe Commerce on cloud infrastructure and adds the Fastly credentials to the configuration for the Staging and Production environments. See [Get Fastly credentials](fastly-configuration.md#get-fastly-credentials).
 
 ### Change Fastly API token
 
@@ -65,9 +65,9 @@ Submit an Adobe Commerce Support ticket to change the Fastly API token credentia
 
    Include your Adobe Commerce on cloud infrastructure project ID and the environments that require a new credential.
 
-1. After you receive the new API token, update the API token value in the [Fastly credentials configuration](/help/cloud-guide/cdn/fastly-configuration.md#test-the-fastly-credentials) in the Admin or from the [Project Web UI environment configuration variables](/help/cloud-guide/project/overview.md#configure-environment).
+1. After you receive the new API token, update the API token value in the [Fastly credentials configuration](fastly-configuration.md#test-the-fastly-credentials) in the Admin or from the [Project Web UI environment configuration variables](../../project/overview.md#configure-environment).
 
-1. [Test the new credential](/help/cloud-guide/cdn/fastly-configuration.md#test-the-fastly-credentials).
+1. [Test the new credential](fastly-configuration.md#test-the-fastly-credentials).
 
 1. After you update the credential, submit an Adobe Commerce Support ticket to delete the old API token.
 
@@ -91,7 +91,7 @@ The apex domain (`testweb.com` and `www.testweb.com`) is linked to an existing F
 
 Submit a [Fastly support ticket] requesting that the subdomains be delegated from the existing Fastly account to the Fastly account for Adobe Commerce on cloud infrastructure. Include your Adobe Commerce project ID in the ticket.
 
-After the delegation is complete, your project subdomains can be added to the Fastly service account for Adobe Commerce on cloud infrastructure. See [Get Fastly credentials](/help/cloud-guide/cdn/fastly-configuration.md#get-fastly-credentials).
+After the delegation is complete, your project subdomains can be added to the Fastly service account for Adobe Commerce on cloud infrastructure. See [Get Fastly credentials](fastly-configuration.md#get-fastly-credentials).
 
 *Scenario 2:*
 

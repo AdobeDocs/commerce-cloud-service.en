@@ -43,7 +43,7 @@ Edge Dictionaries create key-value pairs accessible to VCL functions during VCL 
 
    -  Add and save key-value pairs in the new dictionary. For this example, each **Key** is the domain name of a referrer URL to block and **Value** is `true`.
 
-      ![Add bad referrer dictionary items](/help/assets/cdn/fastly-referrer-blocklist-dictionary.png)
+      ![Add bad referrer dictionary items](../../assets/cdn/fastly-referrer-blocklist-dictionary.png)
 
    -  Click **Cancel** to return to the system configuration page.
 

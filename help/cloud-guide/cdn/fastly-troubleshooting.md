@@ -83,7 +83,7 @@ log-locations.html#application-logs)
 
    Search the log for HTTP 200 responses for the URL that returned the 503 error. If you find the 200 response, it means that Adobe Commerce returned the page without errors. That indicates the issue might have occurred after the interval that exceeds the `first_byte_timeout` value set in the Fastly service configuration.
 
-When a 503 error occurs, Fastly returns the reason on the error and maintenance page. You might not be able to see the reason if you added code for a [custom response page](/help/cloud-guide/cdn/fastly-custom-response.md). To view the reason code on the default error page, you can remove the HTML code for the custom error page.
+When a 503 error occurs, Fastly returns the reason on the error and maintenance page. You might not be able to see the reason if you added code for a [custom response page](fastly-custom-response.md). To view the reason code on the default error page, you can remove the HTML code for the custom error page.
 
 **To check the Fastly 503 error page**:
 

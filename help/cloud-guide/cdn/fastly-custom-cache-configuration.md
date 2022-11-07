@@ -53,7 +53,7 @@ The purge options include:
 - **Purge CMS page**–Purges page content when updating and adding pages to the Adobe Commerce CMS. For example, you may want to purge when updating your Terms and Conditions or Return policy. If you rarely make these changes, you could disable automatic purging.
 - **Soft purge**–Sets changed content to stale and purges according to the stale timing. In addition to the stale timings, customers are served stale content while Fastly updates the content in the background.
 
-![Configure purge options](/help/assets/cdn/fastly-purge-options.png)
+![Configure purge options](../../assets/cdn/fastly-purge-options.png)
 
 **To configure Fastly purge options**:
 
@@ -129,7 +129,7 @@ The default Fastly VCL code specifies default values for Origin shielding and ti
 
 1. Expand **Backend settings** and select the gear to check the default back end. A modal opens that shows current settings with options to change them.
 
-   ![Modify the back end](/help/assets/cdn/fastly-backend.png)
+   ![Modify the back end](../../assets/cdn/fastly-backend.png)
 
 1. Select the **Shield** location (or data center).
 
@@ -198,7 +198,7 @@ For both Starter and Pro projects, you can use the Domains option to add and man
 
 >[!NOTE]
 >
->If the same domain has been configured on a different Fastly account, you must submit an Adobe Commerce support ticket to request Domain Delegation before you can add the domain to Adobe Commerce. See [Multiple Fastly accounts and assigned domains](/help/cloud-guide/cdn/fastly.md#multiple-fastly-accounts-and-assigned-domains).
+>If the same domain has been configured on a different Fastly account, you must submit an Adobe Commerce support ticket to request Domain Delegation before you can add the domain to Adobe Commerce. See [Multiple Fastly accounts and assigned domains](fastly.md#multiple-fastly-accounts-and-assigned-domains).
 
 
 ## Enable Maintenance Mode

@@ -95,18 +95,18 @@ The following table provides details about key data for custom VCL snippets. For
 
 You can [add custom VCL snippets](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) from the *Fastly Configuration* > *Custom VCL Snippets* section in the Admin.
 
-![Manage custom VCL snippets](/help/assets/cdn/fastly-edit-snippets.png)
+![Manage custom VCL snippets](../../assets/cdn/fastly-edit-snippets.png)
 
 The *Custom VCL snippets* view shows only snippets that have been added through the Admin. If snippets are added using the Fastly API, use the API to [manage them](#manage-vcl-using-the-api).
 
 The following examples show how to create and manage custom VCL snippets from the Admin, and to use Fastly Edge modules and Edge dictionaries:
 
-- [Reroute requests to a CMS backend](/help/cloud-guide/cdn/fastly-vcl-wordpress.md)
-- [Block referrral spam](/help/cloud-guide/cdn/fastly-vcl-badreferer.md)
+- [Reroute requests to a CMS backend](fastly-vcl-wordpress.md)
+- [Block referrral spam](fastly-vcl-badreferer.md)
 - [Block referral spam](fastly-vcl-badreferer.md)
-- [Custom VCL for IP allowlist](/help/cloud-guide/cdn/fastly-vcl-allowlist.md)
-- [Custom VCL for IP blocklist](/help/cloud-guide/cdn/fastly-vcl-blocking.md)
-- [Bypass Fastly cache](/help/cloud-guide/cdn/fastly-vcl-bypass-to-origin.md)
+- [Custom VCL for IP allowlist](fastly-vcl-allowlist.md)
+- [Custom VCL for IP blocklist](fastly-vcl-blocking.md)
+- [Bypass Fastly cache](fastly-vcl-bypass-to-origin.md)
 
 ## Manage VCL using the API
 

@@ -51,7 +51,7 @@ Verify that the modified source displays correctly in the browser. Then, add the
 
 To add the custom response page to the Fastly configuration:
 
-1. [Log in to the Admin](/help/get-started/onboarding.md#onboarding.md#access-your-admin-panel)
+{{admin-login-step}}
 
 1. Select **Stores** > **Settings** > **Configuration** > **Advanced** > **System**.
 

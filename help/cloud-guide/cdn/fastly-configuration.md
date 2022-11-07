@@ -27,7 +27,7 @@ Complete the following steps to enable, configure, and test Fastly early in your
 
 ## Get Fastly credentials
 
-During project provisioning, Adobe adds your project to the [Fastly service account](/help/cloud-guide/cdn/fastly.md#fastly-service-account-and-credentials) for Adobe Commerce on cloud infrastructure and creates Fastly account credentials for the Starter `master` and Pro Staging and Production environments. Each environment has unique credentials.
+During project provisioning, Adobe adds your project to the [Fastly service account](fastly.md#fastly-service-account-and-credentials) for Adobe Commerce on cloud infrastructure and creates Fastly account credentials for the Starter `master` and Pro Staging and Production environments. Each environment has unique credentials.
 
 You need the Fastly credentials to configure Fastly CDN services from the Admin and to submit Fastly API requests.
 
@@ -49,7 +49,7 @@ The method for viewing credentials is different for Pro and Starter projects.
   magento-cloud variable:get -e <environment ID>
   ```
 
-- Project Web UI—Check the following environment variables in the [Environment configuration](/help/cloud-guide/project/overview.md#configure-environment).
+- Project Web UI—Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
 
   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
 
@@ -63,7 +63,7 @@ The method for viewing credentials is different for Pro and Starter projects.
 
 You need the following components to enable and configure Fastly services:
 
-- Latest version of the [Fastly CDN for Magento 2 module](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2) installed in the Staging and Production environments. See [Upgrade Fastly](#upgrade-the-fastly-module).
+- Latest version of the [Fastly CDN for Magento 2 module](fastly.md#fastly-cdn-module-for-magento-2) installed in the Staging and Production environments. See [Upgrade Fastly](#upgrade-the-fastly-module).
 
 -  [Fastly credentials](#get-fastly-credentials) for Adobe Commerce on cloud infrastructure Staging and Production environments
 
