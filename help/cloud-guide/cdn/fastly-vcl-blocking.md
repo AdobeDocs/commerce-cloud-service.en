@@ -140,7 +140,7 @@ This example uses the two-character ISO 3166-1 country code for the country asso
 
 {{$include /help/_includes/modify-vcl-snippet.md}}
 
-{{$include /help/includes/delete-vcl-snippet.md}}
+{{$include /help/_includes/delete-vcl-snippet.md}}
 
 
 

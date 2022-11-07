@@ -122,6 +122,6 @@ Fastly validates the updated version of the VCL code during the upload process. 
 
 {{$include /help/_includes/modify-vcl-snippet.md}}
 
-{{$include /help/includes/delete-vcl-snippet.md}}
+{{$include /help/_includes/delete-vcl-snippet.md}}
 
 
