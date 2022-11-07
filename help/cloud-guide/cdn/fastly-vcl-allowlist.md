@@ -17,7 +17,8 @@ The following example shows how to use a custom VCL snippet with a [Fastly Acces
 
 **Prerequisites:**
 
-{{custom-vcl-prerequisites}}
+
+{{$include /help/_includes/vcl-snippet-prerequisites.md}}
 
 -  List of client IP addresses to include on the allowlist
 

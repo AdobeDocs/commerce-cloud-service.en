@@ -15,7 +15,7 @@ Use Fastly Edge Modules to create and upload custom VCL code from the Admin inst
 
 **Prerequisites**
 
-{{custom-vcl-prerequisites}}
+{{$include /help/_includes/vcl-snippet-prerequisites.md}}
 
 **To reroute requests from Adobe Commerce to WordPress**:
 

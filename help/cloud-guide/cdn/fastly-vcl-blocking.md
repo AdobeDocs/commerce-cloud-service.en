@@ -9,7 +9,7 @@ You can use the Fastly CDN module for Magento 2 to create an Edge ACL with a lis
 
 **Prerequisites:**
 
-{{custom-vcl-prerequisites}}
+{{$include /help/_includes/vcl-snippet-prerequisites.md}}
 
 -  List of client IP addresses to block
 

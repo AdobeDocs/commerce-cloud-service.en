@@ -33,7 +33,7 @@ You need the Fastly credentials to configure Fastly CDN services from the Admin 
 
 >[!NOTE]
 >
->With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin directly. Use the Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an Adobe Commerce Support ticket.
+>With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin directly. Use the Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 Use the following methods to find and save the Fastly service ID and API token for your environment:
 
@@ -105,7 +105,7 @@ You need the following components to enable and configure Fastly services:
 
    If the test fails, verify that the correct service ID and API token values match the credentials for the current environment.
 
-   If the test fails again, submit a support ticket or contact your Adobe account representative. For Pro projects, include the URLs for your Production and Staging sites. For Starter projects, include the URLs for your `Master` and Staging site.
+   If the test fails again, submit an Adobe Commerce support ticket or contact your Adobe account representative. For Pro projects, include the URLs for your Production and Staging sites. For Starter projects, include the URLs for your `Master` and Staging site.
 
 >[!NOTE]
 >
@@ -182,7 +182,7 @@ Update your DNS configuration to route traffic from your store URLs to the Fastl
 
 -  Enable the Fastly module.
 -  Upload the default Fastly VCL code.
--  Provide a list of top-level and subdomains for each environment to Adobe, or submit {{commerce-support-ticket}}.
+-  Provide a list of top-level and subdomains for each environment to Adobe, or submit an Adobe Commerce Support ticket.
 -  Wait for confirmation that the specified domains have been added to your Cloud environments.
 -  On Starter projects, add the domains to your Fastly service configuration. See [Manage domains](fastly-custom-cache-configuration.md#manage-domains).
 -  For information about updating the DNS configuration, check with your [DNS registrar](https://lookup.icann.org/) for the correct method for your domain service.

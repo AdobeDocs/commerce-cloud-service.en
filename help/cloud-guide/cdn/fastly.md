@@ -37,7 +37,7 @@ Fastly provides the following services to optimize and secure content delivery o
 
 - **Origin cloaking**—Prevents traffic from bypassing the Fastly WAF and hides the IP addresses of your origin servers to protect them from direct access and DDoS attacks.
 
-  Origin cloaking is enabled by default on Adobe Commerce on cloud infrastructure Pro Production projects. To enable origin cloaking on Adobe Commerce on cloud infrastructure Starter Production projects, submit {{commerce-support-ticket}}. If you have traffic that does not require caching, you can customize the Fastly service configuration to allow requests to [bypass the Fastly cache](/help/cloud-guide/cdn/fastly-vcl-bypass-to-origin.md).
+  Origin cloaking is enabled by default on Adobe Commerce on cloud infrastructure Pro Production projects. To enable origin cloaking on Adobe Commerce on cloud infrastructure Starter Production projects, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). If you have traffic that does not require caching, you can customize the Fastly service configuration to allow requests to [bypass the Fastly cache](/help/cloud-guide/cdn/fastly-vcl-bypass-to-origin.md).
 
 - **[Image optimization](/help/cloud-guide/cdn/fastly-image-optimization.md)**—Offloads image processing and resizing load to the Fastly service so that servers can process orders and conversions more efficiently.
 
@@ -57,11 +57,11 @@ During project provisioning, Adobe adds your project to the Fastly service accou
 
 ### Change Fastly API token
 
-If you need to change the Fastly API token credential, submit {{commerce-support-ticket}} to request a new token, and then update your Staging or Production environment with the new value.
+Submit an Adobe Commerce Support ticket to change the Fastly API token credential. When you receive the new token, update your Staging or Production environment with the 
 
 **To change the Fastly API token credential**:
 
-1. Submit a support ticket requesting the new token.
+1. Submit a support ticket requesting new Fastly API credentials.
 
    Include your Adobe Commerce on cloud infrastructure project ID and the environments that require a new credential.
 
@@ -69,7 +69,7 @@ If you need to change the Fastly API token credential, submit {{commerce-support
 
 1. [Test the new credential](/help/cloud-guide/cdn/fastly-configuration.md#test-the-fastly-credentials).
 
-1. After you update the credential, submit {{commerce-support-ticket}} to delete the old API token.
+1. After you update the credential, submit an Adobe Commerce Support ticket to delete the old API token.
 
 ### Multiple Fastly accounts and assigned domains
 
@@ -79,7 +79,7 @@ Fastly only allows you to assign an apex domain and associated subdomains to one
 
    Use this option to link the apex domain and all subdomains to the Fastly service account for Adobe Commerce on cloud infrastructure.
 
--  Submit a support ticket to request domain delegation so that apex and subdomains can be linked to different accounts.
+-  Submit an Adobe Commerce support ticket to request domain delegation so that apex and subdomains can be linked to different accounts.
 
    Use this option if you have an apex domain that has multiple subdomains for Adobe Commerce and non-Adobe Commerce sites, and you want to link these subdomains to different Fastly accounts.
 
@@ -97,7 +97,7 @@ After the delegation is complete, your project subdomains can be added to the Fa
 
 The apex domain (`testweb.com` and `www.testweb.com`) is linked to the Adobe Commerce on cloud infrastructure Fastly service account. You want to manage Fastly services for the `service.testweb.com` and `product-updates.testweb.com` subdomains from a different Fastly account.
 
-Submit a support ticket requesting that the subdomains be delegated from the Adobe Commerce on cloud infrastructure Fastly service account to the Fastly account. Include the service ID for the Fastly account in the ticket.
+Submit an Adobe Commerce Support ticket requesting that the subdomains be delegated from the Adobe Commerce on cloud infrastructure Fastly service account to the Fastly account. Include the service ID for the Fastly account in the ticket.
 
 ## DDoS protection
 
@@ -107,7 +107,7 @@ DDOS protection is built in to the Fastly CDN service. Once you have enabled Fas
 
   Fastly manages TCP level attacks at the cache layer. This strategy provides the necessary scale and context per client to deal with a SYN flood attack and its many variants, including TCP stack, resource attacks, and TLS attacks within Fastly systems.
 
-- Fastly also provides protection against Layer 7 attacks. If your store is experiencing performance issues and you suspect a Layer 7 DDoS attack, submit {{commerce-support-ticket}}. Adobe can create and apply custom rules to the Fastly service to inspect for and filter out malicious requests based on header, payload, or a combination of attributes that identify the attack traffic. See [Checking for DDoS attacks][] and [How to block malicious traffic] in the *Adobe Commerce Help Center*.
+- Fastly also provides protection against Layer 7 attacks. If your store is experiencing performance issues and you suspect a Layer 7 DDoS attack, submit an Adobe Commerce Support ticket. Adobe can create and apply custom rules to the Fastly service to inspect for and filter out malicious requests based on header, payload, or a combination of attributes that identify the attack traffic. See [Checking for DDoS attacks][] and [How to block malicious traffic] in the *Adobe Commerce Help Center*.
 
 <!--Link definitions-->
 

@@ -171,7 +171,7 @@ For both Starter and Pro projects, you can use the Domains option to add and man
 
 - For Starter projects, go to Project URL under the Domains tab in the Project Web interface to add your Project URL.
 
-- For Pro projects, submit {{commerce-support-ticket}} to add the domain to your Cloud configuration before you can add the domain to your cloud configuration.
+- For Pro projects, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to add the domain to your Cloud configuration before you can add the domain to your cloud configuration.
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ For both Starter and Pro projects, you can use the Domains option to add and man
 
 >[!NOTE]
 >
->If the same domain has been configured on a different Fastly account, you must submit a ticket to request Domain Delegation before you can add the domain to Adobe Commerce. See [Multiple Fastly accounts and assigned domains](/help/cloud-guide/cdn/fastly.md#multiple-fastly-accounts-and-assigned-domains).
+>If the same domain has been configured on a different Fastly account, you must submit an Adobe Commerce support ticket to request Domain Delegation before you can add the domain to Adobe Commerce. See [Multiple Fastly accounts and assigned domains](/help/cloud-guide/cdn/fastly.md#multiple-fastly-accounts-and-assigned-domains).
 
 
 ## Enable Maintenance Mode

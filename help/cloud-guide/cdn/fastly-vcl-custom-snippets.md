@@ -146,7 +146,7 @@ This tutorial provides the basic steps to add custom snippets using the Fastly A
 
 **Prerequisites**
 
-{{custom-vcl-prerequisites}}
+{{$include /help/_includes/vcl-snippet-prerequisites.md}}
 
 ### Step 1: Locate the active VCL version
 

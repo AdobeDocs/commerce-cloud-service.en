@@ -15,7 +15,7 @@ You can configure the snippet to bypass Fastly caching for requests from a speci
 
 **Prerequisites:**
 
-{{custom-vcl-prerequisites}}
+{{$include /help/_includes/vcl-snippet-prerequisites.md}}
 
 **To bypass Fastly cache based on IP address or URL**:
 

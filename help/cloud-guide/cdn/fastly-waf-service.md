@@ -44,7 +44,7 @@ When the WAF service is enabled, it filters all web and admin traffic against th
 
 You can customize this error response page from the Admin. See [Customize the WAF response page](fastly-custom-response.md#customize-the-waf-error-page).
 
-If your Adobe Commerce admin page or storefront returns a `403 Forbidden` error page in response to a legitimate URL request, submit {{commerce-support-ticket}}. Copy the reference ID from the error response page and paste it into the ticket description.
+If your Adobe Commerce admin page or storefront returns a `403 Forbidden` error page in response to a legitimate URL request, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Copy the reference ID from the error response page and paste it into the ticket description.
 
 ## WAF maintenance and updates
 

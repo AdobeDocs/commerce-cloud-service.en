@@ -13,7 +13,7 @@ The following example shows how to configure [Fastly Edge Dictionary](https://do
 
 **Prerequisites:**
 
-{{custom-vcl-prerequisites}}
+{{$include /help/_includes/vcl-snippet-prerequisites.md}
 
 -  Review your site logs for fake referral URLs, and make a list of domains to block.
 

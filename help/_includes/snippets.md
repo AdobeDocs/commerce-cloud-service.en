@@ -101,17 +101,6 @@ To help export Production data as test data to use in Staging and Integration en
 To migrate this data, see [Migrate and deploy static files and data](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html).
 
 <!--Fastly-related snippets-->
-
-## Prerequisites {#custom-vcl-prerequisites}
-
-- Your environment must be configured to use the Fastly CDN. See [Configure Fastly services](/help/cloud-guide/cdn/fastly-configuration.md).
-
--  Ensure that you are running the latest version of the Fastly CDN module for Magento 2. See [Upgrade the Fastly Module](/help/cloud-guide/cdn/fastly-configuration.md#upgrade-fastly-module).
-
--  Verify the environment configuration for the Fastly service. See [Check Fastly caching](/help/cloud-guide/launch/checklist.md#verify-fastly-caching).
-
--  You must have Admin credentials to access the Staging and Production environments.
-
 ## Admin login {#admin-login-step}
 
 1. [Log in](/help/get-started/onboarding.md#access-your-admin-panel) to the Admin.
@@ -160,10 +149,3 @@ To migrate this data, see [Migrate and deploy static files and data](https://dev
 >[!NOTE]
 >
 >Instead of manually uploading custom VCL snippets, you can add snippets to the `$MAGENTO_CLOUD_APP_DIR/var/vcl_snippets_custom` directory in your environment. Snippets in this directory upload automatically when you click _upload VCL to Fastly_ in the Commerce Admin. See [Automated custom VCL snippets deployment](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md#automated-custom-vcl-snippets-deployment) in the Fastly CDN module for Magento 2 documentation.
-
-
-<!--Snippets for commonly referenced links-->
-
-## Adobe Commerce Support ticket {#commerce-support-ticket}
-
-[an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)
