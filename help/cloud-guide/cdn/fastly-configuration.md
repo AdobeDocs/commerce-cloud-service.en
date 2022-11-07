@@ -54,7 +54,6 @@ Use the following methods to find and save the Fastly service ID and API token f
   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
 
 
-
 >[!NOTE]
 >
 >If you cannot find the Fastly credentials for the Staging or Production environments, contact your Adobe Customer Technical Advisor (CTA).
@@ -162,10 +161,16 @@ During the initial Fastly setup process, you can use the following URLs to confi
   - `mcstaging.<your-domain>.com`
 
 - For Starter Production only:
+<<<<<<< HEAD
 
   - `mcprod.<your-domain>.com`
 
 
+=======
+
+  - `mcprod.<your-domain>.com`
+  
+>>>>>>> a55492cc6b9b5057b0ec5f4ab5310c33ae4e196f
 >[!NOTE]
 >
 >You cannot specify a custom domain for a non-production environment on Starter projects.
