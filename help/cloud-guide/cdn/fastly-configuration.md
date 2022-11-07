@@ -33,7 +33,7 @@ You need the Fastly credentials to configure Fastly CDN services from the Admin 
 
 >[!NOTE]
 >
->With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin directly. Use the Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit {{commerce-support-ticket}}.
+>With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin directly. Use the Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an Adobe Commerce Support ticket.
 
 Use the following methods to find and save the Fastly service ID and API token for your environment:
 
@@ -49,11 +49,11 @@ The method for viewing credentials is different for Pro and Starter projects.
   magento-cloud variable:get -e <environment ID>
   ```
 
-- Project Web UI—Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
+- Project Web UI—Check the following environment variables in the [Environment configuration](/help/cloud-guide/project/overview.md#configure-environment).
 
-   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
+  - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
 
-   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
+  - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ Adobe provides a Domain-Validated Let's Encrypt SSL/TLS certificate to serve sec
 
 >[!NOTE]
 >
->You can provide your own TLS or SSL certificate instead of using the Let's Encrypt certificate provided by Adobe. However, this process requires additional work to set up and maintain. To choose this option, submit {{commerce-support-ticket}} or work with Adobe to add custom, hosted certificates to your Adobe Commerce on cloud infrastructure environments.
+>You can provide your own TLS or SSL certificate instead of using the Let's Encrypt certificate provided by Adobe. However, this process requires additional work to set up and maintain. To choose this option, submit an Adobe Commerce support ticket or work with Adobe to add custom, hosted certificates to your Adobe Commerce on cloud infrastructure environments.
 
 To enable the SSL/TLS certificates for Adobe Commerce environments, Adobe automation completes the following steps:
 
@@ -158,19 +158,19 @@ During the initial Fastly setup process, you can use the following URLs to confi
 
 - For Pro Staging and Production:
 
-   - ```mcprod.<your-domain>.com```
-   - ```mcstaging.<your-domain>.com```
+  - ```mcprod.<your-domain>.com```
+  - ```mcstaging.<your-domain>.com```
 
 - For Starter Production only:
 
-   - ```mcprod.<your-domain>.com```
+ - ```mcprod.<your-domain>.com```
 
+
+These are the default pre-production URLs available after your project is provisioned. The value for `"your-domain"` is the domain name you specified during the onboarding process.
 
 >[!NOTE]
 >
 >You cannot specify a custom domain for a non-production environment on Starter projects.
-
-These are the default pre-production URLs available after your project is provisioned. The value for `"your-domain"` is the domain name you specified during the onboarding process.
 
 Update your DNS configuration to route traffic from your store URLs to the Fastly service. When you update the configuration, Adobe automatically provisions the required SSL/TLS certificates and uploads them to your Cloud environments. This provisioning can take up to 12 hours.
 
