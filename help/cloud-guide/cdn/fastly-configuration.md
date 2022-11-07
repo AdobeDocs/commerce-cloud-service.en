@@ -62,7 +62,8 @@ The method for viewing credentials is different for Pro and Starter projects.
 ## Enable Fastly caching
 
 You need the following components to enable and configure Fastly services:
--  Latest version of the [Fastly CDN for Magento 2 module](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2) installed in the Staging and Production environments. See [Upgrade Fastly](#upgrade-the-fastly-module).
+
+- Latest version of the [Fastly CDN for Magento 2 module](/help/cloud-guide/cdn/fastly.md) installed in the Staging and Production environments. See [Upgrade Fastly](#upgrade-the-fastly-module).
 
 -  [Fastly credentials](#get-fastly-credentials) for Adobe Commerce on cloud infrastructure Staging and Production environments
 
@@ -268,7 +269,7 @@ After you complete the DNS configuration changes, use the [cURL](https://curl.se
 
 If the headers do not have the correct values, see [Resolve errors found in the response headers](fastly-troubleshooting.md#curl) for troubleshooting help.
 
-## Upgrade the Fastly module {#upgrade-fastly-module}
+## Upgrade the Fastly module
 
 Fastly updates the Fastly CDN for Magento 2 module to resolve issues, increase performance, and provide new features.
 We recommend that you update the Fastly module in your Staging and Production environments to the [latest version](https://github.com/fastly/fastly-magento2/releases).
