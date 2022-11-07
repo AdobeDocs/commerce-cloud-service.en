@@ -71,7 +71,7 @@ If you need to change the Fastly API token credential, submit {{commerce-support
 
 1. After you update the credential, submit {{commerce-support-ticket}} to delete the old API token.
 
-### Multiple Fastly accounts and assigned domains {#domain}
+### Multiple Fastly accounts and assigned domains
 
 Fastly only allows you to assign an apex domain and associated subdomains to one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your Adobe Commerce site, you have the following options:
 

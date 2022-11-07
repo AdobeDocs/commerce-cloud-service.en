@@ -63,7 +63,7 @@ The method for viewing credentials is different for Pro and Starter projects.
 
 You need the following components to enable and configure Fastly services:
 
-- Latest version of the [Fastly CDN for Magento 2 module](/help/cloud-guide/cdn/fastly.md) installed in the Staging and Production environments. See [Upgrade Fastly](#upgrade-the-fastly-module).
+- Latest version of the [Fastly CDN for Magento 2 module](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2) installed in the Staging and Production environments. See [Upgrade Fastly](#upgrade-the-fastly-module).
 
 -  [Fastly credentials](#get-fastly-credentials) for Adobe Commerce on cloud infrastructure Staging and Production environments
 
@@ -276,6 +276,10 @@ We recommend that you update the Fastly module in your Staging and Production en
 
 After you update the module, you must upload the VCL code to apply the changes to the Fastly service configuration.
 
+>[!WARNING]
+>
+> If you have customized the default Fastly VCL code with a custom version, upgrading the Fastly module overwrites your changes. If you have added custom VCL snippets with unique names, those changes are preserved during the upgrade process. As a best practice, upgrade the Staging environment and validate the changes before applying changes to the Production environment.
+
 **To check the version of Fastly CDN module for Magento 2**:
 
 1. Change to the root directory of your Cloud environment.
@@ -305,10 +309,7 @@ After you update the module, you must upload the VCL code to apply the changes t
 
 After you verify Fastly services on the Staging site, repeat the upgrade process in the Production environment.
 
->[!TIP]
->
->We do not recommend replacing existing default snippets with a custom version that has the same name. If you do customize the default snippet, you must verify and update those snippets after you upgrade the Fastly module. For details on custom VCL, see [Custom Fastly VCL snippets](fastly-vcl-custom-snippets.md).
 
 >[!TIP]
 >
->If you experience problems setting up your Fastly configuration, you can visit the _Support knowledge base_ and use the [Adobe Commerce Fastly troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter.html).
+> If you have issues with Fastly services in your Adobe Commerce environments, see the [Adobe Commerce Fastly troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter.html).
