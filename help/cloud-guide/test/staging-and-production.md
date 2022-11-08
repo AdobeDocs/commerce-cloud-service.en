@@ -39,7 +39,7 @@ Check the configuration settings through the Admin panel including the Base URL,
 
    -  Click **Fastly Configuration**.
 
-   -  Verify that the values for the Fastly Service ID and Fastly API token credentials. See [Get Fastly credentials](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds).
+   -  Verify that the values for the Fastly Service ID and Fastly API token credentials. See [Get Fastly credentials](/help/cloud-guide/cdn/fastly-configuration.md#get-fastly-credentials).
 
    -  Click **Test credentials**.
 
