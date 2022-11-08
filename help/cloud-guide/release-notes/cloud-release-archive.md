@@ -13,9 +13,9 @@ hidefromtoc: yes
 
 ## v2002.0.22
 
-The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` package to decouple the release of `Adobe Commerce on cloud infrastructure` patches from the ece-tools release. Starting with this release, patches and critical fixes will be delivered using the [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches) package, which is a new dependency for the `ece-tools` package. We made these changes to reduce complexity for scheduling release updates and working with community contributions.
+The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` package to decouple the release of `Adobe Commerce on cloud infrastructure` patches from the ECE-Tools release. Starting with this release, patches and critical fixes will be delivered using the [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches) package, which is a new dependency for the `ece-tools` package. We made these changes to reduce complexity for scheduling release updates and working with community contributions.
 
--  ![new icon](../../assets/new.svg) **Changes to the ece-tools package**
+-  ![new icon](../../assets/new.svg) **Changes to the ECE-Tools package**
 
    -  ![new icon](../../assets/new.svg) Moved the Adobe Commerce patches from the `ece-tools` package to a new [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches) composer package.
 
@@ -61,7 +61,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/new.svg) Updated the logging information returned by the `module:refresh` command. Now, you can see a detailed list of enabled modules in the `cloud.log` file.<!-- MAGECLOUD-2514 -->
 
--  ![new icon](../../assets/new.svg) Improved version compatibility validation and warning notifications for compatibility issues between Adobe Commerce version and installed services, such as Elasticsearch, RabbitMq, Redis, and DB.<!-- MAGECLOUD-3535 -->
+-  ![new icon](../../assets/new.svg) Improved version compatibility validation and warning notifications for compatibility issues between Adobe Commerce version and installed services, such as Elasticsearch, [!DNL RabbitMQ], Redis, and DB.<!-- MAGECLOUD-3535 -->
 
 -  ![new icon](../../assets/new.svg) Added support for RabitMQ version 3.8.<!-- MAGECLOUD-4674-->
 
@@ -75,7 +75,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![fix icon](../../assets/fix.svg) Fixed an issue that caused an error with static content deployment during build. After an installation and `ece-tools` config dump, an error occurred if there was no locale specified for the admin user in the `config.php` file. Now, there is a default locale for the admin user in the `config.php` file.<!-- MAGECLOUD-3957 -->
 
--  ![fix icon](../../assets/fix.svg) Fixed an `Undefined index error` that occurs when a `magento-cloud` CLI command fails in an environment that is not configured with a secure URL (https). Now, the ece-tools package uses the base URL (http) if the secure URL is not available.<!-- MAGECLOUD-4009 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an `Undefined index error` that occurs when a `magento-cloud` CLI command fails in an environment that is not configured with a secure URL (https). Now, the ECE-Tools package uses the base URL (http) if the secure URL is not available.<!-- MAGECLOUD-4009 -->
 
 ## v2002.0.20
 
@@ -95,7 +95,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
       >[!WARNING]
       >
-      >Adobe Commerce on cloud infrastructure customers must [Submit a support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to upgrade the libsodium package on Pro Production and Staging environments prior to upgrading to Adobe Commerce 2.3.2. Currently, you cannot upgrade Starter environments to Adobe Commerce 2.3.2.
+      >Adobe Commerce on cloud infrastructure customers must [Submit an Adobe Commerce Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) to upgrade the libsodium package on Pro Production and Staging environments prior to upgrading to Adobe Commerce 2.3.2. Currently, you cannot upgrade Starter environments to Adobe Commerce 2.3.2.
 
    -  ![fix icon](../../assets/fix.svg) Added the `analysis-icu` and the `analysis-phonetic` Elasticsearch plugins to all Docker images.<!-- MAGECLOUD-3446 -->
 
@@ -267,7 +267,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  Added the following services to the Docker build:
 
-      -  RabbitMQ 3.5 and 3.7<!-- MAGECLOUD-2567 & 2889-->
+      -  [!DNL RabbitMQ] 3.5 and 3.7<!-- MAGECLOUD-2567 & 2889-->
 
       -  ElasticSearch 1.7, 2.4, and 5.2<!-- MAGECLOUD-2569 & 2887 -->
 
@@ -413,7 +413,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/new.svg) Added the ability to choose to merge or overwrite configuration for services using the `_merge` option in [CACHE](../environment/variables-deploy.md#cache_configuration), [SESSION](../environment/variables-deploy.md#session_configuration), [QUEUE](../environment/variables-deploy.md#queue_configuration), and [SEARCH](../environment/variables-deploy.md#search_configuration) configurations.<!-- MAGECLOUD-2105 -->
 
--  ![new icon](../../assets/new.svg) **Environment Configuration sample file**—We added a `.magento.env.yaml` sample file to the ece-tools package that includes a detailed description and possible values for each environment variable.<!-- MAGECLOUD-1908 -->
+-  ![new icon](../../assets/new.svg) **Environment Configuration sample file**—We added a `.magento.env.yaml` sample file to the ECE-Tools package that includes a detailed description and possible values for each environment variable.<!-- MAGECLOUD-1908 -->
 
    -  We also added a deep validation for the `.magento.env.yaml` configuration that prevents failures in the deployment process caused by unexpected values. When a failure occurs, you now receive a detailed error message that begins with: `Environment configuration is not valid. Please correct .magento.env.yaml file with next suggestions:`<!-- MAGECLOUD-1907 -->
 
@@ -439,7 +439,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 >[!NOTE]
 >
->The ece-tools version 2002.0.11 is required for 2.2.4 compatibility.
+>The ECE-Tools version 2002.0.11 is required for 2.2.4 compatibility.
 
 -  ![new icon](../../assets/new.svg) **Configuring read-only connections to non-master nodes**—This release adds the ability to configure a read-only connection to a non-master node to receive read-only traffic (for  [MariaDB](../environment/variables-deploy.md#mysql_use_slave_connection)).<!--MAGECLOUD-143 -->[Redis](../environment/variables-deploy.md#redis_use_slave_connection) and for <!--MAGECLOUD-143 -->
 
@@ -499,11 +499,11 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  `WARM_UP_PAGES`—You can list the pages to use to pre-load the cache. Available in the new [Post-deploy variables](../environment/variables-post-deploy.md).
 
--  ![fix icon](../../assets/fix.svg) Fixed an issue that involved a locally applied patch breaking the deployment on an instance. Now, ece-tools can detect that a patch has been applied.<!-- MAGECLOUD-982 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that involved a locally applied patch breaking the deployment on an instance. Now, ECE-Tools can detect that a patch has been applied.<!-- MAGECLOUD-982 -->
 
 -  ![fix icon](../../assets/fix.svg) Fixed a conflict between JavaScript bundling and GZIP functionality. Now these features work correctly together.<!-- MAGECLOUD-1735 -->
 
--  ![fix icon](../../assets/fix.svg) Fixed an issue that caused ece-tools CLI commands to fail when using earlier PHP 7.0.x versions.<!-- MAGECLOUD-1744 -->
+-  ![fix icon](../../assets/fix.svg) Fixed an issue that caused ECE-Tools CLI commands to fail when using earlier PHP 7.0.x versions.<!-- MAGECLOUD-1744 -->
 
 -  ![fix icon](../../assets/fix.svg) Fixed an issue that prevented static content deployment with the compact strategy in multiple threads.<!-- MAGECLOUD-1822 -->
 
@@ -659,7 +659,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 **Resolved issues:**
 
--  The RabbitMQ configuration process now obtains all required parameters automatically.<!-- MAGECLOUD-1246 -->
+-  The [!DNL RabbitMQ] configuration process now obtains all required parameters automatically.<!-- MAGECLOUD-1246 -->
 
 ## v2002.0.1
 

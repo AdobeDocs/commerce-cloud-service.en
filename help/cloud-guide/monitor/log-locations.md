@@ -13,7 +13,7 @@ You can view the logs from the file system, the Project Web Interface, and the `
 
 -  **Project web Interface**—You can see build and post-deploy log information in the environment _messages_ list.
 
--  **Magento Cloud CLI**—You can view logs using the `magento-cloud log` command.
+-  **Cloud CLI**—You can view logs using the `magento-cloud log` command.
 
 >[!TIP]
 >

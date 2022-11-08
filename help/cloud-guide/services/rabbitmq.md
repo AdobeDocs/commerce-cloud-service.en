@@ -3,15 +3,15 @@ title: Set up RabbitMQ service
 description: Learn how to enable the RabbitMQ service to manage message queues for Adobe Commerce on cloud infrastructure.
 ---
 
-# Set up RabbitMQ service
+# Set up [!DNL RabbitMQ] service
 
 The [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) is a system within Adobe Commerce that allows a [module](https://glossary.magento.com/module) to publish messages to queues. It also defines the consumers that receive the messages asynchronously.
 
-The MQF uses [RabbitMQ](https://www.rabbitmq.com/) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. RabbitMQ is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
+The MQF uses [RabbitMQ](https://www.rabbitmq.com/) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. [!DNL RabbitMQ] is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
 
 >[!WARNING]
 >
->If you prefer using an existing AMQP-based service, like RabbitMQ, instead of relying on Adobe Commerce on cloud infrastructure to create it for you, use the [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration) environment variable to connect it to your site.
+>If you prefer using an existing AMQP-based service, like [!DNL RabbitMQ], instead of relying on Adobe Commerce on cloud infrastructure to create it for you, use the [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration) environment variable to connect it to your site.
 
 {{service-instruction}}
 

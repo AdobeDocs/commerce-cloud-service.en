@@ -135,15 +135,15 @@ You can apply patches manually in a local environment and test them before you d
 
 1. Test the patches, make any necessary changes to custom patches.
 
-## Apply a patch in a Cloud environment
+## Apply a patch in a remote environment
 
 >[!WARNING]
 >
 >We strongly recommend testing all patches in an Integration or Staging environments before deploying to the Production environment.
 
-**To apply patches in a Cloud environment**:
+**To apply patches in a remote environment**:
 
-1. Add the 'QUALITY_PATCHES' variable to the `.magento.env.yaml` file and list the required patches underneath.
+1. Add the `QUALITY_PATCHES` variable to the `.magento.env.yaml` file and list the required patches underneath.
 
    ```yaml
    stage:

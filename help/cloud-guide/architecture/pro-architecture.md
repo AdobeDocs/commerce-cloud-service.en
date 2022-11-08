@@ -141,7 +141,7 @@ Adobe Commerce on cloud infrastructure creates the backup using snapshots to enc
 
 >[!TIP]
 >
->On Pro Staging and Production environments, you must [Submit a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to restore an environment from an automatic backup. You can create a backup of the database and code for your Production and Staging environments using `magento-cloud` CLI commands. See [Dump your database](../storage/snapshots.md#dump-your-database) and [`bin/magento setup:backup`](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html#setup%3Abackup). For Integration environments, we highly recommend that you create a snapshot as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Snapshots and backup management](../storage/snapshots.md).
+>On Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to restore an environment from an automatic backup. You can create a backup of the database and code for your Production and Staging environments using `magento-cloud` CLI commands. See [Dump your database](../storage/snapshots.md#dump-your-database) and [`bin/magento setup:backup`](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html#setup%3Abackup). For Integration environments, we highly recommend that you create a snapshot as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Snapshots and backup management](../storage/snapshots.md).
 
 ### Production technology stack
 
@@ -189,7 +189,7 @@ If you expect a significant increase in traffic for an event or other reason, yo
 
 ## Master environment
 
-On Pro plan projects, the `master` branch provides an active PaaS environment with your Production environment. Always push a copy of the Production code to the `master` environment in case that you need to debug the Production environment without interrupting services.
+On Pro projects, the `master` branch provides an active PaaS environment with your Production environment. Always push a copy of the Production code to the `master` environment in case that you need to debug the Production environment without interrupting services.
 
 **Caveats:**
 

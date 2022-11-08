@@ -103,7 +103,7 @@ Fastly also provides a series of [geolocation-related VCL features](https://docs
 
 Fastly Edge Modules is a flexible framework that allows definition of UI components and associated VCL code through a template. These modules make it easy to customize and extend the Fastly service configuration through the user interface instead of using custom VCL snippets.
 
-Edge modules allow you to enable specific functionality like CORS headers, Magento Cloud Sitemap rewrites, and to configure integration between your Adobe Commerce store and other CMSs or back ends.
+Edge modules allow you to enable specific functionality like CORS headers, Cloud Sitemap rewrites, and to configure integration between your Adobe Commerce store and other CMSs or back ends.
 
 To access the Edge Modules menu to view, configure, and manage the available modules, turn on the _Enable Fastly Edge modules_ option. See [Fastly Edge Modules](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULES.md) in the Fastly CDN module documentation.
 
@@ -145,7 +145,7 @@ The default Fastly VCL code specifies default values for Origin shielding and ti
 
 For more information, see the [Backend settings guide](https://github.com/fastly/fastly-magento2/blob/21b61c8189971275589219d418332798efc7db41/Documentation/Guides/BACKEND-SETTINGS.md) in the Fastly module documentation.
 
-## Basic authentication {#basic-auth}
+## Basic authentication
 
 Basic authentication is a feature to protect every page and asset on your site
 with a username and password. We **do not recommend** activating basic

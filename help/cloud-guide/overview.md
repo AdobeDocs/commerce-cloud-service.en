@@ -7,7 +7,7 @@ description: Learn about building, deploying, and managing Commerce on Cloud inf
 
 Adobe Commerce on cloud infrastructure provides an automated hosting platform with a **self-service** approach to building, deploying, and managing your Commerce application in a cloud-native environment. Adobe Commerce on cloud infrastructure comes with additional features that set it apart from the on-premises Adobe Commerce and Magento Open Source platforms:
 
-* A pre-provisioned infrastructure that includes PHP, MySQL (MariaDB), Redis, RabbitMQ, and supported search engine technologies.
+* A pre-provisioned infrastructure that includes PHP, MySQL (MariaDB), Redis, [!DNL RabbitMQ], and supported search engine technologies.
 * Git-based workflow with automatic build and deploy for efficient Rapid development and Continuous deployment every time you push code changes in a Platform as a Service (PaaS) environment.
 * Highly Customizable environment configuration files and command-line interface (CLI) manage and deploy tools.
 * Amazon Web Services (AWS) hosting that offers a Scalable and Secure environment for online sales and retailing.
@@ -21,8 +21,8 @@ Think of the Adobe Commerce on cloud infrastructure as five functional layers, a
 ![Cloud stack](../assets/CloudStack.svg)
 
 1. [**Cloud Infrastructure**](architecture/pro-architecture.md): Choose either Amazon Web Services (AWS) or Microsoft Azure as your Infrastructure as a Service (IaaS) foundation for your Adobe Commerce on cloud infrastructure Pro projects.
-1. [**Platform as a Service**](architecture/cloud-architecture.md): Each Adobe Commerce on cloud infrastructure plan provides a Platform as a Service (PaaS) Integration environment for developing, testing, and integrating services.
-1. [**Adobe Commerce**](project/overview.md):  Adobe Commerce on cloud infrastructure provides a pre-provisioned infrastructure that includes PHP, MySQL (MariaDB), Redis, RabbitMQ, and supported search engine technologies.
+1. [**Platform as a Service**](architecture/cloud-architecture.md): Each Adobe Commerce on cloud infrastructure project provides a Platform as a Service (PaaS) Integration environment for developing, testing, and integrating services.
+1. [**Adobe Commerce**](project/overview.md):  Adobe Commerce on cloud infrastructure provides a pre-provisioned infrastructure that includes PHP, MySQL (MariaDB), Redis, [!DNL RabbitMQ], and supported search engine technologies.
 1. [**Performance Tools**](monitor/new-relic.md): New Relic performance tools enable you to debug, monitor, and manage your applications and infrastructure by collecting, analyzing, and displaying data from your Adobe Commerce on cloud infrastructure projects.
 1. [**Content Delivery Network (CDN), Web Application Firewall ([!DNL WAF]) and Image Optimization (IO)**](/help/cloud-guide/cdn/fastly.md):
 
@@ -38,5 +38,6 @@ Use the [Commerce Get Started guide](../get-started/overview.md) to set up your 
 
 The Commerce on cloud infrastructure guide assumes that you have some working knowledge and understanding of the Adobe Commerce application. You can refer to the Commerce Developer and User guides below:
 
-* [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
-* [Adobe Commerce Documentation](https://experienceleague.adobe.com/docs/commerce.html)
+* [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs) (Adobe Developer site)—Develop, customize, integrate, extend, and use advanced capabilities 
+
+* [Adobe Commerce Documentation](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League)—Plan, implement, operate, upgrade, and maintain your Commerce projects

@@ -73,10 +73,10 @@ Then, inspect the response to troubleshoot issues with the uncached content.
 
 {{automate-vcl-snippet-deployment}}
 
-{{$include /help/_includes/modify-vcl-snippet.md}}
+{{$include /help/_includes/vcl-snippet-modify.md}}
 
-{{$include /help/_includes/delete-vcl-snippet.md}}
+{{$include /help/_includes/vcl-snippet-delete.md}}
 
 <!--External link definitions-->
-[Fastly VCL reference]: https://docs.fastly.com/vcl/
 
+[Fastly VCL reference]: https://docs.fastly.com/vcl/

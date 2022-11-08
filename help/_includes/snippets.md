@@ -25,13 +25,13 @@ Set the `_merge` option to one of the following:
 
 >[!WARNING]
 >
->Some **Pro projects** require a support ticket to update the route configuration in the `routes.yaml` file and the cron configuration in the `.magento.app.yaml` file. Adobe recommends updating and testing YAML configuration files in an Integration environment, then deploying changes to the Staging environment. If your changes are not applied to Staging sites after you redeploy and there are no related error messages in the log, then you **MUST** submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) that describes the attempted configuration changes. Include any updated YAML configuration files in the ticket.
+>Some **Pro projects** require a support ticket to update the route configuration in the `routes.yaml` file and the cron configuration in the `.magento.app.yaml` file. Adobe recommends updating and testing YAML configuration files in an Integration environment, then deploying changes to the Staging environment. If your changes are not applied to Staging sites after you redeploy and there are no related error messages in the log, then you **MUST** [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) that describes the attempted configuration changes. Include any updated YAML configuration files in the ticket.
 
 ## Pro services support {#pro-update-service}
 
 >[!TIP]
 >
->For Pro projects, you must submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project.
+>For Pro projects, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project.
 
 ## Redeploy warning {#redeploy-warning}
 
@@ -64,7 +64,7 @@ Use the following instructions for service setup on Pro Integration environments
 
 >[!NOTE]
 >
->Submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the service configuration on Pro Production and Staging environments.
+>[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the service configuration on Pro Production and Staging environments.
 
 ## Service change {#change-service-version}
 
@@ -100,7 +100,7 @@ To help export Production data as test data to use in Staging and Integration en
 
 To migrate this data, see [Migrate and deploy static files and data](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html).
 
-<!--Fastly-related snippets-->
+<!-- Fastly-related snippets begin -->
 
 ## Admin login {#admin-login-step}
 
@@ -144,9 +144,10 @@ To migrate this data, see [Migrate and deploy static files and data](https://dev
 >
 >The _Custom VCL snippets_ UI option shows only the snippets added through the Adobe Commerce Admin. If you add snippets using the Fastly API, use the API to [manage them](/help/cloud-guide/cdn/fastly-vcl-custom-snippets.md#manage-vcl-using-the-api).
 
-
 ## Automate custom VCL snippet deployment {#automate-vcl-snippet-deployment}
 
 >[!NOTE]
 >
 >Instead of manually uploading custom VCL snippets, you can add snippets to the `$MAGENTO_CLOUD_APP_DIR/var/vcl_snippets_custom` directory in your environment. Snippets in this directory upload automatically when you click _upload VCL to Fastly_ in the Commerce Admin. See [Automated custom VCL snippets deployment](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md#automated-custom-vcl-snippets-deployment) in the Fastly CDN module for Magento 2 documentation.
+
+<!-- Fastly-related snippets end -->

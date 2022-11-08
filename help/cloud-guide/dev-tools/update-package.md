@@ -43,7 +43,7 @@ An update to the `ece-tools` package also updates the other [Cloud Suite for Com
    git push origin <branch-name>
    ```
 
-1. After test validation, merge this branch to the Integration branch.
+1. After test validation, merge this branch to the integration branch.
 
 <!-- link definitions -->
 

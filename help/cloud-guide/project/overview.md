@@ -27,7 +27,7 @@ The **View Project Page** link displays for Account Owners only. If you are not 
 
 When you log in to the [Project Web interface](https://accounts.magento.cloud/user/), you see your accessible projects. As an Account Owner, you can only see projects for your company. An Adobe Solutions Partner may see multiple projects for clients that they support. Click on a project to see a hierarchy of environments.
 
-For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branches you create display as children from the `master` branch. Adobe recommends creating a Staging branch, then branching from `staging` for your Integration development. See [Starter architecture](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
+For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branches you create display as children from the `master` branch. Adobe recommends creating a staging branch, then branching from `staging` for your Integration development. See [Starter architecture](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
 ![Starter access](../../assets/starter/project-access.png)
 
@@ -37,17 +37,17 @@ To access an environment store and admin, select a branch and click **Access Sit
 
 ![Pro access](../../assets/pro-project-access.png)
 
-The Pro plan Production and Staging environments include three nodes that you can access using the following links:
+The Pro Production and Staging environments include three nodes that you can access using the following links:
 
 -  Load balancer URLs:
 
-    -  `http[s]://<your domain>.c.<project-ID>.ent.magento.cloud`
-    -  `http[s]://<your staging domain name>.c.<project-ID>.ent.magento.cloud`
+    -  `http[s]://<your-domain>.c.<project-ID>.ent.magento.cloud`
+    -  `http[s]://<your-staging-domain>.c.<project-ID>.ent.magento.cloud`
 
 -  Direct access to one of the three redundant servers:
 
-    -  `http[s]://<your domain>.{1|2|3}.<project-ID>.ent.magento.cloud`
-    -  `http[s]://<your staging domain name>.{1|2|3}.<project-ID>.ent.magento.cloud`
+    -  `http[s]://<your-domain>.{1|2|3}.<project-ID>.ent.magento.cloud`
+    -  `http[s]://<your-staging-domain>.{1|2|3}.<project-ID>.ent.magento.cloud`
 
    The production URL is used by the content delivery network (CDN).
 

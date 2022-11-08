@@ -22,7 +22,7 @@ The following example shows how to use a custom VCL snippet with a [Fastly Acces
 
 -  List of client IP addresses to include on the allowlist
 
-## Create Edge ACL for allowing client IPs {#edge-acl}
+## Create Edge ACL for allowing client IPs
 
 Edge ACLs create IP address lists for managing access to your site. In this example, you create an Edge ACL and add the list of client IP addresses allowed to access the Admin for your project environment.
 
@@ -54,7 +54,7 @@ Edge ACLs create IP address lists for managing access to your site. In this exam
 
 1. Refresh the cache according to the notification at the top of the page.
 
-## Create the custom VCL snippet to secure Admin access {#vcl}
+## Create the custom VCL snippet to secure Admin access
 
 The following custom VCL snippet code (JSON format) shows the logic to filter requests to the Admin and allow access if the client IP address matches an address in the `allowlist` ACL.
 
@@ -120,9 +120,6 @@ After reviewing and updating the code for your environment, use either of the fo
 
 Fastly validates the updated version of the VCL code during the upload process. If the validation fails, edit the custom VCL snippet to fix the issue. Then, upload the VCL again.
 
+{{$include /help/_includes/vcl-snippet-modify.md}}
 
-{{$include /help/_includes/modify-vcl-snippet.md}}
-
-{{$include /help/_includes/delete-vcl-snippet.md}}
-
-
+{{$include /help/_includes/vcl-snippet-delete.md}}

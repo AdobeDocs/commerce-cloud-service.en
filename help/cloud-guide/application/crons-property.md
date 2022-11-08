@@ -46,7 +46,7 @@ If your project requires custom cron jobs, you can add them to the default cron 
 
 Adobe Commerce added an auto-crons configuration option to all Pro projects to support self-service cron configuration on Staging and Production environments using the `.magento.app.yaml` file. If this option is enabled, you can use `crontab` to review the cron configuration.
 
-Although you can use crontab to review configuration on Pro plan projects, Adobe Commerce does not use crontab to run cron jobs for sites deployed on our cloud infrastructure.
+Although you can use crontab to review configuration on Pro projects, Adobe Commerce does not use crontab to run cron jobs for sites deployed on our cloud infrastructure.
 
 **To review cron configuration on Pro environments**:
 
@@ -60,7 +60,7 @@ Although you can use crontab to review configuration on Pro plan projects, Adobe
 
    >[!NOTE]
    >
-   >If the `crontab -l` command returns a `Command not found` error, you must submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable the auto-crons self-service configuration option on your Adobe Commerce on cloud infrastructure project.
+   >If the `crontab -l` command returns a `Command not found` error, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable the auto-crons self-service configuration option on your Adobe Commerce on cloud infrastructure project.
 
 The following example shows the crontab output for an environment that has only the default `crons` configuration:
 
@@ -130,7 +130,7 @@ On the Adobe Commerce on cloud infrastructure platform, you configure custom cro
 >
 >The default cron interval for all environments is one minute. The default cron interval in all other regions is five minutes for Pro Integration environments and one minute for Pro Staging and Production environments. You cannot configure more frequent intervals than the default minimums.
 
-On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must be enabled on your Adobe Commerce on cloud infrastructure project before you can add custom cron jobs to Staging and Production environments using `.magento.app.yaml`. If this feature is not enabled, submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable auto-crons.
+On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must be enabled on your Adobe Commerce on cloud infrastructure project before you can add custom cron jobs to Staging and Production environments using `.magento.app.yaml`. If this feature is not enabled, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable auto-crons.
 
 **To add custom cron jobs**:
 

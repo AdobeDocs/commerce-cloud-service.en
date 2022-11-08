@@ -11,7 +11,7 @@ After a successful migration of your code, files, and data to Staging or Product
 
 If you encounter errors on deployment or other issues when testing, check the log files. Log files are located under the `var/log` directory.
 
-The deployment log is in `/var/log/platform/<prodject ID>/deploy.log`. The value of `<project ID>` depends on the project ID and whether the environment is Staging or Production. For example, with a project ID of `yw1unoukjcawe`, the Staging user is `yw1unoukjcawe_stg` and the Production user is `yw1unoukjcawe`.
+The deployment log is in `/var/log/platform/<prodject-ID>/deploy.log`. The value of `<project-ID>` depends on the project ID and whether the environment is Staging or Production. For example, with a project ID of `yw1unoukjcawe`, the Staging user is `yw1unoukjcawe_stg` and the Production user is `yw1unoukjcawe`.
 
 When accessing logs in Production or Staging environments, use SSH to log in to each of the three nodes to locate the logs. Or, you can use the [New Relic Logs service](../monitor/new-relic.md#new-relic-logs) to view and query aggregated log data from all nodes. See [View logs](../monitor/log-locations.md#application-logs).
 
@@ -84,7 +84,7 @@ If you encounter issues, save your reproduction steps, error messages, strange s
 <td>
 <ul>
 <li>Create and edit customer accounts, verify emails</li>
-<li>Create Admin roles for merchants </li>
+<li>Create Admin roles for merchants</li>
 <li>Create merchant accounts with specific roles</li>
 <li>Test merchant account access per role</li>
 </ul>
@@ -211,4 +211,3 @@ You can use the Magento Functional Testing Framework (MFTF) to complete function
 ## Set up the Security Scan Tool
 
 We provide a free Security Scan Tool for your sites. To add your sites and run the tool, see [Security Scan Tool](../launch/overview.md#set-up-the-security-scan-tool).
-

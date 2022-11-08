@@ -8,7 +8,7 @@ product: magento
 
 + [Commerce](overview.md)
 + Architecture {#architecture}
-    + [Architecture](architecture/cloud-architecture.md)
+    + [Cloud infrastructure](architecture/cloud-architecture.md)
     + [Starter architecture](architecture/starter-architecture.md)
     + [Starter workflow](architecture/starter-develop-deploy-workflow.md)
     + [Pro architecture](architecture/pro-architecture.md)
@@ -28,7 +28,7 @@ product: magento
     + [User access](project/user-access.md)
     + [Multi-factor authentication](project/multi-factor-authentication.md)
     + [Outgoing emails](project/outgoing-emails.md)
-    + [SenGrid mail service](project/sendgrid.md)
+    + [SendGrid mail service](project/sendgrid.md)
     + [Branch management](project/console-branches.md)
 + Developer tools {#dev-tools}
     + [Cloud CLI](dev-tools/cloud-cli.md)

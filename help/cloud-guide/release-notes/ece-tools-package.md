@@ -41,7 +41,7 @@ Release date: August 4, 2022
 
 -  ![fix icon](../../assets/fix.svg) **ElasticSuite Validator and OpenSearch**—Fixed ElasticSuite integrity check validator issue when OpenSearch is installed.<!-- MCLOUD-8767 -->
 -  ![fix icon](../../assets/fix.svg) **Return types for deploy commands**—Fixed return types for deploy commands.<!-- AC-3208 -->
--  ![fix icon](../../assets/fix.svg) **RabbitMQ issue with new Commerce 2.4.5 installation**—Fixed RabbitMQ crash issue on new Commerce 2.4.5. installation.<!-- MCLOUD-9059 -->
+-  ![fix icon](../../assets/fix.svg) **[!DNL RabbitMQ] issue with new Commerce 2.4.5 installation**—Fixed [!DNL RabbitMQ] crash issue on new Commerce 2.4.5. installation.<!-- MCLOUD-9059 -->
 
 ## v2002.1.10
 
@@ -79,7 +79,7 @@ Release date: July 29, 2021
 
 -  ![new icon](../../assets/new.svg) Added support for Composer 2.0.<!--MCLOUD-8003-->
 
--  ![fix icon](../../assets/fix.svg) **Updated composer requirements for `symphony/console`**—Updated the ece-tools `composer.json` version requirements for the `symphony/console` package to fix an issue that caused the `di:compile` commands to fail with the following error: `Incompatible argument type: Required type: int. Actual type: string`<!--MC-42919-->
+-  ![fix icon](../../assets/fix.svg) **Updated composer requirements for `symphony/console`**—Updated the ECE-Tools `composer.json` version requirements for the `symphony/console` package to fix an issue that caused the `di:compile` commands to fail with the following error: `Incompatible argument type: Required type: int. Actual type: string`<!--MC-42919-->
 
 -  ![fix icon](../../assets/fix.svg) Updated the end-of-life software checks (`eol.yaml`) to include Elasticsearch 7.9.x.<!--MCLOUD-7938-->
 
@@ -105,7 +105,7 @@ Release date: April 20, 2021
 
 Release date: February 1, 2021
 
--  ![new icon](../../assets/new.svg) **Remote storage**—Added the `REMOTE_STORAGE` environment variable to enable Cloud Projects for remote storage of media files using a storage service, such as AWS S3. This configuration option is part of the ece-tools package, but is not supported on Adobe Commerce on cloud infrastructure.<!--MCLOUD-7153-->
+-  ![new icon](../../assets/new.svg) **Remote storage**—Added the `REMOTE_STORAGE` environment variable to enable Cloud Projects for remote storage of media files using a storage service, such as AWS S3. This configuration option is part of the ECE-Tools package, but is not supported on Adobe Commerce on cloud infrastructure.<!--MCLOUD-7153-->
 
 -  ![new icon](../../assets/new.svg) **New cloud:config:validate command**—Added command `php vendor/bin/ece-tools cloud:config:validate` to validate the `.magento.env.yaml` configuration before pushing changes to the remote Cloud environment.<!--MCLOUD-7120-->
 
@@ -137,11 +137,11 @@ Release date: November 9, 2020
 
 **Infrastructure updates**—
 
--  ![new icon](../../assets/new.svg) Added ece-tools support for the read-only `pub/static` directory when static content is set to deploy in the build stage.<!--MC-37699-->
+-  ![new icon](../../assets/new.svg) Added ECE-Tools support for the read-only `pub/static` directory when static content is set to deploy in the build stage.<!--MC-37699-->
 
 -  ![new icon](../../assets/new.svg) Added support for Elasticsearch 7.9 and Redis 6 for compatibility with upcoming Adobe Commerce releases.<!--MCLOUD-7191-->
 
--  ![fix icon](../../assets/fix.svg) Updated the ece-tools `composer.json` to add a required dependency for the Quality Patches Tool. This fixes a circular dependency that existed between the ece-tools and magento-cloud-patches packages.<!--MCLOUD-6910-->
+-  ![fix icon](../../assets/fix.svg) Updated the ECE-Tools `composer.json` to add a required dependency for the Quality Patches Tool. This fixes a circular dependency that existed between the ECE-Tools and magento-cloud-patches packages.<!--MCLOUD-6910-->
 
 **Validation and log improvements**—
 
@@ -268,7 +268,7 @@ Release date: February 6, 2020
 
    -  ![new icon](../../assets/new.svg) **Added separate package for Cloud Docker for Commerce**—Decoupled the Docker package from the `ece-tools` package to maintain code quality and provide independent releases. Updates and fixes related to `ece-tools` are managed from the [magento-cloud-docker](https://github.com/magento/magento-cloud-docker) GitHub repository.<!--MAGECLOUD-2927-->
 
-   -  ![new icon](../../assets/new.svg) **Updated patching capabilities**—Moved the patching functionality from the ece-tools package to a separate [magento-cloud-patches](https://github.com/magento/magento-cloud-patches) package. During deployment, `ece-tools` uses the new package to apply patches. See [Cloud patches release notes](cloud-patches.md).<!--MAGECLOUD-4567-->
+   -  ![new icon](../../assets/new.svg) **Updated patching capabilities**—Moved the patching functionality from the ECE-Tools package to a separate [magento-cloud-patches](https://github.com/magento/magento-cloud-patches) package. During deployment, `ece-tools` uses the new package to apply patches. See [Cloud patches release notes](cloud-patches.md).<!--MAGECLOUD-4567-->
 
    -  ![new icon](../../assets/new.svg) **Updated Composer dependencies**—Updated the `composer.json` file for Adobe Commerce on cloud infrastructure with a dependency for the `magento/magento-cloud-docker` package. Now, `ece-tools` includes dependencies for all packages in the [`Cloud Suite for Commerce`](cloud-tools.md). These packages are installed and updated automatically when you install or update `ece-tools`.
 
@@ -276,11 +276,11 @@ Release date: February 6, 2020
 
    -  ![new icon](../../assets/new.svg) Now you can customize the build, deploy, and post-deploy processes using XML configuration files to override or customize the default configuration.
 
-   -  ![new icon](../../assets/new.svg) **Changed the `hooks` configuration in `.magento.app.yaml`**—We updated the `hooks` configuration format to support scenario-based deployments. The legacy format from earlier ece-tools 2002.0.x release is still supported. However, you must update to the new format to use the scenario-based deployment feature. See [Scenario-based deployments](../deploy/scenario-based.md#add-scenarios-using-build-and-deploy-hooks).
+   -  ![new icon](../../assets/new.svg) **Changed the `hooks` configuration in `.magento.app.yaml`**—We updated the `hooks` configuration format to support scenario-based deployments. The legacy format from earlier ECE-Tools 2002.0.x release is still supported. However, you must update to the new format to use the scenario-based deployment feature. See [Scenario-based deployments](../deploy/scenario-based.md#add-scenarios-using-build-and-deploy-hooks).
 
 >[!NOTE]
 >
->Before updating to ece-tools version 2002.1.0, review the [backward   incompatible changes](backward-incompatible-changes.md) to learn about changes that might require you to   update Adobe Commerce on cloud infrastructure project configuration or processes.
+>Before updating to ECE-Tools version 2002.1.0, review the [backward   incompatible changes](backward-incompatible-changes.md) to learn about changes that might require you to   update Adobe Commerce on cloud infrastructure project configuration or processes.
 
 -  ![new icon](../../assets/new.svg) **Service updates**—
 
@@ -310,7 +310,7 @@ Release date: February 6, 2020
 
    -  ![new icon](../../assets/new.svg) **New cron command**—You can now manually manage cron processing in your Adobe Commerce on cloud infrastructure environment using the `cron:disable` and `cron:enable` commands. Use the disable command to stop all active cron processes and disable all cron jobs. Use the enable command to re-enable cron jobs when you are ready. See [Disable cron jobs](../application/crons-property.md#disable-cron-jobs).
 
-   -  ![new icon](../../assets/new.svg) **Improved error reporting**—Added better logging for CLI command failures that occur during ece-tools processing.<!--MAGECLOUD-4849-->
+   -  ![new icon](../../assets/new.svg) **Improved error reporting**—Added better logging for CLI command failures that occur during ECE-Tools processing.<!--MAGECLOUD-4849-->
 
    -  ![new icon](../../assets/new.svg) **Remove deprecated build commands**— Removed the following build commands: `m2-ece-build`, `m2-ece-deploy`, `m2-ece-scd-dump`, and renamed `ece-tools docker` commands to `ece-docker`. See [Backward incompatible changes](backward-incompatible-changes.md)<!--MAGECLOUD-4392-->
 

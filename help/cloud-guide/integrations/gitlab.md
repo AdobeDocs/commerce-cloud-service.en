@@ -85,18 +85,20 @@ Use the `magento-cloud integration` command to enable the GitLab integration, an
 magento-cloud integration:add --type=gitlab --project=<project-ID> --token=<your-GitLab-token> [--base-url=<GitLab-url> --server-project=<GitLab-project> --build-merge-requests={true|false} --merge-requests-clone-parent-data={true|false} --fetch-branches={true|false} --prune-branches={true|false}]
 ```
 
--  `<project-ID>`—Your Adobe Commerce on cloud infrastructure project ID
--  `<your-GitLab-token>`—The personal access token you generated for GitLab
--  `--base-url`-URL of GitLab (`https://gitlab.com/` if GitLab is used in its SaaS version)
--  `--server-project`-Project name in GitLab (part after the base url)
--  `--build-merge-requests`-—An _optional_ parameter that instructs Adobe Commerce on cloud infrastructure to build a new environment for every merge request (`true` by default)
--  `--merge-requests-clone-parent-data`-—An _optional_ parameter that instructs Adobe Commerce on cloud infrastructure to clone the parent environment's data for merge requests (`true` by default)
--  `--fetch-branches`—An _optional_ parameter that causes Adobe Commerce on cloud infrastructure to fetch all branches from the remote (as inactive environments) (`true` by default)
--  `--prune-branches`—An _optional_ parameter that instructs Adobe Commerce on cloud infrastructure to delete branches that do not exist on the remote (`true` by default)
+| Option | Description |
+| ------ | ----------- |
+| `<project-ID>` | Your Adobe Commerce on cloud infrastructure project ID |
+| `<your-GitLab-token>` | The personal access token you generated for GitLab |
+| `--base-url` | URL of GitLab (`https://gitlab.com/` if GitLab is used in its SaaS version) |
+| `--server-project` | Project name in GitLab (part after the base url) |
+| `--build-merge-requests` | An _optional_ parameter that instructs Adobe Commerce on cloud infrastructure to build a new environment for every merge request (`true` by default) |
+| `--merge-requests-clone-parent-data` | An _optional_ parameter that instructs Adobe Commerce on cloud infrastructure to clone the parent environment's data for merge requests (`true` by default) |
+| `--fetch-branches` | An _optional_ parameter that causes Adobe Commerce on cloud infrastructure to fetch all branches from the remote (as inactive environments) (`true` by default) |
+| `--prune-branches` | An _optional_ parameter that instructs Adobe Commerce on cloud infrastructure to delete branches that do not exist on the remote (`true` by default) |
 
 >[!WARNING]
 >
->The `magento-cloud integration` command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with the code from your GitLab repository. This includes all branches, including the Production branch. This action happens instantly and cannot be undone. As a best practice, it is important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your GitLab repository before adding the GitLab integration.
+>The `magento-cloud integration` command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with the code from your GitLab repository. This includes all branches, including the `production` branch. This action happens instantly and cannot be undone. As a best practice, it is important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your GitLab repository before adding the GitLab integration.
 
 **To enable the GitLab integration**:
 
@@ -106,7 +108,7 @@ magento-cloud integration:add --type=gitlab --project=<project-ID> --token=<your
    magento-cloud integration:add --type gitlab --project=3txxjf32gtryos --token=qVUfeEn4ouze7A7JH --base-url=https://gitlab.com/ --server-project=my-agency/project-name --build-merge-requests=false --merge-requests-clone-parent-data=false --fetch-branches=true --prune-branches=true
    ```
 
-1. When prompted, enter "Y" to add the integration.
+1. When prompted, enter `y` to add the integration.
 
    ```terminal
    Warning: adding a 'gitlab' integration will automatically synchronize code from the external Git repository.

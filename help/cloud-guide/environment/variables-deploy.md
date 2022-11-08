@@ -334,7 +334,7 @@ When the `MYSQL_USE_SLAVE_CONNECTION` variable is set to `true`, the `synchronou
 -  **Default**—_Not set_
 -  **Version**—Adobe Commerce 2.1.4 and later
 
-Use this environment variable to retain customized AMQP service settings between deployments. For example, if you prefer using an existing message queue service, like RabbitMQ, instead of relying on Adobe Commerce on cloud infrastructure to create it for you, use the `QUEUE_CONFIGURATION` environment variable to connect it to your site:
+Use this environment variable to retain customized AMQP service settings between deployments. For example, if you prefer using an existing message queue service, like [!DNL RabbitMQ], instead of relying on Adobe Commerce on cloud infrastructure to create it for you, use the `QUEUE_CONFIGURATION` environment variable to connect it to your site:
 
 ```yaml
 stage:

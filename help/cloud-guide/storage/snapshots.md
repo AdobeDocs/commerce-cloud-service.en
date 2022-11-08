@@ -107,7 +107,7 @@ Adobe provides two methods for creating and managing snapshots:
 1. Restore a snapshot using the snapshot ID from the list.
 
    ```bash
-   magento-cloud snapshot:restore <snapshot_id>
+   magento-cloud snapshot:restore <snapshot-id>
    ```
 
    The following modifiers further specify how to restore the snapshot:

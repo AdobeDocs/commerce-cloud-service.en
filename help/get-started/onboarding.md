@@ -2,21 +2,21 @@
 title: Onboarding to Commerce
 description: Use your credentials to access Commerce console and set up a Commerce on cloud infrastructure project.
 ---
-# Onboarding to Commerce
+# [!DNL Onboarding] to Commerce
 
 After Adobe provisions a Commerce on cloud infrastructure subscription, the initial project and code access is available only to the person designated as the License Owner (Account Owner).
 
 The License Owner is the person in your business or finance organization that manages payments and other business-related issues for the Adobe Commerce on cloud infrastructure account. This person serves as the point of contact with Adobe. If you need to change the License Owner on your account, you must contact your Adobe Commerce Customer Success Manager.
 
-To quickly onboard your project, so you can begin developing your site for live deployment, you must complete required setup and onboarding tasks. Typically, the License Owner begins the process by securing Admin access and creating Technical Admin users that can help with setup, customization, and development work.
+To quickly onboard your project, so you can begin developing your site for live deployment, you must complete required setup and [!DNL onboarding] tasks. Typically, the License Owner begins the process by securing Admin access and creating Technical Admin users that can help with setup, customization, and development work.
 
 ## Sign up for a Cloud account
 
 If you do not have an Adobe Commerce on cloud infrastructure account, contact [Sales][]. When you sign up, Adobe creates your account and sends you a welcome email that provides instructions on how to access the project interface. The email contains a link so that you can log in to [your account](https://accounts.magento.cloud/user) and complete your initial project setup.
 
-## Cloud Project portal (Onboarding UI)
+## Cloud Project portal ([!DNL Onboarding UI])
 
-Use the Adobe Commerce on cloud infrastructure Project Portal (Onboarding UI) to help project administrators, business users, and developers with the tasks required to develop, build, test, and launch your site.
+Use the Adobe Commerce on cloud infrastructure Project Portal ([!DNL Onboarding UI]) to help project administrators, business users, and developers with the tasks required to develop, build, test, and launch your site.
 
 -  Access your Cloud environments, storefront, and Admin
 -  Add a Technical Admin, a super user to help manage your project and branches
@@ -28,11 +28,11 @@ Use the Adobe Commerce on cloud infrastructure Project Portal (Onboarding UI) to
 
 1. Log in to your [Adobe Commerce on cloud infrastructure account](https://account.magento.com/customer/account/).
 
-1. On the _My Account_ page, click the Magento tab to see the projects in your account.
+1. On the _My Account_ page, click the [!UICONTROL Magento] tab to see the projects in your account.
 
 1. **Click View Project Page** in the [Projects section](https://cloud.magento.com/cloud/project/subscriptions/).
 
-1. Click the name of your project to open the Cloud Project portal (Onboarding UI).
+1. Click the name of your project to open the Cloud Project portal ([!DNL Onboarding UI]).
 
    ![Cloud project portal](../assets/onboarding-ui.png)
 

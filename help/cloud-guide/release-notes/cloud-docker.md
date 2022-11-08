@@ -104,7 +104,7 @@ Release date: April 20, 2021
 -  ![fix icon](../../assets/fix.svg) **Enabled `opcache.validate_timestamps`**—Enabled the `opcache.validate_timestamps` PHP setting by default in developer mode. Enabling this setting fixed the issue where changes to the filesystem were not recognized in Docker.<!--MCLOUD-7466-->
 -  ![fix icon](../../assets/fix.svg) **Fixed `build:custom:compose`**—Fixed the `build:custom:compose` command to throw an error when files cannot be overwritten during the build process. Throwing an error prevents situations where `docker-compose up` could be using the wrong files.<!--MCLOUD-7457-->
 -  ![fix icon](../../assets/fix.svg) **Fixed `--sync_engine="native"` option**—Fixed the issue where in production mode (`--mode="production"`), the `--sync_engine="native"` option would not create any entries for local folders in the `docker.composer.yml` file.<!--MCLOUD-7254-->
--  ![fix icon](../../assets/fix.svg) **Fixed service version validation errors**—Added service versions for RabbitMQ, Elasticsearch, and other services to the `type` property in the `MAGENTO_CLOUD_RELATIONSHIP` variable. Adding these versions to the `relationships` variable fixed the validation errors that occurred during the deploy phase.<!--MCLOUD-7572-->
+-  ![fix icon](../../assets/fix.svg) **Fixed service version validation errors**—Added service versions for [!DNL RabbitMQ], Elasticsearch, and other services to the `type` property in the `MAGENTO_CLOUD_RELATIONSHIP` variable. Adding these versions to the `relationships` variable fixed the validation errors that occurred during the deploy phase.<!--MCLOUD-7572-->
 
 ## v1.2.1
 
@@ -153,7 +153,7 @@ Release date: November 9, 2020
 
    -  ![new icon](../../assets/new.svg) **CLI container**
 
-      -  **Run commands inside Docker PHP containers**—Now you can use the Cloud Docker CLI to run commands inside PHP containers in your Docker environment without having to install PHP on the host. For example, the following command builds the configuration:  `./bin/magento-docker php 7.3 vendor/bin/ece-docker build:compose`. See [Magento Cloud Docker CLI](https://devdocs.magento.com/cloud/docker/docker-quick-reference.html#magento-cloud-docker-cli). [Fix submitted by G Arvind from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/209).<!--MCLOUD-5982-->
+      -  **Run commands inside Docker PHP containers**—Now you can use the Cloud Docker CLI to run commands inside PHP containers in your Docker environment without having to install PHP on the host. For example, the following command builds the configuration:  `./bin/magento-docker php 7.3 vendor/bin/ece-docker build:compose`. See [Cloud Docker CLI](https://devdocs.magento.com/cloud/docker/docker-quick-reference.html#magento-cloud-docker-cli). [Fix submitted by G Arvind from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/209).<!--MCLOUD-5982-->
 
       -  Added the OpenSSH-client to PHP CLI containers. Now, you can use ssh-agent forwarding for Composer if the `composer.json` file contains private git repositories that require an ssh client to use Composer commands.<!--MCLOUD-6008-->
 
@@ -293,7 +293,7 @@ Release date: June 25, 2020
 
 Release date: Feb 5, 2020
 
--  ![new icon](../../assets/new.svg) **Created a separate package to deliver `Cloud Docker for Commerce`**—Moved the source code to deliver Cloud Docker for Commerce from the `ece-tools` repository to the [new `magento-cloud-docker` repository](https://github.com/magento/magento-cloud-docker) to maintain code quality and provide independent releases. The new package is a dependency for ece-tools v2002.1.0 and later.
+-  ![new icon](../../assets/new.svg) **Created a separate package to deliver `Cloud Docker for Commerce`**—Moved the source code to deliver Cloud Docker for Commerce from the `ece-tools` repository to the [new `magento-cloud-docker` repository](https://github.com/magento/magento-cloud-docker) to maintain code quality and provide independent releases. The new package is a dependency for ECE-Tools v2002.1.0 and later.
 
    When you update ece-tools, you also update the `magento/magento-cloud-docker` package to version 1.0.0. If you used Cloud Docker for Commerce with an earlier `ece-tools` release (2002.0.x), review the [backward incompatibilities](backward-incompatible-changes.md) and update your project as scripts, commands, and processes as needed.
 
@@ -315,7 +315,7 @@ Release date: Feb 5, 2020
 
    -  ![new icon](../../assets/new.svg) **New Selenium container**—Added a [Selenium container](https://devdocs.magento.com/cloud/docker/docker-containers-service.html#selenium-container) to support Adobe Commerce application testing using the Magento Functional Testing Framework (MFTF).<!--MAGECLOUD-4040-->
 
-   -  ![new icon](../../assets/new.svg) **RabbitMQ version support**—Updated the RabbitMQ container configuration to support RabbitMQ version 3.8.<!--MAGECLOUD-4674-->
+   -  ![new icon](../../assets/new.svg) **[!DNL RabbitMQ] version support**—Updated the [!DNL RabbitMQ] container configuration to support [!DNL RabbitMQ] version 3.8.<!--MAGECLOUD-4674-->
 
    -  ![fix icon](../../assets/fix.svg) **Persistent database container**—The `magento-db: /var/lib/mysql` database volume now persists after you stop and remove the Docker configuration and restores when you restart the Docker configuration. Now, you must manually delete the database volume. See [Database containers].<!--MAGECLOUD-3978-->
 

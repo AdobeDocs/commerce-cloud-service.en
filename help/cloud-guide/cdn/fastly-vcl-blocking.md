@@ -13,7 +13,7 @@ You can use the Fastly CDN module for Magento 2 to create an Edge ACL with a lis
 
 -  List of client IP addresses to block
 
-## Create Edge ACL for blocking client IPs {#edge-acl}
+## Create Edge ACL for blocking client IPs
 
 You create an Edge ACL to define the list of IP addresses to block. After creating the ACL, you can use it in a custom VCL snippet to manage access to your Staging or Production site.
 
@@ -28,7 +28,7 @@ Manage access for both Staging and Production sites by creating the Edge ACL wit
 
 You reference the Edge ACL by name in your VCL snippet code.
 
-## Create the custom VCL for the blocklist {#vcl}
+## Create the custom VCL for the blocklist
 
 >[!NOTE]
 >
@@ -138,9 +138,6 @@ This example uses the two-character ISO 3166-1 country code for the country asso
 
 {{automate-vcl-snippet-deployment}}
 
-{{$include /help/_includes/modify-vcl-snippet.md}}
+{{$include /help/_includes/vcl-snippet-modify.md}}
 
-{{$include /help/_includes/delete-vcl-snippet.md}}
-
-
-
+{{$include /help/_includes/vcl-snippet-delete.md}}

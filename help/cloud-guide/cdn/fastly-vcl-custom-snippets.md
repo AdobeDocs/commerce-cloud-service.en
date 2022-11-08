@@ -121,11 +121,11 @@ The following walk-through shows you how to create regular VCL snippet files and
 -  Save Fastly service credentials as bash environment variables that you can use in cURL commands:
 
    ```bash
-   export FASTLY_SERVICE_ID=<Service ID>
+   export FASTLY_SERVICE_ID=<Service-ID>
    ```
 
    ```bash
-   export FASTLY_API_TOKEN=<API Token>
+   export FASTLY_API_TOKEN=<API-Token>
    ```
 
    The exported environment variables are available only in the current bash session and are lost when you close the terminal. You can redefine variables by exporting a new value. To view the list of exported variables related to Fastly:
@@ -317,4 +317,3 @@ These API request examples use exported environment variables to provide the cre
 -  **Override values in the [default Fastly VCL code](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets)**
 
    Create a snippet with updated values and assign a priority of `100`.
-
