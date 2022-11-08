@@ -41,7 +41,7 @@ Fastly provides the following services to optimize and secure content delivery o
 
 - **[Image optimization](fastly-image-optimization.md)**—Offloads image processing and resizing load to the Fastly service so that servers can process orders and conversions more efficiently.
 
-- **[Fastly CDN and WAF logs](../../monitor/new-relic.md#new-relic-logs)**—For Adobe Commerce on cloud infrastructure Pro projects, you can use the New Relic Logs service to review and analyze Fastly CDN and WAF log data.
+- **[Fastly CDN and WAF logs](../monitor/new-relic.md#new-relic-logs)**—For Adobe Commerce on cloud infrastructure Pro projects, you can use the New Relic Logs service to review and analyze Fastly CDN and WAF log data.
 
 ## Fastly CDN module for Magento 2
 
@@ -65,7 +65,7 @@ Submit an Adobe Commerce Support ticket to change the Fastly API token credentia
 
    Include your Adobe Commerce on cloud infrastructure project ID and the environments that require a new credential.
 
-1. After you receive the new API token, update the API token value in the [Fastly credentials configuration](fastly-configuration.md#test-the-fastly-credentials) in the Admin or from the [Project Web UI environment configuration variables](../../project/overview.md#configure-environment).
+1. After you receive the new API token, update the API token value in the [Fastly credentials configuration](fastly-configuration.md#test-the-fastly-credentials) in the Admin or from the [Project Web UI environment configuration variables](../project/overview.md#configure-environment).
 
 1. [Test the new credential](fastly-configuration.md#test-the-fastly-credentials).
 
