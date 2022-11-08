@@ -16,7 +16,7 @@ You can configure either the sandbox or production account in every environment:
 
 While we recommend having a PayPal merchant account prepared and configured, you can create an account or upgrade a personal account through the Admin.
 
-PayPal onboarding supports connecting with the following accounts:
+[!DNL PayPal onboarding] supports connecting with the following accounts:
 
 *  PayPal Business account
 *  PayPal personal account, converting to a Business account. If you have an existing personal PayPal account, you can log in with those credentials and upgrade this account to a business account as you complete the sync.
