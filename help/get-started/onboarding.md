@@ -28,7 +28,7 @@ Use the Adobe Commerce on cloud infrastructure Project Portal ([!DNL Onboarding 
 
 1. Log in to your [Adobe Commerce on cloud infrastructure account](https://account.magento.com/customer/account/).
 
-1. On the _My Account_ page, click the Magento tab to see the projects in your account.
+1. On the _My Account_ page, click the [!UICONTROL Magento] tab to see the projects in your account.
 
 1. **Click View Project Page** in the [Projects section](https://cloud.magento.com/cloud/project/subscriptions/).
 

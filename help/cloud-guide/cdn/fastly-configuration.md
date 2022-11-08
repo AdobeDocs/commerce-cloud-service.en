@@ -226,7 +226,7 @@ Update your DNS configuration to route traffic from your store URLs to the Fastl
       magento-cloud ssh
       ```
 
-   -  Use the Magento CLI to change the base URL for your store.
+   -  Use the Cloud CLI to change the base URL for your store.
 
       ```bash
       php bin/magento setup:store-config:set --base-url="https://mcstaging.your-domain.com/"
@@ -234,7 +234,7 @@ Update your DNS configuration to route traffic from your store URLs to the Fastl
 
    >[!NOTE]
    >
-   >As an alternative to using the Magento CLI, you can update the Base URL from the [Admin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html)
+   >As an alternative to using the Cloud CLI, you can update the Base URL from the [Admin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html)
  
 
 1. Restart web browser.
