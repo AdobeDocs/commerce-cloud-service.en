@@ -46,7 +46,7 @@ If your project requires custom cron jobs, you can add them to the default cron 
 
 Adobe Commerce added an auto-crons configuration option to all Pro projects to support self-service cron configuration on Staging and Production environments using the `.magento.app.yaml` file. If this option is enabled, you can use `crontab` to review the cron configuration.
 
-Although you can use crontab to review configuration on Pro plan projects, Adobe Commerce does not use crontab to run cron jobs for sites deployed on our cloud infrastructure.
+Although you can use crontab to review configuration on Pro projects, Adobe Commerce does not use crontab to run cron jobs for sites deployed on our cloud infrastructure.
 
 **To review cron configuration on Pro environments**:
 

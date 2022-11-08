@@ -35,7 +35,7 @@ The following table provides information about environment variables and other e
 
 ### CLI command changes
 
-The following table summarizes CLI command changes in ece-tools v2002.1.0 that might require you to update commands or scripts.
+The following table summarizes CLI command changes in ECE-Tools v2002.1.0 that might require you to update commands or scripts.
 
 |Command  | Replacement |
 |-------- | ----------- |
@@ -46,11 +46,11 @@ The following table summarizes CLI command changes in ece-tools v2002.1.0 that m
 |`vendor/bin/ece-tools docker:build` | `vendor/bin/ece-docker build:compose`|
 |`vendor/bin/ece-tools docker:config:convert` | `vendor/bin/ece-docker  image:generate:php`|
 
-In earlier ece-tools releases, you could use the `m2-ece-build` and `m2-ece-deploy` commands to configure deployment hooks in the `.magento.app.yaml` file. When you update to v2002.1.0, check the `hooks` configuration in the `.magento.app.yaml` file for the obsolete commands, and replace them if needed.
+In earlier ECE-Tools releases, you could use the `m2-ece-build` and `m2-ece-deploy` commands to configure deployment hooks in the `.magento.app.yaml` file. When you update to v2002.1.0, check the `hooks` configuration in the `.magento.app.yaml` file for the obsolete commands, and replace them if needed.
 
 ## Cloud Patches changes
 
--  **Remove downloaded patches**–The `magento/magento-cloud-patches` package bundles all patches available from the [software downloads](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html) page and applies them automatically when you deploy to the Cloud. To prevent patch conflicts after upgrading to ece-tools 2002.1.0 or later, remove any Adobe-supplied patches that you downloaded and added to your project manually.
+-  **Remove downloaded patches**–The `magento/magento-cloud-patches` package bundles all patches available from the [software downloads](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html) page and applies them automatically when you deploy to the Cloud. To prevent patch conflicts after upgrading to ECE-Tools 2002.1.0 or later, remove any Adobe-supplied patches that you downloaded and added to your project manually.
 
 -  **Updating the apply patches command**–We moved the command for applying patches from the `vendor/bin/ece-tools` directory to the `vendor/bin/ece-patches` directory. If you use this command to apply patches manually, use the new path.
 

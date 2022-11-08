@@ -27,7 +27,7 @@ The [Starter plan architecture](starter-architecture.md) has four environments:
 
 -  **Integration**—The Integration environment provides two testable environments. Each environment includes an active Git branch, database, web server, caching, some services, environment variables, and configurations.
 
--  **Staging**—As code and extensions pass your tests, you can merge your Integration branch to a Staging environment, which becomes your pre-Production testing environment. It includes the `staging` active branch, database, web server, caching, third-party services, environment variables, configurations, and services, such as Fastly and New Relic.
+-  **Staging**—As code and extensions pass your tests, you can merge your integration branch to the Staging environment, which becomes your pre-Production testing environment. It includes the `staging` active branch, database, web server, caching, third-party services, environment variables, configurations, and services, such as Fastly and New Relic.
 
 -  **Production**—When code is ready and tested, all code merges to `master` for deployment to the Production live site. This environment includes your active `master` branch, database, web server, caching, third-party services, environment variables, and configurations.
 

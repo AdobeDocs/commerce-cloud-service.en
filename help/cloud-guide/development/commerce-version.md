@@ -46,7 +46,7 @@ When upgrading from an older version, you must migrate the `config.local.php` fi
 
 1. Add and commit the file to your branch.
 
-1. Push the file to your Integration branch.
+1. Push the file to your integration branch.
 
 1. Continue with the upgrade process.
 
@@ -343,7 +343,7 @@ As mentioned in [Configuration management](#configuration-management), after upg
 
 ### Upgrade extensions
 
-Review your third-party extension and module pages in Marketplace or other company sites and verify support for Adobe Commerce and Adobe Commerce on cloud infrastructure. If you must upgrade any third-party extensions and modules, Adobe recommends working in a new Integration branch with your extensions disabled.
+Review your third-party extension and module pages in Marketplace or other company sites and verify support for Adobe Commerce and Adobe Commerce on cloud infrastructure. If you must upgrade any third-party extensions and modules, Adobe recommends working in a new integration branch with your extensions disabled.
 
 **To verify and upgrade your extensions**:
 

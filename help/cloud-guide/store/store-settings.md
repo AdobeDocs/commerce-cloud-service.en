@@ -112,7 +112,7 @@ If the same setting is configured in multiple places, the application relies on 
 | 1 | Project Web Interface<br>environment variables | Values added from the _Variables_ tab of environment configuration in the Project Web Interface. We recommend specifying values here for sensitive or environment-specific configurations. Settings specified here cannot be edited from the Admin. See [Environment configuration variables](../project/overview.md#configure-environment). |
 | 2 | `.magento.app.yaml` | Values added in the `variables` section of the `.magento.app.yaml` file. We recommend specifying values here to ensure consistent configuration across all environments. **Do not specify sensitive values in the `.magento.app.yaml` file.** See [Application settings](../application/configure-app-yaml.md). |
 | 3 | `app/etc/env.php` | Environment-specific configuration values stored here are added by using the `app:config:dump` command. Set the system-specific and sensitive values using environment variables or the CLI. See [Sensitive data](#sensitive-data). The `env.php` file is **not** included in source control. |
-| 4 | `app/etc/config.php` | Values stored here are added by using the `app:config:dump` command. Shared configuration values are added to `config.php`. Set shared configuration from the Admin or using the CLI. See [Consistent configuration](#consistent-configuration). The `config.php` file is included in source control. |
+| 4 | `app/etc/config.php` | Values stored here are added by using the `app:config:dump` command. Shared configuration values are added to `config.php`. Set shared configuration from the Admin or using the CLI. The `config.php` file is included in source control. |
 | 5 | Database | Values stored here are added by setting configurations in the Admin. Configurations set using any of the preceding methods are locked (grayed out) and cannot be edited from the Admin. |
 | 6 | `config.xml` | Many configurations have default values set in the `config.xml` file for a module. If Adobe Commerce cannot find any value set by any of the preceding methods, it falls back to the default value, if set. |
 
@@ -191,7 +191,7 @@ You only need to complete this migration once. When you need to update the file,
 
 You can change your store locales without following a complex configuration import and export process, _if_ you have [SCD_ON_DEMAND](../environment/variables-global.md#scd_on_demand) enabled. You can update the locales using the Admin.
 
-You can add another locale to the Staging or Production environment by enabling `SCD_ON_DEMAND` in an Integration branch, generate an updated `config.php` file with the new locale information, and copy the configuration file to the target environment.
+You can add another locale to the Staging or Production environment by enabling `SCD_ON_DEMAND` in an integration branch, generate an updated `config.php` file with the new locale information, and copy the configuration file to the target environment.
 
 >[!WARNING]
 >

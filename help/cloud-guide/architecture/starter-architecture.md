@@ -47,7 +47,7 @@ Developers use the Integration environment to develop, deploy, and test:
 
 -  Services
 
-You can have up to **two** active Integration environments. You create an Integration environment by creating a branch from the Staging branch. When you create an Integration environment, the environment name matches the branch name. An integration environment includes a web server and a database. It does not include all services, for example Fastly CDN and New Relic are not available.
+You can have up to **two** active Integration environments. You create an Integration environment by creating a branch from the `staging` branch. When you create an Integration environment, the environment name matches the branch name. An integration environment includes a web server and a database. It does not include all services, for example Fastly CDN and New Relic are not available.
 
 You can have an unlimited number of inactive branches for code storage. To access, view, and test an inactive branch, you must activate it.
 
@@ -65,7 +65,7 @@ The Production and Staging environments include the following technologies. You 
 
 ### Services
 
-Adobe Commerce on cloud infrastructure currently supports the following services: PHP, MySQL (MariaDB), Elasticsearch (Adobe Commerce 2.2 to 2.4.3-p2), OpenSearch (2.3.7-p3, 2.4.3-p2, 2.4.4 and later), Redis, and RabbitMQ.
+Adobe Commerce on cloud infrastructure currently supports the following services: PHP, MySQL (MariaDB), Elasticsearch (Adobe Commerce 2.2 to 2.4.3-p2), OpenSearch (2.3.7-p3, 2.4.3-p2, 2.4.4 and later), Redis, and [!DNL RabbitMQ].
 
 Each service runs in a separate, secure container. Containers are managed together in the project. Some services are standard, such as the following:
 

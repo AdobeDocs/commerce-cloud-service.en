@@ -46,7 +46,7 @@ The method for viewing credentials is different for Pro and Starter projects.
 - Local workspace—From the command line, use the `magento-cloud` CLI to [list and review](../environment/variables-cloud.md#viewing-environment-variables) Fastly environment variables.
 
   ```bash
-  magento-cloud variable:get -e <environment ID>
+  magento-cloud variable:get -e <environment-ID>
   ```
 
 - Project Web UI—Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
@@ -129,7 +129,7 @@ After you enable the Fastly module, upload the default [VCL code](https://github
 
 ## Provision SSL/TLS certificates
 
-Adobe provides a Domain-Validated Let's Encrypt SSL/TLS certificate to serve secure HTTPS traffic from Fastly. Adobe provides one certificate for each Pro Production, Staging, and Starter Production environment to secure all domains in that environment. For detailed information about the certificate provided, see [Adobe SSL (TLS) certificates for Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html?lang=en).
+Adobe provides a Domain-Validated Let's Encrypt SSL/TLS certificate to serve secure HTTPS traffic from Fastly. Adobe provides one certificate for each Pro Production, Staging, and Starter Production environment to secure all domains in that environment. For detailed information about the certificate provided, see [Adobe SSL (TLS) certificates for Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html).
 
 >[!NOTE]
 >
@@ -158,13 +158,12 @@ During the initial Fastly setup process, you can use the following URLs to confi
 
 - For Pro Staging and Production:
 
-  - ```mcprod.<your-domain>.com```
-  - ```mcstaging.<your-domain>.com```
+   - `mcprod.<your-domain>.com`
+   - `mcstaging.<your-domain>.com`
 
 - For Starter Production only:
 
- - ```mcprod.<your-domain>.com```
-
+   - `mcprod.<your-domain>.com`
 
 These are the default pre-production URLs available after your project is provisioned. The value for `"your-domain"` is the domain name you specified during the onboarding process.
 

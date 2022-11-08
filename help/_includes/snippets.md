@@ -100,7 +100,7 @@ To help export Production data as test data to use in Staging and Integration en
 
 To migrate this data, see [Migrate and deploy static files and data](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html).
 
-<!--Fastly-related snippets-->
+<!-- Fastly-related snippets begin -->
 
 ## Admin login {#admin-login-step}
 
@@ -144,9 +144,10 @@ To migrate this data, see [Migrate and deploy static files and data](https://dev
 >
 >The _Custom VCL snippets_ UI option shows only the snippets added through the Adobe Commerce Admin. If you add snippets using the Fastly API, use the API to [manage them](/help/cloud-guide/cdn/fastly-vcl-custom-snippets.md#manage-vcl-using-the-api).
 
-
 ## Automate custom VCL snippet deployment {#automate-vcl-snippet-deployment}
 
 >[!NOTE]
 >
 >Instead of manually uploading custom VCL snippets, you can add snippets to the `$MAGENTO_CLOUD_APP_DIR/var/vcl_snippets_custom` directory in your environment. Snippets in this directory upload automatically when you click _upload VCL to Fastly_ in the Commerce Admin. See [Automated custom VCL snippets deployment](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md#automated-custom-vcl-snippets-deployment) in the Fastly CDN module for Magento 2 documentation.
+
+<!-- Fastly-related snippets end -->

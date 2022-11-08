@@ -189,7 +189,7 @@ If you expect a significant increase in traffic for an event or other reason, yo
 
 ## Master environment
 
-On Pro plan projects, the `master` branch provides an active PaaS environment with your Production environment. Always push a copy of the Production code to the `master` environment in case that you need to debug the Production environment without interrupting services.
+On Pro projects, the `master` branch provides an active PaaS environment with your Production environment. Always push a copy of the Production code to the `master` environment in case that you need to debug the Production environment without interrupting services.
 
 **Caveats:**
 

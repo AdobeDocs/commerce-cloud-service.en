@@ -1,6 +1,6 @@
 ---
 title: Fastly services overview
-description: Learn how the Fastly services included with Adobe Commerce on cloud infrastructure subscriptions help you optimize and secure content delivery operations for your Adobe Commerce sites. 
+description: Learn how the Fastly services included with Adobe Commerce on cloud infrastructure help you optimize and secure content delivery operations for your Adobe Commerce sites. 
 ---
 
 # Fastly services overview
@@ -9,7 +9,7 @@ description: Learn how the Fastly services included with Adobe Commerce on cloud
 >
 >To maintain PCI compliance for Adobe Commerce sites deployed on the Cloud platform, set up Fastly on your Starter main branch, Pro Production, and Pro Staging environments. If you use Adobe Commerce in a headless deployment, we highly recommend that you use Fastly to cache GraphQL responses. See [Caching with Fastly] in the *GraphQL Developer Guide*.
 
-Fastly provides the following services to optimize and secure content delivery operations for Adobe Commerce on cloud infrastructure projects. These services are included with Adobe Commerce on cloud infrastructure subscriptions at no additional cost.
+Fastly provides the following services to optimize and secure content delivery operations for Adobe Commerce on cloud infrastructure projects. These services are included with Adobe Commerce on cloud infrastructure at no additional cost.
 
 - **Content Delivery Network (CDN)**—Varnish-based service that caches your site pages, assets, CSS, and more in backend data centers you set up. As customers access your site and stores, the requests hit Fastly to load cached pages faster. The CDN service provides the following features:
 

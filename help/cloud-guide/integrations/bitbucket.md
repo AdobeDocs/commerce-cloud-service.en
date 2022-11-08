@@ -123,7 +123,7 @@ The Bitbucket integration requires an [OAuth consumer](https://confluence.atlass
 
    >[!WARNING]
    >
-   >The following command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with code from your Bitbucket repository. This includes all branches, including the Production branch. This action happens instantly and cannot be undone. As a best practice, it is important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your Bitbucket repository **before** adding the Bitbucket integration.
+   >The following command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with code from your Bitbucket repository. This includes all branches, including the `production` branch. This action happens instantly and cannot be undone. As a best practice, it is important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your Bitbucket repository **before** adding the Bitbucket integration.
 
    ```bash
    magento-cloud project:curl -p '<project-ID>' /integrations -i -X POST -d "$(< bitbucket.json)"

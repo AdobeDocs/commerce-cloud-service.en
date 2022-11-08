@@ -116,7 +116,7 @@ The slug includes all files and folders **excluding the following** mounts confi
 
 Now we provision your applications and all of the [backend](https://glossary.magento.com/backend) services you need:
 
--  Mounts each service in a container (web server, Elasticsearch or OpenSearch, RabbitMQ)
+-  Mounts each service in a container (web server, Elasticsearch or OpenSearch, [!DNL RabbitMQ])
 -  Mounts the read-write file system (mounted on a highly available distributed storage grid)
 -  Configures the network so services can "see" each other (and only each other)
 
