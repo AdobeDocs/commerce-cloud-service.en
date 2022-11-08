@@ -25,13 +25,13 @@ Set the `_merge` option to one of the following:
 
 >[!WARNING]
 >
->Some **Pro projects** require a support ticket to update the route configuration in the `routes.yaml` file and the cron configuration in the `.magento.app.yaml` file. Adobe recommends updating and testing YAML configuration files in an Integration environment, then deploying changes to the Staging environment. If your changes are not applied to Staging sites after you redeploy and there are no related error messages in the log, then you **MUST** submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) that describes the attempted configuration changes. Include any updated YAML configuration files in the ticket.
+>Some **Pro projects** require a support ticket to update the route configuration in the `routes.yaml` file and the cron configuration in the `.magento.app.yaml` file. Adobe recommends updating and testing YAML configuration files in an Integration environment, then deploying changes to the Staging environment. If your changes are not applied to Staging sites after you redeploy and there are no related error messages in the log, then you **MUST** [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) that describes the attempted configuration changes. Include any updated YAML configuration files in the ticket.
 
 ## Pro services support {#pro-update-service}
 
 >[!TIP]
 >
->For Pro projects, you must submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project.
+>For Pro projects, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project.
 
 ## Redeploy warning {#redeploy-warning}
 
@@ -64,7 +64,7 @@ Use the following instructions for service setup on Pro Integration environments
 
 >[!NOTE]
 >
->Submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the service configuration on Pro Production and Staging environments.
+>[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the service configuration on Pro Production and Staging environments.
 
 ## Service change {#change-service-version}
 

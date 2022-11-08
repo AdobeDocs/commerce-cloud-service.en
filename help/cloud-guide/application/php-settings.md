@@ -108,7 +108,7 @@ For Pro projects, the following extensions require additional support to install
 -  `ioncube`
 -  `sourceguardian`
 
-[Submit a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install these PHP extensions.
+[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install these PHP extensions.
 
 >[!WARNING]
 >

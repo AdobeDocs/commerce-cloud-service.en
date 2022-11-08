@@ -37,7 +37,7 @@ As part of Adobe Commerce on cloud infrastructure subscription, Adobe provides a
 
 >[!NOTE]
 >
->If you want to deploy your own Extended Validation SSL certificate for your company instead of using the Let's Encrypt certificate, contact your CTA or submit a [Support ticket](https://support.magento.com/hc/en-us/articles/360019088251).
+>If you want to deploy your own Extended Validation SSL certificate for your company instead of using the Let's Encrypt certificate, contact your CTA or [Submit an Adobe Commerce Support ticket](https://support.magento.com/hc/en-us/articles/360019088251).
 
 ## Set up the Security Scan Tool
 

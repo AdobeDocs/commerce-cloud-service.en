@@ -101,7 +101,7 @@ Two configuration files control the allocation of disk space in the Cloud enviro
 
 >[!NOTE]
 >
->You can only change disk space allocation on Pro Integration and Starter environments. You must [Submit a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation on Pro Production and Staging environments. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB.
+>You can only change disk space allocation on Pro Integration and Starter environments. You must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation on Pro Production and Staging environments. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB.
 
 ### Application disk space
 

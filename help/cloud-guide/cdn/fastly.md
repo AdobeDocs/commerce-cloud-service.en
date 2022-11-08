@@ -61,7 +61,7 @@ Submit an Adobe Commerce Support ticket to change the Fastly API token credentia
 
 **To change the Fastly API token credential**:
 
-1. Submit a support ticket requesting new Fastly API credentials.
+1. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting new Fastly API credentials.
 
    Include your Adobe Commerce on cloud infrastructure project ID and the environments that require a new credential.
 
