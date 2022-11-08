@@ -263,6 +263,8 @@ If you get the same result, use the [`curl` commands](#check-live-site-through-f
 
 If the issue persists, another extension is likely resetting these headers. Repeat the following procedure in the Staging environment by disabling all extensions and re-enabling each one to determine which extension is resetting the headers. After you identify the extension causing the problem, you must disable it in the Production environment.
 
+**To identify an extensions that resets response headers:**
+
 {{admin-login-step}}
 
 1. Navigate to **Stores** > **Settings** > **Configuration** > **Advanced** > **Advanced**.
