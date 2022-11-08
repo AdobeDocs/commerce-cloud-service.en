@@ -101,6 +101,7 @@ To help export Production data as test data to use in Staging and Integration en
 To migrate this data, see [Migrate and deploy static files and data](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html).
 
 <!--Fastly-related snippets-->
+
 ## Admin login {#admin-login-step}
 
 1. [Log in](/help/get-started/onboarding.md#access-your-admin-panel) to the Admin.
