@@ -120,9 +120,6 @@ After reviewing and updating the code for your environment, use either of the fo
 
 Fastly validates the updated version of the VCL code during the upload process. If the validation fails, edit the custom VCL snippet to fix the issue. Then, upload the VCL again.
 
+{{$include /help/_includes/vcl-snippet-modify.md}}
 
-{{$include /help/_includes/modify-vcl-snippet.md}}
-
-{{$include /help/_includes/delete-vcl-snippet.md}}
-
-
+{{$include /help/_includes/vcl-snippet-delete.md}}
