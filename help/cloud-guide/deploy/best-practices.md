@@ -5,7 +5,7 @@ description: Discover best practices for deploying Adobe Commerce on cloud infra
 
 # Deployment best practices
 
-Build and deploy scripts activate when you merge code to a remote environment.  These scripts use the environment configuration files and application code to prepare data and configurations to provision cloud infrastructure and services, and to install or update the Adobe Commerce application and third-party and custom extensions in the cloud environment.
+Build and deploy scripts activate when you merge code to a remote environment. These scripts use the environment configuration files and application code to prepare data and configurations to provision cloud infrastructure and services, and to install or update the Adobe Commerce application and third-party and custom extensions in the cloud environment.
 
 The build and deploy process is slightly different for each plan:
 
@@ -15,7 +15,7 @@ The build and deploy process is slightly different for each plan:
 
 ## Track the process
 
-You can track build and deploy actions in real-time using the terminal or the Project Web Interface Status messages—`in-progress`, `pending`, `success`, or `failed`—display during the deployment process. You can view details in the log files. See [View logs](../monitor/log-locations.md).
+You can track build and deploy actions in real time using the terminal or the Project Web Interface Status messages—`in-progress`, `pending`, `success`, or `failed`—display during the deployment process. You can view details in the log files. See [View logs](../monitor/log-locations.md).
 
 If you are using external GitHub repositories, the log of operations does not display in the GitHub session. However, you can still follow activity in the interface for the external repository and the Project Web Interface. See [Integrations](../integrations/overview.md).
 
@@ -39,7 +39,7 @@ We highly recommend the following best practices and considerations for your dep
 
 -  **Add new extensions, integrations, and code in iterated branches**—Make and test changes locally, push to Integration, then to Staging and Production. Test and resolve issues in each environment before merging the updates to the next environment. Some extensions and integrations must be enabled and configured in a specific order due to dependencies. Adding these in groups can make your build and deploy process much easier and help determine where issues occur.
 
--  **Verify service versions and relationships and the ability to connect**—Verify the services that are available to your application and ensure you are using the most current, compatible version. See [Service relationships](../services/services-yaml.md#service-relationships) and [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation guide_ for recommended versions..
+-  **Verify service versions and relationships and the ability to connect**—Verify the services that are available to your application and ensure you are using the most current, compatible version. See [Service relationships](../services/services-yaml.md#service-relationships) and [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation guide_ for recommended versions.
 
 -  **Test locally and in the Integration environment before deploying to Staging and Production**—Identify and fix issues in your local and Integration environments to prevent extended downtime when you deploy to Staging and Production environments.
 
@@ -70,7 +70,7 @@ When you initially set up a project from a template, we retrieve the code from [
 -  **For Starter**—`master` branch is your Production environment.
 -  **For Pro**—`master` begins as origin branch for the Integration environment.
 
-You should create a branch from `master` for your custom code, extensions and modules, and third party integrations. We provide a full Integration environment for testing your code in the cloud.
+Create a branch from `master` for your custom code, extensions and modules, and third-party integrations. We provide a full Integration environment for testing your code in the cloud.
 
 When you push your code from your local workspace to the remote repository, a series of checks and code validation completes prior to build and deploy scripts. The built-in Git server checks what you are pushing and makes changes. For example, you may want to add an OpenSearch instance. The built-in Git server detects this and verifies that the topology of your cluster is modified to your new needs.
 
@@ -86,13 +86,13 @@ This phase also runs `composer install` to retrieve dependencies.
 
 This phase builds the codebase and runs hooks in the `build` section of `.magento.app.yaml`. The default build hook is the `php ./vendor/bin/ece-tools` command and performs the following:
 
--  Applies patches located in `vendor/magento/ece-patches`, as well as optional, project-specific patches in `m2-hotfixes`
+-  Applies patches located in `vendor/magento/ece-patches`, and optional, project-specific patches in `m2-hotfixes`
 -  Regenerates code and the [dependency injection](https://glossary.magento.com/dependency-injection) configuration (that is, the `generated/` directory, which includes `generated/code` and `generated/metapackage`) using `bin/magento setup:di:compile`.
 -  Checks if the [`app/etc/config.php`](../store/store-settings.md) file exists in the codebase. Adobe Commerce auto-generates this file if it does not detect it during the build phase and includes a list of modules and extensions. If it exists, the build phase continues as normal, compresses static files using GZIP, and deploys the files, which reduces downtime in the deployment phase. Refer to [build options](../environment/variables-build.md) to learn about customizing or disabling file compression.
 
 >[!WARNING]
 >
->At this point, the cluster has not been created yet, so you should not try to connect to a database or assume anything was daemonized.
+>At this point, the cluster has not been created, so you should not try to connect to a database or assume that anything was daemonized.
 
 After the application builds, it is mounted on a **read-only file system**. You can configure specific mount points that are going to be read/write. You cannot FTP to the server and add modules. Instead, you must add code to your local repository and run `git push`, which builds and deploys the environment. For the project structure, see [Local project directory structure](../project/file-structure.md).
 
@@ -114,7 +114,7 @@ The slug includes all files and folders **excluding the following** mounts confi
 
 ### Phase 4: Deploy slugs and cluster
 
-Now we provision your applications and all of the [backend](https://glossary.magento.com/backend) services you need:
+Now we provision your applications and all [backend](https://glossary.magento.com/backend) services you need:
 
 -  Mounts each service in a container (web server, Elasticsearch or OpenSearch, [!DNL RabbitMQ])
 -  Mounts the read-write file system (mounted on a highly available distributed storage grid)
@@ -122,7 +122,7 @@ Now we provision your applications and all of the [backend](https://glossary.mag
 
 >[!NOTE]
 >
->Make your changes in a Git branch after all build and deployment completes and push again. All environment file systems are _read-only_. A read-only system guarantees deterministic deployments and dramatically improves your site security because no process can write to the file system. It also works to ensure your code is identical in the Integration, Staging, and Production environments.
+>Make your changes in a Git branch after all build and deployment completes and push again. All environment file systems are _read-only_. A read-only system guarantees deterministic deployments and dramatically improves your site security because no process can write to the file system. It also works to ensure that your code is identical in the Integration, Staging, and Production environments.
 
 ### Phase 5: Deployment hooks
 
@@ -140,9 +140,9 @@ If the `app/etc/config.php` file does not exist in the codebase, static files ar
 
 There are two default deploy hooks. The `pre-deploy.php` hook completes necessary cleanup and retrieval of resources and code generated in the build hook. The `php ./vendor/bin/ece-tools deploy` hook runs a series of commands and scripts:
 
--  If Adobe Commerce is **not installed**, it installs with `bin/magento setup:install`, updates the deployment configuration, `app/etc/env.php`, and the database for your specified environment, such as Redis and website URLs. **Important:** When you completed the [First time deployment]({{ site.baseurl }}/cloud/setup/first-time-deploy.html) during setup, Adobe Commerce was installed and deployed across all environments.
+-  If Adobe Commerce is **not installed**, it installs with `bin/magento setup:install`, updates the deployment configuration, `app/etc/env.php`, and the database for your specified environment, such as Redis and website URLs. **Important:** When you completed the [First-time deployment](https://devdocs.magento.com/cloud/setup/first-time-deploy.html) during setup, Adobe Commerce was installed and deployed across all environments.
 
--  If Adobe Commerce **is installed**, performs any necessary upgrades. The deployment script runs `bin/magento setup:upgrade` to update the database schema and data (which is necessary after extension or core code updates), and also updates the deployment configuration, `app/etc/env.php`, and the database for your environment. Finally, the deployment script clears theAdobe Commerce cache.
+-  If Adobe Commerce **is installed**, perform any necessary upgrades. The deployment script runs `bin/magento setup:upgrade` to update the database schema and data (which is necessary after extension or core code updates), and also updates the deployment configuration, `app/etc/env.php`, and the database for your environment. Finally, the deployment script clears theAdobe Commerce cache.
 
 -  The script optionally generates static web content using the command `magento setup:static-content:deploy`.
 

@@ -72,7 +72,7 @@ Review and update the default IO configuration settings for image optimization a
    -  **Resize filter**—leave the default setting (`Lancsoz3`), or select an alternative. This setting specifies the filter used to deliver a resized image. Depending on the filter selected, the resized image can have a higher or lower number of pixels.
 
       -  `Lanczos3` (default)—Delivers the best quality image. It increases the ability to detect edges and linear features within an image and uses _[!DNL sinc]_ resampling to provide the best possible reconstruction.
-      -  `Lanczos2`—Uses same filter as `Lancsoz3` but with a less accurate approximation of the  _[!DNL sinc]_ resampling function.
+      -  `Lanczos2`—Uses same filter as `Lancsoz3` but with a less accurate approximation of the _[!DNL sinc]_ resampling function.
       -  `Bicubic`—Has a natural sharpening effect when making an image smaller.
       -  `Bilinear`—Has a natural smoothing effect when making an image larger.
       -  `Nearest`—Has a natural pixelation effect when resizing pixel art.

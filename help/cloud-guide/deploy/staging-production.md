@@ -5,9 +5,9 @@ description: Learn how to deploy your Adobe Commerce on cloud infrastructure cod
 
 # Deploy to Staging and Production
 
-The process for deploying and going live begins with development, continues to Staging, and ends with going live in Production. To provide the best experience for developing, testing, and deploying your store with consistent configurations we provide an end-to-end environment solution. Every environment supports direct URL access to the store and Admin console and SSH access for CLI commands.
+The process for deploying and going live begins with development, continues to Staging, and ends with going live in Production. To provide the best experience for developing, testing, and deploying your store with consistent configurations we provide an end-to-end environment solution. Every environment supports direct URL access to the storefront and Admin and SSH access for CLI commands.
 
-When you are ready to deploy your store, you must complete deployment and testing on the Staging environment before deploying to Production. This section provides indepth instructions and information on the build and deploy process, migrating data and content, and testing.
+When you are ready to deploy your store, you must complete deployment and testing on the Staging environment before deploying to Production. This section provides in-depth instructions and information on the build and deploy process, migrating data and content, and testing.
 
 ## Starter deployment flow
 
@@ -38,7 +38,7 @@ The Project Web Interface provides features to create, manage, and deploy code i
     ![Merge](../../assets/icon-merge.png)
 
 1. Complete all [testing](../test/staging-and-production.md) in the Staging environment.
-1. When Staging is ready, select the the **Merge** option to deploy to Production.
+1. When Staging is ready, select the **Merge** option to deploy to Production.
 
 **For Starter, deploy the development branch to Staging**:
 
@@ -49,7 +49,7 @@ The Project Web Interface provides features to create, manage, and deploy code i
     ![Merge](../../assets/icon-merge.png)
 
 1. Complete all [testing](../test/staging-and-production.md) in the Staging environment.
-1. When Staging is ready, select the the **Merge** option to deploy to Production (`master`).
+1. When Staging is ready, select the **Merge** option to deploy to Production (`master`).
 
 ### Deploy code with the command line
 
@@ -197,11 +197,11 @@ See the [rsync man page](https://linux.die.net/man/1/rsync).
 
 >[!NOTE]
 >
->To transfer media from remote-to-remote environments directly, you must enable SSH agent forwarding, see [GitHub guidance](https://developer.github.com/v3/guides/using-ssh-agent-forwarding/).
+>To transfer media from remote-to-remote environments directly, you must enable SSH agent forwarding, see [GitHub guidance](https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding).
 
 **To migrate static files from remote-to-remote environments directly (fast approach)**:
 
-1. Use SSH to log in to the source environment. Do not use the `magento-cloud` CLI. Using the `-A` option is very important because it enables forwarding of the authentication agent connection.
+1. Use SSH to log in to the source environment. Do not use the `magento-cloud` CLI. Using the `-A` option is important because it enables forwarding of the authentication agent connection.
 
     >[!TIP]
     >
@@ -235,7 +235,7 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
 
 >[!NOTE]
 >
->To transfer media from remote-to-remote environments directly you must enable ssh agent forwarding, see [GitHub guidance](https://developer.github.com/v3/guides/using-ssh-agent-forwarding/).
+>To transfer media from remote-to-remote environments directly you must enable ssh agent forwarding, see [GitHub guidance](https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding).
 
 **To migrate a database**:
 
@@ -275,7 +275,7 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
 
 1. Type `logout` to terminate the SSH connection.
 
-1. Open an SSH connection to the environment you want to migrate the database into:
+1. Open an SSH connection to the environment that you want to migrate the database into:
 
    ```bash
    ssh -A <destination-environment-ssh-link@ssh.region.magento.cloud>

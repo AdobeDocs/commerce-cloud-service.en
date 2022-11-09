@@ -198,7 +198,7 @@ You can manually disable cron jobs before you complete maintenance tasks like re
 
 ## Troubleshooting cron jobs
 
-Adobe has updated the Adobe Commerce on cloud infrastructure package to optimize cron processing on the Adobe Commerce on cloud infrastructure platform and to fix cron-related issues. If you encounter problems with cron processing, make sure that your project is using the most current version of the `ece-tools` package. See [Updat ECE-Tools](../dev-tools/update-package.md).
+Adobe has updated the Adobe Commerce on cloud infrastructure package to optimize cron processing on the Adobe Commerce on cloud infrastructure platform and to fix cron-related issues. If you encounter problems with cron processing, make sure that your project is using the most current version of the `ece-tools` package. See [Update ECE-Tools](../dev-tools/update-package.md).
 
 You can review cron processing information in the application-level log files for each environment. See [Application logs](../monitor/log-locations.md#application-logs).
 
