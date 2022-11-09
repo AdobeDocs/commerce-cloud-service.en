@@ -4,7 +4,7 @@ user-guide-description: Learn how to manage the Adobe Commerce application on cl
 product: magento
 ---
 
-# Commerce on Cloud Infrastructure {#cloud}
+# Commerce on Cloud Infrastructure {#user-guide}
 
 + [Commerce](overview.md)
 + Architecture {#architecture}
