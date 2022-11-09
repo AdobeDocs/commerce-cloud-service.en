@@ -82,7 +82,7 @@ Use the following instructions for service setup on Pro Integration environments
 
 >[!TIP]
 >
->For help with stuck deployments, use the [Adobe Commerce deployment troubleshooter](https://experienceleague-review.corp.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/general/magento-deployment-troubleshooter.html) in the _Commerce Help Center_.
+>For help with stuck deployments, use the [Adobe Commerce deployment troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html) in the _Commerce Help Center_.
 
 ## Update to ece-tools {#ece-tools-package}
 

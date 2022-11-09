@@ -83,7 +83,7 @@ Sample output:
 Ideal state is configured
 ```
 
-See [Release notes for ece-tools](../release-notes/cloud-tools.md).
+See [Release notes for ece-tools](../release-notes/cloud-tools-suite.md).
 
 ## Adobe patches and custom patches
 
