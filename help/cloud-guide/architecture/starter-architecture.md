@@ -33,7 +33,7 @@ Additional sections in this guide provide instructions for final code deployment
 
 >[!WARNING]
 >
->Adobe recommends testing every merchant and customer interaction in the Staging environment before deploying to the Production environment. See [Deploy your store](../deploy/staging-production.md) and [Test deployment](https://devdocs.magento.com/cloud/live/stage-prod-test.html).
+>Adobe recommends testing every merchant and customer interaction in the Staging environment before deploying to the Production environment. See [Deploy your store](../deploy/staging-production.md) and [Test deployment](../test/staging-and-production.md).
 
 ## Integration environment
 

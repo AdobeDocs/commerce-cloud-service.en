@@ -16,7 +16,7 @@ stage:
 For more information about customizing the build and deploy process:
 
 - [Deployment configuration](configure-env-yaml.md)
-- [Deployment process](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html)
+- [Deployment process](../deploy/process.md)
 
 ## `CACHE_CONFIGURATION`
 
@@ -419,7 +419,7 @@ stage:
 
 You must have a Redis service configured in the `.magento.app.yaml` file and in the `services.yaml` file.
 
-[ece-tools version 2002.0.18](https://devdocs.magento.com/cloud/release-notes/cloud-release-archive.html#v2002018) and later uses more fault-tolerant settings. If Adobe Commerce cannot read data from the Redis _slave_ instance, then it reads data from the Redis _master_ instance.
+[ece-tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) and later uses more fault-tolerant settings. If Adobe Commerce cannot read data from the Redis _slave_ instance, then it reads data from the Redis _master_ instance.
 
 The read-only connection is not available for use in the Integration environment or if you use the [`CACHE_CONFIGURATION` variable](#cache_configuration).
 
@@ -520,7 +520,7 @@ stage:
 -  **Default**—`false`
 -  **Version**—Adobe Commerce 2.4.2 and later
 
-On the deploy phase, we recommend setting `SCD_NO_PARENT: true` so that the generation of static content for parent themes does not occur during the deploy phase. This setting minimizes deployment time and prevents site downtime that can occur if the static content build fails during the deployment. See [Static content deployment](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html).
+On the deploy phase, we recommend setting `SCD_NO_PARENT: true` so that the generation of static content for parent themes does not occur during the deploy phase. This setting minimizes deployment time and prevents site downtime that can occur if the static content build fails during the deployment. See [Static content deployment](../deploy/static-content.md).
 
 ```yaml
 stage:
@@ -560,7 +560,7 @@ stage:
     SCD_THREADS: 2
 ```
 
-To further reduce deployment time, we recommend using [Configuration Management](https://devdocs.magento.com/cloud/live/sens-data-over.html) with the `scd-dump` command to move static deployment into the build phase.
+To further reduce deployment time, we recommend using [Configuration Management](../store/store-settings.md) with the `scd-dump` command to move static deployment into the build phase.
 
 ## `SEARCH_CONFIGURATION`
 
@@ -637,7 +637,7 @@ stage:
 
 Set to `true` to skip static content deployment during the deploy phase.
 
-On the deploy phase, we recommend setting `SKIP_SCD: true` so that the static content build does not happen during the deploy phase. This setting minimizes deployment time and prevents site downtime that can occur if the static content build fails during the deployment. See [Static content deployment](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html).
+On the deploy phase, we recommend setting `SKIP_SCD: true` so that the static content build does not happen during the deploy phase. This setting minimizes deployment time and prevents site downtime that can occur if the static content build fails during the deployment. See [Static content deployment](../deploy/static-content.md).
 
 ```yaml
 stage:

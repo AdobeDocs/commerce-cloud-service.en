@@ -1,6 +1,6 @@
 ---
 title: Server-side includes
-description: Learn how to use server-side includes with Adobe COmmerce on cloud infrastructure.
+description: Learn how to use server-side includes with Adobe Commerce on cloud infrastructure.
 ---
 
 # Server-side includes

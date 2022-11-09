@@ -73,7 +73,7 @@ If you need additional environments for development, enter a [Support ticket](ht
 
 Syncing an environment (or branch) is the same as `git pull origin <parent>`. You sync to get updated code from a parent environment. You can use this feature through the interface for all Starter and Pro environments.
 
-For Pro plan, you can also sync from Staging and Production to your Integration `master` branch. This sync only pulls and pushes code, not data. To sync data, dump the database data and push it to another environment's database. See [Migrate and deploy static files and data](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html).
+For Pro plan, you can also sync from Staging and Production to your Integration `master` branch. This sync only pulls and pushes code, not data. To sync data, dump the database data and push it to another environment's database. See [Migrate and deploy static files and data](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
 
 **To sync an environment**:
 
@@ -209,7 +209,7 @@ You can access your project and environments from any location through a web bro
 
 >[!WARNING]
 >
->**DO NOT** use the following methods for securing Pro Staging and Production environments. This breaks Fastly caching. You must use the [Blocking](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html) feature available in the Fastly CDN for Adobe Commerce.
+>**DO NOT** use the following methods for securing Pro Staging and Production environments. This breaks Fastly caching. You must use the [Blocking](../cdn/fastly-vcl-blocking.md) feature available in the Fastly CDN for Adobe Commerce.
 
 **To secure environments**:
 

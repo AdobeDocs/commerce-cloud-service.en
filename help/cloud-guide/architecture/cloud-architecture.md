@@ -67,7 +67,7 @@ You can configure the following services:
 >
 >See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation guide_ for recommended versions.
 
-The Fastly CDN module is used for CDN and caching services on Staging and Production environments. See [Configure Fastly services](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html).
+The Fastly CDN module is used for CDN and caching services on Staging and Production environments. See [Configure Fastly services](../cdn/fastly.md).
 
 For information about configuring the software versions to use in your implementation, see the following Adobe Commerce on cloud infrastructure configuration files:
 

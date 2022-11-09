@@ -13,7 +13,7 @@ The `.magento.env.yaml` file uses environment variables to centralize the manage
 
 ## File structure
 
-The `.magento.env.yaml` file contains two sections: `stage` and `log`. The `stage` section controls actions that occur during the phases of the [Cloud deployment process](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html).
+The `.magento.env.yaml` file contains two sections: `stage` and `log`. The `stage` section controls actions that occur during the phases of the [Cloud deployment process](../deploy/process.md).
 
 - `stage`—Use the stage section to define certain actions for the following stages of deployment:
     - `global`—Controls actions in both the build, deploy, and post-deploy phases. You can override these settings in the build, deploy, and post-deploy sections.
@@ -143,7 +143,7 @@ Make any corrections, commit, and push the changes. If you do not receive an err
 
 ## Configuration management optimization
 
-If you have enabled Configuration Management after dumping the configurations, you should move the SCD_* variables from the deploy to the build stage. See [Static content deployment strategies](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html).
+If you have enabled Configuration Management after dumping the configurations, you should move the SCD_* variables from the deploy to the build stage. See [Static content deployment strategies](../deploy/static-content.md).
 
 >Before Configuration Management:
 

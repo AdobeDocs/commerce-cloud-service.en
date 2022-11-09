@@ -36,7 +36,7 @@ You also have a few optional steps to help develop and test your code and your s
 -  [Install sample data](#optional-install-sample-data) to your store
 -  [Pull production store data](#optional-pull-production-data) down to environments
 
-This process assumes that you have set up your [local developer workspace](https://devdocs.magento.com/cloud/setup/first-time-setup.html).
+This process assumes that you have set up your [local developer workspace](../development/overview.md).
 
 ### Clone and branch
 
@@ -161,7 +161,13 @@ We recommend adding all of your products, catalogs, site content, and so on, dir
 
 As you develop features, add extensions, and design themes, having real data to work with is helpful. At any time, you can create a database dump from the Production environment and push that to your Staging and Integration environments as needed.
 
-{{cloud-data-collection}}
+To help export Production data as test data to use in Staging and Integration environments:
+
+-  [Run the support utilities](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) CLI commands (Recommended) to export a protected backup of customer and store data using your Adobe Commerce encryption key
+
+-  [Data Collection](https://docs.magento.com/user-guide/system/support-data-collector.html) tool for generating and exporting data
+
+To migrate this data, see [Migrate and deploy static files and data](../deploy/staging-production.md#migrate-static-files).
 
 ![Pull and sanitize production data](../../assets/starter/data-code-process.png)
 

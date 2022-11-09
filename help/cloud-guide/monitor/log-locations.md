@@ -23,7 +23,7 @@ You can view the logs from the file system, the Project Web Interface, and the `
 
 On Pro Production and Staging environments, use the New Relic Logs application integrated with your project to manage aggregated log data from all logs associated with your Adobe Commerce on cloud infrastructure project.
 
-The New Relic Logs application provides a centralized log management dashboard to troubleshoot and monitor Adobe Commerce on cloud infrastructure Production and Staging environments. The dashboard also provides access to log data for Fastly CDN, Image Optimization, and Web application firewall (WAF) services. See [New Relic services](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs).
+The New Relic Logs application provides a centralized log management dashboard to troubleshoot and monitor Adobe Commerce on cloud infrastructure Production and Staging environments. The dashboard also provides access to log data for Fastly CDN, Image Optimization, and Web application firewall (WAF) services. See [New Relic services](../monitor/new-relic.md#new-relic-logs).
 
 ### Log command
 

@@ -64,7 +64,7 @@ We recommend working in a development branch when adding the B2B module to your 
    Module is enabled
    ```
 
-   If you encounter deployment errors, see [extension deployment failure][trouble].
+   If you encounter deployment errors, see [Recover from component failure](../deploy/recover-failed-deployment.md).
 
 ## Enable the B2B module
 
@@ -73,7 +73,3 @@ When you install the B2B module using Composer, the deployment process automatic
 ## Configure the B2B module
 
 After installing the B2B for Adobe Commerce module, you must [start the message consumers](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html#start-message-consumers) so that you can enable the _Shared Catalog_ module, and you must [enable the B2B features](https://experienceleague.adobe.com/docs/commerce-admin/b2b/enable-basic-features.html).
-
-<!-- link definitions -->
-
-[trouble]: https://devdocs.magento.com/cloud/trouble/trouble_comp-deploy-fail.html

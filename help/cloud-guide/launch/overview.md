@@ -19,7 +19,7 @@ We strongly recommend testing in the Integration, Staging, and Production enviro
 
 -  Integration environments do not support some services that are available in Staging and Production, like Fastly and New Relic.
 
--  [Fully test](https://devdocs.magento.com/cloud/live/stage-prod-test.html#loadtest) your site with various tools in Staging for load, stress, performance, and site assets.
+-  [Fully test](../test/guidance.md) your site with various tools in Staging for load, stress, performance, and site assets.
 
 -  Because Integration environments may only have databases populated with test data, not matching a production-like environment, you might find additional errors or unexpected behavior when testing in Staging or Production environments.
 
@@ -33,11 +33,11 @@ You need the following information and resources to prepare for site launch:
 
 -  SSL/TLS certificate
 
-As part of Adobe Commerce on cloud infrastructure subscription, Adobe provides a Domain-Validated SSL/TLS certificate issued by Let's Encrypt. Each Pro Production, Staging, and Starter Production (`master`) environment has a unique certificate that covers all domains and subdomains in that environment. These certificates are provisioned and uploaded to your site automatically after you update your DNS configuration for development and production. See [Provision SSL/TLS certificates](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates).
+As part of Adobe Commerce on cloud infrastructure subscription, Adobe provides a Domain-Validated SSL/TLS certificate issued by Let's Encrypt. Each Pro Production, Staging, and Starter Production (`master`) environment has a unique certificate that covers all domains and subdomains in that environment. These certificates are provisioned and uploaded to your site automatically after you update your DNS configuration for development and production. See [Provision SSL/TLS certificates](../cdn/fastly-configuration.md#provision-ssltls-certificates).
 
 >[!NOTE]
 >
->If you want to deploy your own Extended Validation SSL certificate for your company instead of using the Let's Encrypt certificate, contact your CTA or [Submit an Adobe Commerce Support ticket](https://support.magento.com/hc/en-us/articles/360019088251).
+>If you want to deploy your own Extended Validation SSL certificate for your company instead of using the Let's Encrypt certificate, contact your CTA or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Set up the Security Scan Tool
 

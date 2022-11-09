@@ -27,7 +27,7 @@ For example, during initial development you may prefer email notifications that 
 
 To configure notifications:
 
-1. Open a terminal and [check out a branch](https://devdocs.magento.com/cloud/before/before-setup-env-2_clone.html#branch) in your local environment.
+1. On your local workstation, change to your project directory.
 1. In the `.magento.env.yaml` file in your project root, add your messaging system settings, including preferred notification [Log levels](log-handlers.md#log-levels).
 
     For example, to configure both Slack _and_ email configurations, use the following:

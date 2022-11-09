@@ -166,7 +166,7 @@ The following steps demonstrate using the CLI and Git commands interchangeably t
    git pull origin <environment-ID>
    ```
 
-1. (_Optional_) Create a [snapshot](https://devdocs.magento.com/cloud/project/project-webint-snap.html) of the environment as a backup.
+1. (_Optional_) Create a [snapshot](../storage/snapshots.md) of the environment as a backup.
 
    ```bash
    magento-cloud snapshot:create -e <environment-ID>

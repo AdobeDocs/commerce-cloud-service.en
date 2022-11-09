@@ -189,8 +189,4 @@ Before you continue, you need the Composer name and version for the extension. A
    git push origin <branch-names>
    ```
 
-If you encounter errors, see [extension deployment failure][]. To learn more about using extensions with Adobe Commerce, see [Extensions](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html) in the _Admin Guide_.
-
-<!-- link definitions -->
-
-[extension deployment failure]: https://devdocs.magento.com/cloud/trouble/trouble_comp-deploy-fail.html
+If you encounter errors, see [Recover from component failure](../deploy/recover-failed-deployment.md). To learn more about using extensions with Adobe Commerce, see [Extensions](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html) in the _Admin Guide_.

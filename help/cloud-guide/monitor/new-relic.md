@@ -109,7 +109,7 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 **Prerequisites:**
 
 -  Log in credentials for the Adobe Commerce account page, or for the New Relic account associated with your project
--  [Admin-level access](https://devdocs.magento.com/cloud/project/user-admin.html) to the Starter environments to configure, or credentials to access the [Admin](https://docs.magento.com/user-guide/system/permissions.html) for the environment.
+-  [Admin-level access](../project/user-access.md) to the Starter environments to configure, or credentials to access the [Admin](https://docs.magento.com/user-guide/system/permissions.html) for the environment.
 
 **To configure New Relic for Starter environments**:
 
@@ -252,7 +252,7 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
 >[!TIP]
 >
->For Pro Staging and Integration environments and Starter environments, use [Health notifications](https://devdocs.magento.com/cloud/integrations/health-notifications.html) to monitor disk space.
+>For Pro Staging and Integration environments and Starter environments, use [Health notifications](../integrations/health-notifications.md) to monitor disk space.
 
 **Prerequisites:**
 

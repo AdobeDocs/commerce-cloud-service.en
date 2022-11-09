@@ -73,7 +73,9 @@ The following instructions use a combination of `magento-cloud` CLI commands and
 
 >[!TIP]
 >
->For information about using Git-based hosting services with Adobe Commerce on cloud infrastructure, see [Integrations](../integrations/overview.md).
+>See [Integrations](../integrations/overview.md) for information about using Git-based hosting services with Adobe Commerce on cloud infrastructure.
+
+
 
 ## Create a branch for development
 

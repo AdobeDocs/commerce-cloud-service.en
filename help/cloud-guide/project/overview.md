@@ -23,15 +23,15 @@ The **View Project Page** link displays for Account Owners only. If you are not 
 
 >[!TIP]
 >
->If you do not see any projects, you must contact the [Account Owner or Super User](https://devdocs.magento.com/cloud/project/user-admin.html) associated with the project and request access.
+>If you do not see any projects, you must contact the [Account Owner or Super User](../project/user-access.md) associated with the project and request access.
 
 When you log in to the [Project Web interface](https://accounts.magento.cloud/user/), you see your accessible projects. As an Account Owner, you can only see projects for your company. An Adobe Solutions Partner may see multiple projects for clients that they support. Click on a project to see a hierarchy of environments.
 
-For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branches you create display as children from the `master` branch. Adobe recommends creating a staging branch, then branching from `staging` for your Integration development. See [Starter architecture](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
+For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branches you create display as children from the `master` branch. Adobe recommends creating a staging branch, then branching from `staging` for your Integration development. See [Starter architecture](../architecture/starter-architecture.md).
 
 ![Starter access](../../assets/starter/project-access.png)
 
-For **Pro**, there is a hierarchy of branches starting from Production to Staging to Integration. The ![Enterprise icon](../../assets/icon-deploy.png) icon indicates that these branches deploy to a dedicated server, used by Staging and Production. Any branches you create display as children from Integration. See [Pro architecture](https://devdocs.magento.com/cloud/architecture/pro-architecture.html).
+For **Pro**, there is a hierarchy of branches starting from Production to Staging to Integration. The ![Enterprise icon](../../assets/icon-deploy.png) icon indicates that these branches deploy to a dedicated server, used by Staging and Production. Any branches you create display as children from Integration. See [Pro architecture](../architecture/pro-architecture.md).
 
 To access an environment store and admin, select a branch and click **Access Site**. A list of store URLs and SSH command display. Select the URL to view the store in that environment.
 
@@ -86,13 +86,13 @@ You can set the following configuration options for each environment:
 
 >[!WARNING]
 >
->**DO NOT** use the HTTP access control method for securing Pro Staging and Production environments. This breaks Fastly caching. You must use the [Blocking](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html) feature available in the Fastly CDN for Adobe Commerce.
+>**DO NOT** use the HTTP access control method for securing Pro Staging and Production environments. This breaks Fastly caching. You must use the [Blocking](../cdn/fastly-vcl-blocking.md) feature available in the Fastly CDN for Adobe Commerce.
 
 ## Fastly and New Relic credentials
 
-Your project includes [Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) and [New Relic](../monitor/new-relic.md). The project details display information for your project plan and important licenses and tokens for these integrations. Only the License Owner has initial access to the credentials and services. Provide these credentials to technical and developer resources as needed.
+Your project includes [Fastly](../cdn/fastly.md) and [New Relic](../monitor/new-relic.md). The project details display information for your project plan and important licenses and tokens for these integrations. Only the License Owner has initial access to the credentials and services. Provide these credentials to technical and developer resources as needed.
 
--  [Fastly](https://www.fastly.com/) provides content delivery (CDN), image optimization, and security services (DDoS and WAF) for your Adobe Commerce on cloud infrastructure projects. See [Get Fastly credentials](https://devdocs.magento.com/cloud/cdn/configure-fastly.html).
+-  [Fastly](https://www.fastly.com/) provides content delivery (CDN), image optimization, and security services (DDoS and WAF) for your Adobe Commerce on cloud infrastructure projects. See [Get Fastly credentials](../cdn/fastly-configuration.md#get-fastly-credentials).
 
 -  [New Relic](../monitor/new-relic.md) provides application metrics and performance information for Staging and Production environments.
 

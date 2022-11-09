@@ -67,7 +67,7 @@ Magento Cloud Services:
 
 ## Verify environment configuration
 
-There is a set of verification commands available to help evaluate the configuration of your project. See [Smart wizards][wizard] in the _Optimize deployment_ section for a detailed description of each wizard command. The `wizard:ideal-state` command runs automatically during the build phase. To verify the ideal state of your project:
+There is a set of verification commands available to help evaluate the configuration of your project. See [Smart wizards](../deploy/smart-wizards.md) in the _Optimize deployment_ section for a detailed description of each wizard command. The `wizard:ideal-state` command runs automatically during the build phase. To verify the ideal state of your project:
 
 ```bash
 php ./vendor/bin/ece-tools wizard:ideal-state
@@ -87,13 +87,11 @@ See [Release notes for ece-tools](../release-notes/cloud-tools.md).
 
 ## Adobe patches and custom patches
 
-The `ece-tools` package includes a dependency for the [magento/magento-cloud-patches][] package, which delivers Adobe patches and hot fixes that improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes. The `` also delivers custom patches that you add to your Adobe Commerce on cloud infrastructure project. See [Apply patches][].
+The `ece-tools` package includes a dependency for the [magento/magento-cloud-patches][] package, which delivers Adobe patches and hot fixes that improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes. The `` also delivers custom patches that you add to your Adobe Commerce on cloud infrastructure project. See [Apply patches](../development/apply-patches.md).
 
 <!-- link definitions -->
 
-[Apply patches]: https://devdocs.magento.com/cloud/project/project-patch.html
 [docker]: https://devdocs.magento.com/cloud/docker/docker-development.html
 [ece-repo]: https://github.com/magento/ece-tools
 [magento/magento-cloud-docker]: https://github.com/magento/magento-cloud-docker
 [magento/magento-cloud-patches]: https://github.com/magento/magento-cloud-patches
-[wizard]: https://devdocs.magento.com/cloud/deploy/smart-wizards.html

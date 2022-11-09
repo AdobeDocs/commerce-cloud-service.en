@@ -50,7 +50,7 @@ This requires ECE-Tools version 2002.0.12 and later with an updated `.magento.ap
 
 >[!NOTE]
 >
-> You can upload custom VCL snippets from the Admin UI or using the Fastly API. See [Custom VCL snippet examples and tutorials](https://devdocs.magento.com/cloud/cdn/cloud-vcl-custom-snippets.html#custom-vcl-snippet-examples-and-tutorials).
+> You can upload custom VCL snippets from the Admin UI or using the Fastly API. See [Custom VCL snippet examples and tutorials](../cdn/fastly-vcl-custom-snippets.md#example-vcl-snippet-code).
 
 ### Use a Fastly VCL snippet for redirect
 

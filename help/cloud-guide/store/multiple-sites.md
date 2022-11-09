@@ -39,11 +39,11 @@ The process to add a domain depends on the type of Cloud account:
 
 -  For Pro Staging and Production
 
-   Add the new domain to Fastly, see [Manage domains][], or open a support ticket to request assistance. In addition, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request new domains to be added to a cluster.
+   Add the new domain to Fastly, see [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains), or open a support ticket to request assistance. In addition, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request new domains to be added to a cluster.
 
 -  For Starter Production only
 
-   Add the new domain to Fastly, see [Manage domains][], or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request assistance. In addition, you must add the new domain to the **Domains** tab in the Project Web Interface: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+   Add the new domain to Fastly, see [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains), or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request assistance. In addition, you must add the new domain to the **Domains** tab in the Project Web Interface: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Configure local installation
 
@@ -327,7 +327,7 @@ Push your changes to your Adobe Commerce on cloud infrastructure Integration env
 
 ## Deploy to Staging and Production
 
-Follow the deployment process for [deploying to Staging and Production](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html). For Starter and Pro environments, you use the Project Web Interface to push code across environments.
+Follow the deployment process for [deploying to Staging and Production](../deploy/staging-production.md). For Starter and Pro environments, you use the Project Web Interface to push code across environments.
 
 Adobe recommends fully testing in the Staging environment before pushing to the Production environment. Make code changes in the Integration environment and begin the process to deploy across environments again.
 
@@ -335,4 +335,3 @@ Adobe recommends fully testing in the Staging environment before pushing to the 
 
 [addstorecode]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html#step-6%3A-add-the-store-code-to-the-base-url
 [config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html
-[Manage domains]: https://devdocs.magento.com/cloud/cdn/configure-fastly-customize-cache.html#manage-domains

@@ -5,7 +5,7 @@ description: Learn about the latest improvements to ece-tools.
 
 # ECE-Tools release notes
 
-The [ece-tools](https://github.com/magento/ece-tools) package is a set of scripts and tools designed to manage and deploy Cloud projects. These release notes describe the latest improvements to this package, which is part of the [Cloud Suite for Commerce](cloud-tools.md).
+The [ece-tools](https://github.com/magento/ece-tools) package is a set of scripts and tools designed to manage and deploy Cloud projects. These release notes describe the latest improvements to this package, which is part of the [Cloud Tools Suite for Commerce](cloud-tools-suite.md).
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Release date: March 10, 2022
 
 Release date: October 25, 2021
 
--  ![new icon](../../assets/new.svg) **Alternative dump location**—Added the `--dump-directory` option so that you can choose a target directory for a DB dump. Now `/app/var/dump-main` is the default target directory for a DB dump. See [Snapshots and backup management: Dump your database](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump)<!-- MCLOUD-8063 -->
+-  ![new icon](../../assets/new.svg) **Alternative dump location**—Added the `--dump-directory` option so that you can choose a target directory for a DB dump. Now `/app/var/dump-main` is the default target directory for a DB dump. See [Snapshots and backup management: Dump your database](../storage/snapshots.md#dump-your-database)<!-- MCLOUD-8063 -->
 -  ![fix icon](../../assets/fix.svg) **Update Monolog**—Updated the minimum version required for the `monolog` package to `^2.3`.<!-- ACMP-1263 -->
 -  ![fix icon](../../assets/fix.svg) **Update Symfony**—Updated the Symfony dependencies to be compatible with Adobe Commerce 2.4.4.<!-- ACMP-1533 -->
 -  ![fix icon](../../assets/fix.svg) **Feature/resolve autoload**—Fixed an issue when deploying to an integration environment and seeing the `CRITICAL: [9] Required configuration is missed in autoload section of composer.json file.` error.<!-- https://github.com/magento/ece-tools/pull/799 -->
@@ -243,7 +243,7 @@ Release date: June 25, 2020
       commit the updated composer.json and composer.lock files.
       ```
 
-      See [Verify Zend Framework dependencies](https://devdocs.magento.com/cloud/project/project-upgrade.html#verify-zend-framework-composer-dependencies).<!--MCLOUD-4094-->
+      See [Verify Zend Framework dependencies](../development/commerce-version.md#verify-zend-framework-composer-dependencies).<!--MCLOUD-4094-->
 
    -  ![new icon](../../assets/new.svg) **Added validation for `env.php` file and data**—Added checks for the `env.php` file and data during the install and upgrade process.<!--MCLOUD-5991-->
 
@@ -270,7 +270,7 @@ Release date: February 6, 2020
 
    -  ![new icon](../../assets/new.svg) **Updated patching capabilities**—Moved the patching functionality from the ECE-Tools package to a separate [magento-cloud-patches](https://github.com/magento/magento-cloud-patches) package. During deployment, `ece-tools` uses the new package to apply patches. See [Cloud patches release notes](cloud-patches.md).<!--MAGECLOUD-4567-->
 
-   -  ![new icon](../../assets/new.svg) **Updated Composer dependencies**—Updated the `composer.json` file for Adobe Commerce on cloud infrastructure with a dependency for the `magento/magento-cloud-docker` package. Now, `ece-tools` includes dependencies for all packages in the [`Cloud Suite for Commerce`](cloud-tools.md). These packages are installed and updated automatically when you install or update `ece-tools`.
+   -  ![new icon](../../assets/new.svg) **Updated Composer dependencies**—Updated the `composer.json` file for Adobe Commerce on cloud infrastructure with a dependency for the `magento/magento-cloud-docker` package. Now, `ece-tools` includes dependencies for all packages in the [`Cloud Tools Suite for Commerce`](cloud-tools-suite.md). These packages are installed and updated automatically when you install or update `ece-tools`.
 
 -  ![new icon](../../assets/new.svg) **Support for scenario-based deployments**—<!--MAGECLOUD-4101-->
 
@@ -294,7 +294,7 @@ Release date: February 6, 2020
 
 >[!NOTE]
 >
->See [Service versions](https://devdocs.magento.com/cloud/project/services.html) for a list of services used in Adobe Commerce on cloud infrastructure and their version compatibility with the Cloud template.
+>See [Service versions](../services/services-yaml.md#service-versions) for a list of services used in Adobe Commerce on cloud infrastructure and their version compatibility with the Cloud template.
 
 -  ![new icon](../../assets/new.svg) **Environment variable updates**—
 

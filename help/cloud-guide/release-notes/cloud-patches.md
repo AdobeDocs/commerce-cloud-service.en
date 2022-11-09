@@ -11,11 +11,11 @@ The Cloud Patches for Commerce package is a dependency for the ECE-Tools package
 
 >[!TIP]
 >
->To ensure that your project has all required patches, update to the [latest version of ece-tools](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+>To ensure that your project has all required patches, update to the [latest version of ece-tools](../dev-tools/update-package.md).
 
 >[!NOTE]
 >
->See [Apply patches](https://devdocs.magento.com/cloud/project/project-patch.html) for instructions on applying patches to your projects.
+>See [Apply patches](../development/apply-patches.md) for instructions on applying patches to your projects.
 
 The `magento/magento-cloud-patches` package uses the following version sequence: `<major>.<minor>.<patch>`
 

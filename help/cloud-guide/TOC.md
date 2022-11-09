@@ -15,13 +15,13 @@ product: magento
     + [Pro workflow](architecture/pro-develop-deploy-workflow.md)
     + [Scaled architecture](architecture/scaled-architecture.md)
 + Release notes {#release-notes}
-    + [Cloud tools suite](release-notes/cloud-tools.md)
+    + [Cloud tools suite](release-notes/cloud-tools-suite.md)
     + [ECE-Tools package](release-notes/ece-tools-package.md)
     + [Cloud Patches](release-notes/cloud-patches.md)
     + [Cloud Docker](release-notes/cloud-docker.md)
     + [Cloud Components](release-notes/cloud-components.md)
     + [Backward-incompatible changes](release-notes/backward-incompatible-changes.md)
-    + [Release note archive](release-notes/cloud-release-archive.md)
+    + [Release notes archive](release-notes/cloud-release-archive.md)
 + Cloud project {#project}
     + [Project overview](project/overview.md)
     + [Project structure](project/file-structure.md)
@@ -30,6 +30,7 @@ product: magento
     + [Outgoing emails](project/outgoing-emails.md)
     + [SendGrid mail service](project/sendgrid.md)
     + [Branch management](project/console-branches.md)
+    + [Regional IP addresses](project/regional-ip-addresses.md)
 + Developer tools {#dev-tools}
     + [Cloud CLI](dev-tools/cloud-cli.md)
     + ECE-Tools {#ece-tools}
@@ -37,7 +38,6 @@ product: magento
         + [One-time upgrade to use ECE-Tools](dev-tools/install-package.md)
         + [Update ECE-Tools package](dev-tools/update-package.md)
         + [Error reference](dev-tools/error-reference.md)
-    + [Regional IP addresses](dev-tools/regional-ip-addresses.md)
 + Development {#develop}
     + [Overview](development/overview.md)
     + [Authentication keys](development/authentication-keys.md)
@@ -48,7 +48,7 @@ product: magento
     + [Restore environment](development/restore-environment.md)
     + Upgrades and patches {#upgrade}
         + [Best practices](development/best-practices.md)
-        + [Upgrade Commerce](development/commerce-version.md)
+        + [Upgrade Commerce version](development/commerce-version.md)
         + [Apply patches](development/apply-patches.md)
 + Integrations {#integrations}
     + [Overview](integrations/overview.md)
@@ -121,14 +121,15 @@ product: magento
     + [PayPal payment methods](store/paypal.md)
     + [Configuration management](store/store-settings.md)
 + Deployment {#deploy}
-    + [Optimization](deploy/optimization.md)
     + [Deployment process](deploy/process.md)
-    + [Deployment best practices](deploy/best-practices.md)
+    + [Optimization](deploy/optimization.md)
+    + [Best practices](deploy/best-practices.md)
     + [Scenario-based deployment](deploy/scenario-based.md)
     + [Zero downtime deployment](deploy/reduce-downtime.md)
     + [Static content deployment](deploy/static-content.md)
     + [Smart wizards](deploy/smart-wizards.md)
     + [Deploy to Staging and Production](deploy/staging-production.md)
+    + [Recover from component failure](deploy/recover-failed-deployment.md)
 + Test {#test}
     + [Testing guidance](test/guidance.md)
     + [Sample data](test/sample-data.md)

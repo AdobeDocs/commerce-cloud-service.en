@@ -39,3 +39,35 @@ The following demonstrates a specific case for preventing a variable from being 
 ```bash
 magento-cloud variable:create --name <variable-name> --value <variable-value> --inheritable false --sensitive true
 ```
+
+## Verify variable levels and values
+
+You can view a list of existing variables:
+
+```bash
+magento-cloud variables
+```
+
+```terminal
+Variables on the project Project-Name (<project-id>), environment <environment-name>:
++----------------------------+-------------+-------------------------------------------+
+| Name                       | Level       | Value                                     |
++----------------------------+-------------+-------------------------------------------+
+| env:COMPOSER_AUTH          | project     | {                                         |
+|                            |             |    "http-basic": {                        |
+|                            |             |       "repo.magento.com": {               |
+|                            |             |       "username":                         |
+|                            |             | "<public-key>",                           |
+|                            |             |       "password":                         |
+|                            |             | "<private-key>"                           |
+|                            |             |     }                                     |
+|                            |             |   }                                       |
+|                            |             | }                                         |
+| ADMIN_EMAIL                | project     | admin@123.com                             |
+| ADMIN_EMAIL                | environment | admin@123.com                             |
+| ADMIN_PASSWORD             | environment | password                                  |
+| ADMIN_URL                  | environment | admin123                                  |
+| ADMIN_USERNAME             | environment | admin                                     |
+| php:newrelic.license       | environment | xxxx71fb030366182117f955a22e4baf8exxxxxx  |
++----------------------------+-------------+-------------------------------------------+
+```

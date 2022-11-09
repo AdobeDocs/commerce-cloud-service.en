@@ -25,7 +25,7 @@ Once you add, commit, and push the updated code, the deployment process automati
 
 ### Cloud metapackage
 
-Adobe Commerce on cloud infrastructure uses a metapackage that requires `magento/product-enterprise-edition`. To get the latest updates for a specific version of Commerce, use the following constraint syntax:
+Adobe Commerce on cloud infrastructure uses a metapackage that requires `magento/product-enterprise-edition`. To get the latest updates for latest version of Commerce, use the following constraint syntax:
 
 ```text
 >=current_version <next_version

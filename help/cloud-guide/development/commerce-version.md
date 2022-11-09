@@ -30,6 +30,8 @@ If you are beginning an upgrade from a Commerce version older than 2.1, some res
 | 2.1.15 – 2.1.16 | [Update ECE-Tools](../dev-tools/update-package.md) package.<br>See release notes for[2002.0.9](../release-notes/cloud-release-archive.md#v200209) and later. |
 | 2.2.x and later | [Update ECE-Tools](../dev-tools/update-package.md) package.<br>See release notes for[2002.0.8](../release-notes/cloud-release-archive.md#v200208) and later. |
 
+{style="table-layout:auto"}
+
 {{ece-tools-package}}
 
 ## Configuration management
@@ -367,7 +369,7 @@ Adobe strongly recommends upgrading your Production environment _before_ includi
 
 >[!NOTE]
 >
->When you upgrade your application version, the upgrade process updates to the latest version of the [Fastly CDN module](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html#fastly-cdn-module-for-magento-2) automatically.
+>When you upgrade your application version, the upgrade process updates to the latest version of the [Fastly CDN module](../cdn/fastly.md#fastly-cdn-module-for-magento-2) automatically.
 
 ## Troubleshoot upgrade
 

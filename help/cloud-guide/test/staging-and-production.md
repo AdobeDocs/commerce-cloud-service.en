@@ -25,7 +25,7 @@ Check the configuration settings through the Admin panel including the Base URL,
 
 ## Check Fastly caching
 
-[Configuring Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html) requires careful attention to detail–using the correct Fastly Service ID and Fastly API token credentials, uploading the Fastly VCL code, updating the DNS configuration, and applying the SSL/TLS certificates to your environments. After completing these setup tasks, you can verify Fastly caching on Staging and Production environments.
+[Configuring Fastly](../cdn/fastly-configuration.md) requires careful attention to detail–using the correct Fastly Service ID and Fastly API token credentials, uploading the Fastly VCL code, updating the DNS configuration, and applying the SSL/TLS certificates to your environments. After completing these setup tasks, you can verify Fastly caching on Staging and Production environments.
 
 **To verify the Fastly service configuration**:
 
@@ -64,7 +64,7 @@ Check the configuration settings through the Admin panel including the Base URL,
    curl https://mcstaging.<your-domain>.com -H "host: mcstaging.<your-domain.com>" -k -vo /dev/null -H Fastly-Debug:1
    ```
 
-   See [Check response headers](https://devdocs.magento.com/cloud/cdn/trouble-fastly.html#response-headers) for details about verifying the headers.
+   See [Check response headers](../cdn/fastly-troubleshooting.md#check-cache-hit-and-miss-response-headers) for details about verifying the headers.
 
 1. After you are live,  use `cURL` to check your live site.
 

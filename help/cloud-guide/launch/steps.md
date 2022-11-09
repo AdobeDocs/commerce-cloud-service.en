@@ -33,7 +33,7 @@ The Time-to-Live changed value is important for checking your changed domain. Wh
 
 ## Test the live store
 
-Complete a few UAT tests in your live store to confirm that everything is loading and actions complete correctly. For a list of tests, see [Test deployment](https://devdocs.magento.com/cloud/live/stage-prod-test.html).
+Complete a few UAT tests in your live store to confirm that everything is loading and actions complete correctly. For a list of tests, see [Test deployment](../test/staging-and-production.md#complete-uat-testing).
 
 ## Post-Launch
 

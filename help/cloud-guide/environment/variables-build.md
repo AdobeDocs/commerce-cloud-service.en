@@ -15,9 +15,8 @@ stage:
 
 For more information about customizing the build and deploy process:
 
--  [Deployment configuration](configure-env-yaml.md)
-
--  [Deployment process](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html)
+- [Deployment configuration](configure-env-yaml.md)
+- [Deployment process](../deploy/process.md)
 
 The following variables were removed in v2.2:
 
@@ -61,7 +60,7 @@ stage:
       - MC-456345
 ```
 
-See [Apply patches](https://devdocs.magento.com/cloud/project/project-patch.html).
+See [Apply patches](../development/apply-patches.md).
 
 ## `SCD_COMPRESSION_LEVEL`
 
@@ -96,7 +95,7 @@ stage:
 
 Set to `true` to prevent generating static content for parent themes during the build phase.
 
-We recommend setting `SCD_NO_PARENT: false` during the build phase so that generating static content for the parent themes does not impact site deployment or cause unnecessary site downtime. See [Static content deployment](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html).
+We recommend setting `SCD_NO_PARENT: false` during the build phase so that generating static content for the parent themes does not impact site deployment or cause unnecessary site downtime. See [Static content deployment](../deploy/static-content.md).
 
 ```yaml
 stage:
@@ -205,7 +204,7 @@ stage:
     SCD_THREADS: 2
 ```
 
-To further reduce deployment time, we recommend using [Configuration Management](https://devdocs.magento.com/cloud/live/sens-data-over.html) with the `scd-dump` command to move static deployment into the build phase.
+To further reduce deployment time, we recommend using [Configuration Management](../store/store-settings.md) with the `scd-dump` command to move static deployment into the build phase.
 
 ## `SCD_USE_BALER`
 
@@ -248,9 +247,9 @@ stage:
 
 Set to `true` to skip static content deployment during the build phase.
 
-If you already deploy static content during the build phase with [Configuration Management](https://devdocs.magento.com/cloud/live/sens-data-over.html), you can skip static content deployment for a quick build test.
+If you already deploy static content during the build phase with [Configuration Management](../store/store-settings.md), you can skip static content deployment for a quick build test.
 
-On the build phase, we recommend setting `SKIP_SCD: false` so that the static content build occurs during the build phase where the process does not impact site deployment or cause unnecessary site downtime. See [Static content deployment](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html).
+On the build phase, we recommend setting `SKIP_SCD: false` so that the static content build occurs during the build phase where the process does not impact site deployment or cause unnecessary site downtime. See [Static content deployment](../deploy/static-content.md).
 
 ```yaml
 stage:

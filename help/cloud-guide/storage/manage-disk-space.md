@@ -157,7 +157,7 @@ The `.magento/services.yaml` file controls the disk space available to each serv
 
 ## Monitor disk space
 
-On Pro Production environments, you can monitor disk space and other performance indicators using the Managed alerts for Adobe Commerce alert policy for New Relic. For details, see [Monitor performance with Managed Alerts](https://devdocs.magento.com/cloud/project/new-relic.html#monitor-performance-with-managed-alerts).
+On Pro Production environments, you can monitor disk space and other performance indicators using the Managed alerts for Adobe Commerce alert policy for New Relic. For details, see [Monitor performance with Managed Alerts](../monitor/new-relic.md#monitor-performance-with-managed-alerts).
 
 ## No space left
 

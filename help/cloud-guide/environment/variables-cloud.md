@@ -23,7 +23,7 @@ Environment variables that are specific to Adobe Commerce on cloud infrastructur
 
 >[!WARNING]
 >
->To add environment variables to [override configuration settings](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html) using the [Project Web Interface](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var), you must prepend the variable name with `env:` as in the following example:
+>To add environment variables to [override configuration settings](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html) using the [Project Web Interface](../project/overview.md), you must prepend the variable name with `env:` as in the following example:
 >
 >![Environment variable example](../../assets/set-env-variable-ui.png)
 

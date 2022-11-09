@@ -38,7 +38,7 @@ Your project is a single Git repository with three, main environment branches fo
 
 ## Integration environment
 
-The Integration environment runs in a Linux container (LXC) on a grid of servers known as Platform-as-a-Service (PaaS). Each environment includes a web server and database to test your site. See [Regional IP Addresses](../dev-tools/regional-ip-addresses.md) for a list of AWS and Azure IP addresses.
+The Integration environment runs in a Linux container (LXC) on a grid of servers known as Platform-as-a-Service (PaaS). Each environment includes a web server and database to test your site. See [Regional IP Addresses](../project/regional-ip-addresses.md) for a list of AWS and Azure IP addresses.
 
 **Recommended use cases:**
 

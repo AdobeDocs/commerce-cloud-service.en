@@ -11,6 +11,8 @@ If you encounter issues in the Integration environment and do not have a [valid 
 - Force a redeployment
 - Manually reset the database
 
+{{stuck-deployment-tip}}
+
 ## Uninstall Commerce
 
 Uninstalling the Commerce application returns your environment to an original state by restoring the database, removing the deployment configuration, and clearing the `var/` subdirectories. This guidance also resets your git branch to an earlier stable state. If you do not have a recent snapshot, but you can access the remote environment using SSH, follow these steps to restore your environment:
@@ -19,7 +21,7 @@ Uninstalling the Commerce application returns your environment to an original st
 - Uninstall Adobe Commerce
 - Reset the git branch
 
-Uninstalling the Adobe Commerce software drops and restores the database, removes the deployment configuration, and clears the `var/` subdirectories. It is important to disable [Configuration management](https://devdocs.magento.com/cloud/live/sens-data-over.html) so that it does not automatically apply the previous configuration settings during the next deployment. Make sure that your `app/etc/` directory does not contain the `config.php` file.
+Uninstalling the Adobe Commerce software drops and restores the database, removes the deployment configuration, and clears the `var/` subdirectories. It is important to disable [Configuration management](../store/store-settings.md) so that it does not automatically apply the previous configuration settings during the next deployment. Make sure that your `app/etc/` directory does not contain the `config.php` file.
 
 **To uninstall the Adobe Commerce software**:
 

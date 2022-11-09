@@ -5,13 +5,13 @@ description: Learn about backward compatibility when upgrading existing Cloud pr
 
 # Backward-incompatible changes
 
-Backward-incompatible changes might require you to adjust Cloud configuration and processes for existing Cloud projects when you upgrade to the latest release of the `ece-tools` package or other Cloud Suite for Commerce packages.
+Backward-incompatible changes might require you to adjust Cloud configuration and processes for existing Cloud projects when you upgrade to the latest release of the `ece-tools` package or other Cloud Tools Suite for Commerce packages.
 
 ## Changes to `ece-tools` package
 
 Some functionality previously included in the `ece-tools` package is now provided in separate packages. These packages are composer dependencies for `ece-tools`, which are installed and updated automatically when you install or update ece-tools.
 
-The new architecture should not affect your install or update processes. However, you might need to change some command syntax and processes when working with your Adobe Commerce on cloud infrastructure project. For details, review the following backward incompatible changes information and the [Cloud Suite release notes](cloud-tools.md).
+The new architecture should not affect your install or update processes. However, you might need to change some command syntax and processes when working with your Adobe Commerce on cloud infrastructure project. For details, review the following backward incompatible changes information and the [Cloud Tools Suite release notes](cloud-tools-suite.md).
 
 ### Service version requirement changes
 
@@ -19,7 +19,7 @@ We changed the minimum PHP version requirement from 7.0.x to 7.1.x for Cloud pro
 
 >[!WARNING]
 >
->Because of the PHP version requirement change, `ece-tools` 2002.1.0 supports only Adobe Commerce on cloud infrastructure projects running Adobe Commerce 2.1.15 or later. If your project uses an earlier release, you must [upgrade](https://devdocs.magento.com/cloud/project/project-upgrade.html) before you update to `ece-tools` 2002.1.0.
+>Because of the PHP version requirement change, `ece-tools` 2002.1.0 supports only Adobe Commerce on cloud infrastructure projects running Adobe Commerce 2.1.15 or later. If your project uses an earlier release, you must [upgrade](../development/commerce-version.md) before you update to `ece-tools` 2002.1.0.
 
 ### Environment configuration changes
 

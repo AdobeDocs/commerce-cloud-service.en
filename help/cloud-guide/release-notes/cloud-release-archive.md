@@ -9,7 +9,7 @@ hidefromtoc: yes
 
 >[!NOTE]
 >
->These release notes provide information and updates for `ece-tools` v2002.0.22 and later. See [Release notes for Cloud Suite](cloud-tools.md) to get the latest updates for `ece-tools` and other Cloud packages.
+>These release notes provide information and updates for `ece-tools` v2002.0.22 and later. See [Release notes for Cloud Tools Suite](cloud-tools-suite.md) to get the latest updates for `ece-tools` and other Cloud packages.
 
 ## v2002.0.22
 

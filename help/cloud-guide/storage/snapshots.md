@@ -165,7 +165,7 @@ For help, use the command: `php vendor/bin/ece-tools db-dump --help`
 
 >[!TIP]
 >
->If you want to push this data into an environment, see [Migrate data and static files](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html).
+>If you want to push this data into an environment, see [Migrate data and static files](../deploy/staging-production.md#migrate-static-files).
 
 ## Rollbacks to remove code
 

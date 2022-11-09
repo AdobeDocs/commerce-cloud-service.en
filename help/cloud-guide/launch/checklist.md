@@ -9,13 +9,13 @@ Before you deploy to the Production environment, download the [Launch checklist]
 
 ## Completely test in Production
 
-See [Test deployment](https://devdocs.magento.com/cloud/live/stage-prod-test.html) for testing all aspects of your sites, stores, and environments. These tests include verifying Fastly, User Acceptance Tests (UAT), and performance testing.
+See [Test deployment](../test/staging-and-production.md) for testing all aspects of your sites, stores, and environments. These tests include verifying Fastly, User Acceptance Tests (UAT), and performance testing.
 
 ## TLS and Fastly
 
 Adobe provides a Let's Encrypt SSL/TLS certificate for each environment. This certificate is required for Fastly to serve secure traffic over HTTPS.
 
-To use this certificate, you must update your DNS configuration so that Adobe can complete domain validation and apply the certificate to your environment. Each environment has a unique certificate that covers the domains for the Adobe Commerce on cloud infrastructure sites deployed in that environment. We recommend completing and the configuration updates during the [Fastly set up process](https://devdocs.magento.com/cloud/cdn/configure-fastly.html).
+To use this certificate, you must update your DNS configuration so that Adobe can complete domain validation and apply the certificate to your environment. Each environment has a unique certificate that covers the domains for the Adobe Commerce on cloud infrastructure sites deployed in that environment. We recommend completing and the configuration updates during the [Fastly set up process](../cdn/fastly-configuration.md).
 
 ## Update DNS configuration with production settings
 
@@ -23,13 +23,13 @@ When you are ready to launch your site, you must update the DNS configuration to
 
 **Prerequisites:**
 
--  [Set up and test Fastly in your development environment](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+-  [Set up and test Fastly in your development environment](../cdn/fastly-configuration.md#)
 
 -  Production environment configuration has been updated with all required domains
 
    Typically, you work with your Customer Technical Advisor to add all top-level domains and sub-domains required for your stores. To add or change the domains for your Production environment, [Submit an Adobe Commerce Support ticket](https://support.magento.com/hc/en-us/articles/360019088251). Wait for confirmation that your project configuration has been updated.
 
-   On Starter projects, you must add the domains to your project. See [Manage domains](https://devdocs.magento.com/cloud/cdn/configure-fastly-customize-cache.html#manage-domains).
+   On Starter projects, you must add the domains to your project. See [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains).
 
 -  SSL/TLS certificate provisioned for your production environments.
 
@@ -49,19 +49,19 @@ When you are ready to launch your site, you must update the DNS configuration to
 
 1. Add CNAME records to point the top-level domains and subdomains for your Production environment to the Fastly service `prod.magentocloud.map.fastly.net`, for example:
 
-   | Domain or Subdomain  | CNAME|
-   |----------------------|------|
-   | www.your-domain.com  | prod.magentocloud.map.fastly.net|
-   | mystore.your-domain.com | prod.magentocloud.map.fastly.net|
+   | Domain or Subdomain     | CNAME                            |
+   | ----------------------- | -------------------------------- |
+   | www.your-domain.com     | prod.magentocloud.map.fastly.net |
+   | mystore.your-domain.com | prod.magentocloud.map.fastly.net |
 
 1. If needed, add A records to map the apex domain (`your-domain.com`) to the following Fastly IP addresses:
 
-   | Apex domain     | ANAME|
-   |-----------------|--------|
-   | your-domain.com | `151.101.1.124`|
-   | your-domain.com | `151.101.65.124`|
-   | your-domain.com | `151.101.129.124`|
-   | your-domain.com | `151.101.193.124`|
+   | Apex domain     | ANAME             |
+   | --------------- | ----------------- |
+   | your-domain.com | `151.101.1.124`   |
+   | your-domain.com | `151.101.65.124`  |
+   | your-domain.com | `151.101.129.124` |
+   | your-domain.com | `151.101.193.124` |
 
 1. Update the Base URL.
 
@@ -77,7 +77,7 @@ When you are ready to launch your site, you must update the DNS configuration to
       php bin/magento setup:store-config:set --base-url="https://www.your-domain.com/"
       ```
 
-   **NOTE**: You can also update the Base URL from the [Admin](https://docs.magento.com/user-guide/stores/store-urls.html#configure-the-base-url).
+   **NOTE**: You can also update the Base URL from the Admin. See [ Store URLs](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html) in the _Adobe Commerce Stores and Purchase Experience Guide_.
 
 1. Wait a few minutes for the site to update.
 
@@ -93,17 +93,17 @@ The following are recommended changes and checks:
 
 -  [Secure configuration for Admin credentials and Base Admin URL](https://docs.magento.com/user-guide/stores/security-admin.html)
 
--  [Optimize all images for the web](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html)
+-  [Optimize all images for the web](../cdn/fastly-image-optimization.md)
 
 -  [Check minification settings for HTML, JavaScript, and CSS](../deploy/static-content.md)
 
 ## Verify Fastly caching
 
--  Test and verify that Fastly caching is working correctly on the Production site. For detailed tests and checks, see [Fastly testing](https://devdocs.magento.com/cloud/live/stage-prod-test.html#fastly).
+-  Test and verify that Fastly caching is working correctly on the Production site. For detailed tests and checks, see [Fastly testing](../test/staging-and-production.md#check-fastly-caching).
 
--  [Ensure that the latest version of the Fastly CDN Module for Commerce is installed in your Production environment](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#upgrade)
+-  [Ensure that the latest version of the Fastly CDN Module for Commerce is installed in your Production environment](../cdn/fastly-configuration.md#upgrade-the-fastly-module)
 
--  [Ensure that the most current version of the Fastly VCL code has been uploaded](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#upload-vcl-snippets)
+-  [Ensure that the most current version of the Fastly VCL code has been uploaded](../cdn/fastly-configuration.md#upload-vcl-to-fastly)
 
 ## Performance testing
 
@@ -129,7 +129,7 @@ You can also test using the following third-party options:
 
 -  [Remove any users no longer on the Adobe Commerce on cloud infrastructure project](../project/user-access.md)
 
--  [Configure two-factor authentication](https://devdocs.magento.com/guides/v2.3/security/two-factor-authentication.html)
+-  [Configure two-factor authentication](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html)
 
 ## Performance monitoring
 

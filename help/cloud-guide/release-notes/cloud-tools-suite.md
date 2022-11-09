@@ -1,11 +1,11 @@
 ---
-title: Release notes for Cloud Suite
-description: Learn about the latest improvements to the Cloud suite.
+title: Release notes for Cloud Tools Suite
+description: Learn about the latest improvements to the Cloud Tools suite for Adobe Commerce.
 ---
 
-# Release notes for Cloud Suite
+# Release notes for Commerce Cloud Tools Suite
 
-This release information details the latest improvements to the Cloud Suite for Commerce packages which are designed to deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
+This release information details the latest improvements to the Cloud Tools Suite for Commerce packages which are designed to deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
 
 | Release notes     | Version              | Description                              | Source              |
 | ----------------- | -------------------- | ---------------------------------------- | --------------------------- |

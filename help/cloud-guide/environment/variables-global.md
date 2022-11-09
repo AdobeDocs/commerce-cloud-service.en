@@ -16,7 +16,7 @@ stage:
 For more information about customizing the build and deploy process:
 
 - [Deployment configuration](configure-env-yaml.md)
-- [Deployment process](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html)
+- [Deployment process](../deploy/process.md)
 
 ## `MIN_LOGGING_LEVEL`
 

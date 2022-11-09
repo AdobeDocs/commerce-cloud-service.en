@@ -5,7 +5,7 @@ description: Learn about the latest improvements to the Cloud Components package
 
 # Cloud Components for Commerce
 
-The [Cloud Components](https://github.com/magento/magento-cloud-components) package provides extended Adobe Commerce core functionality for sites deployed on Cloud infrastructure. This package is a dependency for the ECE-Tools package. These release notes describe the latest improvements to this package, which is a component of [Cloud Suite for Commerce](cloud-tools.md).
+The [Cloud Components](https://github.com/magento/magento-cloud-components) package provides extended Adobe Commerce core functionality for sites deployed on Cloud infrastructure. This package is a dependency for the ECE-Tools package. These release notes describe the latest improvements to this package, which is a component of [Cloud Tools Suite for Commerce](cloud-tools-suite.md).
 
 The `magento/magento-cloud-components` package uses the following version sequence: `<major>.<minor>.<patch>`
 

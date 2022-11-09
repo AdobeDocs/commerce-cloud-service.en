@@ -5,7 +5,7 @@ description: Learn about the latest improvements to the Cloud Docker package.
 
 # Cloud Docker for Commerce
 
-The [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker) package provides functionality and Docker images to deploy Adobe Commerce to a local Cloud environment. These release notes describe the latest improvements to this package, which is a component of [Cloud Suite for Commerce](cloud-tools.md).
+The [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker) package provides functionality and Docker images to deploy Adobe Commerce to a local Cloud environment. These release notes describe the latest improvements to this package, which is a component of [Cloud Tools Suite for Commerce](cloud-tools-suite.md).
 
 The `magento/magento-cloud-docker` package uses the following version sequence: `<major>.<minor>.<patch>`
 

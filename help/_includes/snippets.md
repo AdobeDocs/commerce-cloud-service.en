@@ -6,6 +6,12 @@
 >
 >Elasticsearch 7.11 and later is not supported for Adobe Commerce on cloud infrastructure. Adobe Commerce and Magento Open Source versions 2.4.4, 2.4.3-p2, and 2.3.7-p3 support the OpenSearch service. The on-premises installations continue to support Elasticsearch.
 
+## Enhanced Integration {#enhanced-integration-envs}
+
+>[!NOTE]
+>
+>Projects provisioned before June 5, 2020 had multiple, smaller Integration environments. If you need a larger Integration environment for testing and development, request an upgrade to Enhanced Integration environments. See the [Integration Environment request](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) article in the _Adobe Commerce Help Center_ for details.
+
 ## Merge options {#merge-options}
 
 By default, the deployment process overwrites all settings in the `env.php` file; however, you can choose to merge one or more values for a service configuration without overwriting all values.
@@ -72,6 +78,12 @@ Use the following instructions for service setup on Pro Integration environments
 >
 >After initial service setup, you can change the software version for an installed service by updating the `services.yaml` and `.magento.app.yaml` configuration files. See [Change service version](/help/cloud-guide/services/services-yaml.md#change-service-version).
 
+## Stuck deployment tip {#stuck-deployment-tip}
+
+>[!TIP]
+>
+>For help with stuck deployments, use the [Adobe Commerce deployment troubleshooter](https://experienceleague-review.corp.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/general/magento-deployment-troubleshooter.html) in the _Commerce Help Center_.
+
 ## Update to ece-tools {#ece-tools-package}
 
 >[!NOTE]
@@ -83,22 +95,6 @@ Use the following instructions for service setup on Pro Integration environments
 >[!TIP]
 >
 >Before beginning an upgrade or a patching process, create an active branch from the Integration environment and check out the new branch to your local workstation. Dedicating a branch to the upgrade or the patch process helps to avoid interference with your work in progress.
-
-## Enhanced Integration {#enhanced-integration-envs}
-
->[!NOTE]
->
->Projects provisioned before June 5, 2020 had multiple, smaller Integration environments. If you need a larger Integration environment for testing and development, request an upgrade to Enhanced Integration environments. See the [Integration Environment request](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) article in the _Adobe Commerce Help Center_ for details.
-
-## Cloud Data Collection {#cloud-data-collection}
-
-To help export Production data as test data to use in Staging and Integration environments:
-
--  [Run the support utilities](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) CLI commands (Recommended) to export a protected backup of customer and store data using your Adobe Commerce encryption key
-
--  [Data Collection](https://docs.magento.com/user-guide/system/support-data-collector.html) tool for generating and exporting data
-
-To migrate this data, see [Migrate and deploy static files and data](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html).
 
 <!-- Fastly-related snippets begin -->
 
