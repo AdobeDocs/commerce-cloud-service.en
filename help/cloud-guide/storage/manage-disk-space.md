@@ -11,7 +11,7 @@ You can find the total storage capacity for your Cloud project in your Adobe Com
 
 You can check disk space usage for your Integration environment using the `magento-cloud` CLI.
 
-**To check approximate disk space usage:**
+**To check approximate disk space usage**:
 
 ```bash
 magento-cloud db:size
@@ -31,7 +31,7 @@ Checking database service mysql...
 
 All the mounts share a disk. You can check disk space usage for mounts using the `magento-cloud` CLI.
 
-**To check approximate disk space usage for mounts:**
+**To check approximate disk space usage for mounts**:
 
 ```bash
 magento-cloud mount:size
