@@ -108,7 +108,7 @@ hooks:
         php ./vendor/bin/ece-tools run scenario/build/generate.xml
         php ./vendor/bin/ece-tools run scenario/build/transfer.xml
     deploy: |
-        php ./vendor/bin/ece-tools run scenario/deploy.xml  vendor/vendor-name/module-name/deploy-custom-mode-config.xml
+        php ./vendor/bin/ece-tools run scenario/deploy.xml vendor/vendor-name/module-name/deploy-custom-mode-config.xml
     post_deploy: |
         php ./vendor/bin/ece-tools run scenario/post-deploy.xml
 ```
@@ -205,7 +205,7 @@ hooks:
         php ./vendor/bin/ece-tools run scenario/build/generate.xml
         php ./vendor/bin/ece-tools run scenario/build/transfer.xml
     deploy: |
-        php ./vendor/bin/ece-tools run scenario/deploy.xml  vendor/vendor-name/module-name/deploy-extended.xml
+        php ./vendor/bin/ece-tools run scenario/deploy.xml vendor/vendor-name/module-name/deploy-extended.xml
     post_deploy: |
         php ./vendor/bin/ece-tools run scenario/post-deploy.xml
 ```

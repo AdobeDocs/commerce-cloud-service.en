@@ -107,7 +107,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  ![new icon](../../assets/new.svg) Added the **FORCE_UPDATE_URLS** deploy variable to update base URLs when deploying to Pro and Starter production and staging environments. See the definition in the [deploy variables](../environment/variables-deploy.md#force_update_urls) content.<!-- MAGECLOUD-3602 -->
 
-   -  ![new icon](../../assets/new.svg) Added the **TTFB_TESTED_PAGES** post-deploy variable to configure _Time to First Byte_  page tests to check application performance on sites deployed to Cloud infrastructure. See the variable description in [post-deploy variables](../environment/variables-post-deploy.md).<!-- MAGECLOUD-3643 -->
+   -  ![new icon](../../assets/new.svg) Added the **TTFB_TESTED_PAGES** post-deploy variable to configure _Time to First Byte_ page tests to check application performance on sites deployed to Cloud infrastructure. See the variable description in [post-deploy variables](../environment/variables-post-deploy.md).<!-- MAGECLOUD-3643 -->
 
    -  ![fix icon](../../assets/fix.svg) Fixed an issue with multi-threaded SCD, which caused random failures in static content deployment. The workaround involved setting the **SCD_THREADS** variable to `1`. You can now increase the count as needed. See the definitions in the [deploy variables](../environment/variables-deploy.md#scd_threads) and the [build variables](../environment/variables-build.md#scd_threads).<!-- MAGECLOUD-3611 -->
 
@@ -675,7 +675,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  We fixed an issue that was preventing `ece-tools` from halting execution and throwing an exception if no patches can be applied.<!-- MAGECLOUD-1186 -->
 
--  We fixed an issue that was causing exceptions to be thrown when  dependency injection (di) compilation is skipped during builds.<!-- MAGECLOUD-1047 & MAGECLOUD-1049 -->
+-  We fixed an issue that was causing exceptions to be thrown when dependency injection (di) compilation is skipped during builds.<!-- MAGECLOUD-1047 & MAGECLOUD-1049 -->
 
 -  We fixed an issue that was causing the deploy process to overwrite custom Redis configurations in the `env.php` file.<!-- MAGECLOUD-1019 -->
 

@@ -114,7 +114,7 @@ The following walk-through shows you how to create regular VCL snippet files and
 
 **Prerequisites:**
 
--  Configure your  Adobe Commerce on cloud infrastructure environment for Fastly services. See [Set up Fastly](fastly-configuration.md).
+-  Configure your Adobe Commerce on cloud infrastructure environment for Fastly services. See [Set up Fastly](fastly-configuration.md).
 
 -  [Get Fastly API credentials](fastly-configuration.md) to authenticate requests to the Fastly API. Make sure that you get the credentials for the correct environment: Staging or Production.
 

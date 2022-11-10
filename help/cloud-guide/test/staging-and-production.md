@@ -17,7 +17,7 @@ When accessing logs in Production or Staging environments, use SSH to log in to 
 
 ## Check the code base
 
-Verify your code base correctly deployed to Staging and Production environments. The environments should have identical code bases.
+Verify that your code base correctly deployed to Staging and Production environments. The environments should have identical code bases.
 
 ## Verify configuration settings
 

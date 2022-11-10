@@ -72,7 +72,7 @@ Before creating your own snippet from this example, review the values to determi
 
 -  `name` — Name for the VCL snippet. For this example, `allowlist`.
 
--  `priority` — Determines when the VCL snippet runs. The priority  is `5` to immediately run and check whether an Admin requests are coming from an allowed IP address. The snippet runs before any of the default Magento VCL snippets (`magentomodule_*`) assigned a priority of 50. Set the priority for each custom snippet higher or lower than 50 depending on when you want your snippet to run. Snippets with lower priority numbers run first.
+-  `priority` — Determines when the VCL snippet runs. The priority is `5` to immediately run and check whether an Admin requests are coming from an allowed IP address. The snippet runs before any of the default Magento VCL snippets (`magentomodule_*`) assigned a priority of 50. Set the priority for each custom snippet higher or lower than 50 depending on when you want your snippet to run. Snippets with lower priority numbers run first.
 
 -  `type` — Specifies a location to insert the snippet in the versioned VCL code. This VCL is a `recv` snippet type which adds the snippet code to the `vcl_recv` subroutine below the default Fastly VCL code and above any objects.
 

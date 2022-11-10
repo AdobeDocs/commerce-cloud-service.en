@@ -105,7 +105,7 @@ You can use the **Custom Synthetic Pages** > **Edit WAF page** option in the Fas
 
 >[!NOTE]
 >
->The Edit WAF option is available only if the Managed Cloud WAF service is enabled for your  Adobe Commerce on cloud infrastructure project.
+>The Edit WAF option is available only if the Managed Cloud WAF service is enabled for your Adobe Commerce on cloud infrastructure project.
 
 **To edit the WAF error page**:
 

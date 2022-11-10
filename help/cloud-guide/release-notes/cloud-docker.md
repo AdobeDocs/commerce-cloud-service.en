@@ -269,8 +269,8 @@ Release date: June 25, 2020
 | Clear Redis cache | `bin/magento-docker flush-redis`  |
 | Clear Varnish cache | `bin/magento-docker flush-varnish` |
 | Skip default Varnish installation | `.vendor/bin/ece-docker build:compose --no-varnish`<!--MCLOUD-2634-->  |
-| [Customize Elasticsearch options](https://devdocs.magento.com/cloud/docker/docker-containers-service.html#elasticsearch-container) | `.vendor/bin/ece-docker  build:compose --es-env-var`<!--MCLOUD-3059-->   |
-| [Remove Elasticsearch configuration](https://devdocs.magento.com/cloud/docker/docker-containers-service.html#elasticsearch-container) | `.vendor/bin/ece-docker  build:compose --no-es`<!--MCLOUD-3766-->     |
+| [Customize Elasticsearch options](https://devdocs.magento.com/cloud/docker/docker-containers-service.html#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --es-env-var`<!--MCLOUD-3059-->   |
+| [Remove Elasticsearch configuration](https://devdocs.magento.com/cloud/docker/docker-containers-service.html#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --no-es`<!--MCLOUD-3766-->     |
 | Configure DB container with MySQL version 5.6 or 5.7 | `./vendor/bin/ece-docker build:compose --db <mysql-version-number> --db-image mysql`<!--MCLOUD-5691-->  |
 | Specify custom base URL | `./vendor/bin/ece-docker build:compose --host=<hostname> --port=<port-number>`<!--MCLOUD-3063--> |
 | [Add container for Xdebug configuration](https://devdocs.magento.com/cloud/docker/docker-development-debug.html)  | `.vendor/bin/ece-docker build:compose --mode developer --sync-engine native --with-xdebug`<!--MCLOUD-4098--> |

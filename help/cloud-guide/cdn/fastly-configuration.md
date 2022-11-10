@@ -117,7 +117,7 @@ After you enable the Fastly module, upload the default [VCL code](https://github
 
 >[!NOTE]
 >
->Fastly caching services do not work until you complete the initial upload of the Fastly VCL code to the Adobe Commerce  Staging and Production sites.
+>Fastly caching services do not work until you complete the initial upload of the Fastly VCL code to the Adobe Commerce Staging and Production sites.
 
 **To upload the Fastly VCL**:
 

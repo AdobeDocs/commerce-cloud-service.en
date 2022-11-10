@@ -1,6 +1,6 @@
 ---
 title: Web Application Firewall (WAF)
-description: Learn how the Fastly WAF service detects, logs, and blocks malicious request traffic before it can damage the Adobe Commerce  network or sites.
+description: Learn how the Fastly WAF service detects, logs, and blocks malicious request traffic before it can damage the Adobe Commerce network or sites.
 ---
 
 # Web Application Firewall (WAF)

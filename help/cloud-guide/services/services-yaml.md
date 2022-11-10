@@ -237,7 +237,7 @@ When you change the service version, you must update the service configuration i
    >
    >Renaming an existing service replaces it and deletes all data. If you need to retain the data, create a service instead of renaming the existing one.
 
-   For example, to downgrade the MariaDB version for the _mysql_ service from version 10.4 to 10.3, change the existing  _service-id_ and _type_ configuration.
+   For example, to downgrade the MariaDB version for the _mysql_ service from version 10.4 to 10.3, change the existing _service-id_ and _type_ configuration.
 
    > Original `services.yaml` definition
 

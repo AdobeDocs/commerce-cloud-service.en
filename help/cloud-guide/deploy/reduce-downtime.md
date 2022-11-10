@@ -30,7 +30,7 @@ Use the following steps to reduce the amount of time it takes your store to depl
    You can reduce the number of unnecessary theme files by configuring the SCD\_MATRIX environment variable.
 
 1. [Speed up static content deployment](../environment/variables-deploy.md#scdthreads)
-   You can speed up the deployment process by updating the  SCD\_THREADS environment variable to increase the number of threads for static content deployment.
+   You can speed up the deployment process by updating the SCD\_THREADS environment variable to increase the number of threads for static content deployment.
 
 >[!NOTE]
 >

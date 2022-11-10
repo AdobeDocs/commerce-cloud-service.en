@@ -9,7 +9,7 @@ You can extend your Adobe Commerce application capabilities by adding an extensi
 
 ## Composer name of an extension
 
-Although this discusses how to get the Composer name and version of an extension from Commerce Marketplace, you can find the name and version of _any_ module in the Composer file of the module. Open  the `composer.json` file in a text editor and note the `"name"` and `"version"` values.
+Although this discusses how to get the Composer name and version of an extension from Commerce Marketplace, you can find the name and version of _any_ module in the Composer file of the module. Open the `composer.json` file in a text editor and note the `"name"` and `"version"` values.
 
 **To get the Composer name of a module from the Commerce Marketplace**:
 

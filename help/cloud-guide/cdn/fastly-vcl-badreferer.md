@@ -73,7 +73,7 @@ Before creating a snippet based on this example, review the values to determine 
 
 -  `dynamic` — Value 0 indicates a [regular snippet](https://docs.fastly.com/en/guides/using-regular-vcl-snippets) to upload to the versioned VCL for the Fastly configuration.
 
--  `priority` — Determines when the VCL snippet runs. The priority  is `5` to run this snippet code before any of the default Magento VCL snippets (`magentomodule_*`) assigned a priority of 50. Set the priority for each custom snippet higher or lower than 50 depending on when you want your snippet to run. Snippets with lower priority numbers run first.
+-  `priority` — Determines when the VCL snippet runs. The priority is `5` to run this snippet code before any of the default Magento VCL snippets (`magentomodule_*`) assigned a priority of 50. Set the priority for each custom snippet higher or lower than 50 depending on when you want your snippet to run. Snippets with lower priority numbers run first.
 
 -  `type` — Specifies a location to insert the snippet in the VCL version. In this example, the VCL snippet is a `recv` snippet. When the snippet is inserted into the VCL version, it is added to the `vcl_recv` subroutine,  below the default Fastly VCL code and above any objects.
 
