@@ -186,9 +186,7 @@ If you encounter issues, save your reproduction steps, error messages, strange s
 </tr>
 </table>
 
-## Complete testing
-
-### Load and stress testing
+## Load and stress testing
 
 Before launching, we highly recommend performing extensive traffic and performance testing on your Staging and Production environments. Consider performance testing for your frontend and backend processes.
 
@@ -204,7 +202,7 @@ For best results, we recommend the following tools:
 -  [New Relic](../monitor/new-relic.md) (provided)—Helps locate processes and areas of the site causing slow performance with tracked time spent per action like transmitting data, queries, Redis, and so on.
 -  [WebPageTest](https://www.webpagetest.org) and [Pingdom](https://www.pingdom.com)—Real-time analysis of your site pages load time with different origin locations. Pingdom may require a fee. WebPageTest is a free tool.
 
-### Functional testing
+## Functional testing
 
 You can use the Magento Functional Testing Framework (MFTF) to complete functional testing for Adobe Commerce from the Cloud Docker environment. See [Application testing](https://devdocs.magento.com/cloud/docker/docker-test-app-mftf.html).
 
