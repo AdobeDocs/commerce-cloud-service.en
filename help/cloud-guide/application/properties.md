@@ -23,6 +23,8 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 | [`web`](web-property.md) | Handle external requests | — | Yes |
 | [`workers`](workers-property.md) | Handle external requests | — | Yes, if not using web |
 
+{style="table-layout:auto"}
+
 >[!NOTE]
 >
 >For Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
@@ -84,6 +86,8 @@ hooks:
         set -e
         composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
 ```
+
+See [Required packages](../development/overview.md#required-packages) for more information about Composer 
 
 ## `dependencies`
 

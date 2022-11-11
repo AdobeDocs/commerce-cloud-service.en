@@ -31,6 +31,10 @@ product: magento
     + [SendGrid mail service](project/sendgrid.md)
     + [Branch management](project/console-branches.md)
     + [Regional IP addresses](project/regional-ip-addresses.md)
+    + Storage {#storage}
+        + [Manage disk space](storage/manage-disk-space.md)
+        + [Profile database queries](storage/profile-database-queries.md)
+        + [Snapshots and backup management](storage/snapshots.md)
 + Developer tools {#dev-tools}
     + [Cloud CLI](dev-tools/cloud-cli.md)
     + ECE-Tools {#ece-tools}
@@ -38,11 +42,32 @@ product: magento
         + [One-time upgrade to use ECE-Tools](dev-tools/install-package.md)
         + [Update ECE-Tools package](dev-tools/update-package.md)
         + [Error reference](dev-tools/error-reference.md)
+    + Integrations {#integrations}
+        + [Overview](integrations/overview.md)
+        + [Bitbucket](integrations/bitbucket.md)
+        + [GitHub](integrations/github.md)
+        + [GitLab](integrations/gitlab.md)
+        + [Health notifications](integrations/health-notifications.md)
 + Development {#develop}
     + [Overview](development/overview.md)
     + [Authentication keys](development/authentication-keys.md)
     + [Clone and branch management](development/cli-branches.md)
     + [Secure connections](development/secure-connections.md)
+    + Deploy {#deploy}
+        + [Deployment process](deploy/process.md)
+        + [Optimization](deploy/optimization.md)
+        + [Best practices](deploy/best-practices.md)
+        + [Scenario-based deployment](deploy/scenario-based.md)
+        + [Zero downtime deployment](deploy/reduce-downtime.md)
+        + [Static content deployment](deploy/static-content.md)
+        + [Smart wizards](deploy/smart-wizards.md)
+        + [Deploy to Staging and Production](deploy/staging-production.md)
+        + [Recover from component failure](deploy/recover-failed-deployment.md)
+    + Test {#test}
+        + [Testing guidance](test/guidance.md)
+        + [Sample data](test/sample-data.md)
+        + [Xdebug](test/debug.md)
+        + [Staging and Production](test/staging-and-production.md)
     + [PrivateLink service](development/privatelink-service.md)
     + [Protective block](development/protective-block.md)
     + [Restore environment](development/restore-environment.md)
@@ -50,50 +75,45 @@ product: magento
         + [Best practices](development/best-practices.md)
         + [Upgrade Commerce version](development/commerce-version.md)
         + [Apply patches](development/apply-patches.md)
-+ Integrations {#integrations}
-    + [Overview](integrations/overview.md)
-    + [Bitbucket](integrations/bitbucket.md)
-    + [GitHub](integrations/github.md)
-    + [GitLab](integrations/gitlab.md)
-    + [Health notifications](integrations/health-notifications.md)
-+ Application {#configure-app}
-    + [Configure application deployment](application/configure-app-yaml.md)
-    + [PHP settings](application/php-settings.md)
-    + Properties {#properties}
-        + [Application properties](application/properties.md)
-        + [Crons](application/crons-property.md)
-        + [Firewall (Starter only)](application/firewall-property.md)
-        + [Hooks](application/hooks-property.md)
-        + [Variables](application/variables-property.md)
-        + [Web](application/web-property.md)
-        + [Workers](application/workers-property.md)
-    + [Set cache for static files](application/set-cache.md)
-+ Environment {#configure-env}
-    + [Configure environment deployment](environment/configure-env-yaml.md)
-    + [Variable levels and options](environment/variable-levels.md)
-    + Override variables {#stage}
-        + [Environment variables](environment/variables-intro.md)
-        + [ADMIN](environment/variables-admin.md)
-        + [Cloud variables](environment/variables-cloud.md)
-        + [Global](environment/variables-global.md)
-        + [Build](environment/variables-build.md)
-        + [Deploy](environment/variables-deploy.md)
-        + [Post-deploy](environment/variables-post-deploy.md)
-    + Configure notifications {#log}
-        + [Notifications](environment/set-up-notifications.md)
-        + [Log handlers](environment/log-handlers.md)
-+ Routes {#configure-routes}
-    + [Configure routes](routes/routes-yaml.md)
-    + [Caching](routes/caching.md)
-    + [Redirects](routes/redirects.md)
-    + [Server-side includes](routes/server-side-includes.md)
-+ Services {#configure-service}
-    + [Configure services](services/services-yaml.md)
-    + [Elasticsearch](services/elasticsearch.md)
-    + [MySQL](services/mysql.md)
-    + [OpenSearch](services/opensearch.md)
-    + [RabbitMQ](services/rabbitmq.md)
-    + [Redis](services/redis.md)
++ Configuration {#configure}
+    + Application {#app}
+        + [Configure application deployment](application/configure-app-yaml.md)
+        + [PHP settings](application/php-settings.md)
+        + Properties {#properties}
+            + [Application properties](application/properties.md)
+            + [Crons](application/crons-property.md)
+            + [Firewall (Starter only)](application/firewall-property.md)
+            + [Hooks](application/hooks-property.md)
+            + [Variables](application/variables-property.md)
+            + [Web](application/web-property.md)
+            + [Workers](application/workers-property.md)
+        + [Set cache for static files](application/set-cache.md)
+    + Environment {#env}
+        + [Configure environment deployment](environment/configure-env-yaml.md)
+        + [Variable levels and options](environment/variable-levels.md)
+        + Override variables {#stage}
+            + [Environment variables](environment/variables-intro.md)
+            + [ADMIN](environment/variables-admin.md)
+            + [Cloud variables](environment/variables-cloud.md)
+            + [Global](environment/variables-global.md)
+            + [Build](environment/variables-build.md)
+            + [Deploy](environment/variables-deploy.md)
+            + [Post-deploy](environment/variables-post-deploy.md)
+        + Configure notifications {#log}
+            + [Notifications](environment/set-up-notifications.md)
+            + [Log handlers](environment/log-handlers.md)
+    + Routes {#routes}
+        + [Configure routes](routes/routes-yaml.md)
+        + [Caching](routes/caching.md)
+        + [Redirects](routes/redirects.md)
+        + [Server-side includes](routes/server-side-includes.md)
+    + Services {#service}
+        + [Configure services](services/services-yaml.md)
+        + [Elasticsearch](services/elasticsearch.md)
+        + [MySQL](services/mysql.md)
+        + [OpenSearch](services/opensearch.md)
+        + [RabbitMQ](services/rabbitmq.md)
+        + [Redis](services/redis.md)
 + Fastly services {#cdn}
     + [Overview](cdn/fastly.md)
     + Fastly Setup {#setup-fastly}
@@ -110,7 +130,7 @@ product: magento
         + [IP blocklist](cdn/fastly-vcl-blocking.md)
         + [Bypass Fastly cache](cdn/fastly-vcl-bypass-to-origin.md)
     + [Fastly troubleshooting](cdn/fastly-troubleshooting.md)
-+ Store configuration {#configure-store}
++ Store settings and extensions {#configure-store}
     + [Overview](store/overview.md)
     + [Best practices](store/best-practices.md)
     + [Custom theme](store/custom-theme.md)
@@ -120,30 +140,10 @@ product: magento
     + [Site map and search engine robots](store/robots-sitemap.md)
     + [PayPal payment methods](store/paypal.md)
     + [Configuration management](store/store-settings.md)
-+ Deployment {#deploy}
-    + [Deployment process](deploy/process.md)
-    + [Optimization](deploy/optimization.md)
-    + [Best practices](deploy/best-practices.md)
-    + [Scenario-based deployment](deploy/scenario-based.md)
-    + [Zero downtime deployment](deploy/reduce-downtime.md)
-    + [Static content deployment](deploy/static-content.md)
-    + [Smart wizards](deploy/smart-wizards.md)
-    + [Deploy to Staging and Production](deploy/staging-production.md)
-    + [Recover from component failure](deploy/recover-failed-deployment.md)
-+ Test {#test}
-    + [Testing guidance](test/guidance.md)
-    + [Sample data](test/sample-data.md)
-    + [Xdebug](test/debug.md)
-    + [Staging and Production](test/staging-and-production.md)
 + Launch site {#launch}
     + [Overview](launch/overview.md)
     + [Launch checklist](launch/checklist.md)
     + [Launch steps](launch/steps.md)
-+ Monitor {#monitor}
-    + [Logs](monitor/log-locations.md)
++ Monitor site {#monitor}
     + [Performance](monitor/performance.md)
     + [New Relic service](monitor/new-relic.md)
-+ Storage {#storage}
-    + [Manage disk space](storage/manage-disk-space.md)
-    + [Profile database queries](storage/profile-database-queries.md)
-    + [Snapshots and backup management](storage/snapshots.md)

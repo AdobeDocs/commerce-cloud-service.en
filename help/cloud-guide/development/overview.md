@@ -7,7 +7,7 @@ description: Prepare for local development with an Adobe Commerce on cloud infra
 
 Adobe Commerce on cloud infrastructure remote environments are **Read Only**, including all Starter environments and all Pro Integration, Staging, and Production environments. In a local development environment, you can write and test code before pushing it to an Integration environment for further testing and deployment to Staging and Production.
 
-## Development packages
+## Required packages
 
 Adobe Commerce on cloud infrastructure uses Composer to manage the dependencies and upgrades for projects. Composer installs the required libraries and dependencies for your project in the `vendor` directory. The following required Composer files are in the project root directory:
 

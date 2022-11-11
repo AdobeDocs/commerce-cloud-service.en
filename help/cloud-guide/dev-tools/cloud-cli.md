@@ -62,6 +62,8 @@ The following list of commonly used `magento-cloud` CLI commands includes requir
 | `magento-cloud environment:merge -e` | Merge changes in this environment with its parent. |
 | `magento-cloud variables`            | List variables in this environment.                |
 | `magento-cloud ssh`                  | Use SSH to connect to the remote environment.      |
+| `magento-cloud url`                  | Open the Adobe Commerce storefront in a browser.   |
+| `magento-cloud web`                  | Open the Project Web Interface.                    |
 
 ## Environment commands
 
