@@ -131,7 +131,7 @@ product: magento
         + [IP blocklist](cdn/fastly-vcl-blocking.md)
         + [Bypass Fastly cache](cdn/fastly-vcl-bypass-to-origin.md)
     + [Fastly troubleshooting](cdn/fastly-troubleshooting.md)
-+ Store settings and extensions {#configure-store}
++ Store settings {#configure-store}
     + [Overview](store/overview.md)
     + [Best practices](store/best-practices.md)
     + [Custom theme](store/custom-theme.md)
