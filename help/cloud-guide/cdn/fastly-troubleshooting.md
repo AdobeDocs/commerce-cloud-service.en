@@ -66,11 +66,10 @@ If you receive a 503 error, check the Production or Staging environment error lo
 
 **To check the error logs**:
 
--  [Error log](../project/sendgrid.md
-log-locations.html#application-logs)
+-  [Error log](../test/log-locations.md#application-logs)
 
    ```text
-   /var/log/platform/<project_ID>/error.log
+   /var/log/platform/<project-ID>/error.log
    ```
 
    This log includes any errors from the application or PHP engine, for example `memory_limit` or `max_execution_time exceeded` errors. If you do not find any Fastly related errors, check the PHP access log.
@@ -78,7 +77,7 @@ log-locations.html#application-logs)
 -  PHP access log
 
    ```text
-   /var/log/platform/<project_ID>/php.access.log
+   /var/log/platform/<project-ID>/php.access.log
    ```
 
    Search the log for HTTP 200 responses for the URL that returned the 503 error. If you find the 200 response, it means that Adobe Commerce returned the page without errors. That indicates the issue might have occurred after the interval that exceeds the `first_byte_timeout` value set in the Fastly service configuration.
@@ -281,7 +280,7 @@ If the issue persists, another extension is likely resetting these headers. Repe
 
    -  Enable one extension at a time, save the configuration, and flush the Adobe Commerce cache.
 
-   -  Run the [`curl` commands](#check-live-site-through-fastly) to verify the [response headers](#check-hit-and-miss-response-headers).
+   -  Run the [`curl` commands](#check-live-site-through-fastly) to verify the [response headers](#check-cache-hit-and-miss-response-headers).
 
    Repeat this process for each extension. If the Fastly response headers no longer display, you have identified the extension that is causing issues with Fastly.
 

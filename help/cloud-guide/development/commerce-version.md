@@ -393,7 +393,7 @@ Exception printing is disabled by default for security reasons.
 
 1. Open the `./app/var/report/<error number>` file.
 
-1. [Examine the logs](../monitor/log-locations.md) and determine the source of the issue.
+1. [Examine the logs](../test/log-locations.md) and determine the source of the issue.
 
 1. Add, commit, and push code changes.
 

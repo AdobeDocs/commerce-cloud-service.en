@@ -15,13 +15,13 @@ The build and deploy process is slightly different for each plan:
 
 ## Track the process
 
-You can track build and deploy actions in real time using the terminal or the Project Web Interface Status messages—`in-progress`, `pending`, `success`, or `failed`—display during the deployment process. You can view details in the log files. See [View logs](../monitor/log-locations.md).
+You can track build and deploy actions in real time using the terminal or the Project Web Interface Status messages—`in-progress`, `pending`, `success`, or `failed`—display during the deployment process. You can view details in the log files. See [View logs](../test/log-locations.md).
 
 If you are using external GitHub repositories, the log of operations does not display in the GitHub session. However, you can still follow activity in the interface for the external repository and the Project Web Interface. See [Integrations](../integrations/overview.md).
 
 >[!NOTE]
 >
->In Integration environments, you cannot view the deploy logs from the Project Web Interface. This feature is available only for Production and Staging environments. However, you can view logs for every phase of the deployment in any environment using the [build and deploy](../monitor/log-locations.md#build-and-deploy-logs) logs. For troubleshooting information, see the [Deployment error reference](../dev-tools/error-reference.md).
+>In Integration environments, you cannot view the deploy logs from the Project Web Interface. This feature is available only for Production and Staging environments. However, you can view logs for every phase of the deployment in any environment using the [build and deploy](../test/log-locations.md#build-and-deploy-logs) logs. For troubleshooting information, see the [Deployment error reference](../dev-tools/error-reference.md).
 
 ## Best practices for builds and deployment
 
@@ -57,7 +57,7 @@ We highly recommend the following best practices and considerations for your dep
 
    -  Prepare the environment by updating any environment-specific variables in the Production code, verifying service availability and compatibility, and making any other required configuration changes.
 
--  **Monitor the deploy process**–Review the deployment status messages and mitigate issues as needed. Review the Cloud [logs](../monitor/log-locations.md) for detailed log messages.
+-  **Monitor the deploy process**–Review the deployment status messages and mitigate issues as needed. Review the Cloud [logs](../test/log-locations.md#) for detailed log messages.
 
 ## Five phases of Integration build and deployment
 
@@ -161,5 +161,5 @@ Successful deployment removes the maintenance mode to allow for normal access an
 
 If you enabled static content generation using the `SCD_ON_DEMAND` variable and you configured the [`post_deploy` hook](../application/hooks-property.md), this clears the cache and pre-loads (warms) the cache _after_ the container begins accepting connections and _during_ normal, incoming traffic.
 
-To review build and deploy logs, see [View logs](../monitor/log-locations.md).
+To review build and deploy logs, see [View logs](../test/log-locations.md#view-and-manage-logs).
 

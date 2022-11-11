@@ -65,8 +65,9 @@ product: magento
         + [Recover from component failure](deploy/recover-failed-deployment.md)
     + Test {#test}
         + [Testing guidance](test/guidance.md)
-        + [Sample data](test/sample-data.md)
+        + [Logs](test/log-locations.md)
         + [Xdebug](test/debug.md)
+        + [Sample data](test/sample-data.md)
         + [Staging and Production](test/staging-and-production.md)
     + [PrivateLink service](development/privatelink-service.md)
     + [Protective block](development/protective-block.md)
