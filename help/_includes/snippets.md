@@ -18,8 +18,8 @@ By default, the deployment process overwrites all settings in the `env.php` file
 
 Set the `_merge` option to one of the following:
 
--  `true`—**Merge** the configured service values with the environment variable values.
--  `false`—**Overwrite** the configured service values with the environment variable values.
+- `true`—**Merge** the configured service values with the environment variable values.
+- `false`—**Overwrite** the configured service values with the environment variable values.
 
 ## Private repository {#private-repository}
 
@@ -43,7 +43,7 @@ Set the `_merge` option to one of the following:
 
 >[!WARNING]
 >
->Updating the environment configuration triggers a redeployment, which takes your site offline until deployment completes. Adobe recommends completing this work during off-peak hours to avoid service disruptions.
+>The deployment process begins when you perform a merge, push, or synchronization of your environment, or when you trigger a manual redeployment, during which the Commerce application is in maintenance mode. For a Production environment, Adobe recommends completing this work during off-peak hours to avoid service disruptions.
 
 ## Route placeholders {#route-placeholder}
 
@@ -72,7 +72,7 @@ Use the following instructions for service setup on Pro Integration environments
 >
 >[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the service configuration on Pro Production and Staging environments.
 
-## Service change {#change-service-version}
+## Service change {#service-change-tip}
 
 >[!TIP]
 >

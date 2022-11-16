@@ -48,7 +48,7 @@ The MQF uses [RabbitMQ](https://www.rabbitmq.com/) as the messaging broker, whic
 
 1. [Verify the service relationships](services-yaml.md#service-relationships).
 
-{{change-service-version}}
+{{service-change-tip}}
 
 ## Connect to RabbitMQ for debugging
 

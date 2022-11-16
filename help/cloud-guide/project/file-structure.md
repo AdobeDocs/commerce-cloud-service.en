@@ -86,3 +86,5 @@ You can use the following steps to change the structure of an existing project t
    ```bash
    git add -A && git commit -m "Update base template"
    ```
+
+{{redeploy-warning}}

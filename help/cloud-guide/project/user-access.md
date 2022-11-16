@@ -29,10 +29,6 @@ When MFA enforcement is enabled on an Adobe Commerce on cloud infrastructure pro
 
 Add users and assign roles using the `magento-cloud` CLI or the Project Web Interface.
 
->[!TIP]
->
->Changing user configuration on an Adobe Commerce on cloud infrastructure environment requires a site deployment for the changes to take effect, which takes your site offline until the deployment completes. For Production environments, Adobe recommends completing user administration tasks during off-peak hours to prevent service disruptions.
-
 **Prerequisites:**
 
 -  Gather the email address associated with an existing Adobe Commerce on cloud infrastructure account. New users can [register for an account](https://account.magento.com/customer/account/login). and provide the associated email address after completing account validation.
@@ -88,8 +84,6 @@ The following examples use the `magento-cloud` CLI to add a user, configure role
    Are you sure you want to add this user? [Y/n] y
    Adding the user to the project
    ```
-
-   {{redeploy-warning}}
 
    After you add the user, Adobe sends an email to the specified address with instructions for accessing the Adobe Commerce on cloud infrastructure project.
 
@@ -167,8 +161,6 @@ You can use the Project Web Interface to add permissions and use the _Edit_ feat
 1. After adding project-level users, you must redeploy all environments to apply the changes. Adding a project-level user does not trigger a deployment automatically.
 
 After you add the user, Adobe sends an email to the specified address with instructions for accessing the Adobe Commerce on cloud infrastructure project.
-
-{{redeploy-warning}}
 
 ## Update account security settings
 

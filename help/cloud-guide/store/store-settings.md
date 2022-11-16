@@ -116,6 +116,8 @@ If the same setting is configured in multiple places, the application relies on 
 | 5 | Database | Values stored here are added by setting configurations in the Admin. Configurations set using any of the preceding methods are locked (grayed out) and cannot be edited from the Admin. |
 | 6 | `config.xml` | Many configurations have default values set in the `config.xml` file for a module. If Adobe Commerce cannot find any value set by any of the preceding methods, it falls back to the default value, if set. |
 
+{style="table-layout:auto"}
+
 ## Procedure to manage your settings
 
 The following illustrates a high-level overview of this process:
@@ -126,8 +128,8 @@ The following illustrates a high-level overview of this process:
 
 1. Complete all configurations for your stores in the Admin for one of the environments:
 
-   -  Starter: An active development branch
-   -  Pro: Integration environment
+   - Starter: An active development branch
+   - Pro: Integration environment
 
    These configurations do not include the actual products unless you plan on dumping the database from this environment to Staging and Production environments. Typically, development databases do not include your full store data.
 

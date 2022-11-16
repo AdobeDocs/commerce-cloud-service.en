@@ -63,7 +63,7 @@ For Adobe Commerce version 2.4.4 and later, see [Set up OpenSearch service](open
    bin/magento cache:clean
    ```
 
-{{change-service-version}}
+{{service-change-tip}}
 
 ## Elasticsearch software compatibility
 

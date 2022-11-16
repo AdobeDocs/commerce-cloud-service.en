@@ -91,6 +91,8 @@ Sample response:
 Are you sure you want to redeploy the environment <environment-name>? [Y/n]
 ```
 
+{{redeploy-warning}}
+
 ## Git commands
 
 You may notice that some of these commands are similar to Git commands. The `magento-cloud` commands directly connect to the Git-based Cloud project with additional features. If you create a branch without using the `magento-cloud` CLI, it is not "activated" and does not automatically build when you push changes to the remote environment. The `magento-cloud` CLI command includes activation.

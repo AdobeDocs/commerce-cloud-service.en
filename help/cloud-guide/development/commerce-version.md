@@ -23,12 +23,12 @@ Depending on your project configuration, your upgrade tasks may include the foll
 
 If you are beginning an upgrade from a Commerce version older than 2.1, some restrictions in the Adobe Commerce code base can affect your ability to _update_ to a specific ECE-Tools release or to _upgrade_ to the next supported Commerce version. Use the following table to determine the best path:
 
-| Current Version | Upgrade Path |
-| --------------- | ------------ |
+| Current Version   | Upgrade Path |
+| ----------------- | ------------ |
 | 2.1.3 and earlier | Upgrade Adobe Commerce to version 2.1.4 or later before you continue. Then perform a [one-time upgrade to install ECE-Tools](../dev-tools/install-package.md). |
-| 2.1.4 – 2.1.14 | [Update ECE-Tools](../dev-tools/update-package.md) package.<br>See release notes for [2002.0.9](../release-notes/cloud-release-archive.md#v200209) and later 2002.0.x releases. |
-| 2.1.15 – 2.1.16 | [Update ECE-Tools](../dev-tools/update-package.md) package.<br>See release notes for[2002.0.9](../release-notes/cloud-release-archive.md#v200209) and later. |
-| 2.2.x and later | [Update ECE-Tools](../dev-tools/update-package.md) package.<br>See release notes for[2002.0.8](../release-notes/cloud-release-archive.md#v200208) and later. |
+| 2.1.4 – 2.1.14    | [Update ECE-Tools](../dev-tools/update-package.md) package.<br>See release notes for [2002.0.9](../release-notes/cloud-release-archive.md#v200209) and later 2002.0.x releases. |
+| 2.1.15 – 2.1.16   | [Update ECE-Tools](../dev-tools/update-package.md) package.<br>See release notes for[2002.0.9](../release-notes/cloud-release-archive.md#v200209) and later. |
+| 2.2.x and later   | [Update ECE-Tools](../dev-tools/update-package.md) package.<br>See release notes for[2002.0.8](../release-notes/cloud-release-archive.md#v200208) and later. |
 
 {style="table-layout:auto"}
 

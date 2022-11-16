@@ -31,10 +31,6 @@ product: magento
     + [SendGrid mail service](project/sendgrid.md)
     + [Branch management](project/console-branches.md)
     + [Regional IP addresses](project/regional-ip-addresses.md)
-    + Storage {#storage}
-        + [Manage disk space](storage/manage-disk-space.md)
-        + [Profile database queries](storage/profile-database-queries.md)
-        + [Snapshots and backup management](storage/snapshots.md)
 + Developer tools {#dev-tools}
     + [Cloud CLI](dev-tools/cloud-cli.md)
     + ECE-Tools {#ece-tools}
@@ -72,6 +68,10 @@ product: magento
     + [PrivateLink service](development/privatelink-service.md)
     + [Protective block](development/protective-block.md)
     + [Restore environment](development/restore-environment.md)
+    + Storage {#storage}
+        + [Manage disk space](storage/manage-disk-space.md)
+        + [Profile database queries](storage/profile-database-queries.md)
+        + [Snapshots and backup management](storage/snapshots.md)
     + Upgrades and patches {#upgrade}
         + [Best practices](development/best-practices.md)
         + [Upgrade Commerce version](development/commerce-version.md)

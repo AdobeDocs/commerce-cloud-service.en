@@ -46,7 +46,7 @@ See [Configure Redis](https://experienceleague.adobe.com/docs/commerce-operation
 
 1. [Verify the service relationships](services-yaml.md#service-relationships).
 
-{{change-service-version}}
+{{service-change-tip}}
 
 ## Using the Redis CLI
 

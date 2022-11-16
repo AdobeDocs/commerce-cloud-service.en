@@ -11,8 +11,8 @@ The deploy script uses the configuration files in the `.magento` directory to pr
 
 Changing a service configuration causes a deployment to provision the environment with the updated services, which affects the following environments:
 
--  All Starter environments including Production `master`
--  Pro Integration environments
+- All Starter environments including Production `master`
+- Pro Integration environments
 
 {{pro-update-service}}
 
@@ -80,8 +80,8 @@ redis2:
 
 Renaming a service in the `services.yaml` file **permanently removes** the following:
 
--  The existing service before creating a service with the new name you specify.
--  All existing data for the service is removed. Adobe strongly recommends that you create a [snapshot your environment](../storage/snapshots.md) before you change the name of an existing service.
+- The existing service before creating a service with the new name you specify.
+- All existing data for the service is removed. Adobe strongly recommends that you create a [snapshot your environment](../storage/snapshots.md) before you change the name of an existing service.
 
 ### `type`
 
@@ -166,8 +166,8 @@ Service version and compatibility support for Adobe Commerce on cloud infrastruc
 
 During the deployment process, the `ece-tools` package checks installed service versions against the end-of-life (EOL) dates for each service.
 
--  If a service version is within three months of the EOL date, a notification displays in the deploy log.
--  If the EOL date is in the past, a warning notification displays.
+- If a service version is within three months of the EOL date, a notification displays in the deploy log.
+- If the EOL date is in the past, a warning notification displays.
 
 To maintain store security, update installed software versions before they reach EOL. You can review the EOL dates in the [ece-tools' `eol.yaml` file](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
@@ -208,7 +208,7 @@ You can upgrade the installed service version by updating the service configurat
 1. Add, commit, and push your code changes.
 
    ```bash
-   git add -A
+   git add .magento/services.yaml
    ```
 
    ```bash

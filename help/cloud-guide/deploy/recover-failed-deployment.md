@@ -72,6 +72,8 @@ To clean up from the previous deployment, you may need to identify the component
    git push origin <environment-ID>
    ```
 
+{{redeploy-warning}}
+
 See more about restoring an environment without a snapshot in [Restore an environment](../development/restore-environment.md).
 
 {{stuck-deployment-tip}}

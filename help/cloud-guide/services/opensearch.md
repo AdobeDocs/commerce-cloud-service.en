@@ -63,4 +63,4 @@ OpenSearch enables you to take data from any source, any format, and search and 
    bin/magento cache:clean
    ```
 
-{{change-service-version}}
+{{service-change-tip}}
