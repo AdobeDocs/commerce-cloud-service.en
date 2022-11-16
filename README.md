@@ -1,22 +1,13 @@
-# Commerce on Adobe Experience Cloud
-
-This site contains the latest developer documentation for Commerce on Experience Cloud, powered by Magento.
-
-Adobe welcomes contributions from the community and from Adobe employees outside the documentation teams.
-
-Staging URLs:
-
-- [Commerce Getting Started](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/start/overview.html)
-- [Commerce Management Guide](https://experienceleague.corp.adobe.com/docs/commerce-cloud-service/user/overview.html)
+# Adobe Commerce on Cloud Infrastructure
 
 ## Adobe Open Source Code of Conduct
 
-This project has adopted the [Adobe Open Source Code of Conduct](code-of-conduct.md) or the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct).
+This project has adopted the [Adobe Open Source Code of Conduct](code-of-conduct.md) or the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/about/code-of-conduct).
 See the [Contributing](contributing.md) article.
 
 ### Minor changes
 
-If you are contributing minor updates, open the article and click the **Edit** link, which takes you to the GitHub source for the article. Use the GitHub UI to make your updates. See the general [Adobe Docs contributor guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=en).
+If you are contributing minor updates, open the article and click the **Edit** link, which takes you to the GitHub source for the article. Use the GitHub UI to make your updates. See the general [Adobe Docs contributor guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Minor corrections or clarifications you submit for documentation and code examples in this repo are covered by the Adobe terms of use.
 
@@ -26,20 +17,20 @@ If you are part of the Adobe community and you want to create an article or subm
 
 ### Major changes from Adobe Employees
 
-If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it is your job to contribute to or author technical articles, you should use the private repository at `https://git.corp.adobe.com/AdobeDocs`. 
+If you are a technical writer, program manager, or developer from an Adobe product team, and it is your job to contribute to or author technical articles, use the private repository at `https://git.corp.adobe.com/AdobeDocs`. 
 
 ## Tools and setup
 
 Community contributors can use the GitHub UI for basic editing or fork the repo to make major contributions.
 
-See the [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=en) for details.
+See the [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) for details.
 
 ## Markdown
 
 All the articles in this repository use GitHub flavored markdown. If you are not familiar with markdown, see:
 
-- [Markdown basics](https://guides.github.com/features/mastering-markdown/)
-- [Printable markdown cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+- [Markdown basics](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [Printable markdown cheatsheet](https://docs.github.com/en/get-started/quickstart/git-cheatsheet)
 
 ## Labels
 

@@ -1,0 +1,35 @@
+---
+title: Set cache for static files
+description: Learn to set cache storage options in the Commerce application configuration file.
+---
+
+# Set cache for static files
+
+The cache TTL (time-to-live) for your media and static files is set in the `.magento.app.yaml` configuration file using the `expires` key.
+
+>[!NOTE]
+>
+>Before updating your Production environment, we highly recommend testing changes in your Staging environment first. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to update the configuration on these environments.
+
+1. Specify the TTL time (in seconds) in the `web` section of the `.magento.app.yaml` file. You can add the `expires` key under `locations` or under `"/media"` and `"/static"`.
+
+   To prevent the cache from expiring, use the `expires: -1` key-value pair. See the following example:
+
+   ```yaml
+   # The configuration of app when it is exposed to the web.
+   web:
+     locations:
+       "/media":
+         ...
+         expires: -1
+
+       "/static":
+         ...
+         expires: -1
+   ```
+
+1. Add, commit, and push your code changes.
+
+   ```bash
+   git add -A && git commit -m "Set cache TTL for static files" && git push origin <branch-name>
+   ```
