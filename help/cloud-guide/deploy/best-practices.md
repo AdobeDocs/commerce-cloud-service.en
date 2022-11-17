@@ -5,7 +5,7 @@ description: Discover best practices for deploying Adobe Commerce on cloud infra
 
 # Deployment best practices
 
-Build and deploy scripts activate when you merge code to a remote environment. These scripts use the environment configuration files and application code to prepare data and configurations to provision cloud infrastructure and services, and to install or update the Adobe Commerce application and third-party and custom extensions in the cloud environment.
+Build and deploy scripts activate when you merge code to a remote environment. These scripts use the environment [configuration files](../environment/overview.md) and application code to prepare data and configurations to provision cloud infrastructure and services, and to install or update the Adobe Commerce application and third-party and custom extensions in the cloud environment.
 
 The build and deploy process is slightly different for each plan:
 

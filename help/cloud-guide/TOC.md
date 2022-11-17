@@ -77,6 +77,7 @@ product: magento
         + [Upgrade Commerce version](development/commerce-version.md)
         + [Apply patches](development/apply-patches.md)
 + Configuration {#configure}
+    + [Overview](environment/overview.md)
     + Application {#app}
         + [Configure application deployment](application/configure-app-yaml.md)
         + [PHP settings](application/php-settings.md)
