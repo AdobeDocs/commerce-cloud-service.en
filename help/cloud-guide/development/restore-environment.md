@@ -166,3 +166,5 @@ If you have attempted to uninstall Adobe Commerce and the command failed or coul
    ```bash
    magento-cloud environment:redeploy
    ```
+
+{{redeploy-warning}}

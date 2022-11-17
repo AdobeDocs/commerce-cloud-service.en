@@ -44,7 +44,7 @@ Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL ve
 
 1. [Verify the service relationships](services-yaml.md#service-relationships).
 
-{{change-service-version}}
+{{service-change-tip}}
 
 ## Configure MySQL database
 
