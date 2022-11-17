@@ -44,12 +44,6 @@ You can create and manage custom VCL snippets from the Adobe Commerce Admin or b
 
 -  [Adobe Commerce Admin](#manage-custom-vcl-from-admin)—We recommend using the Adobe Commerce Admin to manage custom VCL snippets because it automates the process to validate, upload, and apply the VCL changes to the Fastly service configuration. Also, you can view and edit the custom VCL snippets added to the Fastly service configuration from the Admin.
 
-- [Fastly API](#manage-vcl-using-the-api)—Manage custom VCL snippets using the API if you cannot access the Admin. For example, when the site is down use the Fastly API to troubleshoot the Fastly service configuration or add a custom VCL snippet. Also, some operations can be completed only through the API. For example, you must use the API to reactivate an older VCL version, or to view all the VCL snippets included in a specified VCL version. See [API quick reference for VCL snippets](#api-quick reference-for-vcl-snippets).
-
->[!NOTE]
->
->Use the Fastly API to [delete custom VCL snippets](fastly-vcl-custom-snippets.md#manage-vcl) that you added through the API. If you added a custom VCL snippet using the Admin, use the Admin to [delete it](fastly-vcl-badreferer.md#delete-the-custom-vcl-snippet).
-
 - [Fastly API](#manage-vcl-using-the-api)—If you cannot access the Admin, use the Fastly API to manage custom VCL snippets. For example, use the API to troubleshoot the Fastly service configuration when the site is down, or to add a custom VCL snippet. Also, some operations can be completed only using the API. For example, you must use the API to reactivate an older VCL version or to view all the VCL snippets included in a specified VCL version. See [API quick reference for VCL snippets](#api-quick-reference-for-vcl-snippets).
 
 ### Example VCL snippet code
