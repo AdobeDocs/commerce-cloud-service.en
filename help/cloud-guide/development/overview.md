@@ -21,6 +21,8 @@ Adobe Commerce on cloud infrastructure uses Composer to manage the dependencies 
 | `composer update`  | Updates to the latest versions of the dependencies reflected in the `composer.json` file. This updates the `composer.lock` file.                         |
 | `composer install` | Reads the `composer.lock` file to download dependencies. It is a best practice to keep an up-to-date copy of `composer.lock` in your project repository. |
 
+{style="table-layout:auto"}
+
 Once you add, commit, and push the updated code, the deployment process automatically runs the `composer install` command during the [build phase](../deploy/process.md#build-phase-build-phase).
 
 ### Cloud metapackage

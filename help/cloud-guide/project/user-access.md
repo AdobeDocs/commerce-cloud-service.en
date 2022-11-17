@@ -19,6 +19,8 @@ Project-level access provides role-based access to a specific project. Environme
 | **Viewer**         | Environment | View-only access to an environment | No |
 | **None**           | Environment | No access to an environment | No |
 
+{style="table-layout:auto"}
+
 ## Add user authentication requirements
 
 For added security, Adobe provides project-level multi-factor authentication (MFA) enforcement to require two-factor authentication (TFA) for SSH access to Adobe Commerce on cloud infrastructure project source code and environments. See [Enable MFA for SSH](multi-factor-authentication.md).

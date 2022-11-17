@@ -97,7 +97,7 @@ Filesystem                                    Size  Used Avail Use% Mounted on
 
 ## Allocate disk space
 
-Two configuration files control the allocation of disk space in the Cloud environments: the `.magento.app.yaml` file and the `.magento/services.yaml` file. Each file contains the `disk` property, which defines the disk size value in MB for the respective configuration.
+Two [configuration files](../environment/overview.md) control the allocation of disk space in the Cloud environments: the `.magento.app.yaml` file and the `.magento/services.yaml` file. Each file contains the `disk` property, which defines the disk size value in MB for the respective configuration.
 
 >[!NOTE]
 >
