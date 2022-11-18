@@ -128,7 +128,7 @@ You can use the Project Web Interface to add permissions and use the _Edit_ feat
 
 1. Click the **Projects** tab.
 
-1. Click your project name to open the Cloud project portal ([!DNL Onboarding UI]).
+1. Click your project name to open the Cloud project portal ([!DNL Onboarding] UI).
 
 1. Click **Infrastructure access**, and then click **Project Access (Web UI)**.
 
