@@ -19,9 +19,11 @@ The following table describes the files included in a cloud project:
 | `.gitignore`              | Specify which files and directories to ignore. See [`.gitignore` reference](#ignoring-files). |
 | `.magento.app.yaml`       | Configuration file that defines the properties to build your application. See [Configure application](../application/configure-app-yaml.md). |
 | `.magento.env.yaml`       | Configuration file for the build, deploy, and post-deploy phases. The `ece-tools` package includes a sample of this file. See [Configure environments](../environment/configure-env-yaml.md). |
-| `composer.json`           | Fetches Adobe Commerce and the configuration scripts to prepare your application. |
-| `composer.lock`           | Stores version dependencies for every package. |
+| `composer.json`           | Fetches Adobe Commerce and the configuration scripts to prepare your application. See [Required packages](../development/overview.md#required-packages). |
+| `composer.lock`           | Stores version dependencies for every package. See [Required packages](../development/overview.md#required-packages). |
 | `magento-vars.php`        | A file used to define [multiple stores](../store/multiple-sites.md) and sites using variables. |
+
+{style="table-layout:auto"}
 
 >[!NOTE]
 >

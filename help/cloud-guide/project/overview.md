@@ -69,7 +69,7 @@ You can set the following configuration options for each project:
 
 ## Configure environment
 
-You can manage variables and settings for Production, Staging, and Integration environments through this interface, or with CLI commands. Select an environment in the environment list and click **Configure environment** to update the settings, add variables, routes, and users.
+You can manage variables and settings for Production, Staging, and Integration environments through this interface, [configuration files](../environment/overview.md), or with CLI commands. Select an environment in the environment list and click **Configure environment** to update the settings, add variables, routes, and users.
 
 You can set the following configuration options for each environment:
 

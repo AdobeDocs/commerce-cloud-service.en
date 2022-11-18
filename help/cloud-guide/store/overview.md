@@ -21,7 +21,7 @@ Store options include the following:
 
 ## Configure services and integrations
 
-There are specific configuration files that manage certain deployment behaviors to remote environments. You can review these topics separately:
+There are specific [configuration files](../environment/overview.md) that manage certain deployment behaviors to remote environments. You can review these topics separately:
 
 * [Application deployment](../application/configure-app-yaml.md)
 * [Environment build and deploy actions](../environment/configure-env-yaml.md)

@@ -25,10 +25,6 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 
 {style="table-layout:auto"}
 
->[!NOTE]
->
->For Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
-
 ## `name`
 
 The `name` property provides the application name used in the [`routes.yaml`](../routes/routes-yaml.md) file to define the HTTP upstream (by default, `mymagento:http`). For example, if the value of `name` is `app`, you must use `app:http` in the upstream field.
@@ -120,6 +116,10 @@ disk: 5120
 
 The minimal recommended disk size is 256MB. If you see the error `UserError: Error building the project: Disk size may not be smaller than 128MB`, increase the size to 256MB.
 
+>[!NOTE]
+>
+>For Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
+
 ## `relationships`
 
 Defines the service mapping in the application.
@@ -164,6 +164,10 @@ The format for adding your mount to this list is as follows:
 
 -  `shared`—Shares a volume between your applications inside an environment.
 -  `disk`—Defines the size available for the shared volume.
+
+>[!NOTE]
+>
+>For Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
 
 You can make the mount web accessible by adding it to the [`web`](web-property.md) block of locations.
 
