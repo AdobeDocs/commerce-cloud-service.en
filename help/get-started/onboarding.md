@@ -1,5 +1,5 @@
 ---
-title: Onboarding to Commerce
+title: "[!DNL Onboarding] to Commerce"
 description: Use your credentials to access Commerce console and set up a Commerce on cloud infrastructure project.
 ---
 # [!DNL Onboarding] to Commerce
@@ -14,9 +14,9 @@ To quickly onboard your project, so you can begin developing your site for live 
 
 If you do not have an Adobe Commerce on cloud infrastructure account, contact [Sales][]. When you sign up, Adobe creates your account and sends you a welcome email that provides instructions on how to access the project interface. The email contains a link so that you can log in to [your account](https://accounts.magento.cloud/user) and complete your initial project setup.
 
-## Cloud Project portal ([!DNL Onboarding UI])
+## Cloud Project portal ([!DNL Onboarding] UI)
 
-Use the Adobe Commerce on cloud infrastructure Project Portal ([!DNL Onboarding UI]) to help project administrators, business users, and developers with the tasks required to develop, build, test, and launch your site.
+Use the Adobe Commerce on cloud infrastructure Project Portal ([!DNL Onboarding] UI) to help project administrators, business users, and developers with the tasks required to develop, build, test, and launch your site.
 
 -  Access your Cloud environments, storefront, and Admin
 -  Add a Technical Admin, a super user to help manage your project and branches
@@ -32,7 +32,7 @@ Use the Adobe Commerce on cloud infrastructure Project Portal ([!DNL Onboarding 
 
 1. **Click View Project Page** in the [Projects section](https://cloud.magento.com/cloud/project/subscriptions/).
 
-1. Click the name of your project to open the Cloud Project portal ([!DNL Onboarding UI]).
+1. Click the name of your project to open the Cloud Project portal ([!DNL Onboarding] UI).
 
    ![Cloud project portal](../assets/onboarding-ui.png)
 

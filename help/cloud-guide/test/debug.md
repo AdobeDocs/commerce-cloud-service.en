@@ -1,5 +1,5 @@
 ---
-title: "Configure [!DNL Xdebug]"
+title: Configure [!DNL Xdebug]
 description: Learn how to configure the Xdebug extension for debugging your Adobe Commerce on cloud infrastructure project development.
 ---
 

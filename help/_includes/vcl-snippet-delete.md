@@ -1,6 +1,6 @@
 # Include file for deleting custom VCL for Fastly
 
-## Delete the custom VCL snippet {#delete-custom-vcl-snippet}
+## Delete the custom VCL snippet
 
 1. [Log in](/help/get-started/onboarding.md#access-your-admin-panel) to the Admin.
 

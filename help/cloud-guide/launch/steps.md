@@ -5,23 +5,19 @@ description: Learn how to complete the site launch.
 
 # Launch steps
 
-## Previous step
-
-[Go live checklist](checklist.md)
-
-After testing and completing your launch checklist, you can start the final steps to launch. These steps include entering tickets, cutting over access, and finally testing your store(s) when live.
+After testing and completing your launch checklist, you can start the final steps to launch. These steps include entering tickets, transfer site access, and finally testing your store when live.
 
 Adobe support staff work with you through the process, checking status, and helping if any questions or issues occur. All issues should be tracked with tickets to best capture what happened and how it was resolved. When you begin continuous iterations deploying updates to your launched store, you may have similar issues occur again. These tickets can help pinpoint the issues and help adjust your deployment tasks.
 
 ## Contact Adobe to launch your site
 
-Contact Adobe Commerce support and update any site launch (go live) tickets with the intended date and time to switch over and launch your store(s).
+Contact Adobe Commerce support and update any site launch (go live) tickets with the intended date and time to switch over and launch your store.
 
 ## Switch DNS to the new site
 
 The Time-to-Live changed value is important for checking your changed domain. When you modify the A and CNAME records, the update takes the TTL configured time to update correctly. For details on DNS settings, see [DNS configurations](checklist.md#update-dns-configuration-with-production-settings).
 
-### To cut over to the new site:
+### To change to the new site:
 
 1. Access your DNS service.
 
