@@ -5,6 +5,7 @@ solution: Commerce
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-cloud-service.en
 index: no
+feature-set: Commerce
 ---
 
 # Metadata for internal use
