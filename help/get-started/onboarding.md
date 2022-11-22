@@ -19,11 +19,11 @@ If you do not have an Adobe Commerce on cloud infrastructure account, contact [S
 
 Use the Adobe Commerce on cloud infrastructure Project Portal ([!DNL Onboarding] UI) to help project administrators, business users, and developers with the tasks required to develop, build, test, and launch your site.
 
--  Access your Cloud environments, storefront, and Admin
--  Add a Technical Admin, a super user to help manage your project and branches
--  Access your project environments, including a link to the Project Web Interface
--  Provide your developer with a getting started workflow to set up their local development environments and begin developing
--  Complete a quick user acceptance test (UAT) checklist with links to further tests
+- Access your Cloud environments, storefront, and Admin
+- Add a Technical Admin, a super user to help manage your project and branches
+- Access your project environments, including a link to the Project Web Interface
+- Provide your developer with a getting started workflow to set up their local development environments and begin developing
+- Complete a quick user acceptance test (UAT) checklist with links to further tests
 
 **To open the Cloud Project portal**:
 
@@ -58,7 +58,7 @@ The License Owner can set up shared access for the account. Shared access allows
 
 ## Get started with the Project Web Interface
 
-When you sign up for a Pro or Starter subscription plan, we provision your initial project environment with a template Adobe Commerce on cloud infrastructure repository to build and manage your site. For information about what is included in Pro and Starter plans, see [Starter Architecture](/help/cloud-guide/architecture/starter-architecture.md) and [Pro Architecture](/help/cloud-guide/architecture/pro-architecture.md).
+When you sign up for a Pro or Starter subscription plan, we provision your initial project environment with a template Adobe Commerce on cloud infrastructure repository to build and manage your site. For information about what is included in Pro and Starter plans, see [Starter Architecture](../cloud-guide/architecture/starter-architecture.md) and [Pro Architecture](../cloud-guide/architecture/pro-architecture.md).
 
 You can use the [Project Web Interface](../cloud-guide/project/overview.md) to manage your project, add user accounts, and begin developing your store. The License Owner, Technical Admin users, and developers can use this interface to manage all environments and branches, environment variables, environment settings, and routes.
 
@@ -70,9 +70,9 @@ For a new project, the first step after getting the welcome email is to secure A
 
 You can submit a password change request using either of the following methods:
 
--  Locate the welcome email sent to the License Owner email address and follow the link to change your password.
+- Locate the welcome email sent to the License Owner email address and follow the link to change your password.
 
--  Copy the store URL from the [Project Web Interface](../cloud-guide/project/overview.md) into a browser. Then, append `/admin` to the end of the URL to open the sign-in page. Click the **Forgot password?** link to send a password change request to the License Owner email address.
+- Copy the store URL from the [Project Web Interface](../cloud-guide/project/overview.md) into a browser. Then, append `/admin` to the end of the URL to open the sign-in page. Click the **Forgot password?** link to send a password change request to the License Owner email address.
 
 After you submit the password change request, check your email for the password reset notification. If you do not get the email, check your spam folder.
 
@@ -84,12 +84,16 @@ After you submit the password change request, check your email for the password 
 
 Get updates about Adobe Commerce on cloud infrastructure platform environments and related services from the [Status page][].
 
-The page lists provides a status for Adobe Commerce on cloud infrastructure components and services followed by notifications about incident reports, service upgrades, planned outages, and more. These notifications are ordered by date.
+The page provides a status for Adobe Commerce on cloud infrastructure components and services followed by notifications about incident reports, service upgrades, planned outages, and more. These notifications are ordered by date.
 
 Anyone working on your project can subscribe to the Adobe Commerce on cloud infrastructure status site to receive event notifications and updates through email. You can customize your subscription to select only the platform and services that you want to track.
 
+>[!TIP]
+>
+>View the [Commerce on Cloud Infrastructure user guide](../cloud-guide/overview.md).
+
 <!--Link references-->
 
-[Sales]: https://magento.com/explore/contact-sales
+[Sales]: https://business.adobe.com/products/magento/get-demo.html
 [Shared Access]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access
 [Status page]: https://status.adobe.com/products/503473
