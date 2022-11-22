@@ -111,7 +111,7 @@ DDOS protection is built in to the Fastly CDN service. Once you have enabled Fas
 
 <!--Link definitions-->
 
-[Caching with Fastly]: https://devdocs.magento.com/guides/v2.4/graphql/caching.html#caching-with-fastly
+[Caching with Fastly]: https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly
 
 [Checking for DDoS attacks]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html
 

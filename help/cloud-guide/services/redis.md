@@ -5,7 +5,7 @@ exl-id: d6971875-d302-495a-ad10-a81c507c2bc9
 ---
 # Set up Redis service
 
-[Redis](https://redis.io) is an optional, backend cache solution that replaces the Zend Framework [Zend_Cache_Backend_File](https://framework.zend.com/apidoc/1.0/Zend_Cache/Backend/Zend_Cache_Backend_File.html), which Adobe Commerce uses by default.
+[Redis](https://redis.io) is an optional, backend cache solution that replaces the Zend Framework Zend_Cache_Backend_File, which Adobe Commerce uses by default.
 
 See [Configure Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html) in the _Configuration guide_.
 
@@ -88,7 +88,7 @@ Redis server v=5.0.5 sha=947ee0b5:0 malloc=jemalloc-5.1.0 bits=64 build=c1ca234c
 See the following Adobe Commerce Support articles for help with troubleshooting Redis problems:
 
 -  [Redis issue delay Admin login or checkout](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html)
--  [Extended Redis cache implementation Adobe Commerce 2.3.5+](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/redis/extended-redis-cache-implementation-magento-commerce-2.3.5.html)
+-  [Extended Redis cache implementation Adobe Commerce 2.3.5+](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
 -  [MDVA-30102: Redis cache getting full](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/mdva-30102-magento-patch-redis-cache-getting-full.html)
 -  [Managed alerts on Adobe Commerce: Redis memory warning alert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html)
 -  [Managed alerts on Adobe Commerce: Redis memory critical alert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html)
