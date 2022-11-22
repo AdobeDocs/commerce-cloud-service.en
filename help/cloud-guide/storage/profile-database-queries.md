@@ -1,8 +1,8 @@
 ---
 title: Profile database queries
 description: Learn how to enable profiling to understand the impact of changes to the database.
+exl-id: 85773cf6-e284-4de3-a6a4-765db6a6eb24
 ---
-
 # Profile database queries
 
 When writing to a database, it may help to run profiling to identify the impact of those changes. Profiling maintains a log of database queries and increases run-time precision.

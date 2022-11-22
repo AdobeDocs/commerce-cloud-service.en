@@ -1,8 +1,8 @@
 ---
 title: Launch checklist
 description: Review checklist items for site launch.
+exl-id: 4525742e-18c5-40d1-975d-00ba3f3a51a0
 ---
-
 # Launch checklist
 
 Before you deploy to the Production environment, download the [Launch checklist](../../assets/adobe-commerce-cloud-prelaunch-checklist.pdf), and use it with these instructions to confirm that you have completed all required configuration and testing. See an overview of the complete deployment process for Starter and Pro at [Deploy your store](../deploy/staging-production.md).

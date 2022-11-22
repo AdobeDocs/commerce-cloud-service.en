@@ -1,8 +1,8 @@
 ---
 title: Bitbucket integration
 description: Learn how to integrate your Adobe Commerce on cloud infrastructure project with Bitbucket.
+exl-id: cd3cffbe-268f-429b-a2ea-0306159f4a6b
 ---
-
 # Bitbucket integration
 
 You can configure your Bitbucket repository to automatically build and deploy an environment when you push code changes. This integration synchronizes your Bitbucket repository with your Adobe Commerce on cloud infrastructure account.

@@ -1,8 +1,8 @@
 ---
 title: ADMIN variables
 description: See a list of environment variables used when installing Adobe Commerce on cloud infrastructure.
+exl-id: 2829a9dc-40bb-4665-886e-a56d98468fc1
 ---
-
 # Admin variables
 
 Users that have administrative access to the Adobe Commerce on cloud infrastructure project can use the following project environment variables to override the configuration settings for the administrative user account to access the Admin UI.

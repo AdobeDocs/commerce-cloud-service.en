@@ -1,8 +1,8 @@
 ---
 title: Testing guidance
 description: Read about testing types and best practices for launching Adobe Commerce on cloud infrastructure.
+exl-id: 1d7897a2-af97-46ab-89c0-2ec54284190e
 ---
-
 # Testing guidance
 
 After configuring and customizing your Adobe Commerce on cloud infrastructure project, it is a best practice to test your application thoroughly before launching the store website. Testing helps to properly manage expectations of the cluster size and appropriately scale for future business needs.

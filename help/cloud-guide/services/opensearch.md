@@ -1,8 +1,8 @@
 ---
 title: Set up OpenSearch service
 description: Learn how to enable the OpenSearch service for Adobe Commerce on cloud infrastructure.
+exl-id: 10dc6367-3f90-4ab6-a84e-15e8c3b32a38
 ---
-
 # Set up OpenSearch service
 
 The [OpenSearch](https://www.opensearch.org) service is an open-source fork of Elasticsearch 7.10.2, following the licensing changes for Elasticsearch. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) for a list of supported versions.

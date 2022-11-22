@@ -1,8 +1,8 @@
 ---
 title: Web Application Firewall (WAF)
 description: Learn how the Fastly WAF service detects, logs, and blocks malicious request traffic before it can damage the Adobe Commerce network or sites.
+exl-id: 40bfe983-7f32-4155-ae77-7cd18866f6e2
 ---
-
 # Web Application Firewall (WAF)
 
 Powered by Fastly, the web application firewall (WAF) service for Adobe Commerce on cloud infrastructure detects, logs, and blocks malicious request traffic before it can damage your sites or network. The WAF service is available on production environments only.
@@ -65,4 +65,3 @@ Although the WAF service does not allow you to block or allow traffic based on I
 Filtering for TCP, UDP, or ICMP requests is not supported by the WAF service. However, this functionality is provided by the built-in DDoS protection included with the Fastly CDN service. See [DDoS protection](fastly.md#ddos-protection).
 
 [WAF error page]: ../../assets/cdn/fastly-waf-403-error.png
-

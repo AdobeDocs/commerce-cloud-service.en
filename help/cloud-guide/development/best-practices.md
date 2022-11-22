@@ -1,8 +1,8 @@
 ---
 title: Best practices for upgrading your project
 description: See a list of best practices for upgrading your project files.
+exl-id: 7d0a2627-e4c5-46b4-9e6c-24d20fa4f92f
 ---
-
 # Best practices for upgrading your project
 
 Follow best practices for builds and deployment, and use the [Upgrades and patches](../development/commerce-version.md) workflow to upgrade your application. Use the following guidelines to plan your upgrade and post-upgrade work:
@@ -48,4 +48,4 @@ Follow best practices for builds and deployment, and use the [Upgrades and patch
         - Check the `cron` logs and the `cron_schedule` table in the Adobe Commerce database to verify cron status, and rerun cron jobs as needed.
       See [Logging](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html#logging) in the _Configuration Guide_.
 
-    - Complete post-upgrade User Acceptance Testing UAT on Staging and Production environments and fix any issues related to third-party and custom extension upgrades. 
+    - Complete post-upgrade User Acceptance Testing UAT on Staging and Production environments and fix any issues related to third-party and custom extension upgrades.

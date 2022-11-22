@@ -1,8 +1,8 @@
 ---
 title: Variables property
 description: Use the variables property to customize store configuration options for the Commerce application.
+exl-id: 5cd92fbb-8bff-48b1-9658-500140591344
 ---
-
 # Variables property
 
 You can use application-based environment variables to customize store configurations. These variables use a specific syntax. See [Override configuration settings](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html) in the _Configuration guide_.

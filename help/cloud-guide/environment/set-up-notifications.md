@@ -1,8 +1,8 @@
 ---
 title: Set up notifications
 description: Learn how to configure notifications for Adobe Commerce on cloud infrastructure environments.
+exl-id: be48abcd-4753-4e89-83fe-0aadfb0415c2
 ---
-
 # Set up notifications
 
 By default, Adobe Commerce on cloud infrastructure writes build and deploy actions to the `app/var/log/cloud.log` file inside the Adobe Commerce root application directory. Optionally, you can send logs to a messaging system, such as Slack and email, to receive real-time notifications.

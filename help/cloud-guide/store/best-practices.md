@@ -1,8 +1,8 @@
 ---
 title: Best practices for store configuration
 description: Read about best practices for configuring your store on Adobe Commerce on cloud infrastructure.
+exl-id: 01f528bd-74c2-42e7-8e77-7e6f57a40ef4
 ---
-
 # Best practices for store configuration
 
 For detailed information for configuring your store, sites, and websites, you may want to review the [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html). This page provides best practices, helpful information, and guidelines for configuring your stores, sites, and more with additional content to post over time and across versions.

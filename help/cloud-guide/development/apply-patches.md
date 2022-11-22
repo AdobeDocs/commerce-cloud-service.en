@@ -1,8 +1,8 @@
 ---
 title: Apply patches
 description: Learn how to apply patches in the Adobe Commerce on cloud infrastructure project.
+exl-id: a7bf672f-7b89-45cd-8436-e885bca9029d
 ---
-
 # Apply patches
 
 [Cloud Patches for Commerce](https://github.com/magento/magento-cloud-patches) and the [Quality Patches Tool](https://github.com/magento/quality-patches) deliver patches to your installed Adobe Commerce application.

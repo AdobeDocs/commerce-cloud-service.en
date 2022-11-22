@@ -1,8 +1,8 @@
 ---
 title: Pro architecture
 description: Learn about the environments supported by Pro architecture.
+exl-id: d10d5760-44da-4ffe-b4b7-093406d8b702
 ---
-
 # Pro architecture
 
 Your Adobe Commerce on cloud infrastructure Pro architecture supports multiple environments that you can use to develop, test, and launch your store.

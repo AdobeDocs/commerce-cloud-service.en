@@ -1,8 +1,8 @@
 ---
 title: Build variables
 description: See the list of environment variables that control actions in the Adobe Commerce on cloud infrastructure build phase.
+exl-id: 243aaa45-a5ef-4ed2-8800-3d0f07bf3740
 ---
-
 # Build variables
 
 The following _build_ variables control actions in the build phase and can inherit and override values from the [Global variables](variables-global.md). Insert these variables in the `build` stage of the `.magento.env.yaml` file:

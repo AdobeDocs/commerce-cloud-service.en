@@ -1,8 +1,8 @@
 ---
 title: Starter project workflow
 description: Learn how to use the Starter development and deployment workflows.
+exl-id: f334047a-1e0d-45c7-bf96-5c2964741951
 ---
-
 # Starter project workflow
 
 The Adobe Commerce on cloud infrastructure includes a single Git repository with a `master` branch for the Production environment that can be branched to create Staging and Integration environments for testing and development work. You can have up to four active environments, including a `master` environment for your production server. See [Starter architecture](starter-architecture.md) for an overview.

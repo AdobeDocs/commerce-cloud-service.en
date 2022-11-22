@@ -1,8 +1,8 @@
 ---
 title: Optimize cloud deployment
 description: Learn about ways to optimize the deployment process for Adobe Commerce on cloud infrastructure projects, including reducing downtime, static content deployment, scenario-based deployment, and smart wizards.
+exl-id: 62e5eccb-6919-4a4b-9f50-6105f9d0f3af
 ---
-
 # Optimize deployment
 
 Site performance can suffer during the deployment process. The length of time a site is in maintenance mode when deploying to a production site depends on many factors, such as environment configuration and the amount of content a site contains. The first best practice for optimizing your Cloud deployment is to [upgrade to use `ece-tools`](../dev-tools/install-package.md) to benefit from the package features, such as commands to create a backup of the database and verify environment configuration.

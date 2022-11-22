@@ -1,8 +1,8 @@
 ---
 title: Set up Redis service
 description: Learn how to set up and optimize Redis as a backend cache solution for Adobe Commerce on cloud infrastructure.
+exl-id: d6971875-d302-495a-ad10-a81c507c2bc9
 ---
-
 # Set up Redis service
 
 [Redis](https://redis.io) is an optional, backend cache solution that replaces the Zend Framework [Zend_Cache_Backend_File](https://framework.zend.com/apidoc/1.0/Zend_Cache/Backend/Zend_Cache_Backend_File.html), which Adobe Commerce uses by default.

@@ -3,8 +3,8 @@ title: Release notes archive for ece-tools
 description: Learn about archived improvements for ece-tools.
 hide: yes
 hidefromtoc: yes
+exl-id: 96663d2f-ef00-4490-ad2e-06e8041b228e
 ---
-
 # Release notes archive for ece-tools
 
 >[!NOTE]

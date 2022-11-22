@@ -1,8 +1,8 @@
 ---
 title: Environment variables
 description: See a list of environment variables specific to Adobe Commerce on cloud infrastructure.
+exl-id: bfee2f69-93a6-4d26-bb9e-be8acc5673c3
 ---
-
 # Environment variables
 
 Adobe Commerce on cloud infrastructure enables you to assign environment variables to override configuration options. The `ece-tools` package sets values in the `env.php` file based on values from [Cloud variables](variables-cloud.md), variables set in the Project Web interface, and the `.magento.env.yaml` configuration file.

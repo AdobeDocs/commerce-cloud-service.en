@@ -1,8 +1,8 @@
 ---
 title: Block referral spam
 description: Block referral spam from your site using the Fastly Edge dictionary and a custom VCL snippet.
+exl-id: 665bac93-75db-424f-be2c-531830d0e59a
 ---
-
 # Block referral spam
 
 The following example shows how to configure [Fastly Edge Dictionary](https://docs.fastly.com/guides/edge-dictionaries/working-with-dictionaries-using-the-api) with a custom VCL snippet to block referral spam from your Adobe Commerce on cloud infrastructure site.

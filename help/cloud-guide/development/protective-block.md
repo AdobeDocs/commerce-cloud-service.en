@@ -1,8 +1,8 @@
 ---
 title: Protective block
 description: Learn about the protective block feature of Adobe Commerce on cloud infrastructure and how it works to protect your site against known security vulnerabilities.
+exl-id: bc1def41-9521-4005-872e-9ecaab1d4d16
 ---
-
 # Protective block
 
 Adobe Commerce on cloud infrastructure has a protective blocking feature that, under certain circumstances, restricts access to websites with security vulnerabilities. We use this partial blocking method to prevent exploitation of known security vulnerabilities.

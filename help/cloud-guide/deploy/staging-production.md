@@ -1,8 +1,8 @@
 ---
 title: Deploy to Staging and Production
 description: Learn how to deploy your Adobe Commerce on cloud infrastructure code to the Staging and Production environments for further testing.
+exl-id: 4b82289f-ee04-4b14-a0ed-7a8a19fc6a6a
 ---
-
 # Deploy to Staging and Production
 
 The process for deploying and going live begins with development, continues to Staging, and ends with going live in Production. To provide the best experience for developing, testing, and deploying your store with consistent configurations we provide an end-to-end environment solution. Every environment supports direct URL access to the storefront and Admin and SSH access for CLI commands.

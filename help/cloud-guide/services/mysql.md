@@ -1,8 +1,8 @@
 ---
 title: Set up MySQL service
 description: Learn how to manage the MySQL service for persistent data storage with Adobe Commerce on cloud infrastructure.
+exl-id: 70820d00-8b82-4b60-87e4-ea98fd7ffcb2
 ---
-
 # Set up MySQL service
 
 The `mysql` service provides persistent data storage based on [MariaDB](https://mariadb.com/) versions 10.2 to 10.4, supporting the [XtraDB](https://www.percona.com/software/mysql-database/percona-server/xtradb) storage engine and reimplemented features from MySQL 5.6 and 5.7.

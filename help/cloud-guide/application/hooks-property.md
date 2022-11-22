@@ -1,8 +1,8 @@
 ---
 title: Hooks property
 description: See examples on how to configure the hooks property in the Commerce application configuration file.
+exl-id: d9561f09-5129-4b72-978e-2e3873e8efae
 ---
-
 # Hooks property
 
 Use the `hooks` section to run shell commands during the build, deploy, and post-deploy phases:

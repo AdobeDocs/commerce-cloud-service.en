@@ -1,8 +1,8 @@
 ---
 title: Get Started with Commerce
 description: See the new self-service Commerce on Cloud infrastructure, and learn how to build and deploy a Commerce store in minutes.
+exl-id: 0c0c8012-5e91-4b8b-9519-2ece23cd50cc
 ---
-
 # Get Started
 
 Welcome to Adobe Commerce!

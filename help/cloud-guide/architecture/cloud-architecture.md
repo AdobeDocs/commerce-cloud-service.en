@@ -1,8 +1,8 @@
 ---
 title: Cloud architecture for Commerce
-description: Learn how the Starter and Pro plan's architecture contrast for Commerce Cloud. 
+description: Learn how the Starter and Pro plan's architecture contrast for Commerce Cloud.
+exl-id: 37cd6733-c10a-4d06-b784-171da576f9fc
 ---
-
 # Cloud architecture for Commerce
 
 Adobe Commerce on cloud infrastructure has a Starter and a Pro plan. Each plan has a unique architecture to drive your Adobe Commerce development and deployment process. Both the Starter plan and the Pro plan architecture deploy databases, web server, and caching servers across multiple environments for end-to-end testing while supporting continuous integration.

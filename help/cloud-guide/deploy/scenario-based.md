@@ -1,8 +1,8 @@
 ---
 title: Scenario-based deployment
 description: Learn how to customize Adobe Commerce on cloud infrastructure deployments using custom configuration files.
+exl-id: df243068-c7a3-46dd-abe9-9e05198fa343
 ---
-
 # Scenario-based deployment
 
 With `ece-tools` 2002.1.0 and later, you can use the scenario-based deployment feature to customize the default deployment behavior.

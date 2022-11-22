@@ -1,8 +1,8 @@
 ---
 title: Cloud infrastructure project
 description: Read an overview about the Adobe Commerce on cloud infrastructure project interface and learn how to access the account settings.
+exl-id: ae862898-9b4d-45ed-b370-e82cc6f99017
 ---
-
 # Cloud infrastructure project
 
 The Adobe Commerce on cloud infrastructure project includes all code in Git branches, associated environments, and scripts to deploy the Commerce application. Environments contain services to support the Commerce application, including a database, web server, and caching server.

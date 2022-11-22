@@ -1,8 +1,8 @@
 ---
 title: Set up multiple websites or stores
 description: Learn how to configure multiple websites or stores for Adobe Commerce on cloud infrastructure.
+exl-id: 16e932ef-f083-44d7-977f-0c78899e151a
 ---
-
 # Set up multiple websites or stores
 
 You can configure Adobe Commerce to have multiple websites or stores, such as an English store, a French store, and a German store. See [Understanding websites, stores, and store views](best-practices.md#store-views).

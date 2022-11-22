@@ -1,8 +1,8 @@
 ---
 title: Reroute requests to a CMS backend
 description: Learn how to reroute incoming requests from an Adobe Commerce store to a separate WordPress site using the Fastly edge module.
+exl-id: 5bd9c56f-4412-4643-89b6-590a8ec65ac0
 ---
-
 # Reroute requests to a CMS backend
 
 Reroute incoming requests from an Adobe Commerce store to a separate WordPress site using the Fastly Edge Module _Other CMS/backend integration_ with an Edge Dictionary. You can follow a similar process to reroute requests to other CMS backends.

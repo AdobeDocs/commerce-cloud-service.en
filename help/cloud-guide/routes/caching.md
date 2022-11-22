@@ -1,8 +1,8 @@
 ---
 title: Caching
 description: Learn how to enable caching for your Adobe Commerce on cloud infrastructure environments.
+exl-id: 4856aa94-2947-4dc8-b0d1-0960869dc39c
 ---
-
 # Caching
 
 You can enable caching in your cloud infrastructure project environment. If you disable caching, Adobe Commerce directly serves the files.

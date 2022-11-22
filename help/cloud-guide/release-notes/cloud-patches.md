@@ -1,8 +1,8 @@
 ---
 title: Cloud Patches for Commerce
 description: Learn about the latest improvements to the Cloud Patches package.
+exl-id: ae6b511b-a37d-4776-9a5e-ad7d9f9f6611
 ---
-
 # Cloud Patches for Commerce
 
 The [Cloud Patches](https://github.com/magento/magento-cloud-patches) package provides a set of required patches which improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes.

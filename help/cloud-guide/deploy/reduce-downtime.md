@@ -1,8 +1,8 @@
 ---
 title: Zero downtime deployment
 description: Learn how to reduce overall downtime when deploying Adobe Commerce on cloud infrastructure projects.
+exl-id: ff89d2e1-dfc8-4f6d-bd98-947559af13f0
 ---
-
 # Zero downtime deployment
 
 Adobe Commerce on cloud infrastructure runs the application in [_maintenance_ mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) during the deploy phase, which takes your site offline until the deployment is complete. The length of time your Production site is in maintenance mode depends on the size of the site, the number of changes applied during the deployment, and the configuration for static content deployment. It is possible to configure your project so that it deploys with a **zero** downtime effect.

@@ -1,8 +1,8 @@
 ---
 title: Overview of store options and configuration management
 description: Customize your Adobe Commerce store on cloud infrastructure.
+exl-id: 06d477e4-02de-4742-8495-541458400e93
 ---
-
 # Overview of store options and configuration management
 
 There are many ways to customize your store, such as adding a custom theme, installing an extension, or enforcing a specific configuration across cloud infrastructure environments. You can configure settings for specific services directly in Staging and Production environments. You can set up multiple websites and stores. The Store configuration helps you to configure these options in your local workstation and deploying specific settings across environments.

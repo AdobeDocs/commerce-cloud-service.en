@@ -1,8 +1,8 @@
 ---
 title: Fastly troubleshooting
 description: Learn how to troubleshoot and manage the Fastly CDN module and services for Adobe Commerce.
+exl-id: e4c47035-cbad-4838-8d44-fa5eaaac42d1
 ---
-
 # Fastly troubleshooting
 
 Use the following information to troubleshoot and manage the Fastly CDN module for Magento 2 in your Adobe Commerce on cloud infrastructure project environments. For example, you can investigate response header values and caching behavior to resolve Fastly service and performance issues.
@@ -305,6 +305,3 @@ If custom VCL snippet updates or other Fastly configuration changes cause an Ado
    ```
 
 For details about using the Fastly API to review and manage VCL, see [Manage VCL using the API](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api).
-
-
-

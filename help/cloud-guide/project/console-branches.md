@@ -1,8 +1,8 @@
 ---
 title: Manage branches with the Project Web Interface
 description: Learn how to manage the environment branches for Adobe Commerce on cloud infrastructure using the Project Web Interface.
+exl-id: 2c4ef149-fdb9-473f-91fd-5e6421ac5a43
 ---
-
 # Manage branches with the Project Web Interface
 
 Every Adobe Commerce on cloud infrastructure environment has an associated Git branch. You can manage your environments using either the Project Web Interface and the `magento-cloud` CLI. You can use Git commands, but the cloud CLI commands interact with platform features whereas the Git commands do not. See [Git commands](../dev-tools/cloud-cli.md#git-commands) in the cloud CLI topic.

@@ -1,6 +1,7 @@
 ---
 title: Performance Monitoring
 description: Learn about performance monitoring for Adobe Commerce on cloud infrastructure.
+exl-id: ba532100-4d7f-4798-bc17-5daf1c50fc5b
 ---
 # Performance monitoring
 

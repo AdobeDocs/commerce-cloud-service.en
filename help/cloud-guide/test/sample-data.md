@@ -1,8 +1,8 @@
 ---
 title: Sample data
 description: Learn how to install sample data with Adobe Commerce on cloud infrastructure.
+exl-id: 517e549f-15ba-47b3-9236-a1c4d24c917d
 ---
-
 # Sample data
 
 If you need some example data when developing your store, you can install our sample data. This data simulates an active Adobe Commerce store with customers, products, and other data. This sample data works best with a new Adobe Commerce on cloud infrastructure template installation.

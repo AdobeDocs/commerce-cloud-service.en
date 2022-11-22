@@ -1,8 +1,8 @@
 ---
 title: Secure connections
 description: Learn how to apply SSH keys to your Adobe Commerce on cloud infrastructure project and log in to remote environments.
+exl-id: b5780e8e-e3da-4b10-8ca3-2778085acd4a
 ---
-
 # Secure connections to remote environments
 
 Secure Shell (SSH) is a common protocol used to securely log into remote servers and systems. You can use SSH to access your remote environments for managing the Adobe Commerce application and accessing remote environment logs. We also support Secure FTP (sFTP) using your SSH public key.

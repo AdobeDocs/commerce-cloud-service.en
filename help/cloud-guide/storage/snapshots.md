@@ -1,8 +1,8 @@
 ---
 title: Snapshots and backup management
 description: Learn how to manually back up and restore your Adobe Commerce on cloud infrastructure project.
+exl-id: 1cb00db7-2375-4761-9c07-1e20a74859e0
 ---
-
 # Snapshots and backup management
 
 You can back up and restore specific environments at any time using a snapshot. Snapshot options are available for all Starter environments and Pro Integration environments. The snapshot feature does not apply to the Pro Staging and Production environments.

@@ -1,8 +1,8 @@
 ---
 title: Store configuration management
 description: Learn how to manage and synchronize store configuration settings across all Adobe Commerce on cloud infrastructure environments.
+exl-id: f2dd876d-24ee-4d47-b9ac-44fcf77b61b5
 ---
-
 # Store configuration management
 
 The default configurations for your store are stored in a `config.xml` for the appropriate module. When you change settings in the Commerce Admin or the CLI `bin/magento config:set` command, the changes are reflected in the core database, specifically the `core_config_data` table. These settings overwrite the default configurations stored in the `config.xml` file.

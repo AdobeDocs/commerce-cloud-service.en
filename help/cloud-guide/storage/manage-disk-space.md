@@ -1,8 +1,8 @@
 ---
 title: Manage disk space
 description: Learn how to manage disk space using the command-line interface.
+exl-id: 480cb33b-ac83-441d-946e-5b4de09ad84e
 ---
-
 # Manage disk space
 
 You can find the total storage capacity for your Cloud project in your Adobe Commerce on cloud infrastructure contract and on your [account page](https://accounts.magento.cloud/user). Each project card in your account shows the number of _environments_, the _storage_ capacity in GB, and the number of _users_.

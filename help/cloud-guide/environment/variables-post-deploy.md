@@ -1,8 +1,8 @@
 ---
 title: Post-deploy variables
 description: See the list of environment variables that control actions in the Adobe Commerce on cloud infrastructure post-deploy phase.
+exl-id: e460335f-cd2b-4c98-b1ff-32504599b33d
 ---
-
 # Post-deploy variables
 
 The following _post-deploy_ variables control actions in the post-deploy phase and can inherit and override values from the [Global variables](variables-global.md). Insert these variables in the `post-deploy` stage of the `.magento.env.yaml` file:

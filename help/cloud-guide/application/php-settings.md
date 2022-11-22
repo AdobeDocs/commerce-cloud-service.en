@@ -1,8 +1,8 @@
 ---
 title: PHP settings
 description: Learn about the optimal PHP settings for Commerce application configuration in the cloud infrastructure.
+exl-id: b4180265-f7a1-48e4-8c23-27835253e171
 ---
-
 # PHP settings
 
 You can choose which [version of PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) to run in your `.magento.app.yaml` file:

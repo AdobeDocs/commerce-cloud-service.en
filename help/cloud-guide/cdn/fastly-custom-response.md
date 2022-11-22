@@ -1,8 +1,8 @@
 ---
 title: Customize error and maintenance pages
 description: Learn how to customize the default error page that displays when requests to the Fastly origin server fail.
+exl-id: 16722821-b928-4872-8cef-7f049e600f0d
 ---
-
 # Customize error and maintenance pages
 
 When a request to the Fastly origin fails, Fastly returns default response pages with basic formatting and generic messaging that can be confusing for users. For example, Fastly returns the following default error page when a request to the Fastly origin fails because of a 503 error.
@@ -170,5 +170,3 @@ By default, Fastly hides all Adobe Commerce errors behind the *503 Service Unava
    - [Connect to the affected environment using SSH](../development/secure-connections.md#connect-to-a-remote-environment)
 
    - Locate the `./var/report/{error_number}` file.
-
-

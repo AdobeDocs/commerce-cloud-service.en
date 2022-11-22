@@ -1,8 +1,8 @@
 ---
 title: Manage extensions
 description: Learn how to install and manage extensions in Adobe Commerce on cloud infrastructure.
+exl-id: 9c6e98ca-85da-4342-8402-d576eb382ba2
 ---
-
 # Manage extensions
 
 You can extend your Adobe Commerce application capabilities by adding an extension from the [Commerce Marketplace](https://marketplace.magento.com). For example, you can add a theme to change the look and feel of your storefront, or you can add a language package to localize your storefront and Admin.

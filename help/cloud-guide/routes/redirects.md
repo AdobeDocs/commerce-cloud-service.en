@@ -1,8 +1,8 @@
 ---
 title: Redirects
 description: Learn how to manage redirection rules for your Adobe Commerce on cloud infrastructure project.
+exl-id: 7089a790-6341-4443-990a-df42091f0680
 ---
-
 # Redirects
 
 Managing redirection rules is a common requirement for web applications, especially in cases where you do not want to lose incoming links that have changed or been removed over time.

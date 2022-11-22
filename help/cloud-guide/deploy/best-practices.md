@@ -1,8 +1,8 @@
 ---
 title: Deployment best practices
 description: Discover best practices for deploying Adobe Commerce on cloud infrastructure.
+exl-id: bac3ca83-0eee-4fda-9a5c-a84ab25a837a
 ---
-
 # Deployment best practices
 
 Build and deploy scripts activate when you merge code to a remote environment. These scripts use the environment [configuration files](../environment/overview.md) and application code to prepare data and configurations to provision cloud infrastructure and services, and to install or update the Adobe Commerce application and third-party and custom extensions in the cloud environment.
@@ -162,4 +162,3 @@ Successful deployment removes the maintenance mode to allow for normal access an
 If you enabled static content generation using the `SCD_ON_DEMAND` variable and you configured the [`post_deploy` hook](../application/hooks-property.md), this clears the cache and pre-loads (warms) the cache _after_ the container begins accepting connections and _during_ normal, incoming traffic.
 
 To review build and deploy logs, see [View logs](../test/log-locations.md#view-and-manage-logs).
-

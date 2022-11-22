@@ -1,8 +1,8 @@
 ---
 title: Configuration files overview
 description: Learn about configuring the cloud infrastructure environment to support deploying and managing your customized Adobe Commerce store.
+exl-id: f469a0ec-e459-413f-9725-66a0fbf34f01
 ---
-
 # Configuration files overview
 
 Environments in Adobe Commerce on cloud infrastructure include containers with applications, services, and a database to provide a complete system for your Adobe Commerce application codebase and files.

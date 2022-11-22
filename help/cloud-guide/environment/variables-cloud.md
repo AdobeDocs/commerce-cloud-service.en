@@ -1,8 +1,8 @@
 ---
 title: Cloud-specific variables
 description: See a list of environment variables specific to Adobe Commerce on cloud infrastructure.
+exl-id: 84b7c0fc-f0b0-4ff5-9f33-9d17180a9306
 ---
-
 # Cloud-specific variables
 
 Environment variables that are specific to Adobe Commerce on cloud infrastructure use the `MAGENTO_CLOUD_*` prefix:

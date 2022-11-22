@@ -1,8 +1,8 @@
 ---
 title: Configure outgoing emails
 description: Learn how to enable outgoing emails for Adobe Commerce on cloud infrastructure.
+exl-id: 814fe2a9-15bf-4bcb-a8de-ae288fd7f284
 ---
-
 # Configure outgoing emails
 
 By default, email support is **disabled** on Staging and Production environments. You must enable email support on an environment to send emails including Welcome, password reset, and two-factor authentication emails for Cloud project users.

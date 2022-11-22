@@ -1,8 +1,8 @@
 ---
 title: View and manage logs
 description: Understand the log files and locations
+exl-id: d7f63dab-23bf-4b95-b58c-3ef9b46979d4
 ---
-
 # View and manage logs
 
 Logs for Adobe Commerce on cloud infrastructure projects are useful for troubleshooting problems related to [build and deploy hooks](../application/hooks-property.md), cloud services, and the Adobe Commerce application.

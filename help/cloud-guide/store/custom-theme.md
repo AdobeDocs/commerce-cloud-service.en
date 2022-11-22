@@ -1,8 +1,8 @@
 ---
 title: Custom theme
 description: Learn how to install a custom theme with Adobe Commerce on cloud infrastructure.
+exl-id: f08134ab-daea-471d-a927-02531d36a809
 ---
-
 # Custom theme
 
 You can install one or multiple themes to use for one or all of your stores and sites in your project. Themes include multiple static files including images, fonts, CSS, JavaScript, PHP, and more to fully design your stores. You can add the theme by either extracting its code to the file system or using Composer.

@@ -1,8 +1,8 @@
 ---
 title: Log handlers
 description: Learn how to configure log handlers for Adobe Commerce on cloud infrastructure.
+exl-id: d3be7b6d-5778-4c32-865b-31bdb2852a23
 ---
-
 # Log handlers
 
 You can configure log handlers to send messages to a remote logging server. A log handler pushes build and deploy logs to other systems, similarly to the way you push logs to Slack and email. You can enable a _syslog_ handler, which is ideal for logging messages related to hardware, or a Graylog Extended Log Format (GELF) handler, which is ideal for logging messages from software applications.

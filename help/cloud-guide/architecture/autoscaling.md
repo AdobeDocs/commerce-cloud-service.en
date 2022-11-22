@@ -3,8 +3,8 @@ title: Automatic scaling
 description: Learn about the automatic scaling feature for Adobe Commerce on cloud infrastructure.
 hide: yes
 hidefromtoc: yes
+exl-id: 2ba49c55-d821-4934-965f-f35bd18ac95f
 ---
-
 # Automatic scaling
 
 The auto-scaling feature automatically adds or removes resources to the cloud infrastructure in order to maintain optimal performance and reasonable costs. This feature is available for projects configured with a [Scaled architecture](scaled-architecture.md).

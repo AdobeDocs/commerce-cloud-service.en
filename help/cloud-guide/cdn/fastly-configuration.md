@@ -1,8 +1,8 @@
 ---
 title: Configure Fastly services
 description: Learn how to set up and configure Fastly services for your Adobe Commerce project.
+exl-id: c53ff3bd-3df2-45fb-933e-d3b29f7edf4e
 ---
-
 # Configure Fastly services
 
 Fastly is required for Adobe Commerce on cloud infrastructure Staging and Production environments.

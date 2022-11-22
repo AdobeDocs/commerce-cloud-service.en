@@ -1,8 +1,8 @@
 ---
 title: Update the ECE-Tools package
 description: Learn how to upgrade the ECE-Tools package to take advantage of the latest fixes and features applied to Adobe Commerce on cloud infrastructure.
+exl-id: 7cce45eb-ae53-4468-b16d-4f4d3422ac52
 ---
-
 # Update the ECE-Tools package
 
 An update to the `ece-tools` package also updates the other [Cloud Tools Suite for Commerce packages](../release-notes/cloud-tools-suite.md), which are dependencies for `ece-tools`. Therefore, you must use a version of Adobe Commerce on cloud infrastructure that supports the `ece-tools` package.

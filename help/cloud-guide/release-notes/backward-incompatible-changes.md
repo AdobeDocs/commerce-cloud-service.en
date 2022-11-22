@@ -1,8 +1,8 @@
 ---
 title: Backward-incompatible changes
 description: Learn about backward compatibility when upgrading existing Cloud projects.
+exl-id: 9847c565-6d59-429a-9593-c2eba5cf2da4
 ---
-
 # Backward-incompatible changes
 
 Backward-incompatible changes might require you to adjust Cloud configuration and processes for existing Cloud projects when you upgrade to the latest release of the `ece-tools` package or other Cloud Tools Suite for Commerce packages.

@@ -1,8 +1,8 @@
 ---
 title: Health notifications
 description: Learn how to configure Slack, email, and PagerDuty notifications for disk space usage on your Adobe Commerce on cloud infrastructure project.
+exl-id: d3173098-78ed-42a8-aeb3-9ccbaccc4d32
 ---
-
 # Health notifications
 
 Adobe Commerce on cloud infrastructure monitors disk space usage on all applications and services in your Starter environment or your Pro Integration environment. A database disk that runs out of space could cause data corruption. The health status check occurs every 5 minutes and can notify you by email or other external service. There are three low-disk warnings for health notifications:

@@ -1,8 +1,8 @@
 ---
 title: Enable the B2B module
 description: Learn how to enable the business-to-business module for Adobe Commerce on cloud infrastructure.
+exl-id: 01d02ea0-1e7d-4608-adbf-1dad7f5e2182
 ---
-
 # Enable the B2B module
 
 If your customers are companies, you can install the B2B for Adobe Commerce module to extend your Adobe Commerce on cloud infrastructure Pro project to accommodate a business-to-business model. Although this topic provides information specific to installing and configuring the B2B module for Adobe Commerce on cloud infrastructure, you can find additional B2B information in the following guides:

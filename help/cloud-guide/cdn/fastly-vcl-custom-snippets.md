@@ -1,8 +1,8 @@
 ---
 title: Get started with custom VCL snippets
 description: Learn about using Varnish Control Language code snippets to customize the Fastly service configuration for Adobe Commerce.
+exl-id: df0f0906-8ffa-41a1-a31c-d36deb5a6a31
 ---
-
 # Getting started with custom VCL
 
 Fastly supports a customized version of the Varnish Configuration Language (VCL) to tailor the Fastly service configuration to your requirements.

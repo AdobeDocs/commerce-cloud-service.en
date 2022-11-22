@@ -1,8 +1,8 @@
 ---
 title: Server-side includes
 description: Learn how to use server-side includes with Adobe Commerce on cloud infrastructure.
+exl-id: 34a38cb5-5f0e-49ac-9dba-bb581a06aeed
 ---
-
 # Server-side includes
 
 [Server-side includes](https://nginx.org/en/docs/http/ngx_http_ssi_module.html) (SSI) are directives in HTML pages that are evaluated on the server while the pages render. SSI enables you to add dynamically generated content to an existing HTML page without serving the entire page.

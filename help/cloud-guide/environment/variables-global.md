@@ -1,8 +1,8 @@
 ---
 title: Global Variables
 description: See the list of environment variables that control actions in the Adobe Commerce on cloud infrastructure deployment process.
+exl-id: 04c2861d-746d-42d4-a678-f6c7b464eb51
 ---
-
 # Global variables
 
 Global variables control actions across each phase of the Commerce deployment process: build, deploy, and post-deploy. Because global variables impact every phase, you must set them in the `global` stage of the `.magento.env.yaml` file:

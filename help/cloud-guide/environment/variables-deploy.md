@@ -1,8 +1,8 @@
 ---
 title: Deploy variables
 description: See the list of environment variables that control actions in the Adobe Commerce on cloud infrastructure deploy phase.
+exl-id: 673880b5-830b-4837-ac0c-5fa5643ae34c
 ---
-
 # Deploy variables
 
 The following _deploy_ variables control actions in the deploy phase and can inherit and override values from the [Global variables](variables-global.md). Insert these variables in the `deploy` stage of the `.magento.env.yaml` file:

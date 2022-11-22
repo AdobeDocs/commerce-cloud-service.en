@@ -1,8 +1,8 @@
 ---
 title: ECE-Tools release notes
 description: Learn about the latest improvements to ece-tools.
+exl-id: a464b940-c56e-4a7c-9948-559539e25361
 ---
-
 # ECE-Tools release notes
 
 The [ece-tools](https://github.com/magento/ece-tools) package is a set of scripts and tools designed to manage and deploy Cloud projects. These release notes describe the latest improvements to this package, which is part of the [Cloud Tools Suite for Commerce](cloud-tools-suite.md).

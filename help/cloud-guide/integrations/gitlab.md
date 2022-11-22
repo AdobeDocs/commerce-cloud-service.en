@@ -1,8 +1,8 @@
 ---
 title: GitLab integration
 description: Learn how to integrate your Adobe Commerce on cloud infrastructure project with GitLab.
+exl-id: 37fda8a0-7274-422f-9049-243f2e409f26
 ---
-
 # GitLab integration
 
 You can configure a GitLab repository to automatically build and deploy an environment when you push code changes. This integration synchronizes your GitLab repository with your Adobe Commerce on cloud infrastructure account.

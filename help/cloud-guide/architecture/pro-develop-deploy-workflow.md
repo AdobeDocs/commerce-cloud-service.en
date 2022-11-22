@@ -1,8 +1,8 @@
 ---
 title: Pro project workflow
 description: Learn how to use the Pro development and deployment workflows.
+exl-id: 103e90d5-2ef2-4fef-845c-439344666b00
 ---
-
 # Pro project workflow
 
 The Pro project includes a single Git repository with a Global `master` and three main environments: the **Integration** environment for development and testing, the **Staging** environment for testing with all services, and the **Production** environment for launching and maintaining your live site. See [Pro architecture](pro-architecture.md) for an overview.

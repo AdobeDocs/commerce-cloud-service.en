@@ -1,8 +1,8 @@
 ---
 title: Restore an environment
 description: Learn how to uninstall the Adobe Commerce application from a cloud infrastructure project and restore an environment to a stable state.
+exl-id: b76bd6c3-986e-4adc-abd0-5b27db0d8a3b
 ---
-
 # Restore an environment
 
 If you encounter issues in the Integration environment and do not have a [valid snapshot](../storage/snapshots.md), try restoring your environment using one of the following methods:

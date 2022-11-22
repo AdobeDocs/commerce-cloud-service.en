@@ -1,8 +1,8 @@
 ---
 title: Configure environment
 description: Learn how to configure build and deploy actions across all Commerce on cloud infrastructure environments, including Pro Staging and Production, using environment variables.
+exl-id: 66e257e2-1eca-4af5-9b56-01348341400b
 ---
-
 # Configure environment variables for deployment
 
 The `.magento.env.yaml` file uses environment variables to centralize the management of build and deploy actions across all of your environments, including Pro Staging and Production. To configure unique actions in each environment, you must modify this file in each environment.

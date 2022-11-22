@@ -1,8 +1,8 @@
 ---
 title: Integrations overview
 description: Learn about third-party integration options for your Adobe Commerce on cloud infrastructure project.
+exl-id: 2dddba73-5b88-4b5d-a0e1-2f1c1f52354c
 ---
-
 # Integrations overview
 
 Integrations are useful for using external services—such as Git hosting or Slack bots—and maintaining your current development processes, such as using the code review pull request function in GitHub. You can add the following integrations to your Adobe Commerce on cloud infrastructure project:

@@ -1,8 +1,8 @@
 ---
 title: Set cache for static files
 description: Learn to set cache storage options in the Commerce application configuration file.
+exl-id: ca6db004-47fc-45ea-b8db-c0ecc3c2136b
 ---
-
 # Set cache for static files
 
 The cache TTL (time-to-live) for your media and static files is set in the `.magento.app.yaml` configuration file using the `expires` key.

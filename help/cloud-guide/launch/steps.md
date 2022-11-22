@@ -1,8 +1,8 @@
 ---
 title: Launch steps
 description: Learn how to complete the site launch.
+exl-id: cf75f89c-94c8-47c1-a23d-93cd9921aab7
 ---
-
 # Launch steps
 
 After testing and completing your launch checklist, you can start the final steps to launch. These steps include entering tickets, transfer site access, and finally testing your store when live.

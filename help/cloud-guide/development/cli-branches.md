@@ -1,8 +1,8 @@
 ---
 title: Manage branches with the CLI
 description: Learn how to manage the environment branches for Adobe Commerce on cloud infrastructure using the Cloud CLI.
+exl-id: a871c7e2-4506-4a05-8fc2-fc5ef2afe609
 ---
-
 # Manage branches with the CLI
 
 To install the `magento-cloud` CLI, see the [Cloud CLI reference](../dev-tools/cloud-cli.md). After you install the `magento-cloud` CLI and set up SSH keys for remote access to your cloud infrastructure, you can use `magento-cloud` CLI commands to manage the environments for your projects. For information about the environment architecture, see [Starter architecture](../architecture/starter-architecture.md) or [Pro architecture](../architecture/pro-architecture.md).

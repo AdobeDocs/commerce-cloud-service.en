@@ -1,8 +1,8 @@
 ---
 title: Custom VCL for blocking requests
 description: Block incoming requests by IP address using an Edge Access Control list (ACL) with a custom VCL snippet.
+exl-id: 1f637612-3858-49d0-91f7-9b8823933cc9
 ---
-
 # Custom VCL for blocking requests
 
 You can use the Fastly CDN module for Magento 2 to create an Edge ACL with a list of IP addresses that you want to block. Then, you can use that list with a VCL snippet to block incoming requests. The code checks the IP address of the incoming request. If it matches an IP address included in the ACL list, Fastly blocks the request from accessing your site and returns a `403 Forbidden error`. All other client IPs are allowed access.

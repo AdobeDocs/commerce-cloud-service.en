@@ -1,8 +1,8 @@
 ---
 title: Enable multi-factor authentication for SSH access
 description: Learn how to manage authentication requirements for SSH access to Adobe Commerce on cloud infrastructure environments.
+exl-id: 754b2c22-f197-49be-a699-fb3bedf053fc
 ---
-
 # Enable multi-factor authentication for SSH access
 
 For added security, Adobe Commerce on cloud infrastructure provides multi-factor authentication (MFA) enforcement to manage authentication requirements for SSH access to Cloud environments.

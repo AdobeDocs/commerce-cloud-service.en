@@ -1,8 +1,8 @@
 ---
 title: Release notes for Cloud Tools Suite
 description: Learn about the latest improvements to the Cloud Tools suite for Adobe Commerce.
+exl-id: 6a652e93-46a2-4590-97fc-fb5d114ece9a
 ---
-
 # Release notes for Commerce Cloud Tools Suite
 
 This release information details the latest improvements to the Cloud Tools Suite for Commerce packages which are designed to deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.

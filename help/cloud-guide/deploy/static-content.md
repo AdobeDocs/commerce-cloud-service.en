@@ -1,8 +1,8 @@
 ---
 title: Static content deployment
 description: Learn about strategies for deploying static content, such as images, scripts, and CSS, on Adobe Commerce on cloud infrastructure projects.
+exl-id: e128d0d5-1326-44e5-a822-009e11ba105f
 ---
-
 # Static content deployment strategies
 
 Static content deployment (SCD) has a significant impact on the store deployment process that depends on how much content to generate—such as images, scripts, CSS, videos, themes, locales, and web pages—and when to generate the content. For example, the default strategy generates static content during the [deploy phase](process.md#deploy-phase-deploy-phase) when the site is in maintenance mode; however, this deployment strategy takes time to write the content directly to the mounted `pub/static` directory. You have several options or strategies to help you improve the deployment time depending on your needs.

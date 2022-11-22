@@ -1,8 +1,8 @@
 ---
 title: Set up Elasticsearch service
 description: Learn how to enable the Elasticsearch service for Adobe Commerce on cloud infrastructure.
+exl-id: ac559cbb-342a-4756-ade5-49eba4827965
 ---
-
 # Set up Elasticsearch service
 
 [Elasticsearch](https://www.elastic.co) is an open-source product that enables you to take data from any source, any format, and search and visualize it in real time.

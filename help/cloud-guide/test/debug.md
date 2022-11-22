@@ -1,8 +1,8 @@
 ---
 title: Configure [!DNL Xdebug]
 description: Learn how to configure the Xdebug extension for debugging your Adobe Commerce on cloud infrastructure project development.
+exl-id: bf2d32d8-fab7-439e-8df3-b039e53009d4
 ---
-
 # Configure Xdebug
 
 [!DNL Xdebug] is an extension for debugging your PHP. Although you can use an IDE of your choice, the following explains how to configure [!DNL Xdebug] and [!DNL PhpStorm] to debug in your local environment.

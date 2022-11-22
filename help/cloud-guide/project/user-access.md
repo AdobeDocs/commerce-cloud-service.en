@@ -1,8 +1,8 @@
 ---
 title: Manage user access
 description: Learn how to manage user access to Adobe Commerce on cloud infrastructure projects and environments.
+exl-id: 3357a3ea-bf86-4a65-95d1-6b24f1152248
 ---
-
 # Manage user access
 
 You manage access to Adobe Commerce on cloud infrastructure projects and environments by adding users and assigning roles.

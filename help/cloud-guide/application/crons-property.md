@@ -1,8 +1,8 @@
 ---
 title: Crons property
 description: See examples on how to configure the `crons` property in the Commerce application configuration file.
+exl-id: 67d592c1-2933-4cdf-b4f6-d73cd44b9f59
 ---
-
 # Crons property
 
 Adobe Commerce uses cron jobs for numerous features to schedule activities. We recommend you run `cron` as the [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html). Do _not_ run cron as `root` or as the web server user.

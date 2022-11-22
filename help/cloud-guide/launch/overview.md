@@ -1,8 +1,8 @@
 ---
 title: Site launch
 description: Learn how to begin site launch preparation.
+exl-id: a7b3f260-b76e-4220-b521-699548a9928a
 ---
-
 # Site launch
 
 When you have completed deployment and testing in Integration and Staging environments, you can begin site launch preparation. First, you should complete all development and testing before working in the Production environment. Feel ready to launch? Review our checklists, best practices, and final steps to launch your site.

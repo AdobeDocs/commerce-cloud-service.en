@@ -1,8 +1,8 @@
 ---
 title: Set up RabbitMQ service
 description: Learn how to enable the RabbitMQ service to manage message queues for Adobe Commerce on cloud infrastructure.
+exl-id: 85794b8f-2260-4a6e-b5a6-a1b4c356594e
 ---
-
 # Set up [!DNL RabbitMQ] service
 
 The [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) is a system within Adobe Commerce that allows a [module](https://glossary.magento.com/module) to publish messages to queues. It also defines the consumers that receive the messages asynchronously.

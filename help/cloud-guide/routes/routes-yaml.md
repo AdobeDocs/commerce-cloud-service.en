@@ -1,8 +1,8 @@
 ---
 title: Configure routes
 description: Learn how to define the routes for incoming HTTPS requests for the Adobe Commerce on cloud infrastructures environments.
+exl-id: a33797e5-14cc-45eb-a048-96180b872a4a
 ---
-
 # Configure routes
 
 The `routes.yaml` file in the `.magento/routes.yaml` directory defines routes for your Adobe Commerce on cloud infrastructure Integration, Staging, and Production environments. Routes determine how the application processes incoming HTTP and HTTPS requests.

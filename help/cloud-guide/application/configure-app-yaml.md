@@ -1,8 +1,8 @@
 ---
 title: Configure application deployment
 description: Learn how to configure the properties in the application configuration file that control the way the Commerce application builds and deploys to the Cloud environment.
+exl-id: 900da20d-98d2-4c9f-97ec-578aee775b55
 ---
-
 # Configure application deployment
 
 The `.magento.app.yaml` file controls the way that your application builds and deploys. Although Adobe Commerce on cloud infrastructure supports multiple applications per project, typically, a project has a single application with the `.magento.app.yaml` file at the root of the repository.

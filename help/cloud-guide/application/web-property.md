@@ -1,8 +1,8 @@
 ---
 title: Web property
 description: See examples on how to configure the web property in the Commerce application configuration file.
+exl-id: 2ca94908-6fe1-42fd-bc3b-ef2dd473f1bb
 ---
-
 # Web property
 
 The `web` property defines how your application is exposed to the web (in HTTP), determines how the web application serves content, and controls how the application container responds to incoming requests by setting rules in each location _block_. A block represents an absolute path leading with a forward slash (`/`).

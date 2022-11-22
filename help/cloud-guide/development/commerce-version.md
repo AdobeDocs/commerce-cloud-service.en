@@ -1,8 +1,8 @@
 ---
 title: Upgrade Commerce version
 description: Learn how to upgrade the Adobe Commerce version in the cloud infrastructure project.
+exl-id: 87821007-4979-4a20-940b-aa3c82c192d8
 ---
-
 # Upgrade Commerce version
 
 You can upgrade the Adobe Commerce code base to a newer version. Before upgrading your project, review the [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation_ guide for the latest software version requirements.
