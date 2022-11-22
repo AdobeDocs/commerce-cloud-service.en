@@ -67,6 +67,8 @@ You can set the following configuration options for each project:
 | Deploy Key   | Add and view the public key to the project code repository. |
 | Variables    | Add project-level variables that are available at build and runtime in all environments. See [Variable levels](../environment/variable-levels.md). |
 
+{style="table-layout:auto"}
+
 ## Configure environment
 
 You can manage variables and settings for Production, Staging, and Integration environments through this interface, [configuration files](../environment/overview.md), or with CLI commands. Select an environment in the environment list and click **Configure environment** to update the settings, add variables, routes, and users.
@@ -83,6 +85,8 @@ You can set the following configuration options for each environment:
 | Variables  | View, create, and manage environment variables available for the environment at runtime. See [Variable levels](../environment/variable-levels.md). |
 | Routes     | View a list of configured routes. See [Configure routes](../routes/routes-yaml.md). |
 | Users      | View a list of users granted environment level access. It is best to [Manage users with the CLI](user-access.md#manage-users-with-the-cli). |
+
+{style="table-layout:auto"}
 
 >[!WARNING]
 >
