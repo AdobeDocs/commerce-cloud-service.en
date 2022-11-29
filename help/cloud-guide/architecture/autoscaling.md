@@ -1,19 +1,13 @@
 ---
-title: Automatic scaling
-description: Learn about the automatic scaling feature for Adobe Commerce on cloud infrastructure.
+title: Auto scaling
+description: Learn about the auto-scaling feature for Adobe Commerce on cloud infrastructure.
 hide: yes
 hidefromtoc: yes
 exl-id: 2ba49c55-d821-4934-965f-f35bd18ac95f
 ---
-# Automatic scaling
+# Auto scaling
 
-The auto-scaling feature automatically adds or removes resources to the cloud infrastructure in order to maintain optimal performance and reasonable costs. This feature is available for projects configured with a [Scaled architecture](scaled-architecture.md).
-
-To enable or disable automatic scaling for your Adobe Commerce on cloud infrastructure project, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). There is no downtime, indexing, or deployment necessary to update this configuration.
-
->[!IMPORTANT]
->
->The auto-scaling feature captures unanticipated events. Even if you have the auto-scaling feature enabled, Adobe recommends that you continue to [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) if you expect an upcoming event.
+The Auto scaling feature automatically adds or removes resources to the cloud infrastructure in order to maintain optimal performance and reasonable costs. Currently, this feature is only available for projects configured with a [Scaled architecture](scaled-architecture.md).
 
 ## Web server nodes
 
@@ -26,6 +20,30 @@ An auto-scaling event occurs when CPU usage and traffic reach a predefined thres
 
 The minimum and maximum thresholds are determined and set based on the contracted resource limits of each merchant; this reduces the risk of infinite scaling.
 
-## IP allowlist
+## Enable auto scaling
 
-TBD
+To enable or disable auto scaling for your Adobe Commerce on cloud infrastructure project, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Include the following information in the ticket:
+
+- Contact reason: Infrastructure Change Request
+
+>[!IMPORTANT]
+>
+>The auto-scaling feature captures unanticipated events. Even if you have the auto-scaling feature enabled, Adobe recommends that you continue to [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) if you expect an upcoming event.
+
+### Load testing
+
+After Adobe enables Auto scaling on your Cloud project, you should perform load testing in the Staging environment.
+
+### IP allowlist
+
+If you have the IP addresses for your core nodes (1, 2, and 3) and web nodes (4, 5, and 6) in an allowlist, then there is no action required. After enabling Auto scaling, the outbound web node traffic is routed through the IP addresses of the core nodes 1, 2, and 3. If you do not have the IP addresses for nodes 1, 2, and 3 in your allowlist, then you must update the allowlist.
+
+## Monitor web tier CPU usage
+
+The following is an example New Relic query to show CPU usage for web nodes.
+
+```sql
+SELECT average(cpuPercent) FROM SystemSample FACET hostname WHERE apmApplicationNames LIKE '%|72gmfuvykea6o_stg3|%' AND instanceType LIKE 'c%' TIMESERIES SINCE 3 HOURS AGO
+```
+
+![New Relic web nodes CPU usage](../../assets/new-relic/web-node-cpu-usage.png)
