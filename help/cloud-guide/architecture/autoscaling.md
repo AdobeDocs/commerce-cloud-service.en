@@ -37,7 +37,7 @@ The following example New Relic query shows host count within the environment:
 SELECT uniqueCount(SystemSample.entityId) AS 'Infrastructure hosts', uniqueCount(Transaction.host) AS 'APM hosts seen' FROM SystemSample, Transaction where (Transaction.appName = 'cluster-id_stg' AND Transaction.transactionType = 'Web') OR SystemSample.apmApplicationNames LIKE '%|cluster-id_stg|%' TIMESERIES SINCE 3 HOURS AGO
 ```
 
-In the following screenshot, `APM hosts seen` refers to the number of hosts with transactions logged during the selected period.
+In the following screenshot, **APM hosts seen** refers to the number of hosts with transactions logged during the selected period.
 
 ![New Relic host count](../../assets/new-relic/host-count.png)
 
@@ -68,7 +68,7 @@ Adobe enables Auto scaling on your Cloud project _staging_ cluster first. After 
 
 ### IP allowlist
 
-After enabling Auto scaling, the outbound web node traffic originates from the IP addresses of the service nodes. It is best to include the IP addresses of all nodes. If you use an allowlist with a third-party service that is not bundled with your Adobe Commerce on cloud infrastructure project, then you may need to update the IP addresses in the third-party service allowlist.
+After enabling Auto scaling, the outbound web node traffic originates from the IP addresses of the service nodes. If you use an allowlist with a third-party service that is not bundled with your Adobe Commerce on cloud infrastructure project, then you may need to update the IP addresses in the third-party service allowlist.
 
 For example:
 
