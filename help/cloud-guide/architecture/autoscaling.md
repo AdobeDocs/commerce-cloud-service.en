@@ -22,10 +22,12 @@ The minimum and maximum thresholds are determined and set based on the contracte
 
 ### Monitor web tier CPU usage
 
-You can use the [New Relic service](../monitor/new-relic.md#use-new-relic) to monitor the CPU usage for  The following is an example New Relic query to show CPU usage for web nodes.
+You can use the [New Relic service](../monitor/new-relic.md#use-new-relic) to monitor thresholds. The following example New Relic query shows CPU usage for web nodes (instance type `c%`):
+
+**To show all clusters in a project**:
 
 ```sql
-SELECT average(cpuPercent) FROM SystemSample FACET hostname WHERE apmApplicationNames LIKE '%|72gmfuvykea6o_stg3|%' AND instanceType LIKE 'c%' TIMESERIES SINCE 3 HOURS AGO
+SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames WHERE instanceType LIKE 'c%' TIMESERIES SINCE 3 HOURS AGO
 ```
 
 ![New Relic web nodes CPU usage](../../assets/new-relic/web-node-cpu-usage.png)
@@ -42,8 +44,12 @@ To enable or disable Auto scaling for your Adobe Commerce on cloud infrastructur
 
 ### Load testing
 
-After Adobe enables Auto scaling on your Cloud project, you should perform load testing in the Staging environment.
+First, Adobe enables Auto scaling on your Cloud project staging cluster. Then after you perform and complete load testing in the Staging environment, Adobe enables Auto scaling on your production cluster. For guidance on load testing, see [Performance testing](../launch/checklist.md#performance-testing).
 
 ### IP allowlist
 
-If you have the IP addresses for your core nodes (1, 2, and 3) and web nodes (4, 5, and 6) in an allowlist, then there is no action required. After enabling Auto scaling, the outbound web node traffic is routed through the IP addresses of the core nodes 1, 2, and 3. If you do not have the IP addresses for nodes 1, 2, and 3 in your allowlist, then you must update the allowlist.
+After enabling Auto scaling, the outbound web node traffic is routed through the IP addresses of the service nodes. It is best to include the IP addresses of all six nodes. If you use an allowlist with a third-party service that is not bundled with your Adobe Commerce on cloud infrastructure project, then you may need to update the IP addresses in the third-party sevice allowlist:
+
+- If the allowlist contains the IP addresses for your service nodes (1, 2, and 3), then there is no action required.
+- If the allowlist contains the IP addresses for your service nodes (1, 2, and 3) and web nodes (4, 5, and 6)—all six nodes—then there is no action required.
+- If the allowlist contains the IP addresses _only_ for your web nodes (4, 5, and 6), then you need to update the allowlist to include the IP addresses for the service nodes.
