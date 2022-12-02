@@ -667,7 +667,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  Adobe Commerce on cloud infrastructure now supports scopes and [static content deployment strategies](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html). We have added the `–s` parameter with a default setting of `quick` for the static content deployment strategy. You can use the environment variable [SCD_STRATEGY](../environment/variables-deploy.md) to customize and use these strategies with your build and deploy actions. This variable supports the options `standard`, `quick`, or `compact`. If you select `compact`, we override the `STATIC_CONTENT_THREADS` value with `1`, which can slow deployment, especially in production environments. Not available in 2.1.<!--- MAGECLOUD-1057 -->
 
--  We have created a log file on environments to capture and compile build and deploy actions. The file is in the `var/log/cloud.log` file inside the root application directory.<!--- MAGECLOUD-1014 & MAGECLOUD-1023 -->
+-  We have created a log file on environments to capture and compile build and deploy actions. The `var/log/cloud.log` file is in the root application directory.<!--- MAGECLOUD-1014 & MAGECLOUD-1023 -->
 
 **Resolved issues:**
 
