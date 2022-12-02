@@ -11,9 +11,9 @@ After configuring and customizing your Adobe Commerce on cloud infrastructure pr
 
 While in development, it is important to perform end-to-end functional testing on your Adobe Commerce on cloud infrastructure project. See the following guidance for performing functional testing in the Docker environment:
 
--  **Application testing**—Use the [Magento Functional Testing Framework (MFTF)](https://devdocs.magento.com/cloud/docker/docker-test-app-mftf.html) for application testing in Cloud Docker environment.
+-  **Application testing**—Use the [Magento Functional Testing Framework (MFTF)](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/) for application testing in Cloud Docker environment.
 
--  **Code testing**—Use the [Codeception testing framework for PHP](https://devdocs.magento.com/cloud/docker/docker-test-magecloud-pkg-code.html) for validating code that is intended for contribution to Cloud package repositories.
+-  **Code testing**—Use the [Codeception testing framework for PHP](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/) for validating code that is intended for contribution to Cloud package repositories.
 
 ## Best practices before launch
 

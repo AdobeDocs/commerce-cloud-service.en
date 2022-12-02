@@ -28,7 +28,7 @@ The following table summarizes the differences between environments:
 
 >[!NOTE]
 >
->Adobe also provides the Cloud Docker for Commerce solution for deploying to a local Cloud Docker environment so that you can develop and test Adobe Commerce projects. See [Docker development](https://devdocs.magento.com/cloud/docker/docker-development.html).
+>Adobe also provides the Cloud Docker for Commerce solution for deploying to a local Cloud Docker environment so that you can develop and test Adobe Commerce projects. See [Docker development](../dev-tools/cloud-docker.md).
 
 ## Pro environment architecture
 

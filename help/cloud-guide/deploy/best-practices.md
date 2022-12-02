@@ -140,7 +140,7 @@ If the `app/etc/config.php` file does not exist in the codebase, static files ar
 
 There are two default deploy hooks. The `pre-deploy.php` hook completes necessary cleanup and retrieval of resources and code generated in the build hook. The `php ./vendor/bin/ece-tools deploy` hook runs a series of commands and scripts:
 
--  If Adobe Commerce is **not installed**, it installs with `bin/magento setup:install`, updates the deployment configuration, `app/etc/env.php`, and the database for your specified environment, such as Redis and website URLs. **Important:** When you completed the [First-time deployment](https://devdocs.magento.com/cloud/setup/first-time-deploy.html) during setup, Adobe Commerce was installed and deployed across all environments.
+-  If Adobe Commerce is **not installed**, it installs with `bin/magento setup:install`, updates the deployment configuration, `app/etc/env.php`, and the database for your specified environment, such as Redis and website URLs. **Important:** When you completed the [First-time deployment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/overview.html) during setup, Adobe Commerce was installed and deployed across all environments.
 
 -  If Adobe Commerce **is installed**, perform any necessary upgrades. The deployment script runs `bin/magento setup:upgrade` to update the database schema and data (which is necessary after extension or core code updates), and also updates the deployment configuration, `app/etc/env.php`, and the database for your environment. Finally, the deployment script clears theAdobe Commerce cache.
 

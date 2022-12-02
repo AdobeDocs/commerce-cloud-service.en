@@ -25,7 +25,7 @@ By default, these `ece-tools` commands are in the [hooks property](../applicatio
 
 ## Docker configuration generator
 
-The `ece-tools` package includes a dependency for the [magento/magento-cloud-docker][] package, which provides functionality and configuration files for Docker images to launch a Docker development environment for Adobe Commerce on cloud infrastructure. You can also run Cloud Docker for Commerce as a stand-alone package. See [Docker development][docker].
+The `ece-tools` package includes a dependency for the [magento/magento-cloud-docker][] package, which provides functionality and configuration files for Docker images to launch a Docker development environment for Adobe Commerce on cloud infrastructure. You can also run Cloud Docker for Commerce as a stand-alone package. See [Docker development](../dev-tools/cloud-docker.md).
 
 ## Services, routes, and variables
 
@@ -91,7 +91,6 @@ The `ece-tools` package includes a dependency for the [magento/magento-cloud-pat
 
 <!-- link definitions -->
 
-[docker]: https://devdocs.magento.com/cloud/docker/docker-development.html
 [ece-repo]: https://github.com/magento/ece-tools
 [magento/magento-cloud-docker]: https://github.com/magento/magento-cloud-docker
 [magento/magento-cloud-patches]: https://github.com/magento/magento-cloud-patches
