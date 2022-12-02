@@ -105,10 +105,10 @@ PHP module requirements are tied to the Adobe Commerce version. See [PHP require
 
 For Pro projects, the following extensions require additional support to install:
 
--  `ioncube`
--  `sourceguardian`
+- `ioncube`
+- `sourceguardian`
 
-[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install these PHP extensions.
+[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install these PHP extensions. Include your updated `.magento/services.yaml` file, `.magento.app.yaml` file with the updated PHP version and any additional PHP extensions. For changes to a live Production environment, you must provide a minimum of 48 hours notice. It can take up to 48 hours for the Cloud infrastructure team to update your project.
 
 >[!WARNING]
 >
