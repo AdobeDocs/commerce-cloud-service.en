@@ -97,11 +97,12 @@ Filesystem                                    Size  Used Avail Use% Mounted on
 
 ## Allocate disk space
 
-Two [configuration files](../environment/overview.md) control the allocation of disk space in the Cloud environments: the `.magento.app.yaml` file and the `.magento/services.yaml` file. Each file contains the `disk` property, which defines the disk size value in MB for the respective configuration.
+Two [configuration files](../environment/overview.md) control the allocation of disk space in the Cloud environments: the `.magento.app.yaml` file and the `.magento/services.yaml` file. Each file contains the `disk` property, which defines the disk size value in MB for the respective configuration. You can only change disk space allocation on Pro Integration and Starter environments.
 
->[!NOTE]
+>[!IMPORTANT]
 >
->You can only change disk space allocation on Pro Integration and Starter environments. You must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation on Pro Production and Staging environments. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB.
+>For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production can not be reverted.
+
 
 ### Application disk space
 

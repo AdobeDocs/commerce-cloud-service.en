@@ -35,7 +35,7 @@ The MQF uses [RabbitMQ](https://www.rabbitmq.com/) as the messaging broker, whic
 1. Add, commit, and push your code changes.
 
    ```bash
-   git add -A
+   git add .magento/services.yaml .magento.app.yaml
    ```
 
    ```bash
