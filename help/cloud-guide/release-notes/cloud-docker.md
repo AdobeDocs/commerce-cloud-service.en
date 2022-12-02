@@ -1,9 +1,9 @@
 ---
-title: Cloud Docker for Commerce
+title: Cloud Docker package
 description: Learn about the latest improvements to the Cloud Docker package.
 exl-id: 907d977f-2e9c-4553-a46b-000bc6a57b28
 ---
-# Cloud Docker for Commerce
+# Cloud Docker package
 
 The [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker) package provides functionality and Docker images to deploy Adobe Commerce to a local Cloud environment. These release notes describe the latest improvements to this package, which is a component of [Cloud Tools Suite for Commerce](cloud-tools-suite.md).
 
