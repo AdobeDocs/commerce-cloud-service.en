@@ -76,7 +76,7 @@ In earlier ECE-Tools releases, you could use the `m2-ece-build` and `m2-ece-depl
 
    -  **Updating the Cloud docker-compose commands**–We renamed the path to the command file from `./bin/docker` to `./bin/magento-docker`. Update your scripts and commands to use the new path.
 
-   -  **Cron container no longer included in default Docker configuration**–Now, you must add the `--with-cron` option to the `ece-docker build:compose` command to include the Cron container in the Docker environment configuration. See [Manage cron jobs](https://devdocs.magento.com/cloud/docker/docker-manage-cron-jobs.html).
+   -  **Cron container no longer included in default Docker configuration**–Now, you must add the `--with-cron` option to the `ece-docker build:compose` command to include the Cron container in the Docker environment configuration. See [Manage cron jobs](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs/) in the _Cloud Docker for Commerce_ guide.
 
       Scripts that previously generated containers with cron jobs are now without the cron container.
 

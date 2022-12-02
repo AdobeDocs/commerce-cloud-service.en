@@ -19,7 +19,7 @@ product: magento
     + [Cloud tools suite](release-notes/cloud-tools-suite.md)
     + [ECE-Tools package](release-notes/ece-tools-package.md)
     + [Cloud Patches](release-notes/cloud-patches.md)
-    + [Cloud Docker](release-notes/cloud-docker.md)
+    + [Cloud Docker package](release-notes/cloud-docker.md)
     + [Cloud Components](release-notes/cloud-components.md)
     + [Backward-incompatible changes](release-notes/backward-incompatible-changes.md)
     + [Release notes archive](release-notes/cloud-release-archive.md)
@@ -34,6 +34,7 @@ product: magento
     + [Regional IP addresses](project/regional-ip-addresses.md)
 + Developer tools {#dev-tools}
     + [Cloud CLI](dev-tools/cloud-cli.md)
+    + [Cloud Docker](dev-tools/cloud-docker.md)
     + ECE-Tools {#ece-tools}
         + [Package overview](dev-tools/package-overview.md)
         + [One-time upgrade to use ECE-Tools](dev-tools/install-package.md)

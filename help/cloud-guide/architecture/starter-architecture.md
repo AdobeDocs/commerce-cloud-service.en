@@ -123,7 +123,7 @@ See the following sections for detailed instructions and walk-throughs to develo
 
 -  [Starter develop and deploy workflow](starter-develop-deploy-workflow.md)
 
--  [Docker development](https://devdocs.magento.com/cloud/docker/docker-development.html) (local development environment enabled by Cloud Docker for Commerce)
+-  [Docker development](../dev-tools/cloud-docker.md) (local development environment enabled by Cloud Docker for Commerce)
 
 -  [Manage branches](../project/console-branches.md)
 

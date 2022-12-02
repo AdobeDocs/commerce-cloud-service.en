@@ -9,7 +9,7 @@ exl-id: bf2d32d8-fab7-439e-8df3-b039e53009d4
 
 >[!NOTE]
 >
->You can configure [!DNL Xdebug] to run in the Cloud Docker environment for local debugging without changing your Adobe Commerce on cloud infrastructure project configuration. See [Configure Xdebug for Docker](https://devdocs.magento.com/cloud/docker/docker-development-debug.html).
+>You can configure [!DNL Xdebug] to run in the Cloud Docker environment for local debugging without changing your Adobe Commerce on cloud infrastructure project configuration. See [Configure Xdebug for Docker](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/).
 
 To enable [!DNL Xdebug], you must configure a file in your Git repository, configure your IDE, and set up port forwarding. You can configure some settings in the `magento.app.yaml` file. After editing, you can push the Git changes across all Starter environments and Pro Integration environments to enable [!DNL Xdebug]. You do not need to do this for Pro Staging & Production environments as [!DNL Xdebug] is always available.
 
