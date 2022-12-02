@@ -39,7 +39,7 @@ Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL ve
 1. Add, commit, and push your code changes.
 
    ```bash
-   git add -A && git commit -m "Enable mysql service" && git push origin <branch-name>
+   git add .magento/services.yaml .magento.app.yaml && git commit -m "Enable mysql service" && git push origin <branch-name>
    ```
 
 1. [Verify the service relationships](services-yaml.md#service-relationships).

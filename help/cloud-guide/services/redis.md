@@ -41,7 +41,7 @@ See [Configure Redis](https://experienceleague.adobe.com/docs/commerce-operation
 1. Add, commit, and push your code changes.
 
    ```bash
-   git add -A && git commit -m "Enable redis service" && git push origin <branch-name>
+   git add .magento/services.yaml .magento.app.yaml && git commit -m "Enable redis service" && git push origin <branch-name>
    ```
 
 1. [Verify the service relationships](services-yaml.md#service-relationships).
