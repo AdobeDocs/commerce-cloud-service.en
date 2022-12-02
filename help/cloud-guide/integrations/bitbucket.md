@@ -53,7 +53,7 @@ You must clone your Adobe Commerce on cloud infrastructure project from an exist
    git remote -v
    ```
 
-   You should see the following:
+   Expected response:
 
    ```terminal
    origin git@bitbucket.org:<user-name>/<repo-name>.git (fetch)

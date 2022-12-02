@@ -57,7 +57,7 @@ Clone your Adobe Commerce on cloud infrastructure project from an existing envir
    git remote -v
    ```
 
-   You should see the following:
+   Expected response:
 
    ```terminal
    origin git@github.com:<user-name>/<repo-name>.git (fetch)
