@@ -1,8 +1,8 @@
 ---
 title: Cloud Docker for Commerce
 description: Learn how to deploy Adobe Commerce to a local, cloud-like environment using the Cloud Docker for Commerce package.
+exl-id: c866940e-0678-4b57-91bc-bc7bd181110c
 ---
-
 # Cloud Docker for Commerce
 
 Cloud Docker for Commerce is part of the [Cloud Tools Suite](../release-notes/cloud-tools-suite.md). The Cloud Docker tool can be used for developing and testing your Adobe Commerce on-premises or cloud infrastructure project in a local, cloud-like environment.
