@@ -18,7 +18,7 @@ assignees: ''
 
 - The topic provides an explanation of how ____ works.
 - The topic provides steps for ____.
-- The topic contains code samples that shows ____.
+- The topic contains code samples that show ____.
 - Other (please specify)
 
 ## Additional information
