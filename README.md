@@ -1,5 +1,7 @@
 # Adobe Commerce on Cloud Infrastructure
 
+Welcome to the Commerce documentation for cloud infrastructure.
+
 ## Adobe Open Source Code of Conduct
 
 This project has adopted the [Adobe Open Source Code of Conduct](code-of-conduct.md) or the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/about/code-of-conduct).
