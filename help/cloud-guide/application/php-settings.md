@@ -48,13 +48,13 @@ realpath_cache_size = 10M
 realpath_cache_ttl = 7200
 ```
 
-These settings allow PHP processes to cache paths to files instead of looking them up each time a page loads. See [Performance Tuning](https://www.php.net/manual/en/ini.core.php) in the PHP documentation.
+These settings allow PHP processes to cache paths to files instead of looking them up for each page load. See [Performance Tuning](https://www.php.net/manual/en/ini.core.php) in the PHP documentation.
 
 >[!NOTE]
 >
 >For a list of recommended PHP configuration settings, see [Required PHP settings](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html) in the _Installation guide_.
 
-### Check custom php.ini settings
+### Check custom PHP settings
 
 After pushing the `php.ini` changes to your Cloud environment, you can check that the custom PHP configuration has been added to your environment. For example, use SSH to log in to the remote environment and view the file using something similar to the following:
 
@@ -70,7 +70,11 @@ cat /etc/php/<php-version>/fpm/php.ini
 
 You can enable or disable PHP extensions in the `runtime:extension` section. Also, the extensions specified become available in the Docker PHP containers.
 
-> .magento.app.yaml
+>[!IMPORTANT]
+>
+>Before enabling extensions, it is important to understand that the PHP version must be compatible with the operating system hosting the project. Your project environment might require an OS upgrade by the Infrastructure team before you can proceed.
+
+Example in `.magento.app.yaml` file:
 
 ```yaml
 runtime:
@@ -108,8 +112,17 @@ For Pro projects, the following extensions require additional support to install
 - `ioncube`
 - `sourceguardian`
 
-[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install these PHP extensions. Include your updated `.magento/services.yaml` file, `.magento.app.yaml` file with the updated PHP version and any additional PHP extensions. For changes to a live Production environment, you must provide a minimum of 48 hours notice. It can take up to 48 hours for the Cloud infrastructure team to update your project.
+For example, to set up PHP to execute only SourceGuardian-protected scripts in all environments, the following option must be set in the `php.ini` file:
+
+```ini
+[SourceGuardian]
+sourceguardian.restrict_unencoded = "1"
+```
+
+See [section 3.5 of the SourceGuardian documentation](https://sourceguardian.com/demofiles/files/SourceGuardian%20for%20Linux%20User%20Manual.pdf). _This is a link to a PDF_.
+
+[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install these PHP extensions in all Production environments and Pro Staging environments. Include your updated `.magento/services.yaml` file, `.magento.app.yaml` file with the updated PHP version and any additional PHP extensions. For changes to a live Production environment, you must provide a minimum of 48 hours notice. It can take up to 48 hours for the Cloud infrastructure team to update your project.
 
 >[!WARNING]
 >
->PHP compiled with debug is not supported and the Probe may conflict with [!DNL XDebug] or [!DNL XHProf]. Disable those extensions when enabling the Probe. The Probe conflicts with some PHP extensions like Pinba or IonCube.
+>PHP compiled with debug is not supported and the Probe may conflict with [!DNL XDebug] or [!DNL XHProf]. Disable those extensions when enabling the Probe. The Probe conflicts with some PHP extensions like [!DNL Pinba] or IonCube.

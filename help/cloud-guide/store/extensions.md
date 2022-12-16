@@ -155,7 +155,7 @@ Never enable or disable an extension while logged in to the remote environments.
 
 ## Upgrade an extension
 
-Before you continue, you need the Composer name and version for the extension. Also, confirm that the extension is compatible with your project and Adobe Commerce version. In particular, check the required PHP version before you begin.
+Before you continue, you need the Composer name and version for the extension. Also, confirm that the extension is compatible with your project and Adobe Commerce version. In particular, [check the required PHP version](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) before you begin.
 
 **To update an extension**:
 
