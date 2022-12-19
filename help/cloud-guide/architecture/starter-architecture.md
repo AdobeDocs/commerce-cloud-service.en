@@ -7,7 +7,7 @@ exl-id: 03365d32-4eb4-42d4-82a7-771df5e7b3da
 
 Your Adobe Commerce on cloud infrastructure Starter architecture supports up to **four** environments, including a `master` environment that contains the initial project code, the Staging environment, and up to two Integration environments.
 
-All environments are in PaaS (Platform-as-a-Service) containers. These containers are deployed inside highly restricted containers on a grid of servers. These environments are read-only, accepting deployed code changes from branches pushed from your local workspace. Each environment provides a database and web server.
+All environments are in PaaS (Platform as a service) containers. These containers are deployed inside highly restricted containers on a grid of servers. These environments are read-only, accepting deployed code changes from branches pushed from your local workspace. Each environment provides a database and web server.
 
 You can use any development and branching methodology you like. When you get initial access to your project, we strongly recommend that you create a Staging environment from the `master` environment. Then, create the Integration environment by branching from Staging.
 

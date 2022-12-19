@@ -19,7 +19,7 @@ You can configure your Bitbucket repository to automatically build and deploy an
 
 ## Prepare your repository
 
-You must clone your Adobe Commerce on cloud infrastructure project from an existing environment and migrate the project branches to a new, empty Bitbucket repository, preserving the same branch names. It is **critical** to retain an identical Git tree, so that you do not lose any existing environments or branches in your Adobe Commerce on cloud infrastructure project.
+Clone your Adobe Commerce on cloud infrastructure project from an existing environment and migrate the project branches to a new, empty Bitbucket repository, preserving the same branch names. It is **critical** to retain an identical Git tree, so that you do not lose any existing environments or branches in your Adobe Commerce on cloud infrastructure project.
 
 1. From the terminal, log in to your Adobe Commerce on cloud infrastructure project.
 
@@ -72,11 +72,11 @@ You must clone your Adobe Commerce on cloud infrastructure project from an exist
 
 ## Create an OAuth consumer
 
-The Bitbucket integration requires an [OAuth consumer](https://confluence.atlassian.com/x/pwIwDg). You need the OAuth `key` and `secret` from this consumer to complete the next section.
+The Bitbucket integration requires an [OAuth consumer](https://support.atlassian.com/bitbucket-cloud/docs/use-oauth-on-bitbucket-cloud/). You need the OAuth `key` and `secret` from this consumer to complete the next section.
 
 **To create an OAuth consumer in Bitbucket**:
 
-1. Log in to your [Bitbucket](https://bitbucket.org/account/signin/) account.
+1. Log in to your [Bitbucket](https://id.atlassian.com/login) account.
 
 1. Click **Settings** > **Access Management** > **OAuth**.
 
@@ -155,7 +155,7 @@ The Bitbucket integration requires an [OAuth consumer](https://confluence.atlass
 
 In order to communicate events—such as a push—with your Cloud Git server, is it necessary to have a webhook for your BitBucket repository. The method of setting up a Bitbucket integration detailed on this page, when followed correctly, automatically creates a webhook. It is important to verify the webhook to avoid creating multiple integrations.
 
-1. Log in to your [Bitbucket](https://bitbucket.org/account/signin/) account.
+1. Log in to your [Bitbucket](https://id.atlassian.com/login) account.
 
 1. Click **Repositories** and select your project.
 
@@ -261,3 +261,18 @@ You can safely remove the Bitbucket integration from your project without affect
    ```
 
 Also, you can remove the Bitbucket integration by logging in to your Bitbucket account and revoking the OAuth grant on the account _Settings_ page.
+
+## Bitbucket server integration
+
+To use the Bitbucket server integration, you need the following:
+
+- [Bitbucket access token](https://confluence.atlassian.com/bitbucketserver/http-access-tokens-939515499.html)—Generate a token that grants Project `read` access and Repository `admin` access
+- [Bitbucket server URL](https://confluence.atlassian.com/bitbucketserver/specify-the-bitbucket-base-url-776640392.html)—Add the base URL of your Bitbucket instance
+
+Though you can use the Cloud CLI to walk through the Bitbucket server integration steps, the full command looks similar to the following:
+
+```bash
+magento-cloud integration:add --type=bitbucket_server --base-url=<bitbucket-url> --username=<username> --token=<bitbucket-access-token> --project=<project-ID>
+```
+
+Use the help command for more usage requirements and options: `magento-cloud integration:add --help`
