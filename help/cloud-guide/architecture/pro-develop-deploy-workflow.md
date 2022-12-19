@@ -13,7 +13,7 @@ The following graphic demonstrates the Pro develop and deploy workflow, which us
 
 ## Development workflow
 
-The Integration environment provides a single, base integration branch containing your Adobe Commerce on cloud infrastructure code. You can create one additional active environment branch. This allows for up to two active branches deployed to Platform-as-a-Service (PaaS) containers. There is no limit on the number of inactive environments.
+The Integration environment provides a single, base integration branch containing your Adobe Commerce on cloud infrastructure code. You can create one additional active environment branch. This allows for up to two active branches deployed to Platform as a service (PaaS) containers. There is no limit on the number of inactive environments.
 
 {{enhanced-integration-envs}}
 
