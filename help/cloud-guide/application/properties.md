@@ -18,6 +18,7 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 | [`mounts`](#mounts) | Set paths | `"var": "shared:files/var"`<br>`"app/etc": "shared:files/etc"`<br>`"pub/media": "shared:files/media"`<br>`"pub/static": "shared:files/static"` | No |
 | [`name`](#name) | Define the application name | `mymagento` | Yes |
 | [`relationships`](#relationships) | Map services | `database: "mysql:mysql"`<br>`redis: "redis:redis"`<br>`opensearch: "opensearch:opensearch"` | No |
+| [`runtime`](#runtime) | Runtime property includes extensions that are required by the Commerce application. | extensions:<br>- `xsl`<br>- `newrelic`<br>- `sodium` | Yes |
 | [`type`](#type-and-build) | Set the base container image | `php:8.1` | Yes |
 | [`variables`](variables-property.md) | Apply an environment variable for a specific Commerce version | — | No |
 | [`web`](web-property.md) | Handle external requests | — | Yes |
@@ -91,9 +92,9 @@ Enables you to specify dependencies that your application might need during the 
 
 Adobe Commerce supports dependencies on the following languages:
 
--  PHP
--  Ruby
--  Node.js
+- PHP
+- Ruby
+- Node.js
 
 Those dependencies are independent of the eventual dependencies of your application, and are available in the `PATH`, during the build process and in the runtime environment of your application.
 
@@ -105,6 +106,20 @@ ruby:
 nodejs:
    grunt-cli: "~0.3"
 ```
+
+## `runtime`
+
+Enables you to modify the PHP configuration at runtime, such as enabling extensions. The following extensions are required:
+
+```yaml
+runtime:
+    extensions:
+        - xsl
+        - newrelic
+        - sodium
+```
+
+See [PHP settings](php-settings.md) to learn more about enabling extensions.
 
 ## `disk`
 
@@ -162,8 +177,8 @@ The format for adding your mount to this list is as follows:
 "/public/sites/default/files": "shared:files/files"
 ```
 
--  `shared`—Shares a volume between your applications inside an environment.
--  `disk`—Defines the size available for the shared volume.
+- `shared`—Shares a volume between your applications inside an environment.
+- `disk`—Defines the size available for the shared volume.
 
 >[!NOTE]
 >
@@ -179,9 +194,9 @@ You can make the mount web accessible by adding it to the [`web`](web-property.m
 
 The `access` property indicates a minimum user role level that is allowed SSH access to the environments. The available user roles are:
 
--  `admin`—Can change settings and execute actions in the environment. Also has _contributor_ and _viewer_ rights.
--  `contributor`—Can push code to this environment and branch from the environment. Also has _viewer_ rights.
--  `viewer`—Can view the environment only.
+- `admin`—Can change settings and execute actions in the environment. Also has _contributor_ and _viewer_ rights.
+- `contributor`—Can push code to this environment and branch from the environment. Also has _viewer_ rights.
+- `viewer`—Can view the environment only.
 
 The default user role is `contributor`, which restricts the SSH access from users with only _viewer_ rights. You can change the user role to `viewer` to allow SSH access for users with only _viewer_ rights:
 
