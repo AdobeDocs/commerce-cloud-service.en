@@ -32,7 +32,7 @@ The `name` property provides the application name used in the [`routes.yaml`](..
 
 >[!WARNING]
 >
->Do not change the name of the application after it has been deployed. Doing so will result in data loss.
+>Do not change the name of the application after it has been deployed. Doing so results in data loss.
 
 ## `type` and `build`
 
@@ -129,7 +129,7 @@ Defines the persistent disk size of the application in MB.
 disk: 5120
 ```
 
-The minimal recommended disk size is 256MB. If you see the error `UserError: Error building the project: Disk size may not be smaller than 128MB`, increase the size to 256MB.
+The minimal recommended disk size is 256 MB. If you see the error `UserError: Error building the project: Disk size may not be smaller than 128MB`, increase the size to 256 MB.
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ You can make the mount web accessible by adding it to the [`web`](web-property.m
 
 >[!WARNING]
 >
->Once your site has data, do not change the `subpath` portion of the mount name. This value is the unique identifier for the files area. If you change this name, you will lose all site data stored at the old location.
+>Once your site has data, do not change the `subpath` portion of the mount name. This value is the unique identifier for the files area. If you change this name, you lose all site data stored at the old location.
 
 ## `access`
 

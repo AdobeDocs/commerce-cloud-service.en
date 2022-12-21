@@ -13,7 +13,7 @@ Use the `hooks` section to run shell commands during the build, deploy, and post
 
 -  **`post_deploy`**—Execute commands _after_ deploying your application and _after_ the container begins accepting connections. The `post_deploy` hook clears the cache and preloads (warms) the cache. You can customize the list of pages using the `WARM_UP_PAGES` variable in the [Post-deploy stage](../environment/variables-post-deploy.md). Although not required, this works in tandem with the `SCD_ON_DEMAND` environment variable.
 
-Add CLI commands under the `build`, `deploy`, or `post_deploy` sections _before_ the `ece-tools` command:
+The following example shows the default configuration in the `.magento.app.yaml` file. Add CLI commands under the `build`, `deploy`, or `post_deploy` sections _before_ the `ece-tools` command:
 
 ```yaml
 hooks:
