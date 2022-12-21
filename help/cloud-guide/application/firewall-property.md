@@ -35,7 +35,7 @@ Unless you requested `deny` for your policy, the command should show your policy
 
 ## Firewall options
 
-The following example shows all the `firewall` options that you can use to add rules for your egress filtering.
+The following example configuration in the `.magento.app.yaml` file shows all the `firewall` options that you can use to add rules for your egress filtering.
 
 ```yaml
 firewall:

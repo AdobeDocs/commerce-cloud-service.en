@@ -18,6 +18,7 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 | [`mounts`](#mounts) | Set paths | `"var": "shared:files/var"`<br>`"app/etc": "shared:files/etc"`<br>`"pub/media": "shared:files/media"`<br>`"pub/static": "shared:files/static"` | No |
 | [`name`](#name) | Define the application name | `mymagento` | Yes |
 | [`relationships`](#relationships) | Map services | `database: "mysql:mysql"`<br>`redis: "redis:redis"`<br>`opensearch: "opensearch:opensearch"` | No |
+| [`runtime`](#runtime) | Runtime property includes extensions that are required by the Commerce application. | extensions:<br>- `xsl`<br>- `newrelic`<br>- `sodium` | Yes |
 | [`type`](#type-and-build) | Set the base container image | `php:8.1` | Yes |
 | [`variables`](variables-property.md) | Apply an environment variable for a specific Commerce version | — | No |
 | [`web`](web-property.md) | Handle external requests | — | Yes |
@@ -31,7 +32,7 @@ The `name` property provides the application name used in the [`routes.yaml`](..
 
 >[!WARNING]
 >
->Do not change the name of the application after it has been deployed. Doing so will result in data loss.
+>Do not change the name of the application after it has been deployed. Doing so results in data loss.
 
 ## `type` and `build`
 
@@ -91,9 +92,9 @@ Enables you to specify dependencies that your application might need during the 
 
 Adobe Commerce supports dependencies on the following languages:
 
--  PHP
--  Ruby
--  Node.js
+- PHP
+- Ruby
+- Node.js
 
 Those dependencies are independent of the eventual dependencies of your application, and are available in the `PATH`, during the build process and in the runtime environment of your application.
 
@@ -106,6 +107,20 @@ nodejs:
    grunt-cli: "~0.3"
 ```
 
+## `runtime`
+
+Enables you to modify the PHP configuration at runtime, such as enabling extensions. The following extensions are required:
+
+```yaml
+runtime:
+    extensions:
+        - xsl
+        - newrelic
+        - sodium
+```
+
+See [PHP settings](php-settings.md) to learn more about enabling extensions.
+
 ## `disk`
 
 Defines the persistent disk size of the application in MB.
@@ -114,7 +129,7 @@ Defines the persistent disk size of the application in MB.
 disk: 5120
 ```
 
-The minimal recommended disk size is 256MB. If you see the error `UserError: Error building the project: Disk size may not be smaller than 128MB`, increase the size to 256MB.
+The minimal recommended disk size is 256 MB. If you see the error `UserError: Error building the project: Disk size may not be smaller than 128MB`, increase the size to 256 MB.
 
 >[!NOTE]
 >
@@ -162,8 +177,8 @@ The format for adding your mount to this list is as follows:
 "/public/sites/default/files": "shared:files/files"
 ```
 
--  `shared`—Shares a volume between your applications inside an environment.
--  `disk`—Defines the size available for the shared volume.
+- `shared`—Shares a volume between your applications inside an environment.
+- `disk`—Defines the size available for the shared volume.
 
 >[!NOTE]
 >
@@ -173,15 +188,15 @@ You can make the mount web accessible by adding it to the [`web`](web-property.m
 
 >[!WARNING]
 >
->Once your site has data, do not change the `subpath` portion of the mount name. This value is the unique identifier for the files area. If you change this name, you will lose all site data stored at the old location.
+>Once your site has data, do not change the `subpath` portion of the mount name. This value is the unique identifier for the files area. If you change this name, you lose all site data stored at the old location.
 
 ## `access`
 
 The `access` property indicates a minimum user role level that is allowed SSH access to the environments. The available user roles are:
 
--  `admin`—Can change settings and execute actions in the environment. Also has _contributor_ and _viewer_ rights.
--  `contributor`—Can push code to this environment and branch from the environment. Also has _viewer_ rights.
--  `viewer`—Can view the environment only.
+- `admin`—Can change settings and execute actions in the environment. Also has _contributor_ and _viewer_ rights.
+- `contributor`—Can push code to this environment and branch from the environment. Also has _viewer_ rights.
+- `viewer`—Can view the environment only.
 
 The default user role is `contributor`, which restricts the SSH access from users with only _viewer_ rights. You can change the user role to `viewer` to allow SSH access for users with only _viewer_ rights:
 

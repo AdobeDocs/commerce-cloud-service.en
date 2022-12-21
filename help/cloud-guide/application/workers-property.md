@@ -17,7 +17,7 @@ Use worker instances for background tasks including:
 -  Tasks are large enough that they risk blocking a deploy, even if they are subdivided.
 -  The task in question is a continually running process rather than a stream of discrete units of work.
 
-A basic, common worker configuration could look like this:
+A basic, common worker configuration in the `.magento.app.yaml` file could look like the following:
 
 ```yaml
 workers:
