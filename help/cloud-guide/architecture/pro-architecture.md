@@ -7,13 +7,13 @@ exl-id: d10d5760-44da-4ffe-b4b7-093406d8b702
 
 Your Adobe Commerce on cloud infrastructure Pro architecture supports multiple environments that you can use to develop, test, and launch your store.
 
--  **Integration**—Provides a single environment branch, and you can create one additional, environment branch. This allows for up to two _active_ branches deployed to Platform-as-a-Service (PaaS) containers.
+-  **Integration**—Provides a single environment branch, and you can create one additional, environment branch. This allows for up to two _active_ branches deployed to Platform as a service (PaaS) containers.
 
--  **Staging**—Provides a single environment branch deployed to dedicated Infrastructure-as-a-Service (IaaS) containers.
+-  **Staging**—Provides a single environment branch deployed to dedicated Infrastructure as a service (IaaS) containers.
 
--  **Production**—Provides a single environment branch deployed to dedicated Infrastructure-as-a-Service (IaaS) containers.
+-  **Production**—Provides a single environment branch deployed to dedicated Infrastructure as a service (IaaS) containers.
 
--  **Master**—Provides a `master` branch deployed to Platform-as-a-Service (PaaS) containers.
+-  **Master**—Provides a `master` branch deployed to Platform as a service (PaaS) containers.
 
 The following table summarizes the differences between environments:
 
@@ -38,7 +38,7 @@ Your project is a single Git repository with three, main environment branches fo
 
 ## Integration environment
 
-The Integration environment runs in a Linux container (LXC) on a grid of servers known as Platform-as-a-Service (PaaS). Each environment includes a web server and database to test your site. See [Regional IP Addresses](../project/regional-ip-addresses.md) for a list of AWS and Azure IP addresses.
+The Integration environment runs in a Linux container (LXC) on a grid of servers known as Platform as a service (PaaS). Each environment includes a web server and database to test your site. See [Regional IP Addresses](../project/regional-ip-addresses.md) for a list of AWS and Azure IP addresses.
 
 **Recommended use cases:**
 
