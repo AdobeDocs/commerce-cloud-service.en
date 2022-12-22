@@ -62,7 +62,7 @@ You can set the following configuration options for each project:
 | Option       | Description |
 | ------------ | ----------- |
 | Users        | Manage user access to project using roles and environments types. See [Manage user access](user-access.md). | 
-| Domains      | Add a domain name to the project. See [Manage domains](../cdn/setup-fastly/fastly-custom-cache-configuration.html?lang=en#manage-domains|
+| Domains      | Add a domain name to the project. See [Manage domains](../cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains).
 | Certificates | View a list of the SSL certificates associated with the project. |
 | Deploy Key   | Add and view the public key to the project code repository. |
 | Variables    | Add project-level variables that are available at build and runtime in all environments. See [Variable levels](../environment/variable-levels.md). |
