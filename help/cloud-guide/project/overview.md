@@ -59,12 +59,12 @@ Click ![configure project icon](../../assets/icon-configure.png) configure icon 
 
 You can set the following configuration options for each project:
 
-| Option       | Description |
-| ------------ | ----------- |
-| Users        | Manage user access to project using roles and environments types. See [Manage user access](user-access.md). | 
-| Domains      | Add a domain name to the project. See [Manage domains](../cdn/setup-fastly/fastly-custom-cache-configuration.md#manage-domains). |
-| Certificates | View a list of the SSL certificates associated with the project. |
-| Deploy Key   | Add and view the public key to the project code repository. |
+| Option       | Description                                                                                                                                        |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Users        | Manage user access to project using roles and environments types. See [Manage user access](user-access.md).                                        |
+| Domains      | Add a domain name to the project. See [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains).                                |
+| Certificates | View a list of the SSL certificates associated with the project.                                                                                   |
+| Deploy Key   | Add and view the public key to the project code repository.                                                                                        |
 | Variables    | Add project-level variables that are available at build and runtime in all environments. See [Variable levels](../environment/variable-levels.md). |
 
 {style="table-layout:auto"}
@@ -75,22 +75,22 @@ You can manage variables and settings for Production, Staging, and Integration e
 
 You can set the following configuration options for each environment:
 
-| Option     | Description |
-| ---------- | ----------- |
-| Settings   | Toggle different environment settings: |
-|            | **Status**: An environment can be `active` or `inactive`. Most of your work is in an active environment. After merging an environment, you can delete the environment, making it inactive. You can activate an inactive environment later. |
-|            | **Outgoing emails**: Setting this option to `On` enables support for sending emails from the environment using the SMTP protocol. See [Outgoing emails](outgoing-emails.md). |
-|            | **Indexing by search engines**: Setting this option to `On` enables the search engine visibility. |
-|            | **HTTP access control**: Setting this option to `On` enables you to configure security for the Project Web Interface using a login and IP address access control. |
-| Variables  | View, create, and manage environment variables available for the environment at runtime. See [Variable levels](../environment/variable-levels.md). |
-| Routes     | View a list of configured routes. See [Configure routes](../routes/routes-yaml.md). |
-| Users      | View a list of users granted environment level access. It is best to [Manage users with the CLI](user-access.md#manage-users-with-the-cli). |
+| Option    | Description                                                                                                                                                                                                                                |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Settings  | Toggle different environment settings:                                                                                                                                                                                                     |
+|           | **Status**: An environment can be `active` or `inactive`. Most of your work is in an active environment. After merging an environment, you can delete the environment, making it inactive. You can activate an inactive environment later. |
+|           | **Outgoing emails**: Setting this option to `On` enables support for sending emails from the environment using the SMTP protocol. See [Outgoing emails](outgoing-emails.md).                                                               |
+|           | **Indexing by search engines**: Setting this option to `On` enables the search engine visibility.                                                                                                                                          |
+|           | **HTTP access control**: Setting this option to `On` enables you to configure security for the Project Web Interface using a login and IP address access control.                                                                          |
+| Variables | View, create, and manage environment variables available for the environment at runtime. See [Variable levels](../environment/variable-levels.md).                                                                                         |
+| Routes    | View a list of configured routes. See [Configure routes](../routes/routes-yaml.md).                                                                                                                                                        |
+| Users     | View a list of users granted environment level access. It is best to [Manage users with the CLI](user-access.md#manage-users-with-the-cli).                                                                                                |
 
 {style="table-layout:auto"}
 
 >[!WARNING]
 >
->**DO NOT** use the HTTP access control method for securing Pro Staging and Production environments. This breaks Fastly caching. You must use the [Blocking](../cdn/fastly-vcl-blocking.md) feature available in the Fastly CDN for Adobe Commerce.
+>**DO NOT** use the HTTP access control method for securing Pro Staging and Production environments. This breaks Fastly caching. Instead, use the [Blocking](../cdn/fastly-vcl-blocking.md) feature available in the Fastly CDN for Adobe Commerce.
 
 ## Fastly and New Relic credentials
 
