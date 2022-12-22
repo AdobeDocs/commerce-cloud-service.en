@@ -114,7 +114,7 @@ Back-end settings provide fine tuning for Fastly performance with Origin shieldi
 
 _Origin shielding_ routes all requests for your store to a specific Point of Presence (POP). When a request is received, the POP checks for cached content and provides it. If it is not cached, it continues to the Shield POP, then to the Origin server which caches the content. The shields reduce traffic directly to the origin.
 
-The default Fastly VCL code specifies default values for Origin shielding and timeouts for your Adobe Commerce on cloud infrastructure sites. In some case, you might need to modify the default values. For example, if you are getting numerous time to first byte (TTFB) errors, you might need to adjust the _first byte timeout_ value.
+The default Fastly VCL code specifies default values for Origin shielding and timeouts for your Adobe Commerce on cloud infrastructure sites. In some case, you might need to modify the default values. For example, if you are getting numerous Time to First Byte (TTFB) errors, you might need to adjust the _first byte timeout_ value.
 
 >[!NOTE]
 >
