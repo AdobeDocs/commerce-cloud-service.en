@@ -168,15 +168,11 @@ For instructions to create custom VCL snippets, edge dictionaries, and ACLs, see
 
 ## Manage domains
 
-For both Starter and Pro projects, you can use the Domains option to add and manage the Fastly domain configuration for your store.
+For both Starter and Pro projects, you can use the [!UICONTROL Domains] option to add and manage the Fastly domain configuration for your store.
 
-- For Starter projects, go to Project URL under the Domains tab in the Project Web interface to add your Project URL.
+- For Starter projects, go to Project URL under the [!UICONTROL Domains] tab in the Project Web interface to add your Project URL.
 
-- For Pro projects, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to add the domain to your Cloud configuration before you can add the domain to your cloud configuration.
-
->[!NOTE]
->
->For Pro plan projects, submit an Adobe Commerce Support ticket to update the Fastly domain configuration for your project.
+- For Pro projects, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to add the domain to your Cloud configuration rbefore you can add the domain to your cloud configuration. Also, after you add the domain configuration to Adobe Commerce, the Support team must update the Fastly domain configuration for your project.
 
 **To manage Fastly domain configuration from the Admin**:
 
