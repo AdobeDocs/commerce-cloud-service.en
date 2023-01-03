@@ -98,7 +98,7 @@ The Fastly module includes GeoIP handling to automatically redirect visitors or 
 >
 >The current Adobe Commerce Fastly GeoIP module implementation does not support redirects between multiple websites.
 
-Fastly also provides a series of [geolocation-related VCL features](https://docs.fastly.com/guides/vcl/geolocation-related-vcl-features) for customized geolocation coding.
+Fastly also provides a series of [geolocation-related VCL features](https://developer.fastly.com/reference/vcl/variables/geolocation/) for customized geolocation coding.
 
 ## Enable Fastly Edge modules
 
@@ -114,13 +114,13 @@ Back-end settings provide fine tuning for Fastly performance with Origin shieldi
 
 _Origin shielding_ routes all requests for your store to a specific Point of Presence (POP). When a request is received, the POP checks for cached content and provides it. If it is not cached, it continues to the Shield POP, then to the Origin server which caches the content. The shields reduce traffic directly to the origin.
 
-The default Fastly VCL code specifies default values for Origin shielding and timeouts for your Adobe Commerce on cloud infrastructure sites. We recommend using the default values. In some case, you might need to modify the default values. For example, if you are getting numerous time to first byte (TTFB) errors, you might need to adjust the _first byte timeout_ value.
+The default Fastly VCL code specifies default values for Origin shielding and timeouts for your Adobe Commerce on cloud infrastructure sites. In some case, you might need to modify the default values. For example, if you are getting Time to First Byte (TTFB) errors, you might need to adjust the _first byte timeout_ value.
 
 >[!NOTE]
 >
 >If your site requires functionally delivered through a backend integration like [Wordpress](fastly-vcl-wordpress.md), customize your Fastly service configuration to add the backend and manage redirects from your Adobe Commerce store to Wordpress. For details, see [Fastly Edge Modules - Other CMS/Backend integration](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md) in the Fastly module documentation.
 
-**To review the back end setting configuration**:
+**To review the backend settings configuration**:
 
 {{admin-login-step}}
 
@@ -158,7 +158,7 @@ access the Admin without requiring additional credentials.
 
 ## Create custom VCL snippets
 
-Fastly supports a customized version of the Varnish Configuration Language (VCL) to customize the Fastly service configuration. For example, you can allow, block, or redirect access for specific users or IPs using VCL code blocks with edge and ACL dictionaries.
+Fastly supports a customized version of the Varnish Configuration Language (VCL) to customize the Fastly service configuration. For example, you can allow, block, or redirect access for specific users or IPs using VCL code blocks with edge and Access Control List (ACL) dictionaries.
 
 For instructions to create custom VCL snippets, edge dictionaries, and ACLs, see [Custom Fastly VCL snippets](fastly-vcl-custom-snippets.md).
 
@@ -168,15 +168,11 @@ For instructions to create custom VCL snippets, edge dictionaries, and ACLs, see
 
 ## Manage domains
 
-For both Starter and Pro projects, you can use the Domains option to add and manage the Fastly domain configuration for your store.
+For both Starter and Pro projects, you can use the [!UICONTROL Domains] option to add and manage the Fastly domain configuration for your store.
 
-- For Starter projects, go to Project URL under the Domains tab in the Project Web interface to add your Project URL.
+- For Starter projects, go to Project URL under the [!UICONTROL Domains] tab in the Project Web interface to add your Project URL.
 
-- For Pro projects, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to add the domain to your Cloud configuration before you can add the domain to your cloud configuration.
-
->[!NOTE]
->
->For Pro plan projects, submit an Adobe Commerce Support ticket to update the Fastly domain configuration for your project.
+- For Pro projects, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to add the domain to your cloud project configuration. The Support team also updates the Adobe Commerce Fastly account configuration to add the domain.
 
 **To manage Fastly domain configuration from the Admin**:
 
