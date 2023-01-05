@@ -19,7 +19,7 @@ A cron job is well suited for the following tasks:
 -  Or it is long, but can be easily divided into many small queued tasks.
 -  A delay between when a task is registered and when it actually happens is acceptable.
 
-By default, every Cloud project has the following default crons configuration to run the default cron jobs:
+By default, every Cloud project has the following default crons configuration in the `.magento.app.yaml` file:
 
 ```yaml
 crons:

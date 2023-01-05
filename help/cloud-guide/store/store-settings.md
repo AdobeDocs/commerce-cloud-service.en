@@ -107,7 +107,7 @@ To summarize, environment variables override all other values.
 
 If the same setting is configured in multiple places, the application relies on the following configuration hierarchy to determine which value to apply to the environment :
 
-| Priority | Configuration<br/>Method | Description |
+| Priority | Configuration<br>Method  | Description |
 | -------- | ------------------------ | ----------- |
 | 1 | Project Web Interface<br>environment variables | Values added from the _Variables_ tab of environment configuration in the Project Web Interface. We recommend specifying values here for sensitive or environment-specific configurations. Settings specified here cannot be edited from the Admin. See [Environment configuration variables](../project/overview.md#configure-environment). |
 | 2 | `.magento.app.yaml` | Values added in the `variables` section of the `.magento.app.yaml` file. We recommend specifying values here to ensure consistent configuration across all environments. **Do not specify sensitive values in the `.magento.app.yaml` file.** See [Application settings](../application/configure-app-yaml.md). |

@@ -32,7 +32,7 @@ Our default configuration allows the following:
 -  From the root (`/`) path, only web and media can be accessed
 -  From the `~/pub/static` and `~/pub/media` paths, any file can be accessed
 
-The following example shows the default configuration for a set of web-accessible locations associated with an entry in the  [`mounts` property](properties.md#mounts):
+The following example shows the default configuration in the `.magento.app.yaml` file for a set of web-accessible locations associated with an entry in the  [`mounts` property](properties.md#mounts):
 
 ```yaml
  # The configuration of app when it is exposed to the web.
