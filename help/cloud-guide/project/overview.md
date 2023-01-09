@@ -33,9 +33,21 @@ For **Starter** projects, there is a hierarchy of branches starting from `master
 
 For **Pro**, there is a hierarchy of branches starting from Production to Staging to Integration. The ![Enterprise icon](../../assets/icon-deploy.png) icon indicates that these branches deploy to a dedicated server, used by Staging and Production. Any branches you create display as children from Integration. See [Pro architecture](../architecture/pro-architecture.md).
 
+### Access site
+
 To access an environment store and admin, select a branch and click **Access Site**. A list of store URLs and SSH command display. Select the URL to view the store in that environment.
 
 ![Pro access](../../assets/pro-project-access.png)
+
+The syntax for the Integration environments is as follows:
+
+```terminal
+https://<branch>-<unique-ID>-<project-ID>.<region>.magentosite.cloud/
+```
+
+- **Unique ID** = 7 random alpha-numeric characters
+- **Project ID** = 13 character project ID
+- **Region** = AWS or Azure region name, see [Regional IP addresses](regional-ip-addresses.md)
 
 The Pro Production and Staging environments include three nodes that you can access using the following links:
 
