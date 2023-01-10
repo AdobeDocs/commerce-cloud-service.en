@@ -118,7 +118,7 @@ stage:
       consumers: []
 ```
 
-By default, the deployment process overwrites all settings in the `env.php` file. See [Manage message queues](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html) in the _Commerce Configuration Guide_ to learn how this works for on-premises Adobe Commerce and Magento Open Source.
+By default, the deployment process overwrites all settings in the `env.php` file. See [Manage message queues](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html) in the _Commerce Configuration Guide_ to learn how this works for on-premises Adobe Commerce.
 
 ## `CONSUMERS_WAIT_FOR_MAX_MESSAGES`
 
