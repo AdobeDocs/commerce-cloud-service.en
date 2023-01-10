@@ -160,7 +160,7 @@ You can retrieve the configuration data for all service relationships from the [
 
 ## Service versions
 
-Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation_ guide for a list of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases.
+Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed and tested on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation_ guide for a list of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases.
 
 ### Software EOL checks
 
