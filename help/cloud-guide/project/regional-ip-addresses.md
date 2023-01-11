@@ -7,10 +7,10 @@ exl-id: 27d8b489-7ecd-4701-ad92-06aa7cf98c8d
 
 The following tables list the incoming and outgoing IP addresses used by Adobe Commerce on cloud infrastructure [integration environments](../architecture/pro-architecture.md#integration-environment). These IP addresses are stable, but might change. We always notify customers before making any IP address changes.
 
-The URI syntax for the integration environments:
+The syntax for addressing the integration environments is as follows:
 
 ```text
-https://<branch>-<unique-ID>-<project-ID>.<region>.magentosite.cloud/
+<branch>-<unique-ID>-<project-ID>.<region>.magentosite.cloud
 ```
 
 - **Unique ID** = 7 random alpha-numeric characters

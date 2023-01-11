@@ -108,7 +108,7 @@ The Project Web Interface includes a list of Web and SSH access commands for eac
 
 1. Select an environment or branch to access.
 
-1. Click **Access site**.
+1. Click **[Access site](../project/overview.md#access-site)**.
 
 1. In the _SSH access_ section, click the clipboard button to copy the full SSH command to the clipboard.
 
@@ -125,7 +125,7 @@ The Project Web Interface includes a list of Web and SSH access commands for eac
 >For Pro Staging and Production environments, the SSH command may look like:
 >
 >```bash
->ssh <node>.<project-ID>-<environment>-<user-ID>@ssh.<region>.magento.com
+>ssh <node>.ent-<project-ID>-<environment>-<user-ID>@ssh.<region>.magento.com
 >```
 
 ## sFTP

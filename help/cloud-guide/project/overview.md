@@ -39,7 +39,7 @@ To access an environment store and admin, select a branch and click **Access Sit
 
 ![Pro access](../../assets/pro-project-access.png)
 
-The syntax for the Integration environments is as follows:
+The syntax for the addressing the integration environments is as follows:
 
 ```terminal
 https://<branch>-<unique-ID>-<project-ID>.<region>.magentosite.cloud/
