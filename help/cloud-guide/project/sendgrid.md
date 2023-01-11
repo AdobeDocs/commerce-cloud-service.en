@@ -58,7 +58,7 @@ v=spf1 include:u17504801.wl.sendgrid.net -all
 
 You can select between automated and manual security when setting up an authenticated domain. If you choose automated security, SendGrid manages your DKIM and SPF records automatically. This means that when you add a new dedicated sending IP address to your account, SendGrid updates your DNS settings and DKIM signature immediately. If you turn off automated security, you are responsible for updating your DKIM signature anytime you change your sending domain.
 
-### Example automated security enabled
+**Example automated security enabled**:
 
 ```text
 subdomain.mydomain.com. | CNAME | uxxxxxx.wl.sendgrid.net
@@ -66,7 +66,7 @@ s1._domainkey.mydomain.com. | CNAME | s1.domainkey.uxxxxxx.wl.sendgrid.net
 s2._domainkey.mydomain.com. | CNAME | s2.domainkey.uxxxxxx.wl.sendgrid.net
 ```
 
-### Example automated security disabled
+**Example automated security disabled**:
 
 ```text
 me12345.mydomain.com | MX | mx.sendgrid.net
@@ -106,4 +106,4 @@ There are no hard limits on the number of emails that can be sent in the Product
 
 ### Email sending reputation
 
- An email sending reputation is a score assigned by an Internet Service Provider (ISP) to a company sending email messages. The higher the score, the more likely an ISP delivers messages to a recipient's inbox. If the score falls below a certain level, the ISP may route messages to recipients' spam folder or even reject messages completely. The reputation score is determined by several factors such as a 30-day average of your IP addresses rank against other IP addresses and spam complaint rate. See [5 Ways to Check Your Sending Reputation](https://sendgrid.com/blog/5-ways-check-sending-reputation/).
+An email sending reputation is a score assigned by an Internet Service Provider (ISP) to a company sending email messages. The higher the score, the more likely an ISP delivers messages to a recipient's inbox. If the score falls below a certain level, the ISP may route messages to recipients' spam folder or even reject messages completely. The reputation score is determined by several factors such as a 30-day average of your IP addresses rank against other IP addresses and spam complaint rate. See [5 Ways to Check Your Sending Reputation](https://sendgrid.com/blog/5-ways-check-sending-reputation/).
