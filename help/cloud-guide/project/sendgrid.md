@@ -7,12 +7,11 @@ exl-id: 30d3c780-603d-4cde-ab65-44f73c04f34d
 
 The SendGrid Simple Mail Transfer Protocol (SMTP) proxy service provides outbound email authentication and reputation monitoring services, including support for:
 
-*  All outbound transactional emails
-*  Dedicated IP addresses
-*  Domain registration, DomainKeys Identified Mail (DKIM) signatures for email domain validation (Pro only)
-*  Up to 12,000 outbound transactional emails per month, excluding marketing campaigns
-*  Custom domain registration (Pro only)
-*  Automated integration for Starter and Pro Integration environments. Pro Production and Staging environments require manual provisioning and configuration during the Infrastructure as a Service (IaaS) hardware provisioning process
+* All outbound transactional emails
+* Dedicated IP addresses
+* Domain registration, DomainKeys Identified Mail (DKIM) signatures for email domain validation (Pro only)
+* Custom domain registration (Pro only)
+* Automated integration for Starter and Pro Integration environments. Pro Production and Staging environments require manual provisioning and configuration during the Infrastructure as a Service (IaaS) hardware provisioning process
 
 The SendGrid SMTP proxy is not intended for use as a general-purpose email server to receive incoming email or for use with email marketing campaigns.
 
@@ -22,7 +21,7 @@ The SendGrid SMTP proxy is not intended for use as a general-purpose email serve
 
 ## Enable or disable email
 
-By default, email support is disabled on Staging and Production environments. You must enable email support on an environment in order to send transactional emails, including Welcome, password reset, and two-factor authentication emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
+By default, email support is disabled on Staging and Production environments. Enable email support on an environment in order to send transactional emails, including Welcome, password reset, and two-factor authentication emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
 
 ## DomainKeys Identified Mail (DKIM)
 
@@ -30,7 +29,7 @@ DKIM is an email authentication technology that enables Internet Service Provide
 
 >[!WARNING]
 >
->The SendGrid DKIM signatures and domain authentication support is available only for Pro projects and not Starter. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider.
+>The SendGrid DKIM signatures and domain authentication support are available only for Pro projects and not Starter. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider.
 
 ## Sender and domain authentication
 
@@ -59,8 +58,7 @@ v=spf1 include:u17504801.wl.sendgrid.net -all
 
 You can select between automated and manual security when setting up an authenticated domain. If you choose automated security, SendGrid manages your DKIM and SPF records automatically. This means that when you add a new dedicated sending IP address to your account, SendGrid updates your DNS settings and DKIM signature immediately. If you turn off automated security, you are responsible for updating your DKIM signature anytime you change your sending domain.
 
-
-### Example automated security enabled:
+**Example automated security enabled**:
 
 ```text
 subdomain.mydomain.com. | CNAME | uxxxxxx.wl.sendgrid.net
@@ -68,7 +66,7 @@ s1._domainkey.mydomain.com. | CNAME | s1.domainkey.uxxxxxx.wl.sendgrid.net
 s2._domainkey.mydomain.com. | CNAME | s2.domainkey.uxxxxxx.wl.sendgrid.net
 ```
 
-### Example automated security disabled:
+**Example automated security disabled**:
 
 ```text
 me12345.mydomain.com | MX | mx.sendgrid.net
@@ -86,15 +84,15 @@ dig CNAME s1._domainkey.domain_name
 dig CNAME s2._domainkey.domain_name
 ```
 
-## Transactional email credits
+## Transactional email threshold
 
-The 12,000 transactional email threshold refers to the number of transactional email messages that you can send on a monthly basis from Pro Integration, Staging, and Production environments. The threshold is designed to protect against sending spam and potentially damaging your email reputation.
+The transactional email threshold refers to the number of transactional email messages that you can send from Pro environments within a specific time period, such as 12,000 emails per month from non-production environments. The threshold is designed to protect against sending spam and potentially damaging your email reputation.
 
-*  Transactional email credits renew on the first day of each month
-*  If you run out of credits, you can either request more credits or wait for the renewal count to reset the first day of each month
-*  There are no hard limits on the number of emails that can be sent in Production, as long as the Sender Reputation score is over 95%. The reputation is affected by the number of bounced/rejected emails and whether DNS-based spam registries have flagged your domain as a potential spam source
+There are no hard limits on the number of emails that can be sent in the Production environment, as long as the Sender Reputation score is over 95%. The reputation is affected by the number of bounced or rejected emails and whether DNS-based spam registries have flagged your domain as a potential spam source. See [Emails not sent when SendGrid credits exceeded on Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded.html) in the _Commerce Support Knowledge Base_.
 
 **To check if maximum credits are exceeded**:
+
+1. On your local workstation, change to your project directory.
 
 1. Use SSH to log in to the remote environment.
 
@@ -104,8 +102,8 @@ The 12,000 transactional email threshold refers to the number of transactional e
 
 1. Check the `/var/log/mail.log` for `authentication failed : Maxium credits exceeded` entries.
 
-If you see any `authentication failed` log entries, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a credit allotment increase.
+   If you see any `authentication failed` log entries, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a credit allotment increase.
 
-## Email sending reputation
+### Email sending reputation
 
- An email sending reputation is a score assigned by an Internet Service Provider (ISP) to a company sending email messages. The higher the score, the more likely an ISP delivers messages to a recipient's inbox. If the score falls below a certain level, the ISP may route messages to recipients' spam folder or even reject messages completely. The reputation score is determined by several factors such as a 30-day average of your IP addresses rank against other IP addresses and spam complaint rate. See [5 Ways to Check Your Sending Reputation](https://sendgrid.com/blog/5-ways-check-sending-reputation/).
+An email sending reputation is a score assigned by an Internet Service Provider (ISP) to a company sending email messages. The higher the score, the more likely an ISP delivers messages to a recipient's inbox. If the score falls below a certain level, the ISP may route messages to recipients' spam folder or even reject messages completely. The reputation score is determined by several factors such as a 30-day average of your IP addresses rank against other IP addresses and spam complaint rate. See [5 Ways to Check Your Sending Reputation](https://sendgrid.com/blog/5-ways-check-sending-reputation/).
