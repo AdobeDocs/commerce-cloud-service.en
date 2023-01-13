@@ -46,7 +46,7 @@ https://<branch>-<unique-ID>-<project-ID>.<region>.magentosite.cloud/
 ```
 
 - **Unique ID** = 7 random alpha-numeric characters
-- **Project ID** = 13 character project ID
+- **Project ID** = 13-character project ID
 - **Region** = AWS or Azure region name, see [Regional IP addresses](regional-ip-addresses.md)
 
 The Pro Production and Staging environments include three nodes that you can access using the following links:
