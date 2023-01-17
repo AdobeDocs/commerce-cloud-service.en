@@ -46,6 +46,10 @@ The main packages of this metapackage are the following:
 -  **vendor/fastly2/magento2**—This module manages the Fastly CDN and services for the Pro Staging and Production and Starter Production environments. See [Fastly services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 -  **vendor/magento/module-paypal-on-boarding**—This module provides PayPal payment gateway checkout by connecting to your PayPal merchant account. See [PayPal On-Boarding tool](../store/paypal.md).
 
+>[!TIP]
+>
+>See [Cloud packages for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud.html) in the _Commerce Release notes_ for a list of dependencies and third-party licenses.
+
 ## Gather credentials
 
 Before setting up a workspace, gather the following credentials and accounts:

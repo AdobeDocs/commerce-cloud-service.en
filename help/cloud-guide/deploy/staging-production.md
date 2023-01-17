@@ -264,7 +264,7 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
    If you have configured two-factor authentication on the target environment, it is better to exclude related 2FA tables to avoid reconfiguring it after database migration:
 
    ```bash
-   mysqldump -h <database-host> --user=<database-username> --password=<password> --single-transaction --triggers --ignore-table=tfa_user_config --ignore-table=tfa_country_codes <database name> | gzip - > /tmp/database.sql.gz
+   mysqldump -h <database-host> --user=<database-username> --password=<password> --single-transaction --triggers --ignore-table=<database-name>.tfa_user_config --ignore-table=<database-name>.tfa_country_codes <database-name> | gzip - > /tmp/database.sql.gz
    ```
 
 1. Transfer the database dump to another remote environment with the `rsync` command:
