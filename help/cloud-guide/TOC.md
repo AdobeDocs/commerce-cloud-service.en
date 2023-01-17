@@ -14,7 +14,7 @@ product: magento
     + [Pro architecture](architecture/pro-architecture.md)
     + [Pro workflow](architecture/pro-develop-deploy-workflow.md)
     + [Scaled architecture](architecture/scaled-architecture.md)
-    + [Automatic scaling](architecture/autoscaling.md)
+    + [Auto scaling](architecture/autoscaling.md)
 + Release notes {#release-notes}
     + [Cloud tools suite](release-notes/cloud-tools-suite.md)
     + [ECE-Tools package](release-notes/ece-tools-package.md)
