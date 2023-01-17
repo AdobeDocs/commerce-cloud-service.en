@@ -27,7 +27,7 @@ You can further optimize the performance of the service tier by routing traffic 
 
 ### Web tier
 
-There are three web nodes for processing requests and web traffic: **php-fpm** and **NGINX**. In addition to vertical scaling by increasing power and memory, the web tier can scale horizontally by adding web servers to an existing cluster when constricted at the PHP level.
+There are three web nodes for processing requests and web traffic: **php-fpm** and **NGINX**. In addition to vertical scaling by increasing power and memory, the web tier can scale horizontally by adding web servers to an existing cluster when constricted at the PHP level. See [Auto scaling](autoscaling.md) to learn how the web nodes scale automatically.
 
 ![Web tier scaling](../../assets/scaling-web.png)
 
