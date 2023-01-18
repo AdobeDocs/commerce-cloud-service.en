@@ -25,4 +25,8 @@ Consider the following testing types as a best practice to perform before site l
 
 -  **Security Scan**—Adobe provides a free [Security Scan Tool](../launch/overview.md#set-up-the-security-scan-tool) for your sites.
 
--  **Penetration test**—Is an authorized simulated cyber attack on a computer system designed to evaluate the security of the system. The penetration test helps to identify weaknesses or vulnerabilities, including the potential for unauthorized parties to gain access to system features and data. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) before testing.
+-  **Penetration test**—Is an authorized simulated cyber attack on a computer system designed to evaluate the security of the system. The penetration test helps to identify weaknesses or vulnerabilities, including the potential for unauthorized parties to gain access to system features and data.
+
+>[!WARNING]
+>
+>Customers are not permitted to conduct any security assessments of AWS infrastructure or the AWS services themselves. If you discover a security issue within any of the AWS services observed in your security assessment, please [contact AWS Security](mailto:aws-security@amazon.com) immediately. See [AWS Customer policies for Penetration testing](https://aws.amazon.com/security/penetration-testing/).
