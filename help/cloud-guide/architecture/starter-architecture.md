@@ -60,7 +60,8 @@ The Production and Staging environments include the following technologies. You 
 -  Fastly for HTTP caching and CDN
 -  Nginx web server speaking to PHP-FPM, one instance with multiple workers
 -  Redis server
--  Elasticsearch for searching for Adobe Commerce on cloud infrastructure 2.2 and later
+-  Elasticsearch for catalog search for Adobe Commerce on cloud infrastructure 2.2 to 2.4.3-p2
+-  OpenSearch for catalog search for Adobe Commerce on cloud infrastructure 2.3.7-p3, 2.4.3-p2, and 2.4.4 and
 -  Egress filtering (outbound firewall)
 
 ### Services
@@ -90,6 +91,8 @@ Adobe Commerce on cloud infrastructure uses the Debian GNU/Linux operating syste
 -  [RabbitMQ](../services/rabbitmq.md)
 
 -  [Elasticsearch](../services/elasticsearch.md)
+
+-  [OpenSearch](../services/opensearch.md)
 
 In the Staging and Production environments, you use Fastly for CDN and caching. When your environment is initially provisioned, we install the latest version of the Fastly CDN extension. You can upgrade the extension to get the latest bug fixes and improvements. See [Fastly CDN module for Magento 2](https://github.com/fastly/fastly-magento2). Also, you have access to [New Relic](../monitor/new-relic.md#configure-new-relic-for-starter-environments.md) for performance monitoring.
 
