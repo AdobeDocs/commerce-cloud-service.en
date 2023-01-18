@@ -29,4 +29,4 @@ Consider the following testing types as a best practice to perform before site l
 
 >[!WARNING]
 >
->Customers are not permitted to conduct any security assessments of AWS infrastructure or the AWS services themselves. If you discover a security issue within any of the AWS services observed in your security assessment, please [contact AWS Security](mailto:aws-security@amazon.com) immediately. See [AWS Customer policies for Penetration testing](https://aws.amazon.com/security/penetration-testing/).
+>Customers are not permitted to conduct any security assessments of AWS infrastructure or the AWS services themselves. If you discover a security issue within any of the AWS services observed in your security assessment, [contact AWS Security](mailto:aws-security@amazon.com) immediately. See [AWS Customer policies for Penetration testing](https://aws.amazon.com/security/penetration-testing/).
