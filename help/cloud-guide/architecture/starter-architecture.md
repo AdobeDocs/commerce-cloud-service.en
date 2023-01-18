@@ -60,8 +60,8 @@ The Production and Staging environments include the following technologies. You 
 -  Fastly for HTTP caching and CDN
 -  Nginx web server speaking to PHP-FPM, one instance with multiple workers
 -  Redis server
--  Elasticsearch for catalog search for Adobe Commerce on cloud infrastructure 2.2 to 2.4.3-p2
--  OpenSearch for catalog search for Adobe Commerce on cloud infrastructure 2.3.7-p3, 2.4.3-p2, and 2.4.4 and
+-  Elasticsearch for catalog search for Adobe Commerce 2.2 to 2.4.3-p2
+-  OpenSearch for catalog search for Adobe Commerce 2.3.7-p3, 2.4.3-p2, and 2.4.4 and later
 -  Egress filtering (outbound firewall)
 
 ### Services
