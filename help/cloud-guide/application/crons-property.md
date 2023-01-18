@@ -44,7 +44,7 @@ If your project requires custom cron jobs, you can add them to the default cron 
 
 ### crontab
 
-Adobe Commerce added an auto-crons configuration option to all Pro projects to support self-service cron configuration on Staging and Production environments using the `.magento.app.yaml` file. If this option is enabled, you can use `crontab` to review the cron configuration.
+Adobe Commerce added an auto-crons configuration option only to Pro projects to support self-service cron configuration on Staging and Production environments using the `.magento.app.yaml` file. If this option is enabled, you can use `crontab` to review the cron configuration. This is not available with Starter projects.
 
 Although you can use crontab to review configuration on Pro projects, Adobe Commerce does not use crontab to run cron jobs for sites deployed on our cloud infrastructure.
 
@@ -60,9 +60,9 @@ Although you can use crontab to review configuration on Pro projects, Adobe Comm
 
    >[!NOTE]
    >
-   >If the `crontab -l` command returns a `Command not found` error, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable the auto-crons self-service configuration option on your Adobe Commerce on cloud infrastructure project.
+   >If the `crontab -l` command returns a `Command not found` error, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable the auto-crons self-service configuration option on your Pro project.
 
-The following example shows the crontab output for an environment that has only the default `crons` configuration:
+The following example shows the `crontab` output for an environment that has only the default `crons` configuration:
 
 ```terminal
 username@hostname:~$ crontab -l
