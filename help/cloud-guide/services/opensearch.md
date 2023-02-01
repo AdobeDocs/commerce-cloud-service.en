@@ -171,7 +171,7 @@ See the [OpenSearch Project](https://github.com/opensearch-project) for more inf
 
 ### Remove plugins for OpenSearch
 
-Removing the plugin entries from the `opensearch:` section of the `.magento/services.yaml` file does **not** uninstall or disable the service as you might expect. You must reindex your OpenSearch data. This behavior is intentional to prevent possible loss or corruption of data that depends on these plugins.
+Removing the plugin entries from the `opensearch:` section of the `.magento/services.yaml` file does **not** uninstall or disable the service. To fully disable the service, you must reindex your OpenSearch data after removing the plugins from your `.magento/services.yaml` file. This design prevents the possible loss or corruption of data that depends on these plugins.
 
 **To remove OpenSearch plugins**:
 
