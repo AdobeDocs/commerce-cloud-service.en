@@ -71,13 +71,18 @@ When you install or upgrade your Adobe Commerce on cloud infrastructure project,
 
 -  **First time setup**–Confirm that the Elasticsearch version specified in the `services.yaml` file is compatible with the Elasticsearch PHP client configured for Adobe Commerce.
 
--  **Project upgrade**–Verify that the Elasticsearch PHP client in the new application version is compatible with the Elasticsearch service version installed on the Cloud infrastructure.
+-  **Project upgrade**–Verify that the Elasticsearch PHP client in the new application version is compatible with the Elasticsearch service version installed on the cloud infrastructure.
 
-Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [Service versions](services-yaml.md#service-versions).
+Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed on the cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [Service versions](services-yaml.md#service-versions).
 
 **To check Elasticsearch software compatibility**:
 
+1. On your local workstation, change to your project directory.
 1. Use SSH to log in to the remote environment.
+
+   ```bash
+   magento-cloud ssh
+   ```
 
 1. Check the Composer package version for `elasticsearch/elasticsearch`.
 
@@ -91,12 +96,14 @@ Service version and compatibility support for Adobe Commerce on cloud infrastruc
    name     : elasticsearch/elasticsearch
    descrip. : PHP Client for Elasticsearch
    keywords : client, elasticsearch, search
-   versions : * v6.7.1
+   versions : * v7.17.1
    type     : library
-   license  : Apache License 2.0 (Apache-2.0) (OSI approved) https://spdx.org    licensesApache-2.0.html#licenseText
-   source   : [git] https://github.com/elastic    elasticsearch-php.git7be453dd36d1b141b779f2cb956715f8e04ac2f4
-   dist     : [zip] https://api.github.com/repos/elastic/elasticsearch-php/zipball/     7be453dd36d1b141b779f2cb956715f8e04ac2f4 7be453dd36d1b141b779f2cb956715f8e04ac2f4
-   path     : /app/vendor/elasticsearch/elasticsearch
+   license  : Apache License 2.0 (Apache-2.0) (OSI approved) https://spdx.org/licenses/Apache-2.0.html#licenseText
+   license  : GNU Lesser General Public License v2.1 only (LGPL-2.1-only) (OSI approved) https://spdx.org/licenses/LGPL-2.1-only.html#licenseText
+   homepage :
+   source   : [git] git@github.com:elastic/elasticsearch-php.git f1b8918f411b837ce5f6325e829a73518fd50367
+   dist     : [zip] https://api.github.com/repos/elastic/elasticsearch-php/zipball/f1b8918f411b837ce5f6325e829a73518fd50367 f1b8918f411b837ce5f6325e829a73518fd50367
+   path     : ~/vendor/elasticsearch/elasticsearch
    names    : elasticsearch/elasticsearch
    ```
 
@@ -220,13 +227,13 @@ Removing the plugin entries from `elasticsearch:` in `.magento/services.yaml` do
    ```
 
 1. Commit the `.magento/services.yaml` changes to your Cloud repo.
-1. Reindex the Catalog Search index:
+1. Reindex the Catalog Search index.
 
     ```bash
     bin/magento indexer:reindex catalogsearch_fulltext
     ```
 
-1. Clean the cache:
+1. Clean the cache.
 
     ```bash
     bin/magento cache:clean

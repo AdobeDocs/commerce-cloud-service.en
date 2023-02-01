@@ -5,7 +5,9 @@ exl-id: 10dc6367-3f90-4ab6-a84e-15e8c3b32a38
 ---
 # Set up OpenSearch service
 
-The [OpenSearch](https://www.opensearch.org) service is an open-source fork of Elasticsearch 7.10.2, following the licensing changes for Elasticsearch. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) for a list of supported versions.
+The [OpenSearch](https://www.opensearch.org) service is an open-source fork of Elasticsearch 7.10.2, following the licensing changes for Elasticsearch. See the [OpenSource Project](https://github.com/opensearch-project) in GitHub.
+
+See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation Guide_ for a list of supported versions.
 
 {{elasticsearch-support}}
 
@@ -64,3 +66,143 @@ OpenSearch enables you to take data from any source, any format, and search and 
    ```
 
 {{service-change-tip}}
+
+Review from here
+
+## OpenSearch software compatibility
+
+When you install or upgrade your Adobe Commerce on cloud infrastructure project, always check for compatibility between the OpenSearch service version and the [OpenSearch PHP](https://github.com/opensearch-project/opensearch-php) client for Adobe Commerce.
+
+- **First time setup**–Confirm that the OpenSearch version specified in the `services.yaml` file is compatible with the OpenSearch PHP client configured for Adobe Commerce.
+
+- **Project upgrade**–Verify that the OpenSearch PHP client in the new application version is compatible with the OpenSearch service version installed on the cloud infrastructure.
+
+Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed on the cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [Service versions](services-yaml.md#service-versions).
+
+**To verify OpenSearch software compatibility**:
+
+1. On your local workstation, change to your project directory.
+1. Use SSH to log in to the remote environment.
+
+   ```bash
+   magento-cloud ssh
+   ```
+
+1. Retrieve the OpenSearch service connection details.
+
+   ```bash
+   vendor/bin/ece-tools env:config:show services
+   ```
+
+   In the response, find the IP address and port for the OpenSearch service endpoint:
+
+   ```terminal
+   +------------------------------------------+-------------------------------------------------------------------+
+   | opensearch:                                                                                                  |
+   +------------------------------------------+-------------------------------------------------------------------+
+   | username                                 | null                                                              |
+   | scheme                                   | http                                                              |
+   | service                                  | opensearch                                                        |
+   | fragment                                 | null                                                              |
+   | ip                                       | 169.254.220.11                                                     |
+   | hostname                                 | dzggu33f75wi3sd24lgwtoupxm.opensearch.service._.magentosite.cloud |
+   | port                                     | 9200                                                              |
+   | cluster                                  | projectID-master-4ranwui                                          |
+   | host                                     | opensearch.internal                                               |
+   | rel                                      | opensearch                                                        |
+   | path                                     | null                                                              |
+   | query                                    |                                                                   |
+   | password                                 | null                                                              |
+   | type                                     | opensearch:1.2                                                    |
+   | public                                   | false                                                             |
+   | host_mapped                              | false                                                             |
+   ```
+
+1. Retrieve the installed OpenSearch service `version:number` from the service endpoint.
+
+   ```bash
+   curl -XGET <opensearch-service-endpoint-ip-address>:9200
+   ```
+
+   ```terminal
+   {
+      "name" : "opensearch.0",
+      "cluster_name" : "opensearch",
+      "cluster_uuid" : "_yze6-ywSEW1MaAF8ZPWyQ",
+      "version" : {
+        "distribution" : "opensearch",
+        "number" : "1.2.4",
+        "build_flavor" : "default",
+        "build_type" : "deb",
+        "build_hash" : "82a8aa7",
+        "build_date" : "2023-01-23T12:07:18.760675Z",
+        "build_snapshot" : false,
+        "lucene_version" : "8.10.1",
+        "minimum_wire_compatibility_version" : "6.8.0",
+        "minimum_index_compatibility_version" : "6.0.0-beta1"
+   },
+   "tagline" : "The OpenSearch Project: https://opensearch.org/"
+   }
+   ```
+
+{{pro-update-service}}
+
+## Restart the OpenSearch service
+
+If you need to restart the OpenSearch service, you must contact Adobe Commerce support.
+
+## Additional search configuration
+
+- By default, the search configuration for Cloud environments regenerates each time you deploy. You can use the `SEARCH_CONFIGURATION` deploy variable to retain custom search settings between deployments. See [Deploy variables](../environment/variables-deploy.md#search_configuration).
+
+- After you set up the OpenSearch service for your project, use the Admin UI to test the OpenSearch connection and customize OpenSearch settings for Adobe Commerce.
+
+### Add plugins for OpenSearch
+
+Optionally, you can add plugins for OpenSearch by adding the `configuration:plugins` section to the OpenSearch service in the `.magento/services.yaml` file. For example, the following code enables the ICU analysis and Phonetic analysis plugins.
+
+```yaml
+opensearch:
+    type: opensearch:1.2
+    disk: 1024
+    configuration:
+        plugins:
+            - analysis-icu
+            - analysis-phonetic
+```
+
+See the [OpenSearch Project](https://github.com/opensearch-project) for more information on plugins.
+
+### Remove plugins for OpenSearch
+
+Removing the plugin entries from the `opensearch:` section of the `.magento/services.yaml` file does **not** uninstall or disable the service as you might expect. You must reindex your OpenSearch data. This behavior is intentional to prevent possible loss or corruption of data that depends on these plugins.
+
+**To remove OpenSearch plugins**:
+
+1. Remove the OpenSearch plugin entries from your `.magento/services.yaml` file.
+1. Add, commit, and push your code changes.
+
+   ```bash
+   git add .magento/services.yaml
+   ```
+
+   ```bash
+   git commit -m "Remove OpenSearch plugin"
+   ```
+
+   ```bash
+   git push origin <branch-name>
+   ```
+
+1. Commit the `.magento/services.yaml` changes to your cloud repository.
+1. Reindex the Catalog Search index.
+
+    ```bash
+    bin/magento indexer:reindex catalogsearch_fulltext
+    ```
+
+1. Clean the cache.
+
+    ```bash
+    bin/magento cache:clean
+    ```
