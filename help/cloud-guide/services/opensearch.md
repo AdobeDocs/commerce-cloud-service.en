@@ -7,8 +7,6 @@ exl-id: 10dc6367-3f90-4ab6-a84e-15e8c3b32a38
 
 The [OpenSearch](https://www.opensearch.org) service is an open-source fork of Elasticsearch 7.10.2, following the licensing changes for Elasticsearch. See the [OpenSource Project](https://github.com/opensearch-project) in GitHub.
 
-See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation Guide_ for a list of supported versions.
-
 {{elasticsearch-support}}
 
 OpenSearch enables you to take data from any source, any format, and search and visualize it in real time.
@@ -67,8 +65,6 @@ OpenSearch enables you to take data from any source, any format, and search and 
 
 {{service-change-tip}}
 
-Review from here
-
 ## OpenSearch software compatibility
 
 When you install or upgrade your Adobe Commerce on cloud infrastructure project, always check for compatibility between the OpenSearch service version and the [OpenSearch PHP](https://github.com/opensearch-project/opensearch-php) client for Adobe Commerce.
@@ -77,7 +73,7 @@ When you install or upgrade your Adobe Commerce on cloud infrastructure project,
 
 - **Project upgrade**–Verify that the OpenSearch PHP client in the new application version is compatible with the OpenSearch service version installed on the cloud infrastructure.
 
-Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed on the cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [Service versions](services-yaml.md#service-versions).
+Service version and compatibility support is determined by versions tested and deployed on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation Guide_ for a list of supported versions.
 
 **To verify OpenSearch software compatibility**:
 
@@ -97,25 +93,25 @@ Service version and compatibility support for Adobe Commerce on cloud infrastruc
    In the response, find the IP address and port for the OpenSearch service endpoint:
 
    ```terminal
-   +------------------------------------------+-------------------------------------------------------------------+
-   | opensearch:                                                                                                  |
-   +------------------------------------------+-------------------------------------------------------------------+
-   | username                                 | null                                                              |
-   | scheme                                   | http                                                              |
-   | service                                  | opensearch                                                        |
-   | fragment                                 | null                                                              |
-   | ip                                       | 169.254.220.11                                                     |
-   | hostname                                 | dzggu33f75wi3sd24lgwtoupxm.opensearch.service._.magentosite.cloud |
-   | port                                     | 9200                                                              |
-   | cluster                                  | projectID-master-4ranwui                                          |
-   | host                                     | opensearch.internal                                               |
-   | rel                                      | opensearch                                                        |
-   | path                                     | null                                                              |
-   | query                                    |                                                                   |
-   | password                                 | null                                                              |
-   | type                                     | opensearch:1.2                                                    |
-   | public                                   | false                                                             |
-   | host_mapped                              | false                                                             |
+   +------------------------------------------+--------------------------------------------------------+
+   | opensearch:                                                                                       |
+   +------------------------------------------+--------------------------------------------------------+
+   | username                                 | null                                                   |
+   | scheme                                   | http                                                   |
+   | service                                  | opensearch                                             |
+   | fragment                                 | null                                                   |
+   | ip                                       | 169.254.220.11                                         |
+   | hostname                                 | hostf75wi3sd24l.opensearch.service._.magentosite.cloud |
+   | port                                     | 9200                                                   |
+   | cluster                                  | projectID-master-4ranwui                               |
+   | host                                     | opensearch.internal                                    |
+   | rel                                      | opensearch                                             |
+   | path                                     | null                                                   |
+   | query                                    |                                                        |
+   | password                                 | null                                                   |
+   | type                                     | opensearch:1.2                                         |
+   | public                                   | false                                                  |
+   | host_mapped                              | false                                                  |
    ```
 
 1. Retrieve the installed OpenSearch service `version:number` from the service endpoint.
