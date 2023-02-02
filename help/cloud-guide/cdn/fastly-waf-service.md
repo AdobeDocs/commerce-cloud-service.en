@@ -40,7 +40,7 @@ The WAF service filters HTTP and HTTPS traffic (GET and POST requests) against t
 
 When the WAF service is enabled, it filters all web and admin traffic against the WAF rules and blocks any web request that triggers a rule. When a request is blocked, the requestor sees a default `403 Forbidden` error page that includes a reference ID for the blocking event.
 
-![WAF error page]
+![WAF error page](../../assets/cdn/fastly-waf-403-error.png)
 
 You can customize this error response page from the Admin. See [Customize the WAF response page](fastly-custom-response.md#customize-the-waf-error-page).
 
@@ -63,5 +63,3 @@ The standard WAF service powered by Fastly does not support the following featur
 Although the WAF service does not allow you to block or allow traffic based on IP addresses, you can add access control lists (ACL) and custom VCL snippets to your Fastly service to specify the IP addresses and VCL logic for blocking or allowing traffic. See [Custom Fastly VCL snippets](fastly-vcl-custom-snippets.md).
 
 Filtering for TCP, UDP, or ICMP requests is not supported by the WAF service. However, this functionality is provided by the built-in DDoS protection included with the Fastly CDN service. See [DDoS protection](fastly.md#ddos-protection).
-
-[WAF error page]: ../../assets/cdn/fastly-waf-403-error.png
