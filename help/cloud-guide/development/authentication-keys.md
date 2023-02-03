@@ -46,7 +46,7 @@ The authentication file method is ideal when using Cloud Docker for Commerce as 
 
 ## Composer auth environment variable
 
-The following method is best to prevent accidental exposure of sensitive credentials in a public Git-based repository.
+The following method is the best way to prevent accidental exposure of sensitive credentials in a public Git-based repository.
 
 **To add authentication keys using an environment variable**:
 
