@@ -29,7 +29,7 @@ DKIM is an email authentication technology that enables Internet Service Provide
 
 >[!WARNING]
 >
->The SendGrid DKIM signatures and domain authentication support are available only for Pro projects and not Starter. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider.
+>The SendGrid DKIM signatures and domain authentication support are available only for Pro projects and not Starter. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) in the _Admin Systems guide_.
 
 ## Sender and domain authentication
 
