@@ -333,5 +333,5 @@ Adobe recommends fully testing in the Staging environment before pushing to the 
 
 <!-- link definitions -->
 
-[addstorecode]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html#step-6%3A-add-the-store-code-to-the-base-url
+[addstorecode]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html
 [config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html
