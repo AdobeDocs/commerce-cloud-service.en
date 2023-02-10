@@ -21,7 +21,7 @@ The following instructions use a combination of `magento-cloud` CLI commands and
 >
 >Some Git commands cannot complete an action in your Adobe Commerce on cloud infrastructure project. For example, you can create a branch using a Git command, but you cannot create and activate a new environment. You must create an environment using the `magento-cloud environment:branch <branch-name>` command for the environment to become _active_. Alternatively, you can use the Project Web Interface to create active environments. See [Cloud CLI reference](../dev-tools/cloud-cli.md#git-commands).
 
-**To clone a project master environment**:
+**To clone a project `master` environment**:
 
 1. Log in to your local workstation with a [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) account.
 

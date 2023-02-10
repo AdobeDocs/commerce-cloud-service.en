@@ -173,4 +173,4 @@ Adobe recommends creating a snapshot of the environment and a backup of the data
 
 If you must restore a snapshot specifically to remove new code and added extensions, the process can be complicated depending on the number of changes and when you roll back. Some rollbacks might require database changes.
 
-Specifically for code, you should investigate reverting code changes from your branch before redeploying. If not, every deploy pushes the master branch (code and extensions) to the target environment again. See the [Deployment Process](../deploy/process.md).
+Specifically for code, you should investigate reverting code changes from your branch before redeploying. If not, every deploy pushes the `master` branch (code and extensions) to the target environment again. See the [Deployment Process](../deploy/process.md).
