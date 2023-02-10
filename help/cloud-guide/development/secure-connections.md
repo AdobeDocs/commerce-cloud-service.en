@@ -204,8 +204,8 @@ magento-cloud tunnel:info -e <environment-ID>
 
 ### Connect to services
 
-Now you can connect to services as if running locally. For example, to connect to the database, use the following command:
+After establishing an SSH tunnel, you can connect to services as if running locally. For example, to connect to the database, use the following command:
 
 ```bash
-mysql --host=127.0.0.1 --user='<database username>' --pass='<user password>' --database='<name>' --port='<port>'
+mysql --host=127.0.0.1 --user='<database-username>' --pass='<user-password>' --database='<name>' --port='<port>'
 ```

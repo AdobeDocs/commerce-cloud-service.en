@@ -124,7 +124,7 @@ You can create a copy of your database using the `ece-tools db-dump` command. By
 You can choose to back up selected databases by appending the database names to the command, for example:
 
 ```bash
-php vendor/bin/ece-tools -- main sales
+php vendor/bin/ece-tools db-dump -- main sales
 ```
 
 Consider the following guidelines:
@@ -134,7 +134,7 @@ Consider the following guidelines:
 -  If an error occurs during the dump operation, the command deletes the dump file to conserve disk space. Review the logs for details (`var/log/cloud.log`).
 -  For Pro Production environments, this command dumps only from one of three high-availability nodes, so production data written to a different node during the dump might not be copied. The command generates a `var/dbdump.lock` file to prevent the command from running on more than one node.
 
-For help, use the command: `php vendor/bin/ece-tools db-dump --help`
+For help, use: `php vendor/bin/ece-tools db-dump --help`
 
 **To create a database dump in the Staging or Production environment**:
 

@@ -225,11 +225,13 @@ See [rsync](https://linux.die.net/man/1/rsync) help.
 >
 >Database import and export operations can take a long time, which can affect site performance and availability. Schedule import and export operations during off-peak hours to prevent slow performance or outages on Production sites.
 
+>[!BEGINSHADEBOX]
 **Prerequisite:** A database dump (see Step 3) should include database triggers. For dumping them, confirm you have the [TRIGGER privilege](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_trigger).
 
 **Important:** The integration environment database is strictly for development testing and can include data that you do not want to migrate into Staging and Production.
 
 For continuous integration deployments, Adobe **does not recommend** migrating data from Integration to Staging and Production. You could pass testing data or overwrite important data. Any vital configurations are passed using the [configuration file](../store/store-settings.md) and `setup:upgrade` command during build and deploy.
+ >[!ENDSHADEBOX]
 
 Adobe **recommends** migrating data from Production into Staging to fully test your site and store in a near-production environment with all services and settings.
 
@@ -237,29 +239,37 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
 >
 >To transfer media from remote-to-remote environments directly you must enable ssh agent forwarding, see [GitHub guidance](https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding).
 
-**To migrate a database**:
+### Back up the database
 
-1. SSH into the environment you want to create a database dump from:
+**To dump a database**:
+
+1. Use SSH to log in to the remote environment.
 
    ```bash
-   ssh -A <environment-ssh-link@ssh.region.magento.cloud>
+   magento-cloud ssh
    ```
 
-1. List the environment relationships to find the database login information:
+1. List the environment relationships to find the database login information.
 
    ```bash
    php -r 'print_r(json_decode(base64_decode($_ENV["MAGENTO_CLOUD_RELATIONSHIPS"]))->database);'
    ```
 
-1. Create a database dump file in GZIP format:
+1. Create a backup of the database. To choose a target directory for the DB dump, use the `--dump-directory` option.
+
+   For Starter environments and Pro Integration environments, use `main` as the name of the database:
+
+   ```bash
+   php vendor/bin/ece-tools db-dump -- main
+   ```
+
+   For Pro Staging and Production, the name of the database is in the `MAGENTO_CLOUD_RELATIONSHIPS` variable (typically the same as the application name and username).
+
+1. Though the Ece-tools method is preferred, another method is to create a database dump file using native MySQL and  in GZIP format.
 
    ```bash
    mysqldump -h <database-host> --user=<database-username> --password=<password> --single-transaction --triggers <database-name> | gzip - > /tmp/database.sql.gz
    ```
-
-   For Starter environments and Pro Integration environments, use `main` as the name of the database.
-
-   For Pro Staging and Production, the name of the database is in the `MAGENTO_CLOUD_RELATIONSHIPS` variable (typically the same as the application name and username).
 
    If you have configured two-factor authentication on the target environment, it is better to exclude related 2FA tables to avoid reconfiguring it after database migration:
 
@@ -267,28 +277,58 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
    mysqldump -h <database-host> --user=<database-username> --password=<password> --single-transaction --triggers --ignore-table=<database-name>.tfa_user_config --ignore-table=<database-name>.tfa_country_codes <database-name> | gzip - > /tmp/database.sql.gz
    ```
 
-1. Transfer the database dump to another remote environment with the `rsync` command:
-
-   ```bash
-   rsync -azvP /tmp/database.sql.gz <destination-environment-ssh-link@ssh.region.magento.cloud>:/tmp
-   ```
-
 1. Type `logout` to terminate the SSH connection.
 
-1. Open an SSH connection to the environment that you want to migrate the database into:
+### Drop and re-create the database
+
+When importing data, you need to drop and create a database. It is a best practice to [create a backup](../storage/snapshots.md#dump-your-database) of the database.
+
+**To drop and re-create the database**:
+
+1. Establish a [SSH tunnel](../development/secure-connections.md#ssh-tunneling) to the remote environment.
+
+1. Connect to the database service.
 
    ```bash
-   ssh -A <destination-environment-ssh-link@ssh.region.magento.cloud>
+   mysql --host=127.0.0.1 --user='<database-username>' --pass='<user-password>' --database='<name>' --port='<port>'
    ```
 
-1. Import the database dump:
+1. At the `MariaDB [main]>` prompt, drop the database.
 
-   ```bash
-   zcat /tmp/database.sql.gz | mysql -h <database-host> -u <username> -p<password> <database-name>
+   For Starter and Pro integration:
+
+   ```shell
+   drop database main;
    ```
 
-   The following example references the GZIP file created by the database dump operation:
+   For Production:
 
-   ```bash
-   zcat /tmp/database.sql.gz | mysql -h database.internal -u user -ppassword main
+   ```shell
+   drop database <cluster-id>;
+   ```
+
+   For Staging:
+
+   ```shell
+   drop database <cluster-ID_stg>;
+   ```
+
+1. Re-create the database.
+
+   For Starter and Pro integration:
+
+   ```shell
+   create database main;
+   ```
+
+   Import for Production:
+
+   ```shell
+   zcat <cluster-ID>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <database-username> <database-name>;
+   ```
+
+   Import for Staging:
+
+   ```shell
+   zcat <cluster-ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <database-username> <database-name>;
    ```
