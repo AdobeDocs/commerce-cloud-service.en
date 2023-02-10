@@ -68,7 +68,7 @@ Before setting up a workspace, gather the following credentials and accounts:
 
 ## Launch a Docker environment
 
-You can use the Docker environment to emulate the Adobe Commerce on cloud infrastructure Integration environment for local development. You need three essential components: an Adobe Commerce v2 template, Docker Compose, and Adobe Commerce on cloud infrastructure `ece-tools` package.
+You can use the Cloud Docker for Commerce tool to emulate the Adobe Commerce on cloud infrastructure production and development environments for local development:
 
 -  [Docker architecture and common commands](../dev-tools/cloud-docker.md)
 -  [Launch Docker development environment](https://developer.adobe.com/commerce/cloud-tools/docker/setup/)
