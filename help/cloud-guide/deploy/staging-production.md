@@ -5,19 +5,19 @@ exl-id: 4b82289f-ee04-4b14-a0ed-7a8a19fc6a6a
 ---
 # Deploy to Staging and Production
 
-The process for deploying and going live begins with development, continues to Staging, and ends with going live in Production. To provide the best experience for developing, testing, and deploying your store with consistent configurations we provide an end-to-end environment solution. Every environment supports direct URL access to the storefront and Admin and SSH access for CLI commands.
+The process for deploying and going live begins with development, continues to Staging, and ends with going live in Production. Adobe provides an end-to-end environment solution to ensure consistent configurations. Every environment supports direct URL access to the storefront and Admin and SSH access for CLI commands.
 
 When you are ready to deploy your store, you must complete deployment and testing on the Staging environment before deploying to Production. This section provides in-depth instructions and information on the build and deploy process, migrating data and content, and testing.
 
 ## Starter deployment flow
 
-We recommend creating a `staging` branch from the `master` branch to best support your Starter plan development and deployment. With this in place, you have two of your four active environments ready: `master` for Production and `staging` for Staging.
+Adobe recommends creating a `staging` branch from the `master` branch to best support your Starter plan development and deployment. With this in place, you have two of your four active environments ready: `master` for Production and `staging` for Staging.
 
 For detailed information of the process, see [Starter Develop and Deploy Workflow](../architecture/starter-develop-deploy-workflow.md).
 
 ## Pro deployment flow
 
-Pro comes with a large Integration environment with two active branches, a global `master` branch, Staging, and Production branches. When you create your project, code is ready to branch, develop, and push for building and deploying your site. Although the Integration environment can have many branches, Staging and Production have only one branch for each environment.
+Pro comes with a large integration environment with two active branches, a global `master` branch, Staging, and Production branches. When you create your project, code is ready to branch, develop, and push for building and deploying your site. Although the integration environment can have many branches, Staging and Production have only one branch for each environment.
 
 For detailed information of the process, see [Pro Develop and Deploy Workflow](../architecture/pro-develop-deploy-workflow.md).
 
@@ -55,15 +55,15 @@ The Project Web Interface provides features to create, manage, and deploy code i
 
 The Cloud CLI provides commands to deploy code. You need SSH and Git access to your project.
 
-#### Step 1:  Deploy and test the Integration environment
+#### Step 1:  Deploy and test the integration environment
 
-1. After logging into the project, check out the Integration environment:
+1. After logging into the project, check out the integration environment:
 
    ```bash
    magento-cloud environment:checkout <environment-ID>
    ```
 
-1. Synchronize your local Integration environment with the remote environment:
+1. Synchronize your local integration environment with the remote environment:
 
    ```bash
    magento-cloud environment:synchronize <environment-ID>
@@ -105,7 +105,7 @@ The Cloud CLI provides commands to deploy code. You need SSH and Git access to y
    magento-cloud snapshot: create -e <environment-ID>
    ```
 
-1. Merge the Integration environment to Staging to deploy:
+1. Merge the integration environment to Staging to deploy:
 
    ```bash
    magento-cloud environment:merge <integration-ID>
@@ -127,7 +127,7 @@ The Cloud CLI provides commands to deploy code. You need SSH and Git access to y
 
 ## Migrate static files
 
-[Static files](https://glossary.magento.com/static-files) are stored in `mounts`. There are two methods for migrating files from a source mount location, such as your local environment, to a destination mount location. Both methods use the `rsync` utility, but we recommend using the `magento-cloud` CLI for moving files between the local and remote environment. And we recommend using the `rsync` method when moving files from a remote source to a different remote location.
+[Static files](https://glossary.magento.com/static-files) are stored in `mounts`. There are two methods for migrating files from a source mount location, such as your local environment, to a destination mount location. Both methods use the `rsync` utility, but Adobe recommends using the `magento-cloud` CLI for moving files between the local and remote environment. And Adobe recommends using the `rsync` method when moving files from a remote source to a different remote location.
 
 ### Migrate files using the CLI
 
@@ -193,7 +193,7 @@ This command uses the following options:
 -  `v`–verbose
 -  `P`–partial progress
 
-See the [rsync man page](https://linux.die.net/man/1/rsync).
+See [rsync](https://linux.die.net/man/1/rsync) help.
 
 >[!NOTE]
 >
@@ -227,9 +227,9 @@ See the [rsync man page](https://linux.die.net/man/1/rsync).
 
 **Prerequisite:** A database dump (see Step 3) should include database triggers. For dumping them, confirm you have the [TRIGGER privilege](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_trigger).
 
-**Important:** The Integration environment database is strictly for development testing and can include data that you do not want to migrate into Staging and Production.
+**Important:** The integration environment database is strictly for development testing and can include data that you do not want to migrate into Staging and Production.
 
-For continuous integration deployments, we **do not recommend** migrating data from Integration to Staging and Production. You could pass testing data or overwrite important data. Any vital configurations are passed using the [configuration file](../store/store-settings.md) and `setup:upgrade` command during build and deploy.
+For continuous integration deployments, Adobe **does not recommend** migrating data from Integration to Staging and Production. You could pass testing data or overwrite important data. Any vital configurations are passed using the [configuration file](../store/store-settings.md) and `setup:upgrade` command during build and deploy.
 
 Adobe **recommends** migrating data from Production into Staging to fully test your site and store in a near-production environment with all services and settings.
 
