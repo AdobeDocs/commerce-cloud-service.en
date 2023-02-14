@@ -72,7 +72,7 @@ Use the following configuration fragments in your own `.magento.app.yaml` config
 build:
     flavor: none
 
-# 2. Add composer ^2.0 as a php dependency.
+# 2. Add Composer ^2.0 as a php dependency.
 dependencies:
     php:
         composer/composer: '^2.0'
