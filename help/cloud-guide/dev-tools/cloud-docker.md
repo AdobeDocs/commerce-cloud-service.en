@@ -9,7 +9,7 @@ Cloud Docker for Commerce is part of the [Cloud Tools Suite](../release-notes/cl
 
 ## Local development
 
-The Docker environment emulates the Adobe Commerce on cloud infrastructure Integration environment for convenient local development and testing. You need three essential components:
+The Docker environment emulates the Adobe Commerce on cloud infrastructure `integration` environment for convenient local development and testing. You need three essential components:
 
 1. [Adobe Commerce v2 cloud project files](../project/file-structure.md)
 1. [Docker Compose](https://www.docker.com/get-started/)
