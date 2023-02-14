@@ -188,10 +188,10 @@ rsync -azvP <source> <destination>
 
 This command uses the following options:
 
--  `a`–archive
--  `z`–compress files during the migration
--  `v`–verbose
--  `P`–partial progress
+- `a`–archive
+- `z`–compress files during the migration
+- `v`–verbose
+- `P`–partial progress
 
 See [rsync](https://linux.die.net/man/1/rsync) help.
 
@@ -233,7 +233,7 @@ See [rsync](https://linux.die.net/man/1/rsync) help.
 
 For continuous integration deployments, Adobe **does not recommend** migrating data from Integration to Staging and Production. You could pass testing data or overwrite important data. Any vital configurations are passed using the [configuration file](../store/store-settings.md) and `setup:upgrade` command during build and deploy.
 
- >[!ENDSHADEBOX]
+>[!ENDSHADEBOX]
 
 Adobe **recommends** migrating data from Production into Staging to fully test your site and store in a near-production environment with all services and settings.
 

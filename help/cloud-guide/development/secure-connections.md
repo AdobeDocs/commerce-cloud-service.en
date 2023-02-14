@@ -5,14 +5,14 @@ exl-id: b5780e8e-e3da-4b10-8ca3-2778085acd4a
 ---
 # Secure connections to remote environments
 
-Secure Shell (SSH) is a common protocol used to securely log into remote servers and systems. You can use SSH to access your remote environments for managing the Adobe Commerce application and accessing remote environment logs. We also support Secure FTP (sFTP) using your SSH public key.
+Secure Shell (SSH) is a common protocol used to securely log into remote servers and systems. You can use SSH to access your remote environments for managing the Adobe Commerce application and accessing remote environment logs. Adobe supports Secure FTP (sFTP) using your SSH public key.
 
 ## Generate an SSH key pair
 
-You must create an SSH key pair on every machine and workspace that requires access to your project source code and environments. The SSH key allows you to connect to GitHub to manage source code and to connect to cloud servers without having to constantly supply your username and password. See [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) for further instructions on creating an SSH key pair. 
+Create an SSH key pair on every machine and workspace that requires access to your project source code and environments. The SSH key allows you to connect to GitHub to manage source code and to connect to cloud servers without having to constantly supply your username and password. See [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) for further instructions on creating an SSH key pair. 
 
--  The _public key_ is safe to provide for accessing a site, SSH, and sFTP.
--  The _private key_ remains private on the workstation.
+- The _public key_ is safe to provide for accessing a site, SSH, and sFTP.
+- The _private key_ remains private on the workstation.
 
 >[!CAUTION]
 >
@@ -20,7 +20,7 @@ You must create an SSH key pair on every machine and workspace that requires acc
 
 ## Add an SSH public key to your account
 
-You must add your SSH public key to your Adobe Commerce on cloud infrastructure account. After you add the key, redeploy all active environments on your account to install the key.
+After you add your SSH public key to your Adobe Commerce on cloud infrastructure account, redeploy all active environments on your account to install the key.
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ You must add your SSH public key to your Adobe Commerce on cloud infrastructure 
 
 You can add SSH keys to your account using one of the following methods:
 
--  Cloud CLI
--  Project Web Interface
--  Cloud account console
+- Cloud CLI
+- Project Web Interface
+- Cloud account console
 
 ### Add your SSH key using the Cloud CLI
 
@@ -82,7 +82,7 @@ You can connect to a remote environment using the `magento-cloud` CLI or an SSH 
 
 ### Use the Cloud CLI
 
-**To log in to a remote Integration environment**:
+**To log in to a remote integration environment**:
 
 1. On your local workstation, change to your project directory.
 
@@ -138,17 +138,17 @@ Adobe Commerce on cloud infrastructure supports accessing your environments usin
 
 When configuring sFTP, use the information from your SSH access environment command: `<project-id>-<environment-id>--<app-name>@ssh<cloud-host>`
 
--  **Username**: All content before the `@` in your SSH access destination.
--  **Password**: You do not need a password for sFTP. sFTP access uses the SSH key based authentication.
--  **Host**: All content after the `@` in your SSH access.
--  **Port**: 22, which is the default SSH port.
--  **SSH** Private Key: If necessary, provide the location of your private key to the sFTP client. By default, private keys are stored in the `~/.ssh` directory.
+- **Username**: All content before the `@` in your SSH access destination.
+- **Password**: You do not need a password for sFTP. sFTP access uses the SSH key based authentication.
+- **Host**: All content after the `@` in your SSH access.
+- **Port**: 22, which is the default SSH port.
+- **SSH** Private Key: If necessary, provide the location of your private key to the sFTP client. By default, private keys are stored in the `~/.ssh` directory.
 
 Depending on the client, you may need to enter additional options and setup to complete SSH authentication for sFTP. Review the documentation for your selected client.
 
 For **Starter environments and Pro Integration environments**, you may also want to consider [adding a `mount`](../application/properties.md#mounts) for access to a specific directory. You would add the mount to your `.magento.app.yaml` file. For a list of writable directories, see [Project structure](../project/file-structure.md). This mount point only works in those environments.
 
-For **Pro Staging and Production environments**, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request sFTP access. We can create a mount point and provide access to the specific `pub/media` folder.
+For **Pro Staging and Production environments**, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request sFTP access and a mount point for access to the specific `pub/media` folder.
 
 ## SSH tunneling
 
