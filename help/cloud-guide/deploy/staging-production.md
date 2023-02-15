@@ -197,7 +197,7 @@ See [rsync](https://linux.die.net/man/1/rsync) help.
 
 >[!NOTE]
 >
->To transfer media from remote-to-remote environments directly, you must enable SSH agent forwarding, see [GitHub guidance](https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding).
+>To transfer media from remote-to-remote environments directly, you must enable SSH agent forwarding, see [GitHub guidance](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding).
 
 **To migrate static files from remote-to-remote environments directly (fast approach)**:
 
@@ -239,7 +239,7 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
 
 >[!NOTE]
 >
->To transfer media from remote-to-remote environments directly you must enable ssh agent forwarding, see [GitHub guidance](https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding).
+>To transfer media from remote-to-remote environments directly you must enable ssh agent forwarding, see [GitHub guidance](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding).
 
 ### Back up the database
 
