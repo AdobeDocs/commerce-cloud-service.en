@@ -13,18 +13,18 @@ The Pro Staging and Production environments receive regular backups for disaster
 >
 >Snapshots for Starter and Pro Integration environments are different from Pro backup and disaster recovery backups. Snapshots are **not** automatic. It is _your_ responsibility to manually create a snapshot or set up a cron job to periodically take snapshots of your Starter or Pro Integration environments.
 
-A _snapshot_ is a complete backup of an environment that includes all persistent data from all running services (for example, your MySQL database, Redis, and so on) and any files stored on the mounted volumes. Because an environment deploys as a read-only file system, restoring a snapshot is very fast.
+A _snapshot_ is a complete backup of an environment that includes all persistent data from all running services (for example, your MySQL database, Redis, and so on) and any files stored on the mounted volumes. Because an environment deploys as a read-only file system, restoring a snapshot is fast.
 
 >[!WARNING]
 >
->If you want to rollback to previous code or remove added extensions in an environment, restoring a snapshot is not the recommended method. See [Rollbacks to remove code](#rollbacks-to-remove-code). If you must restore an unstable environment that does not have a snapshot, see [Restore an environment](../development/restore-environment.md).
+>If you want to roll back to previous code or remove added extensions in an environment, restoring a snapshot is not the recommended method. See [Rollbacks to remove code](#rollbacks-to-remove-code). If you must restore an unstable environment that does not have a snapshot, see [Restore an environment](../development/restore-environment.md).
 
 You have up to **seven days** to _restore_ a snapshot.
 
 Adobe provides two methods for creating and managing snapshots:
 
--  Project Web Interface
--  Cloud CLI
+- Project Web Interface
+- Cloud CLI
 
 ## Create a snapshot
 
@@ -38,7 +38,7 @@ Adobe provides two methods for creating and managing snapshots:
 **To create a snapshot using the `magento-cloud` CLI**:
 
 1. Open a terminal and navigate to your project.
-1. Checkout the environment branch to snapshot.
+1. Check out the environment branch to snapshot.
 1. Create the snapshot.
 
    ```bash
@@ -86,7 +86,7 @@ Adobe provides two methods for creating and managing snapshots:
 **To restore a snapshot using the Cloud CLI**:
 
 1. Open a terminal and navigate to your project.
-1. Checkout the environment branch to restore.
+1. Check out the environment branch to restore.
 1. List all available snapshots.
 
    ```bash
@@ -129,10 +129,10 @@ php vendor/bin/ece-tools db-dump -- main sales
 
 Consider the following guidelines:
 
--  For Production environments, Adobe recommends completing database dump operations during off-peak hours to minimize service disruptions that occur when the site is in maintenance mode.
--  The `db-dump` command creates an archive in your remote project directory called  `dump-<timestamp>.sql.gz`.
--  If an error occurs during the dump operation, the command deletes the dump file to conserve disk space. Review the logs for details (`var/log/cloud.log`).
--  For Pro Production environments, this command dumps only from one of three high-availability nodes, so production data written to a different node during the dump might not be copied. The command generates a `var/dbdump.lock` file to prevent the command from running on more than one node.
+- For Production environments, Adobe recommends completing database dump operations during off-peak hours to minimize service disruptions that occur when the site is in maintenance mode.
+- The `db-dump` command creates an archive in your remote project directory called  `dump-<timestamp>.sql.gz`.
+- If an error occurs during the dump operation, the command deletes the dump file to conserve disk space. Review the logs for details (`var/log/cloud.log`).
+- For Pro Production environments, this command dumps only from one of three high-availability nodes, so production data written to a different node during the dump might not be copied. The command generates a `var/dbdump.lock` file to prevent the command from running on more than one node.
 
 For help, use: `php vendor/bin/ece-tools db-dump --help`
 
@@ -169,8 +169,8 @@ For help, use: `php vendor/bin/ece-tools db-dump --help`
 
 ## Rollbacks to remove code
 
-Adobe recommends creating a snapshot of the environment and a backup of the database prior to deployments.
+Adobe recommends creating a snapshot of the environment and a backup of the database before deployments.
 
 If you must restore a snapshot specifically to remove new code and added extensions, the process can be complicated depending on the number of changes and when you roll back. Some rollbacks might require database changes.
 
-Specifically for code, you should investigate reverting code changes from your branch before redeploying. If not, every deploy pushes the master branch (code and extensions) to the target environment again. See the [Deployment Process](../deploy/process.md).
+Specifically for code, you should investigate reverting code changes from your branch before redeploying. If not, every deploy pushes the `master` branch (code and extensions) to the target environment again. See the [Deployment Process](../deploy/process.md).
