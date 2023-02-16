@@ -18,6 +18,27 @@ For more information about customizing the build and deploy process:
 - [Deployment configuration](configure-env-yaml.md)
 - [Deployment process](../deploy/process.md)
 
+## `ENABLE_EVENTING`
+
+-  **Default**-_Not set_
+-  **Version**—Adobe Commerce 2.4.5 and later
+
+When set to `true`, enables cron to run message queue consumers. [Adobe I/O Events for Adobe Commerce](https://developer.adobe.com/commerce/events/get-started/) uses message queues to expedite the delivery of critical events.
+
+The `ENABLE_EVENTING` variable requires that the `deploy` stage of the `.magento.env.yaml` file contain the [`CRON_CONSUMERS_RUNNER`](./variables-deploy.md#cron_consumers_runner) variable with `cron_run` set to true. The following example shows a fully-configured `ENABLE_EVENTING` variable.
+
+
+```yaml
+stage:
+  global:
+    ENABLE_EVENTING: true
+  deploy:
+    CRON_CONSUMERS_RUNNER:
+      cron_run: true
+      max_messages: 0
+      consumers: []
+```
+
 ## `MIN_LOGGING_LEVEL`
 
 -  **Default**—_Not set_
