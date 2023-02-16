@@ -229,7 +229,9 @@ See [rsync](https://linux.die.net/man/1/rsync) help.
 
 **Prerequisite:** A database dump (see Step 3) should include database triggers. For dumping them, confirm you have the [TRIGGER privilege](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_trigger).
 
-**Important:** The integration environment database is strictly for development testing and can include data that you do not want to migrate into Staging and Production.
+>[!IMPORTANT]
+>
+>The integration environment database is strictly for development testing and can include data that you do not want to migrate into Staging and Production.
 
 For continuous integration deployments, Adobe **does not recommend** migrating data from Integration to Staging and Production. You could pass testing data or overwrite important data. Any vital configurations are passed using the [configuration file](../store/store-settings.md) and `setup:upgrade` command during build and deploy.
 
