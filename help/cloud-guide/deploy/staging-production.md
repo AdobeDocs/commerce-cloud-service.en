@@ -267,7 +267,7 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
 
    For Pro Staging and Production, the name of the database is in the `MAGENTO_CLOUD_RELATIONSHIPS` variable (typically the same as the application name and username).
 
-1. Though the Ece-tools method is preferred, another method is to create a database dump file using native MySQL and  in GZIP format.
+1. Though the Ece-tools method is preferred, another method is to create a database dump file using native MySQL in GZIP format.
 
    ```bash
    mysqldump -h <database-host> --user=<database-username> --password=<password> --single-transaction --triggers <database-name> | gzip - > /tmp/database.sql.gz
