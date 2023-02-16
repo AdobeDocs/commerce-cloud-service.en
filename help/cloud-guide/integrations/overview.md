@@ -137,14 +137,14 @@ Integration integration-ID (webhook) updated
 | `environment.branch`        | A branch has been created using the management console |
 | `environment.deactivate`    | A branch has been "deactivated". The code is still there but the environment was destroyed |
 | `environment.delete`        | A branch has been deleted |
-| `environment.initialize`    | The master branch of the project initialized with a first commit |
+| `environment.initialize`    | The `master` branch of the project initialized with a first commit |
 | `environment.merge`         | An active branch has been merged using the management console or API |
 | `environment.push`          | A user pushed code to a branch |
 | `environment.restore`       | A user restored a snapshot |
 | `environment.route.create`  | A route has been created using the management console |
 | `environment.route.delete`  | A route has been deleted using the management console |
 | `environment.route.update`  | A route has been modified using the management console |
-| `environment.subscription.update` | The master environment has been resized because the subscription has changed, but here are no content changes |
+| `environment.subscription.update` | The `master` environment has been resized because the subscription has changed, but here are no content changes |
 | `environment.synchronize`   | An environment has had data or code recopied from its parent environment |
 | `environment.update.http_access` | HTTP access rules for an environment have been modified |
 | `environment.update.restrict_robots` | The block-all-robots feature has been enabled or disabled |

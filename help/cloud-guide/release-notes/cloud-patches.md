@@ -7,7 +7,7 @@ exl-id: ae6b511b-a37d-4776-9a5e-ad7d9f9f6611
 
 The [Cloud Patches](https://github.com/magento/magento-cloud-patches) package provides a set of required patches which improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes.
 
-The Cloud Patches for Commerce package is a dependency for the ECE-Tools package and is installed and updated when you install or update the ECE-Tools package. You can also use and manage Cloud Patches for Commerce as a stand-alone package to apply patches to a Adobe Commerce project that is not on the Cloud platform. These release notes describe the latest improvements to this package.
+The Cloud Patches for Commerce package is a dependency for the ECE-Tools package and is installed and updated when you install or update the ECE-Tools package. You can also use and manage Cloud Patches for Commerce as a stand-alone package to apply patches to an Adobe Commerce project that is not on the Cloud platform. These release notes describe the latest improvements to this package.
 
 >[!TIP]
 >
@@ -98,7 +98,7 @@ Release date: July 29, 2021
 
 -  **Fixed an issue caused by applying the B2B Layered navigation patch**—For customers that have applied the B2B Layered navigation patch, this fix resolves an `Undefined offset` error that displays on the Search page after switching the Store view.<!--MCLOUD-5287-->
 
--  **Paypal Checkout patch**—Fixes a Adobe Commerce 2.3.7 issue with PayPal Express where the previously placed order price is displayed.<!--MC-42674-->
+-  **Paypal Checkout patch**—Fixes an Adobe Commerce 2.3.7 issue with PayPal Express where the previously placed order price is displayed.<!--MC-42674-->
 
 -  **Patch category support**—Added support for processing patch categories and origin sources assigned to Quality Patches. The categories allow customers to use filters and sorting to find patches more quickly when using the [Quality Patches Tool](https://github.com/magento/quality-patches) and the Site-wide Analysis Tool (SWAT). <!--MC-38577-->
 
