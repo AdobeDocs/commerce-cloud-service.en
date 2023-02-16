@@ -36,7 +36,7 @@ You can connect to the worker instance to inspect logs and interact using SSH.
 **To access a worker instance**:
 
 1. On your local workstation, change to your project directory.
-1. Use SSH to log in to the remote environment.
+1. Use SSH to log in to the remote environment. Use the `worker` option to connect to a specific worker instance.
 
    ```bash
    magento-cloud ssh --worker=<worker-name>
