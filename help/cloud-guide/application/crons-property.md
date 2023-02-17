@@ -5,21 +5,22 @@ exl-id: 67d592c1-2933-4cdf-b4f6-d73cd44b9f59
 ---
 # Crons property
 
-Adobe Commerce uses Cron jobs for numerous features to schedule activities. Adobe recommends that you run `cron` as the [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html). Do _not_ run a cron job as `root` or as the web server user.
+Adobe Commerce uses `crons` to schedule repetitive activities. It is ideal for scheduling a specific task to run at certain times of the day. Only one cron job can run at a time for Adobe Commerce on cloud infrastructure projects because of the nature of read-only environments. It is a best practice to break down long-running tasks into smaller, queued tasks. Alternatively, you can build a [worker instance](workers-property.md).
 
-The `crons` property describes processes that are triggered on a schedule and uses the following:
+Adobe recommends that you run `crons` as the [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html). Do _not_ run `crons` as `root` or as the web server user.
 
-- `spec`—The cron specification. For Starter environments and Pro Integration environments, the minimum interval is once per five minutes and once per one minute in Pro Staging and Production environments. You must complete [additional configurations](../application/crons-property.md#set-up-cron-jobs) for cron configuration in those environments.
-- `cmd`—The command to execute.
+This configuration is different from Adobe Commerce, which has three default cron jobs. See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) in the _Configuration guide_.
 
-Use a Cron job when a task:
+## Set up cron jobs
 
-- Runs on a fixed schedule, not continually
-- Short tasks, as a running cron job blocks a new deployment
-- Long task that is easily divided into smaller, queued tasks
-- Delay is acceptable between when it is registered and when it runs
+The `crons` property describes processes that are triggered on a schedule. Each job requires a name and the following options:
 
-By default, every Cloud project has the following default crons configuration in the `.magento.app.yaml` file:
+- `spec`—The cron expression used for scheduling.
+- `cmd`—The command to run on `start` and `stop`.
+- `shutdown_timeout`—(_Optional_) If a cron job is canceled, this is the number of seconds after which a SIGKILL signal is sent to stop the job or process. The default is 10 seconds.
+- `timeout`—(_Optional_) The maximum amount of time a cron job can run before timeout. Defaults to the maximum allowed value of 86400 seconds (24 hours).
+
+By default, every Commerce cloud project has the following default `crons` configuration in the `.magento.app.yaml` file:
 
 ```yaml
 crons:
@@ -30,21 +31,11 @@ crons:
 
 For Adobe Commerce 2.1.x, you can use only [workers](workers-property.md) and cron jobs. For Adobe Commerce 2.2.x, cron jobs launch consumers to process batches of messages, and do not require additional configuration.
 
-## Set up cron jobs
+If your project requires custom cron jobs, you can add them to the default `crons` configuration. See [Build a cron job](#build-a-cron-job).
 
-Only one cron job can run at a time for Adobe Commerce on cloud infrastructure projects because of the nature of read-only environments. This configuration is different from Adobe Commerce, which has three default cron jobs. See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) in the Adobe Commerce documentation.
+### `crontab`
 
-If your project requires custom cron jobs, you can add them to the default cron configuration.
-
-**To verify cron configuration**:
-
-1. On your local workstation, change to your project directory.
-
-1. Review the cron configuration in the `crons` section of the [.magento.app.yaml](../application/crons-property.md) configuration file.
-
-### crontab
-
-Adobe Commerce added an auto-crons configuration option only to Pro projects to support self-service cron configuration on Staging and Production environments using the `.magento.app.yaml` file. If this option is enabled, you can use `crontab` to review the cron configuration. This is not available with Starter projects.
+Adobe Commerce added an auto-crons configuration option only to Pro projects to support self-service `crons` configuration on the Staging and Production environments. If this option is enabled, you can use `crontab` to review the cron configuration. This is _not_ available with Starter projects.
 
 Although you can use `crontab` to review configuration on Pro projects, Adobe Commerce does not use `crontab` to run cron jobs for sites deployed on the cloud infrastructure.
 
@@ -77,13 +68,11 @@ MAILTO=""
 
 ## Build a cron job
 
-A cron job includes the schedule and timing specification and the command to run at the scheduled time. For example, the general format is:
+A cron job includes the schedule and timing specification and the command to run at the scheduled time. For Starter environments and Pro Integration environments, the minimum interval is once per five minutes. For Pro Staging and Production environments, the minimum interval is once per minute. On Adobe Commerce on cloud infrastructure, you add custom cron jobs to the `.magento.app.yaml` file in the `crons` section. The general format is `spec` for scheduling and `cmd` to specify the command or custom script to run.
 
-```terminal
-* * * * * <command>
-```
+### Specification
 
-Adobe Commerce uses a five value specification for a cron job: `* * * * *`
+Adobe Commerce uses a five-value expression for a `crons` specification (spec): `* * * * *`
 
 1. Minute (0 through 59) For all Starter and Pro environments, the minimum frequency supported for cron jobs is five minutes. You may need to configure settings in your Admin.
 2. Hour (0 through 23)
@@ -100,11 +89,13 @@ Some examples:
 
 >[!NOTE]
 >
->The cron time specified in the `.magento.app.yaml` file is based on the server timezone, not the timezone specified in the store configuration values in the database.
+>The `crons` time specified in the `.magento.app.yaml` file is based on the server timezone, not the timezone specified in the store configuration values in the database.
 
-When determining the scheduling of custom cron jobs, consider the time it takes to complete the task. For example, if you run a job every three hours and the task takes 40 minutes to complete, you may consider changing the scheduled timing.
+When determining the scheduling, consider the time it takes to complete the task. For example, if you run a job every three hours and the task takes 40 minutes to complete, you may consider changing the scheduled timing.
 
-On Adobe Commerce on cloud infrastructure, you add custom cron job configuration to the `.magento.app.yaml` file in the `crons` section. The general format is `spec` for scheduling and `cmd` to specify the command or custom script to run.
+### Command
+
+The command (cmd) defines 
 
 For the command script, the format includes:
 
@@ -122,21 +113,21 @@ crons:
 
 In this example, `<path-to-php-binary>` is `/usr/bin/php`. The install directory, which includes the Project ID is `/app/abc123edf890/bin/magento`, and the script action is `export:start catalog_category_product`.
 
-## Add custom cron jobs to your project
+### Add custom cron jobs to your project
 
-On the Adobe Commerce on cloud infrastructure platform, you configure custom cron jobs by adding them to the [`.magento.app.yaml`](../application/configure-app-yaml.md) file in the `crons` section.
+On the Adobe Commerce on cloud infrastructure platform, you can add customizations to the `crons` section of the [`.magento.app.yaml`](../application/configure-app-yaml.md) file.
 
 >[!NOTE]
 >
->The default cron interval for all environments is one minute. The default cron interval in all other regions is five minutes for Pro Integration environments and one minute for Pro Staging and Production environments. You cannot configure more frequent intervals than the default minimums.
+>For Starter environments and Pro Integration environments, the minimum interval is once per five minutes. For Pro Staging and Production environments, the minimum interval is once per minute. You cannot configure more frequent intervals than the default minimums.
 
-On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must be enabled on your Adobe Commerce on cloud infrastructure project before you can add custom cron jobs to Staging and Production environments using `.magento.app.yaml`. If this feature is not enabled, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable auto-crons.
+On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must be enabled on your project before you can add custom cron jobs to Staging and Production environments using the `.magento.app.yaml` file. If this feature is not enabled, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable auto-crons.
 
 **To add custom cron jobs**:
 
 1. In your local development environment, edit the `.magento.app.yaml` file in the Adobe Commerce `/app` directory.
 
-1. In the `crons` section, add your custom cron code in the following format:
+1. In the `crons` section, add your customization using the following format:
 
    ```yaml
    crons:
@@ -148,7 +139,7 @@ On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must
            cmd: "<schedule_command>"
    ```
 
-   For example, you can add a custom cron job to export the product catalog and configure it to run every eight hours, 20 minutes after the hour.
+   In the following example, the `productcatalog` job exports the product catalog every eight hours, 20 minutes after the hour.
 
    ```yaml
    crons:
@@ -166,9 +157,9 @@ On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must
    git add .magento.app.yaml && git commit -m "cron config updates" && git push origin <branch-name>
    ```
 
-## Update custom cron jobs
+### Update cron jobs
 
-To add, remove, or update a custom cron job, change the configuration in the `crons` section of the `.magento.app.yaml` file for the integration environment. Then, test the updates in the integration environment before pushing the changes to the Production and Staging environments.
+To add, remove, or update a customized job, change the configuration in the `crons` section of the `.magento.app.yaml` file. Then, test the updates in the remote `integration` environment before pushing the changes to the Production and Staging environments.
 
 ## Disable cron jobs
 
@@ -204,6 +195,6 @@ You can review cron processing information in the application-level log files fo
 
 See the following Adobe Commerce Support articles for help with troubleshooting cron-related problems:
 
--  [Cron tasks lock tasks from other groups](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html)
+- [Cron tasks lock tasks from other groups](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html)
 
--  [Reset stuck cron jobs manually on the cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html)
+- [Reset stuck cron jobs manually on the cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html)
