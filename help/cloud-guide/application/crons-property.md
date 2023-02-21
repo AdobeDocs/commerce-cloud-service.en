@@ -9,7 +9,7 @@ Adobe Commerce uses `crons` to schedule repetitive activities. It is ideal for s
 
 Adobe recommends that you run `crons` as the [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html). Do _not_ run `crons` as `root` or as the web server user.
 
-This configuration is different from Adobe Commerce, which has three default cron jobs. See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) in the _Configuration guide_.
+This configuration is different from Adobe Commerce, which has multiple default cron jobs. See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) in the _Configuration guide_.
 
 ## Set up cron jobs
 

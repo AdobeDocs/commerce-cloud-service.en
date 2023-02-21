@@ -24,7 +24,7 @@ This example defines a single worker named `queue`, with a small (size S) contai
 
 ## Access the worker container
 
-You can use a SSH to connect to the worker instance, inspect logs, and interact.
+You can use an SSH to connect to the worker instance, inspect logs, and interact.
 
 **To access a worker instance**:
 
@@ -64,7 +64,7 @@ If you have multiple application instances defined (using both web and workers),
 
 ## Timing and queueing
 
-Though each worker queues behind another, the following configuration produces a consistent 2-second separation in time stamps in the `var/time.txt` file, regardless of the 8-second sleep within the PHP code:
+Though each worker queues behind another, the following configuration produces a consistent two-second separation in time stamps in the `var/time.txt` file, regardless of the eight-second sleep within the PHP code:
 
 ```yaml
 workers:
