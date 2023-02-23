@@ -29,8 +29,6 @@ crons:
         cmd: "php bin/magento cron:run"
 ```
 
-For Adobe Commerce 2.1.x, you can use only [workers](workers-property.md) and cron jobs. For Adobe Commerce 2.2.x, cron jobs launch consumers to process batches of messages, and do not require additional configuration.
-
 If your project requires custom cron jobs, you can add them to the default `crons` configuration. See [Build a cron job](#build-a-cron-job).
 
 ### `crontab`
