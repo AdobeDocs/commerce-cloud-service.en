@@ -5,11 +5,11 @@ exl-id: 67d592c1-2933-4cdf-b4f6-d73cd44b9f59
 ---
 # Crons property
 
-Adobe Commerce uses `crons` to schedule repetitive activities. It is ideal for scheduling a specific task to run at certain times of the day. Only one cron job can run at a time on the web instance for Adobe Commerce on cloud infrastructure projects because of the nature of read-only environments. It is a best practice to break down long-running tasks into smaller, queued tasks. Alternatively, you can build a [worker instance](workers-property.md).
+Adobe Commerce uses the `crons` property to schedule repetitive activities. It is ideal for scheduling a specific task to run at certain times of the day. Only one cron job can run at a time on the web instance for Adobe Commerce on cloud infrastructure projects because of the nature of read-only environments. It is a best practice to break down long-running tasks into smaller, queued tasks. Alternatively, you can build a [worker instance](workers-property.md).
 
 Adobe recommends that you run `crons` as the [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html). Do _not_ run `crons` as `root` or as the web server user.
 
-This configuration is different from Adobe Commerce, which has multiple default cron jobs. See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) in the _Configuration guide_.
+This configuration is different from on-premises deployments of Adobe Commerce, which have multiple default cron jobs. See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) in the _Configuration guide_.
 
 ## Set up cron jobs
 
