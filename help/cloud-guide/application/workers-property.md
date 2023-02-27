@@ -9,7 +9,17 @@ You can define zero or multiple work instances for each application. A worker in
 
 A worker instance has the exact same code and compilation output as a web instance. The container image is built once and deployed multiple times if needed using the same `build` hook and `dependencies`. You can customize the container and allocated resources.
 
-A basic, common worker configuration in the `.magento.app.yaml` file could look like the following:
+## Configure a worker
+
+Workers are available to use with Pro Staging and Production environments. Pro Integration and Starter environments can opt to use the [CRON_CONSUMERS_RUNNER](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) variable.
+
+To configure a worker in Pro Staging or Production, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) and include the following information:
+
+- Project ID
+- Environment
+- YAML configuration with start commands
+
+You can configure one process per worker. A basic, common worker configuration in the `.magento.app.yaml` file could look like the following:
 
 ```yaml
 workers:
@@ -17,10 +27,10 @@ workers:
         size: S
         commands:
             start: |
-                php worker.php
+                php ./bin/magento queue:consumers:start commerce.eventing.event.publish
 ```
 
-This example defines a single worker named `queue`, with a small (size S) container, and runs the command `php worker.php` on startup. If `worker.php` exits, it is automatically restarted.
+This example defines a single worker named `queue`, with a small (size S) container, and runs the `php ./bin/magento` command on startup. If the command exits, it is automatically restarted.
 
 ## Access the worker container
 
