@@ -30,26 +30,7 @@ workers:
                 php ./bin/magento queue:consumers:start commerce.eventing.event.publish
 ```
 
-This example defines a single worker named `queue`, with a small (size S) container, and runs the `php ./bin/magento` command on startup. If the command exits, it is automatically restarted.
-
-## Access the worker container
-
-You can use an SSH to connect to the worker instance, inspect logs, and interact.
-
-**To access a worker instance**:
-
-1. On your local workstation, change to your project directory.
-1. Use SSH to log in to the remote environment. Use the `worker` option to connect to a specific worker instance.
-
-   ```bash
-   magento-cloud ssh --worker=<worker-name>
-   ```
-
-   To connect to a worker called `queue`, such as in the earlier example, the SSH command looks similar to the following:
-
-   ```terminal
-   ssh <node>.ent-<projectID>-production-queue@ssh.us.magentosite.cloud
-   ```
+This example defines a single worker named `queue`, with a small (size S) container, and runs the `php ./bin/magento` command on startup. The worker `queue` then runs on each node as a worker process. If the command exits, it is automatically restarted.
 
 ## Commands and overrides
 
@@ -59,7 +40,7 @@ The `commands.start` key is required to launch commands with the worker applicat
 >
 >The `deploy` and `post_deploy` hooks and cron commands only run on the web container, not in worker instances.
 
-## Inheritance
+### Inheritance
 
 Definitions for the `size`, `relationships`, `access`, `disk` and `mount`, and `variables` properties are inherited by a worker, unless explicitly overridden. 
 
@@ -68,11 +49,7 @@ The following properties are the most commonly used to override [top-level setti
 - `size`—allocate fewer resources to a container running only a single background process
 - `variable`—instruct the application to run differently
 
-## Multi-instance disk mounts
-
-If you have multiple application instances defined (using both web and workers), each instance has independent disk mounts regardless of name or directive. Shared file storage between different application instances is not supported.
-
-## Timing and queueing
+### Timing and queueing
 
 Though each worker queues behind another, the following configuration produces a consistent two-second separation in time stamps in the `var/time.txt` file, regardless of the eight-second sleep within the PHP code:
 
