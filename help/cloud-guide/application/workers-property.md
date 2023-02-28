@@ -48,7 +48,7 @@ You can use an SSH to connect to the worker instance, inspect logs, and interact
    To connect to a worker called `queue`, such as in the earlier example, the SSH command looks similar to the following:
 
    ```terminal
-   ssh projectID-master-7rqtwti--mymagento--queue@ssh.us.magentosite.cloud
+   ssh <node>.ent-<projectID>-production-queue@ssh.us.magentosite.cloud
    ```
 
 ## Commands and overrides
