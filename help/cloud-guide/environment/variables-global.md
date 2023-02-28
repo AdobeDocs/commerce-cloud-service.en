@@ -27,7 +27,6 @@ When set to `true`, enables cron to run message queue consumers. [Adobe I/O Even
 
 The `ENABLE_EVENTING` variable requires that the `deploy` stage of the `.magento.env.yaml` file contain the [`CRON_CONSUMERS_RUNNER`](./variables-deploy.md#cron_consumers_runner) variable with `cron_run` set to true. The following example shows a fully-configured `ENABLE_EVENTING` variable.
 
-
 ```yaml
 stage:
   global:
