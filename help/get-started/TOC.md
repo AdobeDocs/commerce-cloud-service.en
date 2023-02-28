@@ -9,3 +9,4 @@ type: Documentation
 
 - [Get Started with Commerce](overview.md)
 - [Onboarding](onboarding.md)
+- [Return to Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html)
