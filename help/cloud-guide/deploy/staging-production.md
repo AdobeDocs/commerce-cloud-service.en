@@ -5,19 +5,19 @@ exl-id: 4b82289f-ee04-4b14-a0ed-7a8a19fc6a6a
 ---
 # Deploy to Staging and Production
 
-The process for deploying and going live begins with development, continues to Staging, and ends with going live in Production. To provide the best experience for developing, testing, and deploying your store with consistent configurations we provide an end-to-end environment solution. Every environment supports direct URL access to the storefront and Admin and SSH access for CLI commands.
+The process for deploying and going live begins with development, continues to Staging, and ends with going live in Production. Adobe provides an end-to-end environment solution to ensure consistent configurations. Every environment supports direct URL access to the storefront and Admin and SSH access for CLI commands.
 
 When you are ready to deploy your store, you must complete deployment and testing on the Staging environment before deploying to Production. This section provides in-depth instructions and information on the build and deploy process, migrating data and content, and testing.
 
 ## Starter deployment flow
 
-We recommend creating a `staging` branch from the `master` branch to best support your Starter plan development and deployment. With this in place, you have two of your four active environments ready: `master` for Production and `staging` for Staging.
+Adobe recommends creating a `staging` branch from the `master` branch to best support your Starter plan development and deployment. With this in place, you have two of your four active environments ready: `master` for Production and `staging` for Staging.
 
 For detailed information of the process, see [Starter Develop and Deploy Workflow](../architecture/starter-develop-deploy-workflow.md).
 
 ## Pro deployment flow
 
-Pro comes with a large Integration environment with two active branches, a global `master` branch, Staging, and Production branches. When you create your project, code is ready to branch, develop, and push for building and deploying your site. Although the Integration environment can have many branches, Staging and Production have only one branch for each environment.
+Pro comes with a large integration environment with two active branches, a global `master` branch, Staging, and Production branches. When you create your project, code is ready to branch, develop, and push for building and deploying your site. Although the integration environment can have many branches, Staging and Production have only one branch for each environment.
 
 For detailed information of the process, see [Pro Develop and Deploy Workflow](../architecture/pro-develop-deploy-workflow.md).
 
@@ -55,15 +55,15 @@ The Project Web Interface provides features to create, manage, and deploy code i
 
 The Cloud CLI provides commands to deploy code. You need SSH and Git access to your project.
 
-#### Step 1:  Deploy and test the Integration environment
+#### Step 1:  Deploy and test the integration environment
 
-1. After logging into the project, check out the Integration environment:
+1. After logging into the project, check out the integration environment:
 
    ```bash
    magento-cloud environment:checkout <environment-ID>
    ```
 
-1. Synchronize your local Integration environment with the remote environment:
+1. Synchronize your local integration environment with the remote environment:
 
    ```bash
    magento-cloud environment:synchronize <environment-ID>
@@ -105,7 +105,7 @@ The Cloud CLI provides commands to deploy code. You need SSH and Git access to y
    magento-cloud snapshot: create -e <environment-ID>
    ```
 
-1. Merge the Integration environment to Staging to deploy:
+1. Merge the integration environment to Staging to deploy:
 
    ```bash
    magento-cloud environment:merge <integration-ID>
@@ -127,7 +127,7 @@ The Cloud CLI provides commands to deploy code. You need SSH and Git access to y
 
 ## Migrate static files
 
-[Static files](https://glossary.magento.com/static-files) are stored in `mounts`. There are two methods for migrating files from a source mount location, such as your local environment, to a destination mount location. Both methods use the `rsync` utility, but we recommend using the `magento-cloud` CLI for moving files between the local and remote environment. And we recommend using the `rsync` method when moving files from a remote source to a different remote location.
+[Static files](https://glossary.magento.com/static-files) are stored in `mounts`. There are two methods for migrating files from a source mount location, such as your local environment, to a destination mount location. Both methods use the `rsync` utility, but Adobe recommends using the `magento-cloud` CLI for moving files between the local and remote environment. And Adobe recommends using the `rsync` method when moving files from a remote source to a different remote location.
 
 ### Migrate files using the CLI
 
@@ -188,16 +188,16 @@ rsync -azvP <source> <destination>
 
 This command uses the following options:
 
--  `a`–archive
--  `z`–compress files during the migration
--  `v`–verbose
--  `P`–partial progress
+- `a`–archive
+- `z`–compress files during the migration
+- `v`–verbose
+- `P`–partial progress
 
-See the [rsync man page](https://linux.die.net/man/1/rsync).
+See [rsync](https://linux.die.net/man/1/rsync) help.
 
 >[!NOTE]
 >
->To transfer media from remote-to-remote environments directly, you must enable SSH agent forwarding, see [GitHub guidance](https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding).
+>To transfer media from remote-to-remote environments directly, you must enable SSH agent forwarding, see [GitHub guidance](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding).
 
 **To migrate static files from remote-to-remote environments directly (fast approach)**:
 
@@ -225,41 +225,55 @@ See the [rsync man page](https://linux.die.net/man/1/rsync).
 >
 >Database import and export operations can take a long time, which can affect site performance and availability. Schedule import and export operations during off-peak hours to prevent slow performance or outages on Production sites.
 
+>[!BEGINSHADEBOX]
+
 **Prerequisite:** A database dump (see Step 3) should include database triggers. For dumping them, confirm you have the [TRIGGER privilege](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_trigger).
 
-**Important:** The Integration environment database is strictly for development testing and can include data that you do not want to migrate into Staging and Production.
+>[!IMPORTANT]
+>
+>The integration environment database is strictly for development testing and can include data that you do not want to migrate into Staging and Production.
 
-For continuous integration deployments, we **do not recommend** migrating data from Integration to Staging and Production. You could pass testing data or overwrite important data. Any vital configurations are passed using the [configuration file](../store/store-settings.md) and `setup:upgrade` command during build and deploy.
+For continuous integration deployments, Adobe **does not recommend** migrating data from Integration to Staging and Production. You could pass testing data or overwrite important data. Any vital configurations are passed using the [configuration file](../store/store-settings.md) and `setup:upgrade` command during build and deploy.
+
+>[!ENDSHADEBOX]
 
 Adobe **recommends** migrating data from Production into Staging to fully test your site and store in a near-production environment with all services and settings.
 
 >[!NOTE]
 >
->To transfer media from remote-to-remote environments directly you must enable ssh agent forwarding, see [GitHub guidance](https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding).
+>To transfer media from remote-to-remote environments directly you must enable ssh agent forwarding, see [GitHub guidance](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding).
 
-**To migrate a database**:
+### Back up the database
 
-1. SSH into the environment you want to create a database dump from:
+**To dump a database**:
+
+1. Use SSH to log in to the remote environment.
 
    ```bash
-   ssh -A <environment-ssh-link@ssh.region.magento.cloud>
+   magento-cloud ssh
    ```
 
-1. List the environment relationships to find the database login information:
+1. List the environment relationships to find the database login information.
 
    ```bash
    php -r 'print_r(json_decode(base64_decode($_ENV["MAGENTO_CLOUD_RELATIONSHIPS"]))->database);'
    ```
 
-1. Create a database dump file in GZIP format:
+1. Create a backup of the database. To choose a target directory for the DB dump, use the `--dump-directory` option.
+
+   For Starter environments and Pro Integration environments, use `main` as the name of the database:
+
+   ```bash
+   php vendor/bin/ece-tools db-dump -- main
+   ```
+
+   For Pro Staging and Production, the name of the database is in the `MAGENTO_CLOUD_RELATIONSHIPS` variable (typically the same as the application name and username).
+
+1. Though the Ece-tools method is preferred, another method is to create a database dump file using native MySQL in GZIP format.
 
    ```bash
    mysqldump -h <database-host> --user=<database-username> --password=<password> --single-transaction --triggers <database-name> | gzip - > /tmp/database.sql.gz
    ```
-
-   For Starter environments and Pro Integration environments, use `main` as the name of the database.
-
-   For Pro Staging and Production, the name of the database is in the `MAGENTO_CLOUD_RELATIONSHIPS` variable (typically the same as the application name and username).
 
    If you have configured two-factor authentication on the target environment, it is better to exclude related 2FA tables to avoid reconfiguring it after database migration:
 
@@ -267,28 +281,58 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
    mysqldump -h <database-host> --user=<database-username> --password=<password> --single-transaction --triggers --ignore-table=<database-name>.tfa_user_config --ignore-table=<database-name>.tfa_country_codes <database-name> | gzip - > /tmp/database.sql.gz
    ```
 
-1. Transfer the database dump to another remote environment with the `rsync` command:
-
-   ```bash
-   rsync -azvP /tmp/database.sql.gz <destination-environment-ssh-link@ssh.region.magento.cloud>:/tmp
-   ```
-
 1. Type `logout` to terminate the SSH connection.
 
-1. Open an SSH connection to the environment that you want to migrate the database into:
+### Drop and re-create the database
+
+When importing data, you need to drop and create a database. It is a best practice to [create a backup](../storage/snapshots.md#dump-your-database) of the database.
+
+**To drop and re-create the database**:
+
+1. Establish a [SSH tunnel](../development/secure-connections.md#ssh-tunneling) to the remote environment.
+
+1. Connect to the database service.
 
    ```bash
-   ssh -A <destination-environment-ssh-link@ssh.region.magento.cloud>
+   mysql --host=127.0.0.1 --user='<database-username>' --pass='<user-password>' --database='<name>' --port='<port>'
    ```
 
-1. Import the database dump:
+1. At the `MariaDB [main]>` prompt, drop the database.
 
-   ```bash
-   zcat /tmp/database.sql.gz | mysql -h <database-host> -u <username> -p<password> <database-name>
+   For Starter and Pro integration:
+
+   ```shell
+   drop database main;
    ```
 
-   The following example references the GZIP file created by the database dump operation:
+   For Production:
 
-   ```bash
-   zcat /tmp/database.sql.gz | mysql -h database.internal -u user -ppassword main
+   ```shell
+   drop database <cluster-id>;
+   ```
+
+   For Staging:
+
+   ```shell
+   drop database <cluster-ID_stg>;
+   ```
+
+1. Re-create the database.
+
+   For Starter and Pro integration:
+
+   ```shell
+   create database main;
+   ```
+
+   Import for Production:
+
+   ```shell
+   zcat <cluster-ID>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <database-username> <database-name>;
+   ```
+
+   Import for Staging:
+
+   ```shell
+   zcat <cluster-ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <database-username> <database-name>;
    ```

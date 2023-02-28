@@ -49,7 +49,7 @@ The process to add a domain depends on the type of Cloud account:
 
 To configure your local installation to use multiple stores, see [Multiple websites or stores][config-multiweb] in the _Configuration Guide_.
 
-After successfully creating and testing the local installation to use multiple stores, you must prepare your Integration environment:
+After successfully creating and testing the local installation to use multiple stores, you must prepare your integration environment:
 
 1. **Configure routes or locations**—specify how incoming URLs are handled by Adobe Commerce
 
@@ -303,7 +303,7 @@ Instead of configuring an NGINX virtual host, pass the `MAGE_RUN_CODE` and `MAGE
 
 ### Deploy and test on the Integration server
 
-Push your changes to your Adobe Commerce on cloud infrastructure Integration environment and test your site.
+Push your changes to your Adobe Commerce on cloud infrastructure integration environment and test your site.
 
 1. Add, commit, and push code changes to the remote branch.
 
@@ -329,9 +329,9 @@ Push your changes to your Adobe Commerce on cloud infrastructure Integration env
 
 Follow the deployment process for [deploying to Staging and Production](../deploy/staging-production.md). For Starter and Pro environments, you use the Project Web Interface to push code across environments.
 
-Adobe recommends fully testing in the Staging environment before pushing to the Production environment. Make code changes in the Integration environment and begin the process to deploy across environments again.
+Adobe recommends fully testing in the Staging environment before pushing to the Production environment. Make code changes in the integration environment and begin the process to deploy across environments again.
 
 <!-- link definitions -->
 
-[addstorecode]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html#step-6%3A-add-the-store-code-to-the-base-url
+[addstorecode]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html
 [config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html
