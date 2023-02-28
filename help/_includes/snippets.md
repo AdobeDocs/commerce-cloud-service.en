@@ -51,7 +51,6 @@ Set the `_merge` option to one of the following:
 >
 >The following route configuration examples use route templates with placeholders. The `{default}` placeholder represents the default domain configured for your site. If your project has multiple domains, use the `{all}` placeholder to configure routing for the default domain and all aliases. See [Configure routes](/help/cloud-guide/routes/routes-yaml.md).
 
-
 ## SCD timing {#scd-timing-warning}
 
 >[!WARNING]
