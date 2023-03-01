@@ -113,7 +113,9 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
 **To configure New Relic for Starter environments**:
 
-1. Find your New Relic license key from your Adobe Commerce account page:
+1. Find your New Relic license key from the Project Web UI or the Cloud CLI.
+
+   Account UI method:
 
    -  Open your cloud project [account page](https://accounts.magento.cloud/user).
 
@@ -121,9 +123,15 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
    -  Click **View Details** to see the project infrastructure information.
 
-   -  Expand the **New Relic Service** section to view the license key.
+   -  Expand the **NewRelic Service** section to view the license key.
 
    -  Copy the license key.
+
+   Cloud CLI method:
+
+   ```bash
+   magento-cloud subscription:info services.newrelic
+   ```
 
 1. Add the New Relic license key to an environment using the `magento-cloud` CLI, or add it from the [Admin](https://docs.magento.com/user-guide/reports/new-relic-reporting.html#step-3-configure-your-store).
 
