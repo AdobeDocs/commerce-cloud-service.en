@@ -11,7 +11,7 @@ A worker instance has the exact same code and compilation output as a web instan
 
 ## Configure a worker
 
-Workers are available to use with Pro Staging and Production environments. Pro Integration and Starter environments can opt to use the [CRON_CONSUMERS_RUNNER](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) variable.
+Workers are available to use with Pro Staging and Production environments. Pro Integration and Starter environments can opt to use the [CRON_CONSUMERS_RUNNER](../environment/variables-deploy.md#cron_consumers_runner) variable.
 
 To configure a worker in Pro Staging or Production, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) and include the following information:
 
