@@ -5,9 +5,7 @@ exl-id: d6816925-5912-45ca-8255-6c307e58542d
 ---
 # Workers property
 
-You can define zero or multiple work instances for each application. A worker instance runs as a container, independent from the web instance and without a running Nginx instance. Also, you do not need to set up a web server on the worker instance (using Node.js or Go) because the router cannot direct public requests to the worker. This makes the worker instance ideal for background tasks or continually running tasks that risk blocking a deployment.
-
-A worker instance has the exact same code and compilation output as a web instance. The container image is built once and deployed multiple times if needed using the same `build` hook and `dependencies`. You can customize the container and allocated resources.
+You can define a worker to run independently from the web instance without a running Nginx instance. You do not need to set up a web server on the worker instance (using Node.js or Go) because the router cannot direct public requests to the worker. This makes the worker instance ideal for background tasks or continually running tasks that risk blocking a deployment.
 
 ## Configure a worker
 
@@ -30,7 +28,7 @@ workers:
                 php ./bin/magento queue:consumers:start commerce.eventing.event.publish
 ```
 
-This example defines a single worker named `queue`, with a small (size S) container, and runs the `php ./bin/magento` command on startup. The worker `queue` then runs on each node as a worker process. If the command exits, it is automatically restarted.
+This example defines a single worker named `queue`, with a small (size S) level of resource allocation, and runs the `php ./bin/magento` command on startup. The worker `queue` then runs on each node as a worker process. If the command exits, it is automatically restarted.
 
 ## Commands and overrides
 
