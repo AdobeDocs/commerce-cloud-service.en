@@ -146,7 +146,7 @@ You can use the Project Web Interface to add permissions and use the _Edit_ feat
 
    -  Enter the user e-mail address.
 
-   -  Select **Super User** to create a project administrator account. This role provides Admin rights to all settings and environments. If not selected, the account has only view options for all project environments.
+   -  Select **Super User** to create a project administrator account. This role provides Admin rights to all settings and environments. Other users only have access to view options for all project environments.
 
    -  Select **Environment permissions**: _No access_, _Admin_ (change settings, execute action, merge code), _Contributor_ (push code), or _Viewer_ (view only). When you add active environments, you can modify permissions per user.
 
