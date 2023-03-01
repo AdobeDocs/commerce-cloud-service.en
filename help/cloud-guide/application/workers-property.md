@@ -44,7 +44,7 @@ Definitions for the `size`, `relationships`, `access`, `disk` and `mount`, and `
 
 The following properties are the most commonly used to override [top-level settings](properties.md):
 
-- `size`—allocate fewer resources to a container running only a single background process
+- `size`—allocate fewer resources to a single background process
 - `variable`—instruct the application to run differently
 
 ### Timing and queueing
