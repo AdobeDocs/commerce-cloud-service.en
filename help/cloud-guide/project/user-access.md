@@ -81,8 +81,6 @@ The following examples use the `magento-cloud` CLI to add a user, configure role
      Role on type production: admin
      Role on type staging: admin
 
-   Adding users can result in additional charges.
-
    Are you sure you want to add this user? [Y/n] y
    Adding the user to the project
    ```
