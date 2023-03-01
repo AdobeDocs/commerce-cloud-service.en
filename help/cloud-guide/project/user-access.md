@@ -150,7 +150,7 @@ You can use the Project Web Interface to add permissions and use the _Edit_ feat
 
       For a project administrator account, select **Super User**. This role provides Admin rights to all settings and environments. If not selected, the account has only view options for all project environments.
 
-   -  Select permissions per specific environment (or branch) in the Integration environment: _No access_, _Admin_ (change settings, execute action, merge code), _Contributor_ (push code), or _Viewer_ (view only). When you add active environments, you can modify permissions per user.
+   -  Select permissions per specific branch in the integration environment: _No access_, _Admin_ (change settings, execute action, merge code), _Contributor_ (push code), or _Viewer_ (view only). When you add active environments, you can modify permissions per user.
 
    >[!TIP]
    >
