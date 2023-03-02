@@ -232,6 +232,7 @@ Release date: June 25, 2020
       ```text
       Your application does not have the "post_deploy" hook enabled.
       ```
+      
       <!--MCLOUD-4077-->
 
    -  ![new icon](../../assets/new.svg) **Added validation for Zend Framework dependencies**—Added composer dependency validation for the Zend Framework which has migrated to the Laminas project. If the required dependencies are missing, the following error message displays during the build process.
