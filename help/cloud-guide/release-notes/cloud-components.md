@@ -16,7 +16,11 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.0.12 {#latest}
+## v1.0.13 {#latest}
+
+-  ![new icon](../../assets/new.svg) **Enhanced support for PHP 8.2 and Magento 2.4.6**—Fixed compatibility issues with certain PHP 8.2.x versions and Magento 2.4.6.
+
+## v1.0.12
 
 Release date: September 13, 2022
 

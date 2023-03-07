@@ -20,13 +20,21 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.1.13 {#latest}
+## v2002.1.14 {#latest}
+
+Release date: March 10, 2023
+
+-  ![new icon](../../assets/new.svg) **PHP**—Added support for PHP 8.1.
+-  ![new icon](../../assets/new.svg) **Validators for Services**-Updated validators for services required for Magento 2.4.6: MariaDB 10.6, Redis 7.0, PHP 8.2, OpenSearch 2.*, RabbitMQ 3.9.
+-  ![fix icon](../../assets/fix.svg) **ece-tools db-dump**-fixed the issue when removing a DB dump if there were problems during its creation.
+
+## v2002.1.13
 
 Release date: October 27, 2022
 
--  ![new icon](../../assets/new.svg)**Added support for Adobe I/O Events for Adobe Commerce**. Extension developers can now use the [Adobe I/O Events](https://developer.adobe.com/events/docs/) framework to send Commerce event information from Cloud instances to their applications written for [Adobe App Builder](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events for Adobe Commerce is in Partner Preview.<!-- CEXT-932 -->
--  ![new icon](../../assets/new.svg)**Validator for OPcache configuration**—Added a validator to check the OPcache configuration for excluded paths.<!-- MCLOUD-9485 -->
--  ![fix icon](../../assets/fix.svg)**Fixed an issue with GraphQL cache configuration**—Now ECE-Tools keeps the GraphQL `id_salt` value in `cache` configuration in the `app/etc/env.php` file.<!-- MCLOUD-9486 -->
+-  ![new icon](../../assets/new.svg) **Added support for Adobe I/O Events for Adobe Commerce**. Extension developers can now use the [Adobe I/O Events](https://developer.adobe.com/events/docs/) framework to send Commerce event information from Cloud instances to their applications written for [Adobe App Builder](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events for Adobe Commerce is in Partner Preview.<!-- CEXT-932 -->
+-  ![new icon](../../assets/new.svg) **Validator for OPcache configuration**—Added a validator to check the OPcache configuration for excluded paths.<!-- MCLOUD-9485 -->
+-  ![fix icon](../../assets/fix.svg) **Fixed an issue with GraphQL cache configuration**—Now ECE-Tools keeps the GraphQL `id_salt` value in `cache` configuration in the `app/etc/env.php` file.<!-- MCLOUD-9486 -->
 
 ## v2002.1.12
 

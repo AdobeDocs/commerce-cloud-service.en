@@ -16,11 +16,20 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.3.4 {#latest}
+## v1.3.5 {#latest}
+
+Release date: March 10, 2023
+
+-  ![new icon](../../assets/new.svg) **ionCube**-Added ionCube extension to PHP8.1 image
+-  ![new icon](../../assets/new.svg) **Added new versions of services**-Added the next versions: OpenSearch 2.3 and 2.4, PHP 8.2, Varnish 7.1.1
+-  ![new icon](../../assets/new.svg) **Enhanced support for PHP 8.2 and Magento 2.4.6**—Fixed compatibility issues with certain PHP 8.2.x versions and Magento 2.4.6.
+-  ![fix icon](../../assets/fix.svg) **Composer issue**-Fixed issues with the composer that occurred after updating its version inside Docker containers.
+
+## v1.3.4
 
 Release date: October 27, 2022
 
--  ![new icon](../../assets/new.svg)**Added new Varnish images**—Added Varnish images for next versions 6.5, 7.0, and 7.1.<!-- MCLOUD-7879 -->
+-  ![new icon](../../assets/new.svg) **Added new Varnish images**—Added Varnish images for next versions 6.5, 7.0, and 7.1.<!-- MCLOUD-7879 -->
 
 ## v1.3.3
 
