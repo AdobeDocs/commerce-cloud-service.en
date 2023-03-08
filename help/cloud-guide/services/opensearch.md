@@ -91,10 +91,10 @@ Service version and compatibility support is determined by versions tested and d
 
 1. On your local workstation, change to your project directory.
 
-1. Show the relationships for the active environment.
+1. Show the OpenSearch details for the active environment.
 
    ```bash
-   magento-cloud relationships
+   magento-cloud relationships --property=opensearch
    ```
 
 1. Alternatively, you can use SSH to log in to the remote environment.
