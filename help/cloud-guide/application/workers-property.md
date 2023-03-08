@@ -5,24 +5,24 @@ exl-id: d6816925-5912-45ca-8255-6c307e58542d
 ---
 # Workers property
 
-You can define a worker to run independently from the web instance without a running Nginx instance. You do not need to set up a web server on the worker instance (using Node.js or Go) because the router cannot direct public requests to the worker. This makes the worker instance ideal for background tasks or continually running tasks that risk blocking a deployment.
+You can define a worker to run independently from the web instance without a running Nginx instance; however, the worker does use the same network storage used by the Commerce application. You do not need to set up a web server on the worker instance (using Node.js or Go) because the router cannot direct public requests to the worker. This makes the worker instance ideal for background tasks or continually running tasks that risk blocking a deployment.
 
 ## Configure a worker
 
-Workers are available to use with Pro Staging and Production environments. Pro Integration and Starter environments can opt to use the [CRON_CONSUMERS_RUNNER](../environment/variables-deploy.md#cron_consumers_runner) variable.
+Workers are available to use with Pro Staging and Production environments only. Pro Integration and Starter environments can opt to use the [CRON_CONSUMERS_RUNNER](../environment/variables-deploy.md#cron_consumers_runner) variable.
 
 To configure a worker in Pro Staging or Production, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) and include the following information:
 
 - Project ID
-- Environment
-- YAML configuration with start commands
+- Environment ID
+- Worker name
+- Start commands
 
 You can configure one process per worker. A basic, common worker configuration in the `.magento.app.yaml` file could look like the following:
 
 ```yaml
 workers:
     queue:
-        size: S
         commands:
             start: |
                 php ./bin/magento queue:consumers:start commerce.eventing.event.publish
@@ -36,7 +36,7 @@ The `commands.start` key is required to launch commands with the worker applicat
 
 >[!IMPORTANT]
 >
->The `deploy` and `post_deploy` hooks and cron commands only run on the web container, not in worker instances.
+>The `deploy` and `post_deploy` hooks and `crons` commands only run on the web container, not in worker instances.
 
 ### Inheritance
 
@@ -53,8 +53,7 @@ Though each worker queues behind another, the following configuration produces a
 
 ```yaml
 workers:
-  time1:
-    size: S
-    commands:
-      start: 'php -r "sleep(8); echo time() . PHP_EOL;" >> var/time.txt& sleep 2'
+    time1:
+        commands:
+            start: 'php -r "sleep(8); echo time() . PHP_EOL;" >> var/time.txt& sleep 2'
 ```
