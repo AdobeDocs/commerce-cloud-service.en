@@ -44,10 +44,18 @@ OpenSearch enables you to take data from any source, any format, and search and 
 1. Add, commit, and push code changes.
 
    ```bash
-   git add .magento/services.yaml .magento.app.yaml && git commit -m "Enable OpenSearch" && git push origin <branch-name>
+   git add .magento/services.yaml .magento.app.yaml
    ```
 
-   For information on how these changes affect your environments, see [Services](services-yaml.md).
+   ```bash
+   git commit -m "Enable OpenSearch"
+   ```
+
+   ```bash
+   git push origin <branch-name>
+   ```
+
+   For information on how these changes affect your environments, see [Configure services](services-yaml.md).
 
 1. [Verify the service relationships](services-yaml.md#service-relationships) and configure OpenSearch in the Admin UI.
 
