@@ -37,7 +37,7 @@ redis:
     type: redis:6.2
 
 opensearch:
-    type: opensearch:1.2
+    type: opensearch:2  # minor version not required; uses latest
     disk: 1024
 
 rabbitmq:
