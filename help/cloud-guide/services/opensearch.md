@@ -34,7 +34,7 @@ OpenSearch enables you to take data from any source, any format, and search and 
 
    For Pro projects, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the OpenSearch version in the Staging and Production environments.
 
-1. Set the `relationships` property in the `.magento.app.yaml` file.
+1. Set or verify the `relationships` property in the `.magento.app.yaml` file.
 
    ```yaml
    relationships:
@@ -57,7 +57,11 @@ OpenSearch enables you to take data from any source, any format, and search and 
 
    For information on how these changes affect your environments, see [Configure services](services-yaml.md).
 
-1. [Verify the service relationships](services-yaml.md#service-relationships) and configure OpenSearch in the Admin UI.
+1. After the deployment process completes, use SSH to log in to the remote environment.
+
+   ```bash
+   magento-cloud ssh
+   ```
 
 1. Reindex the Catalog Search index.
 
@@ -86,7 +90,14 @@ Service version and compatibility support is determined by versions tested and d
 **To verify OpenSearch software compatibility**:
 
 1. On your local workstation, change to your project directory.
-1. Use SSH to log in to the remote environment.
+
+1. Show the relationships for the active environment.
+
+   ```bash
+   magento-cloud relationships
+   ```
+
+1. Alternatively, you can use SSH to log in to the remote environment.
 
    ```bash
    magento-cloud ssh
