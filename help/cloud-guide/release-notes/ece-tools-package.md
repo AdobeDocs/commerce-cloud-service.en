@@ -25,7 +25,7 @@ The release notes include:
 Release date: March 10, 2023
 
 -  ![new icon](../../assets/new.svg) **PHP**—Added support for PHP 8.1.
--  ![new icon](../../assets/new.svg) **Validators for Services**-Updated validators for services required for Magento 2.4.6: MariaDB 10.6, Redis 7.0, PHP 8.2, OpenSearch 2.*, RabbitMQ 3.9.
+-  ![new icon](../../assets/new.svg) **Validators for Services**—Updated validators for Commerce 2.4.6 required services: MariaDB 10.6, Redis 7.0, PHP 8.2, OpenSearch 2.*, and RabbitMQ 3.9.
 -  ![fix icon](../../assets/fix.svg) **ece-tools db-dump**-fixed the issue when removing a DB dump if there were problems during its creation.
 
 ## v2002.1.13
