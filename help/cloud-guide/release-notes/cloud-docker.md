@@ -20,7 +20,7 @@ The release notes include:
 
 Release date: March 10, 2023
 
--  ![new icon](../../assets/new.svg) **ionCube**-Added ionCube extension to PHP8.1 image
+-  ![new icon](../../assets/new.svg) **ionCube**—Added the ionCube extension for the PHP 8.1 image.
 -  ![new icon](../../assets/new.svg) **Added new versions of services**-Added the next versions: OpenSearch 2.3 and 2.4, PHP 8.2, Varnish 7.1.1
 -  ![new icon](../../assets/new.svg) **Enhanced support for PHP 8.2 and Magento 2.4.6**—Fixed compatibility issues with certain PHP 8.2.x versions and Magento 2.4.6.
 -  ![fix icon](../../assets/fix.svg) **Composer issue**-Fixed issues with the composer that occurred after updating its version inside Docker containers.
