@@ -5,41 +5,30 @@ exl-id: d6816925-5912-45ca-8255-6c307e58542d
 ---
 # Workers property
 
-You can define zero or multiple work instances for each application. A worker instance runs as a container, independent from the web instance and without a running Nginx instance. Also, you do not need to set up a web server on the worker instance (using Node.js or Go) because the router cannot direct public requests to the worker. This makes the worker instance ideal for background tasks or continually running tasks that risk blocking a deployment.
+You can define a worker to run independently from the web instance without a running Nginx instance; however, the worker does use the same network storage used by the Commerce application. You do not need to set up a web server on the worker instance (using Node.js or Go) because the router cannot direct public requests to the worker. This makes the worker instance ideal for background tasks or continually running tasks that risk blocking a deployment.
 
-A worker instance has the exact same code and compilation output as a web instance. The container image is built once and deployed multiple times if needed using the same `build` hook and `dependencies`. You can customize the container and allocated resources.
+## Configure a worker
 
-A basic, common worker configuration in the `.magento.app.yaml` file could look like the following:
+Workers are available to use with Pro Staging and Production environments only. Pro Integration and Starter environments can opt to use the [CRON_CONSUMERS_RUNNER](../environment/variables-deploy.md#cron_consumers_runner) variable.
+
+To configure a worker in Pro Staging or Production, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) and include the following information:
+
+- Project ID
+- Environment ID
+- Worker name
+- Start commands
+
+You can configure one process per worker. A basic, common worker configuration in the `.magento.app.yaml` file could look like the following:
 
 ```yaml
 workers:
     queue:
-        size: S
         commands:
             start: |
-                php worker.php
+                php ./bin/magento queue:consumers:start commerce.eventing.event.publish
 ```
 
-This example defines a single worker named `queue`, with a small (size S) container, and runs the command `php worker.php` on startup. If `worker.php` exits, it is automatically restarted.
-
-## Access the worker container
-
-You can use an SSH to connect to the worker instance, inspect logs, and interact.
-
-**To access a worker instance**:
-
-1. On your local workstation, change to your project directory.
-1. Use SSH to log in to the remote environment. Use the `worker` option to connect to a specific worker instance.
-
-   ```bash
-   magento-cloud ssh --worker=<worker-name>
-   ```
-
-   To connect to a worker called `queue`, such as in the earlier example, the SSH command looks similar to the following:
-
-   ```terminal
-   ssh projectID-master-7rqtwti--mymagento--queue@ssh.us.magentosite.cloud
-   ```
+This example defines a single worker named `queue`, with a small (size S) level of resource allocation, and runs the `php ./bin/magento` command on startup. The worker `queue` then runs on each node as a worker process. If the command exits, it is automatically restarted.
 
 ## Commands and overrides
 
@@ -47,29 +36,24 @@ The `commands.start` key is required to launch commands with the worker applicat
 
 >[!IMPORTANT]
 >
->The `deploy` and `post_deploy` hooks and cron commands only run on the web container, not in worker instances.
+>The `deploy` and `post_deploy` hooks and `crons` commands only run on the web container, not in worker instances.
 
-## Inheritance
+### Inheritance
 
 Definitions for the `size`, `relationships`, `access`, `disk` and `mount`, and `variables` properties are inherited by a worker, unless explicitly overridden. 
 
 The following properties are the most commonly used to override [top-level settings](properties.md):
 
-- `size`—allocate fewer resources to a container running only a single background process
-- `variable`—instruct the application to run differently
+- `size`—allocate fewer resources to a single background process
+- `variables`—instruct the application to run differently
 
-## Multi-instance disk mounts
-
-If you have multiple application instances defined (using both web and workers), each instance has independent disk mounts regardless of name or directive. Shared file storage between different application instances is not supported.
-
-## Timing and queueing
+### Timing and queueing
 
 Though each worker queues behind another, the following configuration produces a consistent two-second separation in time stamps in the `var/time.txt` file, regardless of the eight-second sleep within the PHP code:
 
 ```yaml
 workers:
-  time1:
-    size: S
-    commands:
-      start: 'php -r "sleep(8); echo time() . PHP_EOL;" >> var/time.txt& sleep 2'
+    time1:
+        commands:
+            start: 'php -r "sleep(8); echo time() . PHP_EOL;" >> var/time.txt& sleep 2'
 ```
