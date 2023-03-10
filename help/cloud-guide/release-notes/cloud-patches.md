@@ -21,7 +21,13 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.20 {#latest}
+## v1.0.21 {#latest}
+
+Release date: March 10, 2023
+
+-  **Enhanced support for PHP 8.2**—Fixed compatibility issues with certain PHP 8.2.x versions to support Commerce 2.4.6.
+
+## v1.0.20
 
 Release date: October 27, 2022
 
