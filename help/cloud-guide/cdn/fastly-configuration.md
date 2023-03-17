@@ -271,7 +271,7 @@ If the headers do not have the correct values, see [Resolve errors found in the 
 ## Upgrade the Fastly module
 
 Fastly updates the Fastly CDN for Magento 2 module to resolve issues, increase performance, and provide new features.
-We recommend that you update the Fastly module in your Staging and Production environments to the [latest version](https://github.com/fastly/fastly-magento2/releases).
+We recommend that you update the Fastly module in your Staging and Production environments to the [latest version](https://github.com/fastly/fastly-magento2/blob/master/VERSION).
 
 After you update the module, you must upload the VCL code to apply the changes to the Fastly service configuration.
 
