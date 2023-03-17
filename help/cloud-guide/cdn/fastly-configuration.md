@@ -23,7 +23,7 @@ Complete the following steps to enable, configure, and test Fastly early in your
 
 >[!NOTE]
 >
->After you enable and verify Fastly with the default settings, you can customize cache configuration settings and enable additional options such as image optimization, edge modules, and custom VCL code. See [Customize cache configuration](fastly-custom-cache-configuration.md).
+>After you enable and verify the initial Fastly configuration, you can customize the configuration. For example, you can enable additional options such as image optimization, edge modules, and custom VCL code. See [Customize cache configuration](fastly-custom-cache-configuration.md).
 
 ## Get Fastly credentials
 
@@ -85,7 +85,7 @@ You need the following components to enable and configure Fastly services:
 
 1. Clear the cache according to the notification.
 
-1. Navigate back to **Stores** > **Settings** > **Configuration** > **Advanced** > **System** > **Fastly Configuration** to continue configuring Fastly.
+1. Continue configuring Fastly by navigating back to **Stores** > **Settings** > **Configuration** > **Advanced** > **System** > **Fastly Configuration**.
 
 ### Test Fastly credentials
 
@@ -97,7 +97,7 @@ You need the following components to enable and configure Fastly services:
 
    >[!NOTE]
    >
-   >Ignore the link to create a Fastly API token. Use the [Fastly credentials (Service ID and API token) provided by Adobe](#get-fastly-credentials) provided.
+   >Do not select the link to create the Fastly API token. Instead, use the [Fastly credentials (Service ID and API token) provided by Adobe](#get-fastly-credentials) provided by Adobe.
 
 1. Click **Test credentials**.
 
@@ -165,13 +165,13 @@ During the initial Fastly setup process, you can use the following URLs to confi
 
    - `mcprod.<your-domain>.com`
 
-These are the default pre-production URLs available after your project is provisioned. The value for `"your-domain"` is the domain name you specified during the onboarding process.
+These default pre-production URLs are available after your project is provisioned. The value for `"your-domain"` is the domain name you specified during the onboarding process.
 
 >[!NOTE]
 >
 >You cannot specify a custom domain for a non-production environment on Starter projects.
 
-Update your DNS configuration to route traffic from your store URLs to the Fastly service. When you update the configuration, Adobe automatically provisions the required SSL/TLS certificates and uploads them to your Cloud environments. This provisioning can take up to 12 hours.
+To route traffic from your store URLs to the Fastly service update your DNS configuration. When you update the configuration, Adobe automatically provisions the required SSL/TLS certificates and uploads them to your Cloud environments. This provisioning can take up to 12 hours.
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ Update your DNS configuration to route traffic from your store URLs to the Fastl
 
 **To update your DNS configuration for development**:
 
-1. Add CNAME records to point pre-production URLs to the Fastly service: `prod.magentocloud.map.fastly.net`, for example:
+1. Point pre-production URLs to the Fastly service by adding CNAME records: `prod.magentocloud.map.fastly.net`, for example:
 
    | Domain or Subdomain       | CNAME                            |
    |---------------------------|----------------------------------|
@@ -214,7 +214,7 @@ Update your DNS configuration to route traffic from your store URLs to the Fastl
 
    >[!NOTE]
    >
-   >The ACME challenge records in this example are placeholders that are not intended to provision your Adobe Commerce staging and production sites. Contact Adobe to get the correct ACME challenge record information for your project.
+   >The ACME challenge records in this example are placeholders that are not intended to provision your Adobe Commerce staging and production sites. Get the correct ACME challenge record information for your project by contacting Adobe.
 
    After adding the CNAME records, Adobe validates the domains and provisions the SSL/TLS certificate for the environment. When you update the DNS configuration to route traffic from these domains to the Fastly service, Adobe uploads the certificate to the environment.
 
