@@ -5,7 +5,7 @@ exl-id: 1cb00db7-2375-4761-9c07-1e20a74859e0
 ---
 # Snapshots and backup management
 
-You can perform a manual backup of active Starter environments and Pro Integration environments at any time using the snapshots button in the Project Web Interface or using the `magento-cloud snapshot:create` command. A _snapshot_ is a complete backup of an environment that includes all persistent data from running services and any files stored on the mounted volumes. The backup does not include code, since the code is already stored in the Git repository. You cannot download a copy of a snapshot.
+You can perform a manual backup of active Starter environments and Pro Integration environments at any time using the snapshots button in the Project Web Interface or using the `magento-cloud snapshot:create` command. A _snapshot_ is a complete backup of environment data that includes all persistent data from running services (Redis session, MySQL database) and any files stored on the mounted volumes (var, pub/media, app/etc). The backup does _not_ include code, since the code is already stored in the Git repository. You cannot download a copy of a snapshot.
 
 The snapshots feature does **not** apply to the Pro Staging and Production environments. Pro Production environments receive automatic backups. Snapshots are **not** automatic. It is _your_ responsibility to manually create a snapshot or set up a cron job to periodically take snapshots of your Starter or Pro Integration environments.
 
@@ -14,7 +14,7 @@ The snapshots feature does **not** apply to the Pro Staging and Production envir
 
 ## Create a snapshot
 
-To create a snapshot, you must have an admin role for the environment.
+To create a snapshot, you must have an Admin role for the environment.
 
 **To create a snapshot using the Project Web Interface**:
 
@@ -65,7 +65,13 @@ To create a snapshot, you must have an admin role for the environment.
 
 ## Restore a snapshot
 
-You have up to **seven days** to _restore_ a snapshot. Because an environment deploys as a read-only file system, restoring a snapshot is fast.
+To restore an environment from a snapshot, you must have an Admin role for the environment. You have up to **seven days** to _restore_ a snapshot. Restoring a snapshot does not change the code of the current git branch.
+
+Restoration times may vary depending on the size of your database:
+
+- large database (200+ GB) can take 5 hours
+- medium database (150 GB) can take 2 1/2 hours
+- small database (60 GB) can take 1 hour
 
 **To restore a snapshot using the Project Web Interface**:
 
