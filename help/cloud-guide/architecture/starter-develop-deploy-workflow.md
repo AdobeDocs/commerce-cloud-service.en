@@ -159,7 +159,7 @@ For instructions, see [Install optional sample data](../test/sample-data.md).
 
 We recommend adding all of your products, catalogs, site content, and so on, directly to the Production environment. By adding this data to the Production environment, you can provide updated prices, coupons, inventory stock, sales announcements, information about future offerings, and much more for your customers. This data does not include extension configurations, which you configure in your local development branch.
 
-As you develop features, add extensions, and design themes, having real data to work with is helpful. At any time, you can create a database dump from the Production environment and push that to your Staging and Integration environments as needed.
+As you develop features, add extensions, and design themes, having real data to work with is helpful. At any time, you can [create a database dump](../storage/database-dump.md) from the Production environment and push that to your Staging and Integration environments as needed.
 
 To help export Production data as test data to use in Staging and Integration environments:
 

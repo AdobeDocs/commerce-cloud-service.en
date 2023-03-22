@@ -255,7 +255,7 @@ We recommend creating a backup of your project before an upgrade. Use the follow
    vendor/bin/ece-tools db-dump
    ```
 
-   The dump operation creates a `dump-<timestamp>.sql.gz` archive file in your remote project directory. See [Snapshot and backup management](../storage/snapshots.md#dump-your-database).
+   The dump operation creates a `dump-<timestamp>.sql.gz` archive file in your remote project directory. See [Back up database](../storage/database-dump.md).
 
 ## Application upgrade
 
