@@ -51,8 +51,6 @@ product: magento
     + [Authentication keys](development/authentication-keys.md)
     + [CLI branch management](development/cli-branches.md)
     + [Secure connections](development/secure-connections.md)
-    + [Snapshots and backup management](storage/snapshots.md)
-    + [Restore environment](development/restore-environment.md)
     + Deploy {#deploy}
         + [Deployment process](deploy/process.md)
         + [Optimization](deploy/optimization.md)
@@ -71,10 +69,12 @@ product: magento
         + [Staging and Production](test/staging-and-production.md)
     + [PrivateLink service](development/privatelink-service.md)
     + [Protective block](development/protective-block.md)
+    + [Restore environment](development/restore-environment.md)
     + Storage {#storage}
         + [Manage disk space](storage/manage-disk-space.md)
         + [Profile database queries](storage/profile-database-queries.md)
         + [Back up the database](storage/database-dump.md)
+        + [Snapshots and backup management](storage/snapshots.md)
     + Upgrades and patches {#upgrade}
         + [Best practices](development/best-practices.md)
         + [Upgrade Commerce version](development/commerce-version.md)
