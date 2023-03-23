@@ -11,7 +11,7 @@ When you are ready to deploy your store, you must complete deployment and testin
 
 >[!TIP]
 >
->Adobe recommends creating a [snapshot](snapshots.md) of the environment before deployments.
+>Adobe recommends creating a [snapshot](../storage/snapshots.md) of the environment before deployments.
 
 ## Starter deployment flow
 
