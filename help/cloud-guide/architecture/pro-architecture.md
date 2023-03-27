@@ -160,7 +160,7 @@ Automatic backups include persistent data from all running services, such as the
 
 ### Recovery Point Objective
 
-RPO is 6 hours maximum time to last backup (for example at 06:00, then 12:00, then 18:00). The frequency of backups depends on the backup schedule of your plan and the volume of changes to write to the storage service.
+RPO is six hours maximum time to last backup (for example at 06:00, then 12:00, then 18:00). The frequency of backups depends on the backup schedule of your plan and the volume of changes to write to the storage service.
 
 >[!TIP]
 >
