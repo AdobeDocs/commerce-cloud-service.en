@@ -190,7 +190,7 @@ RTO depends on the size of the storage. Large EBS volumes take more time to rest
 
 >[!TIP]
 >
->On Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to restore an environment from an automatic backup.
+>On Pro Staging and Production environments, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to restore an environment from an automatic backup.
 
 ## Pro cluster scaling
 
