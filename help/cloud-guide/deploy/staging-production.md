@@ -15,7 +15,7 @@ When you are ready to deploy your store, you must complete deployment and testin
 
 ## Starter deployment flow
 
-Adobe recommends creating a `staging` branch from the `master` branch to best support your Starter plan development and deployment. With this in place, you have two of your four active environments ready: `master` for Production and `staging` for Staging.
+Adobe recommends creating a `staging` branch from the `master` branch to best support your Starter plan development and deployment. Then you have two of your four active environments ready: `master` for Production and `staging` for Staging.
 
 For detailed information of the process, see [Starter Develop and Deploy Workflow](../architecture/starter-develop-deploy-workflow.md).
 
@@ -249,13 +249,13 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
 
 ### Back up the database
 
-It is a best practice to create a backup of the database. The steps following the guidance from [Back up the database](../storage/database-dump.md).
+It is a best practice to create a backup of the database. The following procedure uses the guidance from [Back up the database](../storage/database-dump.md).
 
 **To dump the database**:
 
 1. [Use SSH to log in to the remote environment](../development/secure-connections.md#use-an-ssh-command) that contains the database to copy.
 
-1. List the environment relationships to find the database login information.
+1. List the environment relationships and note the database login information.
 
    ```bash
    php -r 'print_r(json_decode(base64_decode($_ENV["MAGENTO_CLOUD_RELATIONSHIPS"]))->database);'
@@ -287,11 +287,11 @@ It is a best practice to create a backup of the database. The steps following th
 
 ### Drop and re-create the database
 
-When importing data, you need to drop and create a database.
+When importing data, you must drop and create a database.
 
 **To drop and re-create the database**:
 
-1. Establish a [SSH tunnel](../development/secure-connections.md#ssh-tunneling) to the remote environment.
+1. Establish an [SSH tunnel](../development/secure-connections.md#ssh-tunneling) to the remote environment.
 
 1. Connect to the database service.
 
