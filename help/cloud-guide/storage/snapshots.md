@@ -66,9 +66,9 @@ You must have an [Admin role](../project/user-access.md) for the environment.
 
 ## Restore a snapshot
 
-You must have an [Admin role](../project/user-access.md) for the environment. You have up to **seven days** to _restore_ a snapshot. Restoring a snapshot does not change the code of the current git branch.
+You must have [Admin access](../project/user-access.md) to the environment. You have up to **seven days** to _restore_ a snapshot. Restoring a snapshot does not change the code of the current git branch.
 
-Restoration times may vary depending on the size of your database:
+Restoration times vary depending on the size of your database:
 
 - large database (200+ GB) can take 5 hours
 - medium database (150 GB) can take 2 1/2 hours
@@ -78,7 +78,7 @@ Restoration times may vary depending on the size of your database:
 >
 >Restoring without a snapshot:
 >
->- To roll back to previous code or remove added extensions in an environment. See [Roll back code](#roll-back-code).
+>- To roll back to previous code or remove added extensions in an environment, see [Roll back code](#roll-back-code).
 >- To restore an unstable environment that does _not_ have a snapshot, see [Restore an environment](../development/restore-environment.md).
 
 **To restore a snapshot using the Project Web Interface**:
