@@ -22,7 +22,7 @@ The following table summarizes the differences between environments:
 | Runs on dedicated IaaS hardware        | No          | Yes               | Yes                  |
 | Includes Fastly CDN                    | No          | Yes               | Yes                  |
 | Includes New Relic service             | No          | APM               | APM + NRI            |
-| Automatic Backups                      | No          | No                | Yes                  |
+| Automatic Backups                      | No          | Yes               | Yes                  |
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ Adobe retains automatic backups according to the following data retention policy
 | Weeks 8 through 12 | One bi-weekly backup    |
 | Month 3 through 5  | One backup per month    |
 
-This policy may vary depending on your 
+This policy may vary depending on your cloud infrastructure plan.
 
 ### Recovery Time Objective
 

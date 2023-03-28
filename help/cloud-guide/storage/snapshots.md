@@ -7,7 +7,7 @@ exl-id: 1cb00db7-2375-4761-9c07-1e20a74859e0
 
 You can perform a manual backup of active Starter and Pro Integration environments at any time using the **[!UICONTROL Snapshots]** button in the Project Web Interface or using the `magento-cloud snapshot:create` command.
 
-A _snapshot_ is a complete backup of environment data that includes all persistent data from running services (Redis session, MySQL database) and any files stored on the mounted volumes (var, pub/media, app/etc). The backup does _not_ include code, since the code is already stored in the Git repository. You cannot download a copy of a snapshot.
+A _snapshot_ is a complete backup of environment data that includes all persistent data from running services (Redis session, MySQL database) and any files stored on the mounted volumes (var, pub/media, app/etc). The backup does _not_ include code, since the code is already stored in the Git-based repository. You cannot download a copy of a snapshot.
 
 The snapshots feature does **not** apply to the Pro Staging and Production environments. The Pro Staging and Production environments receive regular backups for disaster recovery purposes by default, see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery). Unlike the automatic live backups on the Pro Staging and Production environments, snapshots are **not** automatic. It is _your_ responsibility to manually create a snapshot or set up a cron job to periodically take snapshots of your Starter or Pro Integration environments.
 
