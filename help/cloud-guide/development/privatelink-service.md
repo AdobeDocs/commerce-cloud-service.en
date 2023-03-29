@@ -7,6 +7,10 @@ exl-id: b25548b8-312b-4a74-b242-f4e2ac6cf945
 
 Adobe Commerce on cloud infrastructure supports integration with the [AWS PrivateLink](https://aws.amazon.com/privatelink/) or [Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/) service. You can use PrivateLink to establish secure, private communication between Adobe Commerce on cloud infrastructure environments and services and applications hosted on external systems. Both the Adobe Commerce application and external systems must be accessible through Virtual Private Cloud (VPC) endpoints configured within the same Cloud region (AWS or Azure).
 
+>[!TIP]
+>
+>PrivateLink is best used for securing connections for non-HTTP(S) integrations, such as database or file transfers. If you plan to integrate your application with Adobe Commerce APIs, see [Adobe API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) in _API Mesh for Adobe Developer App Builder_.
+
 ## Features and support
 
 The PrivateLink service integration for Adobe Commerce on cloud infrastructure projects includes the following features and support:
@@ -64,7 +68,7 @@ Gather the following data required for PrivateLink enablement:
 
 - **Customer Cloud account number** (AWS or Azure)—Must be in the same region as the Adobe Commerce on cloud infrastructure instance
 - **Cloud region**—Provide the Cloud region where the account is hosted for verification purposes
-- **Services and communication ports**—Adobe must open ports to enable service communication between VPCs, for example _Webserver, HTTP port 80_, _SFTP port 2222_
+- **Services and communication ports**—Adobe must open ports to enable service communication between VPCs, for example SQL port 3306, SFTP port 2222
 - **Project ID**—Provide the Adobe Commerce on cloud infrastructure Pro project ID. You can get the Project ID and other project information using the following [Cloud CLI](../dev-tools/cloud-cli.md) command: `magento-cloud project:info`
 - **Connection type**—Specify unidirectional or bidirectional for connection type
 - **Endpoint service**—For bidirectional PrivateLink connections, provide the DNS URL for the VPC endpoint service that Adobe must connect to, for example: `com.amazonaws.vpce.<cloud-region>.vpce-svc-<service-id>`
@@ -179,7 +183,7 @@ You can use the Telnet application to test the connection to the VPC endpoint se
    Check the following internal settings to ensure that the configuration is valid:
 
    - Endpoint and endpoint services settings
-   - NLB settings
+   - Network Load Balancer (NLB) settings
    - The target groups in NLB and verify they are healthy
    - The netcat/curl endpoint URL from each VM (listed above)
 
@@ -192,7 +196,7 @@ You can use the Telnet application to test the connection to the VPC endpoint se
 
 ## Change PrivateLink configuration
 
-Submit an Adobe Commerce Support ticket to change an existing PrivateLink configuration. For example, you can request changes like the following:
+[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change an existing PrivateLink configuration. For example, you can request changes like the following:
 
 - Remove the PrivateLink connection from the Adobe Commerce on cloud infrastructure Pro Production or Staging environment.
 - Change the customer Cloud platform account number for accessing the Adobe endpoint service.
