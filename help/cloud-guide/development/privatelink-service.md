@@ -9,7 +9,7 @@ Adobe Commerce on cloud infrastructure supports integration with the [AWS Privat
 
 >[!TIP]
 >
->PrivateLink is best used for securing connections for non-HTTP(S) integrations, such as database or file transfers. If you plan to integrate your application with Adobe Commerce APIs, see [Adobe API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) in _API Mesh for Adobe Developer App Builder_.
+>PrivateLink is best used for securing connections for non-HTTP(S) integrations, such as database or file transfers. If you plan to integrate your application with Adobe Commerce APIs, see how to create an [Adobe API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) in _API Mesh for Adobe Developer App Builder_.
 
 ## Features and support
 
