@@ -5,7 +5,7 @@ description: Learn how to use ECE-tools to create a backup of the database for a
 
 # Back up the database
 
-You can create a copy of your database using the `ece-tools db-dump` command without capturing the whole of environment data from services and mounts. By default, this command creates backups in the `/app/var/dump-main` directory for all database connections that are specified in the environment configuration. The DB dump operation switches the application to maintenance mode, stops consumer queue processes, and disables cron jobs before the dump begins.
+You can create a copy of your database using the `ece-tools db-dump` command without capturing all environment data from services and mounts. By default, this command creates backups in the `/app/var/dump-main` directory for all database connections that are specified in the environment configuration. The DB dump operation switches the application to maintenance mode, stops consumer queue processes, and disables cron jobs before the dump begins.
 
 Consider the following guidelines for DB dump:
 
@@ -69,7 +69,7 @@ Use the `php vendor/bin/ece-tools db-dump --help` command for more options.
    [2020-01-28 16:38:11] NOTICE: Maintenance mode is disabled.
    ```
 
-1. The `db-dump` command creates an archive in your remote project directory called  `dump-<timestamp>.sql.gz`.
+1. The `db-dump` command creates an archive in your remote project directory called `dump-<timestamp>.sql.gz`.
 
 >[!TIP]
 >
