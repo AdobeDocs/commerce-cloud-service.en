@@ -9,13 +9,11 @@ By default, email support is **disabled** on Staging and Production environments
 
 You can manage email support for each Cloud project environment from the Project Web Interface or from the command line.
 
--  On `master` and integration branches, use the **[!UICONTROL Outgoing emails]** toggle in the _Configure environment_ view to enable or disable email support.
-
--  On Production and Staging environments, or other environments where the **Outgoing emails** toggle is not available in the Project Web Interface, change the configuration using the [`magento-cloud` CLI](../dev-tools/cloud-cli.md) `environment:info` command to set the `enable_smtp` property.
-
-   Enabling SMTP updates the `MAGENTO_CLOUD_SMTP_HOST` environment variable with the IP address of the SMTP host for sending mail.
-
 {{redeploy-warning}}
+
+## Enable emails in the Project Web Interface
+
+Use the **[!UICONTROL Outgoing emails]** toggle in the _Configure environment_ view to enable or disable email support.
 
 **To manage email support from the Project Web Interface**:
 
@@ -27,6 +25,10 @@ You can manage email support for each Cloud project environment from the Project
    ![Enable outgoing email configuration](../../assets/outgoing-emails.png)
 
 After you change the setting, the environment builds and deploys with the new configuration.
+
+## Enable emails in the CLI
+
+You can change the email configuration using the `magento-cloud` CLI `environment:info` command to set the `enable_smtp` property. Enabling SMTP updates the `MAGENTO_CLOUD_SMTP_HOST` environment variable with the IP address of the SMTP host for sending mail.
 
 **To manage email support from the command line**:
 
