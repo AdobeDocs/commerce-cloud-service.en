@@ -7,16 +7,16 @@ exl-id: 01d02ea0-1e7d-4608-adbf-1dad7f5e2182
 
 If your customers are companies, you can install the B2B for Adobe Commerce module to extend your Adobe Commerce on cloud infrastructure Pro project to accommodate a business-to-business model. Although this topic provides information specific to installing and configuring the B2B module for Adobe Commerce on cloud infrastructure, you can find additional B2B information in the following guides:
 
--  [Adobe Commerce B2B Developer Guide](https://developer.adobe.com/commerce/webapi/rest/b2b/)
--  [Adobe Commerce B2B User Guide](https://experienceleague.adobe.com/docs/commerce-admin/b2b/guide-overview.html)
+- [Adobe Commerce B2B Developer Guide](https://developer.adobe.com/commerce/webapi/rest/b2b/)
+- [Adobe Commerce B2B User Guide](https://experienceleague.adobe.com/docs/commerce-admin/b2b/guide-overview.html)
 
 >[!TIP]
 >
->Because we provide B2B as a module for Adobe Commerce on cloud infrastructure, we highly recommend that you have your Adobe Commerce application fully deployed to an Integration or Staging environment before beginning.
+>Because B2B is a module for Adobe Commerce on cloud infrastructure, Adobe recommends that you deploy your Adobe Commerce application to an Integration or Staging environment before beginning.
 
 ## Install B2B module
 
-We recommend working in a development branch when adding the B2B module to your project. If you do not have a branch, see [Create a branch for development](../development/cli-branches.md#create-a-branch-for-development). When installing the B2B module, the `Magento_B2b` module name is automatically inserted in the `app/etc/config.php` file. There is no need to edit the file directly.
+Adobe recommends working in a development branch when adding the B2B module to your project. If you do not have a branch, see [Create a branch for development](../development/cli-branches.md#create-a-branch-for-development). When installing the B2B module, the `Magento_B2b` module name is automatically inserted in the `app/etc/config.php` file. There is no need to edit the file directly.
 
 **To install the B2B module**:
 
@@ -61,14 +61,33 @@ We recommend working in a development branch when adding the B2B module to your 
    Sample response:
 
    ```terminal
-   Module is enabled
+   Magento_B2b : Module is enabled
    ```
 
    If you encounter deployment errors, see [Recover from component failure](../deploy/recover-failed-deployment.md).
 
 ## Enable the B2B module
 
-When you install the B2B module using Composer, the deployment process automatically enables the module. If you already have the B2B module installed, you can enable or disable the module using the CLI. See [Manage extensions](extensions.md).
+When you install the B2B module using Composer, the deployment process automatically enables the module. If you already have the B2B module installed, you can enable or disable the module using the CLI
+
+Enable the B2B module:
+
+```bash
+bin/magento module:enable Magento_B2b
+```
+
+Sample response:
+
+```terminal
+The following modules have been enabled:
+- Magento_B2b
+
+Cache cleared successfully.
+Generated classes cleared successfully. Please run the 'setup:di:compile' command to generate classes.
+Info: Some modules might require static view files to be cleared. To do this, run 'module:enable' with the --clear-static-content option to clear them.
+```
+
+See [Manage extensions](extensions.md).
 
 ## Configure the B2B module
 
