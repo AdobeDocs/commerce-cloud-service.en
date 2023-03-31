@@ -9,7 +9,7 @@ You can extend your Adobe Commerce application capabilities by adding an extensi
 
 ## Composer name of an extension
 
-Although this discusses how to get the Composer name and version of an extension from Commerce Marketplace, you can find the name and version of _any_ module in the Composer file of the module. Open the `composer.json` file in a text editor and note the `"name"` and `"version"` values.
+Although this section discusses how to get the Composer name and version of an extension from Commerce Marketplace, you can find the name and version of _any_ module in the Composer file of the module. Open the `composer.json` file in a text editor and note the `"name"` and `"version"` values.
 
 **To get the Composer name of a module from the Commerce Marketplace**:
 
@@ -43,7 +43,7 @@ Although this discusses how to get the Composer name and version of an extension
 
 ## Install an extension
 
-We recommend working in a development branch when adding an extension to your implementation. When installing an extension, the extension name (`<VendorName>_<ComponentName>`) is automatically inserted in the [`app/etc/config.php`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html) file. There is no need to edit the file directly.
+Adobe recommends working in a development branch when adding an extension to your implementation. When installing an extension, the extension name (`<VendorName>_<ComponentName>`) is automatically inserted in the [`app/etc/config.php`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html) file. There is no need to edit the file directly.
 
 **To install an extension**:
 
@@ -101,7 +101,7 @@ We recommend working in a development branch when adding an extension to your im
    Module is enabled
    ```
 
-   If you encounter deployment errors, see [extension deployment failure][].
+   If you encounter deployment errors, see [extension deployment failure](../deploy/recover-failed-deployment.md).
 
 ## Manage extensions
 
