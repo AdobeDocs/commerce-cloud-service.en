@@ -24,7 +24,7 @@ OpenSearch enables you to take data from any source, any format, and search and 
 
 **To enable OpenSearch**:
 
-1. For Starter projects, add the `opensearch` service to the `.magento/services.yaml` file with the appropriate version and allocated disk space in MB. In this case, version 2 is appropriate. The minor version is not required because cloud infrastructure uses the latest version of OpenSearch.
+1. For Starter and Pro integration environments, add the `opensearch` service to the `.magento/services.yaml` file with the appropriate version and allocated disk space in MB. In this case, version 2 is appropriate. The minor version is not required because cloud infrastructure uses the latest version of OpenSearch.
 
    ```yaml
    opensearch:
