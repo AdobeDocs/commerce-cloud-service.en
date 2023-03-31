@@ -28,7 +28,7 @@ Use the `php vendor/bin/ece-tools db-dump --help` command for more options.
 
 **To create a database dump in the Staging or Production environment**:
 
-1. [Use SSH to log in to the remote environment](../development/secure-connections.md#use-an-ssh-command) that contains the database to copy.
+1. [Use SSH to log in or create a tunnel to connect to the remote environment](../development/secure-connections.md) that contains the database to copy.
 
 1. List the environment relationships and note the database login information.
 
