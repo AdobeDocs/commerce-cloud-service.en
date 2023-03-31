@@ -32,7 +32,7 @@ You must have an [Admin role](../project/user-access.md) for the environment.
    magento-cloud snapshot:create --live
    ```
 
-   Alternatively, you can use `magento-cloud backup` short command. The `--live` option leaves the environment running to avoid downtime. For a full list of options, enter `magento-cloud snapshot:create --help`.
+   Alternatively, you can use the `magento-cloud backup` short command. The `--live` option leaves the environment running to avoid downtime. For a full list of options, enter `magento-cloud snapshot:create --help`.
 
    Sample response:
 
