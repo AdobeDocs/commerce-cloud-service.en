@@ -7,11 +7,53 @@ exl-id: b76bd6c3-986e-4adc-abd0-5b27db0d8a3b
 
 If you encounter issues in the Integration environment and do not have a [valid snapshot](../storage/snapshots.md), try restoring your environment using one of the following methods:
 
+- Reset or revert the code in the Git branch
 - Uninstall the Commerce application
 - Force a redeployment
 - Manually reset the database
 
 {{stuck-deployment-tip}}
+
+## Reset the Git branch
+
+Resetting your Git branch reverts the code to a stable state in the past.
+
+**To reset your branch**:
+
+1. On your local workstation, change to your project directory.
+
+1. Review the Git commit history. Use `--oneline` to show abbreviated commits on one line:
+
+   ```bash
+   git log --oneline
+   ```
+
+   Sample response:
+
+   ```terminal
+   6bf9f45 (HEAD -> master, magento/master, magento/develop, magento/HEAD, develop) Create composer.lock
+   34d7434 2.4.6 upgrade
+   b69803c Update composer.lock
+   c1bca24 Add sample data
+   ec604c3 Update magento/ece-tools
+   ...
+   ```
+
+1. Choose a commit hash that represents the last known stable state of your code.
+
+   To reset your branch to its original initialized state, find the first commit that created your branch. You can use `--reverse` to display history in reverse chronological order.
+
+1. Use the hard reset option to reset your branch. Be careful using this command because it discards all changes since the chosen commit.
+
+   ```bash
+   git reset --hard <commit>
+   ```
+
+1. Push your changes to trigger a redeployment, which reinstalls Adobe Commerce.
+
+   ```bash
+   git push --force <origin> <branch>
+   ```
 
 ## Uninstall Commerce
 
@@ -75,44 +117,6 @@ Uninstalling the Adobe Commerce software drops and restores the database, remove
 >```bash
 >magento-cloud project:clear-build-cache
 >```
-
-### Reset the Git branch
-
-Resetting your Git branch reverts the code to a stable state in the past.
-
-To reset your branch:
-
-1. On your local workstation, change to your project directory.
-
-1. Review the Git commit history. Use `--reverse` to display history in reverse chronological order:
-
-   ```bash
-   git log --reverse
-   ```
-
-1. Choose a commit hash that represents the last known stable state of your code.
-
-   To reset your branch to its original initialized state, find the first commit that created your branch.
-
-   ```terminal
-   commit 398c8fd3a46534fc88d6de250c5d081d5be3c852
-   Author: Alice Username <alice@example.com>
-   Date:   Wed Apr 13 16:16:13 2021 -0500
-
-       Init 2.4.4
-   ```
-
-1. Use the hard reset option to reset your branch.
-
-   ```bash
-   git reset --h <commit-hash>
-   ```
-
-1. Push your changes to trigger a redeployment, which reinstalls Adobe Commerce.
-
-   ```bash
-   git push --force <origin> <branch>
-   ```
 
 ## Force a redeployment
 

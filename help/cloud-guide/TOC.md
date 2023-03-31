@@ -30,7 +30,7 @@ product: magento
     + [Multi-factor authentication](project/multi-factor-authentication.md)
     + [Outgoing emails](project/outgoing-emails.md)
     + [SendGrid mail service](project/sendgrid.md)
-    + [Branch management](project/console-branches.md)
+    + [Console branch management](project/console-branches.md)
     + [Regional IP addresses](project/regional-ip-addresses.md)
 + Developer tools {#dev-tools}
     + [Cloud CLI](dev-tools/cloud-cli.md)
@@ -49,7 +49,7 @@ product: magento
 + Development {#develop}
     + [Overview](development/overview.md)
     + [Authentication keys](development/authentication-keys.md)
-    + [Clone and branch management](development/cli-branches.md)
+    + [CLI branch management](development/cli-branches.md)
     + [Secure connections](development/secure-connections.md)
     + Deploy {#deploy}
         + [Deployment process](deploy/process.md)
@@ -73,6 +73,7 @@ product: magento
     + Storage {#storage}
         + [Manage disk space](storage/manage-disk-space.md)
         + [Profile database queries](storage/profile-database-queries.md)
+        + [Back up the database](storage/database-dump.md)
         + [Snapshots and backup management](storage/snapshots.md)
     + Upgrades and patches {#upgrade}
         + [Best practices](development/best-practices.md)
