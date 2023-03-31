@@ -20,7 +20,6 @@ Each of the smart wizard commands provides a verification response and, if appli
 | `wizard:scd-on-demand` | Check that the `SCD_ON_DEMAND` global environment variable is `true`. |
 | `wizard:scd-on-build` | Check that the `SCD_ON_DEMAND` global environment variable is `false` and the `SKIP_SCD` environment variable is `false` for the _build_ stage. Verifies that the `config.php` file contains information for stores, store groups, and websites. |
 | `wizard:scd-on-deploy` | Check that the `SCD_ON_DEMAND` global environment variable is `false` and the `SKIP_SCD` environment variable is `false` for the _deploy_ stage. Verifies that the `config.php` file does _NOT_ contain the list of stores, store groups, and websites with related information. |
-| `wizard:split-db-state` | Check if the current project uses, or is capable of using, a [split database](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/split-db/multi-master.html). |
 
 As an example, you can verify that your configuration properly enables the SCD on-demand feature:
 

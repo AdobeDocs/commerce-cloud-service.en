@@ -14,10 +14,6 @@ Consider the following guidelines for DB dump:
 - For Pro Production environments, this command dumps only from _one_ of the three high-availability nodes, so production data written to a different node during the dump might not be copied. The command generates a `var/dbdump.lock` file to prevent the command from running on more than one node.
 - For a backup of all environment services, Adobe recommends creating a [snapshot](snapshots.md).
 
->[!TIP]
->
->If you configured your project to use a [split database](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/split-db/multi-master.html), the `db-dump` operation creates backups for each of the configured databases. Use the following command to verify your project configuration: `php vendor/bin/ece-tools wizard:split-db-state`
-
 You can choose to back up multiple databases by appending the database names to the command. The following example backs up two databases: `main` and `sales`:
 
 ```bash
