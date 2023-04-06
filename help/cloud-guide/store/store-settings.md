@@ -18,6 +18,33 @@ Store settings, which refer to the configurations in the Admin **Stores** > **Se
 
 Configuration management provides a way to deploy consistent store settings across your environments with minimal downtime using Pipeline deployment. Adobe Commerce on cloud infrastructure project includes the build server, build and deploy scripts, and deployment environments designed with the [pipeline deployment strategy](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in mind. 
 
+## Configuration override scheme
+
+All system configurations are set during build and deploy phases according to the following override scheme:
+
+1. If an environment variable exists, use the custom configuration and ignore the default configuration.
+1. If an environment variable does not exist, use the configuration from a `MAGENTO_CLOUD_RELATIONSHIPS` name-value pair in the [`.magento.app.yaml` file](../application/configure-app-yaml.md). Ignore the default configuration.
+1. If an environment variable does not exist and `MAGENTO_CLOUD_RELATIONSHIPS` does not contain a name-value pair, remove all customized configuration and use the values from the default configuration.
+
+To summarize, environment variables override all other values.
+
+>[!TIP]
+>
+>See [Configuration management](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in the _Configuration guide_ to read more about the override scheme for pipeline deployment.
+
+If the same setting is configured in multiple places, the application relies on the following configuration hierarchy to determine which value to apply to the environment :
+
+| Priority | Configuration<br>Method  | Description |
+| -------- | ------------------------ | ----------- |
+| 1 | Project Web Interface<br>environment variables | Values added from the _Variables_ tab of environment configuration in the Project Web Interface. We recommend specifying values here for sensitive or environment-specific configurations. Settings specified here cannot be edited from the Admin. See [Environment configuration variables](../project/overview.md#configure-environment). |
+| 2 | `.magento.app.yaml` | Values added in the `variables` section of the `.magento.app.yaml` file. We recommend specifying values here to ensure consistent configuration across all environments. **Do not specify sensitive values in the `.magento.app.yaml` file.** See [Application settings](../application/configure-app-yaml.md). |
+| 3 | `app/etc/env.php` | Environment-specific configuration values stored here are added by using the `app:config:dump` command. Set the system-specific and sensitive values using environment variables or the CLI. See [Sensitive data](#sensitive-data). The `env.php` file is **not** included in source control. |
+| 4 | `app/etc/config.php` | Values stored here are added by using the `app:config:dump` command. Shared configuration values are added to `config.php`. Set shared configuration from the Admin or using the CLI. The `config.php` file is included in source control. |
+| 5 | Database | Values stored here are added by setting configurations in the Admin. Configurations set using any of the preceding methods are locked (grayed out) and cannot be edited from the Admin. |
+| 6 | `config.xml` | Many configurations have default values set in the `config.xml` file for a module. If Adobe Commerce cannot find any value set by any of the preceding methods, it falls back to the default value, if set. |
+
+{style="table-layout:auto"}
+
 ## Configuration dump
 
 You can use the following `ece-tools` command to generate a `config.php` file that contains all the current store configurations:
@@ -77,33 +104,6 @@ Move the SCD_* variables to the build stage:
 >
 >Before deploying static files, the build and deploy phases compress static content using GZIP. Compressing static files reduces server loads and increases site performance. See [build options](../environment/variables-build.md) to learn about customizing or disabling file compression.
 
-## Configuration override scheme
-
-All system configurations are set during build and deploy phases according to the following override scheme:
-
-1. If an environment variable exists, use the custom configuration and ignore the default configuration.
-1. If an environment variable does not exist, use the configuration from a `MAGENTO_CLOUD_RELATIONSHIPS` name-value pair in the [`.magento.app.yaml` file](../application/configure-app-yaml.md). Ignore the default configuration.
-1. If an environment variable does not exist and `MAGENTO_CLOUD_RELATIONSHIPS` does not contain a name-value pair, remove all customized configuration and use the values from the default configuration.
-
-To summarize, environment variables override all other values.
-
->[!TIP]
->
->See [Configuration management](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in the _Configuration guide_ to read more about the override scheme for pipeline deployment.
-
-If the same setting is configured in multiple places, the application relies on the following configuration hierarchy to determine which value to apply to the environment :
-
-| Priority | Configuration<br>Method  | Description |
-| -------- | ------------------------ | ----------- |
-| 1 | Project Web Interface<br>environment variables | Values added from the _Variables_ tab of environment configuration in the Project Web Interface. We recommend specifying values here for sensitive or environment-specific configurations. Settings specified here cannot be edited from the Admin. See [Environment configuration variables](../project/overview.md#configure-environment). |
-| 2 | `.magento.app.yaml` | Values added in the `variables` section of the `.magento.app.yaml` file. We recommend specifying values here to ensure consistent configuration across all environments. **Do not specify sensitive values in the `.magento.app.yaml` file.** See [Application settings](../application/configure-app-yaml.md). |
-| 3 | `app/etc/env.php` | Environment-specific configuration values stored here are added by using the `app:config:dump` command. Set the system-specific and sensitive values using environment variables or the CLI. See [Sensitive data](#sensitive-data). The `env.php` file is **not** included in source control. |
-| 4 | `app/etc/config.php` | Values stored here are added by using the `app:config:dump` command. Shared configuration values are added to `config.php`. Set shared configuration from the Admin or using the CLI. The `config.php` file is included in source control. |
-| 5 | Database | Values stored here are added by setting configurations in the Admin. Configurations set using any of the preceding methods are locked (grayed out) and cannot be edited from the Admin. |
-| 6 | `config.xml` | Many configurations have default values set in the `config.xml` file for a module. If Adobe Commerce cannot find any value set by any of the preceding methods, it falls back to the default value, if set. |
-
-{style="table-layout:auto"}
-
 ## Procedure to manage your settings
 
 The following illustrates a high-level overview of this process:
@@ -153,12 +153,18 @@ When you modify your environment through the Admin and run the command again, ne
 
 ### Restore configuration files
 
-Copies of the original `app/etc/env.php` and `app/etc/config.php` files were created during the deployment process and store in the same folder. The following shows the BAK (backup files) and PHP (original files) in the same folder:
+Copies of the original `app/etc/env.php` and `app/etc/config.php` files were created during the deployment process and store in the same folder. The following shows the BAK (backup files) and PHP (original files) in the same `app/etc` folder:
 
 ```terminal
-$ ls app/etc
-NonComposerComponentRegistration.php  config.php.bak  di.xml   env.php.bak                vendor_path.php
-config.php                            db_schema.xml   env.php  registration_globlist.php
+NonComposerComponentRegistration.php
+config.php.bak
+di.xml
+env.php.bak
+vendor_path.php
+config.php
+db_schema.xml
+env.php
+registration_globlist.php
 ```
 
 **To restore configuration files**:
