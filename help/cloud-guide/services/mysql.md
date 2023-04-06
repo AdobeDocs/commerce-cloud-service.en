@@ -7,7 +7,7 @@ exl-id: 70820d00-8b82-4b60-87e4-ea98fd7ffcb2
 
 The `mysql` service provides persistent data storage based on [MariaDB](https://mariadb.com/) versions 10.2 to 10.4, supporting the [XtraDB](https://www.percona.com/software/mysql-database/percona-server/xtradb) storage engine and reimplemented features from MySQL 5.6 and 5.7.
 
-Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers) in the _Performance Best Practices_ guide.
+Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Indexers](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers) in the _Performance Best Practices_ guide.
 
 >[!WARNING]
 >
@@ -202,7 +202,7 @@ Accessing the MariaDB database directly requires you to use an SSH to log in to 
 
 ## Connect to secondary database
 
-Sometimes, you have to connect to the secondary database to improve database performance or resolve database locking issues. If this configuration is required, use `"port" : 3304` to establish the connection. See the [Adobe Commerce on cloud infrastructure best practice](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/configure-mysql-slave-connection-on-cloud.html) article in the _Adobe Commerce Help Center_.
+Sometimes, you have to connect to the secondary database to improve database performance or resolve database locking issues. If this configuration is required, use `"port" : 3304` to establish the connection. See the [Best practice to configure the MySQL slave connection](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/configure-mysql-slave-connection-on-cloud.html) topic in the _Implementation Best Practices_ guide.
 
 ## Troubleshooting
 
