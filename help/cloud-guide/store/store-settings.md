@@ -7,7 +7,7 @@ exl-id: f2dd876d-24ee-4d47-b9ac-44fcf77b61b5
 
 The default configurations for your store are stored in a `config.xml` for the appropriate module. When you change settings in the Commerce Admin or the CLI `bin/magento config:set` command, the changes are reflected in the core database, specifically the `core_config_data` table. These settings overwrite the default configurations stored in the `config.xml` file.
 
-Store settings, which refer to the configurations in the Admin **Stores** > **Settings** > **Configuration** section, are stored in the deployment comfiguration files based on the type of configuration:
+Store settings, which refer to the configurations in the Admin **Stores** > **Settings** > **Configuration** section, are stored in the deployment configuration files based on the type of configuration:
 
 - `app/etc/config.php`—configuration settings for stores, websites, modules or extensions, static file optimization, and system values related to static content deployment. See the [config.php reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html) in the _Configuration Guide_.
 - `app/etc/env.php`—values for system-specific overrides and sensitive settings that should _NOT_ be stored in source control. See the [env.php reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html) in the _Configuration Guide_.
@@ -30,14 +30,14 @@ To summarize, environment variables override all other values.
 
 >[!TIP]
 >
->See [Configuration management](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in the _Configuration guide_ to read more about the override scheme for pipeline deployment.
+>See [Configuration management](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in the _Configuration guide_ for more about the override scheme for pipeline deployment.
 
 If the same setting is configured in multiple places, the application relies on the following configuration hierarchy to determine which value to apply to the environment :
 
 | Priority | Configuration<br>Method  | Description |
 | -------- | ------------------------ | ----------- |
-| 1 | Project Web Interface<br>environment variables | Values added from the _Variables_ tab of environment configuration in the Project Web Interface. We recommend specifying values here for sensitive or environment-specific configurations. Settings specified here cannot be edited from the Admin. See [Environment configuration variables](../project/overview.md#configure-environment). |
-| 2 | `.magento.app.yaml` | Values added in the `variables` section of the `.magento.app.yaml` file. We recommend specifying values here to ensure consistent configuration across all environments. **Do not specify sensitive values in the `.magento.app.yaml` file.** See [Application settings](../application/configure-app-yaml.md). |
+| 1 | Project Web Interface<br>environment variables | Values added from the _Variables_ tab of environment configuration in the Project Web Interface. Specify values here for sensitive or environment-specific configurations. Settings specified here cannot be edited from the Admin. See [Environment configuration variables](../project/overview.md#configure-environment). |
+| 2 | `.magento.app.yaml` | Values added in the `variables` section of the `.magento.app.yaml` file. Specify values here to ensure consistent configuration across all environments. **Do not specify sensitive values in the `.magento.app.yaml` file.** See [Application settings](../application/configure-app-yaml.md). |
 | 3 | `app/etc/env.php` | Environment-specific configuration values stored here are added by using the `app:config:dump` command. Set the system-specific and sensitive values using environment variables or the CLI. See [Sensitive data](#sensitive-data). The `env.php` file is **not** included in source control. |
 | 4 | `app/etc/config.php` | Values stored here are added by using the `app:config:dump` command. Shared configuration values are added to `config.php`. Set shared configuration from the Admin or using the CLI. The `config.php` file is included in source control. |
 | 5 | Database | Values stored here are added by setting configurations in the Admin. Configurations set using any of the preceding methods are locked (grayed out) and cannot be edited from the Admin. |
@@ -149,14 +149,14 @@ When you modify your environment through the Admin and run the command again, ne
 
 >[!WARNING]
 >
->While you can manually edit the `config.php` file in the Staging and Production environments, we do **not** recommend it. The file helps to keep all configurations consistent across all environments. Never delete the `config.php` file to rebuild it. Deleting the file can remove specific configurations and settings required for build and deploy processes.
+>While you can manually edit the `config.php` file in the Staging and Production environments, we do **not** recommend it. The file helps to keep all configurations consistent across all environments. Never delete the `config.php` file for rebuilding it. Deleting the file can remove specific configurations and settings required for build and deploy processes.
 
 ### Restore configuration files
 
 Copies of the original `app/etc/env.php` and `app/etc/config.php` files were created during the deployment process and store in the same folder. The following shows the BAK (backup files) and PHP (original files) in the same `app/etc` folder:
 
 ```terminal
-NonComposerComponentRegistration.php
+...
 config.php.bak
 di.xml
 env.php.bak
@@ -164,8 +164,10 @@ vendor_path.php
 config.php
 db_schema.xml
 env.php
-registration_globlist.php
+...
 ```
+
+Older configurations used the `app/etc/config.local.php` file. See [Migrate older configurations](#migrate-older-configurations).
 
 **To restore configuration files**:
 
@@ -211,7 +213,7 @@ If they differ, you can append content from the `config.local.php` file to your 
 
 1. Deploy across your environments.
 
-You only need to complete this migration once. When you need to update the file, always update the `config.php` file.
+You only need to complete this migration once. After migration, use the `config.php` file.
 
 ### Change locales
 
@@ -233,7 +235,7 @@ You can add another locale to the Staging or Production environment by enabling 
    ssh <SSH-URL> "./vendor/bin/ece-tools config:dump"
    ```
 
-1. Copy the new configuration file from your Integration environment to your local environment directory.
+1. Copy the new configuration file from the remote integration environment to your local environment directory.
 
    ```bash
    rsync <SSH-URL>:app/etc/config.php ./app/etc/config.php
