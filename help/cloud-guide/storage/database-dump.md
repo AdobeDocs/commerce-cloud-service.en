@@ -1,8 +1,8 @@
 ---
 title: Back up the database
 description: Learn how to use ECE-tools to create a backup of the database for an Adobe Commerce on cloud infrastructure project.
+exl-id: 8a96effe-a587-4edf-b0c7-e73ca8d3b56c
 ---
-
 # Back up the database
 
 You can create a copy of your database using the `ece-tools db-dump` command without capturing all environment data from services and mounts. By default, this command creates backups in the `/app/var/dump-main` directory for all database connections that are specified in the environment configuration. The DB dump operation switches the application to maintenance mode, stops consumer queue processes, and disables cron jobs before the dump begins.
