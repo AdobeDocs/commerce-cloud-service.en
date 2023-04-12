@@ -5,7 +5,17 @@ exl-id: 480cb33b-ac83-441d-946e-5b4de09ad84e
 ---
 # Manage disk space
 
-You can find the total storage capacity for your Cloud project in your Adobe Commerce on cloud infrastructure contract and on your [account page](https://accounts.magento.cloud/user). Each project card in your account shows the number of _environments_, the _storage_ capacity in GB, and the number of _users_.
+You can find the total storage capacity for your Cloud project in your Adobe Commerce on cloud infrastructure contract and on your [account page](https://accounts.magento.cloud/user). Each project card in your account shows the number of _environments_, the _storage_ capacity in GB, and the number of _users_. Alternatively, you can use the following Cloud command:
+
+```bash
+magento-cloud subscription:info | grep storage
+```
+
+Sample response:
+
+```terminal
+| storage              | 51200
+```
 
 ## Check Integration environment
 
