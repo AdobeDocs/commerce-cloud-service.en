@@ -111,7 +111,7 @@ Two [configuration files](../environment/overview.md) control the allocation of 
 
 >[!IMPORTANT]
 >
->For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production cannot be reverted.
+>For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production can not be reverted.
 
 
 ### Application disk space
