@@ -6,21 +6,7 @@ description: Learn how to prepare Customer Technical Advisor to provision your A
 
 Let's get started and initialize your Commerce project on cloud infrastructure!
 
-Before Adobe provisions your Commerce on cloud project environments, it is recommended that you consider the following strategies and prepare answers for your first consult with your Adobe Account Team.
-
-The following is a checklist to help you prepare for your conversation to provision a cloud project:
-
->[!BEGINSHADEBOX]
-**Welcome call checklist to initialize Commerce on cloud project**:
-
-- &#9744; [Cloud service region](#cloud-service-region)
-- &#9744; [Domain definition](#domain-definition)
-- &#9744; [Transactional email domain](#transactional-email-domain)
-- &#9744; [Connection service](#connection-service)
-- &#9744; [Storage allocation](#storage-allocation)
-- &#9744; [Target site launch](#target-site-launch)
-
->[!ENDSHADEBOX]
+Before Adobe provisions your Commerce on cloud project environments, it is recommended that you consider the following strategies and prepare answers for your first consult with your Adobe Account Team. Use the following sections as a checklist to help you prepare for your conversation with a Customer Technical Advisor to provision a cloud project:
 
 ## Cloud service region
 
