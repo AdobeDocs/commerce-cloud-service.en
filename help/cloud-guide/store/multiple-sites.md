@@ -29,7 +29,7 @@ https://store.com/second/
 
 >[!TIP]
 >
->To add a store view to the site base URL, you do not have to create multiple directories. See [Add the store code to the base URL][addstorecode] in the _Configuration Guide_.
+>To add a store view to the site base URL, you do not have to create multiple directories. See [Add the store code to the base URL](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) in the _Configuration Guide_.
 
 ## Add New Domains
 
@@ -333,5 +333,4 @@ Adobe recommends fully testing in the Staging environment before pushing to the 
 
 <!-- link definitions -->
 
-[addstorecode]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html
 [config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html
