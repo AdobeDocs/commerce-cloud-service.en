@@ -98,12 +98,12 @@ Sample response:
 ```terminal
 "redis" : [
     {
-        "cluster" : "ytwodvebcsdiq-master-7rqtwti",
+        "cluster" : "project-master-123abc4",
         "fragment" : null,
         "host" : "redis.internal",
         "host_mapped" : false,
-        "hostname" : "osvju7csvofcjs7jegtkwpfs3e.redis.service._.magentosite.cloud",
-        "ip" : "169.254.18.164",
+        "hostname" : "oblahblahblahblahe.redis.service._.magentosite.cloud",
+        "ip" : "169.254.10.10",
         "password" : null,
         "path" : null,
         "port" : 6379,
