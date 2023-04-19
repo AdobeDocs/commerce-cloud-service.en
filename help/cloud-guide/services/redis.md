@@ -68,10 +68,14 @@ Use the following command to get the Redis version installed on an Integration e
 redis-cli -h redis.internal info | grep version
 ```
 
+Sample response:
+
 ```terminal
-redis_version:5.0.0
-gcc_version:6.3.0
+redis_version:7.0.5
+gcc_version:8.3.0
 ```
+
+### Redis on Pro staging and production
 
 To get the Redis version installed on a Staging or Production environment, use the `redis-server` command:
 
@@ -80,16 +84,47 @@ redis-server -v
 ```
 
 ```terminal
-Redis server v=5.0.5 sha=947ee0b5:0 malloc=jemalloc-5.1.0 bits=64 build=c1ca234caf5bd678
+Redis server v=7.0.5 ...
+```
+
+Use the following command to get the Redis configuration installed on a Pro Staging or Production environment:
+
+```bash
+echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+```
+
+Sample response:
+
+```terminal
+"redis" : [
+    {
+        "cluster" : "ytwodvebcsdiq-master-7rqtwti",
+        "fragment" : null,
+        "host" : "redis.internal",
+        "host_mapped" : false,
+        "hostname" : "osvju7csvofcjs7jegtkwpfs3e.redis.service._.magentosite.cloud",
+        "ip" : "169.254.18.164",
+        "password" : null,
+        "path" : null,
+        "port" : 6379,
+        "public" : false,
+        "query" : {},
+        "rel" : "redis",
+        "scheme" : "redis",
+        "service" : "redis",
+        "type" : "redis:7.0.5",
+        "username" : null
+    }
+]
 ```
 
 ## Troubleshooting Redis
 
 See the following Adobe Commerce Support articles for help with troubleshooting Redis problems:
 
--  [Redis issue delay Admin login or checkout](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html)
--  [Extended Redis cache implementation Adobe Commerce 2.3.5+](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
--  [MDVA-30102: Redis cache getting full](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/mdva-30102-magento-patch-redis-cache-getting-full.html)
--  [Managed alerts on Adobe Commerce: Redis memory warning alert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html)
--  [Managed alerts on Adobe Commerce: Redis memory critical alert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html)
--  [Redis troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-troubleshooter.html)
+- [Redis issue delay Admin login or checkout](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html)
+- [Extended Redis cache implementation Adobe Commerce 2.3.5+](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+- [MDVA-30102: Redis cache getting full](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-0-6/mdva-30102-magento-patch-redis-cache-getting-full.html)
+- [Managed alerts on Adobe Commerce: Redis memory warning alert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html)
+- [Managed alerts on Adobe Commerce: Redis memory critical alert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html)
+- [Redis troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-troubleshooter.html)
