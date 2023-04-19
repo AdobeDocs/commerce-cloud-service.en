@@ -23,8 +23,6 @@ While we recommend having a PayPal merchant account prepared and configured, you
 
 If you do not have an existing PayPal account, create a one. Enter an e-mail address for a new account. If a matching PayPal account is not found, follow the prompts to create a PayPal Business account. Or you can create an account directly through [PayPal](https://www.paypal.com/us/webapps/mpp/account-selection).
 
-![Log in to PayPal](../../assets/paypal-access.png)
-
 ### PayPal limitations
 
 PayPal supports connecting PayPal Express Checkout for countries across the globe except for the following limitations:
@@ -32,7 +30,7 @@ PayPal supports connecting PayPal Express Checkout for countries across the glob
 *  India, and Japan (future PayPal updates may support these accounts)
 *  Israel
 
-For Brazil, you must have an existing PayPal business account to connect. You cannot convert an existing personal PayPal account for Brazil during this process. If you need an account, create a business PayPal account through [their website](https://www.paypal.com/us/webapps/mpp/account-selection).
+For Brazil, you must have an existing PayPal business account to connect. You cannot convert an existing personal PayPal account for Brazil during this process. If you need an account, [create a business PayPal account](https://www.paypal.com/us/webapps/mpp/account-selection).
 
 ## Configure PayPal Express Checkout
 
