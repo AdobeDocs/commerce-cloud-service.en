@@ -1,20 +1,16 @@
 ---
-title: Initialize Commerce project
+title: Provision Commerce on Cloud
 description: Learn how to prepare Customer Technical Advisor to provision your Adobe Commerce on cloud infrastructure project.
 ---
-# Initialize Commerce project
+# Commerce on Cloud provisioning prerequisites
 
 Let's get started and initialize your Commerce project on cloud infrastructure!
 
 Before Adobe provisions your Commerce on cloud project environments, it is recommended that you consider the following strategies and prepare answers for your first consult with your Adobe Account Team. Use the following sections as a checklist to help you prepare for your conversation with a Customer Technical Advisor to provision a cloud project:
 
-## Cloud service region
-
-Choose either Amazon Web Services (AWS) or Microsoft Azure as your Infrastructure as a Service (IaaS) foundation for your Adobe Commerce on cloud infrastructure Pro projects. Each service provider operates in multiple regions and provides multiple availability zones. Select a region convenient to your location and reduce the potential for latency and higher costs.
-
-See [a map of Adobe Commerce cloud regions](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/regions.html) in the _Implementation Playbook_.
-
 ## Domain definition
+
+**Question 1**: _What domain or domains do you intend to use for site launch?_
 
 Prepare to integrate the Fastly and nginx services by defining your top-level domains and subdomains for Pro Staging and any Production environment. You can add domains after the initial setup only by submitting a support ticket, so it is recommended that you have your domain information ready.
  
@@ -29,19 +25,17 @@ See [Set up multiple websites or stores](../cloud-guide/store/multiple-sites.md)
 
 ## Transactional email domain
 
+>_Which domain or domains do you intend to use for transactional emails?_
+
 Adobe Commerce on Cloud offers SendGrid Simple Mail Transfer Protocol (SMTP) proxy service that provides outbound email authentication and reputation monitoring services. SendGrid sends transactional email on your behalf, so it requires domain information.
 
 Example for SendGrid Domains: `example@your-store.com`
 
 See [SendGrid mail service](../cloud-guide/project/sendgrid.md) in the _Commerce on Cloud Infrastructure_ guide for further guidance about transactional emails and domain settings.
 
-## Connection service
-
-Adobe Commerce on cloud infrastructure supports integration with the AWS PrivateLink or Azure Private Link service. Though this service is optional, PrivateLink is used to establish secure, private communication between cloud infrastructure environments with services and applications hosted on external systems.
-
-It is important to consider your cloud service strategy (AWS or Azure) so that the Adobe Commerce instance is accessible within the same region. See [PrivateLink service](../cloud-guide/development/privatelink-service.md) in the _Commerce on Cloud Infrastructure_ guide for further clarification about regional accessibility.
-
 ## Storage allocation
+
+>How much of your contracted storage do you plan to allocate for file upload and for database?
 
 Adobe Commerce on cloud infrastructure uses storage for the file structure, search indexing, and the database. You can subdivide the storage as needed beginning with 10 GB for each partition.
 
@@ -51,7 +45,25 @@ You can increase your contracted storage at any time. For Pro Production and Sta
 
 See [Manage disk space](../cloud-guide/storage/manage-disk-space.md) in the _Commerce on Cloud Infrastructure_ guide.
 
+## Cloud service region
+
+>**Question 4**: _Which AWS or Azure region is most convenient to your proximity?_
+
+Choose either Amazon Web Services (AWS) or Microsoft Azure as your Infrastructure as a Service (IaaS) foundation for your Adobe Commerce on cloud infrastructure Pro projects. Each service provider operates in multiple regions and provides multiple availability zones. Select a region convenient to your location and reduce the potential for latency and higher costs.
+
+See [a map of Adobe Commerce cloud regions](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/regions.html) in the _Implementation Playbook_.
+
+## Connection service
+
+**Question 5**: _Do you need a PrivateLink service? If so, in which region is the PrivateLink connection?_
+
+Adobe Commerce on cloud infrastructure supports integration with the AWS PrivateLink or Azure Private Link service. Though this service is optional, PrivateLink is used to establish secure, private communication between cloud infrastructure environments with services and applications hosted on external systems.
+
+It is important to consider your cloud service strategy (AWS or Azure) so that the Adobe Commerce instance is accessible within the same region. See [PrivateLink service](../cloud-guide/development/privatelink-service.md) in the _Commerce on Cloud Infrastructure_ guide for further clarification about regional accessibility.
+
 ## Target site launch
+
+**Question 6**: _What is your projected target launch date?_
 
 Launching a site requires iterative configuration and testing to ensure your site launch success. Setting a target date helps you and your Adobe Account Team to prepare for the final, pre-launch activities, which include a call to coordinate the final steps.
 

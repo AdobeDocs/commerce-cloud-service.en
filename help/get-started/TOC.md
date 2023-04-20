@@ -8,6 +8,6 @@ type: Documentation
 # Get Started with Commerce {#start}
 
 - [Get Started with Commerce](overview.md)
-- [Initialize Commerce project](new-project.md)
+- [Provision Commerce on Cloud](new-project.md)
 - [Onboarding](onboarding.md)
 - [Return to Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html)

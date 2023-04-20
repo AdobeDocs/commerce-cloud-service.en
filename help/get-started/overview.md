@@ -17,6 +17,6 @@ This guide assumes that you have some working knowledge and understanding of the
 
 >[!TIP]
 >
->Prepare for your Welcome call to initialize your Adobe Commerce on cloud infrastructure project.
+>Prepare for your Welcome call to initialize your Adobe Commerce on cloud infrastructure.
 >
->**Next step**: [Initialize Commerce project](new-project.md)
+>**Next step**: [Provision Commerce on Cloud](new-project.md)
