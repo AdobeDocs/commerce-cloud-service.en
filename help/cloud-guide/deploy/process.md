@@ -24,6 +24,8 @@ The _deploy_ phase places a temporary hold on incoming requests and transitions 
 
 All other directories have read-only permissions. The new site becomes active at the end of the deploy phase as it transitions out of maintenance mode and releases the temporary hold on incoming requests.
 
+In deploy phase, copies of the `app/etc/config.php` and `app/etc/env.php` deployment configuration files are saved with the BAK extension. See [Store settings](../store/store-settings.md#restore-configuration-files) to learn about restoring these files.
+
 ## ![Post-deploy phase](../../assets/status-post-deploy.png) Post-deploy phase
 
 The _post-deploy_ phase runs the post-deploy hooks defined in the `.magento.app.yaml` file. Performing any action on this phase can affect site performance; however, you can use the [WARM_UP_PAGES](../environment/variables-post-deploy.md#warmuppages) environment variable to populate the cache.

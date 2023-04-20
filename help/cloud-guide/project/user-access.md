@@ -81,8 +81,6 @@ The following examples use the `magento-cloud` CLI to add a user, configure role
      Role on type production: admin
      Role on type staging: admin
 
-   Adding users can result in additional charges.
-
    Are you sure you want to add this user? [Y/n] y
    Adding the user to the project
    ```
@@ -148,11 +146,9 @@ You can use the Project Web Interface to add permissions and use the _Edit_ feat
 
    -  Enter the user e-mail address.
 
-   -  Select the access for the account:
+   -  Select **Super User** to create a project administrator account. This role provides Admin rights to all settings and environments. Other users only have access to view options for all project environments.
 
-      For a project administrator account, select **Super User**. This role provides Admin rights to all settings and environments. If not selected, the account has only view options for all project environments.
-
-   -  Select permissions per specific environment (or branch) in the Integration environment: _No access_, _Admin_ (change settings, execute action, merge code), _Contributor_ (push code), or _Viewer_ (view only). When you add active environments, you can modify permissions per user.
+   -  Select **Environment permissions**: _No access_, _Admin_ (change settings, execute action, merge code), _Contributor_ (push code), or _Viewer_ (view only). When you add active environments, you can modify permissions per user.
 
    >[!TIP]
    >

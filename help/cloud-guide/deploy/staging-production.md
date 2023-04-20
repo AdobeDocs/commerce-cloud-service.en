@@ -9,9 +9,13 @@ The process for deploying and going live begins with development, continues to S
 
 When you are ready to deploy your store, you must complete deployment and testing on the Staging environment before deploying to Production. This section provides in-depth instructions and information on the build and deploy process, migrating data and content, and testing.
 
+>[!TIP]
+>
+>Adobe recommends creating a [snapshot](../storage/snapshots.md) of the environment before deployments.
+
 ## Starter deployment flow
 
-Adobe recommends creating a `staging` branch from the `master` branch to best support your Starter plan development and deployment. With this in place, you have two of your four active environments ready: `master` for Production and `staging` for Staging.
+Adobe recommends creating a `staging` branch from the `master` branch to best support your Starter plan development and deployment. Then you have two of your four active environments ready: `master` for Production and `staging` for Staging.
 
 For detailed information of the process, see [Starter Develop and Deploy Workflow](../architecture/starter-develop-deploy-workflow.md).
 
@@ -245,19 +249,19 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
 
 ### Back up the database
 
-**To dump a database**:
+It is a best practice to create a backup of the database. The following procedure uses the guidance from [Back up the database](../storage/database-dump.md).
 
-1. Use SSH to log in to the remote environment.
+**To dump the database**:
 
-   ```bash
-   magento-cloud ssh
-   ```
+1. [Use SSH to log in to the remote environment](../development/secure-connections.md#use-an-ssh-command) that contains the database to copy.
 
-1. List the environment relationships to find the database login information.
+1. List the environment relationships and note the database login information.
 
    ```bash
    php -r 'print_r(json_decode(base64_decode($_ENV["MAGENTO_CLOUD_RELATIONSHIPS"]))->database);'
    ```
+
+   For Pro Staging and Production, the name of the database is in the `MAGENTO_CLOUD_RELATIONSHIPS` variable (typically the same as the application name and username).
 
 1. Create a backup of the database. To choose a target directory for the DB dump, use the `--dump-directory` option.
 
@@ -266,8 +270,6 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
    ```bash
    php vendor/bin/ece-tools db-dump -- main
    ```
-
-   For Pro Staging and Production, the name of the database is in the `MAGENTO_CLOUD_RELATIONSHIPS` variable (typically the same as the application name and username).
 
 1. Though the Ece-tools method is preferred, another method is to create a database dump file using native MySQL in GZIP format.
 
@@ -285,11 +287,11 @@ Adobe **recommends** migrating data from Production into Staging to fully test y
 
 ### Drop and re-create the database
 
-When importing data, you need to drop and create a database. It is a best practice to [create a backup](../storage/snapshots.md#dump-your-database) of the database.
+When importing data, you must drop and create a database.
 
 **To drop and re-create the database**:
 
-1. Establish a [SSH tunnel](../development/secure-connections.md#ssh-tunneling) to the remote environment.
+1. Establish an [SSH tunnel](../development/secure-connections.md#ssh-tunneling) to the remote environment.
 
 1. Connect to the database service.
 

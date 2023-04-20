@@ -37,7 +37,7 @@ redis:
     type: redis:6.2
 
 opensearch:
-    type: opensearch:1.2
+    type: opensearch:2  # minor version not required; uses latest
     disk: 1024
 
 rabbitmq:
@@ -126,17 +126,17 @@ You can retrieve the configuration data for all service relationships from the [
    redis:
        -
    ...
-           type: 'redis:5.0'
+           type: 'redis:7.0'
            port: 6379
    elasticsearch:
        -
    ...
-           type: 'elasticsearch:7.7'
+           type: 'opensearch:2'
            port: 9200
    database:
        -
    ...
-           type: 'mysql:10.3'
+           type: 'mysql:10.6'
            port: 3306
    ```
 

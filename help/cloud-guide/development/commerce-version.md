@@ -117,7 +117,7 @@ Before upgrading the application, you must update your project configuration fil
 
 ### .magento.app.yaml
 
-Always review the values contained in the [.magento.app.yaml](../application/configure-app-yaml.md) file for your installed version, because it controls the way your application builds and deploys to the cloud infrastructure. The following example is for version 2.4.4 and uses Composer 2.2.4. The `build: flavor:` property is not used for Composer 2.x; see [Installing and using Composer 2](../application/properties.md#installing-and-using-composer-2).
+Always review the values contained in the [.magento.app.yaml](../application/configure-app-yaml.md) file for your installed version, because it controls the way your application builds and deploys to the cloud infrastructure. The following example is for version 2.4.6 and uses Composer 2.2.21. The `build: flavor:` property is not used for Composer 2.x; see [Installing and using Composer 2](../application/properties.md#installing-and-using-composer-2).
 
 **To update the `.magento.app.yaml` file**:
 
@@ -128,13 +128,13 @@ Always review the values contained in the [.magento.app.yaml](../application/con
 1. Update the PHP options.
 
    ```yaml
-   type: php:8.1
+   type: php:8.2
 
    build:
        flavor: none
    dependencies:
        php:
-           composer/composer: '2.2.4'
+           composer/composer: '2.2.21'
    ```
 
 1. Modify the `hooks` property `build` and `deploy` commands.
@@ -184,7 +184,7 @@ Always review the values contained in the [.magento.app.yaml](../application/con
 
 Before upgrading, always check that the dependencies in the `composer.json` file are compatible with the Adobe Commerce version.
 
-**To update the `composer.json` file for Adobe Commerce version 2.4.4**:
+**To update the `composer.json` file for Adobe Commerce version 2.4.4 and later**:
 
 1. Add the following `allow-plugins` to the `config` section:
 
@@ -203,7 +203,7 @@ Before upgrading, always check that the dependencies in the `composer.json` file
 
    ```json
    "require": {
-       "magento/composer-root-update-plugin": "^2.0.2"
+       "magento/composer-root-update-plugin": "^2.0.3"
    },
    ```
 
@@ -255,7 +255,7 @@ We recommend creating a backup of your project before an upgrade. Use the follow
    vendor/bin/ece-tools db-dump
    ```
 
-   The dump operation creates a `dump-<timestamp>.sql.gz` archive file in your remote project directory. See [Snapshot and backup management](../storage/snapshots.md#dump-your-database).
+   The dump operation creates a `dump-<timestamp>.sql.gz` archive file in your remote project directory. See [Back up database](../storage/database-dump.md).
 
 ## Application upgrade
 

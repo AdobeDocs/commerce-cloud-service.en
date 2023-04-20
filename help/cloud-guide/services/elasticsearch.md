@@ -49,7 +49,11 @@ For Adobe Commerce version 2.4.4 and later, see [Set up OpenSearch service](open
 
    For information on how these changes affect your environments, see [Services](services-yaml.md).
 
-1. [Verify the service relationships](services-yaml.md#service-relationships) and configure Elasticsearch in the Admin UI.
+1. After the deployment process completes, use SSH to log in to the remote environment.
+
+   ```bash
+   magento-cloud ssh
+   ```
 
 1. Reindex the Catalog Search index.
 
@@ -78,7 +82,14 @@ Service version and compatibility support for Adobe Commerce on cloud infrastruc
 **To check Elasticsearch software compatibility**:
 
 1. On your local workstation, change to your project directory.
-1. Use SSH to log in to the remote environment.
+
+1. Show the Elasticsearch details for the active environment.
+
+   ```bash
+   magento-cloud relationships --property=elasticsearch
+   ```
+
+1. Alternatively, you can use SSH to log in to the remote environment.
 
    ```bash
    magento-cloud ssh

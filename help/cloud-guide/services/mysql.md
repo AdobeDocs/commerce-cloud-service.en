@@ -7,7 +7,7 @@ exl-id: 70820d00-8b82-4b60-87e4-ea98fd7ffcb2
 
 The `mysql` service provides persistent data storage based on [MariaDB](https://mariadb.com/) versions 10.2 to 10.4, supporting the [XtraDB](https://www.percona.com/software/mysql-database/percona-server/xtradb) storage engine and reimplemented features from MySQL 5.6 and 5.7.
 
-Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers) in the _Performance Best Practices_ guide.
+Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Indexers](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers) in the _Performance Best Practices_ guide.
 
 >[!WARNING]
 >
@@ -68,6 +68,16 @@ mysql:
 
 The `properties` in the above example modifies the default `optimizer` settings as [recommended in the Performance Best Practices guide](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers).
 
+**MariaDB configuration options**:
+
+| Options              | Description                                         | Default value      |
+| -------------------- | --------------------------------------------------- | ------------------ |
+| `default_charset`    | The default character set.                          | utf8mb4            |
+| `default_collation`  | The default collation.                              | utf8mb4_unicode_ci |
+| `max_allowed_packet` | Maximum size for packets, in MB. Range `1` to `100`.| 16                 |
+| `optimizer_switch`   | Set values for the query optimizer. See [MariaDB documentation](https://mariadb.com/kb/en/server-system-variables/#optimizer_switch). | |
+| `optimizer_use_condition_selectivity` | Select the statistics used by the optimizer. Range `1` to `5`. See [MariaDB documentation](https://mariadb.com/kb/en/server-system-variables/#optimizer_use_condition_selectivity). | 4 for 10.4 and later |
+
 ### Set up multiple database users
 
 Optionally, you can set up multiple users with different permissions for accessing the `main` database.
@@ -124,11 +134,11 @@ relationships:
 
 >[!NOTE]
 >
->If you configure one MySQL user, you cannot use the [`DEFINER`](https://dev.mysql.com/doc/refman/5.6/en/show-grants.html) access control mechanism for stored procedures and views.
+>If you configure one MySQL user, you cannot use the [`DEFINER`](https://dev.mysql.com/doc/refman/8.0/en/show-grants.html) access control mechanism for stored procedures and views.
 
 ## Connect to the database
 
-Accessing the MariaDB database directly requires you to use a SSH to log in to the remote Cloud environment, and connect to the database.
+Accessing the MariaDB database directly requires you to use an SSH to log in to the remote Cloud environment, and connect to the database.
 
 1. Use SSH to log in to the remote environment.
 
@@ -174,17 +184,17 @@ Accessing the MariaDB database directly requires you to use a SSH to log in to t
 
 1. Connect to the database.
 
-   -  For Starter, use the following command:
+   - For Starter, use the following command:
 
-      ```bash
-      mysql -h database.internal -u <username>
-      ```
+     ```bash
+     mysql -h database.internal -u <username>
+     ```
 
-   -  For Pro, use the following command with hostname, port number, username, and password retrieved from the `$MAGENTO_CLOUD_RELATIONSHIPS` variable.
+   - For Pro, use the following command with hostname, port number, username, and password retrieved from the `$MAGENTO_CLOUD_RELATIONSHIPS` variable.
 
-      ```bash
-      mysql -h <hostname> -P <number> -u <username> -p'<password>'
-      ```
+     ```bash
+     mysql -h <hostname> -P <number> -u <username> -p'<password>'
+     ```
 
 >[!TIP]
 >
@@ -192,13 +202,13 @@ Accessing the MariaDB database directly requires you to use a SSH to log in to t
 
 ## Connect to secondary database
 
-Sometimes, you have to connect to the secondary database to improve database performance or resolve database locking issues. If this configuration is required, use `"port" : 3304` to establish the connection. See the [Adobe Commerce on cloud infrastructure best practice](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/magento-commerce-cloud-best-practice-for-slave-connection.html) article in the _Adobe Commerce Help Center_.
+Sometimes, you have to connect to the secondary database to improve database performance or resolve database locking issues. If this configuration is required, use `"port" : 3304` to establish the connection. See the [Best practice to configure the MySQL slave connection](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/configure-mysql-slave-connection-on-cloud.html) topic in the _Implementation Best Practices_ guide.
 
 ## Troubleshooting
 
 See the following Adobe Commerce Support articles for help with troubleshooting MySQL problems:
 
--  [Checking slow queries and processes MySQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html)
--  [Create database dump on Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html)
--  [Data Migration Tool troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
--  [Adobe Commerce upgrade: compact to dynamic tables 2.2.x, 2.3.x to 2.4.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/magento-upgrade-compact-to-dynamic-tables-2.2.x-2.3.x-2.4.x.html)
+- [Checking slow queries and processes MySQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html)
+- [Create database dump on Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html)
+- [Data Migration Tool troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+- [Adobe Commerce upgrade: compact to dynamic tables 2.2.x, 2.3.x to 2.4.x](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)

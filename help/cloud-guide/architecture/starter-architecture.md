@@ -21,13 +21,13 @@ The following diagram shows the hierarchical relationships of the Starter enviro
 
 The Production environment provides the source code to deploy Adobe Commerce to the Cloud infrastructure that runs your public-facing single and multi-site storefronts. The Production environment uses code from the `master` branch to configure and enable the web server, database, configured services, and your application code.
 
-Because the Production environment is read-only, make changes in the Integration environment and deploy across the architecture from the Integration to Staging, and finally to the Production environment. See [Deploy your store](../deploy/staging-production.md) and [Site launch](../launch/overview.md).
+Because the Production environment is read-only, use the Integration environment to make code changes, deploy across the architecture from the Integration to Staging, and finally to the Production environment. See [Deploy your store](../deploy/staging-production.md) and [Site launch](../launch/overview.md).
 
 Adobe recommends fully testing in your Staging environment branch before pushing to the `master` branch, which deploys to the Production environment.
 
 ## Staging environment
 
-We recommend creating a branch called `staging` from `master`. The `staging` branch deploys code to the Staging environment to provide a pre-production environment to test code, modules and extensions, payment gateways, shipping, product data, and much more. This environment provides the configuration for all services to match the Production environment including Fastly, New Relic APM, and search.
+Adobe recommends creating a branch called `staging` from `master`. The `staging` branch deploys code to the Staging environment to provide a pre-production environment to test code, modules and extensions, payment gateways, shipping, product data, and much more. This environment provides the configuration for all services to match the Production environment including Fastly, New Relic APM, and search.
 
 Additional sections in this guide provide instructions for final code deployments and testing production level interactions in a secure Staging environment. For best performance and feature testing, replicate your Production database into the Staging environment.
 
@@ -60,7 +60,8 @@ The Production and Staging environments include the following technologies. You 
 -  Fastly for HTTP caching and CDN
 -  Nginx web server speaking to PHP-FPM, one instance with multiple workers
 -  Redis server
--  Elasticsearch for searching for Adobe Commerce on cloud infrastructure 2.2 and later
+-  Elasticsearch for catalog search for Adobe Commerce 2.2 to 2.4.3-p2
+-  OpenSearch for catalog search for Adobe Commerce 2.3.7-p3, 2.4.3-p2, and 2.4.4 and later
 -  Egress filtering (outbound firewall)
 
 ### Services
@@ -91,7 +92,9 @@ Adobe Commerce on cloud infrastructure uses the Debian GNU/Linux operating syste
 
 -  [Elasticsearch](../services/elasticsearch.md)
 
-In the Staging and Production environments, you use Fastly for CDN and caching. When your environment is initially provisioned, we install the latest version of the Fastly CDN extension. You can upgrade the extension to get the latest bug fixes and improvements. See [Fastly CDN module for Magento 2](https://github.com/fastly/fastly-magento2). Also, you have access to [New Relic](../monitor/new-relic.md#configure-new-relic-for-starter-environments.md) for performance monitoring.
+-  [OpenSearch](../services/opensearch.md)
+
+In the Staging and Production environments, you use Fastly for CDN and caching. The latest version of the Fastly CDN extension installs during the initial provisioning of your project. You can upgrade the extension to get the latest bug fixes and improvements. See [Fastly CDN module for Magento 2](https://github.com/fastly/fastly-magento2). Also, you have access to [New Relic](../monitor/new-relic.md#configure-new-relic-for-starter-environments.md) for performance monitoring.
 
 You use the following files to configure the software versions that you want to use in your implementation.
 
@@ -103,7 +106,7 @@ You use the following files to configure the software versions that you want to 
 
 ### Backup and disaster recovery
 
-You can create a snapshot of your database and file system using the Project Web Interface or the CLI. The snapshot includes your deployed code, installed software and services, and data. See [Snapshots and backup management](../storage/snapshots.md).
+You can create a snapshot of your database and file system using the Project Web Interface or the CLI. See [Snapshots and backup management](../storage/snapshots.md).
 
 ## Prepare for development
 
@@ -121,7 +124,7 @@ The following workflow summarizes the process to branch your code, develop, and 
 
 See the following sections for detailed instructions and walk-throughs to develop, test, and deploy your store:
 
--  [Starter develop and deploy workflow](starter-develop-deploy-workflow.md)
+-  [Starter develop-and-deploy workflow](starter-develop-deploy-workflow.md)
 
 -  [Docker development](../dev-tools/cloud-docker.md) (local development environment enabled by Cloud Docker for Commerce)
 

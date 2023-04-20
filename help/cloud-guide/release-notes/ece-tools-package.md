@@ -20,13 +20,21 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.1.13 {#latest}
+## v2002.1.14 {#latest}
+
+Release date: March 10, 2023
+
+-  ![new icon](../../assets/new.svg) **PHP**—Added support for PHP 8.2.
+-  ![new icon](../../assets/new.svg) **Validators for Services**—Updated validators for Commerce 2.4.6 required services: MariaDB 10.6, Redis 7.0, PHP 8.2, OpenSearch 2.x, and RabbitMQ 3.9.
+-  ![fix icon](../../assets/fix.svg) **ece-tools db-dump**—Fixed an issue that caused the `db-dump` operation to stop prematurely.
+
+## v2002.1.13
 
 Release date: October 27, 2022
 
--  ![new icon](../../assets/new.svg)**Added support for Adobe I/O Events for Adobe Commerce**. Extension developers can now use the [Adobe I/O Events](https://developer.adobe.com/events/docs/) framework to send Commerce event information from Cloud instances to their applications written for [Adobe App Builder](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events for Adobe Commerce is in Partner Preview.<!-- CEXT-932 -->
--  ![new icon](../../assets/new.svg)**Validator for OPcache configuration**—Added a validator to check the OPcache configuration for excluded paths.<!-- MCLOUD-9485 -->
--  ![fix icon](../../assets/fix.svg)**Fixed an issue with GraphQL cache configuration**—Now ECE-Tools keeps the GraphQL `id_salt` value in `cache` configuration in the `app/etc/env.php` file.<!-- MCLOUD-9486 -->
+-  ![new icon](../../assets/new.svg) **Added support for Adobe I/O Events for Adobe Commerce**. Extension developers can now use the [Adobe I/O Events](https://developer.adobe.com/events/docs/) framework to send Commerce event information from Cloud instances to their applications written for [Adobe App Builder](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events for Adobe Commerce is in Partner Preview.<!-- CEXT-932 -->
+-  ![new icon](../../assets/new.svg) **Validator for OPcache configuration**—Added a validator to check the OPcache configuration for excluded paths.<!-- MCLOUD-9485 -->
+-  ![fix icon](../../assets/fix.svg) **Fixed an issue with GraphQL cache configuration**—Now ECE-Tools keeps the GraphQL `id_salt` value in `cache` configuration in the `app/etc/env.php` file.<!-- MCLOUD-9486 -->
 
 ## v2002.1.12
 
@@ -66,7 +74,7 @@ Release date: March 10, 2022
 
 Release date: October 25, 2021
 
--  ![new icon](../../assets/new.svg) **Alternative dump location**—Added the `--dump-directory` option so that you can choose a target directory for a DB dump. Now `/app/var/dump-main` is the default target directory for a DB dump. See [Snapshots and backup management: Dump your database](../storage/snapshots.md#dump-your-database)<!-- MCLOUD-8063 -->
+-  ![new icon](../../assets/new.svg) **Alternative dump location**—Added the `--dump-directory` option so that you can choose a target directory for a DB dump. Now `/app/var/dump-main` is the default target directory for a DB dump. See [Snapshots and backup management: Dump your database](../storage/database-dump.md)<!-- MCLOUD-8063 -->
 -  ![fix icon](../../assets/fix.svg) **Update Monolog**—Updated the minimum version required for the `monolog` package to `^2.3`.<!-- ACMP-1263 -->
 -  ![fix icon](../../assets/fix.svg) **Update Symfony**—Updated the Symfony dependencies to be compatible with Adobe Commerce 2.4.4.<!-- ACMP-1533 -->
 -  ![fix icon](../../assets/fix.svg) **Feature/resolve autoload**—Fixed an issue when deploying to an integration environment and seeing the `CRITICAL: [9] Required configuration is missed in autoload section of composer.json file.` error.<!-- https://github.com/magento/ece-tools/pull/799 -->
@@ -232,6 +240,7 @@ Release date: June 25, 2020
       ```text
       Your application does not have the "post_deploy" hook enabled.
       ```
+      
       <!--MCLOUD-4077-->
 
    -  ![new icon](../../assets/new.svg) **Added validation for Zend Framework dependencies**—Added composer dependency validation for the Zend Framework which has migrated to the Laminas project. If the required dependencies are missing, the following error message displays during the build process.

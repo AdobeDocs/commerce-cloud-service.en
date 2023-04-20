@@ -12,7 +12,7 @@ The [OpenSearch](https://www.opensearch.org) service is an open-source fork of E
 OpenSearch enables you to take data from any source, any format, and search and visualize it in real time.
 
 - Quick and advanced searches on products in the product catalog
-- Elasticsearch Analyzers support multiple languages
+- OpenSearch Analyzers support multiple languages
 - Supports stop words and synonyms
 - Indexing does not impact customers until the reindex operation completes
 
@@ -24,17 +24,17 @@ OpenSearch enables you to take data from any source, any format, and search and 
 
 **To enable OpenSearch**:
 
-1. For Starter projects, add the `opensearch` service to the `.magento/services.yaml` file with the appropriate version and allocated disk space in MB.
+1. For Starter and Pro integration environments, add the `opensearch` service to the `.magento/services.yaml` file with the appropriate version and allocated disk space in MB. In this case, version 2 is appropriate. The minor version is not required because cloud infrastructure uses the latest version of OpenSearch.
 
    ```yaml
    opensearch:
-       type: opensearch:<version>
+       type: opensearch:2
        disk: 1024
    ```
 
    For Pro projects, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the OpenSearch version in the Staging and Production environments.
 
-1. Set the `relationships` property in the `.magento.app.yaml` file.
+1. Set or verify the `relationships` property in the `.magento.app.yaml` file.
 
    ```yaml
    relationships:
@@ -44,12 +44,24 @@ OpenSearch enables you to take data from any source, any format, and search and 
 1. Add, commit, and push code changes.
 
    ```bash
-   git add .magento/services.yaml .magento.app.yaml && git commit -m "Enable OpenSearch" && git push origin <branch-name>
+   git add .magento/services.yaml .magento.app.yaml
    ```
 
-   For information on how these changes affect your environments, see [Services](services-yaml.md).
+   ```bash
+   git commit -m "Enable OpenSearch"
+   ```
 
-1. [Verify the service relationships](services-yaml.md#service-relationships) and configure OpenSearch in the Admin UI.
+   ```bash
+   git push origin <branch-name>
+   ```
+
+   For information on how these changes affect your environments, see [Configure services](services-yaml.md).
+
+1. After the deployment process completes, use SSH to log in to the remote environment.
+
+   ```bash
+   magento-cloud ssh
+   ```
 
 1. Reindex the Catalog Search index.
 
@@ -78,7 +90,14 @@ Service version and compatibility support is determined by versions tested and d
 **To verify OpenSearch software compatibility**:
 
 1. On your local workstation, change to your project directory.
-1. Use SSH to log in to the remote environment.
+
+1. Show the OpenSearch details for the active environment.
+
+   ```bash
+   magento-cloud relationships --property=opensearch
+   ```
+
+1. Alternatively, you can use SSH to log in to the remote environment.
 
    ```bash
    magento-cloud ssh
@@ -103,13 +122,13 @@ Service version and compatibility support is determined by versions tested and d
    | ip                                       | 169.254.220.11                                         |
    | hostname                                 | hostf75wi3sd24l.opensearch.service._.magentosite.cloud |
    | port                                     | 9200                                                   |
-   | cluster                                  | projectID-master-4ranwui                               |
+   | cluster                                  | projectID-develop-4ranwui                              |
    | host                                     | opensearch.internal                                    |
    | rel                                      | opensearch                                             |
    | path                                     | null                                                   |
    | query                                    |                                                        |
    | password                                 | null                                                   |
-   | type                                     | opensearch:1.2                                         |
+   | type                                     | opensearch:2                                           |
    | public                                   | false                                                  |
    | host_mapped                              | false                                                  |
    ```
@@ -124,18 +143,17 @@ Service version and compatibility support is determined by versions tested and d
    {
       "name" : "opensearch.0",
       "cluster_name" : "opensearch",
-      "cluster_uuid" : "_yze6-ywSEW1MaAF8ZPWyQ",
+      "cluster_uuid" : "_yzaae6-ywSEW1MaAF8ZPWyQ",
       "version" : {
         "distribution" : "opensearch",
-        "number" : "1.2.4",
-        "build_flavor" : "default",
+        "number" : "2.5.0",
         "build_type" : "deb",
-        "build_hash" : "82a8aa7",
+        "build_hash" : "aaaaaaa",
         "build_date" : "2023-01-23T12:07:18.760675Z",
         "build_snapshot" : false,
-        "lucene_version" : "8.10.1",
-        "minimum_wire_compatibility_version" : "6.8.0",
-        "minimum_index_compatibility_version" : "6.0.0-beta1"
+        "lucene_version" : "9.4.2",
+        "minimum_wire_compatibility_version" : "7.10.0",
+        "minimum_index_compatibility_version" : "7.0.0"
    },
    "tagline" : "The OpenSearch Project: https://opensearch.org/"
    }
@@ -159,7 +177,7 @@ Optionally, you can add plugins for OpenSearch by adding the `configuration:plug
 
 ```yaml
 opensearch:
-    type: opensearch:1.2
+    type: opensearch:2
     disk: 1024
     configuration:
         plugins:
