@@ -10,7 +10,7 @@ Before Adobe provisions your Commerce on cloud project environments, it is recom
 
 ## Cloud service region
 
-Adobe Commerce on cloud infrastructure uses Amazon Web Services and Microsoft Azure services. Each service provider operates in multiple regions and provides multiple availability zones. Choose a region convenient to your location and reduce the potential for latency and higher costs.
+Choose either Amazon Web Services (AWS) or Microsoft Azure as your Infrastructure as a Service (IaaS) foundation for your Adobe Commerce on cloud infrastructure Pro projects. Each service provider operates in multiple regions and provides multiple availability zones. Select a region convenient to your location and reduce the potential for latency and higher costs.
 
 See [a map of Adobe Commerce cloud regions](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/regions.html) in the _Implementation Playbook_.
 
