@@ -21,7 +21,7 @@ While we recommend having a PayPal merchant account prepared and configured, you
 *  PayPal Business account
 *  PayPal personal account, converting to a Business account. If you have an existing personal PayPal account, you can log in with those credentials and upgrade this account to a business account as you complete the sync.
 
-If you do not have an existing PayPal account, create a one. Enter an e-mail address for a new account. If a matching PayPal account is not found, follow the prompts to create a PayPal Business account. Or you can create an account directly through [PayPal](https://www.paypal.com/us/webapps/mpp/account-selection).
+If you do not have an existing PayPal account, create one. Enter an email address for a new account. If a matching PayPal account is not found, follow the prompts to create a PayPal Business account. Or you can create an account directly through [PayPal](https://www.paypal.com/us/webapps/mpp/account-selection).
 
 ### PayPal limitations
 
@@ -62,7 +62,7 @@ With the account configured and authenticated, you can enable and disable PayPal
 
 ## PayPal variables
 
-When using the PayPal on-boarding tool with Adobe Commerce on cloud infrastructure 2.2, add the following variable to `magento.app.yaml` in the environment variables section.
+When using the PayPal on-boarding tool with Adobe Commerce on cloud infrastructure, add the following variable to the `variables:env` section of the `magento.app.yaml` file.
 
 ```yaml
 # Environment variables
