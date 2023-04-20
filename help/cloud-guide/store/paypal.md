@@ -21,9 +21,7 @@ While we recommend having a PayPal merchant account prepared and configured, you
 *  PayPal Business account
 *  PayPal personal account, converting to a Business account. If you have an existing personal PayPal account, you can log in with those credentials and upgrade this account to a business account as you complete the sync.
 
-If you do not have an existing PayPal account, create a one. Enter an e-mail address for a new account. If a matching PayPal account is not found, follow the prompts to create a PayPal Business account. Or you can create an account directly through [PayPal](https://www.paypal.com/us/webapps/mpp/account-selection).
-
-![Log in to PayPal](../../assets/paypal-access.png)
+If you do not have an existing PayPal account, create one. Enter an email address for a new account. If a matching PayPal account is not found, follow the prompts to create a PayPal Business account. Or you can create an account directly through [PayPal](https://www.paypal.com/us/webapps/mpp/account-selection).
 
 ### PayPal limitations
 
@@ -32,13 +30,13 @@ PayPal supports connecting PayPal Express Checkout for countries across the glob
 *  India, and Japan (future PayPal updates may support these accounts)
 *  Israel
 
-For Brazil, you must have an existing PayPal business account to connect. You cannot convert an existing personal PayPal account for Brazil during this process. If you need an account, create a business PayPal account through [their website](https://www.paypal.com/us/webapps/mpp/account-selection).
+For Brazil, you must have an existing PayPal business account to connect. You cannot convert an existing personal PayPal account for Brazil during this process. If you need an account, [create a business PayPal account](https://www.paypal.com/us/webapps/mpp/account-selection).
 
 ## Configure PayPal Express Checkout
 
 To configure PayPal Express Checkout:
 
-1. Access the Admin Console for the environment you need to configure.
+1. Access the Admin Console for the environment.
 1. In the left-side navigation, select **Stores** > **Configuration**, then select **Sales** > **Payment Methods**.
 1. For PayPal, select **Configure**. Configuration fields display in expandable sections for Express Checkout, Advertise PayPal Credit, and Basic and Advanced settings.
 1. Connect your PayPal account. Until the account is connected, the options to enable are disabled. For details on available and supported accounts to connect and limitations, see [PayPal account](#paypal-account).
@@ -64,7 +62,7 @@ With the account configured and authenticated, you can enable and disable PayPal
 
 ## PayPal variables
 
-When using the PayPal on-boarding tool with Adobe Commerce on cloud infrastructure 2.2, you need to add the following variable to `magento.app.yaml` in the environment variables section.
+When using the PayPal on-boarding tool with Adobe Commerce on cloud infrastructure, add the following variable to the `variables:env` section of the `magento.app.yaml` file.
 
 ```yaml
 # Environment variables

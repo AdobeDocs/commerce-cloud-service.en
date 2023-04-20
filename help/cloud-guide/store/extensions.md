@@ -25,20 +25,16 @@ Although this section discusses how to get the Composer name and version of an e
 
 1. On the _My Purchases_ page, select a module that you purchased and click **Technical Details**.
 
-   ![Technical details show the module's Composer name](../../assets/marketplace/pixlee.png)
+1. Click **Copy** to copy the [!UICONTROL Component name] to the clipboard.
 
-1. Click **Copy** to copy the component name to the clipboard.
+1. Open a text editor and paste the component name and append a colon character (`:`).
 
-1. Open a text editor and paste the module name.
+1. In **Technical Details**, click **Copy** to copy the [!UICONTROL Component version] to the clipboard.
 
-1. Append a colon character (`:`) to the component name.
-
-1. In **Technical Details**, click **Copy** to copy the version to the clipboard.
-
-1. Append the version number to the component name after the colon. For example:
+1. In the text editor, append the version number to the component name after the colon. For example:
 
    ```text
-   pixlee/magento2:1.0.1
+   extension-name/magento2:1.0.1
    ```
 
 ## Install an extension
@@ -55,12 +51,6 @@ Adobe recommends working in a development branch when adding an extension to you
 
    ```bash
    composer require <extension-name>:<version> --no-update
-   ```
-
-   For example:
-
-   ```bash
-   composer require pixlee/magento2:1.0.1 --no-update
    ```
 
 1. Update the project dependencies.
