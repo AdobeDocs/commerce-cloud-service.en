@@ -25,7 +25,7 @@ See [Set up multiple websites or stores](../cloud-guide/store/multiple-sites.md)
 
 ## Transactional email domain
 
->_Which domain or domains do you intend to use for transactional emails?_
+**Question 2**: _Which domain or domains do you intend to use for transactional emails?_
 
 Adobe Commerce on Cloud offers SendGrid Simple Mail Transfer Protocol (SMTP) proxy service that provides outbound email authentication and reputation monitoring services. SendGrid sends transactional email on your behalf, so it requires domain information.
 
@@ -35,7 +35,7 @@ See [SendGrid mail service](../cloud-guide/project/sendgrid.md) in the _Commerce
 
 ## Storage allocation
 
->How much of your contracted storage do you plan to allocate for file upload and for database?
+**Question 3**: _How much of your contracted storage do you plan to allocate for file upload and for database?_
 
 Adobe Commerce on cloud infrastructure uses storage for the file structure, search indexing, and the database. You can subdivide the storage as needed beginning with 10 GB for each partition.
 
@@ -47,7 +47,7 @@ See [Manage disk space](../cloud-guide/storage/manage-disk-space.md) in the _Com
 
 ## Cloud service region
 
->**Question 4**: _Which AWS or Azure region is most convenient to your proximity?_
+**Question 4**: _Which AWS or Azure region is most convenient to your proximity?_
 
 Choose either Amazon Web Services (AWS) or Microsoft Azure as your Infrastructure as a Service (IaaS) foundation for your Adobe Commerce on cloud infrastructure Pro projects. Each service provider operates in multiple regions and provides multiple availability zones. Select a region convenient to your location and reduce the potential for latency and higher costs.
 
