@@ -66,7 +66,7 @@ You must have an [Admin role](../project/user-access.md) for the environment.
 
 ## Restore a snapshot
 
-You must have [Admin access](../project/user-access.md) to the environment. You have up to **seven days** to _restore_ a snapshot. Restoring a snapshot does not change the code of the current git branch.
+You must have [Admin access](../project/user-access.md) to the environment. You have up to **seven days** to _restore_ a snapshot. Restoring a snapshot does not change the code of the current git branch. Restoring a snapshot in this manner does not apply to Pro staging and production environments; see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery).
 
 Restoration times vary depending on the size of your database:
 

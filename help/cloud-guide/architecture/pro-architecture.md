@@ -156,7 +156,7 @@ Because of the unique, redundant hardware, Adobe can provide three gateway serve
 
 Adobe Commerce on cloud infrastructure uses a high-availability architecture that replicates each Pro project on three separate AWS or Azure Availability Zones, each zone with a separate data center. In addition to this redundancy, Pro Staging and Production environments receive regular, live backups that are designed to use in cases of _catastrophic failure_.
 
-Automatic backups include persistent data from all running services, such as the MySQL database and files stored on the mounted volumes. The backups are saved to encrypted Elastic Block Storage (EBS) in the same region as the Production environment. The automatic backups are not publicly accessible because they are stored in a separate system. You can open a ticket to request a restoration with a specific date, time, and timezone.
+Automatic backups include persistent data from all running services, such as the MySQL database and files stored on the mounted volumes. The backups are saved to encrypted Elastic Block Storage (EBS) in the same region as the Production environment. The automatic backups are not publicly accessible because they are stored in a separate system. You can [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a special backup or to restore from a specific backup noting the date, time, and timezone in the ticket.
 
 ### Recovery Point Objective
 
