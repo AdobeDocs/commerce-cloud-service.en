@@ -12,9 +12,9 @@ Before Adobe provisions your Commerce on cloud project environments, it is recom
 
 **Question 1**: _What domain or domains do you intend to use for site launch?_
 
-Prepare to integrate the Fastly and nginx services by defining your top-level domains and subdomains for Pro Staging and any Production environment. You can add domains after the initial setup only by submitting a support ticket, so it is recommended that you have your domain information ready.
+Prepare to integrate the Fastly and nginx services by defining your top-level domains and subdomains for the Pro Staging and Production environments. After the initial setup, you can only add domains by submitting a support ticket, so it is recommended that you have your domain information ready.
  
-Example for Production and Staging domains: 
+Examples for Production and Staging domains: 
 
 - `www.your-store.com`
 - `your-store.com`
@@ -27,9 +27,9 @@ See [Set up multiple websites or stores](../cloud-guide/store/multiple-sites.md)
 
 **Question 2**: _Which domain or domains do you intend to use for transactional emails?_
 
-Adobe Commerce on Cloud offers SendGrid Simple Mail Transfer Protocol (SMTP) proxy service that provides outbound email authentication and reputation monitoring services. SendGrid sends transactional email on your behalf, so it requires domain information.
+Adobe Commerce on Cloud uses the SendGrid Simple Mail Transfer Protocol (SMTP) proxy service, which provides outbound email authentication and reputation monitoring services. SendGrid sends transactional email on your behalf, so it requires domain information.
 
-Example for SendGrid Domains: `example@your-store.com`
+Example for SendGrid domain: `example@your-store.com`
 
 See [SendGrid mail service](../cloud-guide/project/sendgrid.md) in the _Commerce on Cloud Infrastructure_ guide for further guidance about transactional emails and domain settings.
 
@@ -41,13 +41,13 @@ Adobe Commerce on cloud infrastructure uses storage for the file structure, sear
 
 The amount of storage you contracted for your cloud project represents the total storage for each environment. For example, if you bought 50 GB of storage space, then you have 50 GB of storage for each environment. There is 50 GB of separate storage for production, staging, and each integration environment respectively.
 
-You can increase your contracted storage at any time. For Pro Production and Staging environments, you must submit an Adobe Commerce Support ticket to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, the support team might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production can **not** be reverted.
+You can increase your contracted storage at any time. For Pro Production and Staging environments, you must submit an Adobe Commerce Support ticket to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals. Depending on your current disk space usage, the support team might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro Staging and Production can **not** be reverted.
 
 See [Manage disk space](../cloud-guide/storage/manage-disk-space.md) in the _Commerce on Cloud Infrastructure_ guide.
 
 ## Cloud service region
 
-**Question 4**: _Which AWS or Azure region is most convenient to your proximity?_
+**Question 4**: _Which Cloud service region is most convenient to your proximity?_
 
 Choose either Amazon Web Services (AWS) or Microsoft Azure as your Infrastructure as a Service (IaaS) foundation for your Adobe Commerce on cloud infrastructure Pro projects. Each service provider operates in multiple regions and provides multiple availability zones. Select a region convenient to your location and reduce the potential for latency and higher costs.
 
