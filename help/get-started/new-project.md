@@ -1,6 +1,6 @@
 ---
 title: Provision Commerce on Cloud
-description: Learn how to prepare Customer Technical Advisor to provision your Adobe Commerce on cloud infrastructure project.
+description: Learn how to prepare an Adobe Customer Technical Advisor to provision your Adobe Commerce on cloud infrastructure project.
 ---
 # Commerce on Cloud provisioning prerequisites
 
@@ -12,7 +12,7 @@ Before Adobe provisions your Commerce on cloud project environments, it is recom
 
 **Question 1**: _What domain or domains do you intend to use for site launch?_
 
-Prepare to integrate the Fastly and nginx services by defining your top-level domains and subdomains for the Pro Staging and Production environments. After the initial setup, you can only add domains by submitting a support ticket, so it is recommended that you have your domain information ready.
+Prepare to integrate the Fastly and nginx services by defining your top-level domains and subdomains for the Pro Staging and Production environments. After the initial setup, you can only add domains by submitting an Adobe Commerce Support ticket, so it is recommended that you have your domain information ready.
  
 Examples for Production and Staging domains: 
 
@@ -27,7 +27,7 @@ See [Set up multiple websites or stores](../cloud-guide/store/multiple-sites.md)
 
 **Question 2**: _Which domain or domains do you intend to use for transactional emails?_
 
-Adobe Commerce on Cloud uses the SendGrid Simple Mail Transfer Protocol (SMTP) proxy service, which provides outbound email authentication and reputation monitoring services. SendGrid sends transactional email on your behalf, so it requires domain information.
+Adobe Commerce on Cloud uses the SendGrid Simple Mail Transfer Protocol (SMTP) proxy service, which provides outbound email authentication and reputation monitoring services. SendGrid sends transactional emails on your behalf, so it requires domain information.
 
 Example for SendGrid domain: `example@your-store.com`
 
