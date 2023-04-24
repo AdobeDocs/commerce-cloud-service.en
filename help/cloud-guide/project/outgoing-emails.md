@@ -5,9 +5,9 @@ exl-id: 814fe2a9-15bf-4bcb-a8de-ae288fd7f284
 ---
 # Configure outgoing emails
 
-By default, email support is **disabled** on Staging and Production environments. You must enable email support on an environment to send emails including Welcome, password reset, and two-factor authentication emails for Cloud project users.
+You can enable outgoing email on an environment to send two-factor authentication or reset password emails for Cloud project users. By default, outgoing email is enabled on Production environments even though the [!UICONTROL Outgoing emails] may appear **Off** in the environment settings regardless of status until you set the [`enable_smtp` property](#enable-emails-in-the-cli).
 
-You can manage email support for each Cloud project environment from the Project Web Interface or from the command line.
+You can enable and disable outgoing emails for each environment from the Project Web Interface or from the command line.
 
 {{redeploy-warning}}
 
@@ -18,7 +18,7 @@ Use the **[!UICONTROL Outgoing emails]** toggle in the _Configure environment_ v
 **To manage email support from the Project Web Interface**:
 
 1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/)
-1. Click on the project.
+1. Click the project.
 1. In the left environment list, click the name of the branch.
 1. To enable or disable outgoing emails, toggle _Outgoing emails_ **On** or **Off**.
 
@@ -32,10 +32,6 @@ You can change the email configuration using the `magento-cloud` CLI `environmen
 
 **To manage email support from the command line**:
 
-1. Check the current email configuration in the Project Web Interface.
-
-1. If needed, change the email configuration.
-
 1. On your local workstation, change to your project directory.
 
 1. Change the email support configuration by setting the `enable_smtp` environment variable to `true` or `false`.
@@ -45,6 +41,8 @@ You can change the email configuration using the `magento-cloud` CLI `environmen
    ```
 
    Wait for the environment to build and deploy.
+
+1. Use an SSH to log into the remote environment.
 
 1. Verify that the email works; send a test email to an address that you can check.
 
