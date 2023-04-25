@@ -1,6 +1,7 @@
 ---
 title: Manage disk space
 description: Learn how to manage disk space using the command-line interface.
+feature: Cloud, Storage
 exl-id: 480cb33b-ac83-441d-946e-5b4de09ad84e
 ---
 # Manage disk space
@@ -16,6 +17,16 @@ Sample response:
 ```terminal
 | storage              | 51200
 ```
+
+When a Pro production or staging environment reaches or exceeds 95% of the storage capacity, the cloud infrastructure monitoring tool triggers a support alert notifying you of an automatic increase in storage capacity.
+
+Example notification:
+
+```text
+"Our monitoring has detected files storage on your cluster (project-id-environment) is nearing full. The disk usage is currently at critical usage levels with less than 1 GiB left. The shared storage volume is currently being upsized from 60 GiB to 70 GiB to keep your services up and running. Please take a look at the production and staging files usage to see if you can clear up some space."
+```
+
+It is recommended that you regularly monitor your storage capacity and maintain it well under 90% to avoid these automatic increases. Once allocated, the storage increase for Pro staging and production cannot be reverted.
 
 ## Check Integration environment
 
@@ -111,7 +122,7 @@ Two [configuration files](../environment/overview.md) control the allocation of 
 
 >[!IMPORTANT]
 >
->For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production can not be reverted.
+>For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production cannot be reverted.
 
 
 ### Application disk space
