@@ -49,7 +49,6 @@ To enable [!DNL Xdebug] for your project, add `xdebug` to the `runtime:extension
        extensions:
            - redis
            - xsl
-           - json
            - newrelic
            - sodium
            - xdebug

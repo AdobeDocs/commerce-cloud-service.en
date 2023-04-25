@@ -1,16 +1,16 @@
 ---
-title: SendGrid mail service
-description: Learn about the SendGrid mail service for Adobe Commerce on cloud infrastructure and how you can test your DNS configuration.
+title: SendGrid email service
+description: Learn about the SendGrid email service for Adobe Commerce on cloud infrastructure and how you can test your DNS configuration.
 exl-id: 30d3c780-603d-4cde-ab65-44f73c04f34d
 ---
-# SendGrid mail service
+# SendGrid email service
 
 The SendGrid Simple Mail Transfer Protocol (SMTP) proxy service provides outbound email authentication and reputation monitoring services, including support for:
 
 * All outbound transactional emails
 * Dedicated IP addresses
-* Domain registration, DomainKeys Identified Mail (DKIM) signatures for email domain validation (Pro only)
-* Custom domain registration (Pro only)
+* Domain registration, DomainKeys Identified Mail (DKIM) signatures for email domain validation (for Pro only)
+* Custom domain registration (for Pro only)
 * Automated integration for Starter and Pro Integration environments. Pro Production and Staging environments require manual provisioning and configuration during the Infrastructure as a Service (IaaS) hardware provisioning process
 
 The SendGrid SMTP proxy is not intended for use as a general-purpose email server to receive incoming email or for use with email marketing campaigns.
@@ -21,7 +21,7 @@ The SendGrid SMTP proxy is not intended for use as a general-purpose email serve
 
 ## Enable or disable email
 
-By default, email support is disabled on Staging and Production environments. Enable email support on an environment in order to send transactional emails, including Welcome, password reset, and two-factor authentication emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
+By default, outgoing email is enabled on Production environments. The [!UICONTROL Outgoing emails] may appear off in the environment settings regardless of status until you set the `enable_smtp` property. You can enable outgoing emails for other environments to send two-factor authentication emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
 
 ## DomainKeys Identified Mail (DKIM)
 
@@ -31,13 +31,13 @@ DKIM is an email authentication technology that enables Internet Service Provide
 >
 >The SendGrid DKIM signatures and domain authentication support are available only for Pro projects and not Starter. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) in the _Admin Systems guide_.
 
-## Sender and domain authentication
+### Sender and domain authentication
 
-For SendGrid to send transactional emails on your behalf, you must configure your DNS settings to include the three SendGrid subdomain DNS entries. Each SendGrid account is assigned a unique `TXT` record which is used to authenticate outbound emails.
+For SendGrid to send transactional emails on your behalf from Pro Production environments, you must configure your DNS settings to include the three SendGrid subdomain DNS entries. Each SendGrid account is assigned a unique `TXT` record which is used to authenticate outbound emails.
 
 **To enable domain authentication**:
 
-1. Open a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) and request to enable the DKIM on a specific domain.
+1. Submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) that requests to enable the DKIM for a specific domain.
 1. Update your DNS configuration with the `TXT` and `CNAME` records provided to you in the support ticket.
 
 **Example `TXT` record with account ID**:
@@ -54,9 +54,9 @@ v=spf1 include:u17504801.wl.sendgrid.net -all
 | s1._domainkey.emaildomain.com | s1.domainkey.uxxxxxx.wl.sendgrid.net | CNAME |
 | s2._domainkey.emaildomain.com | s2.domainkey.uxxxxxx.wl.sendgrid.net | CNAME |
 
-## DKIM signatures and automated security
+### DKIM signatures and automated security
 
-You can select between automated and manual security when setting up an authenticated domain. If you choose automated security, SendGrid manages your DKIM and SPF records automatically. This means that when you add a new dedicated sending IP address to your account, SendGrid updates your DNS settings and DKIM signature immediately. If you turn off automated security, you are responsible for updating your DKIM signature anytime you change your sending domain.
+You can select between automated and manual security when setting up an authenticated domain. If you choose automated security, SendGrid manages your DKIM and SPF records automatically. When you add a new dedicated sending IP address to your account, SendGrid updates your DNS settings and DKIM signature immediately. If you turn off automated security, you are responsible for updating your DKIM signature anytime you change your sending domain.
 
 **Example automated security enabled**:
 
