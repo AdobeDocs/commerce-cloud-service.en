@@ -5,9 +5,9 @@ exl-id: 814fe2a9-15bf-4bcb-a8de-ae288fd7f284
 ---
 # Configure outgoing emails
 
-You can enable outgoing email on an environment to send two-factor authentication or reset password emails for Cloud project users. By default, outgoing email is enabled on Production environments even though the [!UICONTROL Outgoing emails] may appear **Off** in the environment settings regardless of status until you set the [`enable_smtp` property](#enable-emails-in-the-cli).
+You can enable and disable outgoing emails for each environment from the Project Web Interface or from the command line. Enable outgoing emails for integration and staging environments to send two-factor authentication or reset password emails for Cloud project users.
 
-You can enable and disable outgoing emails for each environment from the Project Web Interface or from the command line.
+By default, outgoing email is enabled on Production environments. The [!UICONTROL Outgoing emails] may appear **Off** in the environment settings regardless of status until you set the [`enable_smtp` property](#enable-emails-in-the-cli).
 
 {{redeploy-warning}}
 

@@ -1,9 +1,9 @@
 ---
-title: SendGrid mail service
-description: Learn about the SendGrid mail service for Adobe Commerce on cloud infrastructure and how you can test your DNS configuration.
+title: SendGrid email service
+description: Learn about the SendGrid email service for Adobe Commerce on cloud infrastructure and how you can test your DNS configuration.
 exl-id: 30d3c780-603d-4cde-ab65-44f73c04f34d
 ---
-# SendGrid mail service
+# SendGrid email service
 
 The SendGrid Simple Mail Transfer Protocol (SMTP) proxy service provides outbound email authentication and reputation monitoring services, including support for:
 
