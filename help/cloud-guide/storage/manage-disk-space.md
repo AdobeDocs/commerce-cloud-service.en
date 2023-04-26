@@ -22,11 +22,15 @@ When a Pro production or staging environment reaches or exceeds 95% of the stora
 
 Example notification:
 
-```text
-"Our monitoring has detected files storage on your cluster (project-id-environment) is nearing full. The disk usage is currently at critical usage levels with less than 1 GiB left. The shared storage volume is currently being upsized from 60 GiB to 70 GiB to keep your services up and running. Please take a look at the production and staging files usage to see if you can clear up some space."
-```
+>[!BEGINSHADEBOX]
 
-It is recommended that you regularly monitor your storage capacity and maintain it well under 90% to avoid these automatic increases. Once allocated, the storage increase for Pro staging and production cannot be reverted.
+_"Our monitoring has detected files storage on your cluster (project-id-environment) is nearing full. The disk usage is currently at critical usage levels with less than 1 GiB left. The shared storage volume is currently being upsized from 60 GiB to 70 GiB to keep your services up and running. Please take a look at the production and staging files usage to see if you can clear up some space."_
+
+>[!ENDSHADEBOX]
+
+>[!TIP]
+>
+>It is recommended that you regularly monitor your storage capacity and maintain it well under 90% to avoid these automatic increases. Once allocated, the storage increase for Pro staging and production cannot be reverted.
 
 ## Check Integration environment
 
