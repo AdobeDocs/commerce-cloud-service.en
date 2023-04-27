@@ -1,6 +1,7 @@
 ---
 title: Set up Elasticsearch service
 description: Learn how to enable the Elasticsearch service for Adobe Commerce on cloud infrastructure.
+feature: Cloud, Search, Services
 exl-id: ac559cbb-342a-4756-ade5-49eba4827965
 ---
 # Set up Elasticsearch service

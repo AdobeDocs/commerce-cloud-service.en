@@ -1,6 +1,7 @@
 ---
 title: Set up RabbitMQ service
 description: Learn how to enable the RabbitMQ service to manage message queues for Adobe Commerce on cloud infrastructure.
+feature: Cloud, Services
 exl-id: 85794b8f-2260-4a6e-b5a6-a1b4c356594e
 ---
 # Set up [!DNL RabbitMQ] service
