@@ -1,6 +1,7 @@
 ---
 title: Post-deploy variables
 description: See the list of environment variables that control actions in the Adobe Commerce on cloud infrastructure post-deploy phase.
+feature: Cloud, Configuration, Cache
 exl-id: e460335f-cd2b-4c98-b1ff-32504599b33d
 ---
 # Post-deploy variables
