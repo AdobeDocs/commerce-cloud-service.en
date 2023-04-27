@@ -1,6 +1,7 @@
 ---
 title: Static content deployment
 description: Learn about strategies for deploying static content, such as images, scripts, and CSS, on Adobe Commerce on cloud infrastructure projects.
+feature: Cloud, Build, Deploy, SCD
 exl-id: e128d0d5-1326-44e5-a822-009e11ba105f
 ---
 # Static content deployment strategies
