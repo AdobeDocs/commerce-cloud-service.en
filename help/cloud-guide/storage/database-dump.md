@@ -1,6 +1,7 @@
 ---
 title: Back up the database
 description: Learn how to use ECE-tools to create a backup of the database for an Adobe Commerce on cloud infrastructure project.
+feature: Cloud, Iaas, Storage
 exl-id: 8a96effe-a587-4edf-b0c7-e73ca8d3b56c
 ---
 # Back up the database

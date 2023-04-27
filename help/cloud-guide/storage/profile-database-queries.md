@@ -1,6 +1,7 @@
 ---
 title: Profile database queries
 description: Learn how to enable profiling to understand the impact of changes to the database.
+feature: Cloud, Storage
 exl-id: 85773cf6-e284-4de3-a6a4-765db6a6eb24
 ---
 # Profile database queries
