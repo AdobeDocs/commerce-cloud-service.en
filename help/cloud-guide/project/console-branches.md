@@ -1,6 +1,8 @@
 ---
 title: Manage branches with the Project Web Interface
 description: Learn how to manage the environment branches for Adobe Commerce on cloud infrastructure using the Project Web Interface.
+role: Developer
+feature: Cloud, Console, Install
 exl-id: 2c4ef149-fdb9-473f-91fd-5e6421ac5a43
 ---
 # Manage branches with the Project Web Interface
