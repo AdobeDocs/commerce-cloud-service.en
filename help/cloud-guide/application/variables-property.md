@@ -1,6 +1,7 @@
 ---
 title: Variables property
 description: Use the variables property to customize store configuration options for the Commerce application.
+feature: Cloud, Configuration
 exl-id: 5cd92fbb-8bff-48b1-9658-500140591344
 ---
 # Variables property

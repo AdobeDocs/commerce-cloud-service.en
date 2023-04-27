@@ -1,6 +1,7 @@
 ---
 title: Configure application deployment
 description: Learn how to configure the properties in the application configuration file that control the way the Commerce application builds and deploys to the Cloud environment.
+feature: Cloud, Configuration, Build, Deploy
 exl-id: 900da20d-98d2-4c9f-97ec-578aee775b55
 ---
 # Configure application deployment
