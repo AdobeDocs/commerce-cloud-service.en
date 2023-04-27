@@ -1,6 +1,7 @@
 ---
 title: Auto scaling
 description: Learn how Adobe Commerce on cloud infrastructure can scale to meet resource demands.
+feature: Cloud, Auto Scaling
 exl-id: 2ba49c55-d821-4934-965f-f35bd18ac95f
 ---
 # Auto scaling
