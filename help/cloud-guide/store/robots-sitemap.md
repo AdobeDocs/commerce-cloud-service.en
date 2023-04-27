@@ -1,6 +1,7 @@
 ---
 title: Add site map and search engine robots
 description: Learn how to add site map and search engine robots to Adobe Commerce on cloud infrastructure.
+feature: Cloud, Configuration, Search, Site Navigation
 exl-id: b98f43fa-1878-466d-8ea0-1e7207af8b60
 ---
 # Add site map and search engine robots

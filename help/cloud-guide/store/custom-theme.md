@@ -1,6 +1,7 @@
 ---
 title: Custom theme
 description: Learn how to install a custom theme with Adobe Commerce on cloud infrastructure.
+feature: Cloud, Themes
 exl-id: f08134ab-daea-471d-a927-02531d36a809
 ---
 # Custom theme
