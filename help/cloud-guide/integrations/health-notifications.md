@@ -1,6 +1,7 @@
 ---
 title: Health notifications
 description: Learn how to configure Slack, email, and PagerDuty notifications for disk space usage on your Adobe Commerce on cloud infrastructure project.
+feature: Cloud, Observability
 exl-id: d3173098-78ed-42a8-aeb3-9ccbaccc4d32
 ---
 # Health notifications
