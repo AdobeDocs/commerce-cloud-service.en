@@ -1,6 +1,7 @@
 ---
 title: Customize error and maintenance pages
 description: Learn how to customize the default error page that displays when requests to the Fastly origin server fail.
+feature: Cloud, Configuration, Security
 exl-id: 16722821-b928-4872-8cef-7f049e600f0d
 ---
 # Customize error and maintenance pages
