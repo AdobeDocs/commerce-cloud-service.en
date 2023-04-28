@@ -1,6 +1,7 @@
 ---
 title: Bitbucket integration
 description: Learn how to integrate your Adobe Commerce on cloud infrastructure project with Bitbucket.
+feature: Cloud, Integration
 exl-id: cd3cffbe-268f-429b-a2ea-0306159f4a6b
 ---
 # Bitbucket integration
