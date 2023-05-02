@@ -1,6 +1,7 @@
 ---
 title: Firewall property
 description: See examples on how to configure the firewall property in the Commerce application configuration file.
+feature: Cloud, Configuration, Security
 exl-id: f169c008-c62a-41b7-a98d-cccd81c7291a
 ---
 # Firewall property

@@ -1,6 +1,7 @@
 ---
 title: Workers
 description: Learn how to configure the workers property in the Commerce application configuration file.
+feature: Cloud, Configuration
 exl-id: d6816925-5912-45ca-8255-6c307e58542d
 ---
 # Workers property

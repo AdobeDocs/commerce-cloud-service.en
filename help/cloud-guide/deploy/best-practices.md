@@ -1,6 +1,7 @@
 ---
 title: Deployment best practices
 description: Discover best practices for deploying Adobe Commerce on cloud infrastructure.
+feature: Cloud, Deploy, Best Practices
 exl-id: bac3ca83-0eee-4fda-9a5c-a84ab25a837a
 ---
 # Deployment best practices
@@ -151,7 +152,6 @@ There are two default deploy hooks. The `pre-deploy.php` hook completes necessar
 >[!NOTE]
 >
 >Our deploy script uses the values defined by configuration files in the `.magento` directory, then the script deletes the directory and its contents. Your local development environment is not affected.
-
 
 ### Post-deployment: configure routing
 

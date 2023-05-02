@@ -1,6 +1,8 @@
 ---
 title: Manage branches with the CLI
 description: Learn how to manage the environment branches for Adobe Commerce on cloud infrastructure using the Cloud CLI.
+role: Developer
+feature: Cloud, Install
 exl-id: a871c7e2-4506-4a05-8fc2-fc5ef2afe609
 ---
 # Manage branches with the CLI

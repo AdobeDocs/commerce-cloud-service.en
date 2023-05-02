@@ -1,6 +1,7 @@
 ---
 title: Web property
 description: See examples on how to configure the web property in the Commerce application configuration file.
+feature: Cloud, Configuration
 exl-id: 2ca94908-6fe1-42fd-bc3b-ef2dd473f1bb
 ---
 # Web property

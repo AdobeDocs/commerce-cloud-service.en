@@ -1,6 +1,7 @@
 ---
 title: Cloud Docker package
 description: Learn about the latest improvements to the Cloud Docker package.
+feature: Cloud, Docker, Release Notes
 exl-id: 907d977f-2e9c-4553-a46b-000bc6a57b28
 ---
 # Cloud Docker package

@@ -1,6 +1,7 @@
 ---
 title: Environment variables
 description: See a list of environment variables specific to Adobe Commerce on cloud infrastructure.
+feature: Cloud, Build, Configuration, Deploy
 exl-id: bfee2f69-93a6-4d26-bb9e-be8acc5673c3
 ---
 # Environment variables

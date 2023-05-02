@@ -1,6 +1,7 @@
 ---
 title: Configuration files overview
 description: Learn about configuring the cloud infrastructure environment to support deploying and managing your customized Adobe Commerce store.
+feature: Cloud, Configuration, Services, Iaas, Paas
 exl-id: f469a0ec-e459-413f-9725-66a0fbf34f01
 ---
 # Configuration files overview

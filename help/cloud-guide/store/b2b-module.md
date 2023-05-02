@@ -1,6 +1,7 @@
 ---
 title: Enable the B2B module
 description: Learn how to enable the business-to-business module for Adobe Commerce on cloud infrastructure.
+feature: Cloud, B2B
 exl-id: 01d02ea0-1e7d-4608-adbf-1dad7f5e2182
 ---
 # Enable the B2B module

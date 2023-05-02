@@ -1,6 +1,8 @@
 ---
 title: Secure connections
 description: Learn how to apply SSH keys to your Adobe Commerce on cloud infrastructure project and log in to remote environments.
+role: Developer
+feature: Cloud, Security
 exl-id: b5780e8e-e3da-4b10-8ca3-2778085acd4a
 ---
 # Secure connections to remote environments

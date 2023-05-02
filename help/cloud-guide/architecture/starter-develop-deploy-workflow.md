@@ -1,6 +1,7 @@
 ---
 title: Starter project workflow
 description: Learn how to use the Starter development and deployment workflows.
+feature: Cloud, Paas
 exl-id: f334047a-1e0d-45c7-bf96-5c2964741951
 ---
 # Starter project workflow

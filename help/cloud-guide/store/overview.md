@@ -1,6 +1,7 @@
 ---
 title: Overview of store options and configuration management
 description: Customize your Adobe Commerce store on cloud infrastructure.
+feature: Cloud, Configuration, Services
 exl-id: 06d477e4-02de-4742-8495-541458400e93
 ---
 # Overview of store options and configuration management

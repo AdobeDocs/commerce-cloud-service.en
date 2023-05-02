@@ -1,6 +1,8 @@
 ---
 title: Integrations overview
 description: Learn about third-party integration options for your Adobe Commerce on cloud infrastructure project.
+role: Developer
+feature: Cloud, Integration
 exl-id: 2dddba73-5b88-4b5d-a0e1-2f1c1f52354c
 ---
 # Integrations overview

@@ -1,6 +1,7 @@
 ---
 title: Snapshots and backup management
 description: Learn how to manually back up and restore your Adobe Commerce on cloud infrastructure project.
+feature: Cloud, Paas, Snapshots, Storage
 exl-id: 1cb00db7-2375-4761-9c07-1e20a74859e0
 ---
 # Snapshots and backup management

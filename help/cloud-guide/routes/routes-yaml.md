@@ -1,6 +1,7 @@
 ---
 title: Configure routes
 description: Learn how to define the routes for incoming HTTPS requests for the Adobe Commerce on cloud infrastructures environments.
+feature: Cloud, Configuration, Routes
 exl-id: a33797e5-14cc-45eb-a048-96180b872a4a
 ---
 # Configure routes

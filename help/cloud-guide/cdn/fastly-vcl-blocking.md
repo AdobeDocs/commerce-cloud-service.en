@@ -1,6 +1,7 @@
 ---
 title: Custom VCL for blocking requests
 description: Block incoming requests by IP address using an Edge Access Control list (ACL) with a custom VCL snippet.
+feature: Cloud, Configuration, Security
 exl-id: 1f637612-3858-49d0-91f7-9b8823933cc9
 ---
 # Custom VCL for blocking requests
