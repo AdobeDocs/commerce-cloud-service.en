@@ -65,6 +65,7 @@ You can configure the following services:
 - [OpenSearch](../services/opensearch.md)
 
 {{elasticsearch-support}}
+
 >[!NOTE]
 >
 >See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation guide_ for recommended versions.
