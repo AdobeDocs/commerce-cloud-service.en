@@ -1,6 +1,7 @@
 ---
 title: Variable levels and options
 description: Learn about the different variable levels and options used in customizing your Adobe Commerce on cloud infrastructure project runtime environment.
+feature: Cloud, Configuration, Security
 exl-id: 11aa0862-94c0-47fb-946a-0148f75cc24c
 ---
 # Variable levels

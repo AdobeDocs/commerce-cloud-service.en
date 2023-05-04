@@ -1,6 +1,7 @@
 ---
 title: Pro architecture
 description: Learn about the environments supported by Pro architecture.
+feature: Cloud, Auto Scaling, Iaas, Paas, Storage
 exl-id: d10d5760-44da-4ffe-b4b7-093406d8b702
 ---
 # Pro architecture

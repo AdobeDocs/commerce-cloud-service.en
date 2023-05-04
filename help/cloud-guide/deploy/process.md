@@ -1,6 +1,7 @@
 ---
 title: Deployment process
 description: Learn how deployment works for Adobe Commerce on cloud infrastructure projects.
+feature: Cloud, Build, Deploy, SCD
 exl-id: 378fa290-5a71-4ac2-816a-a7c837e45b2f
 ---
 # Deployment process

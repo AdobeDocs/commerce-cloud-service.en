@@ -1,6 +1,7 @@
 ---
 title: Apply patches
 description: Learn how to apply patches in the Adobe Commerce on cloud infrastructure project.
+feature: Cloud, Upgrade
 exl-id: a7bf672f-7b89-45cd-8436-e885bca9029d
 ---
 # Apply patches

@@ -1,6 +1,7 @@
 ---
 title: Fastly troubleshooting
 description: Learn how to troubleshoot and manage the Fastly CDN module and services for Adobe Commerce.
+feature: Cloud, Configuration, Cache, Services
 exl-id: e4c47035-cbad-4838-8d44-fa5eaaac42d1
 ---
 # Fastly troubleshooting

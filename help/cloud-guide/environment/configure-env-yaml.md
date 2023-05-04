@@ -1,6 +1,7 @@
 ---
 title: Configure environment
 description: Learn how to configure build and deploy actions across all Commerce on cloud infrastructure environments, including Pro Staging and Production, using environment variables.
+feature: Cloud, Build, Configuration, Deploy, SCD
 exl-id: 66e257e2-1eca-4af5-9b56-01348341400b
 ---
 # Configure environment variables for deployment

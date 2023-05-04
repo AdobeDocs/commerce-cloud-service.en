@@ -1,6 +1,7 @@
 ---
 title: Set up Redis service
 description: Learn how to set up and optimize Redis as a backend cache solution for Adobe Commerce on cloud infrastructure.
+feature: Cloud, Cache, Services
 exl-id: d6971875-d302-495a-ad10-a81c507c2bc9
 ---
 # Set up Redis service

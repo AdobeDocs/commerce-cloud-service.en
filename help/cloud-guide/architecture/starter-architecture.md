@@ -1,6 +1,7 @@
 ---
 title: Starter architecture
 description: Learn about the environments supported by Starter architecture.
+feature: Cloud, Paas
 exl-id: 03365d32-4eb4-42d4-82a7-771df5e7b3da
 ---
 # Starter architecture

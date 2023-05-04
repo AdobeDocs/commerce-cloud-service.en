@@ -1,6 +1,7 @@
 ---
 title: Set up OpenSearch service
 description: Learn how to enable the OpenSearch service for Adobe Commerce on cloud infrastructure.
+feature: Cloud, Search, Services
 exl-id: 10dc6367-3f90-4ab6-a84e-15e8c3b32a38
 ---
 # Set up OpenSearch service

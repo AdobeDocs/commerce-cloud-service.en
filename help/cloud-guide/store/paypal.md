@@ -1,6 +1,7 @@
 ---
 title: Set up PayPal payment methods
 description: Set up PayPal payment methods for Adobe Commerce on cloud infrastructure.
+feature: Cloud, Checkout, Payments
 exl-id: e52fd719-f936-4e8b-8222-af133389d9e2
 ---
 # Set up PayPal payment methods

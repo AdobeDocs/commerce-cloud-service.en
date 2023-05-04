@@ -1,6 +1,7 @@
 ---
 title: Optimize cloud deployment
 description: Learn about ways to optimize the deployment process for Adobe Commerce on cloud infrastructure projects, including reducing downtime, static content deployment, scenario-based deployment, and smart wizards.
+feature: Cloud, Deploy, SCD
 exl-id: 62e5eccb-6919-4a4b-9f50-6105f9d0f3af
 ---
 # Optimize deployment

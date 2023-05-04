@@ -1,6 +1,7 @@
 ---
 title: Web Application Firewall (WAF)
 description: Learn how the Fastly WAF service detects, logs, and blocks malicious request traffic before it can damage the Adobe Commerce network or sites.
+feature: Cloud, Configuration, Security
 exl-id: 40bfe983-7f32-4155-ae77-7cd18866f6e2
 ---
 # Web Application Firewall (WAF)

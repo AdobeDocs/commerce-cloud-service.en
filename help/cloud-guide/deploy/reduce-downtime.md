@@ -1,6 +1,7 @@
 ---
 title: Zero downtime deployment
 description: Learn how to reduce overall downtime when deploying Adobe Commerce on cloud infrastructure projects.
+feature: Cloud, Deploy, SCD, Themes
 exl-id: ff89d2e1-dfc8-4f6d-bd98-947559af13f0
 ---
 # Zero downtime deployment
