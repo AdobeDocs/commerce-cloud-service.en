@@ -63,10 +63,7 @@ You can configure the following services:
 - [Elasticsearch](../services/elasticsearch.md)
 - [OpenSearch](../services/opensearch.md)
 
->[!WARNING]
->
->Elasticsearch 7.11 and later is not supported for Adobe Commerce on cloud infrastructure. Adobe Commerce versions 2.3.7-p3, 2.4.3-p2, and 2.4.4 and later support the OpenSearch service. The on-premises installations continue to support Elasticsearch.
-
+{{elasticsearch-support}}
 >[!NOTE]
 >
 >See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation guide_ for recommended versions.
