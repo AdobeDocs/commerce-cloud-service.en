@@ -24,10 +24,6 @@ Create an SSH key pair on every machine and workspace that requires access to yo
 
 After you add your SSH public key to your Adobe Commerce on cloud infrastructure account, redeploy all active environments on your account to install the key.
 
->[!NOTE]
->
->For Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with your **public** key attached. **Never provide your private SSH key.**
-
 You can add SSH keys to your account using one of the following methods:
 
 - Cloud CLI
