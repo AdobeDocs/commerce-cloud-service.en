@@ -4,7 +4,6 @@ user-guide-description: Begin your initial set up of the Commerce application in
 feature: Cloud
 product: magento
 recommendations: noDisplay, noCatalog
-type: Documentation
 ---
 
 # Get Started with Commerce {#start}
