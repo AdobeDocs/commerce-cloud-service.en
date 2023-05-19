@@ -41,7 +41,7 @@ Using that example, the deploy log is: `/var/log/platform/yw1unoukjcawe_stg/depl
 
 After pushing changes to your environment, you can review the logging from each hook in the `var/log/cloud.log` file. The log contains start and stop messages for each hook. In the following example, the messages are "`Starting post-deploy.`" and "`Post-deploy is complete.`"
 
-Check the timestamps on log entries to verify and locate the logs for a specific deployment. The following is a condensed example of log output that you can use for troubleshooting:
+Check the timestamps on log entries, verify, and locate the logs for a specific deployment. The following is a condensed example of log output that you can use for troubleshooting:
 
 ```terminal
 Re-deploying environment project-integration-ID
@@ -72,7 +72,7 @@ The following logs have a common location for all Cloud projects:
 - **Support log**: `var/log/support_report.log`
 - **Reports**: `var/report/`
 
-Though the `cloud.log` file contains feedback from each stage of the deployment process, logs from the deploy hook are unique to each environment. The environment-specific deploy log is in the following directories:
+Though the `cloud.log` file contains feedback from each stage of the deployment process, logs created by the deploy hook are unique to each environment. The environment-specific deploy log is in the following directories:
 
 - **Starter and Pro Integration**: `/var/log/deploy.log`
 - **Pro Staging**: `/var/log/platform/<project-ID>_stg/deploy.log`
@@ -154,7 +154,7 @@ The archived log files are always stored in the directory where the original fil
 
 ## Service logs
 
-Because each service runs in a separate container, the service logs are not available in the Integration environment. Adobe Commerce on cloud infrastructure provides access to the web server container in the Integration environment only. The following service log locations are for the Pro Production and Staging environments:
+Because each service runs in a separate container, the service logs are not available in the integration environment. Adobe Commerce on cloud infrastructure provides access to the web server container in the integration environment only. The following service log locations are for the Pro Production and Staging environments:
 
 - **Redis log**: `/var/log/platform/<project-ID>_stg/redis-server-<project-ID>_stg.log`
 - **Elasticsearch log**: `/var/log/elasticsearch/elasticsearch.log`
@@ -164,13 +164,13 @@ Because each service runs in a separate container, the service logs are not avai
 - **MySQL slow log**: `/var/log/mysql/mysql-slow.log`
 - **RabbitMQ log**: `/var/log/rabbitmq/rabbit@host1.log`
 
-Service logs are archived and saved for different periods of time, depending on the log type. For example, MySQL logs have the shortest lifetime—removed after 7 days.
+Service logs are archived and saved for different periods of time, depending on the log type. For example, MySQL logs have the shortest lifetime—removed after seven days.
 
 >[!TIP]
 >
 >Log file locations in the scaled architecture depend on the node type. See [Log locations in the Scaled architecture](../architecture/scaled-architecture.md#log-locations) topic.
 
-## Related topics in our support knowledge base
+## Related topics in the support knowledge base
 
 - [Most common database issues in Adobe Commerce on cloud infrastructure][database issues]
 - [Adobe Commerce deployment troubleshooter][deployment troubleshooter]
