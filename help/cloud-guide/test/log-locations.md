@@ -108,7 +108,27 @@ magento-cloud log platform/<project-ID>_stg/deploy
 
 Error and warning messages generated during the deployment process are written to both the `var/log/cloud.log` and the `var/log/cloud.error.log` files. The Cloud error log file contains only errors and warnings from the latest deployment. An empty file indicates a successful deployment with no errors.
 
-Use an SSH to log in to the remote environment. View the log file: `cat var/log/cloud.error.log`
+Use an SSH to log in to the remote environment. View the log file (`cat var/log/cloud.error.log`) or use ECE-Tools to show the errors:
+
+```bash
+./vendor/bin/ece-tools error:show
+```
+
+Sample response:
+
+```terminal
+errorCode: 1001
+stage: build
+step: validate-config
+suggestion: Please run the following commands:
+1. bin/magento module:enable --all
+2. git add -f app/etc/config.php
+3. git commit -m 'Adding config.php'
+4. git push
+title: File app/etc/config.php does not exist
+type: warning
+---------------
+```
 
 Most error messages contain a description and suggested action. Use the [Error message reference for ECE-Tools](../dev-tools/error-reference.md) to look up the error code for further guidance.
 
@@ -170,12 +190,7 @@ Service logs are archived and saved for different periods of time, depending on 
 >
 >Log file locations in the scaled architecture depend on the node type. See [Log locations in the Scaled architecture](../architecture/scaled-architecture.md#log-locations) topic.
 
-## Related topics in the support knowledge base
+## Support knowledge base guidance
 
-- [Most common database issues in Adobe Commerce on cloud infrastructure][database issues]
-- [Adobe Commerce deployment troubleshooter][deployment troubleshooter]
-
-<!--Link definitions-->
-
-[database issues]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html
-[deployment troubleshooter]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html
+- [Most common database issues in Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html)
+- [Adobe Commerce deployment troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html)
