@@ -130,7 +130,7 @@ type: warning
 ---------------
 ```
 
-Most error messages contain a description and suggested action. Use the [Error message reference for ECE-Tools](../dev-tools/error-reference.md) to look up the error code for further guidance.
+Most error messages contain a description and suggested action. Use the [Error message reference for ECE-Tools](../dev-tools/error-reference.md) to look up the error code for further guidance. For further guidance, use the [Adobe Commerce deployment troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Application logs
 
@@ -189,8 +189,3 @@ Service logs are archived and saved for different periods of time, depending on 
 >[!TIP]
 >
 >Log file locations in the scaled architecture depend on the node type. See [Log locations in the Scaled architecture](../architecture/scaled-architecture.md#log-locations) topic.
-
-## Support knowledge base guidance
-
-- [Most common database issues in Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html)
-- [Adobe Commerce deployment troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html)

@@ -128,7 +128,6 @@ Two [configuration files](../environment/overview.md) control the allocation of 
 >
 >For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production cannot be reverted.
 
-
 ### Application disk space
 
 The `.magento.app.yaml` file controls the [persistent disk space](../application/properties.md#disk) available to the application.
@@ -183,7 +182,7 @@ The `.magento/services.yaml` file controls the disk space available to each serv
 
 ## Monitor disk space
 
-On Pro Production environments, you can monitor disk space and other performance indicators using the Managed alerts for Adobe Commerce alert policy for New Relic. For details, see [Monitor performance with Managed Alerts](../monitor/new-relic.md#monitor-performance-with-managed-alerts).
+On Pro Production environments, you can monitor disk space and other performance indicators using the Managed alerts for Adobe Commerce alert policy for New Relic. For details, see [Monitor performance with Managed Alerts](../monitor/new-relic.md#monitor-performance-with-managed-alerts). For further guidance, see [Best practices to resolve database performance issues](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html).
 
 ## No space left
 
