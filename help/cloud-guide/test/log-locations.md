@@ -15,10 +15,6 @@ You can view the logs from the file system, the Project Web Interface, and the `
 
 - **Cloud CLI**—You can view local environment logs using the `magento-cloud log` command or remote environment logs using the `magento-cloud ssh` command.
 
->[!TIP]
->
->For Pro environments, automatic log rotation, compression, and removal are enabled for log files with a fixed file name. Each log file type has a rotating pattern and lifetime. Starter environments do not have log rotation. Full details of the environment's log rotation and lifespan of compressed logs can be found in: `/etc/logrotate.conf` and `/etc/logrotate.d/<various>`
-
 ## Log locations
 
 Logs that include events that occur in the remote environment are stored in the following locations:
@@ -30,6 +26,24 @@ Logs that include events that occur in the remote environment are stored in the 
 The value of `<project-ID>` depends on the project and whether the environment is Staging or Production. For example, with a project ID of `yw1unoukjcawe`, the Staging environment user is `yw1unoukjcawe_stg` and the Production environment user is `yw1unoukjcawe`.
 
 Using that example, the deploy log is: `/var/log/platform/yw1unoukjcawe_stg/deploy.log`
+
+>[!TIP]
+>
+>For Pro environments, automatic log rotation, compression, and removal are enabled for log files with a fixed file name. Each log file type has a rotating pattern and lifetime. Starter environments do not have log rotation. Full details of the environment's log rotation and lifespan of compressed logs can be found in: `/etc/logrotate.conf` and `/etc/logrotate.d/<various>`
+
+### View remote environment logs
+
+**To view a list of remote environment logs**:
+
+```bash
+magento-cloud ssh -e <environment-ID> "ls var/log"
+```
+
+**To quickly view a remote log**:
+
+```bash
+magento-cloud ssh -e <environment-ID> "cat var/log/cloud.error.log"
+```
 
 ## Build and Deploy logs
 
@@ -71,20 +85,6 @@ Though the `cloud.log` file contains feedback from each stage of the deployment 
 - **Starter and Pro Integration**: `/var/log/deploy.log`
 - **Pro Staging**: `/var/log/platform/<project-ID>_stg/deploy.log`
 - **Pro Production**: `/var/log/platform/<project-ID>/deploy.log`
-
-### View remote environment logs
-
-**To view a list of remote environment logs**:
-
-```bash
-magento-cloud ssh -e <environment-ID> "ls var/log"
-```
-
-**To quickly view a remote log**:
-
-```bash
-magento-cloud ssh -e <environment-ID> "cat var/log/cloud.error.log"
-```
 
 ### Deploy log
 
@@ -147,12 +147,6 @@ type: warning
 
 Most error messages contain a description and suggested action. Use the [Error message reference for ECE-Tools](../dev-tools/error-reference.md) to look up the error code for further guidance. For further guidance, use the [Adobe Commerce deployment troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
-## Log data for Pro Production and Staging
-
-On Pro Production and Staging environments, use the [New Relic Logs application](../monitor/new-relic.md#view-and-analyze-log-data) integrated with your project to manage aggregated log data from all logs associated with your Adobe Commerce on cloud infrastructure project.
-
-The New Relic Logs application provides a centralized log management dashboard to troubleshoot and monitor Adobe Commerce on cloud infrastructure Production and Staging environments. The dashboard also provides access to log data for Fastly CDN, Image Optimization, and Web application firewall (WAF) services. See [New Relic services](../monitor/new-relic.md#view-and-analyze-log-data).
-
 ## Application logs
 
 Similar to deploy logs, application logs are unique for each environment:
@@ -210,3 +204,9 @@ Service logs are archived and saved for different periods of time, depending on 
 >[!TIP]
 >
 >Log file locations in the scaled architecture depend on the node type. See [Log locations in the Scaled architecture](../architecture/scaled-architecture.md#log-locations) topic.
+
+## Log data for Pro Production and Staging
+
+On Pro Production and Staging environments, use the [New Relic Logs application](../monitor/new-relic.md#view-and-analyze-log-data) integrated with your project to manage aggregated log data from all logs associated with your Adobe Commerce on cloud infrastructure project.
+
+The New Relic Logs application provides a centralized log management dashboard to troubleshoot and monitor Adobe Commerce on cloud infrastructure Production and Staging environments. The dashboard also provides access to log data for Fastly CDN, Image Optimization, and Web application firewall (WAF) services. See [New Relic services](../monitor/new-relic.md#view-and-analyze-log-data).
