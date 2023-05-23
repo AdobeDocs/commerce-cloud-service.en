@@ -158,7 +158,7 @@ You can use the Project Web Interface to add permissions and use the _Edit_ feat
 
 1. Click **Add User**.
 
-1. After adding project-level users, you must redeploy all environments to apply the changes. Adding a project-level user does not trigger a deployment automatically.
+1. After adding project-level users, redeploy all environments to apply the changes. Adding a project-level user does not trigger a deployment automatically. This is an important step to ensure that the user can access a project environment using SSH.
 
 After you add the user, Adobe sends an email to the specified address with instructions for accessing the Adobe Commerce on cloud infrastructure project.
 
