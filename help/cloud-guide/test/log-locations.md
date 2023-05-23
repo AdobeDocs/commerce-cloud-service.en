@@ -17,7 +17,7 @@ You can view the logs from the file system, the Project Web Interface, and the `
 
 ## Log locations
 
-Logs that include events that occur in the remote environment are stored in the following locations:
+System logs are stored in the following locations:
 
 - Integration: `/var/log/<log-name>.log`
 - Pro Staging: `/var/log/platform/<project-ID>_stg/<log-name>.log`
@@ -27,11 +27,21 @@ The value of `<project-ID>` depends on the project and whether the environment i
 
 Using that example, the deploy log is: `/var/log/platform/yw1unoukjcawe_stg/deploy.log`
 
->[!TIP]
->
->For Pro environments, automatic log rotation, compression, and removal are enabled for log files with a fixed file name. Each log file type has a rotating pattern and lifetime. Starter environments do not have log rotation. Full details of the environment's log rotation and lifespan of compressed logs can be found in: `/etc/logrotate.conf` and `/etc/logrotate.d/<various>`
-
 ### View remote environment logs
+
+Most logs include events that occur in the remote environment. For Pro, there are multiple nodes and each node has unique logs. Use the following to see a list of all hosts:
+
+```bash
+magento-cloud ssh -p <project-ID> -e <environment-ID> --all
+```
+
+Sample response:
+
+```terminal
+1.ent-project-environment-id@ssh.region.magento.cloud
+2.ent-project-environment-id@ssh.region.magento.cloud
+3.ent-project-environment-id@ssh.region.magento.cloud
+```
 
 **To view a list of remote environment logs**:
 
@@ -39,11 +49,27 @@ Using that example, the deploy log is: `/var/log/platform/yw1unoukjcawe_stg/depl
 magento-cloud ssh -e <environment-ID> "ls var/log"
 ```
 
-**To quickly view a remote log**:
+Example for Pro:
 
 ```bash
-magento-cloud ssh -e <environment-ID> "cat var/log/cloud.error.log"
+ssh 1.ent-project-environment-id@ssh.region.magento.cloud "ls var/log | grep error"
 ```
+
+**To view a remote log**:
+
+```bash
+magento-cloud ssh -e <environment-ID> "cat var/log/cron.log"
+```
+
+Example for Pro:
+
+```bash
+ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
+```
+
+>[!TIP]
+>
+>For Pro environments, automatic log rotation, compression, and removal are enabled for log files with a fixed file name. Each log file type has a rotating pattern and lifetime. Starter environments do not have log rotation. Full details of the environment's log rotation and lifespan of compressed logs can be found in: `/etc/logrotate.conf` and `/etc/logrotate.d/<various>`
 
 ## Build and Deploy logs
 
@@ -91,7 +117,7 @@ Though the `cloud.log` file contains feedback from each stage of the deployment 
 The log for each deployment concatenates to the specific `deploy.log` file. The following example prints the deploy log of the current environment in the terminal:
 
 ```bash
-magento-cloud log deploy
+magento-cloud log -e <environment-ID> deploy
 ```
 
 Sample response:

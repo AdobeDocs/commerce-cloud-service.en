@@ -1,6 +1,7 @@
 ---
 title: Developer tools overview
 description: View a list of developer tools available for use with Adobe Commerce on cloud infrastructure.
+feature: Cloud, Docker, Integration, Upgrade
 ---
 
 # Developer tools overview
