@@ -27,7 +27,7 @@ When you are ready to launch your site, you must update the DNS configuration to
 
 -  Production environment configuration has been updated with all required domains
 
-   Typically, you work with your Customer Technical Advisor to add all top-level domains and sub-domains required for your stores. To add or change the domains for your Production environment, [Submit an Adobe Commerce Support ticket](https://support.magento.com/hc/en-us/articles/360019088251). Wait for confirmation that your project configuration has been updated.
+   Typically, you work with your Customer Technical Advisor to add all top-level domains and subdomains required for your stores. To add or change the domains for your Production environment, [Submit an Adobe Commerce Support ticket](https://support.magento.com/hc/en-us/articles/360019088251). Wait for confirmation that your project configuration has been updated.
 
    On Starter projects, you must add the domains to your project. See [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains).
 
@@ -51,17 +51,17 @@ When you are ready to launch your site, you must update the DNS configuration to
 
    | Domain or Subdomain     | CNAME                            |
    | ----------------------- | -------------------------------- |
-   | www.your-domain.com     | prod.magentocloud.map.fastly.net |
-   | mystore.your-domain.com | prod.magentocloud.map.fastly.net |
+   | www.<domain-name>.com     | prod.magentocloud.map.fastly.net |
+   | mystore.<domain-name>.com | prod.magentocloud.map.fastly.net |
 
-1. If needed, add A records to map the apex domain (`your-domain.com`) to the following Fastly IP addresses:
+1. If needed, add A records to map the apex domain (`<domain-name>.com`) to the following Fastly IP addresses:
 
    | Apex domain     | ANAME             |
    | --------------- | ----------------- |
-   | your-domain.com | `151.101.1.124`   |
-   | your-domain.com | `151.101.65.124`  |
-   | your-domain.com | `151.101.129.124` |
-   | your-domain.com | `151.101.193.124` |
+   | <domain-name>.com | `151.101.1.124`   |
+   | <domain-name>.com | `151.101.65.124`  |
+   | <domain-name>.com | `151.101.129.124` |
+   | <domain-name>.com | `151.101.193.124` |
 
 1. Update the Base URL.
 
@@ -74,7 +74,7 @@ When you are ready to launch your site, you must update the DNS configuration to
    -  Use the CLI to change the base URL for your store.
 
       ```bash
-      php bin/magento setup:store-config:set --base-url="https://www.your-domain.com/"
+      php bin/magento setup:store-config:set --base-url="https://www.<domain-name>.com/"
       ```
 
    **NOTE**: You can also update the Base URL from the Admin. See [ Store URLs](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html) in the _Adobe Commerce Stores and Purchase Experience Guide_.
