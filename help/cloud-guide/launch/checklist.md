@@ -68,7 +68,7 @@ When you are ready to launch your site, you must update the DNS configuration to
    -  Use SSH to log in to the Production environment.
 
       ```bash
-      magento-cloud ssh
+      magento-cloud ssh -e production
       ```
 
    -  Use the CLI to change the base URL for your store.
