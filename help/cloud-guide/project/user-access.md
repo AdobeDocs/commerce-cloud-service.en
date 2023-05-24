@@ -179,7 +179,7 @@ After you add a user to a Cloud project, ask the user to review their account se
 Adobe Commerce on cloud infrastructure supports TFA using any of the following applications:
 
 -  [Google Authenticator (Android/iPhone)](https://support.google.com/accounts/answer/1066447?hl=en)
--  [Authy (Android/iPhone)](https://authy.com/features/)
+-  [Authy (Android/iPhone)](https://authy.com/feature/)
 -  [FreeOTP (Android)](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp)
 -  [GAuth Authenticator (Firefox OS, desktop, others)](https://github.com/gbraad/gauth)
 
