@@ -14,8 +14,14 @@
 </tr>
 <tr>
   <td valign="top">
+    <a href="https://experienceleague-review.corp.adobe.com/docs/commerce-cloud-service/start/new-project.html"><strong>Provision Commerce on Cloud Infrastructure</strong></a>
+    <br><em>Learn how to prepare for a consultation with an Adobe Customer Technical Advisor to provision your Adobe Commerce on cloud infrastructure project.</em><br>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
     <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html"><strong>View and manage logs</strong></a>
-    <br><em>Updated log topic to clarify the use of the Cloud CLI and accessing remote logs.</em><br>
+    <br><em>Updated log topic to clarify the use of the Cloud CLI and how to access remote logs.</em><br>
   </td>
 </tr>
 </table>
