@@ -404,7 +404,7 @@ stage:
 
 >[!WARNING]
 >
->Do not enable this variable on scaled architecture (split architecture) projects. It causes Redis connection errors. Redis slaves are still active but are not used for Redis reads. As an alternative, we recommend the following: use Adobe Commerce 2.3.5 or later on Cloud projects with a scaled architecture, implement a new Redis backend configuration, and implement L2 caching for Redis.
+>Do _not_ enable this variable on a [scaled architecture](../architecture/scaled-architecture.md) project. It causes Redis connection errors. Redis slaves are still active but are not used for Redis reads. As an alternative, Adobe recommends to use Adobe Commerce 2.3.5 or later, implement a new Redis backend configuration, and implement L2 caching for Redis.
 
 >[!TIP]
 >
