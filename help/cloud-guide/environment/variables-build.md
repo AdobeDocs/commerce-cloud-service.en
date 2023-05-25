@@ -2,7 +2,7 @@
 title: Build variables
 description: See the list of environment variables that control actions in the Adobe Commerce on cloud infrastructure build phase.
 feature: Cloud, Configuration, Build, SCD, Upgrade
-recommendations: noDisplay
+recommendations: noDisplay, catalog
 exl-id: 243aaa45-a5ef-4ed2-8800-3d0f07bf3740
 ---
 # Build variables
