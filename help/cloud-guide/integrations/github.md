@@ -20,7 +20,7 @@ You must obtain a GitHub token and a webhook to continue the process.
 
 ## Generate a GitHub token
 
-You must be a member of a group with write-access to the GitHub repository, so that you can _push_ to the repository. See [GitHub: Create](https://docs.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
+You must be a member of a group with write-access to the GitHub repository, so that you can _push_ to the repository. See [GitHub: Create](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
 ## Prepare your repository
 
@@ -81,7 +81,7 @@ The following enables the GitHub integration and provides a Payload URL to use w
 
 >[!WARNING]
 >
->The following command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with code from your GitHub repository. This includes all branches, including the `production` branch. This action happens instantly and cannot be undone. As a best practice, it is important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your GitHub repository **before** adding the GitHub integration.
+>The following command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with code from your GitHub repository, which includes all branches, including the `production` branch. This action happens instantly and cannot be undone. As a best practice, it is important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your GitHub repository **before** adding the GitHub integration.
 
 **To enable the GitHub integration**:
 
@@ -124,7 +124,7 @@ The following enables the GitHub integration and provides a Payload URL to use w
 
 ## Add the webhook in GitHub
 
-In order to communicate events—such as a push—with your Cloud Git server, you must create a webhook for your GitHub repository:
+To communicate events—such as a push—with your Cloud Git server, you must create a webhook for your GitHub repository:
 
 1. In your GitHub repository, click the **Settings** tab.
 

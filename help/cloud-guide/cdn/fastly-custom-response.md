@@ -32,7 +32,7 @@ The HTML code for the custom page must meet the following requirements:
 Customers see the default 503-error page in the following cases:
 
 - When a request to the Fastly origin returns a response status greater than 500
-- When the Fastly origin is down, for example due to a timeout, maintenance activity, or health issues
+- When the Fastly origin is down, such as a timeout, maintenance activity, or health issues
 
 You can customize the default page by adapting the following HTML code to include styling to match your Adobe Commerce store theme and modifying the title and messaging as needed.
 
