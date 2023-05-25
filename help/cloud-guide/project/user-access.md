@@ -16,7 +16,7 @@ Project-level access provides role-based access to a specific project. Environme
 | **Project owner**  | Project     | Perform any administrator task in any project or environment, including deleting it (supercedes the **Super User** role.)<br>This role might not be assigned to the License Owner associated with the email address, name, and information of the person who registered the account. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to modify settings or change the Project owner. | — |
 | **Super User**     | Project     | Access all project settings and environments. Super users can change settings and perform administrator tasks on any environment, including creating and restoring [snapshots](../storage/snapshots.md) and managing users. | — |
 | **Project viewer** | Project     | View-only access to all project environments. Users with this role cannot perform tasks on any environment. Can be granted write access to a specific environment type. | — |
-| **Admin**          | Environment | Perform administrator tasks: change settings, push code, perform tasks and branch management, including merging with the parent environment | Yes |
+| **Admin**          | Environment | Perform administrator tasks, such as change settings, push code, perform tasks and branch management, including merging with the parent environment | Yes |
 | **Contributor**    | Environment | Push code and branch the environment; cannot change settings or execute actions | Yes |
 | **Viewer**         | Environment | View-only access to an environment | No |
 | **None**           | Environment | No access to an environment | No |
