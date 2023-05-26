@@ -26,7 +26,7 @@ You must obtain a GitHub token and a webhook to continue the process.
 
 ## Generate a GitHub token
 
-Create a personal access toke in GitHub developer settings. You must be a member of a group with write-access to the GitHub repository, so that you can _push_ to the repository. Include the following scopes when creating your token:
+Create a classic personal access token in GitHub developer settings. You must be a member of a group with write-access to the GitHub repository, so that you can _push_ to the repository. Include the following scopes when creating your token:
 
 - `admin:repo_hook`—Create web hooks
 - `repo`—Integrate with your repository
