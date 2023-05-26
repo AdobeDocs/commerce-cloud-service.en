@@ -217,7 +217,7 @@ There are two options for storing the API token.
 
 >[!NOTE]
 >
->If an API token is stored, the `magento-cloud` CLI automatically authenticates and there is no need to perform the `mgc login` command.
+>If an API token is stored, the `magento-cloud` CLI automatically authenticates and there is no need to perform the `magento-cloud login` command.
 
 
 **Option 1**: Create an environment variable to store the API token
