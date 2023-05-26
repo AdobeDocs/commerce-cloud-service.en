@@ -6,7 +6,7 @@ exl-id: 5305452f-4c8d-438c-ac78-e2e1ec2f8cd9
 ---
 # GitHub integration
 
-The GitHub integration enables you to manage your Adobe Commerce on cloud infrastructure environments directly from your GitHub repository. The integration manages content already in GitHub and synchronizes it with Adobe Commerce cloud infrastructure.
+The GitHub integration enables you to manage your Adobe Commerce on cloud infrastructure environments directly from your GitHub repository. The integration manages content already in GitHub and synchronizes with your Adobe Commerce on cloud infrastructure code repository. In essence, the code repository becomes a mirror of the GitHub repository.
 
 {{private-repository}}
 
@@ -89,7 +89,7 @@ Clone your Adobe Commerce on cloud infrastructure project from an existing envir
 
 ## Enable the GitHub integration
 
-Before you begin, your project code and environments must be in the GitHub repository. After enabling the integration, the GitHub repository becomes the code source. If you push code changes to the original `magento` repository, it will be overwritten by the integration when code changes are made to your GitHub repository.
+Before you begin, your project code and environments must be in the GitHub repository. After enabling the integration, the GitHub repository becomes the code source. If you push code changes to the original `magento` repository, it is overwritten by the integration when you push code changes to your GitHub repository.
 
 The following enables the GitHub integration and provides a Payload URL to use when creating a webhook.
 
@@ -108,7 +108,7 @@ You can choose to step through the CLI prompts using `magento-cloud integration:
 | `--fetch-branches`      | Optional  | Causes Adobe Commerce on cloud infrastructure to track branches and deploy after you update a branch (`true` by default) |
 | `--prune-branches`      | Optional  | Delete branches that do not exist on the remote (`true` by default) |
 
-There are many more options, and you can see them using the help command:
+There are many more options, and you can see them using the help option:
 
 ```bash
 magento-cloud integration:add --help
