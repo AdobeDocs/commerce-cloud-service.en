@@ -40,7 +40,7 @@ The location of the application root directory depends on the environment.
 
 ### Writable directories
 
-The remote Integration, Staging, and Production environments are read only. The following directories are the *only* writable directories due to security reasons:
+The remote Integration, Staging, and Production environments are read only. The following directories are the *only* writable directories for security reasons:
 
 -  `var`
 -  `pub/static`
