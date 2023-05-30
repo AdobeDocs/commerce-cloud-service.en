@@ -2,6 +2,7 @@
 title: Deploy variables
 description: See the list of environment variables that control actions in the Adobe Commerce on cloud infrastructure deploy phase.
 feature: Cloud, Configuration, Cache, Deploy, SCD, Storage, Search
+recommendations: noDisplay, catalog
 exl-id: 673880b5-830b-4837-ac0c-5fa5643ae34c
 ---
 # Deploy variables
@@ -422,7 +423,7 @@ stage:
 
 >[!WARNING]
 >
->Do not enable this variable on scaled architecture (split architecture) projects. It causes Redis connection errors. Redis slaves are still active but are not used for Redis reads. As an alternative, we recommend the following: use Adobe Commerce 2.3.5 or later on Cloud projects with a scaled architecture, implement a new Redis backend configuration, and implement L2 caching for Redis.
+>Do _not_ enable this variable on a [scaled architecture](../architecture/scaled-architecture.md) project. It causes Redis connection errors. Redis slaves are still active but are not used for Redis reads. As an alternative, Adobe recommends to use Adobe Commerce 2.3.5 or later, implement a new Redis backend configuration, and implement L2 caching for Redis.
 
 >[!TIP]
 >

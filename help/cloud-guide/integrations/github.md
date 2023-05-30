@@ -6,7 +6,7 @@ exl-id: 5305452f-4c8d-438c-ac78-e2e1ec2f8cd9
 ---
 # GitHub integration
 
-The GitHub integration enables you to manage your Adobe Commerce on cloud infrastructure environments directly from your GitHub repository. The integration manages content already in GitHub and synchronizes it with Adobe Commerce. Before you begin, your project and environments must be in a GitHub repository.
+The GitHub integration enables you to manage your Adobe Commerce on cloud infrastructure environments directly from your GitHub repository. The integration manages content already in GitHub and synchronizes with your Adobe Commerce on cloud infrastructure code repository. In essence, the code repository becomes a mirror of the GitHub repository.
 
 {{private-repository}}
 
@@ -18,9 +18,21 @@ This integration enables you to:
 
 You must obtain a GitHub token and a webhook to continue the process.
 
+## Prerequisites
+
+-  Administrator access to the Adobe Commerce on cloud infrastructure project
+-  GitHub repository
+-  GitHub personal access token
+
 ## Generate a GitHub token
 
-You must be a member of a group with write-access to the GitHub repository, so that you can _push_ to the repository. See [GitHub: Create](https://docs.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
+Create a classic personal access token in GitHub developer settings. You must be a member of a group with write-access to the GitHub repository, so that you can _push_ to the repository. Include the following scopes when creating your token:
+
+- `admin:repo_hook`—Create web hooks
+- `repo`—Integrate with your repository
+- `read:org`—Integrate with your organizational repository
+
+ See [GitHub: Create](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
 ## Prepare your repository
 
@@ -77,11 +89,30 @@ Clone your Adobe Commerce on cloud infrastructure project from an existing envir
 
 ## Enable the GitHub integration
 
+Before you begin, your project code and environments must be in the GitHub repository. After enabling the integration, the GitHub repository becomes the code source. If you push code changes to the original `magento` repository, it is overwritten by the integration when you push code changes to your GitHub repository.
+
 The following enables the GitHub integration and provides a Payload URL to use when creating a webhook.
 
 >[!WARNING]
 >
->The following command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with code from your GitHub repository. This includes all branches, including the `production` branch. This action happens instantly and cannot be undone. As a best practice, it is important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your GitHub repository **before** adding the GitHub integration.
+>The following command overwrites _all_ code in your Adobe Commerce on cloud infrastructure project with code from your GitHub repository, which includes all branches, including the `production` branch. This action happens instantly and cannot be undone. As a best practice, it is important to clone all of your branches from your Adobe Commerce on cloud infrastructure project and push them to your GitHub repository **before** adding the GitHub integration.
+
+You can choose to step through the CLI prompts using `magento-cloud integration:add` or you can build the integration command with the following options:
+
+| Option                  | Required? | Description                       |
+| ----------------------- | --------- | --------------------------------- |
+| `--base-url`            | Yes       | The base URL of the server installation, which may be `https://github.com/` or a custom  |
+| `--token`               | Yes       | The personal access token that you generated for GitHub |
+| `--repository`          | Yes       | The repository name: `owner-or-organisation/repository` |
+| `--build-pull-requests` | Optional  | Instructs Adobe Commerce on cloud infrastructure to deploy after you merge a pull request (`true` by default) |
+| `--fetch-branches`      | Optional  | Causes Adobe Commerce on cloud infrastructure to track branches and deploy after you update a branch (`true` by default) |
+| `--prune-branches`      | Optional  | Delete branches that do not exist on the remote (`true` by default) |
+
+There are many more options, and you can see them using the help option:
+
+```bash
+magento-cloud integration:add --help
+```
 
 **To enable the GitHub integration**:
 
@@ -91,23 +122,16 @@ The following enables the GitHub integration and provides a Payload URL to use w
    magento-cloud integration:add --type=github --project=<project-ID> --token=<your-GitHub-token> {--repository=USER/REPOSITORY | --repository=ORGANIZATION/REPOSITORY} [--build-pull-requests={true|false} --fetch-branches={true|false}
    ```
 
-   -  `<project-ID>`—Your Adobe Commerce on cloud infrastructure project ID
-   -  `<your-GitHub-token>`—The personal access token you generated for GitHub
-   -  `--repository=USER/REPOSITORY`—Your personal GitHub repository name
-   -  `--repository=ORGANIZATION/REPOSITORY`—The organization repository name
-   -  `--build-pull-requests`—An _optional_ parameter that instructs Adobe Commerce on cloud infrastructure to deploy after you merge a pull request (`true` by default)
-   -  `--fetch-branches`—An _optional_ parameter that causes Adobe Commerce on cloud infrastructure to track branches and deploy after you update a branch (`true` by default)
-
    **Example 1**: Enable the GitHub integration for a personal, private repository:
 
    ```bash
-   magento-cloud integration:add --type=github --project=ov58dlacU2e --token=<token> --repository=myUserName/myrepo
+   magento-cloud integration:add --type=github --project=ov58dlacU2e --base-url=https://github.com --token=<token> --repository=myUserName/myrepo
    ```
 
    **Example 2**: Enable the GitHub integration for an organization repository:
 
    ```bash
-   magento-cloud integration:add --type=github --project=<project-id> --token=<token> --repository=Magento/teamrepo
+   magento-cloud integration:add --type=github --project=ov58dlacU2e --base-url=https://github.com --token=<token> --repository=Magento/teamrepo
    ```
 
 1. Enter the required information when prompted.
@@ -115,7 +139,7 @@ The following enables the GitHub integration and provides a Payload URL to use w
 1. Copy the **Payload URL** displayed by the return output.
 
    ```terminal
-   Created integration wp2f2thlmxwcg (type: github)
+   Created integration <integration-ID> (type: github)
    Repository: myUserName/myrepo
    Build PRs: yes
    Fetch branches: yes
@@ -124,7 +148,7 @@ The following enables the GitHub integration and provides a Payload URL to use w
 
 ## Add the webhook in GitHub
 
-In order to communicate events—such as a push—with your Cloud Git server, you must create a webhook for your GitHub repository:
+To communicate events—such as a push—with your Cloud Git server, you must create a webhook for your GitHub repository:
 
 1. In your GitHub repository, click the **Settings** tab.
 

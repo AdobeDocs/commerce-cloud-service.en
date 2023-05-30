@@ -60,7 +60,7 @@ You can add SSH keys to your account using one of the following methods:
 
 1. Copy and paste the content of your public SSH key in the **Public key** field.
 
-1. Follow the prompts to complete the task.
+1. Follow the remaining prompts.
 
 ### Add a key from the Cloud Account dashboard
 
@@ -110,9 +110,7 @@ The Project Web Interface includes a list of Web and SSH access commands for eac
 
 1. In the _SSH access_ section, click the clipboard button to copy the full SSH command to the clipboard.
 
-1. Enter the command in a terminal window to open the SSH connection.
-
-   Example SSH command:
+1. Open the SSH connection.
 
    ```bash
    ssh abcdefg123abc-branch-a12b34c--mymagento@ssh.us-2.magento.cloud
@@ -128,7 +126,9 @@ The Project Web Interface includes a list of Web and SSH access commands for eac
 
 ## sFTP
 
-Adobe Commerce on cloud infrastructure supports accessing your environments using sFTP (secure FTP) with SSH authentication. Use a client that supports SSH key authentication for sFTP and use your SSH public key. Your public SSH key must be added to the target environment. For Starter environments and Pro Integration environments, you can [add it through the Project Web Interface](#add-your-ssh-key-using-the-project-web-interface).
+Adobe Commerce on cloud infrastructure supports accessing your environments using sFTP (secure FTP) with SSH authentication. Use a client that supports SSH key authentication for sFTP and use your public SSH key. Your public SSH key must be added to the target environment. For Starter environments and Pro Integration environments, you can [add it through the Project Web Interface](#add-your-ssh-key-using-the-project-web-interface).
+
+Read-only sFTP connections are _not_ supported; sFTP access is provided with _write_ permission by default.
 
 >[!NOTE]
 >
@@ -137,12 +137,12 @@ Adobe Commerce on cloud infrastructure supports accessing your environments usin
 When configuring sFTP, use the information from your SSH access environment command: `<project-id>-<environment-id>--<app-name>@ssh<cloud-host>`
 
 - **Username**: All content before the `@` in your SSH access destination.
-- **Password**: You do not need a password for sFTP. sFTP access uses the SSH key based authentication.
+- **Password**: You do not need a password for sFTP. sFTP access uses the SSH key authentication.
 - **Host**: All content after the `@` in your SSH access.
 - **Port**: 22, which is the default SSH port.
 - **SSH** Private Key: If necessary, provide the location of your private key to the sFTP client. By default, private keys are stored in the `~/.ssh` directory.
 
-Depending on the client, you may need to enter additional options and setup to complete SSH authentication for sFTP. Review the documentation for your selected client.
+Depending on the client, additional options may be required to complete SSH authentication for sFTP. Review the documentation for your selected client.
 
 For **Starter environments and Pro Integration environments**, you may also want to consider [adding a `mount`](../application/properties.md#mounts) for access to a specific directory. You would add the mount to your `.magento.app.yaml` file. For a list of writable directories, see [Project structure](../project/file-structure.md). This mount point only works in those environments.
 

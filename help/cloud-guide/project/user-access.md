@@ -13,10 +13,10 @@ Project-level access provides role-based access to a specific project. Environme
 
 | Role               | Scope       | Access     | SSH     |
 | ------------------ | ----------- | ---------- | ------- |
-| **Account owner**  | Project     | Perform any task in any project or environment, including deleting it.<br>Adobe assigns this role to the License Owner associated with the email address, name, and information of the person who registered the account. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to modify settings or change the Account owner. | — |
+| **Project owner**  | Project     | Perform any administrator task in any project or environment, including deleting it (supercedes the **Super User** role.)<br>This role might not be assigned to the License Owner associated with the email address, name, and information of the person who registered the account. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to modify settings or change the Project owner. | — |
 | **Super User**     | Project     | Access all project settings and environments. Super users can change settings and perform administrator tasks on any environment, including creating and restoring [snapshots](../storage/snapshots.md) and managing users. | — |
 | **Project viewer** | Project     | View-only access to all project environments. Users with this role cannot perform tasks on any environment. Can be granted write access to a specific environment type. | — |
-| **Admin**          | Environment | Change settings, push code, perform tasks and branch management, including merging with the parent environment | Yes |
+| **Admin**          | Environment | Perform administrator tasks, such as change settings, push code, perform tasks and branch management, including merging with the parent environment | Yes |
 | **Contributor**    | Environment | Push code and branch the environment; cannot change settings or execute actions | Yes |
 | **Viewer**         | Environment | View-only access to an environment | No |
 | **None**           | Environment | No access to an environment | No |
@@ -179,7 +179,7 @@ After you add a user to a Cloud project, ask the user to review their account se
 Adobe Commerce on cloud infrastructure supports TFA using any of the following applications:
 
 -  [Google Authenticator (Android/iPhone)](https://support.google.com/accounts/answer/1066447?hl=en)
--  [Authy (Android/iPhone)](https://authy.com/features/)
+-  [Authy (Android/iPhone)](https://authy.com/feature/)
 -  [FreeOTP (Android)](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp)
 -  [GAuth Authenticator (Firefox OS, desktop, others)](https://github.com/gbraad/gauth)
 

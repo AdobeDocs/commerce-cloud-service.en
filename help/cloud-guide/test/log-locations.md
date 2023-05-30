@@ -141,7 +141,7 @@ Error and warning messages generated during the deployment process are written t
 You can view the log file using the [Cloud CLI SSH](#view-remote-environment-logs), or you can use ECE-Tools to show the errors with suggestions:
 
 ```bash
-mgc ssh -e <environment-ID> "./vendor/bin/ece-tools error:show"
+magento-cloud ssh -e <environment-ID> "./vendor/bin/ece-tools error:show"
 ```
 
 Sample response:
