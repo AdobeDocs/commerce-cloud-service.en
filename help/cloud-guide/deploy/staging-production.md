@@ -28,7 +28,7 @@ For detailed information of the process, see [Pro Develop and Deploy Workflow](.
 
 ## Deploy code to staging
 
-The Staging environment provides a near-production environment that includes a database, web server, and all services including Fastly and New Relic. You can fully push, merge, and deploy through the [Project Web Interface](../project/overview.md) or [Cloud CLI commands](../dev-tools/cloud-cli.md) through a terminal application.
+The Staging environment provides a near-production environment that includes a database, web server, and all services including Fastly and New Relic. You can fully push, merge, and deploy through the [Project Web Interface](../project/overview.md) or [Cloud CLI commands](../dev-tools/cloud-cli-overview.md) through a terminal application.
 
 ### Deploy code with the Project Web Interface
 

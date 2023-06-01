@@ -37,7 +37,9 @@ feature: Cloud
     + [Regional IP addresses](project/regional-ip-addresses.md)
 + Developer tools {#dev-tools}
     + [Overview](dev-tools/overview.md)
-    + [Cloud CLI](dev-tools/cloud-cli.md)
+    + Cloud CLI {#cloud-cli}
+        + [CLI overview](dev-tools/cloud-cli-overview.md)
+        + [CLI reference](dev-tools/cloud-cli-reference.md)
     + [Cloud Docker](dev-tools/cloud-docker.md)
     + ECE-Tools {#ece-tools}
         + [Package overview](dev-tools/package-overview.md)
