@@ -8,14 +8,14 @@
 <table>
 <tr>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/overview.html"><strong>Cloud Developer Tools overview</strong></a>
-    <br><em>View a list of developer tools available for use with Adobe Commerce on cloud infrastructure.</em><br>
+    <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/integrations/github.html"><strong>GitHub integration</strong></a>
+    <br><em>Updated the command options and requirements for adding a GitHub integration.</em><br>
   </td>
 </tr>
 <tr>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/start/new-project.html"><strong>Provision Commerce on Cloud Infrastructure</strong></a>
-    <br><em>Learn how to prepare for a consultation with an Adobe Customer Technical Advisor to provision your Adobe Commerce on cloud infrastructure project.</em><br>
+    <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/overview.html"><strong>Cloud Developer Tools overview</strong></a>
+    <br><em>View a list of developer tools available for use with Adobe Commerce on cloud infrastructure.</em><br>
   </td>
 </tr>
 <tr>
