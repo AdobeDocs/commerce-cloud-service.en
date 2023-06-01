@@ -14,6 +14,12 @@
 </tr>
 <tr>
   <td valign="top">
+    <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cache_configuration"><strong>Redis preload example</strong></a>
+    <br><em>Added an example of configuring the Redis preload feature.</em><br>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
     <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/overview.html"><strong>Cloud Developer Tools overview</strong></a>
     <br><em>View a list of developer tools available for use with Adobe Commerce on cloud infrastructure.</em><br>
   </td>
