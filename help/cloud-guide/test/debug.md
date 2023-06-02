@@ -30,7 +30,7 @@ To configure [!DNL Xdebug], you need to do the following:
 
 ### Get started with a branch
 
-To add [!DNL Xdebug], Adobe recommends working in [a development branch](../dev-tools/cloud-cli.md#create-an-environment-branch).
+To add [!DNL Xdebug], Adobe recommends working in [a development branch](../dev-tools/cloud-cli-overview.md#create-an-environment-branch).
 
 ### Enable Xdebug in your environment
 

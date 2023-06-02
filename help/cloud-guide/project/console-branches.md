@@ -7,7 +7,7 @@ exl-id: 2c4ef149-fdb9-473f-91fd-5e6421ac5a43
 ---
 # Manage branches with the Project Web Interface
 
-Every Adobe Commerce on cloud infrastructure environment has an associated Git branch. You can manage your environments using either the Project Web Interface and the `magento-cloud` CLI. You can use Git commands, but the cloud CLI commands interact with platform features whereas the Git commands do not. See [Git commands](../dev-tools/cloud-cli.md#git-commands) in the cloud CLI topic.
+Every Adobe Commerce on cloud infrastructure environment has an associated Git branch. You can manage your environments using either the Project Web Interface and the `magento-cloud` CLI. You can use Git commands, but the cloud CLI commands interact with platform features whereas the Git commands do not. See [Git commands](../dev-tools/cloud-cli-overview.md#git-commands) in the cloud CLI topic.
 
 This topic discusses how to use the Project Web Interface to:
 
@@ -26,7 +26,7 @@ The branching strategy uses a common Git workflow where you develop code and add
 -  For Starter, create a `staging` branch from the `master` branch, then branch from `staging` for development.
 -  For Pro, create a development branch from the Integration environment.
 
-Your account supports a limited number of active Git branches and an unlimited number of inactive development branches. Manage active and inactive branches by adding or deleting a branch. When deleted, a branch is deactivated and remains listed in the project branches list as _inactive_. You can activate the inactive branch later or you can [delete the branch](../dev-tools/cloud-cli.md#) using the CLI.
+Your account supports a limited number of active Git branches and an unlimited number of inactive development branches. Manage active and inactive branches by adding or deleting a branch. When deleted, a branch is deactivated and remains listed in the project branches list as _inactive_. You can activate the inactive branch later or you can [delete the branch](../dev-tools/cloud-cli-overview.md#) using the CLI.
 
 If you need additional environments for development, enter a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 

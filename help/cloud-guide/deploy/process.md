@@ -6,7 +6,7 @@ exl-id: 378fa290-5a71-4ac2-816a-a7c837e45b2f
 ---
 # Deployment process
 
-The deployment process begins when you perform a merge, push, or synchronization of your environment, or when you trigger a [manual redeployment](../dev-tools/cloud-cli.md#redeploy-the-environment). The deployment process takes time, but there are ways to optimize deployment that depend on whether you are developing and testing or working with a live site. Most notably, you can control the [static content deployment](static-content.md).
+The deployment process begins when you perform a merge, push, or synchronization of your environment, or when you trigger a [manual redeployment](../dev-tools/cloud-cli-overview.md#redeploy-the-environment). The deployment process takes time, but there are ways to optimize deployment that depend on whether you are developing and testing or working with a live site. Most notably, you can control the [static content deployment](static-content.md).
 
 There are three, distinct phases of the deployment process: build, deploy, and post-deploy. Each phase performs specific actions with limited resources:
 

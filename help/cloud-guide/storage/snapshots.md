@@ -121,4 +121,4 @@ Restoration times vary depending on the size of your database:
 
 Snapshots do _not_ include a copy of your code. Your code is already stored in the Git-based repository, so you can use Git-based commands to roll back (or revert) code. For example, use `git log --oneline` to scroll through previous commits; then use [`git revert`](https://git-scm.com/docs/git-revert) to restore code from a specific commit.
 
-Also, you can choose to store code in an _inactive_ branch. Use git commands to create a branch instead of using `magento-cloud` commands. See about [Git commands](../dev-tools/cloud-cli.md#git-commands) in the Cloud CLI topic.
+Also, you can choose to store code in an _inactive_ branch. Use git commands to create a branch instead of using `magento-cloud` commands. See about [Git commands](../dev-tools/cloud-cli-overview.md#git-commands) in the Cloud CLI topic.

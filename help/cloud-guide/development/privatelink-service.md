@@ -70,7 +70,7 @@ Gather the following data required for PrivateLink enablement:
 - **Customer Cloud account number** (AWS or Azure)—Must be in the same region as the Adobe Commerce on cloud infrastructure instance
 - **Cloud region**—Provide the Cloud region where the account is hosted for verification purposes
 - **Services and communication ports**—Adobe must open ports to enable service communication between VPCs, for example SQL port 3306, SFTP port 2222
-- **Project ID**—Provide the Adobe Commerce on cloud infrastructure Pro project ID. You can get the Project ID and other project information using the following [Cloud CLI](../dev-tools/cloud-cli.md) command: `magento-cloud project:info`
+- **Project ID**—Provide the Adobe Commerce on cloud infrastructure Pro project ID. You can get the Project ID and other project information using the following [Cloud CLI](../dev-tools/cloud-cli-overview.md) command: `magento-cloud project:info`
 - **Connection type**—Specify unidirectional or bidirectional for connection type
 - **Endpoint service**—For bidirectional PrivateLink connections, provide the DNS URL for the VPC endpoint service that Adobe must connect to, for example: `com.amazonaws.vpce.<cloud-region>.vpce-svc-<service-id>`
 - **Endpoint service access granted**—To connect to external service, allow the endpoint service access to the following AWS account principal: `arn:aws:iam::402592597372:root`

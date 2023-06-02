@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+
+require 'yaml'
+require 'colorator'
+
+desc 'Render the templated files'
+task :render do
+  sh '_scripts/render'
+end

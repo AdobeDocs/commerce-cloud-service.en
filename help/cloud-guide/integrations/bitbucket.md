@@ -13,7 +13,7 @@ You can configure your Bitbucket repository to automatically build and deploy an
 ## Prerequisites
 
 -  Administrator access to the Adobe Commerce on cloud infrastructure project
--  [`magento-cloud` CLI](../dev-tools/cloud-cli.md) tool in your local environment
+-  [`magento-cloud` CLI](../dev-tools/cloud-cli-overview.md) tool in your local environment
 -  A Bitbucket account
 -  Administrator access to the Bitbucket repository
 -  An SSH access key for the Bitbucket repository

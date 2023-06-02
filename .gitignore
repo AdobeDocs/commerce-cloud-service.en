@@ -9,6 +9,12 @@ Thumbs.db
 *.code-workspace
 .vscode/spellright.dict
 
+# Local infrustructure files #
+#########################
+
+_jekyll/_site
+tmp
+
 # Packages #
 ############
 *.7z

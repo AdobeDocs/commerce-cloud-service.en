@@ -7,13 +7,13 @@ exl-id: a871c7e2-4506-4a05-8fc2-fc5ef2afe609
 ---
 # Manage branches with the CLI
 
-To install the `magento-cloud` CLI, see the [Cloud CLI reference](../dev-tools/cloud-cli.md). After you install the `magento-cloud` CLI and set up SSH keys for remote access to your cloud infrastructure, you can use `magento-cloud` CLI commands to manage the environments for your projects. For information about the environment architecture, see [Starter architecture](../architecture/starter-architecture.md) or [Pro architecture](../architecture/pro-architecture.md).
+To install the `magento-cloud` CLI, see the [Cloud CLI reference](../dev-tools/cloud-cli-overview.md). After you install the `magento-cloud` CLI and set up SSH keys for remote access to your cloud infrastructure, you can use `magento-cloud` CLI commands to manage the environments for your projects. For information about the environment architecture, see [Starter architecture](../architecture/starter-architecture.md) or [Pro architecture](../architecture/pro-architecture.md).
 
 To manage the branches and environments with the Project Web Interface, see [Manage branches with the Project Web Interface](../project/console-branches.md).
 
 ## Use CLI commands
 
-The `magento-cloud` CLI commands are similar to Git commands. You can use them to connect to your project and manage your environments. Although you can run the commands from any directory, we recommend that you run them from a project directory. When run from a project directory, you can omit the `-p <project-ID>` parameter. See the [Cloud CLI reference](../dev-tools/cloud-cli.md).
+The `magento-cloud` CLI commands are similar to Git commands. You can use them to connect to your project and manage your environments. Although you can run the commands from any directory, we recommend that you run them from a project directory. When run from a project directory, you can omit the `-p <project-ID>` parameter. See the [Cloud CLI reference](../dev-tools/cloud-cli-overview.md).
 
 ## Clone the project
 
@@ -21,7 +21,7 @@ The following instructions use a combination of `magento-cloud` CLI commands and
 
 >[!IMPORTANT]
 >
->Some Git commands cannot complete an action in your Adobe Commerce on cloud infrastructure project. For example, you can create a branch using a Git command, but you cannot create and activate a new environment. You must create an environment using the `magento-cloud environment:branch <branch-name>` command for the environment to become _active_. Alternatively, you can use the Project Web Interface to create active environments. See [Cloud CLI reference](../dev-tools/cloud-cli.md#git-commands).
+>Some Git commands cannot complete an action in your Adobe Commerce on cloud infrastructure project. For example, you can create a branch using a Git command, but you cannot create and activate a new environment. You must create an environment using the `magento-cloud environment:branch <branch-name>` command for the environment to become _active_. Alternatively, you can use the Project Web Interface to create active environments. See [Cloud CLI reference](../dev-tools/cloud-cli-overview.md#git-commands).
 
 **To clone a project `master` environment**:
 
