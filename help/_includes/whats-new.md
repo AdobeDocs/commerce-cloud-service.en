@@ -8,6 +8,13 @@
 <table>
 <tr>
   <td valign="top">
+    <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference.html"><strong>Cloud CLI Referernce</strong></a>
+    <br><em>Look up available commands, arguments, and options for Adobe Commerce magento-cloud command-line tool.</em><br>
+  </td>
+</tr>
+<tr>
+<tr>
+  <td valign="top">
     <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/integrations/github.html"><strong>GitHub integration</strong></a>
     <br><em>Updated the command options and requirements for adding a GitHub integration.</em><br>
   </td>
