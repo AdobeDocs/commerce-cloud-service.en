@@ -46,9 +46,9 @@ As part of Adobe Commerce on cloud infrastructure subscription, Adobe provides a
 >The security scan tool uses the following public IP addresses:
 >
 >```text
->52.72.230.169
->52.86.204.1
 >52.87.98.44
+>34.196.167.176
+>3.218.25.102
 >```
 >
 >You must add these IP addresses to an allowlist in your network firewall rules to allow the tool to scan your site. The tool posts requests to ports 80 and 443 only.
