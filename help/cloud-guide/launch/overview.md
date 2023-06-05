@@ -51,9 +51,9 @@ As part of Adobe Commerce on cloud infrastructure subscription, Adobe provides a
 >3.218.25.102
 >```
 >
->You must add these IP addresses to an allowlist in your network firewall rules to allow the tool to scan your site. The tool posts requests to ports 80 and 443 only.
+>Add these IP addresses to an allowlist in your network firewall rules to allow the tool to scan your site. The tool posts requests to ports 80 and 443 only.
 
-The Security Scan Tool enables you to regularly monitor your store websites and receive updates for known security risks, malware, and out-of-date software. This is a free service available for all implementations and versions of Adobe Commerce on cloud infrastructure. You access the tool through your [Commerce Marketplace account](https://account.magento.com/customer/account/login).
+The Security Scan Tool enables you to regularly monitor your store websites and receive updates for known security risks, malware, and out-of-date software. This tool is a free service available for all implementations and versions of Adobe Commerce on cloud infrastructure. You access the tool through your [Commerce Marketplace account](https://account.magento.com/customer/account/login).
 
 -  Monitor your sites security status and applied security updates
 
@@ -86,7 +86,7 @@ Visbot/2.0 (+http://www.visvo.com/en/webmasters.jsp;bot@visvo.com)
 
 1. In the site row, select the report you want to view from the **Reports** column. The order is latest to oldest.
 
-The report lists issues including Failed Scans, Unidentified Results, and Successful Scans. Each entry provides detailed information for the scan, a list of issues to investigate, and actions to take. Some of these actions may require downloading and installing security patches. You can add those to a development branch on your local workstation.
+The report lists issues including Failed Scans, Unidentified Results, and Successful Scans. Each entry provides detailed information for the scan, a list of issues to investigate, and actions to take. Some of these actions may require downloading and installing security patches. Add any required patches to a development branch on your local workstation before adding them to the production branch.
 
 Scan results include a label that describes scan pass or fail status with detailed information about the checks performed:
 
