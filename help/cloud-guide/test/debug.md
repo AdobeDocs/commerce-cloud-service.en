@@ -11,9 +11,9 @@ exl-id: bf2d32d8-fab7-439e-8df3-b039e53009d4
 >
 >You can configure [!DNL Xdebug] to run in the Cloud Docker environment for local debugging without changing your Adobe Commerce on cloud infrastructure project configuration. See [Configure Xdebug for Docker](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/).
 
-To enable [!DNL Xdebug], you must configure a file in your Git repository, configure your IDE, and set up port forwarding. You can configure some settings in the `magento.app.yaml` file. After editing, you can push the Git changes across all Starter environments and Pro Integration environments to enable [!DNL Xdebug]. You do not need to do this for Pro Staging & Production environments as [!DNL Xdebug] is always available.
+To enable [!DNL Xdebug], you must configure a file in your Git repository, configure your IDE, and set up port forwarding. You can configure some settings in the `magento.app.yaml` file. After editing, push the Git changes across all Starter environments and Pro Integration environments to enable [!DNL Xdebug]. [!DNL Xdebug] is already available in Pro Staging & Production environments.
 
-Once configured, you can debug CLI commands, web requests, and code. Remember that all cloud infrastructure environments are read-only. Clone the code to your local development environment to perform debugging. For Pro Staging and Production environments, we include [additional instructions](#debug-for-pro-staging-and-production) for [!DNL Xdebug].
+Once configured, you can debug CLI commands, web requests, and code. Remember that all cloud infrastructure environments are read-only. Clone the code to your local development environment to perform debugging. For Pro Staging and Production environments, see [additional instructions](#debug-for-pro-staging-and-production) for [!DNL Xdebug].
 
 ## Requirements
 
@@ -21,12 +21,12 @@ To run and use [!DNL Xdebug], you need the SSH URL for the environment. You can 
 
 ## Configure Xdebug
 
-To configure [!DNL Xdebug], you need to do the following:
+To configure [!DNL Xdebug], follow these steps:
 
--  Work in a branch to push file updates
--  Enable [!DNL Xdebug] for environments
--  Configure your IDE
--  Set up port forwarding
+-  [Work in a branch to push file updates](#get-started-with-a-branch)
+-  [Enable [!DNL Xdebug] for environments](#enable-xdebug-in-your-environment)
+-  [Configure your IDE](#configure-phpstorm)
+-  [Set up port forwarding](#set-up-port-forwarding)
 
 ### Get started with a branch
 
@@ -85,7 +85,7 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 
 1. In the _Settings_ panel, expand and locate the **Languages & Frameworks** > **PHP** > **Servers** section.
 
-1. Click the **+** to add a server configuration. The project name is in grey at the top.
+1. Click the **+** to add a server configuration. The project name is in gray at the top.
 
 1. Configure the following settings for the new server configuration:
 
@@ -110,14 +110,14 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 
 ### Set up port forwarding
 
-You must map the `XDEBUG` connection from the server to your local system. To do any type of debugging, you must forward port 9000 from your Adobe Commerce on cloud infrastructure server to your local machine. See one of the following sections:
+Map the `XDEBUG` connection from the server to your local system. To do any type of debugging, you must forward port 9000 from your Adobe Commerce on cloud infrastructure server to your local machine. See one of the following sections:
 
--  [Port forwarding on Mac or UNIX](#port-forwarding-on-mac-or-unix)
+-  [Port forwarding on Mac or UNIX&reg;](#port-forwarding-on-mac-or-unix)
 -  [Port forwarding on Windows](#port-forwarding-on-windows)
 
-#### Port forwarding on Mac or UNIX
+#### Port forwarding on Mac or UNIX&reg;
 
-**To set up port forwarding on a Mac or in a UNIX environment**:
+**To set up port forwarding on a Mac or in a UNIX&reg; environment**:
 
 1. Open a terminal.
 
@@ -135,7 +135,7 @@ You must map the `XDEBUG` connection from the server to your local system. To do
 
 1. Use SSH to log in to the remote Integration, Staging, or Production environment.
 
-1. Enter `who` to view a list of SSH sessions.
+1. View a list of SSH sessions: `who`
 
 1. View existing SSH sessions by user. Be careful to not affect a user other than yourself!
 
@@ -166,7 +166,7 @@ You must map the `XDEBUG` connection from the server to your local system. To do
 
 #### Port forwarding on Windows
 
-To set up port forwarding (SSH tunneling) on Windows, you must configure your Windows terminal application. For this example, we walk through creating an SSH tunnel using [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). You can use other applications such as Cygwin. For more information on other applications, see the vendor documentation provided with those applications.
+To set up port forwarding (SSH tunneling) on Windows, you must configure your Windows terminal application. This example steps through creating an SSH tunnel using [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). You can use other applications such as Cygwin. For more information on other applications, see the vendor documentation provided with those applications.
 
 **To set up an SSH tunnel on Windows using Putty**:
 
@@ -243,7 +243,7 @@ To use [!DNL Xdebug] specifically on Pro plan Staging and Production environment
 You need the following:
 
 -  SSH commands for accessing the environments. You can get this information, through the [Project Web Interface](../project/overview.md) or your [!DNL Cloud Onboarding UI].
--  The `xdebug_key` value we set when configuring the Staging and Pro environments.
+-  The `xdebug_key` value set when configuring the Staging and Pro environments.
 
    The `xdebug_key` can be found by using SSH to log in to the primary node and executing:
 
@@ -275,7 +275,7 @@ You need the following:
    ?XDEBUG_SESSION_START=KEY
    ```
 
-   This sets the cookie that sends browser requests to trigger [!DNL Xdebug].
+   This step sets the cookie that sends browser requests to trigger [!DNL Xdebug].
 
 1. Complete your debugging with [!DNL Xdebug].
 
@@ -368,7 +368,7 @@ This section discusses how to use [!DNL Xdebug] in Chrome using the [!DNL Xdebug
 
 ## Debug local code
 
-Because of the read-only environments, you need to pull code to the local workstation from an environment or specific Git branch to perform debugging.
+Because of the read-only environments, you must pull code to the local workstation from an environment or specific Git branch to perform debugging.
 
 The method you choose is up to you. You have the following options:
 
