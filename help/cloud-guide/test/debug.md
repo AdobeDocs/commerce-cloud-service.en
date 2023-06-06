@@ -127,7 +127,7 @@ Map the `XDEBUG` connection from the server to your local system. To do any type
    ssh -R 9000:localhost:9000 <ssh url>
    ```
 
-   Add the `-v` option to the SSH command to show in the terminal whenever a socket is connected to the port that is being forwarded.
+   Use the `-v` (verbose) option so that whenever a socket is connected to the port that is being forwarded it shows in the terminal.
 
    If an "unable to connect" or "could not listen to port on remote" error is displayed, there could be another active SSH session persisting on the server that is occupying port 9000. If that connection is not being used, you can terminate it.
 
