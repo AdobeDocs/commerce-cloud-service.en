@@ -14,6 +14,13 @@ Adobe Commerce on cloud infrastructure provides an automated hosting platform wi
 
 ![Cloud benefits](../assets/CloudBenefits.svg)
 
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
 ## Adobe Commerce documentation
 
 The Commerce on cloud infrastructure guide assumes that you have some working knowledge and understanding of the Adobe Commerce application. You can refer to the Commerce Developer and User guides below:
