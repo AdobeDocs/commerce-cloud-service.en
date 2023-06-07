@@ -16,10 +16,10 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 | [`disk`](#disk) | Define the persistent disk size | `5120` | Yes |
 | [`firewall`](firewall-property.md) | (Starter only) Control outbound traffic | — | No |
 | [`hooks`](hooks-property.md) | Customize shell commands for the build, deploy, and post-deploy phases | — | No |
-| [`mounts`](#mounts) | Set paths | `"var": "shared:files/var"`<br>`"app/etc": "shared:files/etc"`<br>`"pub/media": "shared:files/media"`<br>`"pub/static": "shared:files/static"` | No |
+| [`mounts`](#mounts) | Set paths | Paths:<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | No |
 | [`name`](#name) | Define the application name | `mymagento` | Yes |
-| [`relationships`](#relationships) | Map services | `database: "mysql:mysql"`<br>`redis: "redis:redis"`<br>`opensearch: "opensearch:opensearch"` | No |
-| [`runtime`](#runtime) | Runtime property includes extensions that are required by the Commerce application. | extensions:<br>- `xsl`<br>- `newrelic`<br>- `sodium` | Yes |
+| [`relationships`](#relationships) | Map services | Services:<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | No |
+| [`runtime`](#runtime) | Runtime property includes extensions that are required by the Commerce application. | Extensions:<ul><li>`xsl`</li><li>`newrelic`</li><li>`sodium`</li></ul> | Yes |
 | [`type`](#type-and-build) | Set the base container image | `php:8.1` | Yes |
 | [`variables`](variables-property.md) | Apply an environment variable for a specific Commerce version | — | No |
 | [`web`](web-property.md) | Handle external requests | — | Yes |
