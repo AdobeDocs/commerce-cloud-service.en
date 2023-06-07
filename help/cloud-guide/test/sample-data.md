@@ -5,9 +5,9 @@ exl-id: 517e549f-15ba-47b3-9236-a1c4d24c917d
 ---
 # Sample data
 
-If you need some example data when developing your store, you can install our sample data. This data simulates an active Adobe Commerce store with customers, products, and other data. This sample data works best with a new Adobe Commerce on cloud infrastructure template installation.
+If you need some example data when developing your store, you can install sample data. This data simulates an active Adobe Commerce store with customers, products, and other data. This sample data works best with a new Adobe Commerce on cloud infrastructure template installation.
 
-We recommend installing sample data in your local Integration branches and environments. If you use this data in Staging or Production, you need to remove the information and products before going live.
+As a best practice, install sample data in development and integration environments. If you use sample data in Staging or Production, then you must [remove](#reset-or-uninstall-sample-data) the information and products before going live.
 
 ## Install sample data
 
@@ -35,7 +35,7 @@ To install sample data:
 
 1. Wait for the project to deploy.
 
-1. Verify that the installation was successful by going to your storefront page in the Integration environment. You can locate the URL link to the storefront through the Project Web Interface.
+1. Verify that the installation was successful by going to your storefront page in the integration environment. You can locate the URL link to the storefront through the Project Web Interface.
 
 1. Take a snapshot of your environment:
 
@@ -44,3 +44,10 @@ To install sample data:
    ```
 
 You can start testing your development with live data!
+
+## Reset or uninstall sample data
+
+You can reset or remove sample data using the same procedure for installing sample data:
+
+- Delete sample data: `./bin/magento sampledata:remove`
+- Reset sample data: `./bin/magento sampledata:reset`
