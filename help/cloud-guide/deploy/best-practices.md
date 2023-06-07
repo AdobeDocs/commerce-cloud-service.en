@@ -48,7 +48,7 @@ Review these best practices and considerations for your deployment process:
 
    Referencing code from other branches, such as a private branch, may cause problems during the build and deploy process. For example, if you reference a theme from a private branch, the theme is not accessible and cannot build with the application code.
 
--  **Add new extensions, integrations, and code in iterated branches**
+-  **Add extensions, integrations, and code in iterated branches**
 
    Make and test changes locally, push to Integration, then to Staging and Production. Test and resolve issues in each environment before merging the updates to the next environment. Some extensions and integrations must be enabled and configured in a specific order due to dependencies. Adding and testing in groups can make your build and deploy process much easier and help determine where issues occur.
 

@@ -348,7 +348,7 @@ This section discusses how to use [!DNL Xdebug] in Chrome using the [!DNL Xdebug
 
    ![Enable the Xdebug extension in Chrome](../../assets/xdebug/enable-chrome-ext.png)
 
-1. In Chrome, right-click on the green helper icon in the Chrome toolbar.
+1. In Chrome, right-click the green helper icon in the Chrome toolbar.
 
 1. From the pop-up menu, click **Options**.
 
