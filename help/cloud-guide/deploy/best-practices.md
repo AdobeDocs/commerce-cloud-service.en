@@ -6,13 +6,13 @@ exl-id: bac3ca83-0eee-4fda-9a5c-a84ab25a837a
 ---
 # Deployment best practices
 
-Build and deploy scripts activate when you merge code to a remote environment. These scripts use environment [configuration files](../environment/overview.md) and application code to provision cloud infrastructure with appropriate data and services. And these scripts are used to install or update the Adobe Commerce application, third-party services, and custom extensions in the cloud environment.
+Build and deploy scripts activate when you merge code to a remote environment. These scripts use environment [configuration files](../environment/overview.md) and application code to provision cloud infrastructure with appropriate data and services. Additionally, these scripts are used to install or update the Adobe Commerce application, third-party services, and custom extensions in the cloud environment.
 
 The build and deploy process is slightly different for each plan:
 
 -  **Starter plans**—For the Integration environment, every active branch builds and deploys to a full environment for access and testing. Fully test your code after merging to the `staging` branch. To launch your site, push `staging` to `master` to deploy to the Production environment. You have full access to all branches through the Project Web Interface and the CLI commands.
 
--  **Pro plans**—For the Integration environment, every _active_ branch builds and deploys to a full environment for access and testing. Merge your code to the `integration` branch before you can merge to the Staging environment and then the Production environment. You can merge to the Staging and Production environments using the Project Web Interface or using SSH and `magento-cloud` CLI commands.
+-  **Pro plans**—For the Integration environment, every _active_ branch builds and deploys to a full environment for access and testing. Merge your code to the `integration` branch before merging to the Staging and Production environments. You can merge to the Staging and Production environments using the Project Web Interface or using SSH and `magento-cloud` CLI commands.
 
 ## Track the process
 
@@ -42,7 +42,7 @@ Review these best practices and considerations for your deployment process:
 
 -  **Keep sensitive configuration values and data in environment-specific variables**
 
-   Includes variables specified using the Cloud CLI, the Project Web interface, or added to the `env.php` file. See [Variable levels](../environment/variable-levels.md).
+   This includes variables specified using the Cloud CLI, the Project Web interface, or added to the `env.php` file. See [Variable levels](../environment/variable-levels.md).
 
 -  **Ensure that all code is available in the environment branch**
 
@@ -181,6 +181,6 @@ While the deployment is running, the process halts incoming traffic at the entry
 
 Successful deployment removes the maintenance mode to allow for normal access and creates backup (BAK) files for the `app/etc/env.php` and the `app/etc/config.php` configuration files.
 
-Enable static content generation using the `SCD_ON_DEMAND` variable and you configured the [`post_deploy` hook](../application/hooks-property.md) so that it clears the cache and pre-loads (warms) the cache _after_ the container begins accepting connections and _during_ normal, incoming traffic.
+Enable static content generation using the `SCD_ON_DEMAND` variable and configure the [`post_deploy` hook](../application/hooks-property.md) so that it clears the cache and pre-loads (warms) the cache _after_ the container begins accepting connections and _during_ normal, incoming traffic.
 
 To review build and deploy logs, see [View logs](../test/log-locations.md#view-and-manage-logs).
