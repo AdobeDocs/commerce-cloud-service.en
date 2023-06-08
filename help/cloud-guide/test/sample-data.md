@@ -47,7 +47,7 @@ You can start testing your development with live data!
 
 ## Reset or uninstall sample data
 
-You can reset or remove sample data using the same procedure for installing sample data:
+You can reset or remove sample data following the same procedure used to install the sample data:
 
 - Delete sample data: `./bin/magento sampledata:remove`
 - Reset sample data: `./bin/magento sampledata:reset`

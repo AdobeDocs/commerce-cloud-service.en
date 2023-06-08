@@ -34,11 +34,11 @@ Review these best practices and considerations for your deployment process:
 
 -  **Follow the build and deploy process**
 
-   Ensure that you have the correct code in each environment to avoid overwriting configurations when merging code between environments. For example, to apply configuruation changes to all environments, modify and test the changes in the local environment before deploying to the remote integration environment. Then deploy and test the changes to the Staging environment before deploying to Production. When you merge from one environment to another, the deployment overwrites all code in the environment, except environment-specific configuration and settings.
+   Ensure that you have the correct code in each environment to avoid overwriting configurations when merging code between environments. For example, to apply configuruation changes to all environments, modify and test the changes in the local environment before deploying to the remote integration environment. Then, deploy and test the changes in the Staging environment before deploying to Production. When you merge from one environment to another, the deployment overwrites all code in the environment, except environment-specific configuration and settings.
 
 -  **Use the same variables across environments**
 
-   The values for these variables may differ across environments; however, you usually need the same variables in each environment. See [Configuration management for store settings](../store/store-settings.md).
+   The values for these variables can differ across environments; however, you usually need the same variables in each environment. See [Configuration management for store settings](../store/store-settings.md).
 
 -  **Keep sensitive configuration values and data in environment-specific variables**
 
@@ -46,7 +46,7 @@ Review these best practices and considerations for your deployment process:
 
 -  **Ensure that all code is available in the environment branch**
 
-   Referencing code from other branches, such as a private branch, may cause problems during the build and deploy process. For example, if you reference a theme from a private branch, the theme is not accessible and cannot build with the application code.
+   Referencing code from other branches, such as a private branch, can cause problems during the build and deploy process. For example, if you reference a theme from a private branch, the theme is not accessible and cannot build with the application code.
 
 -  **Add extensions, integrations, and code in iterated branches**
 
@@ -95,7 +95,7 @@ When you initially set up a project, [the cloud infrastructure template](https:/
 
 Create a branch from `master` for your custom code, extensions and modules, and third-party integrations. There is a remote Integration environment for testing your code in the cloud.
 
-When you push your code from your local workspace to the remote repository, a series of checks and code validation completes before build and deploy scripts. The built-in Git server validates what you are pushing and makes changes. For example, you want to add an OpenSearch service. The built-in Git server verifies that the topology of your cluster is modified accordingly.
+When you push your code from your local workspace to the remote repository, a series of checks and code validations completes before build and deploy scripts start. The built-in Git server validates what you are pushing and makes changes. For example, if you add an OpenSearch service, the built-in Git server verifies that the topology of your cluster is modified accordingly.
 
 If you have a syntax error in a configuration file, the Git server rejects the push. See [Protective Block](../development/protective-block.md).
 
