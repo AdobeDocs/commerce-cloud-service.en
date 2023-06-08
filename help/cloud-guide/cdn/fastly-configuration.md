@@ -206,12 +206,12 @@ To route traffic from your store URLs to the Fastly service update your DNS conf
 
 1. Add ACME challenge CNAME records for domain validation and pre-provisioning of Production SSL/TLS certificates, for example:
 
-   | Domain or Subdomain                           | CNAME                                     |
-   |-----------------------------------------------|-------------------------------------------|
-   | _acme-challenge.your-domain.com<br>           | 0123456789abcdef.validation.magento.cloud |
-   | _acme-challenge.www.your-domain.com<br>       | 9573186429stuvwx.validation.magento.com   |
-   | _acme-challenge.mystore.your-domain.com<br>   | 1234567898zxywvu.validation.magento.cloud |
-   | _acme-challenge.subdomain.your-domain.com<br> | 1098765743lmnopq.validation.magento.cloud |
+   | Domain or Subdomain                       | CNAME                                     |
+   |-------------------------------------------|-------------------------------------------|
+   | _acme-challenge.your-domain.com           | 0123456789abcdef.validation.magento.cloud |
+   | _acme-challenge.www.your-domain.com       | 9573186429stuvwx.validation.magento.com   |
+   | _acme-challenge.mystore.your-domain.com   | 1234567898zxywvu.validation.magento.cloud |
+   | _acme-challenge.subdomain.your-domain.com | 1098765743lmnopq.validation.magento.cloud |
 
    >[!NOTE]
    >
