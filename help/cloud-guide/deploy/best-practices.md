@@ -6,13 +6,13 @@ exl-id: bac3ca83-0eee-4fda-9a5c-a84ab25a837a
 ---
 # Deployment best practices
 
-Build and deploy scripts activate when you merge code to a remote environment. These scripts use environment [configuration files](../environment/overview.md) and application code to provision cloud infrastructure with appropriate data and services. Additionally, these scripts are used to install or update the Adobe Commerce application, third-party services, and custom extensions in the cloud environment.
+Build and deploy scripts activate when you merge code to a remote environment. These scripts use environment [configuration files](../environment/overview.md) and application code to provision cloud infrastructure with appropriate data and services. Also, these scripts are used to install or update the Adobe Commerce application, third-party services, and custom extensions in the cloud environment.
 
 The build and deploy process is slightly different for each plan:
 
--  **Starter plans**—For the Integration environment, every active branch builds and deploys to a full environment for access and testing. Fully test your code after merging to the `staging` branch. To launch your site, push `staging` to `master` to deploy to the Production environment. You have full access to all branches through the Project Web Interface and the CLI commands.
+-  **Starter plans**—For the integration environment, every active branch builds and deploys to a full environment for access and testing. Fully test your code after merging to the `staging` branch. To launch your site, push `staging` to `master` to deploy to the Production environment. You have full access to all branches through the Project Web Interface and the CLI commands.
 
--  **Pro plans**—For the Integration environment, every _active_ branch builds and deploys to a full environment for access and testing. Merge your code to the `integration` branch before merging to the Staging and Production environments. You can merge to the Staging and Production environments using the Project Web Interface or using SSH and `magento-cloud` CLI commands.
+-  **Pro plans**—For the integration environment, every _active_ branch builds and deploys to a full environment for access and testing. Merge your code to the `integration` branch before merging to the Staging and Production environments. You can merge to the Staging and Production environments using the Project Web Interface or using SSH and `magento-cloud` CLI commands.
 
 ## Track the process
 
@@ -42,7 +42,7 @@ Review these best practices and considerations for your deployment process:
 
 -  **Keep sensitive configuration values and data in environment-specific variables**
 
-   This includes variables specified using the Cloud CLI, the Project Web interface, or added to the `env.php` file. See [Variable levels](../environment/variable-levels.md).
+   These values include variables specified using the Cloud CLI, the Project Web interface, or added to the `env.php` file. See [Variable levels](../environment/variable-levels.md).
 
 -  **Ensure that all code is available in the environment branch**
 
@@ -56,7 +56,7 @@ Review these best practices and considerations for your deployment process:
 
    Verify the services that are available to your application and ensure you are using the most current, compatible version. See [Service relationships](../services/services-yaml.md#service-relationships) and [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation guide_ for recommended versions.
 
--  **Test locally and in the Integration environment before deploying to Staging and Production**
+-  **Test locally and in the integration environment before deploying to Staging and Production**
 
    Identify and fix issues in your local and Integration environments to prevent extended downtime when you deploy to Staging and Production environments.
 
@@ -84,16 +84,16 @@ Review these best practices and considerations for your deployment process:
 
 ## Five phases of Integration build and deployment
 
-The following phases occur in your local development environment and the Integration environment. For Pro plans, the code is not deployed to the Staging or Production environments in these initial phases.
+The following phases occur in your local development environment and the integration environment. For Pro plans, the code is not deployed to the Staging or Production environments in these initial phases.
 
 ### Phase 1: Code and configuration validation
 
 When you initially set up a project, [the cloud infrastructure template](https://github.com/magento/magento-cloud) provides a basis for the code files. This code repo is cloned to your project as the `master` branch.
 
 -  **For Starter**—`master` branch is your Production environment.
--  **For Pro**—`master` begins as origin branch for the Integration environment.
+-  **For Pro**—`master` begins as origin branch for the integration environment.
 
-Create a branch from `master` for your custom code, extensions and modules, and third-party integrations. There is a remote Integration environment for testing your code in the cloud.
+Create a branch from `master` for your custom code, extensions and modules, and third-party integrations. There is a remote integration environment for testing your code in the cloud.
 
 When you push your code from your local workspace to the remote repository, a series of checks and code validations completes before build and deploy scripts start. The built-in Git server validates what you are pushing and makes changes. For example, if you add an OpenSearch service, the built-in Git server verifies that the topology of your cluster is modified accordingly.
 
