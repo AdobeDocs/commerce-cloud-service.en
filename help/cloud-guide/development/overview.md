@@ -50,7 +50,7 @@ The main packages of this metapackage are the following:
 
 >[!TIP]
 >
->See [Cloud packages for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud.html) in the _Commerce Release notes_ for a list of dependencies and third-party licenses.
+>See [Cloud packages for Adobe Commerce](/help/cloud-guide/release-notes/cloud-packages.md) in the _Commerce Release notes_ for a list of dependencies and third-party licenses.
 
 ## Gather credentials
 
