@@ -45,6 +45,7 @@ feature: Cloud
         + [Package overview](dev-tools/package-overview.md)
         + [One-time upgrade to use ECE-Tools](dev-tools/install-package.md)
         + [Update ECE-Tools package](dev-tools/update-package.md)
+        + [CLI reference](dev-tools/ece-tools-cli-reference.md)
         + [Error reference](dev-tools/error-reference.md)
     + Integrations {#integrations}
         + [Overview](integrations/overview.md)
