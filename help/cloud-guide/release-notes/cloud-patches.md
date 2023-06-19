@@ -22,7 +22,18 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.21 {#latest}
+## v1.0.22 {#latest}
+
+Release date: June 19, 2023
+
+- **Enhanced QPT CLI wizard/output**—Added warning to the QPT CLI wizard/output in case patch has dependencies<!-- ACP2E-1963 -->
+- **Added patches for Commerce 2.4.6:**
+  - Fixed regexp cache tag validation<!-- MCLOUD-10226 -->
+  - Reduced the number of times the same deployment configurations load<!-- MCLOUD-10604 -->
+- **Added patches for Commerce 2.3.7 - 2.4.6**—Fixed auto increment number jumping up for `catalog_product_entity_*` tables<!-- MCLOUD-10032 -->
+- **Added patches for Commerce 2.4.0 - 2.4.6**—Fixed the error 'The file can't be deleted. Warning!unlink: No such file or directory' when flushing JS/CSS cache from the Admin<!-- MCLOUD-10279 -->
+
+## v1.0.21
 
 Release date: March 10, 2023
 
