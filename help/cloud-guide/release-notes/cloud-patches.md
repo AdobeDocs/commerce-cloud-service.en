@@ -1,7 +1,8 @@
 ---
 title: Cloud Patches for Commerce
-description: Learn about the latest improvements to the Cloud Patches package.
+description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, noCatalog
+last-substantial-update: 2023-06-19
 exl-id: ae6b511b-a37d-4776-9a5e-ad7d9f9f6611
 ---
 # Cloud Patches for Commerce
@@ -216,17 +217,17 @@ This release includes the following patches and critical fixes:
 
    -  Updated constraints in `composer.json` for compatibility with `ece-tools` 2002.0.22 and later 2002.0.x releases.
 
--  **PayPal Express Checkout**—Published on February 12, 2020, this patch resolves an issue that affects orders placed with PayPal Express Checkout where the shipping address for the order specifies a country region that has been manually entered into the text field rather than selected from the drop-down menu on the Shipping page. See the complete patch description on the [patch download page](https://magento.com/tech-resources/download#download2353).
+-  **PayPal Express Checkout**—Published on February 12, 2020, this patch resolves an issue that affects orders placed with PayPal Express Checkout where the shipping address for the order specifies a country region that has been manually entered into the text field rather than selected from the drop-down menu on the Shipping page. See the complete patch description on the patch download page.
 
 -  **Application deployment fix**—Added a patch to fix an issue that disabled the full page cache during the deployment process. This patch applies to Adobe Commerce 2.3.2 and later releases.
 
--  **Scope parameter for Async/Bulk API**—Updated this patch to fix a syntax error in the `composer.json` file. This patch applies to Magento Open Source 2.3.1 and 2.3.2. See the complete patch description on the [patch download page](https://magento.com/tech-resources/download#download2312).
+-  **Scope parameter for Async/Bulk API**—Updated this patch to fix a syntax error in the `composer.json` file. This patch applies to Magento Open Source 2.3.1 and 2.3.2. See the complete patch description on the patch download page.
 
 ## v1.0.1
 
 Release date: February 6, 2020
 
-We have included all Magento Open Source 2.x patches from the [software downloads page](https://magento.com/tech-resources/download) in the magento/magento-cloud-patches v1.0.1 release. If you copied any patches into your project previously, remove them to avoid conflicts.
+We have included all Magento Open Source 2.x patches from the software downloads page in the magento/magento-cloud-patches v1.0.1 release. If you copied any patches into your project previously, remove them to avoid conflicts.
 
 This release includes the following patches and critical fixes:
 
@@ -236,7 +237,7 @@ This release includes the following patches and critical fixes:
 
    -  Adds a _retry_ operation to avoid deadlock during updates to the data in the `cron_schedule` table.
 
--  **Updated `magento/magento-cloud-patches` to include all available patches for Magento Open Source 2.x**—Updated the magento/magento-cloud-patches package to include all Magento Open Source 2.x patches available on the [software downloads page](https://magento.com/tech-resources/download). If you copied any Magento Open Source patches into your Adobe Commerce on cloud infrastructure project previously, remove them to avoid conflicts.<!--MAGECLOUD-4606-->
+-  **Updated `magento/magento-cloud-patches` to include all available patches for Magento Open Source 2.x**—Updated the magento/magento-cloud-patches package to include all Magento Open Source 2.x patches available on the software downloads page. If you copied any Magento Open Source patches into your Adobe Commerce on cloud infrastructure project previously, remove them to avoid conflicts.<!--MAGECLOUD-4606-->
 
 -  **Elasticsearch catalog pagination fix** —Replaced the Elasticsearch catalog pagination patch delivered in magento/magento-cloud-patches v1.0 with a more effective fix.<!--MAGECLOUD-4847-->
 
