@@ -1,6 +1,6 @@
 ---
 title: ECE-Tools release notes
-description: Learn about the latest improvements to ece-tools.
+description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, noCatalog
 exl-id: a464b940-c56e-4a7c-9948-559539e25361
 ---
