@@ -9,7 +9,7 @@ exl-id: c866940e-0678-4b57-91bc-bc7bd181110c
 Cloud Docker for Commerce is part of the Cloud Tools Suite. The Cloud Docker tool can be used for developing and testing your Adobe Commerce on-premises or cloud infrastructure project in a local, cloud-like environment.
 
 - [Cloud Docker package release notes](../release-notes/cloud-docker.md) for the latest package updates.
-- [Cloud Docker for Commerce guide](https://developer.adobe.com/commerce/cloud-tools/docker/) guide in the _Commerce Developer documentation_ site.
+- [Cloud Docker for Commerce](https://developer.adobe.com/commerce/cloud-tools/docker/) guide in the _Commerce Developer documentation_ site.
 
 ## Local development
 
