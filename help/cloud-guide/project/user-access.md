@@ -13,7 +13,7 @@ Project-level access provides role-based access to a specific project. Environme
 
 | Role               | Scope       | Access     | SSH     |
 | ------------------ | ----------- | ---------- | ------- |
-| **Project owner**  | Project     | Perform any administrator task in any project or environment, including deleting it (supercedes the **Super User** role.)<p>This role might not be assigned to the License Owner associated with the email address, name, and information of the person who registered the account. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to modify settings or change the Project owner. | — |
+| **Project owner**  | Project     | Perform any administrator task in any project or environment, including deleting it. (Supersedes the **Super User** role.)<p>This role might not be assigned to the License Owner associated with the email address, name, and information of the person who registered the account. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to modify settings or change the Project owner. | — |
 | **Super User**     | Project     | Access all project settings and environments. Super users can change settings and perform administrator tasks on any environment, including creating and restoring [snapshots](../storage/snapshots.md) and managing users. | — |
 | **Project viewer** | Project     | View-only access to all project environments. Users with this role cannot perform tasks on any environment. Can be granted write access to a specific environment type. | — |
 | **Admin**          | Environment | Perform administrator tasks, such as change settings, push code, perform tasks and branch management, including merging with the parent environment | Yes |
@@ -35,19 +35,19 @@ Add users and assign roles using the `magento-cloud` CLI or the Project Web Inte
 
 **Prerequisites:**
 
--  Gather the email address associated with an existing Adobe Commerce on cloud infrastructure account. New users can [register for an account](https://account.magento.com/customer/account/login). and provide the associated email address after completing account validation.
+- A registered user with an Adobe ID. A user must [register for an Adobe account](https://account.adobe.com) and then [initialize their Cloud account](https://accounts.magento.cloud) before you can add them to a Cloud project.
 
--  Users assigned the **Admin** role cannot manage users using the `magento-cloud` CLI. Only users that are granted the **Super User** or **Account Owner** role can manage users.
+- A user assigned the **Admin** role cannot manage users with the `magento-cloud` CLI. Only users that are granted the **Super User** or **Account Owner** role can manage users.
 
 ## Manage users with the CLI
 
 Use the `magento-cloud` CLI to manage users and integrate with automated systems:
 
--  `magento-cloud user:add`–add a user to the project
--  `magento-cloud user:delete`–delete a user
--  `magento-cloud user:list [users]`–list project users
--  `magento-cloud user:role`–view or change the user role
--  `magento-cloud user:update`–update user role on a project
+- `magento-cloud user:add`–add a user to the project
+- `magento-cloud user:delete`–delete a user
+- `magento-cloud user:list [users]`–list project users
+- `magento-cloud user:role`–view or change the user role
+- `magento-cloud user:update`–update user role on a project
 
 The following examples use the `magento-cloud` CLI to add a user, configure roles, modify project assignments, and assign user roles.
 
@@ -59,7 +59,11 @@ The following examples use the `magento-cloud` CLI to add a user, configure role
    magento-cloud user:add
    ```
 
-1. Follow the prompts to specify the user email address, set the project and environment-type roles, and add the user.
+   >[!IMPORTANT]
+   >
+   >User must have an Adobe ID; see the [prerequisites](#add-users-and-manage-access).
+
+1. Follow the prompts: specify the user email address, set the project and environment-type roles, and add the user.
 
    > Sample prompts
 
@@ -122,6 +126,10 @@ magento-cloud user:update alice@example.com -r production:a
 
 You can use the Project Web Interface to add permissions and use the _Edit_ feature to modify permissions for an existing user.
 
+>[!IMPORTANT]
+>
+>User must have an Adobe ID; see the [prerequisites](#add-users-and-manage-access).
+
 ### Add users from the Project Web Interface
 
 1. Log in to [your account](https://account.magento.com/customer/account/login).
@@ -179,9 +187,9 @@ After you add a user to a Cloud project, ask the user to review their account se
 Adobe Commerce on cloud infrastructure supports TFA using any of the following applications:
 
 -  [Google Authenticator (Android/iPhone)](https://support.google.com/accounts/answer/1066447?hl=en)
--  [Authy (Android/iPhone)](https://authy.com/feature/)
+-  [Authy (Android/iPhone)](https://authy.com/features/)
 -  [FreeOTP (Android)](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp)
--  [GAuth Authenticator (Firefox OS, desktop, others)](https://github.com/gbraad/gauth)
+-  [GAuth Authenticator (Firefox OS, desktop, others)](https://github.com/gbraad-apps/gauth)
 
 Instructions for installing the authenticator application and enabling TFA are available on the _Account settings_ page in the Project Web Interface.
 
