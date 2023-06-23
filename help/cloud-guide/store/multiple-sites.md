@@ -32,7 +32,7 @@ https://store.com/second/
 >
 >To add a store view to the site base URL, you do not have to create multiple directories. See [Add the store code to the base URL](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) in the _Configuration Guide_.
 
-## Add New Domains
+## Add Domains
 
 Custom domains can be added to Pro Staging and any Production environment; they cannot be added to Integration environments.
 

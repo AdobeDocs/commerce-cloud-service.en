@@ -17,7 +17,7 @@ The example uses the following procedure defined in [Store settings](store-setti
 1. Make any necessary modifications:
 
    *  Change configuration settings on the Integration environment.
-   *  To add new configurations, run the command to create `config.php` again. New configurations are appended to the file.
+   *  To add configurations, run the command to create `config.php` again. New configurations are appended to the file.
    *  To remove or edit existing configurations, manually edit the file.
    *  Commit and push.
 
@@ -139,13 +139,13 @@ To verify your configuration changes:
 
 If you need to modify any of these settings, then modify the `config.php` file manually with a text editor. After completing edits or removals, you can commit and push it to the remote environment following the previous steps.
 
-To add new configurations, modify your Integration environment and run the command again to generate the file. Any new configurations are appended to the code in the file. Push it to Git following the previous steps.
+To add configurations, modify your Integration environment and run the command again to generate the file. Any new configurations are appended to the code in the file. Push it to Git following the previous steps.
 
 For this example, modify static file optimization settings and add a new setting for JavaScript.
 
-### Add new configurations in Integration
+### Add configurations in Integration
 
-To add additional configuration values in the Integration environment Admin. For this example, we are merging JavaScript files.
+To add configuration values in the Integration environment Admin. For this example, we are merging JavaScript files.
 
 1. Log out of the Integration Admin.
 1. Log back in to the Integration Admin.
