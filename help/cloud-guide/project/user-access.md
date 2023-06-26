@@ -13,7 +13,7 @@ Project-level access provides role-based access to a specific project. Environme
 
 | Role               | Scope       | Access     | SSH     |
 | ------------------ | ----------- | ---------- | ------- |
-| **Project owner**  | Project     | Perform any administrator task in any project or environment, including deleting it. (Supersedes the **Super User** role.)<p>This role might not be assigned to the License Owner associated with the email address, name, and information of the person who registered the account. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to modify settings or change the Project owner. | — |
+| **Project owner**  | Project     | Perform any administrator task in any project or environment, including deletion (supersedes the **Super User** role.)<p>This role might not be assigned to the License Owner associated with the email address, name, and information of the person who registered the account. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to modify settings or change the Project owner. | — |
 | **Super User**     | Project     | Access all project settings and environments. Super users can change settings and perform administrator tasks on any environment, including creating and restoring [snapshots](../storage/snapshots.md) and managing users. | — |
 | **Project viewer** | Project     | View-only access to all project environments. Users with this role cannot perform tasks on any environment. Can be granted write access to a specific environment type. | — |
 | **Admin**          | Environment | Perform administrator tasks, such as change settings, push code, perform tasks and branch management, including merging with the parent environment | Yes |
@@ -138,7 +138,7 @@ You can use the Project Web Interface to add permissions and use the _Edit_ feat
 
 1. Click the **Projects** tab.
 
-1. Click your project name to open the Cloud project portal ([!DNL Onboarding] UI).
+1. Click a project.
 
 1. Click **Infrastructure access**, and then click **Project Access (Web UI)**.
 
@@ -166,7 +166,7 @@ You can use the Project Web Interface to add permissions and use the _Edit_ feat
 
 1. Click **Add User**.
 
-1. After adding project-level users, redeploy all environments to apply the changes. Adding a project-level user does not trigger a deployment automatically. This is an important step to ensure that the user can access a project environment using SSH.
+1. After adding project-level users, redeploy all environments to apply the changes. Adding a project-level user does not trigger a deployment automatically. Redeployment is an important step to ensure that the user can access an environment using SSH.
 
 After you add the user, Adobe sends an email to the specified address with instructions for accessing the Adobe Commerce on cloud infrastructure project.
 
@@ -199,7 +199,7 @@ Instructions for installing the authenticator application and enabling TFA are a
 
 1. Click the **Account settings** tab.
 
-1. Click **Security** to access the TFA configuration settings. Then, click **Set up application**.
+1. Click **Security**. In the _TFA application_ settings, click **Set up application**.
 
    ![Cloud Security settings](../../assets/tfa-set-up-application.png)
 
@@ -253,7 +253,7 @@ You manage the TFA configuration for an Adobe Commerce on cloud infrastructure a
 
 1. Click the **Account Settings** tab.
 
-1. Click **Security** to view the TFA configuration options.
+1. Click **Security** and view the TFA configuration options.
 
    ![Cloud manage TFA config](../../assets/tfa-security.png)
 
@@ -288,6 +288,6 @@ On projects that have MFA enforcement enabled, you must have an API token to ena
 
    ![Create API token](../../assets/api-tokens-application-name.png)
 
-1. Click **Create API token** to generate the token.
+1. Click **Create API token**.
 
    ![Generate API token](../../assets/api-tokens-list.png)
