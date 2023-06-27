@@ -62,7 +62,7 @@ The following examples use the `magento-cloud` CLI to add a user, configure role
 
    >[!IMPORTANT]
    >
-   >User must have an Adobe ID; see the [prerequisites](#add-users-and-manage-access).
+   >The user must have an Adobe ID; see the [prerequisites](#add-users-and-manage-access).
 
 1. Follow the prompts: specify the user email address, set the project and environment-type roles, and add the user.
 
@@ -129,7 +129,7 @@ You can use the Project Web Interface to add permissions and use the _Edit_ feat
 
 >[!IMPORTANT]
 >
->User must have an Adobe ID; see the [prerequisites](#add-users-and-manage-access).
+>The user must have an Adobe ID; see the [prerequisites](#add-users-and-manage-access).
 
 ### Add users from the Project Web Interface
 
