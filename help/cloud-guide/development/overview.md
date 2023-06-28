@@ -3,6 +3,7 @@ title: Development overview
 description: Prepare for local development with an Adobe Commerce on cloud infrastructure project.
 role: Developer
 feature: Cloud, Install
+topic: Development
 exl-id: d4452d7d-d3dc-4f8d-8bd7-76f05d89f545
 ---
 # Development overview

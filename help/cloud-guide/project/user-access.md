@@ -4,6 +4,7 @@ description: Learn how to manage user access to Adobe Commerce on cloud infrastr
 role: Admin
 feature: Cloud, Roles/Permissions
 last-substantial-update: 2023-06-27
+topic: Security
 exl-id: 3357a3ea-bf86-4a65-95d1-6b24f1152248
 ---
 # Manage user access

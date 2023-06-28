@@ -2,6 +2,7 @@
 title: Cloud architecture for Commerce
 description: Learn how the Starter and Pro plan's architecture contrast for Commerce Cloud.
 feature: Cloud, Iaas, Paas
+topic: Architecture
 recommendations: noDisplay
 exl-id: 37cd6733-c10a-4d06-b784-171da576f9fc
 ---
