@@ -80,12 +80,12 @@ stage:
 -  **Default**—`true`
 -  **Version**—Adobe Commerce 2.1.4 and later
 
-Enables or disables cleaning [static content files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html) generated during the build or deploy phase. We recommend the default value _true_ in development.
+Enables or disables cleaning [static content files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html) generated during the build or deploy phase. Use the default value _true_ in development as a best practice.
 
 -  **`true`**—Removes all existing static content before deploying the updated static content.
 -  **`false`**—The deployment only overwrites existing static content files if the generated content contains a newer version.
 
-If you make modifications to static content through a separate process, set the value to _false_.
+If you modify static content through a separate process, set the value to _false_.
 
 ```yaml
 stage:
@@ -139,7 +139,7 @@ stage:
       consumers: []
 ```
 
-By default, the deployment process overwrites all settings in the `env.php` file. See [Manage message queues](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html) in the _Commerce Configuration Guide_ to learn how this works for on-premises Adobe Commerce.
+By default, the deployment process overwrites all settings in the `env.php` file. See [Manage message queues](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html) in the _Commerce Configuration Guide_ for on-premises Adobe Commerce.
 
 ## `CONSUMERS_WAIT_FOR_MAX_MESSAGES`
 
@@ -169,7 +169,7 @@ stage:
 
 >[!WARNING]
 >
->You must set the `CRYPT_KEY` value through the Project Web Interface instead of the `.magento.env.yaml` file to avoid exposing the key in the source code repository for your environment. See [Set environment and project variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-environment).
+>Set the `CRYPT_KEY` value through the Project Web Interface instead of the `.magento.env.yaml` file to avoid exposing the key in the source code repository for your environment. See [Set environment and project variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-environment).
 
 When you move the database from one environment to another without an installation process, you need the corresponding cryptographic information. Adobe Commerce uses the encryption key value set in the Web UI as the `crypt/key` value in the `env.php` file.
 
@@ -245,7 +245,7 @@ MariaDB [main]> SHOW TABLES;
 -  **Default**—_Not set_
 -  **Version**—Adobe Commerce 2.2.0 and later
 
-Retains customized ElasticSuite service settings between deployments and uses it in the 'system/default/smile_elasticsuite_core_base_settings' section of the main ElasticSuite configuration. If the ElasticSuite composer package is installed, this is configured automatically.
+Retains customized [!DNL Elastic Suite] service settings between deployments and uses it in the 'system/default/smile_elasticsuite_core_base_settings' section of the main [!DNL Elastic Suite] configuration. If the [!DNL Elastic Suite] composer package is installed, it is configured automatically.
 
 ```yaml
 stage:
@@ -279,7 +279,7 @@ stage:
 
 >[!NOTE]
 >
->For details on using or troubleshooting the Elasticsuite plugin with Adobe Commerce, see the [Elasticsuite documentation](https://github.com/Smile-SA/elasticsuite).
+>For details on using or troubleshooting the [!DNL Elastic Suite] plugin with Adobe Commerce, see the [[!DNL Elastic Suite] documentation](https://github.com/Smile-SA/elasticsuite).
 
 ## `ENABLE_GOOGLE_ANALYTICS`
 
@@ -301,7 +301,7 @@ stage:
 
 >[!NOTE]
 >
->The Adobe Commerce on cloud infrastructure deploy process always enables Google Analytics on Production environments.
+>The deploy process always enables Google Analytics on Production environments.
 
 ## `FORCE_UPDATE_URLS`
 
@@ -321,7 +321,7 @@ stage:
 -  **Default**—`file`
 -  **Version**—Adobe Commerce 2.2.5 and later
 
-The lock provider prevents the launch of duplicate cron jobs and cron groups. You must use the `file` lock provider in the Production environment. Starter environments and the Pro Integration environment do not use the [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md) variable, so `ece-tools` applies the `db` lock provider automatically.
+The lock provider prevents the launch of duplicate cron jobs and cron groups. Use the `file` lock provider in the Production environment. Starter environments and the Pro integration environment do not use the [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md) variable, so `ece-tools` applies the `db` lock provider automatically.
 
 ```yaml
 stage:
@@ -340,7 +340,7 @@ See [Configure the lock](https://experienceleague.adobe.com/docs/commerce-operat
 >
 >The `MYSQL_USE_SLAVE_CONNECTION` variable is supported only on Adobe Commerce on cloud infrastructure Staging and Production Pro cluster environments and is not supported on Starter projects.
 
-Adobe Commerce can read multiple databases asynchronously. Set to `true` to automatically use a _read-only_ connection to the database to receive read-only traffic on a non-master node. This improves performance through load balancing, because only one node needs to handle read-write traffic. Set to `false` to remove any existing read-only connection array from the `env.php` file.
+Adobe Commerce can read multiple databases asynchronously. Set to `true` to automatically use a _read-only_ connection to the database to receive read-only traffic on a non-master node. This connection improves performance through load balancing, because only one node handles read-write traffic. Set to `false` to remove any existing read-only connection array from the `env.php` file.
 
 ```yaml
 stage:
@@ -355,7 +355,7 @@ When the `MYSQL_USE_SLAVE_CONNECTION` variable is set to `true`, the `synchronou
 -  **Default**—_Not set_
 -  **Version**—Adobe Commerce 2.1.4 and later
 
-Use this environment variable to retain customized AMQP service settings between deployments. For example, if you prefer using an existing message queue service, like [!DNL RabbitMQ], instead of relying on Adobe Commerce on cloud infrastructure to create it for you, use the `QUEUE_CONFIGURATION` environment variable to connect it to your site:
+Use this environment variable to retain customized AMQP service settings between deployments. For example, if you prefer using an existing message queue service instead of relying on the cloud infrastructure to create it for you, use the `QUEUE_CONFIGURATION` environment variable to connect it to your site:
 
 ```yaml
 stage:
@@ -424,13 +424,13 @@ stage:
 
 >[!WARNING]
 >
->Do _not_ enable this variable on a [scaled architecture](../architecture/scaled-architecture.md) project. It causes Redis connection errors. Redis slaves are still active but are not used for Redis reads. As an alternative, Adobe recommends to use Adobe Commerce 2.3.5 or later, implement a new Redis backend configuration, and implement L2 caching for Redis.
+>Do _not_ enable this variable on a [scaled architecture](../architecture/scaled-architecture.md) project. It causes Redis connection errors. Redis slaves are still active but are not used for Redis reads. As an alternative, Adobe recommends using Adobe Commerce 2.3.5 or later, implement a new Redis backend configuration, and implement L2 caching for Redis.
 
 >[!TIP]
 >
 >The `REDIS_USE_SLAVE_CONNECTION` variable is supported only on Adobe Commerce on cloud infrastructure Staging and Production Pro cluster environments and is not supported on Starter projects.
 
-Adobe Commerce can read multiple Redis instances asynchronously. Set to `true` to automatically use a _read-only_ connection to a Redis instance to receive read-only traffic on a non-master node. This improves performance through load balancing, because only one node needs to handle read-write traffic. Set to `false` to remove any existing read-only connection array from the `env.php` file.
+Adobe Commerce can read multiple Redis instances asynchronously. Set to `true` to automatically use a _read-only_ connection to a Redis instance to receive read-only traffic on a non-master node. This connection improves performance through load balancing, because only one node handles read-write traffic. Set to `false` to remove any existing read-only connection array from the `env.php` file.
 
 ```yaml
 stage:
@@ -442,7 +442,7 @@ You must have a Redis service configured in the `.magento.app.yaml` file and in 
 
 [Ece-tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) and later uses more fault-tolerant settings. If Adobe Commerce cannot read data from the Redis _slave_ instance, then it reads data from the Redis _master_ instance.
 
-The read-only connection is not available for use in the Integration environment or if you use the [`CACHE_CONFIGURATION` variable](#cache_configuration).
+The read-only connection is not available for use in the integration environment or if you use the [`CACHE_CONFIGURATION` variable](#cache_configuration).
 
 ## `RESOURCE_CONFIGURATION`
 
@@ -541,7 +541,7 @@ stage:
 -  **Default**—`false`
 -  **Version**—Adobe Commerce 2.4.2 and later
 
-On the deploy phase, we recommend setting `SCD_NO_PARENT: true` so that the generation of static content for parent themes does not occur during the deploy phase. This setting minimizes deployment time and prevents site downtime that can occur if the static content build fails during the deployment. See [Static content deployment](../deploy/static-content.md).
+On the deploy phase, set `SCD_NO_PARENT: true` so that the generation of static content for parent themes does not occur during the deploy phase. This setting minimizes deployment time and prevents site downtime that can occur if the static content build fails during the deployment. See [Static content deployment](../deploy/static-content.md).
 
 ```yaml
 stage:
@@ -559,7 +559,7 @@ Allows you to customize the [deployment strategy](https://experienceleague.adobe
 Use these options _only_ if you have more than one locale:
 
 -  `standard`—deploys all static view files for all packages.
--  `quick`—minimizes deployment time. This is the default command option, if not specified.
+-  `quick`—(_default_) minimizes deployment time.
 -  `compact`—conserves disk space on the server. In Adobe Commerce version 2.2.4 and earlier, this setting overrides the value for `scd_threads` with a value of `1`.
 
 ```yaml
@@ -581,7 +581,7 @@ stage:
     SCD_THREADS: 2
 ```
 
-To further reduce deployment time, we recommend using [Configuration Management](../store/store-settings.md) with the `scd-dump` command to move static deployment into the build phase.
+To further reduce deployment time, use [Configuration Management](../store/store-settings.md) with the `scd-dump` command to move static deployment into the build phase.
 
 ## `SEARCH_CONFIGURATION`
 
@@ -634,7 +634,7 @@ stage:
 -  **Default**—_Not set_
 -  **Version**—Adobe Commerce 2.1.4 and later
 
-Configure Redis session storage. You must specify the `save`, `redis`, `host`, `port`, and `database` options for the session storage variable. For example:
+Configure Redis session storage. Requires the `save`, `redis`, `host`, `port`, and `database` options for the session storage variable. For example:
 
 ```yaml
 stage:
@@ -673,7 +673,7 @@ stage:
 
 Set to `true` to skip static content deployment during the deploy phase.
 
-On the deploy phase, we recommend setting `SKIP_SCD: true` so that the static content build does not happen during the deploy phase. This setting minimizes deployment time and prevents site downtime that can occur if the static content build fails during the deployment. See [Static content deployment](../deploy/static-content.md).
+On the deploy phase, set `SKIP_SCD: true` so that the static content build does not happen during the deploy phase. This setting minimizes deployment time and prevents site downtime that can occur if the static content build fails during the deployment. See [Static content deployment](../deploy/static-content.md).
 
 ```yaml
 stage:
@@ -686,9 +686,9 @@ stage:
 -  **Default**—`true`
 -  **Version**—Adobe Commerce 2.1.4 and later
 
-On deployment, replace Adobe Commerce base URLs in the database with the project URLs specified by the [`MAGENTO_CLOUD_ROUTES`](variables-cloud.md) variable. This configuration is useful for local development, where base URLs are set up for your local environment. When you deploy to a Cloud environment, we change the URLs so you can access your storefront and Admin using project URLs.
+On deployment, replace Adobe Commerce base URLs in the database with the project URLs specified by the [`MAGENTO_CLOUD_ROUTES`](variables-cloud.md) variable. This configuration is useful for local development, where base URLs are set up for your local environment. When you deploy to a Cloud environment, the URLs update so you can access your storefront and Admin using the project URLs.
 
-If you need to update URLs when deploying to Pro or Starter Staging and Production environments,  use the [`FORCE_UPDATE_URLS`](#force_update_urls) variable.
+If you must update URLs when deploying to Pro or Starter Staging and Production environments,  use the [`FORCE_UPDATE_URLS`](#force_update_urls) variable.
 
 ```yaml
 stage:

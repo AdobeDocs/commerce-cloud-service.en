@@ -150,7 +150,7 @@ When you modify your environment through the Admin and run the command again, ne
 
 >[!WARNING]
 >
->While you can manually edit the `config.php` file in the Staging and Production environments, we do **not** recommend it. The file helps to keep all configurations consistent across all environments. Never delete the `config.php` file for rebuilding it. Deleting the file can remove specific configurations and settings required for build and deploy processes.
+>While you can manually edit the `config.php` file in the Staging and Production environments, it is **not** recommended. The file helps to keep all configurations consistent across all environments. Never delete the `config.php` file for rebuilding it. Deleting the file can remove specific configurations and settings required for build and deploy processes.
 
 ### Restore configuration files
 
@@ -214,7 +214,7 @@ If they differ, you can append content from the `config.local.php` file to your 
 
 1. Deploy across your environments.
 
-You only need to complete this migration once. After migration, use the `config.php` file.
+You only complete this migration once. After migration, use the `config.php` file.
 
 ### Change locales
 

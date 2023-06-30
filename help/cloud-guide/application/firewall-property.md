@@ -16,7 +16,7 @@ For Starter plans, the `firewall` property adds an _outbound_ firewall to the ap
 
 The firewall provides two default policies to control outbound traffic: `allow` and `deny`. The `allow` policy _allows_ all outbound traffic by default. And the `deny` policy _denies_ all outbound traffic by default. But when you add a rule, the default policy is overridden, and the firewall blocks **all** outbound traffic not allowed by the rule.
 
-For Starter plans, we set the default policy to `allow`. This setting ensures that all your current outbound traffic remains unblocked until you add your egress-filtering rules. We can also set the default policy to `deny` upon request.
+For Starter plans, the default policy is set to `allow`. This setting ensures that all your current outbound traffic remains unblocked until you add your egress-filtering rules. The default policy can be set to `deny` upon request.
 
 **To check your default policy**:
 
@@ -161,7 +161,7 @@ If a rule defines `ips` but not `ports`, the firewall allows IP requests on any 
 
 ### `ports`
 
-The `ports` option allows a list of ports from 1 to 65535. For most rules in the example, we added ports `80` and `443` to allow both HTTP and HTTPS requests. But for New Relic, we created rules that only allow access to domains and IP addresses on port `443`, as recommended in the New Relic documentation on [Network Traffic](https://docs.newrelic.com/docs/new-relic-solutions/get-started/networks/#agents).
+The `ports` option allows a list of ports from 1 to 65535. For most rules in the example, ports `80` and `443` allow both HTTP and HTTPS requests. But for New Relic, the rules only allow access to domains and IP addresses on port `443`, as recommended in the New Relic documentation on [Network Traffic](https://docs.newrelic.com/docs/new-relic-solutions/get-started/networks/#agents).
 
 If a rule only defines `ports`, the firewall allows access to all domains and IP addresses for the ports defined.
 

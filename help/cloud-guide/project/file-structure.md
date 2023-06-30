@@ -54,7 +54,7 @@ The remote Integration, Staging, and Production environments are read only. The 
 
 ## Ignoring files
 
-We include a base `.gitignore` file with the Adobe Commerce on cloud infrastructure project repository. See the latest [.gitignore file in the magento-cloud repository](https://github.com/magento/magento-cloud/blob/master/.gitignore). If you need to add a file that is in the ignore list, you can use the `-f` (force) option when staging a commit:
+There is a base `.gitignore` file with the Adobe Commerce on cloud infrastructure project repository. See the latest [.gitignore file in the magento-cloud repository](https://github.com/magento/magento-cloud/blob/master/.gitignore). To add a file that is in the ignore list, you can use the `-f` (force) option when staging a commit:
 
 ```bash
 git add <path/filename> -f

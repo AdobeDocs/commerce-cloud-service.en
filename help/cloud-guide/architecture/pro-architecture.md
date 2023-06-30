@@ -204,7 +204,7 @@ Adobe Commerce can scale from the smallest Pro12 cluster to the largest Pro120 c
 
 - Pro120 offers 120 CPU (40 x 3 nodes) up to 480-GB RAM (160 x 3 nodes)
 
-Because of the redundant architecture, Adobe can offer to upscale without downtime. When upscaling, we rotate each of the three instances to upgrade capacity without impacting site operation.
+Because of the redundant architecture, Adobe can offer to upscale without downtime. When upscaling, each of the three instances rotates to upgrade capacity without impacting site operation.
 
 For example, you can add extra web servers to an existing cluster should the constriction be at the PHP level rather than the database level. This provides _horizontal scaling_ to complement the vertical scaling provided by extra CPUs on the database level. See [Scaled architecture](scaled-architecture.md).
 

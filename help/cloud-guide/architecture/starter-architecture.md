@@ -10,7 +10,7 @@ Your Adobe Commerce on cloud infrastructure Starter architecture supports up to 
 
 All environments are in PaaS (Platform as a service) containers. These containers are deployed inside highly restricted containers on a grid of servers. These environments are read-only, accepting deployed code changes from branches pushed from your local workspace. Each environment provides a database and web server.
 
-You can use any development and branching methodology you like. When you get initial access to your project, we strongly recommend that you create a Staging environment from the `master` environment. Then, create the Integration environment by branching from Staging.
+You can use any development and branching methodology you like. When you get initial access to your project, create a Staging environment from the `master` environment. Then, create the Integration environment by branching from Staging.
 
 ## Starter environment architecture
 

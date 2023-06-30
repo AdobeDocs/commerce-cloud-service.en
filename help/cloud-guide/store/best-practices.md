@@ -16,24 +16,24 @@ To create campaigns and promotions, create the options and settings in [Content 
 
 _Campaigns_ are marketing events for seasonal sales, new product lines, and more. Each campaign can include custom themes, blocks for content, widgets to control and display content, and associated promotions with price rules. Due to the extensive nature of a campaign, you create them with a start and end date through Content Staging.
 
-_Promotions_ provide discounts, one time offers, coupons, first time buyer incentives, and more. You create these promotions as _Price Rules_ that set the terms, discounts, and options to encourage customers to buy. You can create price rules on the [shopping cart](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html) or [catalog](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html), with additional options for banners, reward points, and more. We also support scheduling campaigns for your promotions, applying price rules for major events like a new product line or seasonal sales.
+_Promotions_ provide discounts, one time offers, coupons, first-time buyer incentives, and more. You create these promotions as _Price Rules_ that set the terms, discounts, and options to encourage customers to buy. You can create price rules on the [shopping cart](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html) or [catalog](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html), with additional options for banners, reward points, and more. You can schedule campaigns for your promotions, applying price rules for major events like a new product line or seasonal sales.
 
 The following are tips to help create, update, and manage promotions and campaigns:
 
 *  A promotion can be part of a campaign. A campaign cannot be a part of a promotion. You can have lists of promotions as price rules to use multiples times, with multiple campaigns.
 *  When you create a promotion, it always creates an initial campaign that is inactive. It has a start date but not an end date. You can ignore this initial campaign. You can Schedule a New Update with the correct campaign schedule and make it active.
 *  A campaign has a start and end date, not a promotion. The Scheduler that appears when you create a promotion does not configure the start and end dates for the promotion. It enables you to schedule a campaign for this promotion while you are on the promotion's configuration page.
-*  You cannot directly edit in Staged Content. If you need to edit settings and options in the campaign, you need to edit the original or a replica and push to overwrite in Staged Content. For example, if you do not an end date for a campaign, you must edit the original and push to update.
+*  You cannot directly edit in Staged Content. If you must edit settings and options in the campaign, edit the original or a replica and push to overwrite in Staged Content. For example, if you do not an end date for a campaign, you must edit the original and push to update.
 
 ## Advanced Pricing and Staged Content
 
 This information is helpful for Adobe Commerce on cloud infrastructure 2.1.X and 2.2.X.
 
-Typically, you can set [Advanced Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) for products through the **Products** > **Catalogs** area of the Admin. With Staged Content, you need to complete a few extra steps to add the pricing to a promotion and campaign.
+Typically, you can set [Advanced Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) for products through the **Products** > **Catalogs** area of the Admin. With Staged Content, complete a few extra steps to add the pricing to a promotion and campaign.
 
 To edit Advanced Pricing and update Content Staging:
 
-1. Log into the Admin.
+1. Log in to the Admin.
 1. Navigate to **Products** > **Catalog** and select a product and edit.
 1. In the Pricing tab, select **Advanced Pricing**. Edit the price and Save changes.
 1. At the top of the page, click **Schedule New Update**.
@@ -48,7 +48,7 @@ For additional steps, you can continue with instructions with [Schedule Changes 
 
 Price rules can include logic and conditions as limitless as your marketing imagination. Some popular examples include Buy One Get One Free, Buy One Get One 50% Off, a $25 dollars off on orders over $100 dollars, and so on.
 
-To create a Price Rule, see our [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html).
+To create a Price Rule, see [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html).
 
 The following provides an example of creating a Price Rule for a First Order Only discount. For this discount, you would want to:
 

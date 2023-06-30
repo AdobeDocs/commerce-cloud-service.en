@@ -7,22 +7,20 @@ exl-id: bc1def41-9521-4005-872e-9ecaab1d4d16
 ---
 # Protective block
 
-Adobe Commerce on cloud infrastructure has a protective blocking feature that, under certain circumstances, restricts access to websites with security vulnerabilities. We use this partial blocking method to prevent exploitation of known security vulnerabilities.
-
-Outdated software often contains exploits we protect against by partially blocking access to these sites.
+Adobe Commerce on cloud infrastructure has a protective blocking feature that, under certain circumstances, restricts access to websites with security vulnerabilities. This partial blocking method prevents exploitation of known security vulnerabilities. Outdated software often contains exploits, so it is important to protect against these exploits by partially blocking access to these sites.
 
 ## How the protective block works
 
 Adobe Commerce maintains a database of signatures of known security vulnerabilities in open-source software that are commonly deployed on cloud infrastructure. The security check analyzes only known vulnerabilities in open-source projects; it cannot examine customizations you write.
 
-We analyze the code of your application:
+Security scan runs:
 
 -  When you push new code to Git
--  When new vulnerabilities are added to our database
+-  When new vulnerabilities are added to the database
 
 If a critical vulnerability is detected in your application, it rejects the Git push.
 
-We run two types of blocks:
+There are two types of blocks that run:
 
 1. **Complete block**—for development websites. The error message accompanying `git push` provides detailed information about the vulnerability.
 

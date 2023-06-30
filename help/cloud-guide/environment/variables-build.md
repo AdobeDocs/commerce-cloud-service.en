@@ -98,7 +98,7 @@ stage:
 
 Set to `true` to prevent generating static content for parent themes during the build phase.
 
-We recommend setting `SCD_NO_PARENT: false` during the build phase so that generating static content for the parent themes does not impact site deployment or cause unnecessary site downtime. See [Static content deployment](../deploy/static-content.md).
+Set `SCD_NO_PARENT: false` during the build phase so that generating static content for the parent themes does not impact site deployment or cause unnecessary site downtime. See [Static content deployment](../deploy/static-content.md).
 
 ```yaml
 stage:
@@ -185,7 +185,7 @@ Customize the [deployment strategy](https://experienceleague.adobe.com/docs/comm
 Use these options _only_ if you have more than one locale:
 
 -  `standard`—deploys all static view files for all packages.
--  `quick`—minimizes deployment time. This is the default command option, if not specified.
+-  `quick`—(_default_) minimizes deployment time.
 -  `compact`—conserves disk space on the server. In Adobe Commerce version 2.2.4 and earlier, this setting overrides the value for `scd_threads` with a value of `1`.
 
 ```yaml
@@ -207,7 +207,7 @@ stage:
     SCD_THREADS: 2
 ```
 
-To further reduce deployment time, we recommend using [Configuration Management](../store/store-settings.md) with the `scd-dump` command to move static deployment into the build phase.
+To further reduce deployment time, use [Configuration Management](../store/store-settings.md) with the `scd-dump` command to move static deployment into the build phase.
 
 ## `SCD_USE_BALER`
 
@@ -226,7 +226,7 @@ stage:
 
 >[!NOTE]
 >
->Because Baler is in alpha release, we do not recommend using it in Production environments.
+>Because Baler is in alpha release, it is not advisable to use it in Production environments.
 
 ## `SKIP_COMPOSER_DUMP_AUTOLOAD`
 
@@ -235,7 +235,7 @@ stage:
 
 Set to `true` to skip the `composer dump-autoload` command during a Cloud Docker installation. This variable is only relevant for Cloud Docker containers with writable file systems. In such cases, skipping the command prevents errors from other commands trying to access code from the deleted `generated` directory.
 
-When Adobe Commerce runs `composer dump-autoload`, it creates autoload files with links to generated classes in the `generated` folder. In production environments with read-only files systems, this is not a problem. However, for Cloud Docker installations with writable file systems (created only for testing and development using `./vendor/bin/ece-docker build:compose --with-test`), you can run the `bin/magento -n setup:upgrade` command without the `--keep-generated` option, which deletes the `generated` directory. If the directory is deleted, the `composer dump-autoload` command fails because the autoload contains links to files in the deleted directory.
+When Adobe Commerce runs `composer dump-autoload`, it creates autoload files with links to generated classes in the `generated` folder, which is not a problem in production environments with read-only files systems. However, for Cloud Docker installations with writable file systems (created only for testing and development using `./vendor/bin/ece-docker build:compose --with-test`), you can run the `bin/magento -n setup:upgrade` command without the `--keep-generated` option, which deletes the `generated` directory. If the directory is deleted, the `composer dump-autoload` command fails because the autoload contains links to files in the deleted directory.
 
 ```yaml
 stage:
@@ -252,7 +252,7 @@ Set to `true` to skip static content deployment during the build phase.
 
 If you already deploy static content during the build phase with [Configuration Management](../store/store-settings.md), you can skip static content deployment for a quick build test.
 
-On the build phase, we recommend setting `SKIP_SCD: false` so that the static content build occurs during the build phase where the process does not impact site deployment or cause unnecessary site downtime. See [Static content deployment](../deploy/static-content.md).
+On the build phase, set `SKIP_SCD: false` so that the static content build occurs during the build phase where the process does not impact site deployment or cause unnecessary site downtime. See [Static content deployment](../deploy/static-content.md).
 
 ```yaml
 stage:

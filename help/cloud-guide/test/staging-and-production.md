@@ -21,15 +21,15 @@ Verify that your code base correctly deployed to Staging and Production environm
 
 ## Verify configuration settings
 
-Check the configuration settings through the Admin panel including the Base URL, Base Admin URL, multi-site settings, and more. If you need to make any additional changes, complete edits in your local Git branch and push to the `master` branch in Integration, Staging, and Production.
+Check the configuration settings through the Admin panel including the Base URL, Base Admin URL, multi-site settings, and more. If you must make any additional changes, complete edits in your local Git branch and push to the `master` branch in Integration, Staging, and Production.
 
 ## Check Fastly caching
 
-[Configuring Fastly](../cdn/fastly-configuration.md) requires careful attention to detail–using the correct Fastly Service ID and Fastly API token credentials, uploading the Fastly VCL code, updating the DNS configuration, and applying the SSL/TLS certificates to your environments. After completing these setup tasks, you can verify Fastly caching on Staging and Production environments.
+[Configuring Fastly](../cdn/fastly-configuration.md) requires careful attention to detail: using the correct Fastly Service ID and Fastly API token credentials, uploading the Fastly VCL code, updating the DNS configuration, and applying the SSL/TLS certificates to your environments. After completing these setup tasks, you can verify Fastly caching on Staging and Production environments.
 
 **To verify the Fastly service configuration**:
 
-1. Log into the Admin for Staging and Production using the URL with `/admin`, or the [updated Admin URL](../environment/variables-admin.md#admin-url).
+1. Log in to the Admin for Staging and Production using the URL with `/admin`, or the [updated Admin URL](../environment/variables-admin.md#admin-url).
 
 1. Navigate to **Stores** > **Settings** > **Configuration** > **Advanced** > **System**. Scroll and click **Full Page Cache**.
 
@@ -188,13 +188,13 @@ If you encounter issues, save your reproduction steps, error messages, strange s
 
 ## Load and stress testing
 
-Before launching, we highly recommend performing extensive traffic and performance testing on your Staging and Production environments. Consider performance testing for your frontend and backend processes.
+Before launching, it is best to perform extensive traffic and performance testing on your Staging and Production environments. Consider performance testing for your frontend and backend processes.
 
 Before you begin testing, enter a ticket with support advising the environments you are testing, what tools you are using, and the time frame. Update the ticket with results and information to track performance. When you complete testing, add your updated results and note in the ticket testing is complete with a date and time stamp.
 
-We recommend that you review the [Performance Toolkit](https://github.com/magento/magento2/tree/2.4/setup/performance-toolkit) options as part of your pre-launch readiness process.
+Review the [Performance Toolkit](https://github.com/magento/magento2/tree/2.4/setup/performance-toolkit) options as part of your pre-launch readiness process.
 
-For best results, we recommend the following tools:
+For best results, use the following tools:
 
 -  [Application performance test](../environment/variables-post-deploy.md#ttfb_tested_pages)—Test application performance by configuring the `TTFB_TESTED_PAGES` environment variable to test site response time.
 -  [Siege](https://www.joedog.org/siege-home/)—Traffic shaping and testing software to push your store to the limit. Hit your site with a configurable number of simulated clients. Siege supports basic authentication, cookies, HTTP, HTTPS, and FTP protocols.
@@ -208,4 +208,4 @@ You can use the Magento Functional Testing Framework (MFTF) to complete function
 
 ## Set up the Security Scan Tool
 
-We provide a free Security Scan Tool for your sites. To add your sites and run the tool, see [Security Scan Tool](../launch/overview.md#set-up-the-security-scan-tool).
+There is a free Security Scan Tool for your sites. To add your sites and run the tool, see [Security Scan Tool](../launch/overview.md#set-up-the-security-scan-tool).
