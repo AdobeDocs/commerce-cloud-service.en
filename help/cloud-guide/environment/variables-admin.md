@@ -11,7 +11,7 @@ Users that have administrative access to the Adobe Commerce on cloud infrastruct
 
 ## Admin credentials
 
-Use the ADMIN variables in the following table to override credentials for the Admin user during Commerce installation.
+You can override Admin user credentials during Commerce installation with the ADMIN variables in the following table.
 
 If you want to change the values after installation, connect to your environment using SSH and use the Adobe Commerce CLI [`admin:user` command](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html) to create or edit the Admin user credentials.
 
@@ -19,7 +19,7 @@ If you want to change the values after installation, connect to your environment
 | -------------- | --------------------------- | ----------- |
 |`ADMIN_USERNAME`| License Owner email address | A username for the administrative user with the ability to create other users, including administrative users.|
 |`ADMIN_EMAIL`   |                             | Email address for the administrative user. This address is used to send password reset notifications.|
-|`ADMIN_PASSWORD`|                             | Password for the administrative user. When the project is created a random password is generated and an email is sent to the License Owner. During project creation, the License Owner should have already changed the password. You might need to contact the License Owner for the updated password.|
+|`ADMIN_PASSWORD`|                             | Password for the administrative user. When the project is created, a random password is generated and an email is sent to the License Owner. During project creation, the License Owner should have already changed the password. Contact the License Owner for the updated password.|
 |`ADMIN_LOCALE`  | `en_US`                     | The default locale used by the Admin.|
 
 ## Admin URL
@@ -30,7 +30,7 @@ Use the following environment variable to secure access to your Admin UI. If spe
 
 ### Change the Admin URL
 
-Adobe recommends changing the environment-level variable for the Admin URL after installation. It is a best practice to configure this setting for security reasons prior to branching from the cloned `master` environment. All branches created from the `master` branch inherit the environment-level variables and their values.
+Adobe recommends changing the environment-level variable for the Admin URL after installation. Configure this setting for security reasons before branching from the cloned `master` environment. All branches created from the `master` branch inherit the environment-level variables and their values.
 
 Use the `magento-cloud variable:set` command to change the URL. For example, to set the Admin URL to `magento_A8v10`, use:
 
@@ -40,7 +40,7 @@ magento-cloud variable:set ADMIN_URL magento_A8v10 -e master
 
 >[!NOTE]
 >
->The `ADMIN_URL` value accepts letters (a-z or A-Z), numbers (0-9) or underscore character (_) for a custom admin path. Spaces or other characters are **not** accepted.
+>The `ADMIN_URL` value accepts letters (a-z or A-Z), numbers (0-9), and the underscore character (_) for a custom admin path. Spaces or other characters are **not** accepted.
 
 **To change the URL using the Project Web Interface**:
 

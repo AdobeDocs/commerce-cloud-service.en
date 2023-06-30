@@ -13,7 +13,7 @@ To manage the branches and environments with the Project Web Interface, see [Man
 
 ## Use CLI commands
 
-The `magento-cloud` CLI commands are similar to Git commands. You can use them to connect to your project and manage your environments. Although you can run the commands from any directory, we recommend that you run them from a project directory. When run from a project directory, you can omit the `-p <project-ID>` parameter. See the [Cloud CLI reference](../dev-tools/cloud-cli-overview.md).
+The `magento-cloud` CLI commands are similar to Git commands. You can use them to connect to your project and manage your environments. Although you can run the commands from any directory, it is recommended that you run them from a project directory. When run from a project directory, you can omit the `-p <project-ID>` parameter. See the [Cloud CLI reference](../dev-tools/cloud-cli-overview.md).
 
 ## Clone the project
 
@@ -47,7 +47,7 @@ The following instructions use a combination of `magento-cloud` CLI commands and
    magento-cloud project:get <project-ID>
    ```
 
-   When prompted provide a directory name.
+   When prompted, provide a directory name.
 
 1. Change to the `magento2` directory.
 

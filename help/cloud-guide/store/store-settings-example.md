@@ -145,7 +145,7 @@ For this example, modify static file optimization settings and add a new setting
 
 ### Add configurations in Integration
 
-To add configuration values in the Integration environment Admin. For this example, we are merging JavaScript files.
+To add configuration values in the Integration environment Admin. This example merges JavaScript files.
 
 1. Log out of the Integration Admin.
 1. Log back in to the Integration Admin.

@@ -18,7 +18,7 @@ Environment variables that are specific to Adobe Commerce on cloud infrastructur
 | `MAGENTO_CLOUD_DOCUMENT_ROOT` | The absolute path to the web document root, if applicable. |
 | `MAGENTO_CLOUD_ENVIRONMENT` | The name of the environment branch. |
 | `MAGENTO_CLOUD_PROJECT` | The project ID. |
-| `MAGENTO_CLOUD_RELATIONSHIPS` | A base64-encoded JSON object that represents key (relationship name) and value (arrays of relationship pairs) endpoint definition. Each relationship endpoint definition is a decomposed form of a URL. It has a `scheme`, a `host`, a `port`, and _optionally_ a `username`, `password`, `path` and some additional information in `query`. |
+| `MAGENTO_CLOUD_RELATIONSHIPS` | A base64-encoded JSON object that represents key (relationship name) and value (arrays of relationship pairs) endpoint definition. Each relationship endpoint definition is a decomposed form of a URL. It has a `scheme`, a `host`, a `port`, and _optionally_ a `username`, `password`, `path`, and some additional information in `query`. |
 | `MAGENTO_CLOUD_ROUTES` | Describe the routes defined in the environment `.magento/routes.yaml` file. |
 | `MAGENTO_CLOUD_TREE_ID` | The tree ID for the application, which corresponds to the SHA of the tree in Git. |
 | `MAGENTO_CLOUD_VARIABLES` | A base64-encoded JSON object with key-value pairs, such as `"key":"value"`. |
@@ -30,7 +30,7 @@ Environment variables that are specific to Adobe Commerce on cloud infrastructur
 >
 >![Environment variable example](../../assets/set-env-variable-ui.png)
 
-Since values can change over time, it is best to inspect the variable at runtime and use it to configure your application. For example, we use the `MAGENTO_CLOUD_RELATIONSHIPS` variable to retrieve environment-related relationships as follows:
+Since values can change over time, it is best to inspect the variable at runtime and use it to configure your application. For example, use the `MAGENTO_CLOUD_RELATIONSHIPS` variable to retrieve environment-related relationships as follows:
 
 ```php
 <?php

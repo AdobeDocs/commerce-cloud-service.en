@@ -66,7 +66,7 @@ And the following routes are **not** cached:
 
 ## Cache duration
 
-The cache duration is determined by the `Cache-Control` response header value. If no `Cache-Control` header is in the response, we use the `default_ttl` key.
+The cache duration is determined by the `Cache-Control` response header value. If no `Cache-Control` header is in the response, the `default_ttl` key is used.
 
 ## Cache key
 

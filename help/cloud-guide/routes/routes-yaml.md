@@ -149,7 +149,7 @@ All environments support both HTTP and HTTPS automatically.
 
    `http://example.com/` ==> `https://example.com/`
 
-We recommend serving all pages over TLS. For this configuration, you must configure redirects for all unencrypted request to the TLS equivalent using one of the following methods:
+Serve all pages over TLS. For this configuration, you must configure redirects for all unencrypted request to the TLS equivalent using one of the following methods:
 
 -  Change the protocol to HTTPS in the `routes.yaml` file.
 
@@ -162,7 +162,7 @@ We recommend serving all pages over TLS. For this configuration, you must config
        upstream: "mymagento:http"
    ```
 
--  For Staging and Production environments, we recommend enabling the [Force TLS on Fastly](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls.html) option from the Admin UI. When you use this option, Fastly handles the redirection to HTTPS, so you do not have to update the `routes.yaml` configuration.
+-  For Staging and Production environments, enable the [Force TLS on Fastly](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls.html) option from the Admin UI. When you use this option, Fastly handles the redirection to HTTPS, so you do not have to update the `routes.yaml` configuration.
 
 ## Route options
 

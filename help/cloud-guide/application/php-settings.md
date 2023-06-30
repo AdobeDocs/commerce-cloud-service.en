@@ -19,9 +19,9 @@ You can customize the PHP settings for your environment using a `php.ini` file t
 
 In your repository, add the `php.ini` file to the root of the application (the repository root).
 
->[!NOTE]
+>[!TIP]
 >
->Configuring PHP settings improperly can cause issues. We recommend only advanced administrators set these options.
+>Configuring PHP settings improperly can cause issues, so only advanced administrators should set these options.
 
 ### Increase PHP memory limit
 

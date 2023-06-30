@@ -5,7 +5,7 @@ exl-id: 27d8b489-7ecd-4701-ad92-06aa7cf98c8d
 ---
 # Regional IP addresses
 
-The following tables list the incoming and outgoing IP addresses used by Adobe Commerce on cloud infrastructure [integration environments](../architecture/pro-architecture.md#integration-environment). These IP addresses are stable, but might change. We always notify customers before making any IP address changes.
+The following tables list the incoming and outgoing IP addresses used by Adobe Commerce on cloud infrastructure [integration environments](../architecture/pro-architecture.md#integration-environment). These IP addresses are stable, but might change. Adobe notifies customers before making any IP address changes.
 
 The syntax for addressing the integration environments is as follows:
 

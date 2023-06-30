@@ -10,12 +10,12 @@ Adobe Commerce on cloud infrastructure provides an on-boarding tool to configure
 
 You can configure either the sandbox or production account in every environment:
 
-*  For Integration and Staging environments, we recommend setting Sandbox credentials.
-*  For your Production environment, you can set Sandbox credentials for initial testing, then replace with live production credentials for a launched store.
+*  For Integration and Staging environments, set Sandbox credentials.
+*  For your Production environment, set Sandbox credentials for initial testing, then replace with live production credentials for a launched store.
 
 ## PayPal account
 
-While we recommend having a PayPal merchant account prepared and configured, you can create an account or upgrade a personal account through the Admin.
+While it is best to use a PayPal merchant account prepared and configured, you can create an account or upgrade a personal account through the Admin.
 
 [!DNL PayPal onboarding] supports connecting with the following accounts:
 

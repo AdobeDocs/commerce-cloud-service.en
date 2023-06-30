@@ -26,11 +26,11 @@ For more information about customizing the build and deploy process:
 -  **Default**-_Not set_
 -  **Version**—Adobe Commerce 2.4.5 and later
 
-When set to `true`, enables cron to run message queue consumers. [Adobe I/O Events for Adobe Commerce](https://developer.adobe.com/commerce/events/get-started/) uses message queues to expedite the delivery of critical events.
+When set to `true`, enables cron to run message queue consumers. [Adobe I/O Events for Adobe Commerce use message queues to expedite the delivery of critical events.
 
 Adobe recommends that you also add the [`CRON_CONSUMERS_RUNNER`](./variables-deploy.md#cron_consumers_runner) variable to the `deploy` stage of the `.magento.env.yaml` file with `cron_run` set to `true`.
 
-The following example shows a fully-configured `ENABLE_EVENTING` variable.
+The following example shows a fully configured `ENABLE_EVENTING` variable.
 
 ```yaml
 stage:
@@ -48,7 +48,7 @@ stage:
 -  **Default**—_Not set_
 -  **Version**—Adobe Commerce 2.1.4 and later
 
-Overrides the minimum logging level for all output streams without changing the code. This helps when troubleshooting problems with deployment. For example, if your deployment fails, you can use this variable to increase the logging granularity globally. See [Log levels](log-handlers.md#log-levels). The `min_level` value in Logging handlers overwrites this setting.
+Overrides the minimum logging level for all output streams without changing the code, which helps when troubleshooting problems with deployment. For example, if your deployment fails, you can use this variable to increase the logging granularity globally. See [Log levels](log-handlers.md#log-levels). The `min_level` value in Logging handlers overwrites this setting.
 
 ```yaml
 stage:
@@ -65,7 +65,7 @@ stage:
 -  **Default**—_Not set_
 -  **Version**—Adobe Commerce 2.1.4 and later
 
-Enable generation of static content when requested by a user (SCD). This is ideal for the development and testing workflow, because it decreases the deployment time.
+Enable generation of static content when requested by a user (SCD). Static content on demand is ideal for the development and testing workflow, because it decreases the deployment time.
 
 Pre-loading the cache using the [`post_deploy` hook](../application/hooks-property.md) reduces site downtime. The cache warming is available only for Pro projects that contain Staging and Production environments in the Project Web Interface and for Starter projects. Add the `SCD_ON_DEMAND` environment variable to the `global` stage in the `.magento.env.yaml` file:
 
@@ -141,7 +141,7 @@ stage:
    -  `false`—for earlier versions of `ece-tools`
 -  **Version**—Adobe Commerce 2.1.4 and later
 
-Enables or disables copying static view files to the `<magento_root>/init/` directory at the end of the build stage. If set to `true` files are not copied and HTML minification is available on request. Set this value to `true` to reduce downtime when deploying to Staging and Production environments.
+Enables or disables copying static view files to the `<magento_root>/init/` directory at the end of the build stage. If set to `true`, files are not copied and HTML minification is available on request. Set this value to `true` to reduce downtime when deploying to Staging and Production environments.
 
 -  **`false`**—Copies the `view_preprocessed` directory to the `<magento_root>/init/` directory at the end of the build phase, and restores the directory in the `<magento_root>/var` directory at the beginning of the deploy phase.
 -  **`true`**—Enables on-demand HTML minification; does _not_ copy the `<magento_root>var/view_preprocessed` to the `<magento_root>/init/` directory at the end of the build phase.
