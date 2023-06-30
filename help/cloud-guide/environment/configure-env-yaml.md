@@ -29,7 +29,7 @@ The `.magento.env.yaml` file contains two sections: `stage` and `log`. The `stag
 
 ### Environment variables
 
-The `ece-tools` package sets values in the `env.php` file based on values from [Cloud variables](variables-cloud.md), variables set in the Project Web interface, and the `.magento.env.yaml` configuration file. The environment variables in the `.magento.env.yaml` file customize the Cloud environment by overriding your existing Commerce configuration. If a default value is `Not Set`, then the `ece-tools` package takes **NO** action and uses the Commerce default or the value from the MAGENTO_CLOUD_RELATIONSHIPS configuration. If the default value is set, then the `ece-tools` package takes the action to set that default.
+The `ece-tools` package sets values in the `env.php` file based on values from [Cloud variables](variables-cloud.md), variables set in the Project Web interface, and the `.magento.env.yaml` configuration file. The environment variables in the `.magento.env.yaml` file customize the Cloud environment by overriding your existing Commerce configuration. If a default value is `Not Set`, then the `ece-tools` package takes **NO** action and uses the Commerce default or the value from the MAGENTO_CLOUD_RELATIONSHIPS configuration. If the default value is set, then the `ece-tools` package acts to set that default.
 
 The following topics contain detailed definitions, such as whether a default value is set or not set, of all variables that you can use in the `.magento.env.yaml` file:
 
