@@ -26,7 +26,7 @@ For more information about customizing the build and deploy process:
 -  **Default**-_Not set_
 -  **Version**—Adobe Commerce 2.4.5 and later
 
-When set to `true`, enables cron to run message queue consumers. [Adobe I/O Events for Adobe Commerce use message queues to expedite the delivery of critical events.
+When set to `true`, enables cron to run message queue consumers. Adobe I/O Events for Adobe Commerce use message queues to expedite the delivery of critical events.
 
 Adobe recommends that you also add the [`CRON_CONSUMERS_RUNNER`](./variables-deploy.md#cron_consumers_runner) variable to the `deploy` stage of the `.magento.env.yaml` file with `cron_run` set to `true`.
 
@@ -132,7 +132,7 @@ stage:
 
 >[!NOTE]
 >
->You must install and configure the Baler module before using this feature. Because Baler is in alpha release, enable this option only on Staging environments.
+>Install and configure the Baler module before using this feature. Because Baler is in alpha release, enable this option only on Staging environments.
 
 ## `SKIP_HTML_MINIFICATION`
 
