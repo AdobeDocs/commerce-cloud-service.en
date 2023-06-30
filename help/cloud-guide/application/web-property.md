@@ -28,7 +28,7 @@ You can fine-tune your `locations` configuration using the following key values 
 | `root` | Set the path relative to the root of the application that is exposed on the web. The public directory (location "/") for a Cloud project is set to "pub" by default. |
 | `scripts` | Allow loading scripts in this location. Set the value to `true` to allow scripts. |
 
-Our default configuration allows the following:
+The default configuration allows the following:
 
 -  From the root (`/`) path, only web and media can be accessed
 -  From the `~/pub/static` and `~/pub/media` paths, any file can be accessed

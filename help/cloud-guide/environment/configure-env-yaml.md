@@ -11,7 +11,7 @@ The `.magento.env.yaml` file uses environment variables to centralize the manage
 
 >[!TIP]
 >
->YAML files are case sensitive and do not allow tabs. Be careful to use consistent indentation throughout the `.magento.env.yaml` file or your configuration may not work as expected. The examples in our documentation and in the sample file use _two-space_ indentation. Use the [ece-tools validate command](#validate-configuration-file) to check your configuration.
+>YAML files are case sensitive and do not allow tabs. Be careful to use consistent indentation throughout the `.magento.env.yaml` file or your configuration may not work as expected. The examples in the documentation and in the sample file use _two-space_ indentation. Use the [ece-tools validate command](#validate-configuration-file) to check your configuration.
 
 ## File structure
 

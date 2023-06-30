@@ -26,4 +26,4 @@ You can set [ADMIN variables](variables-admin.md) from the Project Web interface
 
 >[!TIP]
 >
->YAML files are case sensitive and do not allow tabs. Be careful to use consistent indentation throughout the `.magento.env.yaml` file or your configuration may not work as expected. The examples in our documentation and in the sample file use _two-space_ indentation. Use the [ece-tools validate command](configure-env-yaml.md#validate-configuration-file) to check your configuration.
+>YAML files are case sensitive and do not allow tabs. Be careful to use consistent indentation throughout the `.magento.env.yaml` file or your configuration may not work as expected. The examples in this documentation and in the sample file use _two-space_ indentation. Use the [ece-tools validate command](configure-env-yaml.md#validate-configuration-file) to check your configuration.
