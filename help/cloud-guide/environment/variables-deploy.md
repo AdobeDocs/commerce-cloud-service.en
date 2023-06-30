@@ -279,7 +279,7 @@ stage:
 
 >[!NOTE]
 >
->For details on using or troubleshooting the Elastic Suite plugin with Adobe Commerce, see the [Elastic Suite documentation](https://github.com/Smile-SA/elasticsuite).
+>For details on using or troubleshooting the [!DNL Elastic Suite] plugin with Adobe Commerce, see the [[!DNL Elastic Suite] documentation](https://github.com/Smile-SA/elasticsuite).
 
 ## `ENABLE_GOOGLE_ANALYTICS`
 
