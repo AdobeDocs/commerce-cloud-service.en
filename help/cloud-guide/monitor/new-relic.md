@@ -2,6 +2,7 @@
 title: New Relic service
 description: Learn how to access your New Relic dashboard and analyze data from your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Observability
+last-substantial-update: 2023-07-21
 exl-id: 613f0694-5338-4037-8ee4-ac5eca376159
 ---
 # New Relic service
