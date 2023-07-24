@@ -2,25 +2,26 @@
 title: New Relic service
 description: Learn how to access your New Relic dashboard and analyze data from your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Observability
+last-substantial-update: 2023-07-21
 exl-id: 613f0694-5338-4037-8ee4-ac5eca376159
 ---
 # New Relic service
 
 All Adobe Commerce on cloud infrastructure projects include access to the following New Relic services to help manage, monitor, and troubleshoot your applications and infrastructure by collecting, viewing, and analyzing data.
 
--  [New Relic APM](#new-relic-apm) (Pro and Starter)
--  [New Relic Infrastructure](#new-relic-infrastructure) (Pro, Production environment only)
--  [New Relic Logs](#new-relic-logs) (Production and Staging environments)
+- [New Relic APM](#new-relic-apm) (Pro and Starter)
+- [New Relic Infrastructure](#new-relic-infrastructure) (Pro, Production environment only)
+- [New Relic Logs](#new-relic-logs) (Production and Staging environments)
 
 ## New Relic APM
 
 [New Relic for application performance management (APM)][New Relic APM] is a software analytics product that helps you analyze and improve application interactions. New Relic APM is available to all Adobe Commerce on cloud infrastructure projects and provides the following features:
 
--  **Focus on specific transactions**—Actively mark and monitor key customer actions in your site, such as adding to the cart, checking out, or processing a payment.
--  **Database query monitoring**—Locate and monitor database queries affecting performance.
--  **App Map**—View all application dependencies within your site, extensions, and external services.
--  **[!DNL Apdex] scores**—Evaluate performance and create alerts that identify issues and notify you when they occur, such as site performance affected by a flash sale or web event. See [Apdex score][].
--  **Managed alerts for Adobe Commerce**–Use this New Relic alert policy to monitor application and infrastructure performance based on industry best practices. See [Monitor performance with the Managed alerts for Adobe Commerce alert policy](#monitor-performance-with-managed-alerts).
+- **Focus on specific transactions**—Actively mark and monitor key customer actions in your site, such as adding to the cart, checking out, or processing a payment.
+- **Database query monitoring**—Locate and monitor database queries affecting performance.
+- **App Map**—View all application dependencies within your site, extensions, and external services.
+- **[!DNL Apdex] scores**—Evaluate performance and create alerts that identify issues and notify you when they occur, such as site performance affected by a flash sale or web event. See [Apdex score][].
+- **Managed alerts for Adobe Commerce**–Use this New Relic alert policy to monitor application and infrastructure performance based on industry best practices. See [Monitor performance with the Managed alerts for Adobe Commerce alert policy](#monitor-performance-with-managed-alerts).
 
 Your Adobe Commerce on cloud infrastructure project includes the software for the New Relic APM service along with a license key. You do not need to purchase or install any additional software.
 
@@ -38,16 +39,16 @@ All cloud infrastructure projects include the [New Relic Logs][] service. The se
 
 The aggregated data includes information from the following logs:
 
--  All `ece-tools` and application logs from the `~/var/log` directory
--  Logs for cloud services from the `var/log/platform/<project-ID>` directory
--  Fastly CDN and WAF
+- All `ece-tools` and application logs from the `~/var/log` directory
+- Logs for cloud services from the `var/log/platform/<project-ID>` directory
+- Fastly CDN and WAF
 
 When your project is connected to New Relic, you can use the New Relic Logs service to complete tasks like the following:
 
--  Use [New Relic queries][New Relic query syntax for logs] to search aggregated log data
--  Visualize log data through the New Relic Logs application
--  Create custom charts, dashboards, and alerts
--  Troubleshoot performance issues from a single dashboard
+- Use [New Relic queries][New Relic query syntax for logs] to search aggregated log data
+- Visualize log data through the New Relic Logs application
+- Create custom charts, dashboards, and alerts
+- Troubleshoot performance issues from a single dashboard
 
 See [View and analyze logs](#view-and-analyze-log-data).
 
@@ -61,7 +62,7 @@ A New Relic account can have only one person assigned to the Owner role. If you 
 >
 >Before assigning the Owner role to a user, verify that the user exists on the New Relic account for Adobe Commerce on cloud infrastructure. If you must add the user to that account and an existing account Owner or Admin cannot help, any user with access to the [Adobe Partnership Owner Account][] for New Relic can add users on behalf of the customer.
 
-We recommend adding at least one **Admin** user to your New Relic account to manage all access, integrations, and tool usage. Project Owners and Admin users can add and remove users from the New Relic account. We also recommend that you do not create more than five full-access **Users**. Only grant full access to users that strictly require access to the complete feature set. There is no specific guidance on free **Restricted** users.
+Add at least one **Admin** user to your New Relic account to manage all access, integrations, and tool usage. Project Owners and Admin users can add and remove users from the New Relic account. Do not create more than five full-access **Users**. Only grant full access to users that strictly require access to the complete feature set. There is no specific guidance on free **Restricted** users.
 
 **To add a user**:
 
@@ -97,20 +98,20 @@ runtime:
 
 To connect a Cloud environment to New Relic, add the New Relic license key to the environment.
 
--  For Pro accounts, Adobe adds the license key to your Cloud environments during the provisioning process. You can log in to your New Relic account to verify connectivity between your Adobe Commerce on cloud infrastructure site and New Relic.
+- For Pro accounts, Adobe adds the license key to your Cloud environments during the provisioning process. You can log in to your New Relic account to verify connectivity between your Adobe Commerce on cloud infrastructure site and New Relic.
 
--  For Starter accounts, you have a New Relic license key that supports up to three environments. You must add the key to your environment configurations manually. The license key is not pre-provisioned on Starter environments.
+- For Starter accounts, you have a New Relic license key that supports up to three environments. You must add the key to your environment configurations manually. The license key is not pre-provisioned on Starter environments.
 
 ### Configure New Relic for Starter environments
 
-For Starter environments, enable the New Relic integration by adding the New Relic license key to the environment configuration. We recommend adding the key to the Staging and Production environments and one other environment of your choice. Only the New Relic license key is required for configuration. You can find information about additional configuration options in the [New Relic reporting](https://docs.magento.com/user-guide/configuration/general/new-relic-reporting.html) topic in the _Adobe Commerce User Guide_.
+For Starter environments, enable the New Relic integration by adding the New Relic license key to the environment configuration. Add the key to the Staging and Production environments and one other environment of your choice. Only the New Relic license key is required for configuration. You can find information about additional configuration options in the [New Relic reporting](https://docs.magento.com/user-guide/configuration/general/new-relic-reporting.html) topic in the _Adobe Commerce User Guide_.
 
 {{redeploy-warning}}
 
 **Prerequisites:**
 
--  Log in credentials for the Adobe Commerce account page, or for the New Relic account associated with your project
--  [Admin-level access](../project/user-access.md) to the Starter environments to configure, or credentials to access the [Admin](https://docs.magento.com/user-guide/system/permissions.html) for the environment.
+- Login credentials for the Adobe Commerce account page, or for the New Relic account associated with your project
+- [Admin-level access](../project/user-access.md) to the Starter environments to configure, or credentials to access the [Admin](https://docs.magento.com/user-guide/system/permissions.html) for the environment.
 
 **To configure New Relic for Starter environments**:
 
@@ -118,15 +119,15 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
    Account UI method:
 
-   -  Open your cloud project [account page](https://accounts.magento.cloud/user).
+   - Open your cloud project [account page](https://accounts.magento.cloud/user).
 
-   -  On the _Projects_ tab, find your project.
+   - On the _Projects_ tab, find your project.
 
-   -  Click **View Details** to see the project infrastructure information.
+   - Click **View Details** for project infrastructure information.
 
-   -  Expand the **NewRelic Service** section to view the license key.
+   - Expand the **New Relic Service** section to view the license key.
 
-   -  Copy the license key.
+   - Copy the license key.
 
    Cloud CLI method:
 
@@ -136,9 +137,9 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
 1. Add the New Relic license key to an environment using the `magento-cloud` CLI, or add it from the [Admin](https://docs.magento.com/user-guide/reports/new-relic-reporting.html#step-3-configure-your-store).
 
-   -  Change to the environment that needs the license key.
+   - Change to the environment that needs the license key.
 
-   -  Set the variable using the following `magento-cloud` CLI command:
+   - Set the variable using the following `magento-cloud` CLI command:
 
       ```bash
       magento-cloud variable:set php:newrelic.license <newrelic-license-key>
@@ -148,7 +149,7 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
 ### Remove license key from a Starter environment
 
-If three active Starter environments already use the same New Relic license key, and you want to configure New Relic reporting on a different environment, you must remove the key from one of the configured environments before you can reuse it.
+If three active Starter environments use the same New Relic license key, and you want to configure New Relic reporting on a different environment, you must remove the key from one of the configured environments before you can reuse it.
 
 **To remove a license key from an environment**:
 
@@ -192,16 +193,16 @@ On the APM Applications page, use the [New Relic APM Overview] to view informati
 
 From this view, you can track and find the following types of information:
 
--  Applications and transactions encountering slow responses or bottlenecks
--  Customer comments about issues with your site
--  Applications with high transaction time
--  Traffic to transaction time
+- Applications and transactions encountering slow responses or bottlenecks
+- Customer comments about issues with your site
+- Applications with high transaction time
+- Traffic to transaction time
 
-We recommend reviewing tracked data:
+Review tracked data:
 
--  **Most time consuming**—Determine time consumption by tracking requests in parallel. For example, you may have the highest transaction time spent in product and category views. If a customer account page suddenly ranks high in time consumption, your application might be affected by a call or query-dragging performance.
+- **Most time consuming**—Determine time consumption by tracking requests in parallel. For example, you may have the highest transaction time spent in product and category views. If a customer account page suddenly ranks high in time consumption, your application might be affected by a call or query-dragging performance.
 
--  **Highest throughput**—Identify pages hit the most based on the size and frequency of bytes transmitted.
+- **Highest throughput**—Identify pages hit the most based on the size and frequency of bytes transmitted.
 
 All collected data details the time spent on actions that transmit data, queries, or _Redis_ data. If queries cause issues, New Relic provides information to track and respond to those issues.
 
@@ -247,15 +248,15 @@ See [Get started with log management][New Relic Logs] and [Introduction to New R
 Adobe provides the Managed Alerts for Adobe Commerce alert policy to track performance metrics.
 Based on industry best practices, the policy includes a collection of alerts that set thresholds to trigger warning and critical notifications when site infrastructure or application issues affect performance. The Managed Alerts policy tracks the following metrics on Production environments only:
 
-| Metric        | Data collection | Availability    |
-|:--------------|:----------------|:----------------|
+| Metric          | Data collection | Availability    |
+|:----------------|:----------------|:----------------|
 | [Apdex score][] | APM             | Pro and Starter |
-| error rate    | APM             | Pro and Starter |
-| disk space    | NRI             | Pro             |
-| CPU usage     | NRI             | Pro             |
-| memory usage  | NRI             | Pro             |
-| Redis         | NRI             | Pro             |
-| MariaDB       | NRI             | Pro             |
+| error rate      | APM             | Pro and Starter |
+| disk space      | NRI             | Pro             |
+| CPU usage       | NRI             | Pro             |
+| memory usage    | NRI             | Pro             |
+| Redis           | NRI             | Pro             |
+| MariaDB         | NRI             | Pro             |
 
 When site infrastructure or application conditions trigger an alert threshold, New Relic sends alert notifications so that you can proactively address the issue. See [Managed Alerts for Adobe Commerce][] in the _Adobe Commerce Help Center_ for details about alert thresholds and troubleshooting steps to resolve the issues that triggered the alert.
 
@@ -265,9 +266,9 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
 **Prerequisites:**
 
--  Credentials to log in to the New Relic account for your Cloud project
--  Verify that your Cloud environment is [connected to New Relic](#connect-to-new-relic)
--  Configure at least one [notification channel](#configure-notification-channels) to receive the alert notifications
+- Credentials to log in to the New Relic account for your Cloud project
+- Verify that your Cloud environment is [connected to New Relic](#connect-to-new-relic)
+- Configure at least one [workflow](#set-up-a-workflow-for-notifications) to receive the alert notifications
 
 **To review the Managed Alerts for Adobe Commerce policy**:
 
@@ -275,85 +276,71 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
 1. Locate the _Managed Alerts for Adobe Commerce_ policy:
 
-   -  In the Explorer navigation menu, click **Alerts & AI**.
+   - In the Explorer navigation menu, click **Alerts & AI**.
 
-   -  In the left navigation under _Detect_, click **Alert conditions (Policies)**.
+   - In the left navigation under _Detect_, click **Alert Conditions & Policies**.
 
-   -  In the _Policy_ list, select **Managed Alerts for Magento Commerce** policy.
+   - In the _Policy_ list, select **Managed Alerts for Adobe Commerce** policy.
 
       ![Generated alert policies](../../assets/new-relic/managed-alerts-policy.png)
 
       >[!NOTE]
       >
-      >If the Managed Alerts for Magento Commerce alert policy is not available, see [Managed Alerts for Adobe Commerce][] in the _Adobe Commerce Help Center_.
+      >If the Managed Alerts for Adobe Commerce alert policy is not available, see [Managed Alerts for Adobe Commerce][] in the _Adobe Commerce Help Center_.
 
 1. Click the **Alert conditions** tab to review the alert conditions defined in the policy.
 
-### Configure notification channels
+### Set up a workflow for notifications
 
-To use Managed Alerts for Adobe Commerce to monitor your Production sites, you must configure at least one notification channel and map it to the alert policy.
+You can now set up a _workflow_, formerly called a notification channel, to receive notifications based on an alert policy to monitor your Production sites. Notifications about performance issues go to all workflows associated with an alert policy when conditions on the application or infrastructure trigger an alert. You also receive notifications when an issue is acknowledged and closed.
 
-Notifications about performance issues go to all channels associated with an alert policy when conditions on the application or infrastructure trigger an alert. You also receive notifications when an issue is acknowledged and closed.
+New Relic provides templates for configuring different types of workflow notifications, including email, Slack, PagerDuty, webhooks, and more.
 
-New Relic provides templates for configuring different types of notification channels including email, Slack, PagerDuty, webhooks, and more.
-
-**To configure a notification channel**:
-
-1. Choose a notification channel type, and complete any [prerequisite steps](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-notifications/notification-channels-control-where-send-alerts/#channel-types) required to connect the channel with the New Relic service.
+**To configure a workflow**:
 
 1. Use your New Relic credentials to [log in to your New Relic account][New Relic login].
 
-1. Create a notification channel.
+1. Create a workflow.
 
-   -  In the Explorer navigation menu, click **Alerts & AI**.
+   - In the Explorer navigation menu, click **Alerts & AI**.
 
-   -  In the left navigation under _Alerts (Classic)_, click **Channels**.
+   - In the left navigation under _Enrich & Notify_, click **Workflows**.
 
-   -  Click **New notification channel** on the right-hand side.
+   - Click **Add a workflow** on the right-hand side.
 
-      ![New Relic notification channel](../../assets/new-relic/add-notification-channel.png)
+      ![New Relic add a workflow](../../assets/new-relic/add-a-workflow.png)
 
-   -  On the _Create notification channel_ page, select the channel type and complete the steps to configure, create, save, and send a test notification to verify that the channel works.
+   - On the _Configure your workflow_ page, enter a name for the workflow.
 
-   -  Click **Create Channel**.
+   - In the _Filter data_ section, select **Managed Alerts for Adobe Commerce** from the **[!UICONTROL Policy]** drop-down list.
 
-1. Specify the alerts to send to the channel.
+   - In the _Notify_ section, select a channel and follow the instructions.
 
-   -  On the new channel page, click the **Alert policies** tab.
+   - Click **[!UICONTROL Test workflow]** to verify your configuration.
 
-   -  On the _Alert policies_ tab, click **Add alert policies**.
+1. Click **Activate workflow**.
 
-      ![New Relic create notification channel](../../assets/new-relic/add-alerts-to-notification-channel.png)
-
-   -  Select the **Managed Alerts for Magento Commerce** alert policy.
-
-   -  Click **Save changes**.
-
-See the following New Relic documentation topics for additional information:
-
--  Configure [notification channels](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-notifications/notification-channels-control-where-send-alerts/) using the New Relic Alerts user interface
-
--  Configure notification channels using the [New Relic API](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/advanced-alerts/rest-api-alerts/rest-api-calls-alerts/)
+See the New Relic documentation about [Workflows](https://docs.newrelic.com/docs/alerts-applied-intelligence/applied-intelligence/incident-workflows/incident-workflows/).
 
 >[!WARNING]
 >
->The alerts in the Managed Alerts for Adobe Commerce policy have default notification channels configured to notify Adobe teams that support Adobe Commerce on cloud infrastructure customers. Do not modify the configuration for these default channels, and do not remove any alert policies assigned to them.
+>The alerts in the Managed Alerts for Adobe Commerce policy have default workflows configured to notify Adobe teams that support Adobe Commerce on cloud infrastructure customers. Do not modify the configuration for these default channels, and do not remove any alert policies assigned to them.
 
 ### Create alert policies
 
-Do not modify any alerts included in the Managed Alerts for Magento Commerce policy. We update and improve the alert conditions in this policy over time, which overwrites any customizations you add to the policy.
+Do not modify any alerts included in the Managed Alerts for Adobe Commerce policy. We update and improve the alert conditions in this policy over time, which overwrites any customizations you add to the policy.
 
 Instead of modifying an existing alert, you can create an alert policy. Then, copy the alert conditions to the new policy. See [Update policies or conditions][] in the New Relic documentation.
 
 >[!TIP]
 >
->See [Alerts concepts and workflow][] in the _New Relic_ documentation for more detailed information about Alerts, alert policies, and notification channels.
+>See [Introduction to alerts][] in the _New Relic_ documentation for more detailed information about Alerts, alert policies, and workflows.
 
 <!-- link definitions -->
 
 [account dropdown]: https://docs.newrelic.com/docs/new-relic-solutions/get-started/glossary/#account-dropdown
 [Adobe Partnership Owner Account]: https://account.newrelic.com/accounts/1311131/users
-[Alerts concepts and workflow]: https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/learn-alerts/alerts-concepts-workflow/
+[Introduction to alerts]: https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/learn-alerts/alerts-concepts-workflow/
 [Apdex score]: https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/
 [Managed Alerts for Adobe Commerce]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html
 [New Relic APM]: https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/
