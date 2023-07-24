@@ -110,7 +110,7 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
 **Prerequisites:**
 
-- Log in credentials for the Adobe Commerce account page, or for the New Relic account associated with your project
+- Login credentials for the Adobe Commerce account page, or for the New Relic account associated with your project
 - [Admin-level access](../project/user-access.md) to the Starter environments to configure, or credentials to access the [Admin](https://docs.magento.com/user-guide/system/permissions.html) for the environment.
 
 **To configure New Relic for Starter environments**:
@@ -292,7 +292,7 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
 ### Set up a workflow for notifications
 
-Formerly called a notification channel, now you can set up a _workflow_ to receive notifications based on an alert policy to monitor your Production sites. Notifications about performance issues go to all workflows associated with an alert policy when conditions on the application or infrastructure trigger an alert. You also receive notifications when an issue is acknowledged and closed.
+You can now set up a _workflow_, formerly called a notification channel, to receive notifications based on an alert policy to monitor your Production sites. Notifications about performance issues go to all workflows associated with an alert policy when conditions on the application or infrastructure trigger an alert. You also receive notifications when an issue is acknowledged and closed.
 
 New Relic provides templates for configuring different types of workflow notifications, including email, Slack, PagerDuty, webhooks, and more.
 
