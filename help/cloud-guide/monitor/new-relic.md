@@ -139,10 +139,10 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
    - Change to the environment that needs the license key.
 
-   - Set the variable using the following `magento-cloud` CLI command:
+   - Update the variable value using the following `magento-cloud` CLI command:
 
       ```bash
-      magento-cloud variable:set php:newrelic.license <newrelic-license-key>
+      magento-cloud variable:update php:newrelic.license --value <newrelic-license-key>
       ```
 
 1. [Log in to New Relic][New Relic login] to verify that you can view data from the Adobe Commerce environment. See [Investigate performance](#investigate-performance).
