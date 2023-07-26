@@ -87,7 +87,7 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 
 1. Click the **+** to add a server configuration. The project name is in gray at the top.
 
-1. [Optional] Configure the following settings for the new server configuration. For more details refer to [PHPStorm documentation](https://www.jetbrains.com/help/phpstorm/troubleshooting-php-debugging.html#no-debug-server-is-configured)
+1. [Optional] Configure the following settings for the new server configuration. See [No debug server configured](https://www.jetbrains.com/help/phpstorm/troubleshooting-php-debugging.html#no-debug-server-is-configured) in the _PHPStorm_ documentation.
 
    -  **Name**—enter the same as the hostname. This value must match the value for the `PHP_IDE_CONFIG` variable in [Debug CLI commands](#debug-cli-commands) to use CLI for debugging.
    -  **Host**—enter the same as the hostname.
