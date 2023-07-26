@@ -261,7 +261,7 @@ You need the following:
    ssh USERNAME@CLUSTER.ent.magento.cloud 'rm /run/platform/USERNAME/xdebug.sock'
    ```
 
-1. Set up the SSH tunnel for Xdebug for each web nodes of the cluster.
+1. Set up the SSH tunnel for Xdebug for each web node of the cluster.
 
    ```bash
    ssh -R /run/platform/USERNAME/xdebug.sock:localhost:9000 -N USERNAME@CLUSTER.ent.magento.cloud
