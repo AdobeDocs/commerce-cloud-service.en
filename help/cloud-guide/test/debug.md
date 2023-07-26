@@ -80,7 +80,7 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 
 1. In your PhpStorm project, open the **Settings** panel.
 
-   -  _macOS X_—Select **PhpStorm** > **Preferences**.
+   -  _macOS_—Select **PhpStorm** > **Preferences**.
    -  _Windows/Linux_—Select **File** > **Settings**.
 
 1. In the _Settings_ panel, expand and locate the **Languages & Frameworks** > **PHP** > **Servers** section.
@@ -89,8 +89,8 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 
 1. [Optional] Configure the following settings for the new server configuration. See [No debug server configured](https://www.jetbrains.com/help/phpstorm/troubleshooting-php-debugging.html#no-debug-server-is-configured) in the _PHPStorm_ documentation.
 
-   -  **Name**—enter the same as the hostname. This value must match the value for the `PHP_IDE_CONFIG` variable in [Debug CLI commands](#debug-cli-commands) to use CLI for debugging.
-   -  **Host**—enter the hostname.
+   -  **Name**—Enter the same as the hostname. This value must match the value for the `PHP_IDE_CONFIG` variable in [Debug CLI commands](#debug-cli-commands) to use CLI for debugging.
+   -  **Host**—Enter the hostname.
    -  **Port**—Enter `443`.
    -  **Debugger**—Select `Xdebug`.
 
