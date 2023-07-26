@@ -89,7 +89,7 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 
 1. [Optional] Configure the following settings for the new server configuration. For more details refer to [PHPStorm documentation](https://www.jetbrains.com/help/phpstorm/troubleshooting-php-debugging.html#no-debug-server-is-configured)
 
-   -  **Name**—enter the same as the hostname. For CLI debigging This value is used in and must match the value for `PHP_IDE_CONFIG` variable in [Debug CLI commands](#debug-cli-commands).
+   -  **Name**—enter the same as the hostname. This value must match the value for the `PHP_IDE_CONFIG` variable in [Debug CLI commands](#debug-cli-commands) to use CLI for debugging.
    -  **Host**—enter the same as the hostname.
    -  **Port**—Enter `443`.
    -  **Debugger**—Select `Xdebug`.
