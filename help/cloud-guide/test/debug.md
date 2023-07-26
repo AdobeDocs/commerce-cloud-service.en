@@ -255,7 +255,7 @@ You need the following:
 
 1. Open a terminal.
 
-1. Clean up all SSH sessions for each web nodes of the cluster.
+1. Clean up all SSH sessions for each web node of the cluster.
 
    ```bash
    ssh USERNAME@CLUSTER.ent.magento.cloud 'rm /run/platform/USERNAME/xdebug.sock'
