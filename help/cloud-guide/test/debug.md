@@ -87,11 +87,11 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 
 1. Click the **+** to add a server configuration. The project name is in gray at the top.
 
-1. Configure the following settings for the new server configuration:
+1. [Optional] Configure the following settings for the new server configuration. For more details refer to [PHPStorm documentation](https://www.jetbrains.com/help/phpstorm/troubleshooting-php-debugging.html#no-debug-server-is-configured)
 
-   -  **Name**—enter the same as the hostname. This value is used in and must match the value for `PHP_IDE_CONFIG` variable in [Debug CLI commands](#debug-cli-commands).
-   -  **Host**—Enter `localhost`.
-   -  **Port**—Enter `80`.
+   -  **Name**—enter the same as the hostname. For CLI debigging This value is used in and must match the value for `PHP_IDE_CONFIG` variable in [Debug CLI commands](#debug-cli-commands).
+   -  **Host**—enter the same as the hostname.
+   -  **Port**—Enter `443`.
    -  **Debugger**—Select `Xdebug`.
 
 1. Select **Use path mappings**. In the _File/Directory_ pane, the root of the project for the `serverName` displays.
@@ -255,13 +255,13 @@ You need the following:
 
 1. Open a terminal.
 
-1. Clean up all SSH sessions.
+1. Clean up all SSH sessions for each web nodes of the cluster.
 
    ```bash
    ssh USERNAME@CLUSTER.ent.magento.cloud 'rm /run/platform/USERNAME/xdebug.sock'
    ```
 
-1. Set up the SSH tunnel for Xdebug.
+1. Set up the SSH tunnel for Xdebug for each web nodes of the cluster.
 
    ```bash
    ssh -R /run/platform/USERNAME/xdebug.sock:localhost:9000 -N USERNAME@CLUSTER.ent.magento.cloud
