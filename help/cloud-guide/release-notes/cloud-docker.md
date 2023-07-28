@@ -18,7 +18,14 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.3.5 {#latest}
+## v1.3.6 {#latest}
+
+Release date: July 31, 2023
+
+-  ![new icon](../../assets/new.svg) **Added new service version**—OpenSearch 2.5.
+-  ![new icon](../../assets/fix.svg) **Composer cache**—Added a new flag to clear Composer cache.
+
+## v1.3.5
 
 Release date: March 10, 2023
 

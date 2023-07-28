@@ -21,7 +21,16 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.1.14 {#latest}
+## v2002.1.15 {#latest}
+
+Release date: July 31, 2023
+
+-  ![fix icon](../../assets/fix.svg) **Error codes**—Updated error code schema and error code document generator.
+-  ![fix icon](../../assets/fix.svg) **Validator for custom Redis model**-Updated the validator for custom Redis backend models.
+-  ![fix icon](../../assets/fix.svg) **Validator for RabbitMQ**-Added support for RabbitMQ 3.11
+-  ![fix icon](../../assets/fix.svg) **Fixed the wrong link**-Fixed the wrong link to the onboarding documentation in the welcome email template.
+
+## v2002.1.14
 
 Release date: March 10, 2023
 

@@ -23,7 +23,13 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.22 {#latest}
+## v1.0.23 {#latest}
+
+Release date: July 31, 2023
+
+-  **Removed the patch MCLOUD-10604**-This patch was moved to QPT.<!-- MCLOUD-10736 -->
+
+## v1.0.22
 
 Release date: June 19, 2023
 
