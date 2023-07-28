@@ -32,7 +32,7 @@ Use the following environment variable to secure access to your Admin UI. If spe
 
 Adobe recommends changing the environment-level variable for the Admin URL after installation. Configure this setting for security reasons before branching from the cloned `master` environment. All branches created from the `master` branch inherit the environment-level variables and their values.
 
-Use the `magento-cloud variable:update` command to update the URL. For example, to update the variable value to `newAdmin_A8v10`, use:
+Use the `magento-cloud variable:update` command to update the variable value. (The `variable:set` command has been deprecated and is not available.) The following example updates the ADMIN_URL to `newAdmin_A8v10`:
 
 ```bash
 magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master
