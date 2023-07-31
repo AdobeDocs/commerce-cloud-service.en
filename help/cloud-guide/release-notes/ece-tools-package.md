@@ -27,7 +27,7 @@ The release notes include:
 Release date: July 31, 2023
 
 -  ![fix icon](../../assets/fix.svg) **Error codes**—Updated error code schema and error code document generator.
--  ![fix icon](../../assets/fix.svg) **Validator for custom Redis model**-Updated the validator for custom Redis backend models. [The example for cache configuration](../environment/variables-deploy.md#cache_configuration).
+-  ![fix icon](../../assets/fix.svg) **Validator for custom Redis model**-Updated the validator for custom Redis backend models. [See the example for cache configuration](../environment/variables-deploy.md#cache_configuration).
 -  ![fix icon](../../assets/fix.svg) **Validator for RabbitMQ**-Added support for RabbitMQ 3.11
 -  ![fix icon](../../assets/fix.svg) **Fixed the wrong link**-Fixed the wrong link to the onboarding documentation in the welcome email template.
 
