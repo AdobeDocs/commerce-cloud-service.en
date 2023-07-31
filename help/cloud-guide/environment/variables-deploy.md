@@ -75,6 +75,18 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
+To use a custom [REDIS_BACKEND](#redis_backend) model (not only from the allowed list), set the `_custom_redis_backend` option  to `true` to enable the correct validation as in the following example:
+
+```yaml
+stage:
+  deploy:
+    CACHE_CONFIGURATION:
+      frontend:
+        default:
+          _custom_redis_backend: true
+          backend: '\CustomRedisModel'
+```
+
 ## `CLEAN_STATIC_FILES`
 
 -  **Default**—`true`

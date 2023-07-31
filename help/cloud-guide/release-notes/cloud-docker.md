@@ -3,6 +3,7 @@ title: Cloud Docker package
 description: See a list of the latest improvements to the Cloud Docker package.
 feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
+last-substantial-update: 2023-07-31
 exl-id: 907d977f-2e9c-4553-a46b-000bc6a57b28
 ---
 # Cloud Docker package
@@ -18,7 +19,14 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.3.5 {#latest}
+## v1.3.6 {#latest}
+
+Release date: July 31, 2023
+
+-  ![new icon](../../assets/new.svg) **Added new service version**—OpenSearch 2.5.
+-  ![new icon](../../assets/new.svg) **Enable Composer cache**—Now you can extend the Docker configuration to enable Composer clear cache when starting the Docker container. See [Extend the Docker configuration](https://developer.adobe.com/commerce/cloud-tools/docker/configure/extend-docker-configuration/) in the _Cloud Docker for Commerce_ guide.
+
+## v1.3.5
 
 Release date: March 10, 2023
 

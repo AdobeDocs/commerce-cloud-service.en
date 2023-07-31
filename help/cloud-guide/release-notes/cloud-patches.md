@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2023-06-19
+last-substantial-update: 2023-07-31
 exl-id: ae6b511b-a37d-4776-9a5e-ad7d9f9f6611
 ---
 # Cloud Patches for Commerce
@@ -23,7 +23,13 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.22 {#latest}
+## v1.0.23 {#latest}
+
+Release date: July 31, 2023
+
+-  **Removed the patch MCLOUD-10604**-This patch was moved to QPT.<!-- MCLOUD-10736 -->
+
+## v1.0.22
 
 Release date: June 19, 2023
 
