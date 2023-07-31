@@ -23,7 +23,7 @@ The release notes include:
 Release date: July 31, 2023
 
 -  ![new icon](../../assets/new.svg) **Added new service version**—OpenSearch 2.5.
--  ![new icon](../../assets/fix.svg) **Composer cache**—Added a new flag to clear Composer cache.
+-  ![new icon](../../assets/new.svg) **Enable Composer cache**—Now you can extend the Docker configuration to enable Composer clear cache when starting the Docker container. See [Extend the Docker configuration](https://developer.adobe.com/commerce/cloud-tools/docker/configure/extend-docker-configuration/) in the _Cloud Docker for Commerce_ guide.
 
 ## v1.3.5
 
