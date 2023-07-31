@@ -75,7 +75,7 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-If you need to use own custom [REDIS_BACKEND](#redis_backend) (not only form the allowed list) model set the flag `_custom_redis_backend` as in the example to have a correct validation process:
+To use a custom [REDIS_BACKEND](#redis_backend) model (not only from the allowed list), set the `_custom_redis_backend` option  to `true` to enable the correct validation as in the following example:
 
 ```yaml
 stage:
