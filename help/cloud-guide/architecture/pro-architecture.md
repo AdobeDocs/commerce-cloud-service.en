@@ -158,15 +158,15 @@ Because of the unique, redundant hardware, Adobe can provide three gateway serve
 
 Adobe Commerce on cloud infrastructure uses a high-availability architecture that replicates each Pro project on three separate AWS or Azure Availability Zones, each zone with a separate data center. In addition to this redundancy, Pro Staging and Production environments receive regular, live backups that are designed to use in cases of _catastrophic failure_.
 
-Automatic backups include persistent data from all running services, such as the MySQL database and files stored on the mounted volumes. The backups are saved to encrypted Elastic Block Storage (EBS) in the same region as the Production environment. The automatic backups are not publicly accessible because they are stored in a separate system. You can [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a special backup or to restore from a specific backup noting the date, time, and timezone in the ticket.
+**Automatic backups** include persistent data from all running services, such as the MySQL database and files stored on the mounted volumes. The backups are saved to encrypted Elastic Block Storage (EBS) in the same region as the Production environment. The automatic backups are not publicly accessible because they are stored in a separate system.
+
+{{pro-backups}}
+
+You can create a **manual backup** of the database for your Production and Staging environments using CLI commands. See [Dump your database](../storage/database-dump.md). For integration environments, Adobe recommends creating a snapshot as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Snapshots and backup management](../storage/snapshots.md).
 
 ### Recovery Point Objective
 
 RPO is six hours maximum time to last backup (for example at 06:00, then 12:00, then 18:00). The frequency of backups depends on the backup schedule of your plan and the volume of changes to write to the storage service.
-
->[!TIP]
->
->You can create a manual backup of the database for your Production and Staging environments using CLI commands. See [Dump your database](../storage/database-dump.md). For integration environments, Adobe recommends creating a snapshot as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Snapshots and backup management](../storage/snapshots.md).
 
 ### Retention policy
 
@@ -190,11 +190,7 @@ RTO depends on the size of the storage. Large EBS volumes take more time to rest
 - medium database (150 GB) can take 2 1/2 hours
 - small database (60 GB) can take 1 hour
 
->[!TIP]
->
->On Pro Staging and Production environments, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to retrieve a snapshot. 
->
->Adobe does **not** restore any environments from an automatic backup. See [Restore a DB snapshot from Staging or Production](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html) for help choosing a method to restore a Staging or Production snapshot.
+{{pro-backups}}
 
 ## Pro cluster scaling
 
