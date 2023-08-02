@@ -56,8 +56,8 @@ Adobe and Fastly manage the update process to ensure that new or modified WAF ru
 
 The standard WAF service powered by Fastly does not support the following features:
 
-- Protection against malware or bot mitigation—Consider using [access control lists](./fastly-vcl-allowlist.md) or a third-party service such as DataDome.
-- Rate limiting—See [Rate Limiting](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) limited guidance in the Fastly documentation, or see [Rate limiting](https://developer.adobe.com/commerce/webapi/get-started/rate-limiting/) in the _Commerce Web API_ security section.
+- Protection against malware or bot mitigation—Consider using [access control lists](./fastly-vcl-allowlist.md) or a third-party service.
+- Rate limiting—See [Rate Limiting](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) in the Fastly documentation, or see [Rate limiting](https://developer.adobe.com/commerce/webapi/get-started/rate-limiting/) in the _Commerce Web API_ security section.
 - Configuring a logging endpoint for customer—See [PrivateLink service](../development/privatelink-service.md) as an alternative.
 
 Although the WAF service does not allow you to block or allow traffic based on IP addresses, you can add access control lists (ACL) and custom VCL snippets to your Fastly service to specify the IP addresses and VCL logic for blocking or allowing traffic. See [Custom Fastly VCL snippets](fastly-vcl-custom-snippets.md).
