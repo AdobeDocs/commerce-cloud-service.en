@@ -162,7 +162,7 @@ Adobe Commerce on cloud infrastructure uses a high-availability architecture tha
 
 {{pro-backups}}
 
-You can create a **manual backup** of the database for your Production and Staging environments using CLI commands. See [Dump your database](../storage/database-dump.md). For integration environments, Adobe recommends creating a snapshot as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Snapshots and backup management](../storage/snapshots.md).
+You can create a **manual backup** of the database for your Production and Staging environments using CLI commands. See [Back up the database](../storage/database-dump.md). For integration environments, Adobe recommends creating a snapshot as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Snapshots and backup management](../storage/snapshots.md).
 
 ### Recovery Point Objective
 
