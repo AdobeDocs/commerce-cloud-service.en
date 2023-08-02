@@ -39,6 +39,14 @@ Set the `_merge` option to one of the following:
 >
 >For Pro projects, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. For changes to a live Production environment, you must provide a minimum of 48 hours notice. It can take up to 48 hours for the Cloud infrastructure team to update your project.
 
+## Pro backups {#pro-backups}
+
+>[!TIP]
+>
+>On Pro Staging and Production environments, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to retrieve a specific backup noting the date, time, and timezone in the ticket.
+>
+>Adobe does **not** restore any environments from an automatic backup. See [Restore a DB snapshot from Staging or Production](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html) for help choosing a method to restore a Staging or Production snapshot.
+
 ## Redeploy warning {#redeploy-warning}
 
 >[!WARNING]
