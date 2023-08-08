@@ -250,7 +250,7 @@ We recommend creating a backup of your project before an upgrade. Use the follow
 
 1. Use SSH to log in to the remote environment.
 
-1. Create a database dump. To choose a target directory for the DB dump, use the `--dump-directory` option.
+1. Create a [database dump](../storage/database-dump.md). To choose a target directory for the DB dump, use the `--dump-directory` option.
 
    ```bash
    vendor/bin/ece-tools db-dump

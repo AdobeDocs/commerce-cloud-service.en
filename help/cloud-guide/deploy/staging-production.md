@@ -132,7 +132,7 @@ The Cloud CLI provides commands to deploy code. You need SSH and Git access to y
 
 ## Migrate static files
 
-[Static files](https://glossary.magento.com/static-files) are stored in `mounts`. There are two methods for migrating files from a source mount location, such as your local environment, to a destination mount location. Both methods use the `rsync` utility, but Adobe recommends using the `magento-cloud` CLI for moving files between the local and remote environment. And Adobe recommends using the `rsync` method when moving files from a remote source to a different remote location.
+[Static files](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html) are stored in `mounts`. There are two methods for migrating files from a source mount location, such as your local environment, to a destination mount location. Both methods use the `rsync` utility, but Adobe recommends using the `magento-cloud` CLI for moving files between the local and remote environment. And Adobe recommends using the `rsync` method when moving files from a remote source to a different remote location.
 
 ### Migrate files using the CLI
 
@@ -269,8 +269,12 @@ It is a best practice to create a backup of the database. The following procedur
    For Starter environments and Pro Integration environments, use `main` as the name of the database:
 
    ```bash
-   php vendor/bin/ece-tools db-dump -- main
+   php vendor/bin/ece-tools db-dump main
    ```
+
+   Dump options:
+   - `--dump-directory=<dir>`—Choose a target directory for the database dump
+   - `--remove-definers`—Remove DEFINER statements from the database dump
 
 1. Though the Ece-tools method is preferred, another method is to create a database dump file using native MySQL in GZIP format.
 

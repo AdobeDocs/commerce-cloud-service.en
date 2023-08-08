@@ -18,10 +18,13 @@ Consider the following guidelines for DB dump:
 You can choose to back up multiple databases by appending the database names to the command. The following example backs up two databases: `main` and `sales`:
 
 ```bash
-php vendor/bin/ece-tools db-dump -- main sales
+php vendor/bin/ece-tools db-dump main sales
 ```
 
-Use the `php vendor/bin/ece-tools db-dump --help` command for more options.
+Use the `php vendor/bin/ece-tools db-dump --help` command for more options:
+
+- `--dump-directory=<dir>`—Choose a target directory for the database dump
+- `--remove-definers`—Remove DEFINER statements from the database dump
 
 **To create a database dump in the Staging or Production environment**:
 
