@@ -15,7 +15,7 @@ The [web tier](scaled-architecture.md#web-tier) scales to accommodate an increas
 
 An auto-scaling event occurs when CPU usage and traffic reach a predefined threshold:
 
-- **Nodes added**—CPUs/cores across all active web nodes are at 75% capacity for 1 minute and traffic is increasing by 20% for 5 consecutive minutes.
+- **Nodes added**—CPUs/cores across all active web nodes are at 75% capacity for 1 minute and traffic is increasing by 25% for 5 consecutive minutes.
 - **Nodes removed**—CPUs/cores across all active web nodes are loaded at 60% for 20 minutes. Nodes are removed in the order that they were added.
 
 The minimum and maximum thresholds are determined and set based on the contracted resource limits of each merchant; this reduces the risk of infinite scaling.
