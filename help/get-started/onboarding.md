@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Onboarding] to Commerce'
-description: Use your credentials to access Commerce console and set up an Adobe Commerce on cloud infrastructure project.
+description: Access your cloud account and set up an Adobe Commerce on cloud infrastructure project.
 role: Admin
 exl-id: c6b768d7-d835-4a8d-aad9-1c0324f7570d
 ---
@@ -91,9 +91,11 @@ Anyone working on your project can subscribe to the Adobe Commerce on cloud infr
 
 >[!TIP]
 >
->View the [Commerce on Cloud Infrastructure user guide](../cloud-guide/overview.md).
+>Learn about the Cloud project UI.
+>
+>**Next step**: [Project console](project-console.md)
 
-<!--Link references-->
+<!-- link definitions -->
 
 [Sales]: https://business.adobe.com/products/magento/get-demo.html
 [Shared Access]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access
