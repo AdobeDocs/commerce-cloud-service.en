@@ -51,7 +51,7 @@ For redirected paths, the log reports the path of the redirect target instead of
 -  **Default**—_Not set_
 -  **Version**—Adobe Commerce 2.1.4 and later
 
-Specify the number of concurrent requests to send during cache warmup operations to reduce server load. This value limits the number of parallel connections and is useful for environment configurations where the `WARM_UP_PAGES` post-deploy variable specifies a large number of pages for cache preloading.
+Specify the limit of simultaneous requests to send during cache warmup operations to reduce server load. This value limits the number of parallel connections and is useful for environment configurations where the `WARM_UP_PAGES` post-deploy variable specifies several pages for cache preloading.
 
 ```yaml
 stage:
