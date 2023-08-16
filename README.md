@@ -1,8 +1,13 @@
 # Adobe Commerce on Cloud Infrastructure
 
+This site contains the latest developer documentation for Commerce on Cloud Infrastructure.
+
+- [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html)
+- [Get Started with Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/start/overview.html) on Cloud infrastructure
+
 ## Adobe Open Source Code of Conduct
 
-This project has adopted the [Adobe Open Source Code of Conduct](code-of-conduct.md) or the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/about/code-of-conduct).
+This project has adopted the [Adobe Open Source Code of Conduct](code-of-conduct.md) or the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/about/policies/code-of-conduct).
 See the [Contributing](contributing.md) article.
 
 ### Minor changes
@@ -29,7 +34,7 @@ See the [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/c
 
 All the articles in this repository use GitHub flavored markdown. If you are not familiar with markdown, see:
 
-- [Markdown basics](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [Markdown basics](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - [Printable markdown cheatsheet](https://docs.github.com/en/get-started/quickstart/git-cheatsheet)
 
 ## Labels
