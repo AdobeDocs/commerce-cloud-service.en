@@ -14,7 +14,7 @@ Before setting up a workspace, gather the following credentials and accounts:
 
 - **Authentication keys (Composer keys)**
 
-  Authentication keys are 32-character authentication tokens that provide secure access to the Adobe Commerce Composer repository (repo.magento.com), and any other Git services required for application development such as GitHub. Your account can have multiple authentication keys. For the workspace setup, start with one specific key for your code repository. If you do not have any keys, contact the Account Owner to create them, or create the [authentication keys](authentication-keys.md) yourself.
+  Authentication keys are 32-character authentication tokens that provide secure access to the Adobe Commerce Composer repository (repo.magento.com), and any other Git services required for application development such as GitHub. Your account can have multiple authentication keys. For the workspace setup, start with one specific key for your code repository. If you do not have any keys, contact the Account Owner to create them, or create the [authentication keys](../cloud-guide/development/authentication-keys.md) yourself.
 
 - **Cloud Project account**
 
@@ -26,14 +26,15 @@ Before setting up a workspace, gather the following credentials and accounts:
 
 ## Launch a Docker environment
 
-You can use the Docker environment to emulate the Adobe Commerce on cloud infrastructure Integration environment for local development. You need three essential components: an Adobe Commerce v2 template, Docker Compose, and Adobe Commerce on cloud infrastructure `ece-tools` package.
+You can use the Docker environment to emulate the Commerce on cloud infrastructure `integration` environment for local development. You need three essential components: an Adobe Commerce v2 template, Docker Compose, and `ece-tools` package.
 
-- [Docker architecture and common commands](../dev-tools/cloud-docker.md)
+- [Docker architecture and common commands](../cloud-guide/dev-tools/cloud-docker.md)
 - [Launch Docker development environment](https://developer.adobe.com/commerce/cloud-tools/docker/setup/)
+- [ECE-Tools package](../cloud-guide/dev-tools/package-overview.md)
 
->[!TIP]
->
->For information about using Git-based hosting services with Adobe Commerce on cloud infrastructure, see [Integrations](../integrations/overview.md).
+### Git-based services
+
+For information about using Git-based hosting services with Adobe Commerce on cloud infrastructure, see [Integrations](../cloud-guide/integrations/overview.md).
 
 >[!TIP]
 >
