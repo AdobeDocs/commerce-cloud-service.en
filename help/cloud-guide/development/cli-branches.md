@@ -77,8 +77,6 @@ The following instructions use a combination of `magento-cloud` CLI commands and
 >
 >See [Integrations](../integrations/overview.md) for information about using Git-based hosting services with Adobe Commerce on cloud infrastructure.
 
-
-
 ## Create a branch for development
 
 After cloning your project and updating the Adobe Commerce administrator account configuration, you can branch for development. As stated earlier, you must create an environment using the `magento-cloud environment:branch <branch-name>` command or the Project Web Interface for the environment to become _active_.
