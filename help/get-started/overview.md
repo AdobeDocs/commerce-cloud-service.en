@@ -10,7 +10,7 @@ Welcome to Adobe Commerce!
 
 Getting Started steps you through procedures to initialize your Commerce account and access the Cloud console UI. The _Next step_ link at the bottom of each topic opens the next concept and procedure. Each topic builds on the previous topics with new tasks and learning links.
 
-This guide assumes that you have some working knowledge and understanding of the Commerce application powered by Magento. You can refer to the latest Commerce Developer and Commerce User guides:
+This guide assumes that you have some working knowledge and understanding of the Commerce application. You can refer to the latest Commerce Developer and Commerce User guides:
 
 - [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/) (Adobe Developer site)—Develop, customize, integrate, extend, and use advanced capabilities 
 
