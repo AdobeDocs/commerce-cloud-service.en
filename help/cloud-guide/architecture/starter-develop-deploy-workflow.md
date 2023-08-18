@@ -8,7 +8,7 @@ exl-id: f334047a-1e0d-45c7-bf96-5c2964741951
 
 The Adobe Commerce on cloud infrastructure includes a single Git repository with a `master` branch for the Production environment that can be branched to create Staging and Integration environments for testing and development work. You can have up to four active environments, including a `master` environment for your production server. See [Starter architecture](starter-architecture.md) for an overview.
 
-For your environments, we recommend following a Development > Staging > Production workflow to develop and deploy your site.
+For your environments, follow the Development > Staging > Production workflow to develop and deploy your site.
 
 -  **Production environment (live site)**—Provides a full Production environment with all services built and deployed from the code on the `master` branch.
 -  **Staging environment**—Provides a full Staging environment that matches the Production environment with all services built and deployed from a `staging` branch that you create by cloning from `master`.
@@ -41,7 +41,7 @@ This process assumes that you have set up your [local developer workspace](../de
 
 ### Clone and branch
 
-For a new Starter Plan project, a `master` branch was cloned from the Adobe Commerce on cloud infrastructure Git repository. To start branching and working with code, you need to clone the `master` branch to your local environment.
+For a new Starter Plan project, a `master` branch was cloned from the Adobe Commerce on cloud infrastructure Git repository. To start branching and working with code, clone the `master` branch to your local environment.
 
 The format of the Git clone command is:
 
@@ -53,9 +53,9 @@ git fetch origin
 git pull origin <environment-ID>
 ```
 
-The first time you start working in branches for your Starter project, you need to create a `staging` branch. This creates a code branch matching the `master` branch that deploys to a Staging environment to test configuration and code changes before deploying to the Production environment.
+The first time you start working in branches for your Starter project, create a `staging` branch. This creates a code branch matching the `master` branch that deploys to a Staging environment to test configuration and code changes before deploying to the Production environment.
 
-Next, create branches from `staging` to develop code, add extensions, and configure third-party integrations. Anytime you need to develop custom code, add extensions, integrate with a third-party service, work in a development branch created from the `staging` branch. You have four active Integration environments available. When you push an active branch, one of these Integration environments automatically deploys your code to test.
+Next, create branches from `staging` to develop code, add extensions, and configure third-party integrations. Anytime you develop custom code, add extensions, integrate with a third-party service, work in a development branch created from the `staging` branch. You have four active Integration environments available. When you push an active branch, one of these Integration environments automatically deploys your code to test.
 
 The format of the Git branch command is:
 
@@ -75,7 +75,7 @@ magento-cloud environment:branch <environment-name> <parent-environment-ID>
 
 Using this base branch of Adobe Commerce on cloud infrastructure code, you can start installing extensions, developing custom code, adding themes, and much more.
 
-We recommend using a branching strategy with your development work. Using one branch to do all of your work all at once might make testing difficult. For example, you could follow continuous integration and sprint methodologies to work:
+Use a branching strategy with your development work. Using one branch to do all of your work all at once might make testing difficult. For example, you could follow continuous integration and sprint methodologies to work:
 
 -  Add a few extensions and configure them with your first branch
 -  Push this code, test, and merge to Staging then Production

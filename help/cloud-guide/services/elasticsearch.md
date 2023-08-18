@@ -214,8 +214,8 @@ elasticsearch:
             - analysis-phonetic
 ```
 
-If you use the ElasticSuite third-party plugin, you must [update the `ece-tools` package](../dev-tools/update-package.md) to version 2002.0.19 or later.
-When setting up ElasticSuite, add the configuration settings to the `ELASTICSUITE_CONFIGURATION` deploy variable. This configuration saves the settings across deployments.
+If you use the Elastic Suite third-party plugin, you must [update the `ece-tools` package](../dev-tools/update-package.md) to version 2002.0.19 or later.
+When setting up Elastic Suite, add the configuration settings to the `ELASTICSUITE_CONFIGURATION` deploy variable. This configuration saves the settings across deployments.
 
 ### Remove plugins for Elasticsearch
 
@@ -253,7 +253,7 @@ Removing the plugin entries from `elasticsearch:` in `.magento/services.yaml` do
 
 >[!TIP]
 >
->For details on using or troubleshooting the Elasticsuite plugin with Adobe Commerce, see the [Elasticsuite documentation](https://github.com/Smile-SA/elasticsuite).
+>For details on using or troubleshooting the Elastic Suite plugin with Adobe Commerce, see the [Elastic Suite documentation](https://github.com/Smile-SA/elasticsuite).
 
 ## Troubleshooting
 
