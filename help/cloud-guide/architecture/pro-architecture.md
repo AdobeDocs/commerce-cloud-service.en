@@ -194,7 +194,7 @@ RTO depends on the size of the storage. Large EBS volumes take more time to rest
 
 ## Pro cluster scaling
 
-Compute configurations vary depending on the chosen cloud provider (AWS, Azure), region, and other dependencies. Adobe cloud infrastructure can scale Pro clusters to accommodate traffic expectations and service requirements as your needs change.
+The Pro cluster sizing and compute configurations vary depending on the chosen cloud provider (AWS, Azure), region, and service dependencies. Adobe cloud infrastructure can scale Pro clusters to accommodate traffic expectations and service requirements as demands change.
 
 The redundant architecture empowers Adobe cloud infrastructure to upscale without downtime. When upscaling, each of the three instances rotates to upgrade capacity without impacting site operation. For example, you can add extra web servers to an existing cluster should the constriction be at the PHP level rather than the database level. This provides _horizontal scaling_ to complement the vertical scaling provided by extra CPUs on the database level. See [Scaled architecture](scaled-architecture.md).
 
