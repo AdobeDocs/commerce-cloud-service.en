@@ -194,14 +194,8 @@ RTO depends on the size of the storage. Large EBS volumes take more time to rest
 
 ## Pro cluster scaling
 
-Adobe Commerce can scale from the smallest Pro12 cluster to the largest Pro120 cluster.
+The Pro cluster sizing and compute configurations vary depending on the chosen cloud provider (AWS, Azure), region, and service dependencies. Adobe cloud infrastructure can scale Pro clusters to accommodate traffic expectations and service requirements as demands change.
 
-- Pro12 offers a 12-CPU (4 x 3 nodes) and 48-GB RAM (16 x 3 nodes)
-
-- Pro120 offers 120 CPU (40 x 3 nodes) up to 480-GB RAM (160 x 3 nodes)
-
-Because of the redundant architecture, Adobe can offer to upscale without downtime. When upscaling, each of the three instances rotates to upgrade capacity without impacting site operation.
-
-For example, you can add extra web servers to an existing cluster should the constriction be at the PHP level rather than the database level. This provides _horizontal scaling_ to complement the vertical scaling provided by extra CPUs on the database level. See [Scaled architecture](scaled-architecture.md).
+The redundant architecture empowers Adobe cloud infrastructure to upscale without downtime. When upscaling, each of the three instances rotates to upgrade capacity without impacting site operation. For example, you can add extra web servers to an existing cluster should the constriction be at the PHP level rather than the database level. This provides _horizontal scaling_ to complement the vertical scaling provided by extra CPUs on the database level. See [Scaled architecture](scaled-architecture.md).
 
 If you expect a significant increase in traffic for an event or other reason, you can request a temporary increase in capacity. See [How to request temporary upsize](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) in the _Commerce Help Center_.
