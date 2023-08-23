@@ -13,6 +13,8 @@ You can use the following services to monitor performance of your cloud environm
 
 - **[New Relic services for performance monitoring](new-relic.md)**–Monitor application performance on Staging and Production environments using the New Relic Application Performance Monitoring service. Additionally, on Pro Production environments, you can also use New Relic Infrastructure (NRI) for dynamic server monitoring.
 
+- **[Observation for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)**–Comprehensive monitoring for all Commerce sites that combines log data from multiple sources to help you better manage your Adobe Commerce site performance and diagnose issues.
+
 ## Managed Alerts
 
 The [Managed Alerts policy](new-relic.md#monitor-performance-with-managed-alerts) tracks performance metrics. Based on industry best practices, the policy includes a collection of alerts that set thresholds to trigger warning and critical notifications when site infrastructure or application issues affect performance.
