@@ -5,7 +5,7 @@ feature: Cloud, Observability
 role: Admin
 ---
 
-# Manage New Relic account
+# New Relic account management
 
 When Adobe provisions your cloud infrastructure project, the License Owner receives an email from New Relic with credentials and instructions for accessing the New Relic account. If you did not receive the email, use the License Owner email address to reset the New Relic password.
 
@@ -40,7 +40,7 @@ Add at least one **Admin** user to your New Relic account that can manage all ac
 
 See [User management](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-management-ui-and-tasks/) in the _New Relic_ documentation.
 
-## Enable and connect New Relic service
+## Configure New Relic for Starter environment
 
 >[!NOTE]
 >
@@ -56,13 +56,13 @@ runtime:
         - newrelic
 ```
 
-### Apply license key to a Starter environment
+### Apply license key
 
 To connect a Cloud environment to New Relic, add the New Relic license key to the environment.
 
-- For Pro projects, Adobe adds the license key to your Cloud environments during the provisioning process. You can log in to your [New Relic account](https://login.newrelic.com/login) to verify connectivity between your Adobe Commerce on cloud infrastructure site and New Relic.
+- For **Pro projects**, Adobe adds the license key to your Cloud environments during the provisioning process. You can log in to your [New Relic account](https://login.newrelic.com/login) to verify connectivity between your Adobe Commerce on cloud infrastructure site and New Relic.
 
-- For Starter projects, you have a New Relic license key that supports up to **three** environments. You must add the key to your environment configurations manually. The license key is not pre-provisioned on Starter environments.
+- For **Starter projects**, you have a New Relic license key that supports up to _three_ environments. You must add the key to your environment configurations manually. Starter environments are not pre-provisioned to use the New Relic service.
 
 For Starter environments, enable the New Relic integration by adding the New Relic license key to the environment configuration. Add the key to the Staging and Production environments and one other environment of your choice. Only the New Relic license key is required for configuration. You can find information about additional configuration options in the [New Relic Reporting](https://experienceleague.adobe.com/docs/commerce-admin/config/general/new-relic-reporting.html) topic in the _Adobe Commerce User Guide_.
 
@@ -111,7 +111,7 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
 ### Remove license key from a Starter environment
 
-If three active environments use the same New Relic license key, you must remove the key from one of the environments before you can configure New Relic on a different environment. You can only use your New Relic license key on three active environments.
+You can only use your New Relic license key on three active environments. If the key is in use in three environments, you must remove the key from one of the environments before you can add it to a different environment.
 
 **To remove a license key from an environment**:
 
