@@ -42,7 +42,7 @@ Fastly provides the following services to optimize and secure content delivery o
 
 - **[Image optimization](fastly-image-optimization.md)**—Offloads image processing and resizing load to the Fastly service so that servers can process orders and conversions more efficiently.
 
-- **[Fastly CDN and WAF logs](../monitor/new-relic.md#new-relic-logs)**—For Adobe Commerce on cloud infrastructure Pro projects, you can use the New Relic Logs service to review and analyze Fastly CDN and WAF log data.
+- **[Fastly CDN and WAF logs](.../monitor/new-relic-service.md#new-relic-log-management)**—For Adobe Commerce on cloud infrastructure Pro projects, you can use the New Relic Logs service to review and analyze Fastly CDN and WAF log data.
 
 ## Fastly CDN module for Magento 2
 

@@ -234,6 +234,6 @@ Service logs are archived and saved for different periods of time, depending on 
 
 ## Log data for Pro Production and Staging
 
-On Pro Production and Staging environments, use the [New Relic Logs application](../monitor/new-relic.md#view-and-analyze-log-data) integrated with your project to manage aggregated log data from all logs associated with your Adobe Commerce on cloud infrastructure project.
+On Pro Production and Staging environments, use [New Relic log management](../monitor/new-relic-service.md#new-relic-log-management) integrated with your project to manage aggregated log data from all logs associated with your Adobe Commerce on cloud infrastructure project.
 
-The New Relic Logs application provides a centralized log management dashboard to troubleshoot and monitor Adobe Commerce on cloud infrastructure Production and Staging environments. The dashboard also provides access to log data for Fastly CDN, Image Optimization, and Web application firewall (WAF) services. See [New Relic services](../monitor/new-relic.md#view-and-analyze-log-data).
+The New Relic Logs application provides a centralized log management dashboard to troubleshoot and monitor Adobe Commerce on cloud infrastructure Production and Staging environments. The dashboard also provides access to log data for Fastly CDN, Image Optimization, and Web application firewall (WAF) services. See [New Relic services](../monitor/new-relic-service.md).

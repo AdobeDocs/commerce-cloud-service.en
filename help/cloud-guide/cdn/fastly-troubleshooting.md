@@ -8,7 +8,7 @@ exl-id: e4c47035-cbad-4838-8d44-fa5eaaac42d1
 
 Use the following information to troubleshoot and manage the Fastly CDN module for Magento 2 in your Adobe Commerce on cloud infrastructure project environments. For example, you can investigate response header values and caching behavior to resolve Fastly service and performance issues.
 
-On Pro Production and Staging environments, you can use [New Relic Logs](../monitor/new-relic.md#monitor#new-relic-logs) to view and analyze Fastly CDN and WAF log data to troubleshoot errors and performance problems.
+On Pro Production and Staging environments, you can use [New Relic logs](../monitor/new-relic-service.md#new-relic-log-management) to view and analyze Fastly CDN and WAF log data to troubleshoot errors and performance problems.
 
 >[!NOTE]
 >
