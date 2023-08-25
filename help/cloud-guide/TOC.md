@@ -167,4 +167,5 @@ level: Intermediate
         + [Dashboards](monitor/dashboards.md)
         + [Secure monitoring](monitor/secure-monitoring.md)
         + [Investigate performance](monitor/investigate-performance.md)
+        + [Log management](monitor/log-management.md)
         + [Advanced observability](monitor/advanced-observability.md)
