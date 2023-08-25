@@ -13,7 +13,7 @@ If you encounter errors on deployment or other issues when testing, check the lo
 
 The deployment log is in `/var/log/platform/<prodject-ID>/deploy.log`. The value of `<project-ID>` depends on the project ID and whether the environment is Staging or Production. For example, with a project ID of `yw1unoukjcawe`, the Staging user is `yw1unoukjcawe_stg` and the Production user is `yw1unoukjcawe`.
 
-When accessing logs in Production or Staging environments, use SSH to log in to each of the three nodes to locate the logs. Or, you can use [New Relic log management](../monitor/new-relic-service.md#new-relic-log-management) to view and query aggregated log data from all nodes. See [View logs](log-locations.md#application-logs).
+When accessing logs in Production or Staging environments, use SSH to log in to each of the three nodes to locate the logs. Or, you can use [New Relic log management](../monitor/log-management.md) to view and query aggregated log data from all nodes. See [View logs](log-locations.md#application-logs).
 
 ## Check the code base
 

@@ -17,4 +17,4 @@ You can use the following services to monitor performance of your cloud environm
 
 ## Managed Alerts
 
-The [Managed Alerts policy](new-relic.md#monitor-performance-with-managed-alerts) tracks performance metrics. Based on industry best practices, the policy includes a collection of alerts that set thresholds to trigger warning and critical notifications when site infrastructure or application issues affect performance.
+The [Managed Alerts policy](investigate-performance.md#monitor-performance-with-managed-alerts) tracks performance metrics. Based on industry best practices, the policy includes a collection of alerts that set thresholds to trigger warning and critical notifications when site infrastructure or application issues affect performance.

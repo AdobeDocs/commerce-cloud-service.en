@@ -95,7 +95,7 @@ Adobe Commerce on cloud infrastructure uses the Debian GNU/Linux operating syste
 
 -  [OpenSearch](../services/opensearch.md)
 
-In the Staging and Production environments, you use Fastly for CDN and caching. The latest version of the Fastly CDN extension installs during the initial provisioning of your project. You can upgrade the extension to get the latest bug fixes and improvements. See [Fastly CDN module for Magento 2](https://github.com/fastly/fastly-magento2). Also, you have access to [New Relic](../monitor/new-relic.md#configure-new-relic-for-starter-environments.md) for performance monitoring.
+In the Staging and Production environments, you use Fastly for CDN and caching. The latest version of the Fastly CDN extension installs during the initial provisioning of your project. You can upgrade the extension to get the latest bug fixes and improvements. See [Fastly CDN module for Magento 2](https://github.com/fastly/fastly-magento2). Also, you have access to [New Relic](../monitor/account-management.md) for performance monitoring.
 
 You use the following files to configure the software versions that you want to use in your implementation.
 

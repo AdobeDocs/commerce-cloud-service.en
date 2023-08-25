@@ -14,7 +14,7 @@ Adobe Commerce on cloud infrastructure monitors disk space usage on all applicat
 
 >[!NOTE]
 >
->On Pro Production environments, you can use the Managed alerts for Adobe Commerce alert policy for New Relic to monitor disk space. See [Monitor performance with Managed Alerts](../monitor/new-relic.md#monitor-performance-with-managed-alerts).
+>On Pro Production environments, you can use the Managed alerts for Adobe Commerce alert policy for New Relic to monitor disk space. See [Monitor performance with Managed Alerts](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts).
 
 ## Email notifications
 
