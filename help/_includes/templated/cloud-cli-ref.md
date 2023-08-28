@@ -1,9 +1,9 @@
 # magento-cloud (Adobe Commerce on cloud infrastructure)
 
 <!-- The template to render with above values -->
-**Version**: 1.43.0
+**Version**: 1.44.0
 
-This reference contains 115 commands available through the `magento-cloud` command-line tool.
+This reference contains 119 commands available through the `magento-cloud` command-line tool.
 The initial list is auto generated using the `magento-cloud list` command at Adobe Commerce on cloud infrastructure.
 
 >[!NOTE]
@@ -430,7 +430,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -475,7 +475,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Cancel an activity
 
 ```bash
-magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:cancel [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -484,16 +484,16 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 The activity ID. Defaults to the most recent cancellable activity.
    
 
-### `--type`
+### `--type`, `-t`
 
-Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
+Filter by type (when selecting a default activity). Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. &apos;%var%&apos; to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
-### `--exclude-type`
+### `--exclude-type`, `-x`
 
-Exclude by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
+Exclude by type (when selecting a default activity). Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
@@ -513,7 +513,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -558,7 +558,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 View detailed information on a single activity
 
 ```bash
-magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud activity:get [-P|--property PROPERTY] [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
 
@@ -573,23 +573,23 @@ The property to view
    
 -  Requires a value
 
-### `--type`
+### `--type`, `-t`
 
-Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
+Filter by type (when selecting a default activity). Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. &apos;%var%&apos; to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
-### `--exclude-type`
+### `--exclude-type`, `-x`
 
-Exclude by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
+Exclude by type (when selecting a default activity). Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--state`
 
-Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -622,7 +622,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -635,7 +635,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -700,14 +700,14 @@ magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [-
 
 ### `--type`, `-t`
 
-Filter activities by type If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
+Filter activities by type Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace. The first part of the activity name can be omitted, e.g. &apos;cron&apos; can select &apos;environment.cron&apos; activities. The % or * characters can be used as a wildcard, e.g. &apos;%var%&apos; to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`, `-x`
 
-Exclude activities by type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
+Exclude activities by type. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace. The first part of the activity name can be omitted, e.g. &apos;cron&apos; can exclude &apos;environment.cron&apos; activities. The % or * characters can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
@@ -727,7 +727,7 @@ Only activities created before this date will be listed
 
 ### `--state`
 
-Filter activities by state: in_progress, pending, complete, or cancelled. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter activities by state: in_progress, pending, complete, or cancelled. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -761,7 +761,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: id*, created*, description*, progress*, state*, result*, completed, environments, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id*, created*, description*, progress*, state*, result*, completed, environments, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -788,7 +788,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -833,7 +833,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Display the log for an activity
 
 ```bash
-magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -858,21 +858,21 @@ Display a timestamp next to each message
 
 ### `--type`
 
-Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
+Filter by type (when selecting a default activity). Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. &apos;%var%&apos; to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
-### `--exclude-type`
+### `--exclude-type`, `-x`
 
-Exclude by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
+Exclude by type (when selecting a default activity). Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--state`
 
-Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -912,7 +912,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -981,7 +981,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -1063,7 +1063,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -1076,7 +1076,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: name*, type*, disk, path, size (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: name*, type*, disk, path, size (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1275,7 +1275,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1765,7 +1765,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: created, domains, expires, id, issuer. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: created, domains, expires, id, issuer. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1849,7 +1849,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -1925,7 +1925,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -1938,7 +1938,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: author, date, sha, summary. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: author, date, sha, summary. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -2075,7 +2075,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -2163,7 +2163,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -2188,7 +2188,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: max, percent_used, used. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: max, percent_used, used. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -2277,7 +2277,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -2340,7 +2340,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Add a new domain to the project
 
 ```bash
-magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-r|--replace REPLACE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [--attach ATTACH] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -2369,9 +2369,9 @@ The path to the certificate chain file or files for the provided certificate
 -  Default: `[]`
 -  Requires a value
 
-### `--replace`, `-r`
+### `--attach`
 
-The production domain which this one replaces in the environment's routes (required for non-production environment domains)
+The production domain that this one replaces in the environment&apos;s routes. Required for non-production environment domains.
    
 -  Requires a value
 
@@ -2383,7 +2383,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -2460,7 +2460,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -2543,7 +2543,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -2570,7 +2570,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -2627,7 +2627,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: name*, ssl*, created_at*, registered_name, replacement_for, type, updated_at (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: name*, ssl*, created_at*, registered_name, replacement_for, type, updated_at (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -2647,7 +2647,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -2729,7 +2729,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -2814,7 +2814,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -2873,7 +2873,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Branch an environment
 
 ```bash
-magento-cloud environment:branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<id>] [<parent>]
 ```
 
 
@@ -2899,16 +2899,9 @@ The type of the new environment
    
 -  Requires a value
 
-### `--force`
-
-Create the new environment even if the branch cannot be checked out locally
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--no-clone-parent`
 
-Do not clone the parent branch's data
+Do not clone the parent environment&apos;s data
    
 -  Default: `false`
 -  Does not accept a value
@@ -2921,7 +2914,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -2938,12 +2931,6 @@ Wait for the operation to complete (default)
    
 -  Default: `false`
 -  Does not accept a value
-
-### `--identity-file`, `-i`
-
-An SSH identity (private key) to use
-   
--  Requires a value
 
 ### `--help`, `-h`
 
@@ -3042,13 +3029,13 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Delete one or more environments
 
 ```bash
-magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [--allow-delete-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
 ### `environment`
 
-The environment(s) to delete. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+The environment(s) to delete. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
    
@@ -3056,49 +3043,49 @@ The environment(s) to delete. The % or * characters may be used as a wildcard. I
 
 ### `--delete-branch`
 
-Delete Git branch(es) (inactive environments)
+Delete Git branch(es) for inactive environments, without confirmation
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-delete-branch`
 
-Do not delete Git branch(es) (inactive environments)
+Do not delete any Git branch(es) (inactive environments)
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--type`
 
-Delete all environments of a type (adding to any others selected) If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Delete all environments of a type (adding to any others selected) Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--only-type`, `-t`
 
-Only delete environment(s) of a specific type If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Only delete environments of a specific type Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude`
 
-Environment(s) not to delete. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Environment(s) not to delete. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`
 
-Environment type(s) of which not to delete If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Environment type(s) of which not to delete Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--inactive`
 
-Delete all inactive environments (adding to any others selected
+Delete all inactive environments (adding to any others selected)
    
 -  Default: `false`
 -  Does not accept a value
@@ -3106,6 +3093,13 @@ Delete all inactive environments (adding to any others selected
 ### `--merged`
 
 Delete all merged environments (adding to any others selected)
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--allow-delete-parent`
+
+Allow environments that have children to be deleted
    
 -  Default: `false`
 -  Does not accept a value
@@ -3118,7 +3112,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -3208,7 +3202,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -3304,7 +3298,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -3324,7 +3318,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -3407,7 +3401,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -3506,7 +3500,7 @@ Sort in reverse (descending) order
 
 ### `--type`
 
-Filter the list by environment type(s). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter the list by environment type(s). Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -3520,7 +3514,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: id*, title*, status*, type*, created, machine_name, updated (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id*, title*, status*, type*, created, machine_name, updated (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -3576,7 +3570,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `environment:logs`
 
-Read an environment's logs
+Read an environment&apos;s logs
 
 ```bash
 magento-cloud environment:logs [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
@@ -3610,7 +3604,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -3690,7 +3684,77 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
+   
+-  Requires a value
+
+### `--no-wait`, `-W`
+
+Do not wait for the operation to complete
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--wait`
+
+Wait for the operation to complete (default)
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--help`, `-h`
+
+Display this help message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `environment:pause`
+
+Pause an environment
+
+```bash
+magento-cloud environment:pause [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+```
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -3808,7 +3872,7 @@ Set the environment type (only used with --activate )
 
 ### `--no-clone-parent`
 
-Do not clone the parent branch's data (only used with --activate)
+Do not clone the parent branch&apos;s data (only used with --activate)
    
 -  Default: `false`
 -  Does not accept a value
@@ -3835,7 +3899,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -3897,7 +3961,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -3953,7 +4017,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `environment:relationships`
 
-Show an environment's relationships
+Show an environment&apos;s relationships
 
 ```bash
 magento-cloud environment:relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
@@ -3986,7 +4050,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -4001,6 +4065,76 @@ The remote application name
 An SSH identity (private key) to use
    
 -  Requires a value
+
+### `--help`, `-h`
+
+Display this help message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `environment:resume`
+
+Resume a paused environment
+
+```bash
+magento-cloud environment:resume [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+```
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
+   
+-  Requires a value
+
+### `--no-wait`, `-W`
+
+Do not wait for the operation to complete
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--wait`
+
+Wait for the operation to complete (default)
+   
+-  Default: `false`
+-  Does not accept a value
 
 ### `--help`, `-h`
 
@@ -4070,7 +4204,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -4173,7 +4307,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -4239,7 +4373,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `environment:synchronize`
 
-Synchronize an environment's code and/or data from its parent
+Synchronize an environment&apos;s code and/or data from its parent
 
 ```bash
 magento-cloud environment:synchronize [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
@@ -4269,7 +4403,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -4359,7 +4493,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -4422,7 +4556,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -4532,7 +4666,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -4603,14 +4737,14 @@ An integration ID. Leave blank to choose from a list.
 
 ### `--type`
 
-Filter activities by type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter activities by type. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`, `-x`
 
-Exclude activities by type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
+Exclude activities by type. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
@@ -4630,7 +4764,7 @@ Only activities created before this date will be listed
 
 ### `--state`
 
-Filter activities by state. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter activities by state. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -4657,7 +4791,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: id*, created*, description*, type*, state*, result*, completed (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id*, created*, description*, type*, state*, result*, completed (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -4815,7 +4949,7 @@ magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--bitbucket-u
 
 ### `--type`
 
-The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'httplog', 'script', 'newrelic', 'splunk', 'sumologic', 'syslog')
+The integration type (&apos;bitbucket&apos;, &apos;bitbucket_server&apos;, &apos;github&apos;, &apos;gitlab&apos;, &apos;webhook&apos;, &apos;health.email&apos;, &apos;health.pagerduty&apos;, &apos;health.slack&apos;, &apos;health.webhook&apos;, &apos;httplog&apos;, &apos;script&apos;, &apos;newrelic&apos;, &apos;splunk&apos;, &apos;sumologic&apos;, &apos;syslog&apos;)
    
 -  Requires a value
 
@@ -4863,13 +4997,13 @@ The New Relic Logs license key
 
 ### `--server-project`
 
-The project (e.g. 'namespace/repo')
+The project (e.g. &apos;namespace/repo&apos;)
    
 -  Requires a value
 
 ### `--repository`
 
-The repository to track (e.g. 'owner/repository')
+The repository to track (e.g. &apos;owner/repository&apos;)
    
 -  Requires a value
 
@@ -4917,7 +5051,7 @@ GitLab: clone data for merge requests
 
 ### `--pull-requests-clone-parent-data`
 
-Clone the parent environment's data for pull requests
+Clone the parent environment&apos;s data for pull requests
    
 -  Default: `true`
 -  Requires a value
@@ -5034,7 +5168,7 @@ The Splunk event source type
 
 ### `--protocol`
 
-Syslog transport protocol ('tcp', 'udp', 'tls')
+Syslog transport protocol (&apos;tcp&apos;, &apos;udp&apos;, &apos;tls&apos;)
    
 -  Default: `tls`
 -  Requires a value
@@ -5060,14 +5194,14 @@ Syslog facility
 
 ### `--message-format`
 
-Syslog message format ('rfc3164' or 'rfc5424')
+Syslog message format (&apos;rfc3164&apos; or &apos;rfc5424&apos;)
    
 -  Default: `rfc5424`
 -  Requires a value
 
 ### `--auth-mode`
 
-Authentication mode ('prefix' or 'structured_data')
+Authentication mode (&apos;prefix&apos; or &apos;structured_data&apos;)
    
 -  Default: `prefix`
 -  Requires a value
@@ -5247,7 +5381,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -5318,7 +5452,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: id, summary, type. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id, summary, type. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -5388,7 +5522,7 @@ The ID of the integration to update
 
 ### `--type`
 
-The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'httplog', 'script', 'newrelic', 'splunk', 'sumologic', 'syslog')
+The integration type (&apos;bitbucket&apos;, &apos;bitbucket_server&apos;, &apos;github&apos;, &apos;gitlab&apos;, &apos;webhook&apos;, &apos;health.email&apos;, &apos;health.pagerduty&apos;, &apos;health.slack&apos;, &apos;health.webhook&apos;, &apos;httplog&apos;, &apos;script&apos;, &apos;newrelic&apos;, &apos;splunk&apos;, &apos;sumologic&apos;, &apos;syslog&apos;)
    
 -  Requires a value
 
@@ -5436,13 +5570,13 @@ The New Relic Logs license key
 
 ### `--server-project`
 
-The project (e.g. 'namespace/repo')
+The project (e.g. &apos;namespace/repo&apos;)
    
 -  Requires a value
 
 ### `--repository`
 
-The repository to track (e.g. 'owner/repository')
+The repository to track (e.g. &apos;owner/repository&apos;)
    
 -  Requires a value
 
@@ -5490,7 +5624,7 @@ GitLab: clone data for merge requests
 
 ### `--pull-requests-clone-parent-data`
 
-Clone the parent environment's data for pull requests
+Clone the parent environment&apos;s data for pull requests
    
 -  Default: `true`
 -  Requires a value
@@ -5607,7 +5741,7 @@ The Splunk event source type
 
 ### `--protocol`
 
-Syslog transport protocol ('tcp', 'udp', 'tls')
+Syslog transport protocol (&apos;tcp&apos;, &apos;udp&apos;, &apos;tls&apos;)
    
 -  Default: `tls`
 -  Requires a value
@@ -5633,14 +5767,14 @@ Syslog facility
 
 ### `--message-format`
 
-Syslog message format ('rfc3164' or 'rfc5424')
+Syslog message format (&apos;rfc3164&apos; or &apos;rfc5424&apos;)
    
 -  Default: `rfc5424`
 -  Requires a value
 
 ### `--auth-mode`
 
-Authentication mode ('prefix' or 'structured_data')
+Authentication mode (&apos;prefix&apos; or &apos;structured_data&apos;)
    
 -  Default: `prefix`
 -  Requires a value
@@ -5944,7 +6078,7 @@ magento-cloud local:dir [<subdir>]
 
 ### `subdir`
 
-The subdirectory to find ('local', 'web' or 'shared')
+The subdirectory to find (&apos;local&apos;, &apos;web&apos; or &apos;shared&apos;)
    
 
 ### `--help`, `-h`
@@ -6038,7 +6172,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -6051,7 +6185,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: timestamp*, service*, cpu_percent*, mem_percent*, disk_percent*, tmp_disk_percent*, cpu_limit, cpu_used, disk_limit, disk_used, inodes_limit, inodes_percent, inodes_used, mem_limit, mem_used, tmp_disk_limit, tmp_disk_used, tmp_inodes_limit, tmp_inodes_percent, tmp_inodes_used, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: timestamp*, service*, cpu_percent*, mem_percent*, disk_percent*, tmp_disk_percent*, cpu_limit, cpu_used, disk_limit, disk_used, inodes_limit, inodes_percent, inodes_used, mem_limit, mem_used, tmp_disk_limit, tmp_disk_used, tmp_inodes_limit, tmp_inodes_percent, tmp_inodes_used, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6161,7 +6295,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -6174,7 +6308,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6298,7 +6432,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -6311,7 +6445,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, ipercent*, tmp_percent*, ilimit, iused, tmp_ilimit, tmp_ipercent, tmp_iused, tmp_limit, tmp_used, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, ipercent*, tmp_percent*, ilimit, iused, tmp_ilimit, tmp_ipercent, tmp_iused, tmp_limit, tmp_used, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6428,7 +6562,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -6441,7 +6575,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6525,7 +6659,7 @@ The directory to which files will be downloaded. If --all is used, the mount pat
 
 ### `--source-path`
 
-Use the mount's source path (rather than the mount path) as a subdirectory of the target, when --all is used
+Use the mount&apos;s source path (rather than the mount path) as a subdirectory of the target, when --all is used
    
 -  Default: `false`
 -  Does not accept a value
@@ -6566,7 +6700,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -6661,7 +6795,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: definition, path. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: definition, path. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6681,7 +6815,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -6770,7 +6904,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: available, max, mounts, percent_used, sizes, used. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: available, max, mounts, percent_used, sizes, used. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6796,7 +6930,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -6910,7 +7044,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -6974,9 +7108,193 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 -  Does not accept a value
 
 
+## `operation:list`
+
+&lt;fg=white;bg=red&gt; BETA &lt;/&gt; List runtime operations on an environment
+
+```bash
+magento-cloud operation:list [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+```
+
+### `--full`
+
+Do not limit the length of command to display. The default limit is 24 lines.
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
+   
+-  Requires a value
+
+### `--app`, `-A`
+
+The remote application name
+   
+-  Requires a value
+
+### `--worker`
+
+A worker name
+   
+-  Requires a value
+
+### `--format`
+
+The output format: table, csv, tsv, or plain
+   
+-  Default: `table`
+-  Requires a value
+
+### `--columns`, `-c`
+
+Columns to display. Available columns: service*, name*, start*, role, stop (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
+   
+-  Default: `[]`
+-  Requires a value
+
+### `--no-header`
+
+Do not output the table header
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--help`, `-h`
+
+Display this help message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `operation:run`
+
+&lt;fg=white;bg=red&gt; BETA &lt;/&gt; Run an operation on the environment
+
+```bash
+magento-cloud operation:run [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-W|--no-wait] [--wait] [--] [<operation>]
+```
+
+
+### `operation`
+
+The operation name
+   
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
+   
+-  Requires a value
+
+### `--app`, `-A`
+
+The remote application name
+   
+-  Requires a value
+
+### `--worker`
+
+A worker name
+   
+-  Requires a value
+
+### `--no-wait`, `-W`
+
+Do not wait for the operation to complete
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--wait`
+
+Wait for the operation to complete (default)
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--help`, `-h`
+
+Display this help message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+
 ## `project:clear-build-cache`
 
-Clear a project's build cache
+Clear a project&apos;s build cache
 
 ```bash
 magento-cloud project:clear-build-cache [-p|--project PROJECT]
@@ -7152,7 +7470,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -7296,7 +7614,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`
 
-Columns to display. Available columns: id*, title*, region*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id*, title*, region*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -7430,7 +7748,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -7519,7 +7837,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -7587,7 +7905,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -7638,7 +7956,7 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 
 ### `route`
 
-The route's original URL
+The route&apos;s original URL
    
 
 ### `--id`
@@ -7682,7 +8000,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -7764,7 +8082,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: route*, type*, to*, url (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: route*, type*, to*, url (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -7784,7 +8102,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -7981,7 +8299,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -7994,7 +8312,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: disk, name, size, type. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: disk, name, size, type. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -8090,7 +8408,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -8190,7 +8508,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -8270,7 +8588,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -8350,7 +8668,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -8430,7 +8748,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -8505,7 +8823,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -8581,7 +8899,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -8663,7 +8981,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -8727,7 +9045,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -8754,7 +9072,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -8810,7 +9128,7 @@ The name of the snapshot. Defaults to the most recent one
 
 ### `--target`
 
-The environment to restore to. Defaults to the snapshot's current environment
+The environment to restore to. Defaults to the snapshot&apos;s current environment
    
 -  Requires a value
 
@@ -8828,7 +9146,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -8905,7 +9223,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -8918,7 +9236,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: app, command, operation. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: app, command, operation. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -8995,7 +9313,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -9237,7 +9555,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: id*, title*, path*, fingerprint (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id*, title*, path*, fingerprint (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -9326,7 +9644,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -9403,7 +9721,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -9478,7 +9796,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -9497,7 +9815,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -9568,7 +9886,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -9587,7 +9905,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -9637,7 +9955,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `tunnel:open`
 
-Open SSH tunnels to an app's relationships
+Open SSH tunnels to an app&apos;s relationships
 
 ```bash
 magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
@@ -9658,7 +9976,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -9739,7 +10057,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -9808,12 +10126,12 @@ magento-cloud user:add [-r|--role ROLE] [--force-invite] [-p|--project PROJECT] 
 
 ### `email`
 
-The user's email address
+The user&apos;s email address
    
 
 ### `--role`, `-r`
 
-The user's project role ('admin' or 'viewer') or environment type role (e.g. 'staging:contributor' or 'production:viewer'). To remove a user from an environment type, set the role as 'none'. The % or * characters can be used as a wildcard for the environment type, e.g. '%:viewer' to give the user the 'viewer' role on all types. The role can be abbreviated, e.g. 'production:v'.
+The user&apos;s project role (&apos;admin&apos; or &apos;viewer&apos;) or environment type role (e.g. &apos;staging:contributor&apos; or &apos;production:viewer&apos;). To remove a user from an environment type, set the role as &apos;none&apos;. The % or * characters can be used as a wildcard for the environment type, e.g. &apos;%:viewer&apos; to give the user the &apos;viewer&apos; role on all types. The role can be abbreviated, e.g. &apos;production:v&apos;.
    
 -  Default: `[]`
 -  Requires a value
@@ -9892,7 +10210,7 @@ magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <e
 
 ### `email`
 
-The user's email address
+The user&apos;s email address
    
 -  Required
 
@@ -9954,7 +10272,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `user:get`
 
-View a user's role(s)
+View a user&apos;s role(s)
 
 ```bash
 magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
@@ -9963,12 +10281,12 @@ magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--
 
 ### `email`
 
-The user's email address
+The user&apos;s email address
    
 
 ### `--level`, `-l`
 
-The role level ('project' or 'environment')
+The role level (&apos;project&apos; or &apos;environment&apos;)
    
 -  Requires a value
 
@@ -9987,7 +10305,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -10007,7 +10325,7 @@ Wait for the operation to complete (default)
 
 ### `--role`, `-r`
 
-[Deprecated: use user:update to change a user's role(s)]
+[Deprecated: use user:update to change a user&apos;s role(s)]
    
 -  Requires a value
 
@@ -10064,7 +10382,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: email, id, name, role. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: email, id, name, role. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -10129,12 +10447,12 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait]
 
 ### `email`
 
-The user's email address
+The user&apos;s email address
    
 
 ### `--role`, `-r`
 
-The user's project role ('admin' or 'viewer') or environment type role (e.g. 'staging:contributor' or 'production:viewer'). To remove a user from an environment type, set the role as 'none'. The % or * characters can be used as a wildcard for the environment type, e.g. '%:viewer' to give the user the 'viewer' role on all types. The role can be abbreviated, e.g. 'production:v'.
+The user&apos;s project role (&apos;admin&apos; or &apos;viewer&apos;) or environment type role (e.g. &apos;staging:contributor&apos; or &apos;production:viewer&apos;). To remove a user from an environment type, set the role as &apos;none&apos;. The % or * characters can be used as a wildcard for the environment type, e.g. &apos;%:viewer&apos; to give the user the &apos;viewer&apos; role on all types. The role can be abbreviated, e.g. &apos;production:v&apos;.
    
 -  Default: `[]`
 -  Requires a value
@@ -10218,7 +10536,7 @@ Update the variable if it already exists
 
 ### `--level`, `-l`
 
-The level at which to set the variable ('project' or 'environment')
+The level at which to set the variable (&apos;project&apos; or &apos;environment&apos;)
    
 -  Requires a value
 
@@ -10230,7 +10548,7 @@ The variable name
 
 ### `--value`
 
-The variable's value
+The variable&apos;s value
    
 -  Requires a value
 
@@ -10250,7 +10568,7 @@ Whether the variable value is sensitive
 
 ### `--prefix`
 
-The variable name's prefix which can determine its type, e.g. 'env'. Only applicable if the name does not already contain a prefix. (e.g. 'none' or 'env:')
+The variable name&apos;s prefix which can determine its type, e.g. &apos;env&apos;. Only applicable if the name does not already contain a prefix. (e.g. &apos;none&apos; or &apos;env:&apos;)
    
 -  Default: `none`
 -  Requires a value
@@ -10290,7 +10608,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -10361,7 +10679,7 @@ The variable name
 
 ### `--level`, `-l`
 
-The variable level ('project', 'environment', 'p' or 'e')
+The variable level (&apos;project&apos;, &apos;environment&apos;, &apos;p&apos; or &apos;e&apos;)
    
 -  Requires a value
 
@@ -10373,7 +10691,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -10449,7 +10767,7 @@ View a single variable property
 
 ### `--level`, `-l`
 
-The variable level ('project', 'environment', 'p' or 'e')
+The variable level (&apos;project&apos;, &apos;environment&apos;, &apos;p&apos; or &apos;e&apos;)
    
 -  Requires a value
 
@@ -10462,7 +10780,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -10482,7 +10800,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -10539,7 +10857,7 @@ magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [-c|--columns C
 
 ### `--level`, `-l`
 
-The variable level ('project', 'environment', 'p' or 'e')
+The variable level (&apos;project&apos;, &apos;environment&apos;, &apos;p&apos; or &apos;e&apos;)
    
 -  Requires a value
 
@@ -10552,7 +10870,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: is_enabled, level, name, value. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: is_enabled, level, name, value. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -10572,7 +10890,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -10636,13 +10954,13 @@ Return success (zero exit code) if no changes were provided
 
 ### `--level`, `-l`
 
-The variable level ('project', 'environment', 'p' or 'e')
+The variable level (&apos;project&apos;, &apos;environment&apos;, &apos;p&apos; or &apos;e&apos;)
    
 -  Requires a value
 
 ### `--value`
 
-The variable's value
+The variable&apos;s value
    
 -  Requires a value
 
@@ -10695,7 +11013,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -10779,7 +11097,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use &quot;.&quot; to select the project&apos;s default environment.
    
 -  Requires a value
 
@@ -10792,7 +11110,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: commands, name, type. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: commands, name, type. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. &quot;a,b,c&quot;) and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
