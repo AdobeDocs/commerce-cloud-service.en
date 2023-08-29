@@ -6,15 +6,21 @@ feature: Cloud, Deploy, GraphQL, Observability
 
 # Track deployments
 
-You can create mark charts with deployment details to analyze the impact of changes: [Track changes using NerdGraph](https://docs.newrelic.com/docs/change-tracking/change-tracking-graphql/)
+You can enable the New Relic change-tracking feature to build NerdGraph charts that track deployment changes.
+
+The Deployments chart helps you to analyze the impact on your Commerce on cloud infrastructure project, such as CPU, memory, response time, and more. See [Track changes using NerdGraph](https://docs.newrelic.com/docs/change-tracking/change-tracking-graphql/) in the _New Relic documentation_ to learn about the Track changes features.
 
 >[!PREREQUISITES]
 >
->- **NR_API_URL**: (NerdGraph API URL) [https://api.newrelic.com/graphql](https://api.newrelic.com/graphql)
->- **NR_API_KEY**: How to access your [New Relic API Keys](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys)
+>- **New Relic API endpoint** `NR_API_URL`: NerdGraph API URL `https://api.newrelic.com/graphql`
+>- **New Relic API Key** `NR_API_KEY`: How to access your [New Relic API Keys](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys)
 >- **NR_APP_GUID**: GUID's are unique to a New Relic entity, choose meta data from the menu next to an entity name in New Relic app or use the [Nerdgraph entities API tutorial](https://docs.newrelic.com/docs/apis/nerdgraph/examples/nerdgraph-entities-api-tutorial/). If you wish to set this up for a Staging environment adjust the Staging environment NR_APP_GUID cloud variable with the staging entity GUID from New Relic.
 
-## How to configure you environment
+## Enable Track deployments
+
+The following steps you through the process of configuring your Commerce on cloud infrastructure project to track deployment events with New Relic.
+
+**To enable the track deployments**:
 
 1. Create a file `action-integration.js` with the next code:
 
@@ -167,7 +173,7 @@ You can create mark charts with deployment details to analyze the impact of chan
 1. You can check the last activity log:
 
    ```bash
-   magento-cloud integration:activity:log <INTEGRATION_ID_FROM_STEP_3> -p <YOUR_PROJECT_ID> -e <YOUR_ENVIRONMENT_ID>
+   magento-cloud integration:activity:log <INTEGRATION_ID_FROM_STEP_2> -p <YOUR_PROJECT_ID> -e <YOUR_ENVIRONMENT_ID>
    ```
 
    Response:
