@@ -1171,7 +1171,7 @@ Do not ask any interactive question
 
 ## `cron:unlock`
 
-Unlock cron jobs that stuck in &quot;running&quot; state.
+Unlock cron jobs that stuck in "running" state.
 
 ```bash
 ece-tools cron:unlock [--job-code [JOB-CODE]]
