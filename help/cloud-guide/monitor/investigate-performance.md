@@ -1,10 +1,10 @@
 ---
-title: Investigate Commerce performance
+title: New Relic monitoring
 description: Learn how to access your New Relic dashboard and analyze data from your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Observability
 ---
 
-# Investigate Commerce performance with the New Relic service
+# New Relic monitoring
 
 New Relic connects and monitors your infrastructure and application using PHP agents. After a Cloud environment connects to New Relic, you can log in to your New Relic account to review the data collected by the agent.
 
@@ -75,7 +75,7 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
 1. Click the **Alert conditions** tab to review the alert conditions defined in the policy.
 
-### Create alert policies
+## Create alert policies
 
 Do not modify any alerts included in the Managed Alerts for Adobe Commerce policy. Adobe updates and improves the alert conditions in this policy over time, which overwrites any customizations you add to the policy.
 

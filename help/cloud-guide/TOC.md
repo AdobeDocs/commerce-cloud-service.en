@@ -164,8 +164,7 @@ level: Intermediate
     + New Relic service {#new-relic}
         + [New Relic overview](monitor/new-relic-service.md)
         + [Account and user management](monitor/account-management.md)
-        + [Dashboards](monitor/dashboards.md)
-        + [Secure monitoring](monitor/secure-monitoring.md)
-        + [Investigate performance](monitor/investigate-performance.md)
+        + Investigate performance {#investigate}
+            + [Policies, alerts, and workflows](monitor/investigate-performance.md)
+            + [Track deployments](monitor/track-deployments.md)
         + [Log management](monitor/log-management.md)
-        + [Advanced observability](monitor/advanced-observability.md)
