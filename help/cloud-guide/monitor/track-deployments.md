@@ -1,20 +1,20 @@
 ---
 title: Track deployments
-description: Learn how to configure New Relic to track deployments in your Adobe Commerce on cloud infrastructure project.
-feature: Cloud, Deploy, GraphQL, Observability
+description: Learn how to configure New Relic to track deployments and analyze in your Adobe Commerce on cloud infrastructure project.
+feature: Cloud, Deploy, Observability
 ---
 
 # Track deployments
 
-You can enable the New Relic change-tracking feature to build NerdGraph charts that track deployment changes.
+You can enable the New Relic _Track changes_ feature to monitor deployment events on your Commerce on cloud infrastructure project. 
 
-The Deployments chart helps you to analyze the impact on your Commerce on cloud infrastructure project, such as CPU, memory, response time, and more. See [Track changes using NerdGraph](https://docs.newrelic.com/docs/change-tracking/change-tracking-graphql/) in the _New Relic documentation_ to learn about the Track changes features.
+The Deployments data collection helps you to analyze the impact of deployment changes to overall performance, such as CPU, memory, response time, and more. See [Track changes using NerdGraph](https://docs.newrelic.com/docs/change-tracking/change-tracking-graphql/) in the _New Relic documentation_.
 
 >[!PREREQUISITES]
 >
 >- **New Relic API endpoint** `NR_API_URL`: NerdGraph API URL `https://api.newrelic.com/graphql`
 >- **New Relic API Key** `NR_API_KEY`: How to access your [New Relic API Keys](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys)
->- **NR_APP_GUID**: GUID's are unique to a New Relic entity, choose meta data from the menu next to an entity name in New Relic app or use the [Nerdgraph entities API tutorial](https://docs.newrelic.com/docs/apis/nerdgraph/examples/nerdgraph-entities-api-tutorial/). If you wish to set this up for a Staging environment adjust the Staging environment NR_APP_GUID cloud variable with the staging entity GUID from New Relic.
+>- **New Relic Entity ID** `NR_APP_GUID`: An entity reports data to New Relic, and each entity has a unique ID (GUID). As an example, to enable on a Staging environment, adjust the Staging environment `NR_APP_GUID` cloud variable with the _staging entity GUID_ from New Relic. See the [NerdGraph tutorial: View entity data](https://docs.newrelic.com/docs/apis/nerdgraph/examples/nerdgraph-entities-api-tutorial/) in the _New Relic_ documentation.
 
 ## Enable Track deployments
 
@@ -22,7 +22,8 @@ The following steps you through the process of configuring your Commerce on clou
 
 **To enable the track deployments**:
 
-1. Create a file `action-integration.js` with the next code:
+1. On your local workstation, change to your project directory.
+1. Create an `action-integration.js` file. Copy the following code and paste it in the `action-integration.js` file and save:
 
     ```javascript
     function variables() {
@@ -77,13 +78,13 @@ The following steps you through the process of configuring your Commerce on clou
     trackDeployments();
     ```
 
-1. Using magento-cloud cli tool add the integration to your environment:
+1. Create a script integration using the `magento-cloud` CLI command and reference the `action-integration.js` file.
 
     ```bash
-    magento-cloud magento-cloud integration:add --type script --events='environment.restore, environment.push, environment.branch, environment.activate, environment.synchronize, environment.initialize, environment.merge, environment.redeploy, environment.variable.create, environment.variable.delete, environment.variable.update' --file ./action-integration.js --project=<YOUR_PROJECT_ID> --environments=<YOUR_ENVIRONMENT_ID>
+    magento-cloud integration:add --type script --events='environment.restore, environment.push, environment.branch, environment.activate, environment.synchronize, environment.initialize, environment.merge, environment.redeploy, environment.variable.create, environment.variable.delete, environment.variable.update' --file ./action-integration.js --project=<YOUR_PROJECT_ID> --environments=<YOUR_ENVIRONMENT_ID>
     ```
 
-   Response:
+   Sample response:
 
     ```terminal
     Created integration 767u4hathojjw (type: script)
@@ -162,18 +163,24 @@ The following steps you through the process of configuring your Commerce on clou
     +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
     ```
 
-   Using the id you can check logs, updated the integration and so on.
+1. Make a note of the integration ID for later use. In this example, the ID is:
 
-1. Add the environment variable with configuration collected in the first step:
+    ```terminal
+    Created integration 767u4hathojjw (type: script)
+    ```
+
+   Optionally, you can verify the integration and note the integration ID using: `magento-cloud integration:list`
+
+1. Create the environment variable using the prerequisites.
 
     ```bash
     magento-cloud variable:create --level environment --name=env:NR_CONFIG --value='{"NR_API_KEY": "<YOUR_API_KEY>", "NR_API_URL": "https://api.newrelic.com/graphql", "NR_APP_GUID":"<YOUR_APP_GUID>"}'  -p <YOUR_PROJECT_ID> -e <YOUR_ENVIRONMENT_ID>
     ```
 
-1. You can check the last activity log:
+1. Review the last activity log.
 
    ```bash
-   magento-cloud integration:activity:log <INTEGRATION_ID_FROM_STEP_2> -p <YOUR_PROJECT_ID> -e <YOUR_ENVIRONMENT_ID>
+   magento-cloud integration:activity:log <INTEGRATION_ID> -p <YOUR_PROJECT_ID> -e <YOUR_ENVIRONMENT_ID>
    ```
 
    Response:
@@ -191,6 +198,10 @@ The following steps you through the process of configuring your Commerce on clou
     {"data":{"changeTrackingCreateDeployment":{"deploymentId":"some-deployment-id","entityGuid":"SomeGUIDhere"}}}
     ```
 
-1. Open your project in New Relic and check deployments
+1. Log in to your [New Relic account](https://login.newrelic.com/login).
+
+1. In the Explorer navigation menu, click **[!UICONTROL APM & Services]**. Select your environment [!UICONTROL Name] and [!UICONTROL Account].
+
+1. Under _Events_, click **[!UICONTROL Deployments]**.
 
    ![Deployments](../../assets/new-relic/deployments.png)
