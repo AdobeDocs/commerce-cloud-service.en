@@ -6,7 +6,7 @@ feature: Cloud, Observability
 
 # New Relic monitoring
 
-New Relic connects and monitors your infrastructure and application using PHP agents. After a Cloud environment connects to New Relic, you can log in to your New Relic account to review the data collected by the agent.
+New Relic connects and monitors your infrastructure and Commerce application using PHP agents. After a Cloud environment connects to New Relic, you can log in to your New Relic account to review the data collected by the agent.
 
 On the _APM & Services_ page, select the **Summary** to view transactional information about your application. This view helps you identify potential failures and check the overall health of your application and services.
 
@@ -47,11 +47,11 @@ When site infrastructure or application conditions trigger an alert threshold, N
 >
 >For Pro Staging and Integration environments and Starter environments, use [Health notifications](../integrations/health-notifications.md) to monitor disk space.
 
-**Prerequisites:**
-
-- Credentials to log in to the New Relic account for your Cloud project
-- Verify that your Cloud environment is connected to New Relic
-- Configure at least one [workflow](#set-up-a-workflow-for-notifications) to receive the alert notifications
+>[!PREREQUISITES]
+>
+>- Credentials to log in to the New Relic account for your Cloud project
+>- Verify that your Cloud environment is connected to New Relic
+>- Configure at least one [workflow](#set-up-a-workflow-for-notifications) to receive the alert notifications
 
 **To review the Managed Alerts for Adobe Commerce policy**:
 
@@ -97,23 +97,23 @@ New Relic provides templates for configuring different types of workflow notific
 
 1. Create a workflow.
 
-   - In the Explorer navigation menu, click **Alerts & AI**.
+   - In the Explorer navigation menu, click **[!UICONTROL Alerts & AI]**.
 
-   - In the left navigation under _Enrich & Notify_, click **Workflows**.
+   - In the left navigation under _Enrich & Notify_, click **[!UICONTROL Workflows]**.
 
-   - Click **Add a workflow** on the right-hand side.
+   - Click **[!UICONTROL Add a workflow]** on the right-hand side.
 
       ![New Relic add a workflow](../../assets/new-relic/add-a-workflow.png)
 
    - On the _Configure your workflow_ page, enter a name for the workflow.
 
-   - In the _Filter data_ section, select **Managed Alerts for Adobe Commerce** from the **[!UICONTROL Policy]** drop-down list.
+   - In the _Filter data_ section, select **[!UICONTROL Managed Alerts for Adobe Commerce]** from the **[!UICONTROL Policy]** drop-down list.
 
    - In the _Notify_ section, select a channel and follow the instructions.
 
    - Click **[!UICONTROL Test workflow]** to verify your configuration.
 
-1. Click **Activate workflow**.
+1. Click **[!UICONTROL Activate workflow]**.
 
 See the New Relic documentation about [Workflows](https://docs.newrelic.com/docs/alerts-applied-intelligence/applied-intelligence/incident-workflows/incident-workflows/).
 

@@ -8,11 +8,4 @@ recommendations: noDisplay, noCatalog
 
 # Advanced Observability with New Relic
 
-- Extended:
-    - log data retention
-    - query duration and count
-- HIPAA compliant
-- Vulnerability management—Aggregate 
-- Log forwarding
-- Export capabilities
-
+TBD

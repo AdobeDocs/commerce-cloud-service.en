@@ -60,7 +60,7 @@ runtime:
 
 To connect a Cloud environment to New Relic, add the New Relic license key to the environment.
 
-- For **Pro projects**, Adobe adds the license key to your Cloud environments during the provisioning process. You can log in to your [New Relic account](https://login.newrelic.com/login) to verify connectivity between your Adobe Commerce on cloud infrastructure site and New Relic.
+- For **Pro projects**, Adobe adds the license key to your Production and Staging environments during the provisioning process. You can log in to your [New Relic account](https://login.newrelic.com/login) to verify connectivity between your Adobe Commerce on cloud infrastructure site and New Relic.
 
 - For **Starter projects**, you have a New Relic license key that supports up to _three_ environments. You must add the key to your environment configurations manually. Starter environments are not pre-provisioned to use the New Relic service.
 
@@ -68,11 +68,11 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
 {{redeploy-warning}}
 
-**Prerequisites:**
-
-- Login credentials for the Adobe Commerce account page, or for the New Relic license associated with your project
-- [Admin-level access](../project/user-access.md) to the Starter environments to configure
-- Credentials to access the [Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html) for the environment
+>[!PREREQUISITES]
+>
+>- Login credentials for the Adobe Commerce account page, or for the New Relic license associated with your project
+>- [Admin-level access](../project/user-access.md) to the Starter environments to configure
+>- Credentials to access the [Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html) for the environment
 
 **To configure New Relic for Starter environments**:
 
@@ -109,7 +109,7 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
 1. Log in to your [New Relic account](https://login.newrelic.com/login) to verify that you can view data from the Adobe Commerce environment. See [Investigate performance](investigate-performance.md).
 
-### Remove license key from a Starter environment
+### Remove license key
 
 You can only use your New Relic license key on three active environments. If the key is in use in three environments, you must remove the key from one of the environments before you can add it to a different environment.
 
