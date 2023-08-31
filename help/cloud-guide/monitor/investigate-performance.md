@@ -28,8 +28,7 @@ All collected data details the time spent on actions that transmit data, queries
 
 ## Monitor performance with Managed Alerts
 
-Adobe provides the Managed Alerts for Adobe Commerce alert policy to track performance metrics.
-Based on industry best practices, the policy includes a collection of alerts that set thresholds to trigger warning and critical notifications when site infrastructure or application issues affect performance. The Managed Alerts policy tracks the following metrics on Production environments only:
+Adobe provides the _Managed Alerts for Adobe Commerce_ alert policy to track performance metrics. The policy includes a collection of alerts that set thresholds and trigger warning and critical notifications when infrastructure or application issues affect site performance. The policy tracks the following metrics on Production environments:
 
 | Metric             | Data collection | Availability    |
 |:-------------------|:----------------|:----------------|
@@ -49,9 +48,9 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
 >[!PREREQUISITES]
 >
->- Credentials to log in to the New Relic account for your Cloud project
->- Verify that your Cloud environment is connected to New Relic
->- Configure at least one [workflow](#set-up-a-workflow-for-notifications) to receive the alert notifications
+>- **New Relic credentials**—Credentials to log in to the New Relic account for your Cloud project
+>- **Active New Relic integration**—Verify that your Cloud environment is connected to New Relic
+>- **Workflow notification**—Configure at least one [workflow](#set-up-a-workflow-for-notifications) to receive the alert notifications
 
 **To review the Managed Alerts for Adobe Commerce policy**:
 
@@ -59,11 +58,11 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
 1. Locate the _Managed Alerts for Adobe Commerce_ policy:
 
-   - In the Explorer navigation menu, click **Alerts & AI**.
+   - In the Explorer navigation menu, click **[!UICONTROL Alerts & AI]**.
 
-   - Under _Detect_, click **Alert Conditions & Policies**.
+   - Under _Detect_, click **[!UICONTROL Alert Conditions & Policies]**.
    
-   - Verify you have the correct Account selected at the top of the _Alert Conditions & Policies_ view.
+   - Verify that your Account is selected at the top of the _Alert Conditions & Policies_ view.
 
    - In the _Policy_ list, select **Managed Alerts for Adobe Commerce** policy.
 
@@ -71,9 +70,9 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
       >[!NOTE]
       >
-      >If the Managed Alerts for Adobe Commerce policy is not available, see [Managed Alerts for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) in the _Adobe Commerce Help Center_.
+      >If the _Managed Alerts for Adobe Commerce_ policy is not available, see [Managed Alerts for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) in the _Adobe Commerce Help Center_.
 
-1. Click the **Alert conditions** tab to review the alert conditions defined in the policy.
+1. Click the **[!UICONTROL Alert conditions]** tab to review the alert conditions defined in the policy.
 
 ## Create alert policies
 
@@ -87,7 +86,7 @@ Instead of modifying an existing alert, you can create an alert policy. Then, co
 
 ## Set up a workflow for notifications
 
-You can now set up a _workflow_, formerly called a notification channel, to receive notifications based on an alert policy to monitor your Production sites. Notifications about performance issues go to all workflows associated with an alert policy when conditions on the application or infrastructure trigger an alert. You also receive notifications when an issue is acknowledged and closed.
+You can now set up a _workflow_, formerly called a notification channel, to receive notifications about your site performance based on filtered data, such as an alert policy. Notifications about performance issues go to all workflows associated with an alert policy when conditions on the application or infrastructure trigger an alert. You also receive notifications when an issue is acknowledged and closed.
 
 New Relic provides templates for configuring different types of workflow notifications, including email, Slack, PagerDuty, webhooks, and more.
 

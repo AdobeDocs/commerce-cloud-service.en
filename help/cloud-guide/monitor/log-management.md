@@ -23,7 +23,7 @@ When your project is connected to New Relic, you can use the New Relic Logs serv
 
 ## View and analyze log data
 
-You can use the New Relic Logs application to search across the aggregated log data and troubleshoot application, infrastructure, CDN, and WAF errors. Also, you can connect the log data with other data collected by New Relic APM and Infrastructure services to create charts, dashboards, and alerts to manage application and cloud service operations.
+Use the New Relic Logs application to search across the aggregated log data and troubleshoot application, infrastructure, CDN, and WAF errors. You can create charts, dashboards, and alerts using log data collected from New Relic APM and Infrastructure services.
 
 **To use the New Relic Logs application**:
 
@@ -31,7 +31,7 @@ You can use the New Relic Logs application to search across the aggregated log d
 
 1. Select **Logs** from the Explorer navigation menu.
 
-1. Verify you have the correct Account selected at the top of the _All logs_ view.
+1. Verify that your Account is selected at the top of the _All logs_ view.
 
 1. Select a time range for the Logs query.
 

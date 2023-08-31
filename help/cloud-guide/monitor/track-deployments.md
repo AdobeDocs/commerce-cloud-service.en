@@ -13,7 +13,7 @@ The Deployments data collection helps you to analyze the impact of deployment ch
 >[!PREREQUISITES]
 >
 >- `NR_API_URL`: New Relic API endpoint, in this case NerdGraph API URL `https://api.newrelic.com/graphql`
->- `NR_API_KEY`: New Relic API key, use `magento-cloud subscription:info services.newrelic` to find your key.
+>- `NR_API_KEY`: Create a user key, see [New Relic API Keys](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys) in the _New Relic_ documentation.
 >- `NR_APP_GUID`: An entity that reports data to New Relic has a unique ID (GUID). As an example, to enable on a Staging environment, adjust the Staging environment `NR_APP_GUID` cloud variable with the _staging entity GUID_ from New Relic. See the [NerdGraph tutorial: View entity data](https://docs.newrelic.com/docs/apis/nerdgraph/examples/nerdgraph-entities-api-tutorial/) in the _New Relic_ documentation.
 
 ## Enable Track deployments

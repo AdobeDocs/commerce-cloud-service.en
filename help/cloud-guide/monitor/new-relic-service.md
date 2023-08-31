@@ -5,7 +5,7 @@ feature: Cloud, Observability
 last-substantial-update: 2023-08-31
 exl-id: 613f0694-5338-4037-8ee4-ac5eca376159
 ---
-# New Relic service
+# New Relic service overview
 
 All Adobe Commerce projects on cloud infrastructure include access to the New Relic service to help manage, monitor, and troubleshoot the Commerce application and cloud infrastructure.
 
