@@ -8,7 +8,7 @@ feature: Cloud, Deploy, Observability
 
 You can enable the New Relic _Track changes_ feature to monitor deployment events on your Commerce on cloud infrastructure project. 
 
-The Deployments data collection helps you to analyze the impact of deployment changes to overall performance, such as CPU, memory, response time, and more. See [Track changes using NerdGraph](https://docs.newrelic.com/docs/change-tracking/change-tracking-graphql/) in the _New Relic documentation_.
+The Deployments data collection helps analyze the impact of deployment changes to overall performance, such as CPU, memory, response time, and more. See [Track changes using NerdGraph](https://docs.newrelic.com/docs/change-tracking/change-tracking-graphql/) in the _New Relic documentation_.
 
 >[!PREREQUISITES]
 >
