@@ -2,6 +2,7 @@
 title: New Relic monitoring
 description: Learn how to access your New Relic dashboard and analyze data from your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Observability
+topic: Performance
 ---
 
 # New Relic monitoring

@@ -2,7 +2,7 @@
 title: New Relic service
 description: Learn about the New Relic service available with your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Observability
-last-substantial-update: 2023-08-31
+last-substantial-update: 2023-09-06
 exl-id: 613f0694-5338-4037-8ee4-ac5eca376159
 ---
 # New Relic service overview
