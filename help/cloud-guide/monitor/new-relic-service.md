@@ -17,7 +17,7 @@ The following New Relic features are available for use with Production and Stagi
 
 >[!INFO]
 >
->Other NR features are not available on Adobe Commerce projects at this time.
+>Other New Relic features are not available on Adobe Commerce projects.
 
 ## New Relic APM
 
