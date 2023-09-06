@@ -20,7 +20,7 @@ The Deployments data collection helps analyze the impact of deployment changes t
 
 ## Enable Track deployments
 
-The following steps you through the process of configuring your Commerce on cloud infrastructure project to track deployment events with New Relic.
+Configure your Commerce on cloud infrastructure project to track deployment events in New Relic by creating a _script_ integration.
 
 **To enable the track deployments**:
 
@@ -80,7 +80,7 @@ The following steps you through the process of configuring your Commerce on clou
     trackDeployments();
     ```
 
-1. Create a script integration using the `magento-cloud` CLI command and reference the `action-integration.js` file.
+1. Create a _script_ integration using the `magento-cloud` CLI command and reference the `action-integration.js` file.
 
     ```bash
     magento-cloud integration:add --type script --events='environment.restore, environment.push, environment.branch, environment.activate, environment.synchronize, environment.initialize, environment.merge, environment.redeploy, environment.variable.create, environment.variable.delete, environment.variable.update' --file ./action-integration.js --project=<YOUR_PROJECT_ID> --environments=<YOUR_ENVIRONMENT_ID>
