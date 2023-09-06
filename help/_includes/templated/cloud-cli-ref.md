@@ -1,9 +1,9 @@
 # magento-cloud (Adobe Commerce on cloud infrastructure)
 
 <!-- The template to render with above values -->
-**Version**: 1.43.0
+**Version**: 1.44.0
 
-This reference contains 115 commands available through the `magento-cloud` command-line tool.
+This reference contains 119 commands available through the `magento-cloud` command-line tool.
 The initial list is auto generated using the `magento-cloud list` command at Adobe Commerce on cloud infrastructure.
 
 >[!NOTE]
@@ -41,14 +41,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -98,14 +98,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -164,14 +164,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -230,14 +230,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -307,14 +307,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -388,14 +388,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -430,7 +430,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -457,14 +457,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -475,7 +475,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Cancel an activity
 
 ```bash
-magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:cancel [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -484,16 +484,16 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 The activity ID. Defaults to the most recent cancellable activity.
    
 
-### `--type`
+### `--type`, `-t`
 
-Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
+Filter by type (when selecting a default activity). Values may be split by commas (e.g. "a,b,c") and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
-### `--exclude-type`
+### `--exclude-type`, `-x`
 
-Exclude by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
+Exclude by type (when selecting a default activity). Values may be split by commas (e.g. "a,b,c") and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
@@ -513,7 +513,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -540,14 +540,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -558,7 +558,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 View detailed information on a single activity
 
 ```bash
-magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud activity:get [-P|--property PROPERTY] [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
 
@@ -573,23 +573,23 @@ The property to view
    
 -  Requires a value
 
-### `--type`
+### `--type`, `-t`
 
-Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
+Filter by type (when selecting a default activity). Values may be split by commas (e.g. "a,b,c") and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
-### `--exclude-type`
+### `--exclude-type`, `-x`
 
-Exclude by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
+Exclude by type (when selecting a default activity). Values may be split by commas (e.g. "a,b,c") and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--state`
 
-Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -602,7 +602,7 @@ Filter by result (when selecting a default activity): success or failure
 
 ### `--incomplete`, `-i`
 
-Include only incomplete activities (when selecting a default activity). This is a shorthand for &lt;info&gt;--state=in_progress,pending&lt;/info&gt;
+Include only incomplete activities (when selecting a default activity). This is a shorthand for \<info>--state=in_progress,pending\</info>
    
 -  Default: `false`
 -  Does not accept a value
@@ -622,7 +622,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -635,7 +635,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -677,14 +677,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -700,14 +700,14 @@ magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [-
 
 ### `--type`, `-t`
 
-Filter activities by type If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
+Filter activities by type Values may be split by commas (e.g. "a,b,c") and/or whitespace. The first part of the activity name can be omitted, e.g. 'cron' can select 'environment.cron' activities. The % or * characters can be used as a wildcard, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`, `-x`
 
-Exclude activities by type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
+Exclude activities by type. Values may be split by commas (e.g. "a,b,c") and/or whitespace. The first part of the activity name can be omitted, e.g. 'cron' can exclude 'environment.cron' activities. The % or * characters can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
@@ -727,7 +727,7 @@ Only activities created before this date will be listed
 
 ### `--state`
 
-Filter activities by state: in_progress, pending, complete, or cancelled. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter activities by state: in_progress, pending, complete, or cancelled. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -761,7 +761,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: id*, created*, description*, progress*, state*, result*, completed, environments, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id*, created*, description*, progress*, state*, result*, completed, environments, type (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -788,7 +788,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -815,14 +815,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -833,7 +833,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Display the log for an activity
 
 ```bash
-magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -858,21 +858,21 @@ Display a timestamp next to each message
 
 ### `--type`
 
-Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
+Filter by type (when selecting a default activity). Values may be split by commas (e.g. "a,b,c") and/or whitespace. The % or * characters can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
-### `--exclude-type`
+### `--exclude-type`, `-x`
 
-Exclude by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
+Exclude by type (when selecting a default activity). Values may be split by commas (e.g. "a,b,c") and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--state`
 
-Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -885,7 +885,7 @@ Filter by result (when selecting a default activity): success or failure
 
 ### `--incomplete`, `-i`
 
-Include only incomplete activities (when selecting a default activity). This is a shorthand for &lt;info&gt;--state=in_progress,pending&lt;/info&gt;
+Include only incomplete activities (when selecting a default activity). This is a shorthand for \<info>--state=in_progress,pending\</info>
    
 -  Default: `false`
 -  Does not accept a value
@@ -912,7 +912,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -939,14 +939,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -981,7 +981,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -1020,14 +1020,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1063,7 +1063,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -1076,7 +1076,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: name*, type*, disk, path, size (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: name*, type*, disk, path, size (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1111,14 +1111,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1155,14 +1155,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1219,14 +1219,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1275,7 +1275,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1310,14 +1310,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1368,14 +1368,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1444,14 +1444,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1527,14 +1527,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1598,14 +1598,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1668,14 +1668,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1765,7 +1765,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: created, domains, expires, id, issuer. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: created, domains, expires, id, issuer. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1806,14 +1806,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1830,7 +1830,7 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--e
 
 ### `commit`
 
-The commit SHA. This can also accept &quot;HEAD&quot;, and caret (^) or tilde (~) suffixes for parent commits.
+The commit SHA. This can also accept "HEAD", and caret (^) or tilde (~) suffixes for parent commits.
    
 -  Default: `HEAD`
    
@@ -1849,7 +1849,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -1883,14 +1883,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1907,7 +1907,7 @@ magento-cloud commit:list [--limit LIMIT] [-p|--project PROJECT] [-e|--environme
 
 ### `commit`
 
-The starting Git commit SHA. This can also accept &quot;HEAD&quot;, and caret (^) or tilde (~) suffixes for parent commits.
+The starting Git commit SHA. This can also accept "HEAD", and caret (^) or tilde (~) suffixes for parent commits.
    
 
 ### `--limit`
@@ -1925,7 +1925,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -1938,7 +1938,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: author, date, sha, summary. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: author, date, sha, summary. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1980,14 +1980,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2003,7 +2003,7 @@ magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTO
 
 ### `--schema`
 
-The schema to dump. Omit to use the default schema (usually &quot;main&quot;).
+The schema to dump. Omit to use the default schema (usually "main").
    
 -  Requires a value
 
@@ -2075,7 +2075,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -2120,14 +2120,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2163,7 +2163,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -2188,7 +2188,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: max, percent_used, used. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: max, percent_used, used. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -2229,14 +2229,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2265,7 +2265,7 @@ Produce raw, non-tabular output
 
 ### `--schema`
 
-The schema to use. Omit to use the default schema (usually &quot;main&quot;). Pass an empty string to not use any schema.
+The schema to use. Omit to use the default schema (usually "main"). Pass an empty string to not use any schema.
    
 -  Requires a value
 
@@ -2277,7 +2277,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -2322,14 +2322,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2340,7 +2340,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Add a new domain to the project
 
 ```bash
-magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-r|--replace REPLACE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [--attach ATTACH] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -2369,9 +2369,9 @@ The path to the certificate chain file or files for the provided certificate
 -  Default: `[]`
 -  Requires a value
 
-### `--replace`, `-r`
+### `--attach`
 
-The production domain which this one replaces in the environment's routes (required for non-production environment domains)
+The production domain that this one replaces in the environment's routes. Required for non-production environment domains.
    
 -  Requires a value
 
@@ -2383,7 +2383,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -2424,14 +2424,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2460,7 +2460,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -2501,14 +2501,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2543,7 +2543,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -2570,7 +2570,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -2597,14 +2597,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2627,7 +2627,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: name*, ssl*, created_at*, registered_name, replacement_for, type, updated_at (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: name*, ssl*, created_at*, registered_name, replacement_for, type, updated_at (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -2647,7 +2647,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -2674,14 +2674,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2729,7 +2729,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -2770,14 +2770,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2814,7 +2814,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -2855,14 +2855,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2873,7 +2873,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Branch an environment
 
 ```bash
-magento-cloud environment:branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<id>] [<parent>]
 ```
 
 
@@ -2899,16 +2899,9 @@ The type of the new environment
    
 -  Requires a value
 
-### `--force`
-
-Create the new environment even if the branch cannot be checked out locally
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--no-clone-parent`
 
-Do not clone the parent branch's data
+Do not clone the parent environment's data
    
 -  Default: `false`
 -  Does not accept a value
@@ -2921,7 +2914,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -2938,12 +2931,6 @@ Wait for the operation to complete (default)
    
 -  Default: `false`
 -  Does not accept a value
-
-### `--identity-file`, `-i`
-
-An SSH identity (private key) to use
-   
--  Requires a value
 
 ### `--help`, `-h`
 
@@ -2968,14 +2955,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2992,7 +2979,7 @@ magento-cloud environment:checkout [-i|--identity-file IDENTITY-FILE] [--] [<id>
 
 ### `id`
 
-The ID of the environment to check out. For example: &quot;sprint2&quot;
+The ID of the environment to check out. For example: "sprint2"
    
 
 ### `--identity-file`, `-i`
@@ -3024,14 +3011,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3042,13 +3029,13 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Delete one or more environments
 
 ```bash
-magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [--allow-delete-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
 ### `environment`
 
-The environment(s) to delete. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+The environment(s) to delete. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
    
@@ -3056,49 +3043,49 @@ The environment(s) to delete. The % or * characters may be used as a wildcard. I
 
 ### `--delete-branch`
 
-Delete Git branch(es) (inactive environments)
+Delete Git branch(es) for inactive environments, without confirmation
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-delete-branch`
 
-Do not delete Git branch(es) (inactive environments)
+Do not delete any Git branch(es) (inactive environments)
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--type`
 
-Delete all environments of a type (adding to any others selected) If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Delete all environments of a type (adding to any others selected) Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--only-type`, `-t`
 
-Only delete environment(s) of a specific type If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Only delete environments of a specific type Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude`
 
-Environment(s) not to delete. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Environment(s) not to delete. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`
 
-Environment type(s) of which not to delete If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Environment type(s) of which not to delete Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--inactive`
 
-Delete all inactive environments (adding to any others selected
+Delete all inactive environments (adding to any others selected)
    
 -  Default: `false`
 -  Does not accept a value
@@ -3106,6 +3093,13 @@ Delete all inactive environments (adding to any others selected
 ### `--merged`
 
 Delete all merged environments (adding to any others selected)
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--allow-delete-parent`
+
+Allow environments that have children to be deleted
    
 -  Default: `false`
 -  Does not accept a value
@@ -3118,7 +3112,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -3159,14 +3153,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3182,14 +3176,14 @@ magento-cloud environment:http-access [--access ACCESS] [--auth AUTH] [--enabled
 
 ### `--access`
 
-Access restriction in the format &quot;permission:address&quot;. Use 0 to clear all addresses.
+Access restriction in the format "permission:address". Use 0 to clear all addresses.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--auth`
 
-HTTP Basic auth credentials in the format &quot;username:password&quot;. Use 0 to clear all credentials.
+HTTP Basic auth credentials in the format "username:password". Use 0 to clear all credentials.
    
 -  Default: `[]`
 -  Requires a value
@@ -3208,7 +3202,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -3249,14 +3243,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3304,7 +3298,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -3324,7 +3318,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -3365,14 +3359,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3407,7 +3401,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -3448,14 +3442,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3506,7 +3500,7 @@ Sort in reverse (descending) order
 
 ### `--type`
 
-Filter the list by environment type(s). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter the list by environment type(s). Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -3520,7 +3514,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: id*, title*, status*, type*, created, machine_name, updated (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id*, title*, status*, type*, created, machine_name, updated (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -3561,14 +3555,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3585,7 +3579,7 @@ magento-cloud environment:logs [--lines LINES] [--tail] [-p|--project PROJECT] [
 
 ### `type`
 
-The log type, e.g. &quot;access&quot; or &quot;error&quot;
+The log type, e.g. "access" or "error"
    
 
 ### `--lines`
@@ -3610,7 +3604,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -3655,14 +3649,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3690,7 +3684,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -3731,14 +3725,84 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `environment:pause`
+
+Pause an environment
+
+```bash
+magento-cloud environment:pause [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+```
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID. Use "." to select the project's default environment.
+   
+-  Requires a value
+
+### `--no-wait`, `-W`
+
+Do not wait for the operation to complete
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--wait`
+
+Wait for the operation to complete (default)
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--help`, `-h`
+
+Display this help message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3835,7 +3899,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -3868,14 +3932,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3897,7 +3961,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -3938,14 +4002,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3986,7 +4050,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -4025,14 +4089,84 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `environment:resume`
+
+Resume a paused environment
+
+```bash
+magento-cloud environment:resume [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+```
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID. Use "." to select the project's default environment.
+   
+-  Requires a value
+
+### `--no-wait`, `-W`
+
+Do not wait for the operation to complete
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--wait`
+
+Wait for the operation to complete (default)
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--help`, `-h`
+
+Display this help message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4070,7 +4204,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -4121,14 +4255,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4173,7 +4307,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -4224,14 +4358,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4248,7 +4382,7 @@ magento-cloud environment:synchronize [--rebase] [-p|--project PROJECT] [-e|--en
 
 ### `synchronize`
 
-What to synchronize: &quot;code&quot;, &quot;data&quot; or both
+What to synchronize: "code", "data" or both
    
 -  Default: `[]`
    
@@ -4269,7 +4403,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -4310,14 +4444,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4359,7 +4493,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -4386,14 +4520,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4422,7 +4556,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -4473,14 +4607,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4532,7 +4666,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -4574,14 +4708,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4603,14 +4737,14 @@ An integration ID. Leave blank to choose from a list.
 
 ### `--type`
 
-Filter activities by type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter activities by type. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`, `-x`
 
-Exclude activities by type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
+Exclude activities by type. Values may be split by commas (e.g. "a,b,c") and/or whitespace. The % or * characters can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
@@ -4630,7 +4764,7 @@ Only activities created before this date will be listed
 
 ### `--state`
 
-Filter activities by state. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Filter activities by state. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -4657,7 +4791,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: id*, created*, description*, type*, state*, result*, completed (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id*, created*, description*, type*, state*, result*, completed (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -4711,14 +4845,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4792,14 +4926,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5135,14 +5269,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5205,14 +5339,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5247,7 +5381,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -5288,14 +5422,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5318,7 +5452,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: id, summary, type. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id, summary, type. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -5359,14 +5493,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5708,14 +5842,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5764,14 +5898,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5920,14 +6054,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5970,14 +6104,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5985,7 +6119,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `metrics:all`
 
-&lt;fg=white;bg=red&gt; BETA &lt;/&gt; Show CPU, disk and memory metrics for an environment
+\<fg=white;bg=red> BETA \</> Show CPU, disk and memory metrics for an environment
 
 ```bash
 magento-cloud metrics [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -5993,13 +6127,13 @@ magento-cloud metrics [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|
 
 ### `--range`, `-r`
 
-The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum &lt;comment&gt;5m&lt;/comment&gt;, maximum &lt;comment&gt;8h&lt;/comment&gt; or more (depending on the project), default &lt;comment&gt;10m&lt;/comment&gt;.
+The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>5m\</comment>, maximum \<comment>8h\</comment> or more (depending on the project), default \<comment>10m\</comment>.
    
 -  Requires a value
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum &lt;comment&gt;1m&lt;/comment&gt;, maximum &lt;comment&gt;1h&lt;/comment&gt;.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>, maximum \<comment>1h\</comment>.
    
 -  Requires a value
 
@@ -6038,7 +6172,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -6051,7 +6185,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: timestamp*, service*, cpu_percent*, mem_percent*, disk_percent*, tmp_disk_percent*, cpu_limit, cpu_used, disk_limit, disk_used, inodes_limit, inodes_percent, inodes_used, mem_limit, mem_used, tmp_disk_limit, tmp_disk_used, tmp_inodes_limit, tmp_inodes_percent, tmp_inodes_used, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: timestamp*, service*, cpu_percent*, mem_percent*, disk_percent*, tmp_disk_percent*, cpu_limit, cpu_used, disk_limit, disk_used, inodes_limit, inodes_percent, inodes_used, mem_limit, mem_used, tmp_disk_limit, tmp_disk_used, tmp_inodes_limit, tmp_inodes_percent, tmp_inodes_used, type (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6093,14 +6227,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6108,7 +6242,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `metrics:cpu`
 
-&lt;fg=white;bg=red&gt; BETA &lt;/&gt; Show CPU usage of an environment
+\<fg=white;bg=red> BETA \</> Show CPU usage of an environment
 
 ```bash
 magento-cloud metrics:cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -6116,13 +6250,13 @@ magento-cloud metrics:cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] 
 
 ### `--range`, `-r`
 
-The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum &lt;comment&gt;5m&lt;/comment&gt;, maximum &lt;comment&gt;8h&lt;/comment&gt; or more (depending on the project), default &lt;comment&gt;10m&lt;/comment&gt;.
+The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>5m\</comment>, maximum \<comment>8h\</comment> or more (depending on the project), default \<comment>10m\</comment>.
    
 -  Requires a value
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum &lt;comment&gt;1m&lt;/comment&gt;, maximum &lt;comment&gt;1h&lt;/comment&gt;.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>, maximum \<comment>1h\</comment>.
    
 -  Requires a value
 
@@ -6161,7 +6295,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -6174,7 +6308,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, type (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6216,14 +6350,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6246,13 +6380,13 @@ Show sizes in bytes
 
 ### `--range`, `-r`
 
-The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum &lt;comment&gt;5m&lt;/comment&gt;, maximum &lt;comment&gt;8h&lt;/comment&gt; or more (depending on the project), default &lt;comment&gt;10m&lt;/comment&gt;.
+The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>5m\</comment>, maximum \<comment>8h\</comment> or more (depending on the project), default \<comment>10m\</comment>.
    
 -  Requires a value
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum &lt;comment&gt;1m&lt;/comment&gt;, maximum &lt;comment&gt;1h&lt;/comment&gt;.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>, maximum \<comment>1h\</comment>.
    
 -  Requires a value
 
@@ -6298,7 +6432,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -6311,7 +6445,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, ipercent*, tmp_percent*, ilimit, iused, tmp_ilimit, tmp_ipercent, tmp_iused, tmp_limit, tmp_used, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, ipercent*, tmp_percent*, ilimit, iused, tmp_ilimit, tmp_ipercent, tmp_iused, tmp_limit, tmp_used, type (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6353,14 +6487,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6368,7 +6502,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `metrics:memory`
 
-&lt;fg=white;bg=red&gt; BETA &lt;/&gt; Show memory usage of an environment
+\<fg=white;bg=red> BETA \</> Show memory usage of an environment
 
 ```bash
 magento-cloud metrics:memory [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -6383,13 +6517,13 @@ Show sizes in bytes
 
 ### `--range`, `-r`
 
-The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum &lt;comment&gt;5m&lt;/comment&gt;, maximum &lt;comment&gt;8h&lt;/comment&gt; or more (depending on the project), default &lt;comment&gt;10m&lt;/comment&gt;.
+The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>5m\</comment>, maximum \<comment>8h\</comment> or more (depending on the project), default \<comment>10m\</comment>.
    
 -  Requires a value
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum &lt;comment&gt;1m&lt;/comment&gt;, maximum &lt;comment&gt;1h&lt;/comment&gt;.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>, maximum \<comment>1h\</comment>.
    
 -  Requires a value
 
@@ -6428,7 +6562,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -6441,7 +6575,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: timestamp*, service*, used*, limit*, percent*, type (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6483,14 +6617,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6566,7 +6700,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -6617,14 +6751,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6661,7 +6795,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: definition, path. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: definition, path. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6681,7 +6815,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -6726,14 +6860,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6770,7 +6904,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: available, max, mounts, percent_used, sizes, used. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: available, max, mounts, percent_used, sizes, used. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6796,7 +6930,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -6841,14 +6975,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6910,7 +7044,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -6961,14 +7095,198 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `operation:list`
+
+\<fg=white;bg=red> BETA \</> List runtime operations on an environment
+
+```bash
+magento-cloud operation:list [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+```
+
+### `--full`
+
+Do not limit the length of command to display. The default limit is 24 lines.
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID. Use "." to select the project's default environment.
+   
+-  Requires a value
+
+### `--app`, `-A`
+
+The remote application name
+   
+-  Requires a value
+
+### `--worker`
+
+A worker name
+   
+-  Requires a value
+
+### `--format`
+
+The output format: table, csv, tsv, or plain
+   
+-  Default: `table`
+-  Requires a value
+
+### `--columns`, `-c`
+
+Columns to display. Available columns: service*, name*, start*, role, stop (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
+   
+-  Default: `[]`
+-  Requires a value
+
+### `--no-header`
+
+Do not output the table header
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--help`, `-h`
+
+Display this help message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `operation:run`
+
+\<fg=white;bg=red> BETA \</> Run an operation on the environment
+
+```bash
+magento-cloud operation:run [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-W|--no-wait] [--wait] [--] [<operation>]
+```
+
+
+### `operation`
+
+The operation name
+   
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID. Use "." to select the project's default environment.
+   
+-  Requires a value
+
+### `--app`, `-A`
+
+The remote application name
+   
+-  Requires a value
+
+### `--worker`
+
+A worker name
+   
+-  Requires a value
+
+### `--no-wait`, `-W`
+
+Do not wait for the operation to complete
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--wait`
+
+Wait for the operation to complete (default)
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--help`, `-h`
+
+Display this help message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7011,14 +7329,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7097,14 +7415,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7152,7 +7470,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -7207,14 +7525,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7296,7 +7614,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`
 
-Columns to display. Available columns: id*, title*, region*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id*, title*, region*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -7338,14 +7656,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7388,14 +7706,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7418,7 +7736,7 @@ The path to the file
 
 ### `--commit`, `-c`
 
-The commit SHA. This can also accept &quot;HEAD&quot;, and caret (^) or tilde (~) suffixes for parent commits.
+The commit SHA. This can also accept "HEAD", and caret (^) or tilde (~) suffixes for parent commits.
    
 -  Requires a value
 
@@ -7430,7 +7748,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -7457,14 +7775,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7500,14 +7818,14 @@ Show files only
 
 ### `--git-style`
 
-Style output similar to &quot;git ls-tree&quot;
+Style output similar to "git ls-tree"
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--commit`, `-c`
 
-The commit SHA. This can also accept &quot;HEAD&quot;, and caret (^) or tilde (~) suffixes for parent commits.
+The commit SHA. This can also accept "HEAD", and caret (^) or tilde (~) suffixes for parent commits.
    
 -  Requires a value
 
@@ -7519,7 +7837,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -7546,14 +7864,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7575,7 +7893,7 @@ The path to the directory or file
 
 ### `--commit`, `-c`
 
-The commit SHA. This can also accept &quot;HEAD&quot;, and caret (^) or tilde (~) suffixes for parent commits.
+The commit SHA. This can also accept "HEAD", and caret (^) or tilde (~) suffixes for parent commits.
    
 -  Requires a value
 
@@ -7587,7 +7905,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -7614,14 +7932,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7682,7 +8000,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -7721,14 +8039,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7764,7 +8082,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: route*, type*, to*, url (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: route*, type*, to*, url (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -7784,7 +8102,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -7811,14 +8129,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7861,14 +8179,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7938,14 +8256,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7981,7 +8299,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -7994,7 +8312,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: disk, name, size, type. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: disk, name, size, type. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -8029,14 +8347,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8090,7 +8408,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -8123,14 +8441,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8159,7 +8477,7 @@ Export data as a single JSON array
 
 ### `--type`
 
-The export type, e.g. &quot;csv&quot;
+The export type, e.g. "csv"
    
 -  Requires a value
 
@@ -8190,7 +8508,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -8223,14 +8541,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8270,7 +8588,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -8303,14 +8621,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8350,7 +8668,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -8383,14 +8701,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8430,7 +8748,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -8463,14 +8781,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8505,7 +8823,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -8546,14 +8864,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8581,7 +8899,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -8622,14 +8940,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8663,7 +8981,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -8697,14 +9015,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8727,7 +9045,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -8754,7 +9072,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -8781,14 +9099,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8828,7 +9146,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -8869,14 +9187,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8905,7 +9223,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -8918,7 +9236,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: app, command, operation. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: app, command, operation. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -8953,14 +9271,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8982,7 +9300,7 @@ The operation name
 
 ### `--variable`
 
-A variable to set during the operation, in the format &lt;info&gt;type:name=value&lt;/info&gt;
+A variable to set during the operation, in the format \<info>type:name=value\</info>
    
 -  Default: `[]`
 -  Requires a value
@@ -8995,7 +9313,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -9036,14 +9354,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9101,14 +9419,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9157,14 +9475,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9207,14 +9525,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9237,7 +9555,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: id*, title*, path*, fingerprint (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: id*, title*, path*, fingerprint (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -9272,14 +9590,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9326,7 +9644,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -9367,14 +9685,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9403,7 +9721,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -9436,14 +9754,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9478,7 +9796,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -9497,7 +9815,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -9532,14 +9850,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9568,7 +9886,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -9587,7 +9905,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -9622,14 +9940,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9658,7 +9976,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -9697,14 +10015,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9739,7 +10057,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -9784,14 +10102,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9868,14 +10186,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9939,14 +10257,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9987,7 +10305,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -10034,14 +10352,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10064,7 +10382,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: email, id, name, role. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: email, id, name, role. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -10105,14 +10423,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10182,14 +10500,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10290,7 +10608,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -10331,14 +10649,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10373,7 +10691,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -10414,14 +10732,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10462,7 +10780,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -10482,7 +10800,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -10516,14 +10834,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10552,7 +10870,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: is_enabled, level, name, value. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: is_enabled, level, name, value. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -10572,7 +10890,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -10599,14 +10917,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10695,7 +11013,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -10736,14 +11054,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10779,7 +11097,7 @@ The project ID or URL
 
 ### `--environment`, `-e`
 
-The environment ID
+The environment ID. Use "." to select the project's default environment.
    
 -  Requires a value
 
@@ -10792,7 +11110,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: commands, name, type. The % or * characters may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+Columns to display. Available columns: commands, name, type. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -10827,14 +11145,14 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+Answer "yes" to confirmation questions; accept the default value for other questions; disable interaction
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
    
 -  Default: `false`
 -  Does not accept a value
