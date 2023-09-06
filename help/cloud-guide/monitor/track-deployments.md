@@ -3,7 +3,9 @@ title: Track deployments
 description: Learn how to configure New Relic to track deployments in your Adobe Commerce on cloud infrastructure project and analyze changes in performance.
 feature: Cloud, Deploy, Observability
 topic: Performance
-last-substantial-update: 2023-09-06
+hide: yes
+hidefromtoc: yes
+recommendations: noDisplay, noCatalog
 ---
 
 # Track deployments
