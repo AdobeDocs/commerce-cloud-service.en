@@ -106,11 +106,11 @@ You can set the following configuration options for each environment:
 
 ## Fastly and New Relic credentials
 
-Your project includes [Fastly](../cdn/fastly.md) and [New Relic](../monitor/new-relic.md). The project details display information for your project plan and important licenses and tokens for these integrations. Only the License Owner has initial access to the credentials and services. Provide these credentials to technical and developer resources as needed.
+Your project includes [Fastly](../cdn/fastly.md) and [New Relic](../monitor/new-relic-service.md). The project details display information for your project plan and important licenses and tokens for these integrations. Only the License Owner has initial access to the credentials and services. Provide these credentials to technical and developer resources as needed.
 
 -  [Fastly](https://www.fastly.com/) provides content delivery (CDN), image optimization, and security services (DDoS and WAF) for your Adobe Commerce on cloud infrastructure projects. See [Get Fastly credentials](../cdn/fastly-configuration.md#get-fastly-credentials).
 
--  [New Relic](../monitor/new-relic.md) provides application metrics and performance information for Staging and Production environments.
+-  [New Relic](../monitor/new-relic-service.md) provides application metrics and performance information for Staging and Production environments.
 
 **To review your integration tokens, IDs, and more**:
 

@@ -22,7 +22,7 @@ The minimum and maximum thresholds are determined and set based on the contracte
 
 ## Monitor thresholds with New Relic
 
-You can use the [New Relic service](../monitor/new-relic.md#use-new-relic) to monitor certain thresholds, such as host count and CPU usage. The following New Relic queries use a variable notation for `cluster-id` for example purposes only.
+You can use the [New Relic service](../monitor/new-relic-service.md) to monitor certain thresholds, such as host count and CPU usage. The following New Relic queries use a variable notation for `cluster-id` for example purposes only.
 
 >[!TIP]
 >

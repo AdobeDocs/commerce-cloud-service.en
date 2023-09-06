@@ -161,4 +161,9 @@ level: Intermediate
     + [Launch steps](launch/steps.md)
 + Monitor site {#monitor}
     + [Performance](monitor/performance.md)
-    + [New Relic service](monitor/new-relic.md)
+    + New Relic service {#new-relic}
+        + [New Relic overview](monitor/new-relic-service.md)
+        + [Account and user management](monitor/account-management.md)
+        + Investigate performance {#investigate}
+            + [Policies, alerts, and workflows](monitor/investigate-performance.md)
+        + [Log management](monitor/log-management.md)

@@ -21,3 +21,6 @@ The following topics can help you to better understand how to optimize the deplo
 
 -  [Smart wizards](smart-wizards.md)
     The `ece-tools` package provides the smart wizard commands to quickly evaluate your project configuration.
+
+<!-- -  [Track deployments with New Relic](../monitor/track-deployments.md)
+   Use the New Relic service to monitor deployment events and analyze deployment impact to overall performance. -->
