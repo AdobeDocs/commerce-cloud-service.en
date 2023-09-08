@@ -25,7 +25,7 @@ The **View Project Page** link displays for Account Owners only. If you are not 
 >
 >If you do not see any projects, you must contact the [Account Owner or Super User](../project/user-access.md) associated with the project and request access.
 
-When you log in to the [Project Web interface](https://accounts.magento.cloud/user/), you see your accessible projects. As an Account Owner, you can only see projects for your company. An Adobe Solutions Partner may see multiple projects for clients that they support. Click on a project to see a hierarchy of environments.
+When you log in to the [Project Web interface](https://accounts.magento.cloud/user/), you see your accessible projects. As an Account Owner, you can only see projects for your company. An Adobe Solutions Partner may see multiple projects for clients that they support. Click a project to see a hierarchy of environments.
 
 For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branches you create display as children from the `master` branch. Adobe recommends creating a staging branch, then branching from `staging` for your Integration development. See [Starter architecture](../architecture/starter-architecture.md).
 

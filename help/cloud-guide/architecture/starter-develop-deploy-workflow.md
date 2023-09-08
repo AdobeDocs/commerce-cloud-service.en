@@ -84,7 +84,7 @@ Use a branching strategy with your development work. Using one branch to do all 
 -  Integrate with a third-party service
 -  Push this code, test, and merge to Staging then Production
 
-And so on, until you have your store fully built, configured, and ready to launch. But keep reading, we have even better options for your store and code configuration.
+Until you have your store fully built, configured, and ready to launch. But keep reading, we have even better options for your store and code configuration.
 
 >[!NOTE]
 >

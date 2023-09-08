@@ -45,7 +45,7 @@ For example, to use the latest Adobe Commerce version 2.4.5, set `2.4.5` as the 
 The main packages of this metapackage are the following:
 
 - **vendor/magento/ece-tools**—The `ece-tools` package is compatible with Adobe Commerce version 2.1.4 and later to provide a rich set of features you can use to manage your Adobe Commerce on cloud infrastructure project. It contains scripts and Adobe Commerce on cloud infrastructure commands designed to help manage your code and automatically build and deploy your projects. See [Ece-tools package overview](../dev-tools/package-overview.md).
-- **vendor/magento/product-enterprise-edition**—This metapackage requires application components, including modules, frameworks, themes, and so on.
+- **vendor/magento/product-enterprise-edition**—This metapackage requires application components, including modules, frameworks, themes, and more.
 - **vendor/fastly2/magento2**—This module manages the Fastly CDN and services for the Pro Staging and Production and Starter Production environments. See [Fastly services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 - **vendor/magento/module-paypal-on-boarding**—This module provides PayPal payment gateway checkout by connecting to your PayPal merchant account. See [PayPal On-Boarding tool](../store/paypal.md).
 

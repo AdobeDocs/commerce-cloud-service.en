@@ -81,8 +81,8 @@ Adobe Commerce uses a five-value expression for a `crons` specification (spec): 
 
 Some examples:
 
-- `00 */3 * * *` runs every three hours at the first minute (12:00 am, 3:00 am, 6:00 am, and so on)
-- `20 */8 * * *` runs every 8 hours at minute 20 (12:20 am, 8:20 am, 4:20 pm, and so on)
+- `00 */3 * * *` runs every three hours at the first minute (12:00 am, 3:00 am, 6:00 am)
+- `20 */8 * * *` runs every 8 hours at minute 20 (12:20 am, 8:20 am, 4:20 pm)
 - `00 00 * * *` runs once a day at midnight
 - `00 * * * 1` runs once a week on Monday at midnight.
 
