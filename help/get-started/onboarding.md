@@ -18,11 +18,11 @@ If you do not have an Adobe Commerce on cloud infrastructure account, contact [S
 
 ## Cloud [!DNL Onboarding] UI
 
-Use the Adobe Commerce on cloud infrastructure Project Portal ([!DNL Onboarding] UI) to help project administrators, business users, and developers with the tasks required to develop, build, test, and launch your site.
+The Adobe Commerce on cloud infrastructure Project page in the ([!DNL Onboarding] UI) provides a Getting Started checklist to set up your project and services, determine access, and get started with development. From the OBUI, you can:
 
-- Add a Technical Admin, a super user to help manage your project and branches
+- Add a Technical Admin, a super user that can manage your project and branches
 - Access your project environment, including a link to the Project Web Interface
-- Provide your developer with a getting started workflow to set up their local development environments and begin developing
+- Provide your developer with a getting started for local development
 - Complete a quick user acceptance test (UAT) checklist with links to further tests
 
 **To open the project page**:
@@ -33,11 +33,11 @@ Use the Adobe Commerce on cloud infrastructure Project Portal ([!DNL Onboarding]
 
 1. Click **View Project Page** in the [Projects section](https://cloud.magento.com/cloud/project/subscriptions/).
 
-1. Click the name of your project to open the Cloud Project portal ([!DNL Onboarding] UI).
+1. Click the project name and open the Cloud Project page ([!DNL Onboarding] UI).
 
    ![OBUI project page](../assets/onboarding-ui.png)
 
-   Browse through the portal to find helpful information and options to start planning your project, developing code, and preparing for UAT and site launch.
+   Browse through the portal for helpful information and options to start planning your project, developing code, and preparing for UAT and site launch.
 
 ## Project access and users
 
@@ -55,7 +55,7 @@ You can only add registered users to your Adobe Commerce on cloud infrastructure
 
 The License Owner can set up shared access for the account. Shared access allows trusted employees and service providers to use the Help center to submit and track Support tickets related to your Adobe Commerce on cloud infrastructure projects. For setup instructions, see the [Shared Access][] article in the Help Center.
 
-## Project Web Interface
+## Project web interface
 
 When you sign up for a Pro or Starter subscription plan, Adobe provisions your initial project environment with a template repository. See what is included in Pro and Starter plans, see [Starter Architecture](../cloud-guide/architecture/starter-architecture.md) and [Pro Architecture](../cloud-guide/architecture/pro-architecture.md).
 
@@ -69,9 +69,9 @@ For a new project, the first step after getting the welcome email is to secure A
 
 You can submit a password change request using either of the following methods:
 
-- Locate the welcome email sent to the License Owner email address and follow the link to change your password.
+- Locate the welcome email sent to the License Owner email address and follow the link.
 
-- Copy the store URL from the [Project Web Interface](../cloud-guide/project/overview.md) into a browser. Then, append `/admin` to the end of the URL to open the sign-in page. Click the **Forgot password?** link to send a password change request to the License Owner email address.
+- Copy the store URL from the [project web interface](../cloud-guide/project/overview.md) into a browser. Then, append `/admin` to the end of the URL to open the sign-in page. Click the **Forgot password?** link to send a password change request to the License Owner email address.
 
 After you submit the password change request, check your email for the password reset notification. If you do not get the email, check your spam folder.
 
@@ -89,9 +89,9 @@ Anyone working on your project can subscribe to the Adobe Commerce on cloud infr
 
 >[!TIP]
 >
->Learn about the Cloud Project Web Interface.
+>Learn how to navigate the Cloud project web interface.
 >
->**Next step**: [Project console](project-console.md)
+>**Next step**: [Project web interface](project-console.md)
 
 <!-- link definitions -->
 
