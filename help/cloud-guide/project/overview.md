@@ -1,6 +1,6 @@
 ---
 title: Cloud infrastructure project
-description: Read an overview about the Adobe Commerce on cloud infrastructure project interface and learn how to access the account settings.
+description: Read an overview about the Adobe Commerce on cloud infrastructure Project Web Interface and learn how to access the account settings.
 exl-id: ae862898-9b4d-45ed-b370-e82cc6f99017
 ---
 # Cloud infrastructure project

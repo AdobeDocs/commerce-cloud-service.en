@@ -36,7 +36,7 @@ level: Intermediate
     + [Multi-factor authentication](project/multi-factor-authentication.md)
     + [Outgoing emails](project/outgoing-emails.md)
     + [SendGrid email service](project/sendgrid.md)
-    + [Console branch management](project/console-branches.md)
+    + [Web branch management](project/console-branches.md)
     + [Regional IP addresses](project/regional-ip-addresses.md)
 + Developer tools {#dev-tools}
     + [Overview](dev-tools/overview.md)
