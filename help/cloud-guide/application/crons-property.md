@@ -67,7 +67,7 @@ MAILTO=""
 
 ## Build a cron job
 
-A cron job includes the schedule and timing specification and the command to run at the scheduled time. For Starter environments and Pro Integration environments, the minimum interval is once per five minutes. For Pro Staging and Production environments, the minimum interval is once per minute. On Adobe Commerce on cloud infrastructure, you add custom cron jobs to the `.magento.app.yaml` file in the `crons` section. The general format is `spec` for scheduling and `cmd` to specify the command or custom script to run.
+A cron job includes the schedule and timing specification and the command to run at the scheduled time. For Starter environments and Pro `integration` environments, the minimum interval is once per five minutes. For Pro Staging and Production environments, the minimum interval is once per minute. On Adobe Commerce on cloud infrastructure, you add custom cron jobs to the `.magento.app.yaml` file in the `crons` section. The general format is `spec` for scheduling and `cmd` to specify the command or custom script to run.
 
 ### Specification
 
@@ -116,7 +116,7 @@ On the Adobe Commerce on cloud infrastructure platform, you can add customizatio
 
 >[!NOTE]
 >
->For Starter environments and Pro Integration environments, the minimum interval is once per five minutes. For Pro Staging and Production environments, the minimum interval is once per minute. You cannot configure more frequent intervals than the default minimums.
+>For Starter environments and Pro `integration` environments, the minimum interval is once per five minutes. For Pro Staging and Production environments, the minimum interval is once per minute. You cannot configure more frequent intervals than the default minimums.
 
 On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must be enabled on your project before you can add custom cron jobs to Staging and Production environments using the `.magento.app.yaml` file. If this feature is not enabled, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable auto-crons.
 

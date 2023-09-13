@@ -8,7 +8,7 @@ exl-id: d9561f09-5129-4b72-978e-2e3873e8efae
 
 Use the `hooks` section to run shell commands during the build, deploy, and post-deploy phases:
 
--  **`build`**—Execute commands _before_ packaging your application. Services, such as the database or Redis, are not available at this time since the application has not been deployed yet. You must add custom commands _before_ the default `php ./vendor/bin/ece-tools` command so that custom-generated content continues to the deployment phase.
+-  **`build`**—Execute commands _before_ packaging your application. Services, such as the database or Redis, are not available since the application has not been deployed yet. Add custom commands _before_ the default `php ./vendor/bin/ece-tools` command so that custom-generated content continues to the deployment phase.
 
 -  **`deploy`**—Execute commands _after_ packaging and deploying your application. You can access other services at this point. Since the default `php ./vendor/bin/ece-tools` command copies the `app/etc` directory to the correct location, you must add custom commands _after_ the deploy command to prevent custom commands from failing.
 
@@ -68,6 +68,6 @@ hooks:
         php ./vendor/bin/ece-tools build
 ```
 
-You must compile Sass files using `grunt` before static content deployment, which happens during the build. Place the `grunt` command before the `build` command.
+Compile Sass files using `grunt` before static content deployment, which happens during the build. Place the `grunt` command before the `build` command.
 
 {{scenarios}}

@@ -23,7 +23,7 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 | [`type`](#type-and-build) | Set the base container image | `php:8.1` | Yes |
 | [`variables`](variables-property.md) | Apply an environment variable for a specific Commerce version | — | No |
 | [`web`](web-property.md) | Handle external requests | — | Yes |
-| [`workers`](workers-property.md) | Handle external requests | — | Yes, if not using web |
+| [`workers`](workers-property.md) | Handle external requests | — | Yes, if not using the web propert |
 
 {style="table-layout:auto"}
 
@@ -60,10 +60,10 @@ dependencies:
 
 ### Installing and using Composer 2
 
-The `build: flavor:` property is not used for Composer 2.x; therefore, you must manually install Composer during the build phase. To install and use Composer 2.x in your Starter and Pro projects, you need to make three changes to your `.magento.app.yaml` configuration:
+The `build: flavor:` property is not used for Composer 2.x; therefore, you must manually install Composer during the build phase. To install and use Composer 2.x in your Starter and Pro projects, you must make three changes to your `.magento.app.yaml` configuration:
 
 1. Remove `composer` as the `build: flavor:` and add `none`. This change prevents Cloud from using the default 1.x version of Composer to run build tasks.
-1. Add `composer/composer: '^2.0'` as a `php` dependency to install Composer 2.x.
+1. Add `composer/composer: '^2.0'` as a `php` dependency for installing Composer 2.x.
 1. Add the `composer` build tasks to a `build` hook to run the build tasks using Composer 2.x.
 
 Use the following configuration fragments in your own `.magento.app.yaml` configuration:
@@ -89,7 +89,7 @@ See [Required packages](../development/overview.md#required-packages) for more i
 
 ## `dependencies`
 
-Enables you to specify dependencies that your application might need during the build process.
+Specify dependencies that your application might need during the build process.
 
 Adobe Commerce supports dependencies on the following languages:
 
@@ -110,7 +110,7 @@ nodejs:
 
 ## `runtime`
 
-Enables you to modify the PHP configuration at runtime, such as enabling extensions. The following extensions are required:
+Use to modify the PHP configuration at runtime, such as enabling extensions. The following extensions are required:
 
 ```yaml
 runtime:
@@ -120,7 +120,7 @@ runtime:
         - sodium
 ```
 
-See [PHP settings](php-settings.md) to learn more about enabling extensions.
+See [PHP settings](php-settings.md) for details about enabling extensions.
 
 ## `disk`
 
@@ -189,14 +189,14 @@ You can make the mount web accessible by adding it to the [`web`](web-property.m
 
 >[!WARNING]
 >
->Once your site has data, do not change the `subpath` portion of the mount name. This value is the unique identifier for the files area. If you change this name, you lose all site data stored at the old location.
+>Once your site has data, do not change the `subpath` portion of the mount name. This value is the unique identifier for the `files` area. If you change this name, you lose all site data stored at the old location.
 
 ## `access`
 
 The `access` property indicates a minimum user role level that is allowed SSH access to the environments. The available user roles are:
 
-- `admin`—Can change settings and execute actions in the environment. Also has _contributor_ and _viewer_ rights.
-- `contributor`—Can push code to this environment and branch from the environment. Also has _viewer_ rights.
+- `admin`—Can change settings and execute actions in the environment; has _contributor_ and _viewer_ rights.
+- `contributor`—Can push code to this environment and branch from the environment; has _viewer_ rights.
 - `viewer`—Can view the environment only.
 
 The default user role is `contributor`, which restricts the SSH access from users with only _viewer_ rights. You can change the user role to `viewer` to allow SSH access for users with only _viewer_ rights:

@@ -8,9 +8,9 @@ exl-id: f169c008-c62a-41b7-a98d-cccd81c7291a
 
 >[!IMPORTANT]
 >
->Starter plans only
+>Starter projects only
 
-For Starter plans, the `firewall` property adds an _outbound_ firewall to the application. This firewall has no effect on incoming requests. It defines which `tcp` outbound requests can _leave_ an Adobe Commerce site. This is called egress filtering. The outbound firewall is filtering what can egress—exit or escape—your site. And when you limit what can escape, you add a powerful security tool to your server.
+For Starter projects, the `firewall` property adds an _outbound_ firewall to the application. This firewall has no effect on incoming requests. It defines which `tcp` outbound requests can _leave_ an Adobe Commerce site. This is called egress filtering. The outbound firewall is filtering what can egress—exit or escape—your site. Limiting what can escape adds a powerful security tool to your server.
 
 ## Default restriction policies
 
@@ -209,7 +209,7 @@ To test your egress-filtering rules:
 
 1. Configure a `post_deploy` hook in your `.magento.app.yaml` file to run the script.
 
-1. Push your `firewall` configuration and your test script to your integration branch.
+1. Push your `firewall` configuration and your test script to your `integration` branch.
 
 1. Examine the `post_deploy` output from your `curl` commands.
 

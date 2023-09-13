@@ -121,7 +121,7 @@ sourceguardian.restrict_unencoded = "1"
 
 See [section 3.5 of the SourceGuardian documentation](https://sourceguardian.com/demofiles/files/SourceGuardian%20for%20Linux%20User%20Manual.pdf). _This is a link to a PDF_.
 
-[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install these PHP extensions in all Production environments and Pro Staging environments. Include your updated `.magento/services.yaml` file, `.magento.app.yaml` file with the updated PHP version and any additional PHP extensions. For changes to a live Production environment, you must provide a minimum of 48 hours notice. It can take up to 48 hours for the Cloud infrastructure team to update your project.
+[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for help with installing these PHP extensions in all Production environments and Pro Staging environments. Include your updated `.magento/services.yaml` file, `.magento.app.yaml` file with the updated PHP version and any additional PHP extensions. For changes to a live Production environment, you must provide a minimum of 48 hours notice. It can take up to 48 hours for the Cloud infrastructure team to update your project.
 
 >[!WARNING]
 >
