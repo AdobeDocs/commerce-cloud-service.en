@@ -6,11 +6,11 @@ exl-id: c54d8772-b6cc-41cc-b1ab-bef7d6f13bf2
 ---
 # Scaled Architecture
 
-The Cloud infrastructure scales according to your resource needs to achieve greater efficiency. The Adobe Commerce on cloud infrastructure monitors your applications and can adjust capacity to maintain steady, predictable performance. Converting to this architecture helps to mitigate problems, such as latency or large spikes in traffic.
+The Cloud infrastructure scales according to your resource requirements to achieve greater efficiency. The Adobe Commerce on cloud infrastructure monitors your applications and can adjust capacity to maintain steady, predictable performance. Converting to this architecture helps to mitigate problems, such as latency or large spikes in traffic.
 
 >[!NOTE]
 >
->The scaled architecture is available for Adobe Commerce on cloud infrastructure accounts with the Pro48 cluster or greater.
+>The scaled architecture is available for Adobe Commerce on cloud infrastructure accounts with the Pro 48 cluster or greater.
 
 ## Split-tier architecture
 
@@ -22,7 +22,7 @@ There are three service nodes for data storage, cache, and services: **OpenSearc
 
 ![Service tier scaling](../../assets/scaling-service.png)
 
-Consider an example that the service node instance type is _m5.2xlarge_ with 32Gb RAM. A service, such as the database, uses a considerable amount of memory (30 Gb). Scaling to the next available instance size _m5.4xlarge_ provides 64Gb RAM, which doubles the memory and accommodates the growing needs of the database.
+Consider an example that the service node instance type is _m5.2xlarge_ with 32-Gb RAM. A service, such as the database, uses a considerable amount of memory (30 Gb). Scaling to the next available instance size _m5.4xlarge_ provides 64-Gb RAM, which doubles the memory and accommodates the growing needs of the database.
 
 You can further optimize the performance of the service tier by routing traffic based on the node type. By default, the database node is isolated from the web traffic. As an example, you can choose to serve web traffic on the database node.
 
@@ -32,17 +32,17 @@ There are three web nodes for processing requests and web traffic: **php-fpm** a
 
 ![Web tier scaling](../../assets/scaling-web.png)
 
-This complements the vertical scaling provided by the service tier. As the service tier scales in size and power to accommodate a growing database and service usage, the web tier scales in size and power, and even instances, to accommodate an increase in process requests and higher traffic requirements.
+This complements the vertical scaling provided by the service tier. As the service tier scales in size and power to accommodate a growing database and service usage, the web tier scales in size, power, and instances to accommodate an increase in process requests and higher traffic requirements.
 
-Consider an example that the web node instance type is _C5.2xlarge with eight CPUs and 16Gb RAM_. The number of requests to the site increased greatly. You can add a C5.2xlarge node to handle the increase in php-fpm processes or you can change each instance type to _C5.4xlarge with 16 CPU and 32Gb RAM_. Adding a node reduces the risk of insufficient surge capacity.
+Consider an example that the web node instance type is _C5.2xlarge with eight CPUs and 16-Gb RAM_. The number of requests to the site increased greatly. You can add a C5.2xlarge node to handle the increase in php-fpm processes or you can change each instance type to _C5.4xlarge with 16 CPU and 32-Gb RAM_. Adding a node reduces the risk of insufficient surge capacity.
 
 ## Project structure
 
 Minimally, Pro projects with the Scaled architecture have six nodes available.
 
-- 3 web nodes c5.2xlarge (8 CPU, 16 Gb RAM)
+- 3 web nodes c5.2xlarge (8 CPU, 16-Gb RAM)
 
-- 3 service nodes m5.2xlarge (8 CPU, 32 Gb RAM)
+- 3 service nodes m5.2xlarge (8 CPU, 32-Gb RAM)
 
 Each project is unique, however, and requires performance monitoring to properly analyze resource management. Each account includes the [New Relic service](../monitor/new-relic-service.md), which automatically connects with the application data and performance analytics to provide dynamic server monitoring. Specifically, you can use the New Relic service to monitor CPU and RAM utilization to determine which nodes require additional resources. As a resource reaches capacity or you notice a degradation in performance based on the analytics, you can create a request to scale your infrastructure to meet the demand.
 
