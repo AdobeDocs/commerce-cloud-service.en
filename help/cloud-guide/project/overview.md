@@ -19,13 +19,13 @@ The Project Web Interface provides features to create, manage, and deploy code i
 1. Click **Projects (Cloud)**.
 1. Locate your project and click **View Project Page**.
 
-The **View Project Page** link displays for Account Owners only. If you are not an Account Owner, go to the [user login](https://accounts.magento.cloud/user/) instead.
+The **View Project Page** link displays for Account Owners only. If you are not an Account Owner, go to the [user login](https://console.magento.cloud) instead.
 
 >[!TIP]
 >
 >If you do not see any projects, you must contact the [Account Owner or Super User](../project/user-access.md) associated with the project and request access.
 
-When you log in to the [Project Web interface](https://accounts.magento.cloud/user/), you see your accessible projects. As an Account Owner, you can only see projects for your company. An Adobe Solutions Partner may see multiple projects for clients that they support. Click a project to see a hierarchy of environments.
+When you log in to the [Project Web interface](https://console.magento.cloud), you see your accessible projects. As an Account Owner, you can only see projects for your company. An Adobe Solutions Partner may see multiple projects for clients that they support. Click a project to see a hierarchy of environments.
 
 For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branches you create display as children from the `master` branch. Adobe recommends creating a staging branch, then branching from `staging` for your Integration development. See [Starter architecture](../architecture/starter-architecture.md).
 
@@ -114,7 +114,7 @@ Your project includes [Fastly](../cdn/fastly.md) and [New Relic](../monitor/new-
 
 **To review your integration tokens, IDs, and more**:
 
-1. Log in to [your account](https://accounts.magento.cloud/user/)
+1. Log in to [your account](https://console.magento.cloud)
 
 1. In the upper right corner, click your name and **Account settings**.
 

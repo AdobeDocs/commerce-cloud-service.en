@@ -18,7 +18,7 @@ You must have an [Admin role](../project/user-access.md) for the environment.
 
 **To create a snapshot using the Project Web Interface**:
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://console.magento.cloud).
 1. In the left pane, click the name of the environment to back up.
 1. In the top pane, click the **[!UICONTROL Snapshots]** icon. This option is not available for a Pro Production or Staging environment.
 1. Click **Create**.
@@ -84,7 +84,7 @@ Restoration times vary depending on the size of your database:
 
 **To restore a snapshot using the Project Web Interface**:
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://console.magento.cloud).
 1. In the left pane, click the name of the environment to restore.
 1. In the environment messages, select **snapshot** from the _all types of_ drop-down list.
 1. Click **restore** next to the snapshot.

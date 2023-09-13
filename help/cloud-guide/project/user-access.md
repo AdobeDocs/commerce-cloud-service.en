@@ -197,7 +197,7 @@ Instructions for installing the authenticator application and enabling TFA are a
 
 **To enable TFA on your user account**:
 
-1. Log in to [your account](https://accounts.magento.cloud/user/).
+1. Log in to [your account](https://console.magento.cloud).
 
 1. Click the **Account settings** tab.
 
@@ -251,7 +251,7 @@ Instructions for installing the authenticator application and enabling TFA are a
 
 You manage the TFA configuration for an Adobe Commerce on cloud infrastructure account from the _Security_ section on the _Account settings_ page.
 
-1. Log in to [your account](https://accounts.magento.cloud/user/).
+1. Log in to [your account](https://console.magento.cloud).
 
 1. Click the **Account Settings** tab.
 
@@ -278,7 +278,7 @@ On projects that have MFA enforcement enabled, you must have an API token to ena
 
 **To create an API token**:
 
-1. Log in to [your account](https://accounts.magento.cloud/user/).
+1. Log in to [your account](https://console.magento.cloud).
 
 1. On the Cloud projects page, click the **Account settings** tab.
 

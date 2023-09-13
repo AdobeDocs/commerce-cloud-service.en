@@ -53,7 +53,7 @@ You can add SSH keys to your account using one of the following methods:
 
 ### Add your SSH key using the Project Web Interface
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://console.magento.cloud).
 
 1. Click **No SSH key**. This icon is to the right of the command field and is visible when the project does not contain an SSH key.
 
@@ -65,7 +65,7 @@ You can add SSH keys to your account using one of the following methods:
 
 ### Add a key from the Cloud Account dashboard
 
-1. Log in to [your Cloud account](https://accounts.magento.cloud/user/).
+1. Log in to [your Cloud account](https://console.magento.cloud).
 
 1. On the account dashboard, click the **Account Settings** tab.
 

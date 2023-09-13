@@ -95,7 +95,7 @@ For Adobe Commerce on cloud infrastructure projects enabled for MFA enforcement,
 
 **To connect using SSH with TFA user account credentials**:
 
-1. Log in to [your account](https://accounts.magento.cloud/user/).
+1. Log in to [your account](https://console.magento.cloud).
 
 1. On your local workstation, use the `magento-cloud` CLI to generate the SSH certificate.
 
@@ -143,7 +143,7 @@ When managing source code for Adobe Commerce on cloud infrastructure projects, y
 
 **To connect using SSH with TFA user account credentials**:
 
-1. Log in to [your account](https://accounts.magento.cloud/user/) and authenticate using TFA.
+1. Log in to [your account](https://console.magento.cloud) and authenticate using TFA.
 
    >[!NOTE]
    >
@@ -273,7 +273,7 @@ Try the following troubleshooting procedures to resolve the connection issue:
 
 **To verify TFA configuration and authentication**:
 
-1. Log in to [your account](https://accounts.magento.cloud/user/).
+1. Log in to [your account](https://console.magento.cloud).
 
 1. Click **Account settings** > **Security**.
 

@@ -44,7 +44,7 @@ magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master
 
 **To change the URL using the Project Web Interface**:
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://console.magento.cloud).
 
 1. In the Project dashboard, select the environment and click **Configure environment**.
 

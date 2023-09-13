@@ -21,10 +21,10 @@ This topic discusses how to use the Project Web Interface to:
 
 ## Create or delete an environment
 
-The branching strategy uses a common Git workflow where you develop code and add extension in a development branch. See [Starter](../architecture/starter-architecture.md) and [Pro](../architecture/starter-develop-deploy-workflow.md) architecture overviews.
+The branching strategy uses a common Git workflow where you develop code and add extensions in a development branch. See [Starter](../architecture/starter-architecture.md) and [Pro](../architecture/starter-develop-deploy-workflow.md) architecture overviews.
 
 -  For Starter, create a `staging` branch from the `master` branch, then branch from `staging` for development.
--  For Pro, create a development branch from the Integration environment.
+-  For Pro, create a development branch from the integration environment.
 
 Your account supports a limited number of active Git branches and an unlimited number of inactive development branches. Manage active and inactive branches by adding or deleting a branch. When deleted, a branch is deactivated and remains listed in the project branches list as _inactive_. You can activate the inactive branch later or you can [delete the branch](../dev-tools/cloud-cli-overview.md#) using the CLI.
 
@@ -32,7 +32,7 @@ If you need additional environments for development, enter a [Support ticket](ht
 
 **To add a branch**:
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://console.magento.cloud).
 1. Click the project.
 1. In the left environment list, click the name of the parent environment.
 
@@ -48,22 +48,22 @@ If you need additional environments for development, enter a [Support ticket](ht
 
    An environment name **cannot** include characters reserved for your Linux shell or for regular expressions. Forbidden characters include curly braces (`{ }`), parentheses, asterisk (`*`), angle brackets (`>`), ampersand (`&`), percent (<code>%</code>), and other characters.
 
-1. Click **Branch**.
+1. Click **[!UICONTROL Branch]**.
 1. Wait while the environment deploys.
 
    During deployment, the environment status is **In process**. After a successful deployment, the status changes to **Success**.
 
 **To delete an environment and make it inactive**:
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://console.magento.cloud).
 1. Click the project.
 1. In the left environment list, click the name of the branch to delete.
-1. Click **Configure environment**.
+1. Click **[!UICONTROL Configure environment]**.
 
    ![Configure environment](../../assets/ui-configure-environment.png)
 
-1. Click the **Settings** tab.
-1. Click **Delete** next to the environment status, as the following figure shows.
+1. Click the **[!UICONTROL Settings]** tab.
+1. Click **[!UICONTROL Delete]** next to the environment status, as the following figure shows.
 
    ![Delete an environment](../../assets/ui-delete-environment.png)
 
@@ -79,7 +79,7 @@ For Pro plan, you can also sync from Staging and Production to your Integration 
 
 **To sync an environment**:
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://console.magento.cloud).
 1. Click the project.
 1. In the left environment list, click the name of the branch to sync.
 1. Click (sync).
@@ -99,7 +99,7 @@ Merging an environment (or branch) is the same as `git push origin`. You merge t
 
 **To merge with parent environment**:
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://console.magento.cloud).
 1. Click the project.
 1. In the left environment list, click the name of the branch to merge.
 1. Click (merge).
@@ -122,7 +122,7 @@ For **Pro**, you can review the following logs in each environment:
 
 **To view logs in the Project Web Interface**:
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://console.magento.cloud).
 1. Click the project.
 1. In the left environment list, click the name of the branch to view logs.
 
@@ -150,7 +150,7 @@ If your project needs to access multiple repositories, you can choose to attach 
 
 **To find your project SSH public key**:
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log in to [the Project Web Interface](https://console.magento.cloud).
 1. Click the project.
 1. Click ![Configure project](../../assets/icon-configure.png) next to the project name.
 1. Click **Deploy Key**.
@@ -215,7 +215,7 @@ You can access your project and environments from any location through a web bro
 
 **To secure environments**:
 
-1. Log into your [Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log into your [Project Web Interface](https://console.magento.cloud).
 1. Click the project.
 1. Select an environment branch.
 1. Click **Configure Environment**.

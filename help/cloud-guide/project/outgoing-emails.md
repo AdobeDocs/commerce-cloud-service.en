@@ -17,7 +17,7 @@ Use the **[!UICONTROL Outgoing emails]** toggle in the _Configure environment_ v
 
 **To manage email support from the Project Web Interface**:
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/)
+1. Log in to [the Project Web Interface](https://console.magento.cloud)
 1. Click the project.
 1. In the left environment list, click the name of the branch.
 1. To enable or disable outgoing emails, toggle _Outgoing emails_ **On** or **Off**.
