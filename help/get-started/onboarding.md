@@ -73,7 +73,7 @@ Anyone working on your project can subscribe to the Adobe Commerce on cloud infr
 >
 >Learn how to navigate the Cloud project web interface.
 >
->**Next step**: [Project web interface](project-console.md)
+>**Next step**: [Project web interface](web-interface.md)
 
 <!-- link definitions -->
 

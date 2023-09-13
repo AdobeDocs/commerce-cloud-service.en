@@ -46,4 +46,4 @@ Before setting up a workspace, gather the following credentials and accounts:
 >
 >For existing Commerce owners migrating to the Cloud infrastructure, learn how to import existing code to the cloud environment.
 >
->**Next step**: [Import existing code](import-existing-code.md)
+>**Next step**: [Import existing code](import-code.md)
