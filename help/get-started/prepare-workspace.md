@@ -8,7 +8,7 @@ recommendations: noDisplay, catalog
 
 Whether you are a first-time merchant or an existing Adobe Commerce merchant moving to the cloud infrastructure, begin to prepare your workspace with these steps. If you already completed some of these steps or have an existing Adobe Commerce developer environment, review the following for expected results and continue to the next step. Some configurations and workflows differ from the typical on-premises installation.
 
-## Gather credentials
+## Credentials
 
 Before setting up a workspace, gather the following credentials and accounts:
 
@@ -26,19 +26,21 @@ Before setting up a workspace, gather the following credentials and accounts:
 
 ## Developer tools
 
-Install the `magento-cloud` CLI so that you can manage Cloud environments and run automation tasks.
+- **Install the Cloud CLI**
 
-### Launch a Docker environment
+  Install the `magento-cloud` CLI so that you can manage Cloud environments and run automation tasks.
 
-You can use the Docker environment to emulate the Commerce on cloud infrastructure `integration` environment for local development. You need three essential components: an Adobe Commerce v2 template, Docker Compose, and `ece-tools` package.
+- **Launch a Docker environment**
 
-- [Docker architecture and common commands](../cloud-guide/dev-tools/cloud-docker.md)
-- [Launch Docker development environment](https://developer.adobe.com/commerce/cloud-tools/docker/setup/)
-- [ECE-Tools package](../cloud-guide/dev-tools/package-overview.md)
+  Use the Docker environment to emulate the Commerce on cloud infrastructure `integration` environment for local development. You need three essential components: an Adobe Commerce v2 template, Docker Compose, and `ece-tools` package.
 
-### Git-based services
+  - [Docker architecture and common commands](../cloud-guide/dev-tools/cloud-docker.md)
+  - [Launch Docker development environment](https://developer.adobe.com/commerce/cloud-tools/docker/setup/)
+  - [ECE-Tools package](../cloud-guide/dev-tools/package-overview.md)
 
-For information about using Git-based hosting services with Adobe Commerce on cloud infrastructure, see [Integrations](../cloud-guide/integrations/overview.md).
+- **Integrate Git-based services**
+
+  Optionally integrate a Git-based hosting service, such as GitHub or GitLab, with Adobe Commerce on cloud infrastructure. See [Integrations](../cloud-guide/integrations/overview.md).
 
 >[!TIP]
 >

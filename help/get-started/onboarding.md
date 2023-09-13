@@ -57,27 +57,9 @@ The License Owner can set up shared access for the account. Shared access allows
 
 ## Project web interface
 
-When you sign up for a Pro or Starter subscription plan, Adobe provisions your initial project environment with a template repository. See what is included in Pro and Starter plans, see [Starter Architecture](../cloud-guide/architecture/starter-architecture.md) and [Pro Architecture](../cloud-guide/architecture/pro-architecture.md).
+When you sign up for a Pro or Starter plan, Adobe provisions your initial project environment using a template repository that includes package instructions for a specific version of Adobe Commerce. See what is included in Pro and Starter plans, see [Starter Architecture](../cloud-guide/architecture/starter-architecture.md) and [Pro Architecture](../cloud-guide/architecture/pro-architecture.md).
 
-You can use the [Project Web Interface](project-console.md) to manage your project, add user accounts, and begin developing your store. The License Owner, Technical Admin users, and developers can use this interface to manage all environments and branches, environment variables, environment settings, and routes.
-
-## Access your Commerce Admin panel
-
-Users that have administrative access to the Commerce Admin panel can add users, configure store services, complete store setup and customization work, and more.
-
-For a new project, the first step after getting the welcome email is to secure Admin access to the project by changing the password on the License Owner account. The default username for this account is the License Owner email address.
-
-You can submit a password change request using either of the following methods:
-
-- Locate the welcome email sent to the License Owner email address and follow the link.
-
-- Copy the store URL from the [project web interface](../cloud-guide/project/overview.md) into a browser. Then, append `/admin` to the end of the URL to open the sign-in page. Click the **Forgot password?** link to send a password change request to the License Owner email address.
-
-After you submit the password change request, check your email for the password reset notification. If you do not get the email, check your spam folder.
-
->[!TIP]
->
->If the password reset fails or you cannot sign in to the Admin panel, a user with admin access can connect to the project using SSH and add an admin user using the CLI [admin:user:create command](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html).
+You can use the [Project Web Interface](web-interface.md) to manage your project, add user accounts, and begin developing your store. The License Owner, Technical Admin users, and developers can use this interface to manage all environments and branches, environment variables, environment settings, and routes.
 
 ## Sign up for Adobe status
 

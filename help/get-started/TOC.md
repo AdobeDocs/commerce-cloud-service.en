@@ -12,8 +12,10 @@ recommendations: noDisplay, noCatalog
 + [Get Started with Commerce](overview.md)
 + [Provision Commerce on Cloud](new-project.md)
 + [Onboarding](onboarding.md)
-+ [Project console](project-console.md)
++ Cloud project {#project}
+    + [Web interface](web-interface.md)
+    + [Access storefront](access-storefront.md)
 + Workspace setup {#local-setup}
     + [Prepare workspace](prepare-workspace.md)
-+ [Import existing Commerce code](import-existing-code.md)
++ [Import Commerce code](import-code.md)
 + [Return to Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html)
