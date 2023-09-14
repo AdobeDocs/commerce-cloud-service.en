@@ -16,7 +16,7 @@ To quickly onboard your project, so you can begin developing your site for live 
 
 If you do not have an Adobe Commerce on cloud infrastructure account, contact [Sales][]. When you sign up, Adobe creates your account and sends you a welcome email that provides instructions on how to access the project interface. The email contains a link so that you can log in to your account and complete your initial project setup.
 
-## Cloud [!DNL Onboarding] UI
+### Cloud [!DNL Onboarding] UI
 
 The Adobe Commerce on cloud infrastructure Project page in the ([!DNL Onboarding] UI) provides a Getting Started checklist to set up your project and services, determine access, and get started with development. From the OBUI, you can:
 
@@ -27,11 +27,11 @@ The Adobe Commerce on cloud infrastructure Project page in the ([!DNL Onboarding
 
 **To open the project page**:
 
-1. Log in to your [Adobe Commerce on cloud infrastructure account](https://account.magento.com/customer/account/).
+1. Log in to your [Adobe Commerce customer account](https://account.magento.com/customer/account/login).
 
 1. On the _My Account_ page, click the **[!UICONTROL Commerce]** tab to see the projects in your account.
 
-1. Click **View Project Page** in the [Projects section](https://cloud.magento.com/cloud/project/subscriptions/).
+1. Click **View Project Page** in the [Projects section](https://cloud.magento.com/cloud/project/).
 
 1. Click the project name and open the Cloud Project page ([!DNL Onboarding] UI).
 
@@ -39,7 +39,7 @@ The Adobe Commerce on cloud infrastructure Project page in the ([!DNL Onboarding
 
    Browse through the portal for helpful information and options to start planning your project, developing code, and preparing for UAT and site launch.
 
-## Project access and users
+## Access project and add users
 
 The License Owner can add user accounts to provide access to code, manage branches, enter tickets, and support environments. These user accounts can include in-house development, consultants, and solution specialists.
 
@@ -51,23 +51,31 @@ You can create a Technical Admin through the Project portal, from the Project We
 
 You can only add registered users to your Adobe Commerce on cloud infrastructure projects and environments. If you have a new user, ask them to [register for an account](https://account.magento.com/customer/account/login/) and to provide the email address associated with their account profile.
 
-### Set up shared account access
+### Shared account access
 
 The License Owner can set up shared access for the account. Shared access allows trusted employees and service providers to use the Help center to submit and track Support tickets related to your Adobe Commerce on cloud infrastructure projects. For setup instructions, see the [Shared Access][] article in the Help Center.
 
-## Project web interface
-
-When you sign up for a Pro or Starter plan, Adobe provisions your initial project environment using a template repository that includes package instructions for a specific version of Adobe Commerce. See what is included in Pro and Starter plans, see [Starter Architecture](../cloud-guide/architecture/starter-architecture.md) and [Pro Architecture](../cloud-guide/architecture/pro-architecture.md).
+### Project web interface
 
 You can use the [Project Web Interface](web-interface.md) to manage your project, add user accounts, and begin developing your store. The License Owner, Technical Admin users, and developers can use this interface to manage all environments and branches, environment variables, environment settings, and routes.
+
+**To access the Project Web Interface**:
+
+1. Log in to [My account](https://account.magento.com/customer/account/login).
+
+1. On the _My Account_ page, click the **[!UICONTROL Commerce]** tab to see the projects in your account.
+
+1. Click the **Projects** tab and select a project.
+
+1. Click **Infrastructure access**, and then click **Project Access (Web UI)**.
+
+   ![Cloud project portal](../assets/obui-project-access.png)
 
 ## Sign up for Adobe status
 
 Get updates about Adobe Commerce on cloud infrastructure platform environments and related services from the [Status page][].
 
-The page provides a status for Adobe Commerce on cloud infrastructure components and services followed by notifications about incident reports, service upgrades, planned outages, and more. These notifications are ordered by date.
-
-Anyone working on your project can subscribe to the Adobe Commerce on cloud infrastructure status site to receive event notifications and updates through email. You can customize your subscription to select a specific platform and services that you want to track.
+The page provides a status for Adobe Commerce components and services followed by notifications about incident reports, service upgrades, planned outages, and scheduled maintenance. Anyone working on your project can subscribe to the Adobe Commerce status site to receive event notifications and updates through email or Slack. You can customize your Adobe status subscription to track specific products by regions and events.
 
 >[!TIP]
 >

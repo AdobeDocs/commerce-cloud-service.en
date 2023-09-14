@@ -19,7 +19,7 @@ The Project Web Interface provides features to create, manage, and deploy code i
 1. Click **Projects (Cloud)**.
 1. Locate your project and click **View Project Page**.
 
-The **View Project Page** link displays for Account Owners only. If you are not an Account Owner, go to the [user login](https://console.magento.cloud) instead.
+The **View Project Page** link displays for Account Owners only. If you are not an Account Owner, go to the [login for the project web interface](https://console.magento.cloud) instead.
 
 >[!TIP]
 >

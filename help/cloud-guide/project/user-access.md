@@ -11,7 +11,7 @@ exl-id: 3357a3ea-bf86-4a65-95d1-6b24f1152248
 
 You manage access to Adobe Commerce on cloud infrastructure projects and environments by adding users and assigning roles.
 
-Project-level access provides role-based access to a specific project. Environment-level access provides role-based access to environment types within the project. Adobe Commerce on cloud infrastructure consists of three environments types: Production, Staging, and Integration. The following table lists the roles
+Project-level access provides role-based access to a specific project. Environment-level access provides role-based access to environment types within the project. Adobe Commerce on cloud infrastructure consists of three environment types: Production, Staging, and Integration. The following table lists the roles:
 
 | Role               | Scope       | Access     | SSH     |
 | ------------------ | ----------- | ---------- | ------- |
@@ -37,7 +37,7 @@ Add users and assign roles using the `magento-cloud` CLI or the Project Web Inte
 
 **Prerequisites:**
 
-- A registered user with an Adobe ID. A user must [register for an Adobe account](https://account.adobe.com) and then [initialize their Cloud account](https://accounts.magento.cloud) before you can add them to a Cloud project.
+- A registered user with an Adobe ID. A user must [register for an Adobe account](https://account.adobe.com) and then [initialize their Cloud account](https://console.magento.cloud) before you can add them to a Cloud project.
 
 - A user assigned the **Admin** role cannot manage users with the `magento-cloud` CLI. Only users that are granted the **Super User** or **Account Owner** role can manage users.
 
@@ -126,49 +126,35 @@ magento-cloud user:update alice@example.com -r production:a
 
 ## Manage users from the Project Web Interface
 
-You can use the Project Web Interface to add permissions and use the _Edit_ feature to modify permissions for an existing user.
+You can use the [Project Web Interface](../../get-started/web-interface.md) to add permissions and use the _Edit_ feature to modify permissions for an existing user.
 
 >[!IMPORTANT]
 >
 >The user must have an Adobe ID; see the [prerequisites](#add-users-and-manage-access).
 
-### Add users from the Project Web Interface
+### Add a user to the project
 
-1. Log in to [your account](https://account.magento.com/customer/account/login).
+1. In the [Project Web Interface](https://console.magento.cloud/), click the settings icon in the top-right of the navigation bar.
 
-1. On the _My Account_ page, click the [!UICONTROL Magento] tab to see the projects in your account.
+1. Under _Project Settings_, click **[!UICONTROL Access]**.
 
-1. Click the **Projects** tab.
-
-1. Click a project.
-
-1. Click **Infrastructure access**, and then click **Project Access (Web UI)**.
-
-   ![Cloud project portal](../../assets/obui-project-access.png)
-
-1. In the Project Access (Web UI), add users as needed.
-
-### Add a project-level user
-
-1. In the Project Web Interface, click the settings icon in the top navigation bar.
-
-1. In the _Users_ tab, click **Add User**.
+1. In the _Access_ tab, click **[!UICONTROL Add]**.
 
 1. Complete the _Add User_ form:
 
    -  Enter the user e-mail address.
 
-   -  Select **Super User** to create a project administrator account. This role provides Admin rights to all settings and environments. Other users only have access to view options for all project environments.
+   -  **[!UICONTROL Project admin]** grants the user Admin rights to all settings and environment types.
 
-   -  Select **Environment permissions**: _No access_, _Admin_ (change settings, execute action, merge code), _Contributor_ (push code), or _Viewer_ (view only). When you add active environments, you can modify permissions per user.
+   -  **Environment types and permissions** section provides more granular permission levels for access to certain environments. _No access_, _Admin_ (change settings, execute action, merge code), _Contributor_ (push code), or _Viewer_ (view only).
 
    >[!TIP]
    >
-   >Only **Super Users** can manage users in any environment. To grant a user access to the **Users** tab when configuring the environment, another **Super User** or the **Account Owner** must assign that user the **Super User** role.
+   >Only a **Project admin** can manage users in any environment. To grant a user access to the **Access** tab, another **Project admin** or the **Account Owner** must assign that user the **Project admin** role.
 
 1. Click **Add User**.
 
-1. After adding project-level users, redeploy all environments to apply the changes. Adding a project-level user does not trigger a deployment automatically. Redeployment is an important step to ensure that the user can access an environment using SSH.
+1. After adding users, redeploy all environments to apply the changes. Adding a user does not trigger a deployment automatically. Redeployment is an important step to ensure that the user can access an environment using SSH.
 
 After you add the user, Adobe sends an email to the specified address with instructions for accessing the Adobe Commerce on cloud infrastructure project.
 
@@ -235,7 +221,7 @@ Instructions for installing the authenticator application and enabling TFA are a
 
       >[!WARNING]
       >
-      >If you lose access to an account with TFA and have no recovery codes, you must contact your project administrator, or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to reset the TFA application.
+      >If you lose access to an account with TFA and do not have the recovery codes, you must contact your project administrator, or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to reset the TFA application.
 
 1. After completing the TFA setup, click **Save** to update your account.
 
@@ -249,7 +235,7 @@ Instructions for installing the authenticator application and enabling TFA are a
 
 ### Manage TFA configuration and recovery codes
 
-You manage the TFA configuration for an Adobe Commerce on cloud infrastructure account from the _Security_ section on the _Account settings_ page.
+You can manage the TFA configuration for an Adobe Commerce on cloud infrastructure account from the _Security_ section on the _Account settings_ page.
 
 1. Log in to [your account](https://console.magento.cloud).
 
@@ -264,7 +250,7 @@ You manage the TFA configuration for an Adobe Commerce on cloud infrastructure a
    -  Disable TFA
    -  Reset the authenticator application
    -  Add or remove trusted browsers
-   -  View or refresh TFA recovery codes on account
+   -  View or refresh TFA recovery codes on your account
 
 ### Create an API token
 
@@ -280,16 +266,12 @@ On projects that have MFA enforcement enabled, you must have an API token to ena
 
 1. Log in to [your account](https://console.magento.cloud).
 
-1. On the Cloud projects page, click the **Account settings** tab.
+1. On the _All projects_ page, click **[!UICONTROL My Profile]** on your user menu.
 
-1. On the _Account settings_ tab, expand the **API Tokens** section. Then, click **Create an API token**.
+1. On the _My Profile_ page, click the **[!UICONTROL API tokens]** tab.
 
-   ![API tokens](../../assets/api-tokens.png)
+1. Click **Create API token** and enter a name, for example specify a name that matches the machine user or automated process that uses the API token.
 
-1. Specify an **Application** name for the token, for example, specify a name that matches the machine user or automated process that uses the API token.
-
-   ![Create API token](../../assets/api-tokens-application-name.png)
+   ![API tokens](../../assets/api-token-name.png)
 
 1. Click **Create API token**.
-
-   ![Generate API token](../../assets/api-tokens-list.png)

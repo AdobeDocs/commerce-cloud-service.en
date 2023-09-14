@@ -10,8 +10,6 @@ The Project Web Interface for Commerce on Cloud infrastructure has many features
 
 The License Owner, Technical Admin users, and developers can use the Project Web Interface (WI) to manage all environments and branches, environment variables, environment settings, services, and routes.
 
-Access the Project WI with the following URL: https://console.magento.cloud
-
 ## What's new?
 
 The Project WI provides a more modern, user-friendly experience and lays the foundation for future interface enhancements. Use the following URL to access the updated Project Web Interface: `https://console.magento.cloud/`
