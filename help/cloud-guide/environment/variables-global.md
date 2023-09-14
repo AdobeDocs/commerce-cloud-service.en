@@ -48,7 +48,7 @@ stage:
 -  **Default**-_Not set_
 -  **Version**—Adobe Commerce 2.4.7-beta2 and later
 
-When set to `true`, enables Commerce webhooks. The webhook runs on an external endpoint, such as an App Builder runtime action or [AWS Lambda](https://aws.amazon.com/lambda/). See the [_Webhooks Guide_](https://developer.adobe.com/commerce/extensibility/webhooks) for more information.
+When set to `true`, enables Commerce webhooks. The webhook runs on an external endpoint, such as an App Builder runtime action or [AWS Lambda](https://aws.amazon.com/lambda/). The [_Webhooks Guide_](https://developer.adobe.com/commerce/extensibility/webhooks) describes this feature in detail.
 
 ```yaml
 stage:
