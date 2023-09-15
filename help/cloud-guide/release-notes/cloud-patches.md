@@ -23,7 +23,13 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.23 {#latest}
+## v1.0.24 {#latest}
+
+Release date: September 15, 2023
+
+- **Returned updated MCLOUD-10604 patch back**-This patch Improves performance by reducing the number of times the same deployment configurations load for Adobe Commerce 2.4.6 to 2.4.6-p1<!-- MCLOUD-10604 -->
+
+## v1.0.23
 
 Release date: July 31, 2023
 
