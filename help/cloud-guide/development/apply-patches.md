@@ -140,7 +140,7 @@ You can apply patches manually in a local environment and test them before you d
 
 >[!WARNING]
 >
->We strongly recommend testing all patches in an Integration or Staging environments before deploying to the Production environment.
+>We strongly recommend testing all patches in an integration or Staging environments before deploying to the Production environment.
 
 **To apply patches in a remote environment**:
 

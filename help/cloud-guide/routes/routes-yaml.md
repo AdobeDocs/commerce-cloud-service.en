@@ -81,7 +81,7 @@ The `routes.yaml` file is a list of templated routes and their configurations. Y
 
     If a project does not have any domains configured, which is common during development, the `{all}` placeholder behaves in the same way as the `{default}` placeholder.
 
-Adobe Commerce also generates routes for every active Integration environment. For Integration environments, the `{default}` placeholder is replaced with the following domain name:
+Adobe Commerce also generates routes for every active integration environment. For integration environments, the `{default}` placeholder is replaced with the following domain name:
 
 ```text
 [branch]-[per-environment-random-string]-[project-id].[region].magentosite.cloud

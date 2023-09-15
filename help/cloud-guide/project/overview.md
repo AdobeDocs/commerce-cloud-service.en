@@ -19,15 +19,15 @@ The Project Web Interface provides features to create, manage, and deploy code i
 1. Click **Projects (Cloud)**.
 1. Locate your project and click **View Project Page**.
 
-The **View Project Page** link displays for Account Owners only. If you are not an Account Owner, go to the [login for the project web interface](https://console.magento.cloud) instead.
+The **View Project Page** link displays for Account Owners only. If you are not an Account Owner, go to the [login for the Project Web Interface](https://console.magento.cloud) instead.
 
 >[!TIP]
 >
 >If you do not see any projects, you must contact the [Account Owner or Super User](../project/user-access.md) associated with the project and request access.
 
-When you log in to the [Project Web interface](https://console.magento.cloud), you see your accessible projects. As an Account Owner, you can only see projects for your company. An Adobe Solutions Partner may see multiple projects for clients that they support. Click a project to see a hierarchy of environments.
+When you log in to the [Project Web Interface](https://console.magento.cloud), you see your accessible projects. As an Account Owner, you can only see projects for your company. An Adobe Solutions Partner may see multiple projects for clients that they support. Click a project to see a hierarchy of environments.
 
-For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branches you create display as children from the `master` branch. Adobe recommends creating a staging branch, then branching from `staging` for your Integration development. See [Starter architecture](../architecture/starter-architecture.md).
+For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branches you create display as children from the `master` branch. Adobe recommends creating a staging branch, then branching from `staging` for your integration development. See [Starter architecture](../architecture/starter-architecture.md).
 
 ![Starter access](../../assets/starter/project-access.png)
 
@@ -83,7 +83,7 @@ You can set the following configuration options for each project:
 
 ## Configure environment
 
-You can manage variables and settings for Production, Staging, and Integration environments through this interface, [configuration files](../environment/overview.md), or with CLI commands. Select an environment in the environment list and click **Configure environment** to update the settings, add variables, routes, and users.
+You can manage variables and settings for Production, Staging, and integration environments through this interface, [configuration files](../environment/overview.md), or with CLI commands. Select an environment in the environment list and click **Configure environment** to update the settings, add variables, routes, and users.
 
 You can set the following configuration options for each environment:
 

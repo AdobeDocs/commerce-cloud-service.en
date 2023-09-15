@@ -10,7 +10,7 @@ You can define a worker to run independently from the web instance without a run
 
 ## Configure a worker
 
-Workers are available to use with Pro Staging and Production environments only. Pro Integration and Starter environments can opt to use the [CRON_CONSUMERS_RUNNER](../environment/variables-deploy.md#cron_consumers_runner) variable.
+Workers are available to use with Pro Staging and Production environments only. Pro integration and Starter environments can opt to use the [CRON_CONSUMERS_RUNNER](../environment/variables-deploy.md#cron_consumers_runner) variable.
 
 To configure a worker in Pro Staging or Production, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) and include the following information:
 

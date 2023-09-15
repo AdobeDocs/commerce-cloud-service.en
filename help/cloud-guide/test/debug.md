@@ -11,7 +11,7 @@ exl-id: bf2d32d8-fab7-439e-8df3-b039e53009d4
 >
 >You can configure [!DNL Xdebug] to run in the Cloud Docker environment for local debugging without changing your Adobe Commerce on cloud infrastructure project configuration. See [Configure Xdebug for Docker](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/).
 
-To enable [!DNL Xdebug], you must configure a file in your Git repository, configure your IDE, and set up port forwarding. You can configure some settings in the `magento.app.yaml` file. After editing, push the Git changes across all Starter environments and Pro Integration environments to enable [!DNL Xdebug]. [!DNL Xdebug] is already available in Pro Staging & Production environments.
+To enable [!DNL Xdebug], you must configure a file in your Git repository, configure your IDE, and set up port forwarding. You can configure some settings in the `magento.app.yaml` file. After editing, push the Git changes across all Starter environments and Pro integration environments to enable [!DNL Xdebug]. [!DNL Xdebug] is already available in Pro Staging & Production environments.
 
 Once configured, you can debug CLI commands, web requests, and code. Remember that all cloud infrastructure environments are read-only. Clone the code to your local development environment to perform debugging. For Pro Staging and Production environments, see [additional instructions](#debug-for-pro-staging-and-production) for [!DNL Xdebug].
 
@@ -34,7 +34,7 @@ To add [!DNL Xdebug], Adobe recommends working in [a development branch](../dev-
 
 ### Enable Xdebug in your environment
 
-You can enable [!DNL Xdebug] directly to all Starter environments and Pro Integration environments. This configuration step is not required for Pro Production & Staging environments. See [Debug for Pro Staging and Production](#debug-for-pro-staging-and-production).
+You can enable [!DNL Xdebug] directly to all Starter environments and Pro integration environments. This configuration step is not required for Pro Production & Staging environments. See [Debug for Pro Staging and Production](#debug-for-pro-staging-and-production).
 
 To enable [!DNL Xdebug] for your project, add `xdebug` to the `runtime:extensions` section of the `.magento.app.yaml` file.
 
@@ -70,7 +70,7 @@ To enable [!DNL Xdebug] for your project, add `xdebug` to the `runtime:extension
    git push origin <environment-ID>
    ```
 
-When deployed to Starter environments and Pro Integration environments, [!DNL Xdebug] is now available. Continue configuring your IDE. For PhpStorm, see [Configure PhpStorm](#configure-phpstorm).
+When deployed to Starter environments and Pro integration environments, [!DNL Xdebug] is now available. Continue configuring your IDE. For PhpStorm, see [Configure PhpStorm](#configure-phpstorm).
 
 ### Configure PhpStorm
 
@@ -98,7 +98,7 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 
 1. In the **Absolute path on the server** column, click the **Edit** icon and add a setting based on the environment.
 
-   -  For all Starter environments and Pro Integration environments, the remote path is `/app`.
+   -  For all Starter environments and Pro integration environments, the remote path is `/app`.
    -  For Pro Staging and Production environments:
 
       -  Production: `/app/<project_code>/`
@@ -133,13 +133,13 @@ Map the `XDEBUG` connection from the server to your local system. To do any type
 
 **To troubleshoot the connection**:
 
-1. Use SSH to log in to the remote Integration, Staging, or Production environment.
+1. Use SSH to log in to the remote integration, Staging, or Production environment.
 
 1. View a list of SSH sessions: `who`
 
 1. View existing SSH sessions by user. Be careful to not affect a user other than yourself!
 
-   -  Integration: usernames are similar to `dd2q5ct7mhgus`
+   -  integration: usernames are similar to `dd2q5ct7mhgus`
    -  Staging: usernames are similar to `dd2q5ct7mhgus_stg`
    -  Production: usernames are similar to `dd2q5ct7mhgus`
 
@@ -214,7 +214,7 @@ To set up port forwarding (SSH tunneling) on Windows, you must configure your Wi
 
 For initiating debugging, performing setup, and more, you need the SSH commands for accessing the environments. You can get this information, through the [Project Web Interface](../development/secure-connections.md#use-an-ssh-command) and your project spreadsheet.
 
-For Starter environments and Pro Integration environments, you can use the following `magento-cloud` CLI command to SSH into those environments:
+For Starter environments and Pro integration environments, you can use the following `magento-cloud` CLI command to SSH into those environments:
 
 ```bash
 magento-cloud environment:ssh --pipe -e <environment-ID>
@@ -311,7 +311,7 @@ To debug CLI commands:
 
 1. Begin debugging
 
-   On Starter environments and Pro Integration environments, run the CLI command to debug.
+   On Starter environments and Pro integration environments, run the CLI command to debug.
    You may add runtime options, for example:
 
    ```bash

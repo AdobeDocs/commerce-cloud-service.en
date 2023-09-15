@@ -10,20 +10,20 @@ This example shows how to use configuration management to keep store settings co
 
 The example uses the following procedure defined in [Store settings](store-settings.md):
 
-1. Enter your configurations in your Integration environment store Admin.
+1. Enter your configurations in your integration environment store Admin.
 1. Create a `config.php` file and transfer it to your local workstation.
-1. Push `config.php` to the remote Integration environment.
+1. Push `config.php` to the remote integration environment.
 1. Verify your settings are not editable in the Admin.
 1. Make any necessary modifications:
 
-   *  Change configuration settings on the Integration environment.
+   *  Change configuration settings on the integration environment.
    *  To add configurations, run the command to create `config.php` again. New configurations are appended to the file.
    *  To remove or edit existing configurations, manually edit the file.
    *  Commit and push.
 
 For example, you may want to set the following settings:
 
-*  Disable [locale](https://glossary.magento.com/locale) and static file optimization settings in your Integration environment
+*  Disable [locale](https://glossary.magento.com/locale) and static file optimization settings in your integration environment
 *  Enable static file optimization in Staging and Production environments
 *  Configure Fastly in Staging and Production with specific credentials for each
 
@@ -34,15 +34,15 @@ _Static file optimization_ means merging and minifying JavaScript and Cascading 
 To complete these configuration management tasks, you need the following:
 
 *  Project reader role with [environment "admin"](../project/user-access.md) privileges
-*  Admin URL and credentials for Integration, Staging, and Production environments
+*  Admin URL and credentials for integration, Staging, and Production environments
 
 ## Configure the Commerce Admin
 
-In the Integration environment, you can log in to the Admin to modify system configuration settings for stores, websites, modules or extensions, static file optimization, and system values related to static content deployment. See [Configuration data](store-settings.md#scd-performance).
+In the integration environment, you can log in to the Admin to modify system configuration settings for stores, websites, modules or extensions, static file optimization, and system values related to static content deployment. See [Configuration data](store-settings.md#scd-performance).
 
 **To change locale and static file optimization settings**:
 
-1. Log in to the Integration environment Admin. You can access this URL through the [Project Web Interface](../project/overview.md).
+1. Log in to the integration environment Admin. You can access this URL through the [Project Web Interface](../project/overview.md).
 1. Navigate to **Stores** > Settings > **Configuration** > General > **General**.
 1. In the page navigation, expand **Locale Options**.
 1. From the **Locale** list, change the locale. You can change it back later.
@@ -55,7 +55,7 @@ In the Integration environment, you can log in to the Admin to modify system con
 
 ## Export values and transfer config.php to your local system
 
-This step creates and transfers the `config.php` configuration file on the Integration environment using a command you run on your local machine.
+This step creates and transfers the `config.php` configuration file on the integration environment using a command you run on your local machine.
 
 This procedure corresponds to step 2 in the [recommended procedure](store-settings.md). After you create `config.php`, transfer it to your local system so you can add it to Git.
 
@@ -139,16 +139,16 @@ To verify your configuration changes:
 
 If you need to modify any of these settings, then modify the `config.php` file manually with a text editor. After completing edits or removals, you can commit and push it to the remote environment following the previous steps.
 
-To add configurations, modify your Integration environment and run the command again to generate the file. Any new configurations are appended to the code in the file. Push it to Git following the previous steps.
+To add configurations, modify your integration environment and run the command again to generate the file. Any new configurations are appended to the code in the file. Push it to Git following the previous steps.
 
 For this example, modify static file optimization settings and add a new setting for JavaScript.
 
-### Add configurations in Integration
+### Add configurations in integration
 
-To add configuration values in the Integration environment Admin. This example merges JavaScript files.
+To add configuration values in the integration environment Admin. This example merges JavaScript files.
 
-1. Log out of the Integration Admin.
-1. Log back in to the Integration Admin.
+1. Log out of the integration Admin.
+1. Log back in to the integration Admin.
 1. Click **Stores** > Settings > **Configuration** > **Advanced** > **Developer**.
 1. In the right pane, expand **JavaScript Settings**.
 1. From the **Merge JavaScript Files** list, click **Yes**.

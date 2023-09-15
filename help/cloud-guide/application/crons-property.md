@@ -156,7 +156,7 @@ On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must
 
 ### Update cron jobs
 
-To add, remove, or update a customized job, change the configuration in the `crons` section of the `.magento.app.yaml` file. Then, test the updates in the remote `integration` environment before pushing the changes to the Production and Staging environments.
+To add, remove, or update a customized job, change the configuration in the `crons` section of the `.magento.app.yaml` file. Then, test the updates in the remote `integration` environment before pushing the changes to the Staging and Production environments.
 
 ## Disable cron jobs
 

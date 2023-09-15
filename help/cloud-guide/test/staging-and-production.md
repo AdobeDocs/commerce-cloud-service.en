@@ -76,7 +76,7 @@ Check the configuration settings through the Admin panel including the Base URL,
 
 Complete User Acceptance Testing (UAT) on Staging and Production. The following tests are a quick list of possible tasks and areas to test as a Merchant and Customer. Your list may be longer and include additional tests for custom modules, extensions, and third-party integrations. When testing, use desktops, laptops, and mobile devices.
 
-If you encounter issues, save your reproduction steps, error messages, strange screen captures, and links. Use this information to investigate and fix issues in Integration environment code and configurations or environment settings.
+If you encounter issues, save your reproduction steps, error messages, strange screen captures, and links. Use this information to investigate and fix issues in integration environment code and configurations or environment settings.
 
 <table>
 <tr>

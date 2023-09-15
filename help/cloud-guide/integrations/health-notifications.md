@@ -6,7 +6,7 @@ exl-id: d3173098-78ed-42a8-aeb3-9ccbaccc4d32
 ---
 # Health notifications
 
-Adobe Commerce on cloud infrastructure monitors disk space usage on all applications and services in your Starter environment or your Pro Integration environment. A database disk that runs out of space could cause data corruption. The health status check occurs every 5 minutes and can notify you by email or other external service. There are three low-disk warnings for health notifications:
+Adobe Commerce on cloud infrastructure monitors disk space usage on all applications and services in your Starter environment or your Pro integration environment. A database disk that runs out of space could cause data corruption. The health status check occurs every 5 minutes and can notify you by email or other external service. There are three low-disk warnings for health notifications:
 
 -  **Warning**—available disk space drops below 20%
 -  **Critical**—available disk space drops below 10%
@@ -34,7 +34,7 @@ magento-cloud integration:add --type health.slack --token SLACK_BOT_TOKEN --chan
 
 ## PagerDuty notifications
 
-PagerDuty is an external service that can notify on-call team members of important issues. Before you can receive health notifications in PagerDuty, you must create a [PagerDuty integration](https://developer.pagerduty.com/v2/docs/integrating) that uses the Events API version 2. Use the Integration Key, or _routing key_, to register your integration. The following example registers notifications for PagerDuty using a routing key:
+PagerDuty is an external service that can notify on-call team members of important issues. Before you can receive health notifications in PagerDuty, you must create a [PagerDuty integration](https://developer.pagerduty.com/v2/docs/integrating) that uses the Events API version 2. Use the integration Key, or _routing key_, to register your integration. The following example registers notifications for PagerDuty using a routing key:
 
 ```bash
 magento-cloud integration:add --type health.pagerduty --routing-key PAGERDUTY_ROUTING_KEY

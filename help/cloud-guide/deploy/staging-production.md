@@ -36,7 +36,7 @@ The Staging environment provides a near-production environment that includes a d
 
 The Project Web Interface provides features to create, manage, and deploy code in Integration, Staging, and Production environments for Starter and Pro plans.
 
-**For Pro projects, deploy the Integration branch to Staging**:
+**For Pro projects, deploy the integration branch to staging**:
 
 1. [Log in](https://accounts.magento.cloud) to your project.
 1. Select the `integration` branch.
@@ -47,7 +47,7 @@ The Project Web Interface provides features to create, manage, and deploy code i
 1. Complete all [testing](../test/staging-and-production.md) in the Staging environment.
 1. When Staging is ready, select the **Merge** option to deploy to Production.
 
-**For Starter, deploy the development branch to Staging**:
+**For Starter, deploy the development branch to staging**:
 
 1. [Log in](https://accounts.magento.cloud) to your project.
 1. Select the prepared code branch.
@@ -268,7 +268,7 @@ It is a best practice to create a backup of the database. The following procedur
 
 1. Create a backup of the database. To choose a target directory for the DB dump, use the `--dump-directory` option.
 
-   For Starter environments and Pro Integration environments, use `main` as the name of the database:
+   For Starter environments and Pro integration environments, use `main` as the name of the database:
 
    ```bash
    php vendor/bin/ece-tools db-dump main

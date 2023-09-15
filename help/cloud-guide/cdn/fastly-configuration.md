@@ -12,7 +12,7 @@ Fastly works with Varnish to provide fast caching capabilities and a [Content De
 
 >[!NOTE]
 >
->Fastly is not available in Integration environments.
+>Fastly is not available in integration environments.
 
 Complete the following steps to enable, configure, and test Fastly early in your site development process to enable secure access to your site.
 
@@ -294,7 +294,7 @@ After you update the module, you must upload the VCL code to apply the changes t
 
 **To upgrade the Fastly module**:
 
-1. In your local Integration environment, use the following module information to [upgrade the Fastly module](../store/extensions.md#upgrade-an-extension).
+1. In your local integration environment, use the following module information to [upgrade the Fastly module](../store/extensions.md#upgrade-an-extension).
 
    ```text
    module name: fastly/magento2

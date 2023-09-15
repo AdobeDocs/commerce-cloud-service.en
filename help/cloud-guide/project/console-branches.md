@@ -75,7 +75,7 @@ If you need additional environments for development, enter a [Support ticket](ht
 
 Syncing an environment (or branch) is the same as `git pull origin <parent>`. You sync to get updated code from a parent environment. You can use this feature through the interface for all Starter and Pro environments.
 
-For Pro plan, you can also sync from Staging and Production to your Integration `master` branch. This sync only pulls and pushes code, not data. To sync data, dump the database data and push it to another environment's database. See [Migrate and deploy static files and data](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
+For Pro plan, you can also sync from Staging and Production to your integration `master` branch. This sync only pulls and pushes code, not data. To sync data, dump the database data and push it to another environment's database. See [Migrate and deploy static files and data](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
 
 **To sync an environment**:
 

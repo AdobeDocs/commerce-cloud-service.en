@@ -45,7 +45,7 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
 >[!TIP]
 >
->For Pro Staging and Integration environments and Starter environments, use [Health notifications](../integrations/health-notifications.md) to monitor disk space.
+>For Pro Staging and integration environments and Starter environments, use [Health notifications](../integrations/health-notifications.md) to monitor disk space.
 
 >[!PREREQUISITES]
 >

@@ -25,11 +25,7 @@ Create an SSH key pair on every machine and workspace that requires access to yo
 
 After you add your SSH public key to your Adobe Commerce on cloud infrastructure account, redeploy all active environments on your account to install the key.
 
-You can add SSH keys to your account using one of the following methods:
-
-- Cloud CLI
-- Project Web Interface
-- Cloud account console
+You can add SSH keys to your account using one of the following methods: Cloud CLI or Project Web Interface.
 
 ### Add your SSH key using the Cloud CLI
 
@@ -53,6 +49,8 @@ You can add SSH keys to your account using one of the following methods:
 
 ### Add your SSH key using the Project Web Interface
 
+**To add an SSH key to a new project**:
+
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
 
 1. Click **No SSH key**. This icon is to the right of the command field and is visible when the project does not contain an SSH key.
@@ -63,7 +61,7 @@ You can add SSH keys to your account using one of the following methods:
 
 1. Follow the remaining prompts.
 
-### Add a key from the Cloud Account dashboard
+**To add an SSH key to your Cloud profile**:
 
 1. Log in to [your Cloud account](https://console.magento.cloud).
 
@@ -77,7 +75,7 @@ You can add SSH keys to your account using one of the following methods:
 
 ## Connect to a remote environment
 
-You can connect to a remote environment using the `magento-cloud` CLI or an SSH command. The `magento-cloud` CLI commands can only be used in Starter and Pro Integration environments.
+You can connect to a remote environment using the `magento-cloud` CLI or an SSH command. The `magento-cloud` CLI commands can only be used in Starter and Pro integration environments.
 
 ### Use the Cloud CLI
 
@@ -127,7 +125,7 @@ The Project Web Interface includes a list of Web and SSH access commands for eac
 
 ## sFTP
 
-Adobe Commerce on cloud infrastructure supports accessing your environments using sFTP (secure FTP) with SSH authentication. Use a client that supports SSH key authentication for sFTP and use your public SSH key. Your public SSH key must be added to the target environment. For Starter environments and Pro Integration environments, you can [add it through the Project Web Interface](#add-your-ssh-key-using-the-project-web-interface).
+Adobe Commerce on cloud infrastructure supports accessing your environments using sFTP (secure FTP) with SSH authentication. Use a client that supports SSH key authentication for sFTP and use your public SSH key. Your public SSH key must be added to the target environment. For Starter environments and Pro integration environments, you can [add it through the Project Web Interface](#add-your-ssh-key-using-the-project-web-interface).
 
 Read-only sFTP connections are _not_ supported; sFTP access is provided with _write_ permission by default.
 
@@ -145,7 +143,7 @@ When configuring sFTP, use the information from your SSH access environment comm
 
 Depending on the client, additional options may be required to complete SSH authentication for sFTP. Review the documentation for your selected client.
 
-For **Starter environments and Pro Integration environments**, you may also want to consider [adding a `mount`](../application/properties.md#mounts) for access to a specific directory. You would add the mount to your `.magento.app.yaml` file. For a list of writable directories, see [Project structure](../project/file-structure.md). This mount point only works in those environments.
+For **Starter environments and Pro integration environments**, you may also want to consider [adding a `mount`](../application/properties.md#mounts) for access to a specific directory. You would add the mount to your `.magento.app.yaml` file. For a list of writable directories, see [Project structure](../project/file-structure.md). This mount point only works in those environments.
 
 For **Pro Staging and Production environments**, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request sFTP access and a mount point for access to the specific `pub/media` folder.
 

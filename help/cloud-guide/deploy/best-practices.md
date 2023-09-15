@@ -12,7 +12,7 @@ The build and deploy process is slightly different for each plan:
 
 -  **Starter plans**—For the integration environment, every active branch builds and deploys to a full environment for access and testing. Fully test your code after merging to the `staging` branch. To launch your site, push `staging` to `master` to deploy to the Production environment. You have full access to all branches through the Project Web Interface and the CLI commands.
 
--  **Pro plans**—For the integration environment, every _active_ branch builds and deploys to a full environment for access and testing. Merge your code to the `integration` branch before merging to the Staging and Production environments. You can merge to the Staging and Production environments using the Project Web Interface or using SSH and `magento-cloud` CLI commands.
+-  **Pro plans**—For the integration environment, every active branch builds and deploys to a full environment for access and testing. Merge your code to the `integration` branch before merging to the Staging and Production environments. You can merge to the Staging and Production environments using the Project Web Interface or using SSH and `magento-cloud` CLI commands.
 
 ## Track the process
 
@@ -22,7 +22,7 @@ If you are using external GitHub repositories, the log of operations does not di
 
 >[!NOTE]
 >
->In Integration environments, you cannot view the deploy logs from the Project Web Interface. This feature is available only for Production and Staging environments. However, you can view logs for every phase of the deployment in any environment using the [build and deploy](../test/log-locations.md#build-and-deploy-logs) logs. For troubleshooting information, see the [Deployment error reference](../dev-tools/error-reference.md).
+>In integration environments, you cannot view the deploy logs from the Project Web Interface. This feature is available only for Production and Staging environments. However, you can view logs for every phase of the deployment in any environment using the [build and deploy](../test/log-locations.md#build-and-deploy-logs) logs. For troubleshooting information, see the [Deployment error reference](../dev-tools/error-reference.md).
 
 <!-- You can enable [Track deployments with New Relic](../monitor/track-deployments.md) to monitor deployment events and analyze performance between deployments. -->
 
@@ -44,7 +44,7 @@ Review these best practices and considerations for your deployment process:
 
 -  **Keep sensitive configuration values and data in environment-specific variables**
 
-   These values include variables specified using the Cloud CLI, the Project Web interface, or added to the `env.php` file. See [Variable levels](../environment/variable-levels.md).
+   These values include variables specified using the Cloud CLI, the Project Web Interface, or added to the `env.php` file. See [Variable levels](../environment/variable-levels.md).
 
 -  **Ensure that all code is available in the environment branch**
 
@@ -52,7 +52,7 @@ Review these best practices and considerations for your deployment process:
 
 -  **Add extensions, integrations, and code in iterated branches**
 
-   Make and test changes locally, push to Integration, then to Staging and Production. Test and resolve issues in each environment before merging the updates to the next environment. Some extensions and integrations must be enabled and configured in a specific order due to dependencies. Adding and testing in groups can make your build and deploy process much easier and help determine where issues occur.
+   Make and test changes locally, push to `integration`, then to `staging` and `production`. Test and resolve issues in each environment before merging the updates to the next environment. Some extensions and integrations must be enabled and configured in a specific order due to dependencies. Adding and testing in groups can make your build and deploy process much easier and help determine where issues occur.
 
 -  **Verify service versions and relationships and the ability to connect**
 
@@ -60,13 +60,13 @@ Review these best practices and considerations for your deployment process:
 
 -  **Test locally and in the integration environment before deploying to Staging and Production**
 
-   Identify and fix issues in your local and Integration environments to prevent extended downtime when you deploy to Staging and Production environments.
+   Identify and fix issues in your local and integration environments to prevent extended downtime when you deploy to Staging and Production environments.
 
    >[!TIP]
    >
    >There are [smart wizard](../deploy/smart-wizards.md) commands that you can use to verify that your cloud project configuration follows best practices for build and deployment configuration, including static content deployment (SCD) strategy.
 
--  **After completing testing in local and Integration environments, deploy and test in the Staging environment**
+-  **After completing testing in local and integration environments, deploy and test in the Staging environment**
 
    See [Staging and Production testing](../test/staging-and-production.md).
 
@@ -84,7 +84,7 @@ Review these best practices and considerations for your deployment process:
 
    Review the deployment status messages and mitigate issues as needed. Review the Cloud [logs](../test/log-locations.md#) for detailed log messages.
 
-## Five phases of Integration build and deployment
+## Five phases of integration build and deployment
 
 The following phases occur in your local development environment and the integration environment. For Pro plans, the code is not deployed to the Staging or Production environments in these initial phases.
 

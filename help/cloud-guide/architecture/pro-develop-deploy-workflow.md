@@ -14,7 +14,7 @@ The Pro project includes a single Git repository with a Global `master` and thre
 
 See [Pro architecture](pro-architecture.md) for a complete overview of the pro environments.
 
-The following graphic demonstrates the Pro develop and deploy workflow, which uses a simple, git-branching approach. You [develop](#development-workflow) code using an Active branch based on the `integration` environment, _pushing_ and _pulling_ code changes to and from your remote, Active branch. You deploy verified code by _merging_ the remote branch to the base branch, which activates an automated [build and deploy](#deployment-workflow) process for that environment.
+The following graphic demonstrates the Pro develop and deploy workflow, which uses a simple, git-branching approach. You [develop](#development-workflow) code using an active branch based on the `integration` environment, _pushing_ and _pulling_ code changes to and from your remote, Active branch. You deploy verified code by _merging_ the remote branch to the base branch, which activates an automated [build and deploy](#deployment-workflow) process for that environment.
 
 ![High-level view of Pro architecture development workflow](../../assets/pro-dev-workflow.png)
 
@@ -42,7 +42,7 @@ With a developed code branch and the corresponding configuration files, your cod
 
 -  **Generating configuration management files**—Some configuration settings are _Read Only_ in a deployed environment.
 
--  **Configuring your store**—You should fully configure all store settings using the integration environment. You can find the **Store Admin URL** on the _integration_ environment panel in the _Project Web Interface_.
+-  **Configuring your store**—You should fully configure all store settings using the integration environment. You can find the **Store Admin URL** on the _integration_ environment view in the _Project Web Interface_.
 
 ## Deployment workflow
 
@@ -74,9 +74,9 @@ Deploy script actions:
 
 After the build and deploy process, your store comes back online with your latest code changes and configurations. See [Deployment process](../deploy/process.md).
 
-### Merge to Integration
+### Merge to integration
 
-Combine all verified code changes by merging your Active development branch into the base `integration` branch. You can test all your changes on the `integration` branch before promoting changes to the Staging environment.
+Combine all verified code changes by merging your active development branch into the base `integration` branch. You can test all your changes on the `integration` branch before promoting changes to the Staging environment.
 
 ### Merge to Staging
 

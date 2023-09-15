@@ -13,7 +13,7 @@ The deploy script uses the configuration files in the `.magento` directory to pr
 Changing a service configuration causes a deployment to provision the environment with the updated services, which affects the following environments:
 
 - All Starter environments including Production `master`
-- Pro Integration environments
+- Pro integration environments
 
 {{pro-update-service}}
 

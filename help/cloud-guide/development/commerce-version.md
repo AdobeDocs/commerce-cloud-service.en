@@ -226,7 +226,7 @@ Before upgrading, always check that the dependencies in the `composer.json` file
 
 We recommend creating a backup of your project before an upgrade. Use the following steps to back up your Integration, Staging, and Production environments.
 
-**To back up your Integration environment database and code**:
+**To back up your integration environment database and code**:
 
 1. Create a local backup of the remote database.
 
@@ -310,7 +310,7 @@ Review the [service versions](../services/services-yaml.md#service-versions) inf
 
 ### Create a config.php file
 
-As mentioned in [Configuration management](#configuration-management), after upgrading, you must create an updated `config.php` file. Complete any additional configuration changes through the Admin in your Integration environment.
+As mentioned in [Configuration management](#configuration-management), after upgrading, you must create an updated `config.php` file. Complete any additional configuration changes through the Admin in your integration environment.
 
 **To create a system-specific configuration file**:
 
@@ -362,7 +362,7 @@ Review your third-party extension and module pages in Marketplace or other compa
 
 1. Add, commit, and push the code changes to the remote.
 
-1. Push to and test in your Integration environment.
+1. Push to and test in your integration environment.
 
 1. Push to the Staging environment to test in a pre-production environment.
 

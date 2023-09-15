@@ -8,7 +8,7 @@ exl-id: d4452d7d-d3dc-4f8d-8bd7-76f05d89f545
 ---
 # Development overview
 
-Adobe Commerce on cloud infrastructure remote environments are **Read Only**, including all Starter environments and all Pro Integration, Staging, and Production environments. In a local development environment, you can write and test code before pushing it to an integration environment for further testing and deployment to Staging and Production.
+Adobe Commerce on cloud infrastructure remote environments are **Read Only**, including all Starter environments and all Pro integration, Staging, and Production environments. In a local development environment, you can write and test code before pushing it to an integration environment for further testing and deployment to Staging and Production.
 
 ## Required packages
 

@@ -12,7 +12,7 @@ You can view the logs from the file system, the Project Web Interface, and the `
 
 - **File system**—The `/var/log` system directory contains logs for all environments. The `var/log/` directory contains app-specific logs unique to a particular environment. These directories are not shared between nodes in a cluster. In Pro Production and Staging environments, you must check the logs on each node.
 
-- **Project web Interface**—You can see build, deploy, and post-deploy log information in the environment _messages_ list.
+- **Project Web Interface**—You can see build, deploy, and post-deploy log information in the environment _messages_ list.
 
 - **Cloud CLI**—You can view local environment logs using the `magento-cloud log` command or remote environment logs using the `magento-cloud ssh` command.
 
@@ -109,7 +109,7 @@ The following logs have a common location for all Cloud projects:
 
 Though the `cloud.log` file contains feedback from each stage of the deployment process, logs created by the deploy hook are unique to each environment. The environment-specific deploy log is in the following directories:
 
-- **Starter and Pro Integration**: `/var/log/deploy.log`
+- **Starter and Pro integration**: `/var/log/deploy.log`
 - **Pro Staging**: `/var/log/platform/<project-ID>_stg/deploy.log`
 - **Pro Production**: `/var/log/platform/<project-ID>/deploy.log`
 

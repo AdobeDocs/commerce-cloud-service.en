@@ -226,7 +226,7 @@ You can add another locale to the Staging or Production environment by enabling 
 >
 >This process **overwrites** the store configuration; only do the following if the environments contain the same stores.
 
-1. In the Integration environment, enable the `SCD_ON_DEMAND` variable using the [`.magento.env.yaml` file](../environment/configure-env-yaml.md).
+1. In the integration environment, enable the `SCD_ON_DEMAND` variable using the [`.magento.env.yaml` file](../environment/configure-env-yaml.md).
 
 1. Add the necessary locales using your Admin.
 

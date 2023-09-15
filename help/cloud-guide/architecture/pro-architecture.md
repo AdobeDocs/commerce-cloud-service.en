@@ -70,7 +70,7 @@ For best performance in the integration environment follow these best practices:
 
 - Fastly CDN and New Relic services are not accessible in an integration environment
 
-- The integration environment architecture does not match the production and staging architecture
+- The integration environment architecture does not match the Staging and Production architecture
 
 - Do not use the `integration` environment for development testing, performance testing, or user acceptance testing (UAT)
 
@@ -162,7 +162,7 @@ Adobe Commerce on cloud infrastructure uses a high-availability architecture tha
 
 {{pro-backups}}
 
-You can create a **manual backup** of the database for your production and staging environments using CLI commands. See [Back up the database](../storage/database-dump.md). For `integration` environments, Adobe recommends creating a snapshot as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Snapshots and backup management](../storage/snapshots.md).
+You can create a **manual backup** of the database for your Staging and Production environments using CLI commands. See [Back up the database](../storage/database-dump.md). For `integration` environments, Adobe recommends creating a snapshot as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Snapshots and backup management](../storage/snapshots.md).
 
 ### Recovery Point Objective
 

@@ -55,7 +55,7 @@ git pull origin <environment-ID>
 
 The first time you start working in branches for your Starter project, create a `staging` branch. This creates a code branch matching the `master` branch that deploys to a Staging environment to test configuration and code changes before deploying to the production environment.
 
-Next, create branches from `staging` to develop code, add extensions, and configure third-party integrations. Anytime you develop custom code, add extensions, integrate with a third-party service, work in a development branch created from the `staging` branch. You have four active Integration environments available. When you push an active branch, one of these Integration environments automatically deploys your code to test.
+Next, create branches from `staging` to develop code, add extensions, and configure third-party integrations. Anytime you develop custom code, add extensions, integrate with a third-party service, work in a development branch created from the `staging` branch. You have four active integration environments available. When you push an active branch, one of these integration environments automatically deploys your code to test.
 
 The format of the Git branch command is:
 
@@ -63,7 +63,7 @@ The format of the Git branch command is:
 git checkout <branch-name>
 ```
 
-The format of the Cloud CLI branch command is:
+The format of the Cloud CLI `branch` command is:
 
 ```bash
 magento-cloud environment:branch <environment-name> <parent-environment-ID>

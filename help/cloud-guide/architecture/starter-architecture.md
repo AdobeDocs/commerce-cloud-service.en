@@ -24,7 +24,7 @@ The production environment provides the source code to deploy Adobe Commerce to 
 
 Because the `production` environment is read-only, use the `integration` environment to make code changes, deploy across the architecture from the `integration` to `staging`, and finally to the `production` environment. See [Deploy your store](../deploy/staging-production.md) and [Site launch](../launch/overview.md).
 
-Adobe recommends fully testing in your Staging environment branch before pushing to the `master` branch, which deploys to the `production` environment.
+Adobe recommends fully testing in your `staging` branch before pushing to the `master` branch, which deploys to the `production` environment.
 
 ## Staging environment
 
@@ -54,7 +54,7 @@ You can have an unlimited number of inactive branches for code storage. To acces
 
 {{enhanced-integration-envs}}
 
-## Production and Staging technology stack
+## Production and staging technology stack
 
 The production and staging environments include the following technologies. You can modify and configure these technologies through the [`.magento.app.yaml`](../application/configure-app-yaml.md) file.
 
@@ -115,7 +115,7 @@ The following workflow summarizes the process to branch your code, develop, and 
 
 1. Set up your local environment
 
-1. Clone the `master` branch from the Project to your local environment
+1. Clone the `master` branch to your local environment
 
 1. Create a `staging` branch from `master`
 

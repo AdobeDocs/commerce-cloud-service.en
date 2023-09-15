@@ -34,7 +34,7 @@ https://store.com/second/
 
 ## Add Domains
 
-Custom domains can be added to Pro Staging and any Production environment; they cannot be added to Integration environments.
+Custom domains can be added to Pro Staging and any Production environment; they cannot be added to integration environments.
 
 The process to add a domain depends on the type of Cloud account:
 
@@ -302,7 +302,7 @@ Instead of configuring an NGINX virtual host, pass the `MAGE_RUN_CODE` and `MAGE
 
 1. Save your changes to the `magento-vars.php` file.
 
-### Deploy and test on the Integration server
+### Deploy and test on the integration server
 
 Push your changes to your Adobe Commerce on cloud infrastructure integration environment and test your site.
 
