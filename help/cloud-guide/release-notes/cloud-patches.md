@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2023-07-31
+last-substantial-update: 2023-09-15
 exl-id: ae6b511b-a37d-4776-9a5e-ad7d9f9f6611
 ---
 # Cloud Patches for Commerce
@@ -23,7 +23,13 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.23 {#latest}
+## v1.0.24 {#latest}
+
+Release date: September 15, 2023
+
+- **Performance improvement**-This patch fixes an issue impacting performance by reducing the number of times the same deployment configurations load for Adobe Commerce 2.4.6 to 2.4.6-p1<!-- MCLOUD-10604 -->
+
+## v1.0.23
 
 Release date: July 31, 2023
 
