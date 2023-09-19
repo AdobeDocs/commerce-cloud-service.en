@@ -21,3 +21,7 @@ The Project WI provides a more modern, user-friendly experience and lays the fou
 
 <!-- The following are features yet to be activated:
 | **Apps and services topology** | The Apps & Services topology is visible on Project and Environment views. This interactive diagram allows you to select a service and view the relationship details, such as name, type, version, port, and more. Click **[!UICONTROL View details]** to access the overview and configuration panel for each service. | -->
+
+## Project list
+
+The _All projects_ view lists all projects that you have permission to access. You can click **[!UICONTROL Show filters]** and filter your project list by type, region, or plan.
