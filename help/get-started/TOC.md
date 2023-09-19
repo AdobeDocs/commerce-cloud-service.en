@@ -12,9 +12,9 @@ recommendations: noDisplay, noCatalog
 + [Get Started with Commerce](overview.md)
 + [Provision Commerce on Cloud](new-project.md)
 + [Onboarding](onboarding.md)
-+ Cloud project {#project}
-    + [Web interface](web-interface.md)
-    + [Commerce storefront](access-storefront.md)
++ [Access Cloud project](open-projectwi.md)
+
+    + [Access storefront](access-storefront.md)
 + Workspace setup {#local-setup}
     + [Credentials and tools](prepare-workspace.md)
 + [Import Commerce code](import-code.md)

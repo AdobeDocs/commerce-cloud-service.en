@@ -126,7 +126,7 @@ magento-cloud user:update alice@example.com -r production:a
 
 ## Manage users from the Project Web Interface
 
-You can use the [Project Web Interface](../../get-started/web-interface.md) to add permissions and use the _Edit_ feature to modify permissions for an existing user.
+You can use the [Project Web Interface](../../get-started/access-cloud-project.md) to add permissions and use the _Edit_ feature to modify permissions for an existing user.
 
 >[!IMPORTANT]
 >

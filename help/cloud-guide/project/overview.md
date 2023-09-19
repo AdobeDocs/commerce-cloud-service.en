@@ -9,35 +9,23 @@ The Adobe Commerce on cloud infrastructure project includes all code in Git bran
 
 Adobe provides a Project Web Interface and developer tools to fully manage all aspects of your project. You, as the account owner, have full access to all environments.
 
-## Access the Project Web Interface
+## Project Web Interface
 
-The Project Web Interface provides features to create, manage, and deploy code in Integration, Staging, and Production environments for Starter and Pro plans.
+The Project WI provides a more modern, user-friendly experience and lays the foundation for future interface enhancements.
 
-**To access your projects and environments**:
-
-1. Log in to [My Account](https://account.magento.com/customer/account/login).
-1. Click **Projects (Cloud)**.
-1. Locate your project and click **View Project Page**.
-
-The **View Project Page** link displays for Account Owners only. If you are not an Account Owner, go to the [login for the Project Web Interface](https://console.magento.cloud) instead.
+The Project Web Interface provides interactive methods to build, manage, and deploy Commerce code. [Log in to the Project Web Interface](https://console.magento.cloud) to view your project list. You can only see projects that you have permission to access as an admin or for specific environment types. If you are an Adobe Solutions Partner, you may see multiple projects for clients that you support.
 
 >[!TIP]
 >
->If you do not see any projects, you must contact the [Account Owner or Super User](../project/user-access.md) associated with the project and request access.
+>If you do not see any projects, you must contact the [Account Owner or Super User](../project/user-access.md) associated with the project and request access. For first-time users, see the [Onboarding topic](../../get-started/onboarding.md#project-web-interface) in the _Get started_ guide.
 
-When you log in to the [Project Web Interface](https://console.magento.cloud), you see your accessible projects. As an Account Owner, you can only see projects for your company. An Adobe Solutions Partner may see multiple projects for clients that they support. Click a project to see a hierarchy of environments.
+For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branch that you create display as children from the `master` branch. Adobe recommends creating a `staging` branch, then create an `integration` branch for development. See [Starter architecture](../architecture/starter-architecture.md).
 
-For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branches you create display as children from the `master` branch. Adobe recommends creating a staging branch, then branching from `staging` for your integration development. See [Starter architecture](../architecture/starter-architecture.md).
+For **Pro**, there is a hierarchy of branches starting from `production` to `staging` to `integration`. The ![Enterprise icon](../../assets/icon-deploy.png) icon indicates that the branch deploys to a dedicated server. Any branches that you create display as children of the `integration` branch. See [Pro architecture](../architecture/pro-architecture.md).
 
-![Starter access](../../assets/starter/project-access.png)
+### Access storefront
 
-For **Pro**, there is a hierarchy of branches starting from Production to Staging to Integration. The ![Enterprise icon](../../assets/icon-deploy.png) icon indicates that these branches deploy to a dedicated server, used by Staging and Production. Any branches you create display as children from Integration. See [Pro architecture](../architecture/pro-architecture.md).
-
-### Access site
-
-To access an environment store and admin, select a branch and click **Access Site**. A list of store URLs and SSH command display. Select the URL to view the store in that environment.
-
-![Pro access](../../assets/pro-project-access.png)
+Each active environment has a storefront. Select an environment from the top navigation and click the link in the environment Overview box. Also, there is a **[!UICONTROL URLs]** list on the right-had side above the Activity list.
 
 The Web Access URL may include the following:
 
@@ -63,27 +51,32 @@ The Pro Production and Staging environments include three nodes that you can acc
 
    The production URL is used by the content delivery network (CDN).
 
-If you have inactive Git branches of code, you can toggle displaying the branches in the hierarchy.
+## Project settings
 
-## Configure the project
+![configure project icon](../../assets/icon-configure.png)
 
-Click ![configure project icon](../../assets/icon-configure.png) configure icon to display users and deploy keys and variables associated with the project. You can modify access and permissions across the entire project. See [Manage user access](user-access.md).
+ Click the configure icon, then **[!UICONTROL Project Settings]** to display users and deploy keys and variables associated with the project. You can modify access and permissions across the entire project. See [Manage user access](user-access.md).
 
 You can set the following configuration options for each project:
 
 | Option       | Description                                                                                                                                        |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Users        | Manage user access to project using roles and environments types. See [Manage user access](user-access.md).                                        |
-| Domains      | Add a domain name to the project. See [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains).                                |
+| Access       | Manage user access to project and environment types. See [Manage user access](user-access.md).                                        |
 | Certificates | View a list of the SSL certificates associated with the project.                                                                                   |
 | Deploy Key   | Add and view the public key to the project code repository.                                                                                        |
+| Domains      | Add a domain name to the project. See [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains).                                |
+| Integrations | |
 | Variables    | Add project-level variables that are available at build and runtime in all environments. See [Variable levels](../environment/variable-levels.md). |
 
 {style="table-layout:auto"}
 
-## Configure environment
+## Environment settings
 
-You can manage variables and settings for Production, Staging, and integration environments through this interface, [configuration files](../environment/overview.md), or with CLI commands. Select an environment in the environment list and click **Configure environment** to update the settings, add variables, routes, and users.
+![configure project icon](../../assets/icon-configure.png)
+
+Click the configure icon, click **[!UICONTROL Environments]**, and select a specific environment to view and manage variables, domains, and other settings.
+
+ , [configuration files](../environment/overview.md), or with CLI commands. Select an environment in the environment list and click **Configure environment** to update the settings, add variables, routes, and users.
 
 You can set the following configuration options for each environment:
 
