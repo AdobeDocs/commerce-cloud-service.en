@@ -51,45 +51,41 @@ The Pro Production and Staging environments include three nodes that you can acc
 
    The production URL is used by the content delivery network (CDN).
 
-## Project settings
+## Settings
+
+Open the _Settings_ panel by clicking on the configure icon.
 
 ![configure project icon](../../assets/icon-configure.png)
 
- Click the configure icon, then **[!UICONTROL Project Settings]** to display users and deploy keys and variables associated with the project. You can modify access and permissions across the entire project. See [Manage user access](user-access.md).
+### Project settings
 
-You can set the following configuration options for each project:
+Click **[!UICONTROL Project Settings]** to manage users, deploy keys, and variables associated with the project. You can set the following configuration options for each project:
 
 | Option       | Description                                                                                                                                        |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| General      | Manage the timezone for use with scheduling backups or maintenance.  |
 | Access       | Manage user access to project and environment types. See [Manage user access](user-access.md).                                        |
 | Certificates | View a list of the SSL certificates associated with the project.                                                                                   |
 | Deploy Key   | Add and view the public key to the project code repository.                                                                                        |
 | Domains      | Add a domain name to the project. See [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains).                                |
-| Integrations | |
+| Integrations | Add and manage [integrations](../integrations/overview.md), such as health notifications and webhooks. |
 | Variables    | Add project-level variables that are available at build and runtime in all environments. See [Variable levels](../environment/variable-levels.md). |
 
 {style="table-layout:auto"}
 
-## Environment settings
+### Environment settings
 
-![configure project icon](../../assets/icon-configure.png)
+Click **[!UICONTROL Environments]** and select a specific environment to view and manage variables, domains, and other settings. You can set the following configuration options for each environment:
 
-Click the configure icon, click **[!UICONTROL Environments]**, and select a specific environment to view and manage variables, domains, and other settings.
-
- , [configuration files](../environment/overview.md), or with CLI commands. Select an environment in the environment list and click **Configure environment** to update the settings, add variables, routes, and users.
-
-You can set the following configuration options for each environment:
-
-| Option    | Description                                                                                                                                                                                                                                |
-|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Settings  | Toggle different environment settings:                                                                                                                                                                                                     |
-|           | **Status**: An environment can be `active` or `inactive`. Most of your work is in an active environment. After merging an environment, you can delete the environment, making it inactive. You can activate an inactive environment later. |
-|           | **Outgoing emails**: Setting this option to `On` enables support for sending emails from the environment using the SMTP protocol. See [Outgoing emails](outgoing-emails.md).                                                               |
-|           | **Indexing by search engines**: Setting this option to `On` enables the search engine visibility.                                                                                                                                          |
-|           | **HTTP access control**: Setting this option to `On` enables you to configure security for the Project Web Interface using a login and IP address access control.                                                                          |
-| Variables | View, create, and manage environment variables available for the environment at runtime. See [Variable levels](../environment/variable-levels.md).                                                                                         |
-| Routes    | View a list of configured routes. See [Configure routes](../routes/routes-yaml.md).                                                                                                                                                        |
-| Users     | View a list of users granted environment level access. It is best to [Manage users with the CLI](user-access.md#manage-users-with-the-cli).                                                                                                |
+| Option    | Description                                            |
+| --------- | ------------------------------------------------------ |
+| General   | Configure display name, environment type, and parent environment.<br>Toggle different environment settings:                 |
+|           | **Enable outgoing emails**: Setting this option to `On` enables support for sending emails from the environment using the SMTP protocol. See [Outgoing emails](outgoing-emails.md). |
+|           | **Hide from search engines**: Setting this option to `On` indicates do not index and ignore the site to search engine indexers. |
+|           | **HTTP access control**: Setting this option to `On` enables you to configure security for the Project Web Interface using a login and IP address access control. |
+|           | Status is `active` or `inactive`. Most of your work is in an active environment. You can deactivate or delete environment. |
+| Variables | View, create, and manage environment variables available for the environment at runtime. See [Variable levels](../environment/variable-levels.md). |
+| Domains   | View a list of configured routes. See [Configure routes](../routes/routes-yaml.md). |
 
 {style="table-layout:auto"}
 
