@@ -103,16 +103,6 @@ Your project includes [Fastly](../cdn/fastly.md) and [New Relic](../monitor/new-
 
 **To review your integration tokens, IDs, and more**:
 
-1. Log in to [your account](https://console.magento.cloud)
-
-1. In the upper right corner, click your name and **Account settings**.
-
-   ![Go to account settings](../../assets/ui-account-settings.png)
-
-1. On the _Projects_ tab, click **View Details** for your project to open general settings and plan details.
-
-   ![View your project details](../../assets/ui-view-details.png)
-
-1. On your project details page, scroll to and expand the **New Relic** and **Fastly** sections to review service credentials.
-
-   ![Your New Relic credentials](../../assets/ui-service-details.png)
+```bash
+magento-cloud subscription:info services
+```
