@@ -5,49 +5,39 @@ recommendations: noDisplay, catalog
 ---
 # Activity feeds
 
-All activities are logged.
+The activity feed lists historical events in your project. In the Project Web Interface, you can view an activity list based on a specific environment.
 
-## Activity in the web interface
+The following is a list of the types of activities that display in the Activity feeds:
 
-### Symbols
-
-| Icon                                                              | Description                                   |
-| ----------------------------------------------------------------- | --------------------------------------------- |
-| ![Backup or restore](../../assets/activity-icons/backup-or-restore-environment.png) | Backup or restore environment |
-| ![Branch](../../assets/activity-icons/branch-environment.png)     | Branch environment |
-| ![Clear project cache](../../assets/activity-icons/clear-build-cache-for-project.png) | Clear project build cache |
-| ![Merge](../../assets/activity-icons/merge-environments.png)      | Merge environment |
-| ![Push](../../assets/activity-icons/push-to-environment.png)      | Push to environment |
-| ![Redeploy](../../assets/activity-icons/redeploy-environment.png) | Redeploy environment |
-| ![Sync](../../assets/activity-icons/sync-code-and-data.png)       | Sync code and data |
-| ![Update](../../assets/activity-icons/update-environment.png)     | Update environment |
+| Icon                                                              | Activity                                        |
+| ----------------------------------------------------------------- | ----------------------------------------------- |
+| ![Backup or restore](../../assets/activity-icons/backup-or-restore-environment.png) | Back up or restore the environment |
+| ![Branch](../../assets/activity-icons/branch-environment.png)     | Branch environment                              |
+| ![Clear project cache](../../assets/activity-icons/clear-build-cache-for-project.png) | Clear project build cache   |
+| ![Merge](../../assets/activity-icons/merge-environments.png)      | Merge environment                               |
+| ![Push](../../assets/activity-icons/push-to-environment.png)      | Push to environment                             |
+| ![Redeploy](../../assets/activity-icons/redeploy-environment.png) | Redeploy the environment                            |
+| ![Sync](../../assets/activity-icons/sync-code-and-data.png)       | Sync code and data                              |
+| ![Update](../../assets/activity-icons/update-environment.png)     | Update environment                              |
 
 {style="table-layout:auto"}
 
-### Filter activities
+## Filter activities
 
-Show all
-Backup
-Branch
-Certificate
-Crons
-Domain
-Git
-Integrations
-Merge
-Redeploy
-Resource allocation
-Source operation
-Sync
-System
-Upgrade
+The ability to filter the activity list is useful, especially if you are looking for something specific, such as a backup or a merge event. Select an environment and view the activity list. Choose **[!UICONTROL All]** to include the full event history and enable the **[!UICONTROL Filter by]** options:
 
-### Cancel an activity
+![Filter activities](../../assets/activity-filter.png)
+
+Choose **[!UICONTROL Recent]** activity and reset the list.
+
+## Manage an activity
+
+Some activities are in a _running_ or _pending_ status.
 
 ![](../../assets/activity-icons/cancel-running-activity.png)
 
 
-If you have a terminal running the activity, cancelling in the Project Web Interface resultes in the cancellation in the terminal:
+If you have a terminal running the activity, canceling in the Project Web Interface results in the cancellation in the terminal:
 
 ![Activity cancelled in terminal](../../assets/activity-icons/activity-cancelled.png)
 

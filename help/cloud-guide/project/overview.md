@@ -53,7 +53,7 @@ The Pro Production and Staging environments include three nodes that you can acc
 
 ## Settings
 
-Open the _Settings_ panel by clicking on the configure icon.
+Open the _Settings_ panel by clicking the configure icon.
 
 ![configure project icon](../../assets/icon-configure.png)
 
@@ -75,7 +75,7 @@ Click **[!UICONTROL Project Settings]** to manage users, deploy keys, and variab
 
 ### Environment settings
 
-Click **[!UICONTROL Environments]** and select a specific environment to view and manage variables, domains, and other settings. You can set the following configuration options for each environment:
+Click **[!UICONTROL Environments]** and select a specific environment from the list to view and manage variables, domains, and other settings. You can set the following configuration options for each environment:
 
 | Option    | Description                                            |
 | --------- | ------------------------------------------------------ |
@@ -83,7 +83,7 @@ Click **[!UICONTROL Environments]** and select a specific environment to view an
 |           | **Enable outgoing emails**: Setting this option to `On` enables support for sending emails from the environment using the SMTP protocol. See [Outgoing emails](outgoing-emails.md). |
 |           | **Hide from search engines**: Setting this option to `On` indicates do not index and ignore the site to search engine indexers. |
 |           | **HTTP access control**: Setting this option to `On` enables you to configure security for the Project Web Interface using a login and IP address access control. |
-|           | Status is `active` or `inactive`. Most of your work is in an active environment. You can deactivate or delete environment. |
+|           | Status is `active` or `inactive`. Most of your work is in an active environment. You can deactivate or delete the environment. |
 | Variables | View, create, and manage environment variables available for the environment at runtime. See [Variable levels](../environment/variable-levels.md). |
 | Domains   | View a list of configured routes. See [Configure routes](../routes/routes-yaml.md). |
 
@@ -101,7 +101,7 @@ Your project includes [Fastly](../cdn/fastly.md) and [New Relic](../monitor/new-
 
 -  [New Relic](../monitor/new-relic-service.md) provides application metrics and performance information for Staging and Production environments.
 
-**To review your integration tokens, IDs, and more**:
+Use the [Cloud CLI](../dev-tools/cloud-cli-overview.md) to review your integration tokens, IDs, and more:
 
 ```bash
 magento-cloud subscription:info services
