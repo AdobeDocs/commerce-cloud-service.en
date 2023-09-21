@@ -283,9 +283,7 @@ Try the following troubleshooting procedures to resolve the connection issue:
 
 1. On the _My Profile_ page, click the **[!UICONTROL Security]** tab.
 
-   If TFA is enabled, the Security section provides options to manage the TFA configuration:
-
-   ![Cloud manage TFA config](../../assets/tfa-security.png)
+   If TFA is enabled, the Security section provides options to manage the TFA configuration.
 
 1. If TFA is not set up, click **[!UICONTROL Set up application]** and follow the instructions to enable it. See [Enable TFA](user-access.md#enable-tfa-for-cloud-accounts).
 
