@@ -39,15 +39,15 @@ https://<branch>-<unique-ID>-<project-ID>.<region>.magentosite.cloud/
 
 The Pro Production and Staging environments include three nodes that you can access using the following links:
 
--  Load balancer URLs:
+- Load balancer URLs:
 
-    -  `http[s]://<your-domain>.c.<project-ID>.ent.magento.cloud`
-    -  `http[s]://<your-staging-domain>.c.<project-ID>.ent.magento.cloud`
+    - `http[s]://<your-domain>.c.<project-ID>.ent.magento.cloud`
+    - `http[s]://<your-staging-domain>.c.<project-ID>.ent.magento.cloud`
 
--  Direct access to one of the three redundant servers:
+- Direct access to one of the three redundant servers:
 
-    -  `http[s]://<your-domain>.{1|2|3}.<project-ID>.ent.magento.cloud`
-    -  `http[s]://<your-staging-domain>.{1|2|3}.<project-ID>.ent.magento.cloud`
+    - `http[s]://<your-domain>.{1|2|3}.<project-ID>.ent.magento.cloud`
+    - `http[s]://<your-staging-domain>.{1|2|3}.<project-ID>.ent.magento.cloud`
 
    The production URL is used by the content delivery network (CDN).
 
@@ -59,33 +59,33 @@ Open the _Settings_ panel by clicking the configure icon.
 
 ### Project settings
 
-Click **[!UICONTROL Project Settings]** to manage users, deploy keys, and variables associated with the project. You can set the following configuration options for each project:
+**[!UICONTROL Project Settings]** expands a menu of project-level controls to manage users, variables, and more:
 
-| Option       | Description                                                                                                                                        |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| General      | Manage the timezone for use with scheduling backups or maintenance.  |
-| Access       | Manage user access to project and environment types. See [Manage user access](user-access.md).                                        |
-| Certificates | View a list of the SSL certificates associated with the project.                                                                                   |
-| Deploy Key   | Add and view the public key to the project code repository.                                                                                        |
-| Domains      | Add a domain name to the project. See [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains).                                |
-| Integrations | Add and manage [integrations](../integrations/overview.md), such as health notifications and webhooks. |
-| Variables    | Add project-level variables that are available at build and runtime in all environments. See [Variable levels](../environment/variable-levels.md). |
+| Option       | Description                                                                                                                   |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------|
+| General      | Manage the timezone for use with scheduling backups or maintenance.                                                           |
+| Access       | Manage [user access](user-access.md) to project and environment types.                                                        |
+| Certificates | View a list of the SSL certificates associated with the project.                                                              |
+| Deploy Key   | Add and view the public key to the project code repository.                                                                   |
+| Domains      | Add a domain name to the project. See [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains).           |
+| Integrations | Add and manage [integrations](../integrations/overview.md), such as health notifications and webhooks.                        |
+| Variables    | Add [project-level variables](../environment/variable-levels.md) that are available at build and runtime in all environments. |
 
 {style="table-layout:auto"}
 
 ### Environment settings
 
-Click **[!UICONTROL Environments]** and select a specific environment from the list to view and manage variables, domains, and other settings. You can set the following configuration options for each environment:
+Click **[!UICONTROL Environments]** and select a specific environment from the list for controls to manage site settings, environment variables, and more:
 
-| Option    | Description                                            |
-| --------- | ------------------------------------------------------ |
-| General   | Configure display name, environment type, and parent environment.<br>Toggle different environment settings:                 |
-|           | **Enable outgoing emails**: Setting this option to `On` enables support for sending emails from the environment using the SMTP protocol. See [Outgoing emails](outgoing-emails.md). |
-|           | **Hide from search engines**: Setting this option to `On` indicates do not index and ignore the site to search engine indexers. |
-|           | **HTTP access control**: Setting this option to `On` enables you to configure security for the Project Web Interface using a login and IP address access control. |
-|           | Status is `active` or `inactive`. Most of your work is in an active environment. You can deactivate or delete the environment. |
-| Variables | View, create, and manage environment variables available for the environment at runtime. See [Variable levels](../environment/variable-levels.md). |
-| Domains   | View a list of configured routes. See [Configure routes](../routes/routes-yaml.md). |
+| Option    | Description                                                                                                                      |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| General   | Configure display name, environment type, and parent environment.<br>Toggle different environment settings:                      |
+|           | **Enable outgoing emails**: Send [outgoing emails](outgoing-emails.md) from the environment using the SMTP protocol.             |
+|           | **Hide from search engines**: Block search engine indexers and crawlers from the site.                                           |
+|           | **HTTP access control**: Enable security configuration for the Project Web Interface using a login and IP address access control.|
+|           | Status is `active` or `inactive`. Most of your work is in an active environment. You can deactivate or delete the environment.   |
+| Variables | View, create, and manage [environment-level variables](../environment/variable-levels.md) available at runtime.                  |
+| Domains   | View a list of [configured routes](../routes/routes-yaml.md).                                                                    |
 
 {style="table-layout:auto"}
 
@@ -97,9 +97,9 @@ Click **[!UICONTROL Environments]** and select a specific environment from the l
 
 Your project includes [Fastly](../cdn/fastly.md) and [New Relic](../monitor/new-relic-service.md). The project details display information for your project plan and important licenses and tokens for these integrations. Only the License Owner has initial access to the credentials and services. Provide these credentials to technical and developer resources as needed.
 
--  [Fastly](https://www.fastly.com/) provides content delivery (CDN), image optimization, and security services (DDoS and WAF) for your Adobe Commerce on cloud infrastructure projects. See [Get Fastly credentials](../cdn/fastly-configuration.md#get-fastly-credentials).
+- [Fastly](https://www.fastly.com/) provides content delivery (CDN), image optimization, and security services (DDoS and WAF) for your Adobe Commerce on cloud infrastructure projects. See [Get Fastly credentials](../cdn/fastly-configuration.md#get-fastly-credentials).
 
--  [New Relic](../monitor/new-relic-service.md) provides application metrics and performance information for Staging and Production environments.
+- [New Relic](../monitor/new-relic-service.md) provides application metrics and performance information for Staging and Production environments.
 
 Use the [Cloud CLI](../dev-tools/cloud-cli-overview.md) to review your integration tokens, IDs, and more:
 

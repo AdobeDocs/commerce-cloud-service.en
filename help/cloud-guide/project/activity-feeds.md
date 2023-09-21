@@ -5,13 +5,13 @@ recommendations: noDisplay, catalog
 ---
 # Activity feeds
 
-The activity feed lists historical events in your project. In the Project Web Interface, you can view an activity list based on a specific environment.
+The activity feed lists historical events similar to a Git log. In the Project Web Interface, you can view an activity list for a specific environment and filter the list by event type, such as backups. In the Cloud CLI, you can use the `activity` command to see the same list of events. Both methods provide a way for you to review the log detail for a specific event.
 
 The following is a list of the types of activities that display in the Activity feeds:
 
-| Icon                                                              | Activity                                        |
-| ----------------------------------------------------------------- | ----------------------------------------------- |
-| ![Backup or restore](../../assets/activity-icons/backup-or-restore-environment.png) | Back up or restore the environment |
+<!-- | Icon                                                              | Event                                        |
+| :---------------------------------------------------------------: | ----------------------------------------------- |
+| ![Backup or restore](../../assets/activity-icons/backup-or-restore-environment.png) | Backup<br>Restore  |
 | ![Branch](../../assets/activity-icons/branch-environment.png)     | Branch environment                              |
 | ![Clear project cache](../../assets/activity-icons/clear-build-cache-for-project.png) | Clear project build cache   |
 | ![Merge](../../assets/activity-icons/merge-environments.png)      | Merge environment                               |
@@ -20,7 +20,9 @@ The following is a list of the types of activities that display in the Activity 
 | ![Sync](../../assets/activity-icons/sync-code-and-data.png)       | Sync code and data                              |
 | ![Update](../../assets/activity-icons/update-environment.png)     | Update environment                              |
 
-{style="table-layout:auto"}
+{style="table-layout:auto"} -->
+
+![Activity types](../../assets/activity-types.svg)
 
 ## Filter activities
 
@@ -29,6 +31,27 @@ The ability to filter the activity list is useful, especially if you are looking
 ![Filter activities](../../assets/activity-filter.png)
 
 Choose **[!UICONTROL Recent]** activity and reset the list.
+
+## View activity log
+
+Each activity has 
+
+```bash
+mgc activity:log wvl5wm7s5vkhy
+```
+
+Sample response:
+
+```bash
+Activity ID: wvl5wm7s5vkhy
+Type: environment.backup
+Description: Guthrie created a backup of Master
+Created: 2023-09-08T14:03:33+00:00
+State: complete
+Log:
+Creating backup of master
+Created backup eg5pu63egt2dcojkljalzjdopa
+```
 
 ## Manage an activity
 

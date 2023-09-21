@@ -12,16 +12,16 @@ The following table describes the files included in a cloud project:
 | File                      | Description  |
 | ------------------------- | ------------ |
 | `/.magento/routes.yaml`   | Configuration file that redirects `www` to the apex domain and `php` application to serve HTTP. See [Configure routes](../routes/routes-yaml.md). |
-| `/.magento/services.yaml` | Configuration file that defines a MySQL instance (MariaDB), Redis, and OpenSearch or Elasticsearch. See [Configure services](../services/services-yaml.md). |
+| `/.magento/services.yaml` | A configuration file that defines a MySQL instance (MariaDB), Redis, and OpenSearch or Elasticsearch. See [Configure services](../services/services-yaml.md). |
 | `/app`                    | The `code` folder is used for custom modules. The `design` folder is used for [custom themes](../store/custom-theme.md). The `etc` folder contains configuration files for the application. |
 | `/m2-hotfixes`            | Used for custom patches. |
 | `/update`                 | A service folder used by the support module. |
 | `.gitignore`              | Specify which files and directories to ignore. See [`.gitignore` reference](#ignoring-files). |
-| `.magento.app.yaml`       | Configuration file that defines the properties to build your application. See [Configure application](../application/configure-app-yaml.md). |
+| `.magento.app.yaml`       | A configuration file that defines the properties to build your application. See [Configure application](../application/configure-app-yaml.md). |
 | `.magento.env.yaml`       | Configuration file for the build, deploy, and post-deploy phases. The `ece-tools` package includes a sample of this file. See [Configure environments](../environment/configure-env-yaml.md). |
 | `composer.json`           | Fetches Adobe Commerce and the configuration scripts to prepare your application. See [Required packages](../development/overview.md#required-packages). |
 | `composer.lock`           | Stores version dependencies for every package. See [Required packages](../development/overview.md#required-packages). |
-| `magento-vars.php`        | A file used to define [multiple stores](../store/multiple-sites.md) and sites using variables. |
+| `magento-vars.php`        | Used to define [multiple stores](../store/multiple-sites.md) and sites using variables. |
 
 {style="table-layout:auto"}
 
@@ -64,7 +64,7 @@ git add <path/filename> -f
 
 You can use the following steps to change the structure of an existing project to reflect the latest base template for Adobe Commerce on cloud infrastructure.
 
-1. Clone project to local workstation.
+1. Clone the project to a local workstation.
 
 1. Update the `composer.json` file with the following values for the `extra` section.
 

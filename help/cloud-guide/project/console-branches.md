@@ -11,9 +11,9 @@ Every Adobe Commerce on cloud infrastructure environment has an associated Git b
 
 This topic discusses how to use the Project Web Interface to:
 
--  Add or delete an environment. You cannot add or delete the `master` branch for Pro plan Staging and Production. You can branch from a `master` branch.
--  Sync (`git pull`) from the parent environment
--  Merge (`git push`) to the parent environment
+- Add or delete an environment. You cannot add or delete the `master` branch for Pro plan Staging and Production. You can branch from a `master` branch.
+- Sync (`git pull`) from the parent environment
+- Merge (`git push`) to the parent environment
 
 >[!INFO]
 >
@@ -33,7 +33,7 @@ If you need additional environments for development, enter a [Support ticket](ht
 **To add a branch**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Click the project.
+1. Select a project.
 1. In the left environment list, click the name of the parent environment.
 
    Your new branch is cloned from this environment. Choose a parent environment that is similar to the environment that you are about to create.
@@ -56,7 +56,7 @@ If you need additional environments for development, enter a [Support ticket](ht
 **To delete an environment and make it inactive**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Click the project.
+1. Select a project.
 1. In the left environment list, click the name of the branch to delete.
 1. Click **[!UICONTROL Configure environment]**.
 
@@ -80,7 +80,7 @@ For Pro plan, you can also sync from Staging and Production to your integration 
 **To sync an environment**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Click the project.
+1. Select a project.
 1. In the left environment list, click the name of the branch to sync.
 1. Click (sync).
 
@@ -100,7 +100,7 @@ Merging an environment (or branch) is the same as `git push origin`. You merge t
 **To merge with parent environment**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Click the project.
+1. Select a project.
 1. In the left environment list, click the name of the branch to merge.
 1. Click (merge).
 
@@ -123,7 +123,7 @@ For **Pro**, you can review the following logs in each environment:
 **To view logs in the Project Web Interface**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Click the project.
+1. Select a project.
 1. In the left environment list, click the name of the branch to view logs.
 
    The view provides a deployment history of one entry per action attempted including syncs, merges, branches, snapshots, and more.
@@ -151,7 +151,7 @@ If your project needs to access multiple repositories, you can choose to attach 
 **To find your project SSH public key**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Click the project.
+1. Select a project.
 1. Click ![Configure project](../../assets/icon-configure.png) next to the project name.
 1. Click **Deploy Key**.
 
@@ -216,7 +216,7 @@ You can access your project and environments from any location through a web bro
 **To secure environments**:
 
 1. Log into your [Project Web Interface](https://console.magento.cloud).
-1. Click the project.
+1. Select a project.
 1. Select an environment branch.
 1. Click **Configure Environment**.
 1. On the **Settings** tab, click **ON** for **HTTP access control** to enable secure access. You can choose between credentials or IP addresses to filter for access.
