@@ -1,30 +1,15 @@
 ---
-title: Activity feeds
-description: Learn how to read the activity feeds in the Project Web Interface or the Cloud CLI for Adobe Commerce on Cloud infrastructure.
+title: Activity stream
+description: Learn how to read the activity stream in the Project Web Interface or the Cloud CLI for Adobe Commerce on Cloud infrastructure.
 recommendations: noDisplay, catalog
 ---
-# Activity feeds
+# Activity stream
 
-The activity feed lists historical events similar to a Git log. In the Project Web Interface, you can view an activity list for a specific environment and filter the list by event type, such as backups. In the Cloud CLI, you can use the `activity` command to see the same list of events. Both methods provide a way for you to review the log detail for a specific event.
+The main view for each environment displays an **Activity** list of historical events similar to a Git log. The Activity list is a stream of the recent events for the selected environment. The following is a list of the activity types and their icons that display in the Activity stream:
 
-The following is a list of the types of activities that display in the Activity feeds:
+![Activity types](../../assets/activity-types.svg){width="350" align="center"}
 
-<!-- | Icon                                                              | Event                                        |
-| :---------------------------------------------------------------: | ----------------------------------------------- |
-| ![Backup or restore](../../assets/activity-icons/backup-or-restore-environment.png) | Backup<br>Restore  |
-| ![Branch](../../assets/activity-icons/branch-environment.png)     | Branch environment                              |
-| ![Clear project cache](../../assets/activity-icons/clear-build-cache-for-project.png) | Clear project build cache   |
-| ![Merge](../../assets/activity-icons/merge-environments.png)      | Merge environment                               |
-| ![Push](../../assets/activity-icons/push-to-environment.png)      | Push to environment                             |
-| ![Redeploy](../../assets/activity-icons/redeploy-environment.png) | Redeploy the environment                            |
-| ![Sync](../../assets/activity-icons/sync-code-and-data.png)       | Sync code and data                              |
-| ![Update](../../assets/activity-icons/update-environment.png)     | Update environment                              |
-
-{style="table-layout:auto"} -->
-
-![Activity types](../../assets/activity-types.svg)
-
-## Filter activities
+## Filter activity stream
 
 The ability to filter the activity list is useful, especially if you are looking for something specific, such as a backup or a merge event. Select an environment and view the activity list. Choose **[!UICONTROL All]** to include the full event history and enable the **[!UICONTROL Filter by]** options:
 
@@ -34,7 +19,7 @@ Choose **[!UICONTROL Recent]** activity and reset the list.
 
 ## View activity log
 
-Each activity has 
+Each activity has a unique ID and.
 
 ```bash
 mgc activity:log wvl5wm7s5vkhy
