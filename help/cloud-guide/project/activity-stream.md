@@ -7,7 +7,7 @@ recommendations: noDisplay, catalog
 
 The main view for each environment displays an **Activity** list of historical events similar to a Git log. The Activity list is a stream of the recent events for the selected environment. The following is a list of the activity types and their icons that display in the Activity stream:
 
-![Activity types](../../assets/activity-types.svg){width="350" align="center"}
+![Activity types](../../assets/activity-types.svg){width="500" align="center"}
 
 ## Filter activity stream
 

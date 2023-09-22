@@ -16,7 +16,7 @@ The Project WI provides a more modern, user-friendly experience and lays the fou
 
 | Feature        | Improvements                        |
 | -------------- | ----------------------------------- |
-| [Activity feeds](../cloud-guide/project/activity-feeds.md) | TBD |
+| [Activity stream](../cloud-guide/project/activity-stream.md) | TBD |
 | Integration forms | TBD |
 
 <!-- The following are features yet to be activated:

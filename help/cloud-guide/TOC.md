@@ -34,7 +34,7 @@ level: Intermediate
     + [Project structure](project/file-structure.md)
     + [User access](project/user-access.md)
     + [Multi-factor authentication](project/multi-factor-authentication.md)
-    + [Activity feeds](project/activity-feeds.md)
+    + [Activity stream](project/activity-stream.md)
     + [Outgoing emails](project/outgoing-emails.md)
     + [SendGrid email service](project/sendgrid.md)
     + [Web branch management](project/console-branches.md)
