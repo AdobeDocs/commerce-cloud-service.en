@@ -101,15 +101,17 @@ The Project Web Interface includes a list of Web and SSH access commands for eac
 
 **To copy the SSH command**:
 
-1. Log in to the Project Web Interface.
+1. Log in to [the Project Web Interface](https://console.magento.cloud).
 
-1. Select an environment or branch to access.
+1. Select a project from the _All projects_ list.
 
-1. Click **[Access site](../project/overview.md#access-site)**.
+1. Select an enevironment.
 
-1. In the _SSH access_ section, click the clipboard button to copy the full SSH command to the clipboard.
+1. Click **[!UICONTROL SSH]**.
 
-1. Open the SSH connection.
+1. In the _SSH_ tab, click the copy button to copy the full SSH command to the clipboard.
+
+1. Open a terminal and paste the SSH command to create a connection.
 
    ```bash
    ssh abcdefg123abc-branch-a12b34c--mymagento@ssh.us-2.magento.cloud

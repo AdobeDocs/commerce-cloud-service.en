@@ -2,29 +2,29 @@
 title: Manage branches with the Project Web Interface
 description: Learn how to manage the environment branches for Adobe Commerce on cloud infrastructure using the Project Web Interface.
 role: Developer
-feature: Cloud, Console, Install
+feature: Cloud, Install
 exl-id: 2c4ef149-fdb9-473f-91fd-5e6421ac5a43
 ---
 # Manage branches with the Project Web Interface
 
-Every Adobe Commerce on cloud infrastructure environment has an associated Git branch. You can manage your environments using either the Project Web Interface and the `magento-cloud` CLI. You can use Git commands, but the cloud CLI commands interact with platform features whereas the Git commands do not. See [Git commands](../dev-tools/cloud-cli-overview.md#git-commands) in the cloud CLI topic.
+You can manage your environments using either the Project Web Interface or the `magento-cloud` CLI. Your project files are stored in a Git repository. You can use Git commands to manage your code, but the `magento-cloud` CLI is designed to interact with platform features whereas the Git commands do not. See [Git commands](../dev-tools/cloud-cli-overview.md#git-commands) in the cloud CLI topic.
 
 This topic discusses how to use the Project Web Interface to:
 
-- Add or delete an environment. You cannot add or delete the `master` branch for Pro plan Staging and Production. You can branch from a `master` branch.
+- Add or delete an environment
 - Sync (`git pull`) from the parent environment
 - Merge (`git push`) to the parent environment
 
->[!INFO]
+>[!TIP]
 >
->You cannot create branches from Pro Staging and Production environments.
+>You cannot create branches from Pro Staging and Production environments. You can branch from the `master` branch.
 
-## Create or delete an environment
+## Create an environment
 
 The branching strategy uses a common Git workflow where you develop code and add extensions in a development branch. See [Starter](../architecture/starter-architecture.md) and [Pro](../architecture/starter-develop-deploy-workflow.md) architecture overviews.
 
--  For Starter, create a `staging` branch from the `master` branch, then branch from `staging` for development.
--  For Pro, create a development branch from the integration environment.
+- For Starter, create a `staging` branch from the `master` branch, then branch from `staging` for development.
+- For Pro, create a development branch from the `Integration` environment.
 
 Your account supports a limited number of active Git branches and an unlimited number of inactive development branches. Manage active and inactive branches by adding or deleting a branch. When deleted, a branch is deactivated and remains listed in the project branches list as _inactive_. You can activate the inactive branch later or you can [delete the branch](../dev-tools/cloud-cli-overview.md#) using the CLI.
 
@@ -33,63 +33,73 @@ If you need additional environments for development, enter a [Support ticket](ht
 **To add a branch**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Select a project.
-1. In the left environment list, click the name of the parent environment.
 
-   Your new branch is cloned from this environment. Choose a parent environment that is similar to the environment that you are about to create.
+1. Select a project from the _All projects_ list.
 
-1. Click (branch).
+1. Select an environment.
+
+   >[!TIP]
+   >
+   >Your new branch is cloned from this environment. Choose a parent environment that is similar to the environment that you are about to create.
+
+1. Click **[!UICONTROL Branch]**.
 
    ![Create a branch](../../assets/icon-branch.png)
 
-1. In the _New environment name_ field, enter a branch name. Often, the environment name is the same as the ID.
+1. In the _Branching from ..._ form, enter a branch name.
 
    The environment _name_ is different from the environment _ID_ only if you use spaces or capital letters in the environment name. An environment ID consists of all lowercase letters, numbers, and allowed symbols. Capital letters in an environment name are converted to lowercase in the ID; spaces in an environment name are converted to dashes.
 
    An environment name **cannot** include characters reserved for your Linux shell or for regular expressions. Forbidden characters include curly braces (`{ }`), parentheses, asterisk (`*`), angle brackets (`>`), ampersand (`&`), percent (<code>%</code>), and other characters.
 
-1. Click **[!UICONTROL Branch]**.
+1. Select an **[!UICONTROL Environment type]**.
+
+1. Click **[!UICONTROL Create Branch]**.
+
 1. Wait while the environment deploys.
 
-   During deployment, the environment status is **In process**. After a successful deployment, the status changes to **Success**.
+   During deployment, the environment status is  **In process**. After a successful deployment, the status changes to a green check mark for **success**.
 
-**To delete an environment and make it inactive**:
+## Delete an environment
+
+Before you can delete an environment, you must deactivate it. Once an environment is inactive, you can delete it.
+
+**To deactivate an environment**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Select a project.
-1. In the left environment list, click the name of the branch to delete.
-1. Click **[!UICONTROL Configure environment]**.
 
-   ![Configure environment](../../assets/ui-configure-environment.png)
+1. Select a project from the _All projects_ list.
 
-1. Click the **[!UICONTROL Settings]** tab.
-1. Click **[!UICONTROL Delete]** next to the environment status, as the following figure shows.
+1. Select the environment from the navigation bar _Environment_ list.
 
-   ![Delete an environment](../../assets/ui-delete-environment.png)
+1. Click the configure icon on the right side of the navigation bar, which opens the environment settings.
 
-   A deleted (inactive) environment displays with its name stricken out as the following figure shows.
-
-   ![Delete an environment](../../assets/ui-deleted-environment.png)
+1. On the _[!UICONTROL General]_ tab, scroll down to the _[!UICONTROL Deactivate environment]_ section and click **[!UICONTROL Deactivate environment and delete data]** and follow the instructions.
 
 ## Sync an environment
 
-Syncing an environment (or branch) is the same as `git pull origin <parent>`. You sync to get updated code from a parent environment. You can use this feature through the interface for all Starter and Pro environments.
+Syncing an environment (or branch) is the same as `git pull origin <parent>`. You can sync to get updated code from a parent environment. You can use this feature through the interface for all Starter and Pro environments.
 
-For Pro plan, you can also sync from Staging and Production to your integration `master` branch. This sync only pulls and pushes code, not data. To sync data, dump the database data and push it to another environment's database. See [Migrate and deploy static files and data](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
+For Pro plan, you can sync from Staging and Production to your `master` branch. This sync only pulls and pushes code, not data. To sync data, dump the database data and push it to another environment's database. See [Migrate and deploy static files and data](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
 
 **To sync an environment**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Select a project.
-1. In the left environment list, click the name of the branch to sync.
+
+1. Select a project from the _All projects_ list.
+
+1. In the environment list, click the name of the branch to sync.
+
 1. Click (sync).
 
     ![Sync an environment](../../assets/icon-sync.png)
 
 1. Select the items to sync.
 
-   - `code`—syncs updated code from the parent branch.
-   - `data & files`— syncs changes in the database and content files from the parent branch.
+   - Replace the data—(data and files) syncs changes in the database and content files from the parent branch.
+   - Git merge—(code) syncs updated code from the parent branch.
+
+   This also builds a CLI command for you to copy and use.
 
 1. Click **Sync**.
 
@@ -97,16 +107,19 @@ For Pro plan, you can also sync from Staging and Production to your integration 
 
 Merging an environment (or branch) is the same as `git push origin`. You merge to push updated code from an environment to its parent environment. You can merge this code to `master`. You can deploy to Staging and Production using the `merge` command.
 
-**To merge with parent environment**:
+**To merge with the parent environment**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Select a project.
-1. In the left environment list, click the name of the branch to merge.
+
+1. Select a project from the _All projects_ list.
+
+1. In the environment list, click the name of the branch to merge.
+
 1. Click (merge).
 
    ![Merge an environment](../../assets/icon-merge.png)
 
-1. Click **Merge** to confirm the action.
+1. Click **Merge** and confirm the action.
 
 ## View logs
 
@@ -116,23 +129,25 @@ For **Starter**, you can review build and deploy logs and the deployment history
 
 For **Pro**, you can review the following logs in each environment:
 
--  Integration—Build and deploy and deployment history
--  Staging—Build logs and deployment history. Use SSH to log into the server to view deploy logs.
--  Production—Build logs and deployment history. Use SSH to log into the server to view deploy logs.
+- Integration—Build and deploy and deployment history
+- Staging—Build logs and deployment history. Use SSH to log into the server to view deploy logs.
+- Production—Build logs and deployment history. Use SSH to log into the server to view deploy logs.
 
 **To view logs in the Project Web Interface**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Select a project.
-1. In the left environment list, click the name of the branch to view logs.
 
-   The view provides a deployment history of one entry per action attempted including syncs, merges, branches, snapshots, and more.
+1. Select a project from the _All projects_ list.
+
+1. Select an environment.
+
+   The environment view provides an **Activity** list that shows _recent_ events, one entry per action attempted including syncs, merges, branches, snapshots, and more. Click **All** for the full deployment history.
 
 1. To view the build log, select the Success or Failure link per deployment record on the account.
 
 >[!TIP]
 >
->Click the **Showing all types of messages** drop-down list to change the type of messages to view.
+>Click the **Filter by** icon for a drop-down list and select the type of messages to view.
 
 ## Pull code from a private Git repository
 
@@ -151,11 +166,12 @@ If your project needs to access multiple repositories, you can choose to attach 
 **To find your project SSH public key**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
-1. Select a project.
-1. Click ![Configure project](../../assets/icon-configure.png) next to the project name.
-1. Click **Deploy Key**.
 
-   ![Deploy Key](../../assets/ui-deploy-key.png)
+1. Select a project from the _All projects_ list.
+
+1. Click the configuration icon on the right side of the navigation bar.
+
+1. In _Project Settings_, click **Deploy Key**.
 
 1. Copy the deploy key to the clipboard.
 
@@ -215,12 +231,16 @@ You can access your project and environments from any location through a web bro
 
 **To secure environments**:
 
-1. Log into your [Project Web Interface](https://console.magento.cloud).
-1. Select a project.
-1. Select an environment branch.
-1. Click **Configure Environment**.
-1. On the **Settings** tab, click **ON** for **HTTP access control** to enable secure access. You can choose between credentials or IP addresses to filter for access.
+1. Log in to your [Project Web Interface](https://console.magento.cloud).
+
+1. Select a project from the _All projects_ list.
+
+1. Select an environment and click the configuration icon on the navigation bar.
+
+1. On the envirnoment settings **General** tab, click **ON** for **HTTP access control enabled** to enable secure access. You can choose between credentials or IP addresses to filter for access.
+
 1. To filter by credentials, click **Add Login**, enter a username and password, and click again **Add Login** to add.
+
 1. To filter by IP address, enter the IP addresses in a list with `deny` or `allow`. For example:
 
    ```text

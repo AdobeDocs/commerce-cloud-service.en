@@ -58,9 +58,11 @@ The environment overview shows a summary of environment details in the preview a
 - Environment status (Active or Inactive)
 - Storefront URL with **[!UICONTROL Set a custom domain]** button
 
+The [Activity stream](activity-stream.md) makes up the main environment overview.
+
 ### Access storefront
 
-Each active environment has a storefront. Select an environment from the top navigation and click the link in the environment overview. Also, there is a **[!UICONTROL URLs]** list on the right-had side above the Activity list.
+Each active environment has a storefront. Select an environment from the top navigation and click the URL in the environment overview. Also, there is a **[!UICONTROL URLs]** list on the right-had side above the Activity list.
 
 The Web Access URL may include the following:
 

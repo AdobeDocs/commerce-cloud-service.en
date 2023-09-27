@@ -133,7 +133,7 @@ You can use the [Project Web Interface](../../get-started/web-interface.md) to a
 
 1. Log in to the [Project Web Interface](https://console.magento.cloud/).
 
-1. Select a project.
+1. Select a project from the _All projects_ list.
 
 1. On the Project dashboard, click the configuration icon in the upper right.
 
@@ -143,7 +143,7 @@ You can use the [Project Web Interface](../../get-started/web-interface.md) to a
 
 1. Complete the _Add User_ form:
 
-   - Enter the user e-mail address.
+   - Enter the user email address.
 
    - **[!UICONTROL Project admin]**—grant Admin rights to all settings and environment types.
 
