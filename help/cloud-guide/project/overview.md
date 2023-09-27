@@ -23,9 +23,44 @@ For **Starter** projects, there is a hierarchy of branches starting from `master
 
 For **Pro**, there is a hierarchy of branches starting from `production` to `staging` to `integration`. The ![Enterprise icon](../../assets/icon-deploy.png) icon indicates that the branch deploys to a dedicated server. Any branches that you create display as children of the `integration` branch. See [Pro architecture](../architecture/pro-architecture.md).
 
+### Project overview
+
+Selecting a project from the _All projects_ list opens the project overview. The project overview always displays a project navigation bar, which includes an environment selector and a configuration button:
+
+![Project navigation](../../assets/project-nav.png)
+
+The project overview, as long as you do not have an environment selected, shows a summary of project details in the preview area:
+
+- Project name
+- Region, Project ID
+- Plan, allotted storage, environments, users
+- Storefront URL with **[!UICONTROL Set a custom domain]** button
+
+And in the main project overview:
+
+- Environments list—Shows list or tree view of active and inactive environments
+- [Activity stream](activity-stream.md)—Shows running, pending, and recent activities for the project.
+<!-- - Apps & Services—Shows a topology of service containers -->
+
+### Environment overview
+
+Selecting an environment from the project navigation bar changes the overview and the navigation bar to focus on the selected environment. The navigation bar includes branch controls (Branch, Merge, and Sync) and a configuration button:
+
+![Environment selected](../../assets/environment-selected.png)
+
+The environment overview shows a summary of environment details in the preview area:
+
+- Environment name, type
+- Region, Project ID
+- Date and time of last activity, including backup
+- HTTP access  and search engine status
+- Machine name
+- Environment status (Active or Inactive)
+- Storefront URL with **[!UICONTROL Set a custom domain]** button
+
 ### Access storefront
 
-Each active environment has a storefront. Select an environment from the top navigation and click the link in the environment Overview box. Also, there is a **[!UICONTROL URLs]** list on the right-had side above the Activity list.
+Each active environment has a storefront. Select an environment from the top navigation and click the link in the environment overview. Also, there is a **[!UICONTROL URLs]** list on the right-had side above the Activity list.
 
 The Web Access URL may include the following:
 
@@ -53,7 +88,7 @@ The Pro Production and Staging environments include three nodes that you can acc
 
 ## Settings
 
-Open the _Settings_ panel by clicking the configure icon.
+Open the _Settings_ panel by clicking the configure icon on the right side of the project navigation.
 
 ![configure project icon](../../assets/icon-configure.png)
 
