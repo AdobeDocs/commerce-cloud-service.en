@@ -10,7 +10,9 @@ The main view for each environment displays an **Activity** list of historical e
 
 ## View logs
 
-In the Activity list, click the status icon of an activity to view the log. Alternatively, click the (_more_) icon ![more](../../assets/icon-more.png) to access more options for managing the activity.
+In the Activity list, click the status icon of an activity to view the log. Alternatively, click the (_more_) icon ![more](../../assets/icon-more.png) to access more options for managing the activity. The following shows a short log creating a backup. You can [use the Cloud CLI](#activity-stream-with-cloud-cli) to view the same log.
+
+![Log view](../../assets/log-view.png)
 
 ## Manage an activity
 
@@ -18,13 +20,13 @@ Some activities are in a _running_ or _pending_ status. You can act on a running
 
 Select the **Cancel** option to stop the activity. Not all activities have this option.
 
-![Cancel activity](../../assets/activity-icons/cancel-activity.png){width="200" align="center"}
+![Cancel activity](../../assets/activity-icons/cancel-activity.png){width="300"}
 
 You can only cancel a running deployment during the _build_ phase. Once the application has moved into the _deploy_ phase, you no longer have the option to cancel the activity.
 
 If you have a terminal running the activity, canceling in the Project Web Interface results in the cancellation in the terminal:
 
-![Activity cancelled in terminal](../../assets/activity-icons/activity-cancelled.png){width="200" align="center"}
+![Activity cancelled in terminal](../../assets/activity-icons/activity-cancelled.png){width="300"}
 
 ## Filter activity stream
 
@@ -74,7 +76,7 @@ The `magento-cloud` CLI provides most of the same abilities as the Project Web I
     ```bash
     Activity ID: wvl5wm7s5vkhy
     Type: environment.backup
-    Description: Guthrie created a backup of Master
+    Description: User created a backup of Master
     Created: 2023-09-08T14:03:33+00:00
     State: complete
     Log:
