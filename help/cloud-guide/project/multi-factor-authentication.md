@@ -193,10 +193,14 @@ When MFA is enabled on a project, automated processes that require SSH access to
 
 Authenticating with an API token still requires generating an SSH certificate. Automated processes must also automate the generation of an SSH certificate.
 
+>[!BEGINSHADEBOX]
+
 **Prerequisites:**
 
 - [Admin or Contributor access to the Adobe Commerce on cloud infrastructure environment](user-access.md)
 - [Valid API token available on account](user-access.md#create-an-api-token)
+
+>[!ENDSHADEBOX]
 
 **To connect using SSH with an API token credential**:
 
