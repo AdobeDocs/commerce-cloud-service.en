@@ -16,15 +16,35 @@ In the Activity list, click the status icon of an activity to view the log. Alte
 
 ## Manage an activity
 
-Some activities are in a _running_ or _pending_ status. You can act on a running activity by accessing the (_more_) menu and selecting an action, such as `Cancel` or `View log`.
+Some activities are in a _running_ or _pending_ status. You can act on a running activity by accessing the (_more_) menu and selecting an action, such as `Cancel` or `View log`. For example, the following tabs show two methods of cancelling an activity: the Project Web Interface (PWI) or the Cloud CLI:
+
+>[!BEGINTABS]
+
+>[!TAB PWI]
 
 Select the **Cancel** option to stop the activity. Not all activities have this option.
 
-![Cancel activity](../../assets/activity-icons/cancel-activity.png){width="300"}
+![Cancel activity](../../assets/activity-icons/cancel-activity.png){width="350" align="center"}
 
-You can only cancel a running deployment during the _build_ phase. Once the application has moved into the _deploy_ phase, you no longer have the option to cancel the activity.
+>[!TAB CLI]
 
-If you have a terminal running the activity, canceling in the Project Web Interface results in the cancellation in the terminal:
+Identify the running activities and select an activity ID:
+
+```bash
+magento-cloud activity:list --state=in_progress
+```
+
+Cancel the activity using the activity ID:
+
+```bash
+magento-cloud activity:cancel wvl5wm7s5vkhy
+```
+
+>[!ENDTABS]
+
+You can cancel a running deployment only during the _build_ phase. Once the application has moved into the _deploy_ phase, you can no longer cancel the activity.
+
+If you have a terminal running the deployment activity, canceling in the Project Web Interface results in the cancellation in the terminal:
 
 ![Activity cancelled in terminal](../../assets/activity-icons/activity-cancelled.png){width="300"}
 
