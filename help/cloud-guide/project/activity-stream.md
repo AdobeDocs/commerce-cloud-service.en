@@ -24,7 +24,9 @@ Some activities are in a _running_ or _pending_ status. You can act on a running
 
 **To cancel an activity in the Project Web Interface**:
 
-You can act on a running activity by accessing the (_more_) menu and selecting an action, such as `Cancel` or `View log`. Select the **Cancel** option to stop the activity. Not all activities have this option. The option to cancel the application deployment appears only during the _build_ phase. Once the application has moved into the _deploy_ phase, you can no longer cancel the activity.
+You can act on a running activity by accessing the ![More](../../assets/icon-more.png){width="32"} (_more_) menu and selecting an action, such as `Cancel` or `View log`. For this example, select the **Cancel** option to stop the running activity.
+
+Not all activities have the cancelation option. For example, the option to cancel the application deployment appears only during the _build_ phase. Once the application has moved into the _deploy_ phase, you can no longer cancel the activity. See [Deployment process](../deploy/process.md) about the different phases.
 
 ![Cancel activity](../../assets/activity-icons/cancel-activity.png){width="450" align="center"}
 
@@ -64,7 +66,7 @@ The ability to filter the activity list is useful when you are looking for somet
 
 1. Choose the Activity **[!UICONTROL Recent]** view and reset the list.
 
-## Activity stream with Cloud CLI
+## View stream with Cloud CLI
 
 The `magento-cloud` CLI provides most of the same abilities as the Project Web Interface. The `activity` command can:
 
@@ -75,7 +77,7 @@ The `magento-cloud` CLI provides most of the same abilities as the Project Web I
 
 **To view the Activity stream with the Cloud CLI**:
 
-1. List the activities for the current environment:
+1. List the activities for the current environment.
 
    ```bash
    magento-cloud activity:list
