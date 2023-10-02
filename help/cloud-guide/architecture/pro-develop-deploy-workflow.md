@@ -6,13 +6,15 @@ exl-id: 103e90d5-2ef2-4fef-845c-439344666b00
 ---
 # Pro project workflow
 
-The Pro project includes a single Git repository with a Global `master` and three main environments:
+The Pro project includes a single Git repository with a global `master` branch and three main environments:
 
-1. **Integration environment for development and testing
-1. **staging** environment for testing with all services
-1. **production** environment for launching and maintaining your live site.
+1. Production environment for launching and maintaining the live site
+1. Staging environment for testing with all services
+1. Integration environment for development and testing
 
-See [Pro architecture](pro-architecture.md) for a complete overview of the pro environments.
+![Pro environment list](../../assets/pro-environments.png)
+
+See [Pro architecture](pro-architecture.md) for a complete overview of the Pro environments. See [Project Web Inteface](../project/overview.md#project-overview) for an overview of the Pro environments list in the project view.
 
 The following graphic demonstrates the Pro develop and deploy workflow, which uses a simple, git-branching approach. You [develop](#development-workflow) code using an active branch based on the `integration` environment, _pushing_ and _pulling_ code changes to and from your remote, Active branch. You deploy verified code by _merging_ the remote branch to the base branch, which activates an automated [build and deploy](#deployment-workflow) process for that environment.
 

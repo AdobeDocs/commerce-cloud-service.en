@@ -26,9 +26,9 @@ The branching strategy uses a common Git workflow where you develop code and add
 - For Starter, create a `staging` branch from the `master` branch, then branch from `staging` for development.
 - For Pro, create a development branch from the `Integration` environment.
 
-Your account supports a limited number of active Git branches and an unlimited number of inactive development branches. Manage active and inactive branches by adding or deleting a branch. When deleted, a branch is deactivated and remains listed in the project branches list as _inactive_. You can activate the inactive branch later or you can [delete the branch](../dev-tools/cloud-cli-overview.md#) using the CLI.
+Your account supports a limited number of ![active branch](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactive) development branches. Manage active and inactive branches by adding or deleting a branch. Before you can delete a branch, you deactivate the branch, which remains in the project environments list as _inactive_. You can activate the inactive branch later or you can [delete the branch](../dev-tools/cloud-cli-overview.md#) in environment settings or using the Cloud CLI.
 
-If you need additional environments for development, enter a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+If you need additional active environments for development, enter a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 **To add a branch**:
 
@@ -72,7 +72,7 @@ Before you can delete an environment, you must deactivate it. Once an environmen
 
 1. Select the environment from the navigation bar _Environment_ list.
 
-1. Click the configure icon on the right side of the navigation bar, which opens the environment settings.
+1. Click the configure icon on the right side of the top navigation bar, which opens the environment settings.
 
 1. On the _[!UICONTROL General]_ tab, scroll down to the _[!UICONTROL Deactivate environment]_ section and click **[!UICONTROL Deactivate environment and delete data]** and follow the instructions.
 
@@ -167,7 +167,7 @@ If you prefer that your project accesses multiple repositories, you can attach a
 
 1. Select a project from the _All projects_ list.
 
-1. Click the configuration icon on the right side of the navigation bar.
+1. Click the configuration icon on the right side of the top navigation bar.
 
 1. In _Project Settings_, click **[!UICONTROL Deploy Key]**.
 
@@ -192,7 +192,7 @@ On GitHub, deploy keys are read-only by default.
    >
    >If you do not see this option, you are not logged in as a repository administrator, and you cannot complete this task. Ask your GitHub repository administrator to do this.
 
-1. On the _Settings_ tab in the left navigation bar, click **[!UICONTROL Deploy Keys]**.
+1. On the _Settings_ tab in the left navigation, click **[!UICONTROL Deploy Keys]**.
 1. Click **[!UICONTROL Add deploy key]**.
 1. Follow the prompts.
 
@@ -205,7 +205,7 @@ In `composer.json`, use the `<user>@<host>:<.git</code>` format, or `ssh://<user
 **To enter your project public key as a Bitbucket deploy key**:
 
 1. Log in to your Bitbucket repository as the administrator.
-1. In the left navigation bar, click **[!UICONTROL Settings]**.
+1. In the left navigation, click **[!UICONTROL Settings]**.
 1. Click General > **[!UICONTROL Deployment Keys]**.
 1. Click **[!UICONTROL Add Key]**.
 1. Follow the prompts.

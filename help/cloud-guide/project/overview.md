@@ -34,13 +34,15 @@ The project overview, as long as you do not have an environment selected, shows 
 
 And in the main project overview:
 
-- Environments list—Shows list or tree view of active and inactive environments
+- Environments list—Shows list or tree view of ![active branch](../../assets/icon-active.png){width="32"} (active) and ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactive) environments
 - [Activity stream](activity-stream.md)—Shows running, pending, and recent activities for the project.
 <!-- - Apps & Services—Shows a topology of service containers -->
 
 For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branch that you create display as children from the `master` branch. Adobe recommends creating a `staging` branch, then create an `integration` branch for development. See [Starter architecture](../architecture/starter-architecture.md).
 
 For **Pro**, there is a hierarchy of branches starting from `production` to `staging` to `integration`. The ![Dedicated icon](../../assets/icon-dedicated.png){width="32"} icon indicates that the branch deploys to a dedicated environment. Any branches that you create display as children of the `integration` branch. See [Pro architecture](../architecture/pro-architecture.md).
+
+![Pro environment list](../../assets/pro-environments.png)
 
 ### Environment overview
 
@@ -90,9 +92,7 @@ The Pro Production and Staging environments include three nodes that you can acc
 
 ## Settings
 
-Open the _Settings_ panel by clicking the configure icon on the right side of the project navigation.
-
-![configure project icon](../../assets/icon-configure.png)
+Open the _Settings_ panel by clicking the ![configure project icon](../../assets/icon-configure.png){width="36"} (configure) icon on the right side of the project navigation.
 
 ### Project settings
 

@@ -25,3 +25,7 @@ The Project WI provides a more modern, user-friendly experience and lays the fou
 ## Project list
 
 The _All projects_ view lists all projects that you have permission to access. You can click **[!UICONTROL Show filters]** and filter your project list by type, region, or plan.
+
+## My Profile
+
+In the top right-hand corner is your account menu. Click the down arrow to access the menu and select **[!UICONTROL My Profile]**. In the _My Profile_ view, you can control your user details and display settings, manage security authentication, keys, and tokens.
