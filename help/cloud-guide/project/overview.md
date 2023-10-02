@@ -21,7 +21,7 @@ The Project Web Interface provides interactive methods to build, manage, and dep
 
 For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branch that you create display as children from the `master` branch. Adobe recommends creating a `staging` branch, then create an `integration` branch for development. See [Starter architecture](../architecture/starter-architecture.md).
 
-For **Pro**, there is a hierarchy of branches starting from `production` to `staging` to `integration`. The ![Enterprise icon](../../assets/icon-deploy.png) icon indicates that the branch deploys to a dedicated server. Any branches that you create display as children of the `integration` branch. See [Pro architecture](../architecture/pro-architecture.md).
+For **Pro**, there is a hierarchy of branches starting from `production` to `staging` to `integration`. The ![Dedicated icon](../../assets/icon-dedicated.png){width="32"} icon indicates that the branch deploys to a dedicated environment. Any branches that you create display as children of the `integration` branch. See [Pro architecture](../architecture/pro-architecture.md).
 
 ### Project overview
 

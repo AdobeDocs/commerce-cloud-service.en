@@ -44,7 +44,7 @@ If you need additional environments for development, enter a [Support ticket](ht
 
 1. Click **[!UICONTROL Branch]**.
 
-   ![Create a branch](../../assets/icon-branch.png)
+   ![Create a branch](../../assets/icon-branch.png){width="150"}
 
 1. In the _Branching from ..._ form, enter a branch name.
 
@@ -92,7 +92,7 @@ For Pro plan, you can sync from Staging and Production to your `master` branch. 
 
 1. Click (sync).
 
-    ![Sync an environment](../../assets/icon-sync.png)
+    ![Sync an environment](../../assets/icon-sync.png){width="150"}
 
 1. Select the items to sync.
 
@@ -117,7 +117,7 @@ Merging an environment (or branch) is the same as `git push origin`. You merge t
 
 1. Click (merge).
 
-   ![Merge an environment](../../assets/icon-merge.png)
+   ![Merge an environment](../../assets/icon-merge.png){width="150"}
 
 1. Click **Merge** and confirm the action.
 
@@ -141,7 +141,7 @@ For **Pro**, you can review the following logs in each environment:
 
 1. Select an environment.
 
-   The environment view provides an **Activity** list that shows _recent_ events, one entry per action attempted including syncs, merges, branches, snapshots, and more. Click **All** for the full deployment history.
+   The environment view provides an [Activity list](activity-stream.md) that shows _recent_ events, one entry per action attempted including syncs, merges, branches, snapshots, and more. Click **All** for the full deployment history.
 
 1. To view the build log, select the Success or Failure link per deployment record on the account.
 
