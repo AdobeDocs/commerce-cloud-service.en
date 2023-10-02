@@ -19,10 +19,6 @@ The Project Web Interface provides interactive methods to build, manage, and dep
 >
 >If you do not see any projects, you must contact the [Account Owner or Super User](../project/user-access.md) associated with the project and request access. For first-time users, see the [Onboarding topic](../../get-started/onboarding.md#project-web-interface) in the _Get started_ guide.
 
-For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branch that you create display as children from the `master` branch. Adobe recommends creating a `staging` branch, then create an `integration` branch for development. See [Starter architecture](../architecture/starter-architecture.md).
-
-For **Pro**, there is a hierarchy of branches starting from `production` to `staging` to `integration`. The ![Dedicated icon](../../assets/icon-dedicated.png){width="32"} icon indicates that the branch deploys to a dedicated environment. Any branches that you create display as children of the `integration` branch. See [Pro architecture](../architecture/pro-architecture.md).
-
 ### Project overview
 
 Selecting a project from the _All projects_ list opens the project overview. The project overview always displays a project navigation bar, which includes an environment selector and a configuration button:
@@ -41,6 +37,10 @@ And in the main project overview:
 - Environments list—Shows list or tree view of active and inactive environments
 - [Activity stream](activity-stream.md)—Shows running, pending, and recent activities for the project.
 <!-- - Apps & Services—Shows a topology of service containers -->
+
+For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branch that you create display as children from the `master` branch. Adobe recommends creating a `staging` branch, then create an `integration` branch for development. See [Starter architecture](../architecture/starter-architecture.md).
+
+For **Pro**, there is a hierarchy of branches starting from `production` to `staging` to `integration`. The ![Dedicated icon](../../assets/icon-dedicated.png){width="32"} icon indicates that the branch deploys to a dedicated environment. Any branches that you create display as children of the `integration` branch. See [Pro architecture](../architecture/pro-architecture.md).
 
 ### Environment overview
 

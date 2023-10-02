@@ -16,7 +16,7 @@ In the Activity list, click the status icon of an activity to view the log. Alte
 
 ## Manage an activity
 
-Some activities are in a _running_ or _pending_ status. You can act on a running activity, such as cancelling a running deployment. The following tabs show two methods of cancelling an activity: the Project Web Interface (PWI) or the Cloud CLI.
+Some activities are in a _running_ or _pending_ status. You can act on a running activity, such as canceling a running deployment. The following tabs show two methods of canceling an activity: the Project Web Interface (PWI) or the Cloud CLI.
 
 >[!BEGINTABS]
 
@@ -24,13 +24,13 @@ Some activities are in a _running_ or _pending_ status. You can act on a running
 
 **To cancel an activity in the Project Web Interface**:
 
-You can act on a running activity by accessing the (_more_) menu and selecting an action, such as `Cancel` or `View log`. Select the **Cancel** option to stop the activity. Not all activities have this option.
+You can act on a running activity by accessing the (_more_) menu and selecting an action, such as `Cancel` or `View log`. Select the **Cancel** option to stop the activity. Not all activities have this option. The option to cancel the application deployment appears only during the _build_ phase. Once the application has moved into the _deploy_ phase, you can no longer cancel the activity.
 
 ![Cancel activity](../../assets/activity-icons/cancel-activity.png){width="450" align="center"}
 
->[!NOTE]
->
->You can cancel an application deployment only during the _build_ phase. Once the application has moved into the _deploy_ phase, you can no longer cancel the activity.
+If you have a terminal running the deployment activity, canceling in the Project Web Interface results in the cancellation in the terminal:
+
+![Activity cancelled in terminal](../../assets/activity-icons/activity-cancelled.png){width="300"}
 
 >[!TAB CLI]
 
@@ -49,10 +49,6 @@ You can act on a running activity by accessing the (_more_) menu and selecting a
    ```
 
 >[!ENDTABS]
-
-If you have a terminal running the deployment activity, canceling in the Project Web Interface results in the cancellation in the terminal:
-
-![Activity cancelled in terminal](../../assets/activity-icons/activity-cancelled.png){width="300"}
 
 ## Filter activity stream
 

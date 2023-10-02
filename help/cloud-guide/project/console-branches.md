@@ -97,7 +97,7 @@ For Pro plan, you can sync from Staging and Production to your `master` branch. 
 1. Select the items to sync.
 
    - Replace the data—(data and files) syncs changes in the database and content files from the parent branch.
-   - Git merge—(code) syncs updated code from the parent branch.
+   - Merge—(code) syncs updated code from the parent branch.
 
    This also builds a CLI command for you to copy and use.
 
@@ -155,15 +155,13 @@ Your Adobe Commerce on cloud infrastructure project can include code from a priv
 
 To add a deployment key to your private GitHub repository, you must be the administrator of that repository. GitHub allows you to use a deploy key for one repository only.
 
-If your project needs to access multiple repositories, you can choose to attach an SSH key to an automated user account. Because this account is not used by a human, it is referred to as a [machine user](https://docs.github.com/en/developers/overview/managing-deploy-keys). Add the machine account as a collaborator or add the machine user to a team with access to the repositories.
+If you prefer that your project accesses multiple repositories, you can attach an SSH key to an automated user account. Because this account is not used by a human, it is referred to as a [machine user](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys). Add the machine account as a collaborator or add the machine user to a team with access to the repositories.
 
 >[!INFO]
 >
->Adobe recommends adding and merging this code to your project Git repositories. If you do not configure the connection, you will have build issues.
+>Adobe recommends adding and merging this code to your project Git repositories. If you do not configure the connection, you may experience build issues.
 
-### Find your deploy key
-
-**To find your project SSH public key**:
+**To find your SSH public key**:
 
 1. Log in to [the Project Web Interface](https://console.magento.cloud).
 
@@ -171,9 +169,15 @@ If your project needs to access multiple repositories, you can choose to attach 
 
 1. Click the configuration icon on the right side of the navigation bar.
 
-1. In _Project Settings_, click **Deploy Key**.
+1. In _Project Settings_, click **[!UICONTROL Deploy Key]**.
 
 1. Copy the deploy key to the clipboard.
+
+Use your deploy key in one of the following Git-based methods:
+
+>[!BEGINTABS]
+
+>[!TAB GitHub]
 
 ### Enter your GitHub deploy key
 
@@ -182,27 +186,31 @@ On GitHub, deploy keys are read-only by default.
 **To enter your project public key as a GitHub deploy key**:
 
 1. Log in to your GitHub repository as the administrator.
-1. Click the repository **Settings** tab.
+1. Click the repository **[!UICONTROL Settings]** tab.
 
    >[!NOTE]
    >
-   >If you do not see this option, you are not signed in as the repository administrator and you cannot complete this task. Ask your GitHub repository administrator to do this.
+   >If you do not see this option, you are not logged in as a repository administrator, and you cannot complete this task. Ask your GitHub repository administrator to do this.
 
-1. On the _Settings_ tab in the left navigation bar, click **Deploy Keys**.
-1. Click **Add deploy key**.
-1. Follow the prompts to complete the task.
+1. On the _Settings_ tab in the left navigation bar, click **[!UICONTROL Deploy Keys]**.
+1. Click **[!UICONTROL Add deploy key]**.
+1. Follow the prompts.
 
 In `composer.json`, use the `<user>@<host>:<.git</code>` format, or `ssh://<user>@<host>:<port>/<path>.git` if using a non-standard port.
 
-### Enter your Bitbucket deployment key
+>[!TAB Bitbucket]
+
+### Enter your Bitbucket deploy key
 
 **To enter your project public key as a Bitbucket deploy key**:
 
 1. Log in to your Bitbucket repository as the administrator.
-1. In the left navigation bar, click **Settings**.
-1. Click General > **Deployment Keys**.
-1. Click **Add Key**.
-1. Follow the prompts to complete the task.
+1. In the left navigation bar, click **[!UICONTROL Settings]**.
+1. Click General > **[!UICONTROL Deployment Keys]**.
+1. Click **[!UICONTROL Add Key]**.
+1. Follow the prompts.
+
+>[!TAB GitLab]
 
 ### Enter your GitLab deploy key
 
@@ -211,15 +219,17 @@ In `composer.json`, use the `<user>@<host>:<.git</code>` format, or `ssh://<user
 1. Log in to your GitLab repository as the owner.
 1. Verify that the _Pipelines_ option is enabled for your project:
 
-   1. In the project settings, expand the **Visibility, project, features, permissions** section.
-   1. If necessary, click **Pipelines** to enable the option.
+   1. In the project settings, expand the **[!UICONTROL Visibility, project, features, permissions]** section.
+   1. If necessary, click **[!UICONTROL Pipelines]** to enable the option.
 
 1. Add your public SSH key to the CI/CD settings.
 
-   1. In the left navigation bar, click Settings > **CI / CD**.
+   1. In the left navigation, click Settings > **[!UICONTROL CI / CD]**.
    1. Click Deploy Keys **Expand** to configure the key.
-   1. In the _Deploy Key_ form, add a deploy key name to the **Title** field, and paste your public SSH key in the **Key** field.
-   1. Click **Add Key** to save the configuration.
+   1. In the _Deploy Key_ form, add a deploy key name to the **[!UICONTROL Title]** field and paste your public SSH key in the **[!UICONTROL Key]** field.
+   1. Click **[!UICONTROL Add Key]** to save the configuration.
+
+>[!ENDTABS]
 
 ## Secure environments and branches
 
@@ -227,7 +237,7 @@ You can access your project and environments from any location through a web bro
 
 >[!WARNING]
 >
->**DO NOT** use the following methods for securing Pro Staging and Production environments. This breaks Fastly caching. You must use the [Blocking](../cdn/fastly-vcl-blocking.md) feature available in the Fastly CDN for Adobe Commerce.
+>**DO NOT** use the following methods for securing Pro Staging and Production environments. This breaks Fastly caching. Use the [Blocking](../cdn/fastly-vcl-blocking.md) feature available in the Fastly CDN for Adobe Commerce.
 
 **To secure environments**:
 
@@ -237,9 +247,9 @@ You can access your project and environments from any location through a web bro
 
 1. Select an environment and click the configuration icon on the navigation bar.
 
-1. On the envirnoment settings **General** tab, click **ON** for **HTTP access control enabled** to enable secure access. You can choose between credentials or IP addresses to filter for access.
+1. On the environment settings _General_ tab, click **ON** for **[!UICONTROL HTTP access control enabled]** to enable secure access. You can choose between credentials or IP addresses to filter for access.
 
-1. To filter by credentials, click **Add Login**, enter a username and password, and click again **Add Login** to add.
+1. To filter by credentials, click **[!UICONTROL Add Login]**, enter a username and password, and click **[!UICONTROL Add Login]** to add.
 
 1. To filter by IP address, enter the IP addresses in a list with `deny` or `allow`. For example:
 
@@ -250,6 +260,4 @@ You can access your project and environments from any location through a web bro
    0.0.0.0/0 deny
    ```
 
-1. Click **Save**.
-
-The branch redeploys to update the environment security and settings. Adobe recommends testing your environments after completing security settings.
+1. Click **[!UICONTROL Save]**. This redeploys the environment to update security and settings. Adobe recommends testing the environment after completing security settings.
