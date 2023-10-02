@@ -58,7 +58,7 @@ The ability to filter the activity list is useful when you are looking for somet
 
 1. Select an environment and choose the Activity **[!UICONTROL All]** view to include the full event history.
 
-1. Click ![Filter by](../../assets/icon-filterby.png) and select the **[!UICONTROL Filter by]** options:
+1. Click ![Filter by](../../assets/icon-filterby.png){width="32"} and select the **[!UICONTROL Filter by]** options:
 
    ![Filter activities](../../assets/activity-filter.png)
 
