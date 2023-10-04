@@ -37,7 +37,9 @@ Set the `_merge` option to one of the following:
 
 >[!TIP]
 >
->For Pro projects, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. For changes to a live Production environment, you must provide a minimum of 48 hours notice. It can take up to 48 hours for the Cloud infrastructure team to update your project.
+>For Pro projects, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install or update services in Staging and Production environments only. This is a self-service task in Integration/Development environments.
+>Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and [PHP version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=en) in the ticket. 
+>For changes to a live Production environment, you must provide a minimum of 48 hours notice. This will allow the Cloud infrastructure team sufficient time to schedule/marshall the necessary resources just in case any issues crop up during the upgrade that may require immediate intervention.
 
 ## Pro backups {#pro-backups}
 
