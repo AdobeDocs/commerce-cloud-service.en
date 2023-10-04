@@ -8,7 +8,11 @@ exl-id: 11aa0862-94c0-47fb-946a-0148f75cc24c
 
 Project variables apply to all environments within the project. Environment variables apply to a specific environment or branch. An environment _inherits_ variable definitions from the parent environment. You can override an inherited value by defining the variable specifically for the environment. For example, to set variables for development, define the variable values in the `.magento.env.yaml` file in the integration environment. All environments branching from the integration environment inherit those values. See [Deployment configuration](configure-env-yaml.md) for details about configuring your environment using the `.magento.env.yaml` file.
 
-To set variables using the CLI, first choose one of the following levels:
+>[!BEGINTABS]
+
+>[!TAB CLI]
+
+**To set variables using the Cloud CLI**:
 
 - **Project-specific variables**—To set the same value for _all_ environments in your project. These variables are available at build and runtime in all environments.
 
@@ -22,9 +26,35 @@ To set variables using the CLI, first choose one of the following levels:
     magento-cloud variable:create --level environment --name <variable-name> --value <variable-value>
     ```
 
->[!NOTE]
->
->After setting project-specific variables, you must manually redeploy the remote environment for the change to take effect. Push the new commits to trigger a redeployment. Setting environment-specific variables in the Project Web Interface automatically redeploys the environment.
+After setting project-specific variables, you must manually redeploy the remote environment for the change to take effect. Push the new commits to trigger a redeployment.
+
+>[!TAB PWI]
+
+**To set variables using the Project Web Interface**:
+
+1. In the _Project Web Interface_, click the configuration icon on the right side of the project navigation.
+
+   ![Configure project](../../assets/icon-configure.png)
+
+1. In the _Environments_ list, select an environment and click the **[!UICONTROL Variables]** tab.
+
+   ![Environment variables tab](../../assets/ui-environment-variables.png)
+
+1. Click **[!UICONTROL Create variable]**.
+
+1. Provide a name and value for the variable. Choose from the options:
+
+   - Available during runtime
+   - Available during buildtime
+   - JSON value
+   - Sensitive variable
+   - Make inheritable
+
+1. Click **[!UICONTROL Create variable]**.
+
+Setting environment-specific variables in the Project Web Interface automatically redeploys the environment.
+
+>[!ENDTABS]
 
 ## Visibility
 
@@ -43,7 +73,7 @@ magento-cloud variable:create --name <variable-name> --value <variable-value> --
 
 ## Verify variable levels and values
 
-You can view a list of existing variables:
+You can view a list of existing variables using the Cloud CLI.
 
 ```bash
 magento-cloud variables

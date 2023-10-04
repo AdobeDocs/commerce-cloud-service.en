@@ -26,9 +26,9 @@ The branching strategy uses a common Git workflow where you develop code and add
 - For Starter, create a `staging` branch from the `master` branch, then branch from `staging` for development.
 - For Pro, create a development branch from the `Integration` environment.
 
-Your account supports a limited number of ![active branch](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactive) development branches. Manage active and inactive branches by adding or deleting a branch. Before you can delete a branch, you deactivate the branch, which remains in the project environments list as _inactive_. You can activate the inactive branch later or you can [delete the branch](../dev-tools/cloud-cli-overview.md#) in environment settings or using the Cloud CLI.
+Your account supports a limited number of ![active branch](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactive) development branches. Manage active and inactive branches by adding or deleting a branch using only the Project Web Interface or the Cloud CLI. Before you can delete a branch, you deactivate the branch, which remains in the _Environments_ list as _inactive_. You can reactivate the branch later or you can [delete the branch](../dev-tools/cloud-cli-overview.md#) in environment settings or using the Cloud CLI.
 
-If you need additional active environments for development, enter a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+If you need additional active environments for development, submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 **To add a branch**:
 
@@ -171,9 +171,7 @@ If you prefer that your project accesses multiple repositories, you can attach a
 
 1. In _Project Settings_, click **[!UICONTROL Deploy Key]**.
 
-1. Copy the deploy key to the clipboard.
-
-Use your deploy key in one of the following Git-based methods:
+1. Copy the deploy key to the clipboard for use in one of the following Git-based methods:
 
 >[!BEGINTABS]
 

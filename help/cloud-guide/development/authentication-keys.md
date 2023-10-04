@@ -52,15 +52,15 @@ The following method is the best way to prevent accidental exposure of sensitive
 
 **To add authentication keys using an environment variable**:
 
-1. In the _Project Web Interface_, click the configuration icon in the upper left corner.
+1. In the _Project Web Interface_, click the configuration icon on the right side of the project navigation.
 
    ![Configure project](../../assets/icon-configure.png)
 
-1. In the _Configure Project_ view, click the **Variables** tab.
+1. In the _Project Settings_ list, click **[!UICONTROL Variables]**.
 
-1. Click **Add Variable**.
+1. Click **[!UICONTROL Create variable]**.
 
-1. In the _Name_ field, enter `env:COMPOSER_AUTH`.
+1. In the **[!UICONTROL Variable name]** field, enter `env:COMPOSER_AUTH`.
 
 1. In the _Value_ field, add the following and replace `<public-key>` and `<private-key>` with your Adobe Commerce authentication credentials:
 
@@ -75,8 +75,8 @@ The following method is the best way to prevent accidental exposure of sensitive
    }
    ```
 
-1. Select **Visible during build** and deselect **Visible at run**.
+1. Select **[!UICONTROL Available during buildtime]** and deselect **[!UICONTROL Available during runtime]**.
 
-1. Click **Add Variable**.
+1. Click **[!UICONTROL Create variable]**.
 
 1. Remove the `auth.json` file from each environment.
