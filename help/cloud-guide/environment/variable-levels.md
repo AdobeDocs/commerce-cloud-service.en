@@ -34,7 +34,7 @@ After setting project-specific variables, you must manually redeploy the remote 
 
 1. In the _Project Web Interface_, click the configuration icon on the right side of the project navigation.
 
-   ![Configure project](../../assets/icon-configure.png)
+   ![Configure project](../../assets/icon-configure.png){width="36"}
 
 1. In the _Environments_ list, select an environment and click the **[!UICONTROL Variables]** tab.
 

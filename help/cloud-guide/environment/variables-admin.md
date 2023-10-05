@@ -50,7 +50,7 @@ magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master
 
 1. In the project overview, select the environment and click the configuration icon.
 
-   ![Project configuration](../../assets/icon-configure.png)
+   ![Project configuration](../../assets/icon-configure.png){width="36"}
 
 1. Select the **Variables** tab.
 

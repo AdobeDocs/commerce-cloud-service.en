@@ -54,7 +54,7 @@ The following method is the best way to prevent accidental exposure of sensitive
 
 1. In the _Project Web Interface_, click the configuration icon on the right side of the project navigation.
 
-   ![Configure project](../../assets/icon-configure.png)
+   ![Configure project](../../assets/icon-configure.png){width="36"}
 
 1. In the _Project Settings_ list, click **[!UICONTROL Variables]**.
 
