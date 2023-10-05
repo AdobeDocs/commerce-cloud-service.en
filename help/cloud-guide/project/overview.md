@@ -11,13 +11,15 @@ Adobe provides a Project Web Interface and developer tools to fully manage all a
 
 ## Project Web Interface
 
-The Project WI provides a more modern, user-friendly experience and lays the foundation for future interface enhancements.
-
-The Project Web Interface provides interactive methods to build, manage, and deploy Commerce code. [Log in to the Project Web Interface](https://console.magento.cloud) to view your project list. You can only see projects that you have permission to access as an admin or for specific environment types. If you are an Adobe Solutions Partner, you may see multiple projects for clients that you support.
+The Project Web Interface provides interactive methods to build, manage, and deploy Commerce code in a user-friendly format. [Log in to the Project Web Interface](https://console.magento.cloud) to view your project list. You can only see projects that you have permission to access as an admin or for specific environment types. If you are an Adobe Solutions Partner, you may see multiple projects for clients that you support.
 
 >[!TIP]
 >
->If you do not see any projects, you must contact the [Account Owner or Super User](../project/user-access.md) associated with the project and request access. For first-time users, see the [Onboarding topic](../../get-started/onboarding.md#project-web-interface) in the _Get started_ guide.
+>If you do not see any projects, you must contact the [Account Owner or Project admin](../project/user-access.md) associated with the project and request access. For first-time users, see the [Onboarding topic](../../get-started/onboarding.md#project-web-interface) in the _Get started_ guide.
+
+The _All projects_ view lists all projects that you have permission to access. You can click **[!UICONTROL Show filters]** and filter your project list by type, region, or plan.
+
+![Project list](../../assets/ui-projects-list.png)
 
 ### Project overview
 

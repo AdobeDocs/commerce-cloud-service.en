@@ -190,7 +190,7 @@ Instructions for installing the authenticator application and enabling TFA are a
 
 1. Log in to [your account](https://console.magento.cloud).
 
-1. In the upper-right user menu, click **[!UICONTROL My Profile]**.
+1. In the upper-right account menu, click **[!UICONTROL My Profile]**.
 
 1. In the _Security_ tab, click **[!UICONTROL Set up application]**.
 
@@ -238,7 +238,7 @@ You can manage the TFA configuration for an Adobe Commerce on cloud infrastructu
 
 1. Log in to [your account](https://console.magento.cloud).
 
-1. In the upper-right user menu, click **[!UICONTROL My Profile]**.
+1. In the upper-right account menu, click **[!UICONTROL My Profile]**.
 
 1. On the _My Profile_ page, click the **[!UICONTROL Security]** tab.
 
@@ -263,7 +263,7 @@ On projects that have MFA enforcement enabled, you must have an API token to ena
 
 1. Log in to [your account](https://console.magento.cloud).
 
-1. In the upper-right user menu, click **[!UICONTROL My Profile]**.
+1. In the upper-right account menu, click **[!UICONTROL My Profile]**.
 
 1. On the _My Profile_ page, click the **[!UICONTROL API tokens]** tab.
 

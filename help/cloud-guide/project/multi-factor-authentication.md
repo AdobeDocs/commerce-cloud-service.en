@@ -283,7 +283,7 @@ Try the following troubleshooting procedures to resolve the connection issue:
 
 1. Log in to [your account](https://console.magento.cloud).
 
-1. In the upper-right user menu, click **[!UICONTROL My Profile]**.
+1. In the upper-right account menu, click **[!UICONTROL My Profile]**.
 
 1. On the _My Profile_ page, click the **[!UICONTROL Security]** tab.
 
