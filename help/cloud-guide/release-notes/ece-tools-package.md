@@ -26,7 +26,7 @@ The release notes include:
 
 Release date: October 11, 2023
 
--  ![new icon](../../assets/new.svg) **ENABLE_WEBHOOKS global environment variable**—Add the [ENABLE_WEBHOOKS](../environment/variables-global.md#enable_webhooks) for use with Commerce webhooks, such as an App Builder runtime action.
+-  ![new icon](../../assets/new.svg) **ENABLE_WEBHOOKS global environment variable**—Added the [ENABLE_WEBHOOKS](../environment/variables-global.md#enable_webhooks) global variable for use with Commerce webhooks to connect to an external endpoint, such as App Builder runtime action.
 
 ## v2002.1.15
 
