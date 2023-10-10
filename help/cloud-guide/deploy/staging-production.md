@@ -14,6 +14,8 @@ When you are ready to deploy your store, you must complete deployment and testin
 >
 >Adobe recommends creating a [snapshot](../storage/snapshots.md) of the environment before deployments.
 
+<!-- Also, you can enable [Track deployments with New Relic](../monitor/track-deployments.md) to monitor deployment events and help you analyze performance between deployments. -->
+
 ## Starter deployment flow
 
 Adobe recommends creating a `staging` branch from the `master` branch to best support your Starter plan development and deployment. Then you have two of your four active environments ready: `master` for Production and `staging` for Staging.

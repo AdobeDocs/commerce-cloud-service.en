@@ -48,9 +48,25 @@ Developers use the Integration environment to develop, deploy, and test:
 
 -  Services
 
+**Recommended use cases:**
+
+Integration environments are designed for limited testing and development. For example, you can use the integration environment to complete the following tasks:
+
+- Ensure that changes to continuous integration (CI) processes are Cloud compatible
+
+- Test critical workflows on key pages like Home, Category, Product Details Page (PDP), Checkout, and Admin
+
+For best performance in the integration environment follow these best practices:
+
+- Restrict catalog size
+
+- Limit use to one or two concurrent users
+
+- Disable cron jobs and manually run as needed
+
 You can have up to **two** active Integration environments. You create an Integration environment by creating a branch from the `staging` branch. When you create an Integration environment, the environment name matches the branch name. An integration environment includes a web server and a database. It does not include all services, for example Fastly CDN and New Relic are not available.
 
-You can have an unlimited number of inactive branches for code storage. To access, view, and test an inactive branch, you must activate it.
+You can have an unlimited number of inactive branches for code storage. To access, view, and test an inactive branch, you must activate it
 
 {{enhanced-integration-envs}}
 
@@ -95,7 +111,7 @@ Adobe Commerce on cloud infrastructure uses the Debian GNU/Linux operating syste
 
 -  [OpenSearch](../services/opensearch.md)
 
-In the Staging and Production environments, you use Fastly for CDN and caching. The latest version of the Fastly CDN extension installs during the initial provisioning of your project. You can upgrade the extension to get the latest bug fixes and improvements. See [Fastly CDN module for Magento 2](https://github.com/fastly/fastly-magento2). Also, you have access to [New Relic](../monitor/new-relic.md#configure-new-relic-for-starter-environments.md) for performance monitoring.
+In the Staging and Production environments, you use Fastly for CDN and caching. The latest version of the Fastly CDN extension installs during the initial provisioning of your project. You can upgrade the extension to get the latest bug fixes and improvements. See [Fastly CDN module for Magento 2](https://github.com/fastly/fastly-magento2). Also, you have access to [New Relic](../monitor/account-management.md) for performance monitoring.
 
 You use the following files to configure the software versions that you want to use in your implementation.
 

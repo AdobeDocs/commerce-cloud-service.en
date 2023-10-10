@@ -2,6 +2,7 @@
 title: Technology stack
 description: See the technology stack that forms the Commerce on Cloud infrastructure.
 feature: Cloud, Iaas, Paas
+exl-id: e456db25-c44b-4053-b96d-517d3d1606d0
 ---
 # Technology stack
 
@@ -12,7 +13,7 @@ Think of the Adobe Commerce on cloud infrastructure as five functional layers, a
 1. [**Cloud Infrastructure**](pro-architecture.md): Choose either Amazon Web Services (AWS) or Microsoft Azure as your Infrastructure as a Service (IaaS) foundation for your Adobe Commerce on cloud infrastructure Pro projects.
 1. [**Platform as a Service**](cloud-architecture.md): Each Adobe Commerce on cloud infrastructure project provides a Platform as a Service (PaaS) Integration environment for developing, testing, and integrating services.
 1. [**Adobe Commerce**](../project/overview.md): Adobe Commerce on cloud infrastructure provides a pre-provisioned infrastructure that includes PHP, MySQL (MariaDB), Redis, [!DNL RabbitMQ], and supported search engine technologies.
-1. [**Performance Tools**](../monitor/new-relic.md): New Relic performance tools enable you to debug, monitor, and manage your applications and infrastructure by collecting, analyzing, and displaying data from your Adobe Commerce on cloud infrastructure projects.
+1. [**Performance Tools**](../monitor/new-relic-service.md): New Relic performance tools enable you to debug, monitor, and manage your applications and infrastructure by collecting, analyzing, and displaying data from your Adobe Commerce on cloud infrastructure projects.
 1. [**Content Delivery Network (CDN), Web Application Firewall ([!DNL WAF]) and Image Optimization (IO)**](../cdn/fastly.md):
 
    * [Fastly CDN](../cdn/fastly.md#ddos-protection)—Provides secure CDN services with built-in protection from Distributed Denial of Service (DDoS) attacks like [!DNL Ping of Death], [!DNL Smurf] attacks, and other Internet Control Message Protocol (ICMP) based flood attacks.
