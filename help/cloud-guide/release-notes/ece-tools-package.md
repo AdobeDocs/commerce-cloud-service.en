@@ -22,7 +22,13 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.1.15 {#latest}
+## v2002.1.16 {#latest}
+
+Release date: October 11, 2023
+
+-  ![new icon](../../assets/new.svg) **ENABLE_WEBHOOKS global environment variable**—Add the [ENABLE_WEBHOOKS](../environment/variables-global.md#enable_webhooks) for use with Commerce webhooks, such as an App Builder runtime action.
+
+## v2002.1.15
 
 Release date: July 31, 2023
 
