@@ -3,9 +3,7 @@ title: Track deployments
 description: Learn how to configure New Relic to track deployments in your Adobe Commerce on cloud infrastructure project and analyze changes in performance.
 feature: Cloud, Deploy, Observability
 topic: Performance
-hide: yes
-hidefromtoc: yes
-recommendations: noDisplay, noCatalog
+last-substantial-update: 2023-09-29
 ---
 
 # Track deployments
@@ -27,7 +25,7 @@ Track your Commerce project deployment events in New Relic by creating a _script
 **To enable the track deployments**:
 
 1. On your local workstation, change to your project directory.
-1. Create an `action-integration.js` file. Copy the following code and paste it in the `action-integration.js` file and save:
+2. Create an `action-integration.js` file. Copy the following code and paste it in the `action-integration.js` file and save:
 
     ```javascript
     function variables() {
@@ -39,11 +37,18 @@ Track your Commerce project deployment events in New Relic by creating a _script
     }
 
     function trackDeployments() {
+        const envName = activity.payload.environment.name;
         const config = JSON.parse(variables()['env:NR_CONFIG'].replace(/'/g, '"'));
         const commitSha = activity.payload.commits ? activity.payload.commits[0].sha : activity.payload.environment.head_commit;
         const deploymentType = activity.type;
 
-        if (!config.NR_APP_GUID || !config.NR_API_KEY || !config.NR_API_URL) {
+        if (!(envName in config)) {
+            throw new Error('There is no configuration for ' + envName);
+        }
+    
+        const configEnv = config[envName];
+
+        if (!configEnv.NR_APP_GUID || !configEnv.NR_API_KEY || !configEnv.NR_API_URL) {
             throw new Error('You must define the next configuation in the env variable NR_CONFIG: NR_APP_GUID, NR_API_KEY and NR_API_URL');
         }
 
@@ -51,21 +56,21 @@ Track your Commerce project deployment events in New Relic by creating a _script
             changeTrackingCreateDeployment(
             deployment: {
                 version: "${commitSha}",
-                entityGuid: "${config.NR_APP_GUID}",
+                entityGuid: "${configEnv.NR_APP_GUID}",
                 commit: "${commitSha}",
                 changelog: "${deploymentType}"
             }
             ) {
-            deploymentId
-            entityGuid
+              deploymentId
+              entityGuid
             }
         }`;
 
-        var resp = fetch(config.NR_API_URL, {
+        var resp = fetch(configEnv.NR_API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'API-Key': config.NR_API_KEY
+                'API-Key': configEnv.NR_API_KEY
             },
             body: JSON.stringify({
                 query
@@ -110,6 +115,7 @@ Track your Commerce project deployment events in New Relic by creating a _script
     |                       | - environment.variable.delete                                                                                                           |
     |                       | - environment.variable.update                                                                                                           |
     | environments          | - staging                                                                                                                               |
+    |                       | - production                                                                                                                            |
     | excluded_environments | {  }                                                                                                                                    |
     | states                | - complete                                                                                                                              |
     | result                | *                                                                                                                                       |
@@ -122,11 +128,19 @@ Track your Commerce project deployment events in New Relic by creating a _script
     |                       | }                                                                                                                                       |
     |                       |                                                                                                                                         |
     |                       | function trackDeployments() {                                                                                                           |
+    |                       |     const envName = activity.payload.environment.name;                                                                                  |
+    |                       |                                                                                                                                         |
     |                       |     const config = JSON.parse(variables()['env:NR_CONFIG'].replace(/'/g, '"'));                                                         |
     |                       |     const commitSha = activity.payload.commits ? activity.payload.commits[0].sha : activity.payload.environment.head_commit;            |
     |                       |     const deploymentType = activity.type;                                                                                               |
     |                       |                                                                                                                                         |
-    |                       |     if (!config.NR_APP_GUID || !config.NR_API_KEY || !config.NR_API_URL) {                                                              |
+    |                       |     if (!(envName in config)) {                                                                                                         |
+    |                       |         throw new Error('There is no configuration for ' + envName);                                                                    |
+    |                       |     }                                                                                                                                   |
+    |                       |                                                                                                                                         |
+    |                       |     const configEnv = config[envName];                                                                                                  |
+    |                       |                                                                                                                                         |
+    |                       |     if (!configEnv.NR_APP_GUID || !configEnv.NR_API_KEY || !configEnv.NR_API_URL) {                                                     |
     |                       |         throw new Error('You must define the next configuation in the env variable NR_CONFIG: NR_APP_GUID, NR_API_KEY and NR_API_URL'); |
     |                       |     }                                                                                                                                   |
     |                       |                                                                                                                                         |
@@ -134,7 +148,7 @@ Track your Commerce project deployment events in New Relic by creating a _script
     |                       |         changeTrackingCreateDeployment(                                                                                                 |
     |                       |           deployment: {                                                                                                                 |
     |                       |             version: "${commitSha}",                                                                                                    |
-    |                       |             entityGuid: "${config.NR_APP_GUID}",                                                                                        |
+    |                       |             entityGuid: "${configEnv.NR_APP_GUID}",                                                                                     |
     |                       |             commit: "${commitSha}",                                                                                                     |
     |                       |             changelog: "${deploymentType}"                                                                                              |
     |                       |           }                                                                                                                             |
@@ -144,11 +158,11 @@ Track your Commerce project deployment events in New Relic by creating a _script
     |                       |         }                                                                                                                               |
     |                       |     }`;                                                                                                                                 |
     |                       |                                                                                                                                         |
-    |                       |     var resp = fetch(config.NR_API_URL, {                                                                                               |
+    |                       |     var resp = fetch(configEnv.NR_API_URL, {                                                                                            |
     |                       |         method: 'POST',                                                                                                                 |
     |                       |         headers: {                                                                                                                      |
     |                       |             'Content-Type': 'application/json',                                                                                         |
-    |                       |             'API-Key': config.NR_API_KEY                                                                                                |
+    |                       |             'API-Key': configEnv.NR_API_KEY                                                                                             |
     |                       |         },                                                                                                                              |
     |                       |         body: JSON.stringify({                                                                                                          |
     |                       |             query                                                                                                                       |
@@ -178,7 +192,7 @@ Track your Commerce project deployment events in New Relic by creating a _script
 1. Create the environment variable using the prerequisites.
 
     ```bash
-    magento-cloud variable:create --level environment --name=env:NR_CONFIG --value='{"NR_API_KEY": "<YOUR_API_KEY>", "NR_API_URL": "https://api.newrelic.com/graphql", "NR_APP_GUID":"<YOUR_APP_GUID>"}'  -p <YOUR_PROJECT_ID> -e <YOUR_ENVIRONMENT_ID>
+    magento-cloud variable:create --level project --name=env:NR_CONFIG --value='{"<YOUR_ENVIRONMENT_ID>":{"NR_API_KEY": "<YOUR_API_KEY>", "NR_API_URL": "https://api.newrelic.com/graphql", "NR_APP_GUID":"<YOUR_APP_GUID>"}}'  -p <YOUR_PROJECT_ID>
     ```
 
 1. Review the last activity log.
