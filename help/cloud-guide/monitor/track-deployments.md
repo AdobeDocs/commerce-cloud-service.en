@@ -3,7 +3,7 @@ title: Track deployments
 description: Learn how to configure New Relic to track deployments in your Adobe Commerce on cloud infrastructure project and analyze changes in performance.
 feature: Cloud, Deploy, Observability
 topic: Performance
-last-substantial-update: 2023-09-29
+last-substantial-update: 2023-10-12
 ---
 
 # Track deployments
@@ -25,7 +25,7 @@ Track your Commerce project deployment events in New Relic by creating a _script
 **To enable the track deployments**:
 
 1. On your local workstation, change to your project directory.
-2. Create an `action-integration.js` file. Copy the following code and paste it in the `action-integration.js` file and save:
+1. Create an `action-integration.js` file. Copy the following code and paste it in the `action-integration.js` file and save:
 
     ```javascript
     function variables() {
