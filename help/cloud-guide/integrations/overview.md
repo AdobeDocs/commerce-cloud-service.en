@@ -38,9 +38,15 @@ Sample response:
 +----------+--------------+---------------------------------------------------------------------------+
 ```
 
+## Commerce webhooks
+
+You can configure Commerce webhooks in your Cloud project with the [ENABLE_WEBHOOKS global variable](../environment/variables-global.md#enable_webhooks). The [_Webhooks Guide_](https://developer.adobe.com/commerce/extensibility/webhooks) describes this feature in detail.
+
 ## Generic webhooks
 
-You can capture events and `POST` JSON messages that report activity to a _webhook_ URL. Add a webhook URL using the following syntax:
+You can capture and report Cloud infrastructure and repository events using a custom webhook integration to `POST` JSON messages to a _webhook_ URL.
+
+**To add a webhook URL, use the following syntax**:
 
 ```bash
 magento-cloud integration:add --type=webhook --url=https://hook-url.example.com
