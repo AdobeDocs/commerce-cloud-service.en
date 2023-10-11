@@ -3,8 +3,8 @@ title: New Relic monitoring
 description: Learn how to access your New Relic dashboard and analyze data from your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Observability
 topic: Performance
+exl-id: 8d1e2ad6-14d0-4754-9703-960d93e135a9
 ---
-
 # New Relic monitoring
 
 New Relic connects and monitors your infrastructure and Commerce application using PHP agents. After a Cloud environment connects to New Relic, you can log in to your New Relic account to review the data collected by the agent.
