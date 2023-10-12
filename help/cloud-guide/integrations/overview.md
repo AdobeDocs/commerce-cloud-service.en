@@ -40,7 +40,7 @@ Sample response:
 
 ## Commerce webhooks
 
-You can configure Commerce webhooks in your Cloud project with the [ENABLE_WEBHOOKS global variable](../environment/variables-global.md#enable_webhooks). The [_Webhooks Guide_](https://developer.adobe.com/commerce/extensibility/webhooks) describes this feature in detail.
+You can configure Commerce webhooks in your Cloud project with the [ENABLE_WEBHOOKS global variable](../environment/variables-global.md#enable_webhooks). Commerce webhooks send requests to an external server in response to Commerce-generated events. The [_Webhooks Guide_](https://developer.adobe.com/commerce/extensibility/webhooks) describes this feature in detail.
 
 ## Generic webhooks
 
