@@ -12,7 +12,7 @@ Secure Shell (SSH) is a common protocol used to securely log into remote servers
 
 ## Generate an SSH key pair
 
-Create an SSH key pair on every machine and workspace that requires access to your project source code and environments. The SSH key allows you to connect to GitHub to manage source code and to connect to cloud servers without having to constantly supply your username and password. See [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) for further instructions on creating an SSH key pair. 
+Create an SSH key pair on every machine and workspace that requires access to your project source code and environments. The SSH key allows you to connect to GitHub to manage source code and to connect to cloud servers without having to constantly supply your username and password. See [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) for further instructions on creating an SSH key pair.
 
 - The _public key_ is safe to provide for accessing a site, SSH, and sFTP.
 - The _private key_ remains private on the workstation.
