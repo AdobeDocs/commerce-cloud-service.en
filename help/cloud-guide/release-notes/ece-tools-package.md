@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2023-10-11
+last-substantial-update: 2023-10-16
 exl-id: a464b940-c56e-4a7c-9948-559539e25361
 ---
 # ECE-Tools release notes
@@ -24,7 +24,7 @@ The release notes include:
 
 ## v2002.1.16 {#latest}
 
-Release date: October 11, 2023
+Release date: October 16, 2023
 
 -  ![new icon](../../assets/new.svg) **ENABLE_WEBHOOKS global environment variable**—Added the [ENABLE_WEBHOOKS](../environment/variables-global.md#enable_webhooks) global variable for use with Commerce webhooks to connect to an external endpoint, such as App Builder runtime action or a third-party inventory management system.
 
