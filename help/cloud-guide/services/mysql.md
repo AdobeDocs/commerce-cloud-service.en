@@ -6,7 +6,7 @@ exl-id: 70820d00-8b82-4b60-87e4-ea98fd7ffcb2
 ---
 # Set up MySQL service
 
-The `mysql` service provides persistent data storage based on [MariaDB](https://mariadb.com/) versions 10.2 to 10.4, supporting the [XtraDB](https://www.percona.com/software/mysql-database/percona-xtradb-cluster) storage engine and reimplemented features from MySQL 5.6 and 5.7.
+The `mysql` service provides persistent data storage based on [MariaDB](https://mariadb.com/) versions 10.2 to 10.4, supporting the [XtraDB](https://docs.percona.com/percona-xtradb-cluster/8.0/index.html) storage engine and reimplemented features from MySQL 5.6 and 5.7.
 
 Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Indexers](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers) in the _Performance Best Practices_ guide.
 
