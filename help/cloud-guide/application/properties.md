@@ -6,7 +6,7 @@ exl-id: 58a86136-a9f9-4519-af27-2f8fa4018038
 ---
 # Properties for application configuration
 
-The `.magento.app.yaml` file uses properties to manage environment support for the Commerce application. 
+The `.magento.app.yaml` file uses properties to manage environment support for the Commerce application.
 
 | Name   | Description                       | Default | Required |
 | ------ | --------------------------------- | ------- | -------- |
@@ -85,7 +85,7 @@ hooks:
         composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
 ```
 
-See [Required packages](../development/overview.md#required-packages) for more information about Composer 
+See [Required packages](../development/overview.md#required-packages) for more information about Composer.
 
 ## `dependencies`
 

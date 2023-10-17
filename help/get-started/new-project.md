@@ -16,8 +16,8 @@ Before Adobe provisions your Commerce on cloud project environments, it is recom
 **Question 1**: _What domain or domains do you intend to use for site launch?_
 
 Prepare to integrate the Fastly and nginx services by defining your top-level domains and subdomains for the Pro Staging and Production environments. After the initial setup, you can only add domains by submitting an Adobe Commerce Support ticket, so it is recommended that you have your domain information ready.
- 
-Examples for Production and Staging domains: 
+
+Examples for Production and Staging domains:
 
 - `www.your-store.com`
 - `your-store.com`
