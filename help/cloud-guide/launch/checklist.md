@@ -68,7 +68,7 @@ Important note regarding DNS records:
 The DNS instructions in [RFC1034](https://www.rfc-editor.org/rfc/rfc1912) (section 2.4) state that:
 > A CNAME record is not allowed to coexist with any other data. In other words, if suzy.podunk.xx is an alias for sue.podunk.xx, you can't also have an MX record for suzy.podunk.edu, or an A record, or even a TXT record.
 
-For this reason, DNS records should be type CNAME for subdomains and type A for apex domains (root domains). Discarding this rule can result in disruptions to your mail service as you won't be able to add MX records.
+For this reason, DNS records should be type CNAME for subdomains and type A for apex domains (root domains). Discarding this rule can result in disruptions to your mail service or DNS propagation as you won't be able to add other records such as MX or NS.
 Some DNS providers may circumvent this behaviour with internal customizations but to ensure stability and flexibility (e.g: change of the DNS provider) the standard should be followed.
 
 1. Update the Base URL.
