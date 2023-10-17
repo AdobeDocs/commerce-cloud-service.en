@@ -47,6 +47,7 @@ When you are ready to launch your site, you must update the DNS configuration to
 
       We recommend a significantly lower TTL value when switching the DNS record. This value tells the DNS how long to cache the DNS record. When shortened, it refreshes the DNS faster. For example, you can change the TTL value from three days to 10 minutes when you are updating your site. Be advised that shortening the TTL value adds load to the DNS infrastructure. Restore the previous, higher value after site launch.
 
+
 1. Add CNAME records to point the subdomains for your Production environment to the Fastly service `prod.magentocloud.map.fastly.net`, for example:
 
    | Domain or Subdomain     | CNAME                            |
