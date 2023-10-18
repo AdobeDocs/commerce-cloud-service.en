@@ -200,7 +200,7 @@ Or you can test it by pushing a simple change to your Bitbucket repository.
 
 1. Log in to the [Project Web Interface](../project/overview.md) and verify that your commit message is displayed and your project deploying.
 
-   ![Testing the Bitbucket integration](../../assets/bitbucket-integration-test.png)
+   ![Testing the Bitbucket integration](../../assets/bitbucket-integration.png)
 
 ## Create a Cloud branch
 
