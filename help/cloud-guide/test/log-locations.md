@@ -8,11 +8,11 @@ exl-id: d7f63dab-23bf-4b95-b58c-3ef9b46979d4
 
 Logs for Adobe Commerce on cloud infrastructure projects are useful for troubleshooting problems related to [build and deploy hooks](../application/hooks-property.md), cloud services, and the Adobe Commerce application.
 
-You can view the logs from the file system, the Project Web Interface, and the `magento-cloud` CLI.
+You can view the logs from the file system, the Cloud Console, and the `magento-cloud` CLI.
 
 - **File system**—The `/var/log` system directory contains logs for all environments. The `var/log/` directory contains app-specific logs unique to a particular environment. These directories are not shared between nodes in a cluster. In Pro Production and Staging environments, you must check the logs on each node.
 
-- **Project Web Interface**—You can see build, deploy, and post-deploy log information in the environment _messages_ list.
+- **Cloud Console**—You can see build, deploy, and post-deploy log information in the environment _messages_ list.
 
 - **Cloud CLI**—You can view local environment logs using the `magento-cloud log` command or remote environment logs using the `magento-cloud ssh` command.
 

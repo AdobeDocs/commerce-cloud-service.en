@@ -189,7 +189,7 @@ Or you can test it by pushing a simple change to your GitHub repository.
    git add . && git commit -m "Testing GitHub integration" && git push
    ```
 
-1. Log in to the [Project Web Interface](../project/overview.md) and verify that your commit message is displayed and your project deploying.
+1. Log in to the [Cloud Console](../project/overview.md) and verify that your commit message is displayed and your project deploying.
 
 ## Remove the integration
 

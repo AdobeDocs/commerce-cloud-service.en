@@ -10,19 +10,19 @@ Build and deploy scripts activate when you merge code to a remote environment. T
 
 The build and deploy process is slightly different for each plan:
 
--  **Starter plans**—For the integration environment, every active branch builds and deploys to a full environment for access and testing. Fully test your code after merging to the `staging` branch. To launch your site, push `staging` to `master` to deploy to the Production environment. You have full access to all branches through the Project Web Interface and the CLI commands.
+-  **Starter plans**—For the integration environment, every active branch builds and deploys to a full environment for access and testing. Fully test your code after merging to the `staging` branch. To launch your site, push `staging` to `master` to deploy to the Production environment. You have full access to all branches through the Cloud Console and the CLI commands.
 
--  **Pro plans**—For the integration environment, every active branch builds and deploys to a full environment for access and testing. Merge your code to the `integration` branch before merging to the Staging and Production environments. You can merge to the Staging and Production environments using the Project Web Interface or using SSH and `magento-cloud` CLI commands.
+-  **Pro plans**—For the integration environment, every active branch builds and deploys to a full environment for access and testing. Merge your code to the `integration` branch before merging to the Staging and Production environments. You can merge to the Staging and Production environments using the Cloud Console or using SSH and `magento-cloud` CLI commands.
 
 ## Track the process
 
-You can track build and deploy actions in real time using the terminal or the Project Web Interface Status messages—`in-progress`, `pending`, `success`, or `failed`—display during the deployment process. You can view details in the log files. See [View logs](../test/log-locations.md).
+You can track build and deploy actions in real time using the terminal or the Cloud Console Status messages—`in-progress`, `pending`, `success`, or `failed`—display during the deployment process. You can view details in the log files. See [View logs](../test/log-locations.md).
 
-If you are using external GitHub repositories, the log of operations does not display in the GitHub session. However, you can still follow activity in the interface for the external repository and the Project Web Interface. See [Integrations](../integrations/overview.md).
+If you are using external GitHub repositories, the log of operations does not display in the GitHub session. However, you can still follow activity in the interface for the external repository and the Cloud Console. See [Integrations](../integrations/overview.md).
 
 >[!NOTE]
 >
->In integration environments, you cannot view the deploy logs from the Project Web Interface. This feature is available only for Production and Staging environments. However, you can view logs for every phase of the deployment in any environment using the [build and deploy](../test/log-locations.md#build-and-deploy-logs) logs. For troubleshooting information, see the [Deployment error reference](../dev-tools/error-reference.md).
+>In integration environments, you cannot view the deploy logs from the Cloud Console. This feature is available only for Production and Staging environments. However, you can view logs for every phase of the deployment in any environment using the [build and deploy](../test/log-locations.md#build-and-deploy-logs) logs. For troubleshooting information, see the [Deployment error reference](../dev-tools/error-reference.md).
 
 You can enable [Track deployments with New Relic](../monitor/track-deployments.md) to monitor deployment events and analyze performance between deployments.
 
@@ -44,7 +44,7 @@ Review these best practices and considerations for your deployment process:
 
 -  **Keep sensitive configuration values and data in environment-specific variables**
 
-   These values include variables specified using the Cloud CLI, the Project Web Interface, or added to the `env.php` file. See [Variable levels](../environment/variable-levels.md).
+   These values include variables specified using the Cloud CLI, the Cloud Console, or added to the `env.php` file. See [Variable levels](../environment/variable-levels.md).
 
 -  **Ensure that all code is available in the environment branch**
 

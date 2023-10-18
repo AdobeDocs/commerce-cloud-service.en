@@ -28,11 +28,11 @@ Project variables apply to all environments within the project. Environment vari
 
 After setting project-specific variables, you must manually redeploy the remote environment for the change to take effect. Push the new commits to trigger a redeployment.
 
->[!TAB PWI]
+>[!TAB Console]
 
-**To set variables using the Project Web Interface**:
+**To set variables using the Cloud Console**:
 
-1. In the _Project Web Interface_, click the configuration icon on the right side of the project navigation.
+1. In the _Cloud Console_, click the configuration icon on the right side of the project navigation.
 
    ![Configure project](../../assets/icon-configure.png){width="36"}
 
@@ -52,7 +52,7 @@ After setting project-specific variables, you must manually redeploy the remote 
 
 1. Click **[!UICONTROL Create variable]**.
 
-Setting environment-specific variables in the Project Web Interface automatically redeploys the environment.
+Setting environment-specific variables in the Cloud Console automatically redeploys the environment.
 
 >[!ENDTABS]
 
@@ -63,7 +63,7 @@ You can limit the visibility of a variable during build or runtime using the `--
 Use the following options to prevent a variable from being seen or inherited:
 
 - `--inheritable false`—disables inheritance for child environments. This is useful for setting production-only values on the `master` branch and allowing all other environments to use a project-level variable of the same name.
-- `--sensitive true`—marks the variable as _non-readable_ in the Project Web Interface. You cannot view the variable in the user interface; however, you can view the variable from the application container, like any other variable.
+- `--sensitive true`—marks the variable as _non-readable_ in the Cloud Console. You cannot view the variable in the user interface; however, you can view the variable from the application container, like any other variable.
 
 The following demonstrates a specific case for preventing a variable from being seen or inherited. You can only specify these options in the CLI. This case does not pertain to all available environment variables.
 

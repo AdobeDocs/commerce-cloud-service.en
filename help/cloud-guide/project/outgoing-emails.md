@@ -5,19 +5,19 @@ exl-id: 814fe2a9-15bf-4bcb-a8de-ae288fd7f284
 ---
 # Configure outgoing emails
 
-You can enable and disable outgoing emails for each environment from the Project Web Interface or from the command line. Enable outgoing emails for integration and staging environments to send two-factor authentication or reset password emails for Cloud project users.
+You can enable and disable outgoing emails for each environment from the Cloud Console or from the command line. Enable outgoing emails for integration and staging environments to send two-factor authentication or reset password emails for Cloud project users.
 
 By default, outgoing email is enabled in Production environments. The [!UICONTROL Enable outgoing emails] may appear disabled in the environment settings regardless of status until you set the [`enable_smtp` property](#enable-emails-in-the-cli).
 
 {{redeploy-warning}}
 
-## Enable emails in the Project Web Interface
+## Enable emails in the Cloud Console
 
 Use the **[!UICONTROL Outgoing emails]** toggle in the _Configure environment_ view to enable or disable email support.
 
-**To manage email support from the Project Web Interface**:
+**To manage email support from the Cloud Console**:
 
-1. Log in to the [Project Web Interface](https://console.magento.cloud).
+1. Log in to the [Cloud Console](https://console.magento.cloud).
 1. Select the project.
 1. On the Project dashboard, click the configuration icon in the upper right.
 1. Click **[!UICONTROL Environments]** and select a specific environment from the list.

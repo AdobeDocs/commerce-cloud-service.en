@@ -9,7 +9,7 @@ exl-id: a871c7e2-4506-4a05-8fc2-fc5ef2afe609
 
 To install the `magento-cloud` CLI, see the [Cloud CLI reference](../dev-tools/cloud-cli-overview.md). After you install the `magento-cloud` CLI and set up SSH keys for remote access to your cloud infrastructure, you can use `magento-cloud` CLI commands to manage the environments for your projects. For information about the environment architecture, see [Starter architecture](../architecture/starter-architecture.md) or [Pro architecture](../architecture/pro-architecture.md).
 
-To manage the branches and environments with the Project Web Interface, see [Manage branches with the Project Web Interface](../project/console-branches.md).
+To manage the branches and environments with the Cloud Console, see [Manage branches with the Cloud Console](../project/console-branches.md).
 
 ## Use CLI commands
 
@@ -21,7 +21,7 @@ The following instructions use a combination of `magento-cloud` CLI commands and
 
 >[!IMPORTANT]
 >
->Some Git commands cannot complete an action in your Adobe Commerce on cloud infrastructure project. For example, you can create a branch using a Git command, but you cannot create and activate a new environment. You must create an environment using the `magento-cloud environment:branch <branch-name>` command for the environment to become _active_. Alternatively, you can use the Project Web Interface to create active environments. See [Cloud CLI reference](../dev-tools/cloud-cli-overview.md#git-commands).
+>Some Git commands cannot complete an action in your Adobe Commerce on cloud infrastructure project. For example, you can create a branch using a Git command, but you cannot create and activate a new environment. You must create an environment using the `magento-cloud environment:branch <branch-name>` command for the environment to become _active_. Alternatively, you can use the Cloud Console to create active environments. See [Cloud CLI reference](../dev-tools/cloud-cli-overview.md#git-commands).
 
 **To clone a project `master` environment**:
 
@@ -79,7 +79,7 @@ The following instructions use a combination of `magento-cloud` CLI commands and
 
 ## Create a branch for development
 
-After cloning your project and updating the Adobe Commerce administrator account configuration, you can branch for development. As stated earlier, you must create an environment using the `magento-cloud environment:branch <branch-name>` command or the Project Web Interface for the environment to become _active_.
+After cloning your project and updating the Adobe Commerce administrator account configuration, you can branch for development. As stated earlier, you must create an environment using the `magento-cloud environment:branch <branch-name>` command or the Cloud Console for the environment to become _active_.
 
 -  For [Starter](../architecture/starter-develop-deploy-workflow.md#clone-and-branch), consider creating a branch for `staging`, then create a development branch based on the `staging` branch.
 -  For [Pro](../architecture/pro-develop-deploy-workflow.md#development-workflow), create development branches based on the `Integration` branch.

@@ -35,7 +35,7 @@ To install sample data:
 
 1. Wait for the project to deploy.
 
-1. Verify that the installation was successful by going to your storefront page in the integration environment. You can locate the URL link to the storefront through the Project Web Interface.
+1. Verify that the installation was successful by going to your storefront page in the integration environment. You can locate the URL link to the storefront through the Cloud Console.
 
 1. Take a snapshot of your environment:
 

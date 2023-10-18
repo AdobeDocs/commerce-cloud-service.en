@@ -6,7 +6,7 @@ exl-id: 1cb00db7-2375-4761-9c07-1e20a74859e0
 ---
 # Snapshots and backup management
 
-You can perform a manual backup of active Starter and Pro integration environments at any time using the **[!UICONTROL Snapshots]** button in the Project Web Interface or using the `magento-cloud snapshot:create` command.
+You can perform a manual backup of active Starter and Pro integration environments at any time using the **[!UICONTROL Snapshots]** button in the Cloud Console or using the `magento-cloud snapshot:create` command.
 
 A _snapshot_ is a complete backup of environment data that includes all persistent data from running services (MySQL database) and any files stored on the mounted volumes (var, pub/media, app/etc). The snapshot does _not_ include code, since the code is already stored in the Git-based repository. You cannot download a copy of a snapshot.
 
@@ -16,9 +16,9 @@ The snapshots feature does **not** apply to the Pro Staging and Production envir
 
 You must have an [Admin role](../project/user-access.md) for the environment.
 
-**To create a snapshot using the Project Web Interface**:
+**To create a snapshot using the Cloud Console**:
 
-1. Log in to [the Project Web Interface](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.magento.cloud).
 1. In the left pane, click the name of the environment to back up.
 1. In the top pane, click the **[!UICONTROL Snapshots]** icon. This option is not available for a Pro Production or Staging environment.
 1. Click **Create**.
@@ -82,9 +82,9 @@ Restoration times vary depending on the size of your database:
 >- To roll back to previous code or remove added extensions in an environment, see [Roll back code](#roll-back-code).
 >- To restore an unstable environment that does _not_ have a snapshot, see [Restore an environment](../development/restore-environment.md).
 
-**To restore a snapshot using the Project Web Interface**:
+**To restore a snapshot using the Cloud Console**:
 
-1. Log in to [the Project Web Interface](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.magento.cloud).
 1. In the left pane, click the name of the environment to restore.
 1. In the environment messages, select **snapshot** from the _all types of_ drop-down list.
 1. Click **restore** next to the snapshot.

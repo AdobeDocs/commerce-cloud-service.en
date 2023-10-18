@@ -63,7 +63,7 @@ Before setting up a workspace, gather the following credentials and accounts:
 
 - **Cloud Project account**
 
-    The Account Owner or Technical Admin (Project admin) should invite you to the Adobe Commerce on cloud infrastructure project. When you receive the e-mail invitation, click the link and follow the prompts to create your account. See [Onboarding](../../get-started/onboarding.md) or [Access the Project Web Interface](../project/overview.md) for details.
+    The Account Owner or Technical Admin (Project admin) should invite you to the Adobe Commerce on cloud infrastructure project. When you receive the e-mail invitation, click the link and follow the prompts to create your account. See [Onboarding](../../get-started/onboarding.md) or [Access the Cloud Console](../project/overview.md) for details.
 
 - **Adobe Commerce Encryption Key**
 

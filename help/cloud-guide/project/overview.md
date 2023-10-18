@@ -1,21 +1,21 @@
 ---
 title: Cloud infrastructure project
-description: Read an overview about the Adobe Commerce on cloud infrastructure Project Web Interface and learn how to access the account settings.
+description: Read an overview about the Adobe Commerce on cloud infrastructure Cloud Console and learn how to access the account settings.
 exl-id: ae862898-9b4d-45ed-b370-e82cc6f99017
 ---
 # Cloud infrastructure project
 
 The Adobe Commerce on cloud infrastructure project includes all code in Git branches, associated environments, and scripts to deploy the Commerce application. Environments contain services to support the Commerce application, including a database, web server, and caching server.
 
-Adobe provides a Project Web Interface and developer tools to fully manage all aspects of your project. You, as the account owner, have full access to all environments.
+Adobe provides a Cloud Console and developer tools to fully manage all aspects of your project. You, as the account owner, have full access to all environments.
 
-## Project Web Interface
+## Cloud Console
 
-The Project Web Interface provides interactive methods to build, manage, and deploy Commerce code in a user-friendly format. [Log in to the Project Web Interface](https://console.magento.cloud) to view your project list. You can only see projects that you have permission to access as an admin or for specific environment types. If you are an Adobe Solutions Partner, you may see multiple projects for clients that you support.
+The Cloud Console provides interactive methods to build, manage, and deploy Commerce code in a user-friendly format. [Log in to the Cloud Console](https://console.magento.cloud) to view your project list. You can only see projects that you have permission to access as an admin or for specific environment types. If you are an Adobe Solutions Partner, you may see multiple projects for clients that you support.
 
 >[!TIP]
 >
->If you do not see any projects, you must contact the [Account Owner or Project admin](../project/user-access.md) associated with the project and request access. For first-time users, see the [Onboarding topic](../../get-started/onboarding.md#project-web-interface) in the _Get started_ guide.
+>If you do not see any projects, you must contact the [Account Owner or Project admin](../project/user-access.md) associated with the project and request access. For first-time users, see the [Onboarding topic](../../get-started/onboarding.md#cloud-console) in the _Get started_ guide.
 
 The _All projects_ view lists all projects that you have permission to access. You can click **[!UICONTROL Show filters]** and filter your project list by type, region, or plan.
 
@@ -121,7 +121,7 @@ Click **[!UICONTROL Environments]** and select a specific environment from the l
 | General   | Configure display name, environment type, and parent environment.<br>Toggle different environment settings:                      |
 |           | **Enable outgoing emails**: Send [outgoing emails](outgoing-emails.md) from the environment using the SMTP protocol.             |
 |           | **Hide from search engines**: Block search engine indexers and crawlers from the site.                                           |
-|           | **HTTP access control**: Enable security configuration for the Project Web Interface using a login and IP address access control.|
+|           | **HTTP access control**: Enable security configuration for the Cloud Console using a login and IP address access control.|
 |           | Status is `active` or `inactive`. Most of your work is in an active environment. You can deactivate or delete the environment.   |
 | Variables | View, create, and manage [environment-level variables](../environment/variable-levels.md) available at runtime.                  |
 | Domains   | View a list of [configured routes](../routes/routes-yaml.md).                                                                    |

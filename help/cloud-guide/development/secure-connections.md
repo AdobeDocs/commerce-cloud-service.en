@@ -25,7 +25,7 @@ Create an SSH key pair on every machine and workspace that requires access to yo
 
 After you add your SSH public key to your Adobe Commerce on cloud infrastructure account, redeploy all active environments on your account to install the key.
 
-You can add SSH keys to your account using one of the following methods: Cloud CLI or Project Web Interface.
+You can add SSH keys to your account using one of the following methods: Cloud CLI or Cloud Console.
 
 ### Add your SSH key using the Cloud CLI
 
@@ -47,11 +47,11 @@ You can add SSH keys to your account using one of the following methods: Cloud C
 >
 >You can list and delete SSH keys using the Cloud CLI commands `ssh-key:list` and `ssh-key:delete`.
 
-### Add your SSH key using the Project Web Interface
+### Add your SSH key using the Cloud Console
 
 **To add an SSH key to a new project**:
 
-1. Log in to [the Project Web Interface](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.magento.cloud).
 
 1. Click **No SSH key**. This icon is to the right of the command field and is visible when the project does not contain an SSH key.
 
@@ -97,11 +97,11 @@ You can connect to a remote environment using the `magento-cloud` CLI or an SSH 
 
 ### Use an SSH command
 
-The Project Web Interface includes a list of Web and SSH access commands for each environment.
+The Cloud Console includes a list of Web and SSH access commands for each environment.
 
 **To copy the SSH command**:
 
-1. Log in to [the Project Web Interface](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.magento.cloud).
 
 1. Select a project from the _All projects_ list.
 
@@ -127,7 +127,7 @@ The Project Web Interface includes a list of Web and SSH access commands for eac
 
 ## sFTP
 
-Adobe Commerce on cloud infrastructure supports accessing your environments using sFTP (secure FTP) with SSH authentication. Use a client that supports SSH key authentication for sFTP and use your public SSH key. Your public SSH key must be added to the target environment. For Starter environments and Pro integration environments, you can [add it through the Project Web Interface](#add-your-ssh-key-using-the-project-web-interface).
+Adobe Commerce on cloud infrastructure supports accessing your environments using sFTP (secure FTP) with SSH authentication. Use a client that supports SSH key authentication for sFTP and use your public SSH key. Your public SSH key must be added to the target environment. For Starter environments and Pro integration environments, you can [add it through the Cloud Console](#add-your-ssh-key-using-the-project-web-interface).
 
 Read-only sFTP connections are _not_ supported; sFTP access is provided with _write_ permission by default.
 

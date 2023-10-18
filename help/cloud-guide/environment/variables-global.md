@@ -80,7 +80,7 @@ stage:
 
 Enable generation of static content when requested by a user (SCD). Static content on demand is ideal for the development and testing workflow, because it decreases the deployment time.
 
-Pre-loading the cache using the [`post_deploy` hook](../application/hooks-property.md) reduces site downtime. The cache warming is available only for Pro projects that contain Staging and Production environments in the Project Web Interface and for Starter projects. Add the `SCD_ON_DEMAND` environment variable to the `global` stage in the `.magento.env.yaml` file:
+Pre-loading the cache using the [`post_deploy` hook](../application/hooks-property.md) reduces site downtime. The cache warming is available only for Pro projects that contain Staging and Production environments in the Cloud Console and for Starter projects. Add the `SCD_ON_DEMAND` environment variable to the `global` stage in the `.magento.env.yaml` file:
 
 ```yaml
 stage:

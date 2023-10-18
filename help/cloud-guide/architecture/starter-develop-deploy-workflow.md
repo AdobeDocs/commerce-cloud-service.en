@@ -94,7 +94,7 @@ Until you have your store fully built, configured, and ready to launch. But keep
 
 ### Configure store
 
-When you are ready to configure your store, push all your code to the `integration` environment. Configure your store settings from the Admin for the integration environment, not in your local environment. You can find the URL by clicking **Access site** in the Project Web Interface
+When you are ready to configure your store, push all your code to the `integration` environment. Configure your store settings from the Admin for the integration environment, not in your local environment. You can find the URL by clicking **Access site** in the Cloud Console
 
 For the best information on configurations, review the documentation for Adobe Commerce and the installed extensions. Here are some links and ideas that help you get started:
 

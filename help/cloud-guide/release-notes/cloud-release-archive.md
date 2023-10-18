@@ -72,7 +72,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![fix icon](../../assets/fix.svg) Fixed an issue when running the `setup:upgrade` command that did not interrupt the deployment process when a failure occurred during the `app:config:import` task.<!-- MAGECLOUD-3806 -->
 
--  ![new icon](../../assets/new.svg) Changed the default log level for the file handler to `debug` to reduce the amount of detail in the log displayed in the Project Web Interface, while still providing detailed information for debugging.<!-- MAGECLOUD-3871 -->
+-  ![new icon](../../assets/new.svg) Changed the default log level for the file handler to `debug` to reduce the amount of detail in the log displayed in the Cloud Console, while still providing detailed information for debugging.<!-- MAGECLOUD-3871 -->
 
 -  ![fix icon](../../assets/fix.svg) Fixed an issue that caused an error with static content deployment during build. After an installation and `ece-tools` config dump, an error occurred if there was no locale specified for the admin user in the `config.php` file. Now, there is a default locale for the admin user in the `config.php` file.<!-- MAGECLOUD-3957 -->
 
@@ -484,7 +484,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  **New environment variable**—Added the `SCD_ON_DEMAND` global environment variable to generate static content when requested.<!-- MAGECLOUD-1738 -->
 
-   -  **Post-deploy hook**—Added a `post_deploy` hook for the `.magento.app.yaml` file that clears the cache and pre-loads (warms) the cache _after_ the container begins accepting connections. It is available only for Pro projects that contain Staging and Production environments in the Project Web Interface and for Starter projects. Although not required, this works in tandem with the `SCD_ON_DEMAND` environment variable.<!-- MAGECLOUD-1788 -->
+   -  **Post-deploy hook**—Added a `post_deploy` hook for the `.magento.app.yaml` file that clears the cache and pre-loads (warms) the cache _after_ the container begins accepting connections. It is available only for Pro projects that contain Staging and Production environments in the Cloud Console and for Starter projects. Although not required, this works in tandem with the `SCD_ON_DEMAND` environment variable.<!-- MAGECLOUD-1788 -->
 
 -  ![new icon](../../assets/new.svg) **Optimization**—Optimized moving or copying files during deployment to improve deployment speed and decrease loads on the file system.<!-- MAGECLOUD-1842 -->
 

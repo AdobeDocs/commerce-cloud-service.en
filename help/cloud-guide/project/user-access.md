@@ -27,7 +27,7 @@ Environment-level access is based on the environment type: production, staging, 
 
 {style="table-layout:auto"}
 
-You can add users and assign roles using the `magento-cloud` CLI or the Project Web Interface.
+You can add users and assign roles using the `magento-cloud` CLI or the Cloud Console.
 
 >[!BEGINSHADEBOX]
 
@@ -121,9 +121,9 @@ To update user environment permissions to `admin` on the `Production` environmen
 magento-cloud user:update alice@example.com -r production:a
 ```
 
-## Manage users from the Project Web Interface
+## Manage users from the Cloud Console
 
-You can use the [Project Web Interface](../../get-started/web-interface.md) to add permissions and use the _Edit_ feature to modify permissions for an existing user.
+You can use the [Cloud Console](../../get-started/web-interface.md) to add permissions and use the _Edit_ feature to modify permissions for an existing user.
 
 >[!IMPORTANT]
 >
@@ -131,7 +131,7 @@ You can use the [Project Web Interface](../../get-started/web-interface.md) to a
 
 ### Add a user to the project
 
-1. Log in to the [Project Web Interface](https://console.magento.cloud/).
+1. Log in to the [Cloud Console](https://console.magento.cloud/).
 
 1. Select a project from the _All projects_ list.
 
@@ -184,7 +184,7 @@ Adobe Commerce on cloud infrastructure supports TFA using any of the following a
 - [FreeOTP (Android)](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp)
 - [GAuth Authenticator (Firefox OS, desktop, others)](https://github.com/gbraad-apps/gauth)
 
-Instructions for installing the authenticator application and enabling TFA are available on the _Account settings_ page in the Project Web Interface.
+Instructions for installing the authenticator application and enabling TFA are available on the _Account settings_ page in the Cloud Console.
 
 **To enable TFA on your user account**:
 

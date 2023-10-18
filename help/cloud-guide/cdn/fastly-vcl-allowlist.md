@@ -14,7 +14,7 @@ The following example shows how to use a custom VCL snippet with a [Fastly Acces
 
 >[!TIP]
 >
->For Staging and integration environments that should not be publicly accessible, use the HTTP access control option available in the [Project Web Interface](../project/overview.md#access-the-project-web-interface) to manage access to the entire site by IP address.
+>For Staging and integration environments that should not be publicly accessible, use the HTTP access control option available in the [Cloud Console](../project/overview.md#access-the-project-web-interface) to manage access to the entire site by IP address.
 
 **Prerequisites:**
 

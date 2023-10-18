@@ -66,7 +66,7 @@ Submit an Adobe Commerce Support ticket to change the Fastly API token credentia
 
    Include your Adobe Commerce on cloud infrastructure project ID and the environments that require a new credential.
 
-1. After you receive the new API token, update the API token value in the [Fastly credentials configuration](fastly-configuration.md#test-the-fastly-credentials) in the Admin or from the [Project Web Interface environment variables](../project/overview.md#configure-environment).
+1. After you receive the new API token, update the API token value in the [Fastly credentials configuration](fastly-configuration.md#test-the-fastly-credentials) in the Admin or from the [Cloud Console environment variables](../project/overview.md#configure-environment).
 
 1. [Test the new credential](fastly-configuration.md#test-the-fastly-credentials).
 

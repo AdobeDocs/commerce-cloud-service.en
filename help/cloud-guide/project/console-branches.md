@@ -1,15 +1,15 @@
 ---
-title: Manage branches with the Project Web Interface
-description: Learn how to manage the environment branches for Adobe Commerce on cloud infrastructure using the Project Web Interface.
+title: Manage branches with the Cloud Console
+description: Learn how to manage the environment branches for Adobe Commerce on cloud infrastructure using the Cloud Console.
 role: Developer
 feature: Cloud, Install
 exl-id: 2c4ef149-fdb9-473f-91fd-5e6421ac5a43
 ---
-# Manage branches with the Project Web Interface
+# Manage branches with the Cloud Console
 
-You can manage your environments using either the Project Web Interface or the `magento-cloud` CLI. Your project files are stored in a Git repository. You can use Git commands to manage your code, but the `magento-cloud` CLI is designed to interact with platform features whereas the Git commands do not. See [Git commands](../dev-tools/cloud-cli-overview.md#git-commands) in the cloud CLI topic.
+You can manage your environments using either the Cloud Console or the `magento-cloud` CLI. Your project files are stored in a Git repository. You can use Git commands to manage your code, but the `magento-cloud` CLI is designed to interact with platform features whereas the Git commands do not. See [Git commands](../dev-tools/cloud-cli-overview.md#git-commands) in the cloud CLI topic.
 
-This topic discusses how to use the Project Web Interface to:
+This topic discusses how to use the Cloud Console to:
 
 - Add or delete an environment
 - Sync (`git pull`) from the parent environment
@@ -26,13 +26,13 @@ The branching strategy uses a common Git workflow where you develop code and add
 - For Starter, create a `staging` branch from the `master` branch, then branch from `staging` for development.
 - For Pro, create a development branch from the `Integration` environment.
 
-Your account supports a limited number of ![active branch](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactive) development branches. Manage active and inactive branches by adding or deleting a branch using only the Project Web Interface or the Cloud CLI. Before you can delete a branch, you deactivate the branch, which remains in the _Environments_ list as _inactive_. You can reactivate the branch later or you can [delete the branch](../dev-tools/cloud-cli-overview.md#) in environment settings or using the Cloud CLI.
+Your account supports a limited number of ![active branch](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactive) development branches. Manage active and inactive branches by adding or deleting a branch using only the Cloud Console or the Cloud CLI. Before you can delete a branch, you deactivate the branch, which remains in the _Environments_ list as _inactive_. You can reactivate the branch later or you can [delete the branch](../dev-tools/cloud-cli-overview.md#) in environment settings or using the Cloud CLI.
 
 If you need additional active environments for development, submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 **To add a branch**:
 
-1. Log in to [the Project Web Interface](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.magento.cloud).
 
 1. Select a project from the _All projects_ list.
 
@@ -66,7 +66,7 @@ Before you can delete an environment, you must deactivate it. Once an environmen
 
 **To deactivate an environment**:
 
-1. Log in to [the Project Web Interface](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.magento.cloud).
 
 1. Select a project from the _All projects_ list.
 
@@ -78,13 +78,13 @@ Before you can delete an environment, you must deactivate it. Once an environmen
 
 ## Sync an environment
 
-Syncing an environment (or branch) is the same as `git pull origin <parent>`. You can sync to get updated code from a parent environment. You can use this feature through the interface for all Starter and Pro environments.
+Syncing an environment (or branch) is the same as `git pull origin <parent>`. You can sync updated code from a parent environment. You can use this feature through the Cloud Console for all Starter and Pro environments.
 
 For Pro plan, you can sync from Staging and Production to your `master` branch. This sync only pulls and pushes code, not data. To sync data, dump the database data and push it to another environment's database. See [Migrate and deploy static files and data](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
 
 **To sync an environment**:
 
-1. Log in to [the Project Web Interface](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.magento.cloud).
 
 1. Select a project from the _All projects_ list.
 
@@ -109,7 +109,7 @@ Merging an environment (or branch) is the same as `git push origin`. You merge t
 
 **To merge with the parent environment**:
 
-1. Log in to [the Project Web Interface](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.magento.cloud).
 
 1. Select a project from the _All projects_ list.
 
@@ -123,7 +123,7 @@ Merging an environment (or branch) is the same as `git push origin`. You merge t
 
 ## View logs
 
-Through the Project Web Interface, you can review various logs for environments including build, deploy, and deployment history.
+Through the Cloud Console, you can review various logs for environments including build, deploy, and deployment history.
 
 For **Starter**, you can review build and deploy logs and the deployment history. These environments include the `master` (Production) branch and all branches created from it.
 
@@ -133,9 +133,9 @@ For **Pro**, you can review the following logs in each environment:
 - Staging—Build logs and deployment history. Use SSH to log into the server to view deploy logs.
 - Production—Build logs and deployment history. Use SSH to log into the server to view deploy logs.
 
-**To view logs in the Project Web Interface**:
+**To view logs in the Cloud Console**:
 
-1. Log in to [the Project Web Interface](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.magento.cloud).
 
 1. Select a project from the _All projects_ list.
 
@@ -163,7 +163,7 @@ If you prefer that your project accesses multiple repositories, you can attach a
 
 **To find your SSH public key**:
 
-1. Log in to [the Project Web Interface](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.magento.cloud).
 
 1. Select a project from the _All projects_ list.
 
@@ -231,7 +231,7 @@ In `composer.json`, use the `<user>@<host>:<.git</code>` format, or `ssh://<user
 
 ## Secure environments and branches
 
-You can access your project and environments from any location through a web browser using the Project Web Interface. You may have security set for your Production environment, stores, and sites. This section helps you secure your Integration and Staging environments for strictly your developers, DBAs, and more.
+You can access your project and environments from any location through a web browser using the Cloud Console. You may have security set for your Production environment, stores, and sites. This section helps you secure your Integration and Staging environments for strictly your developers, DBAs, and more.
 
 >[!WARNING]
 >
@@ -239,7 +239,7 @@ You can access your project and environments from any location through a web bro
 
 **To secure environments**:
 
-1. Log in to your [Project Web Interface](https://console.magento.cloud).
+1. Log in to your [Cloud Console](https://console.magento.cloud).
 
 1. Select a project from the _All projects_ list.
 

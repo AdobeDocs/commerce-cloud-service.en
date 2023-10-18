@@ -113,7 +113,7 @@ In the `sitemap` admin config, you must specify the location of the file using `
 
 To activate `robots.txt` customizations, you must enable the **Indexing by search engines is On for `<environment-name>`** option in your project settings.
 
-![Use the Project Web Interface to manage environments](../../assets/robots-indexing-by-search-engine.png)
+![Use the Cloud Console to manage environments](../../assets/robots-indexing-by-search-engine.png)
 
 >[!NOTE]
 >

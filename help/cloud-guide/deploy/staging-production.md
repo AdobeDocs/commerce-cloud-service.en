@@ -30,11 +30,11 @@ For detailed information of the process, see [Pro Develop and Deploy Workflow](.
 
 ## Deploy code to staging
 
-The Staging environment provides a near-production environment that includes a database, web server, and all services including Fastly and New Relic. You can fully push, merge, and deploy through the [Project Web Interface](../project/overview.md) or [Cloud CLI commands](../dev-tools/cloud-cli-overview.md) through a terminal application.
+The Staging environment provides a near-production environment that includes a database, web server, and all services including Fastly and New Relic. You can fully push, merge, and deploy through the [Cloud Console](../project/overview.md) or [Cloud CLI commands](../dev-tools/cloud-cli-overview.md) through a terminal application.
 
-### Deploy code with the Project Web Interface
+### Deploy code with the Cloud Console
 
-The Project Web Interface provides features to create, manage, and deploy code in Integration, Staging, and Production environments for Starter and Pro plans.
+The Cloud Console provides features to create, manage, and deploy code in Integration, Staging, and Production environments for Starter and Pro plans.
 
 **For Pro projects, deploy the integration branch to staging**:
 
@@ -212,7 +212,7 @@ See [rsync](https://linux.die.net/man/1/rsync) help.
 
     >[!TIP]
     >
-    >To find the **SSH access** link in your Project Web Interface, select the environment and click **Access Site**.
+    >To find the **SSH access** link in your Cloud Console, select the environment and click **Access Site**.
 
    ```bash
    ssh -A <environment_ssh_link@ssh.region.magento.cloud>

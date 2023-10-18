@@ -44,7 +44,7 @@ The process to add a domain depends on the type of Cloud account:
 
 -  For Starter Production only
 
-   Add the new domain to Fastly, see [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains), or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request assistance. In addition, you must add the new domain to the **Domains** tab in the Project Web Interface: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+   Add the new domain to Fastly, see [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains), or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request assistance. In addition, you must add the new domain to the **Domains** tab in the Cloud Console: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Configure local installation
 
@@ -328,7 +328,7 @@ Push your changes to your Adobe Commerce on cloud infrastructure integration env
 
 ## Deploy to Staging and Production
 
-Follow the deployment process for [deploying to Staging and Production](../deploy/staging-production.md). For Starter and Pro environments, you use the Project Web Interface to push code across environments.
+Follow the deployment process for [deploying to Staging and Production](../deploy/staging-production.md). For Starter and Pro environments, you use the Cloud Console to push code across environments.
 
 Adobe recommends fully testing in the Staging environment before pushing to the Production environment. Make code changes in the integration environment and begin the process to deploy across environments again.
 

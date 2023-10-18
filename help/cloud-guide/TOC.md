@@ -37,7 +37,7 @@ level: Intermediate
     + [Activity stream](project/activity-stream.md)
     + [Outgoing emails](project/outgoing-emails.md)
     + [SendGrid email service](project/sendgrid.md)
-    + [Web branch management](project/console-branches.md)
+    + [Console branch management](project/console-branches.md)
     + [Regional IP addresses](project/regional-ip-addresses.md)
 + Developer tools {#dev-tools}
     + [Overview](dev-tools/overview.md)
