@@ -156,7 +156,7 @@ Always review the values contained in the [.magento.app.yaml](../application/con
            php ./vendor/bin/ece-tools run scenario/post-deploy.xml
    ```
 
-1. Add the following environment variables to the end of the file. 
+1. Add the following environment variables to the end of the file.
 
    For Adobe Commerce 2.2.x through 2.3.x–
 

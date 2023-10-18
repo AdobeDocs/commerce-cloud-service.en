@@ -24,7 +24,7 @@ If you are using external GitHub repositories, the log of operations does not di
 >
 >In integration environments, you cannot view the deploy logs from the Project Web Interface. This feature is available only for Production and Staging environments. However, you can view logs for every phase of the deployment in any environment using the [build and deploy](../test/log-locations.md#build-and-deploy-logs) logs. For troubleshooting information, see the [Deployment error reference](../dev-tools/error-reference.md).
 
-<!-- You can enable [Track deployments with New Relic](../monitor/track-deployments.md) to monitor deployment events and analyze performance between deployments. -->
+You can enable [Track deployments with New Relic](../monitor/track-deployments.md) to monitor deployment events and analyze performance between deployments.
 
 ## Best practices for builds and deployment
 

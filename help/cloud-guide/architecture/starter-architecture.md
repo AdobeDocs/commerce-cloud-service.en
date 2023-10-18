@@ -48,9 +48,25 @@ Developers use the `integration` environment to develop, deploy, and test:
 
 -  Services
 
-You can have up to **two** active integration environments. You create an integration environment by creating a branch from the `staging` branch. When you create an integration environment, the environment name matches the branch name. An integration environment includes a web server and a database. It does not include all services, for example Fastly CDN and New Relic are not available.
+**Recommended use cases:**
 
-You can have an unlimited number of inactive branches for code storage. To access, view, and test an inactive branch, you must activate it.
+Integration environments are designed for limited testing and development. For example, you can use the integration environment to complete the following tasks:
+
+- Ensure that changes to continuous integration (CI) processes are Cloud compatible
+
+- Test critical workflows on key pages like Home, Category, Product Details Page (PDP), Checkout, and Admin
+
+For best performance in the integration environment follow these best practices:
+
+- Restrict catalog size
+
+- Limit use to one or two concurrent users
+
+- Disable cron jobs and manually run as needed
+
+You can have up to **two** active Integration environments. You create an Integration environment by creating a branch from the `staging` branch. When you create an Integration environment, the environment name matches the branch name. An integration environment includes a web server and a database. It does not include all services, for example Fastly CDN and New Relic are not available.
+
+You can have an unlimited number of inactive branches for code storage. To access, view, and test an inactive branch, you must activate it
 
 {{enhanced-integration-envs}}
 

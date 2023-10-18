@@ -7,7 +7,7 @@ exl-id: 01f528bd-74c2-42e7-8e77-7e6f57a40ef4
 # Best practices for store configuration
 
 For detailed information for configuring your store, sites, and websites, you may want to review the [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html). This page provides best practices, helpful information, and guidelines for configuring your stores, sites, and more with additional content to post over time and across versions.
- 
+
 ## Marketing campaigns and promotions
 
 This information is helpful for Adobe Commerce on cloud infrastructure 2.1.X and 2.2.X.
@@ -58,7 +58,7 @@ The following provides an example of creating a Price Rule for a First Order Onl
 
 This ensures net-new customers or existing customers who have not made a purchase receive the discount only on their first order. You could create banners and send email promotions for the first-time purchase discount.
 
-## Store views 
+## Store views
 
 You can set up and run several stores with a single implementation of Adobe Commerce on cloud infrastructure. See [Set up multiple websites or stores](multiple-sites.md).
 

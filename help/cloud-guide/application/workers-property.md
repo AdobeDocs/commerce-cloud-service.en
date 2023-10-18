@@ -41,7 +41,7 @@ The `commands.start` key is required to launch commands with the worker applicat
 
 ### Inheritance
 
-Definitions for the `size`, `relationships`, `access`, `disk` and `mount`, and `variables` properties are inherited by a worker, unless explicitly overridden. 
+Definitions for the `size`, `relationships`, `access`, `disk` and `mount`, and `variables` properties are inherited by a worker, unless explicitly overridden.
 
 The following properties are the most commonly used to override [top-level settings](properties.md):
 

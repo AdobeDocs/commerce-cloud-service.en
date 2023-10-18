@@ -2,8 +2,8 @@
 title: New Relic log management
 description: Learn how to use the New Relic log
 feature: Cloud, Logs, Observability
+exl-id: d8afb5c0-9727-4123-8944-81cd6ad7cbb7
 ---
-
 # New Relic log management
 
 All cloud infrastructure projects include [New Relic log management](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/). The service is pre-configured to aggregate all log data from your Staging and Production environments and display it in a centralized log management dashboard.

@@ -3,8 +3,8 @@ title: New Relic Account Management
 description: Learn how to access your New Relic account and manage access, integrations, and tool usage for your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Observability
 role: Admin
+exl-id: ee639e2e-4074-4384-8f68-152bc3bac93b
 ---
-
 # New Relic account management
 
 When Adobe provisions your cloud infrastructure project, the License Owner receives an email from New Relic with credentials and instructions for accessing the New Relic account. If you did not receive the email, use the License Owner email address to reset the New Relic password.

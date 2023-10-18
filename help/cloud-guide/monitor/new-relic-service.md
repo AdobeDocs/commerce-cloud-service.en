@@ -28,7 +28,7 @@ The following New Relic features are available for use with Production and Stagi
 - **App Map**—View all application dependencies within your site, extensions, and external services.
 - **[!DNL Apdex] scores**—Evaluate performance and create alerts that identify issues and notify you when they occur, such as site performance affected by a flash sale or web event. See [Apdex score](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/).
 - **Managed alerts for Adobe Commerce**–Use this New Relic alert policy to monitor application and infrastructure performance based on industry best practices. See [Monitor performance with the Managed alerts for Adobe Commerce alert policy](investigate-performance.md/#monitor-performance-with-managed-alerts).
-<!-- - **Track deployments**—Monitor deployment events and analyze deployment impact to overall performance. See [Track deployments](track-deployments.md). -->
+- **Track deployments**—Monitor deployment events and analyze deployment impact to overall performance. See [Track deployments](track-deployments.md).
 
 Your Adobe Commerce on cloud infrastructure project includes the software for the New Relic APM service along with a license key. You do not need to purchase or install any additional software.
 

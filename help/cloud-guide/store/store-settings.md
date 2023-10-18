@@ -17,7 +17,7 @@ Store settings, which refer to the configurations in the Admin **Stores** > **Se
 >
 >Because Adobe Commerce on cloud infrastructure supports only the production and maintenance modes, the **Advanced** > **Developer** section is not accessible in the Admin. You must have [environment Admin privileges](../project/user-access.md) to complete configuration management tasks. You can configure additional settings using [environment variables](../environment/configure-env-yaml.md).
 
-Configuration management provides a way to deploy consistent store settings across your environments with minimal downtime using Pipeline deployment. Adobe Commerce on cloud infrastructure project includes the build server, build and deploy scripts, and deployment environments designed with the [pipeline deployment strategy](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in mind. 
+Configuration management provides a way to deploy consistent store settings across your environments with minimal downtime using Pipeline deployment. Adobe Commerce on cloud infrastructure project includes the build server, build and deploy scripts, and deployment environments designed with the [pipeline deployment strategy](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in mind.
 
 ## Configuration override scheme
 

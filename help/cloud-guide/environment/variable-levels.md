@@ -65,7 +65,7 @@ Use the following options to prevent a variable from being seen or inherited:
 - `--inheritable false`—disables inheritance for child environments. This is useful for setting production-only values on the `master` branch and allowing all other environments to use a project-level variable of the same name.
 - `--sensitive true`—marks the variable as _non-readable_ in the Project Web Interface. You cannot view the variable in the user interface; however, you can view the variable from the application container, like any other variable.
 
-The following demonstrates a specific case for preventing a variable from being seen or inherited. You can only specify these options in the CLI. This case does not pertain to all available environment variables. 
+The following demonstrates a specific case for preventing a variable from being seen or inherited. You can only specify these options in the CLI. This case does not pertain to all available environment variables.
 
 ```bash
 magento-cloud variable:create --name <variable-name> --value <variable-value> --inheritable false --sensitive true
