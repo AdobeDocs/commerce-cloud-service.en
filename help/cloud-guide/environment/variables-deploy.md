@@ -452,7 +452,7 @@ stage:
 
 You must have a Redis service configured in the `.magento.app.yaml` file and in the `services.yaml` file.
 
-[Ece-tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) and later uses more fault-tolerant settings. If Adobe Commerce cannot read data from the Redis _slave_ instance, then it reads data from the Redis _master_ instance.
+[ECE-Tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) and later uses more fault-tolerant settings. If Adobe Commerce cannot read data from the Redis _slave_ instance, then it reads data from the Redis _master_ instance.
 
 The read-only connection is not available for use in the integration environment or if you use the [`CACHE_CONFIGURATION` variable](#cache_configuration).
 

@@ -19,7 +19,7 @@ Both packages improve the integration of all Adobe Commerce versions with Cloud 
 >
 >You can use the [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) and Cloud Patches for Commerce as stand-alone packages for Magento Open Source and Adobe Commerce projects. We recommend using the Quality Patches Tool for non-Cloud projects.
 
-When you deploy changes to the remote environment, `ECE-Tools` uses `magento/magento-cloud-patches` and `magento/quality-patches` to check for pending patches and applies them automatically in the following order:
+When you deploy changes to the remote environment, the `ece-tools` package uses `magento/magento-cloud-patches` and `magento/quality-patches` to check for pending patches and applies them automatically in the following order:
 
 1. Apply all required Commerce patches included in the Cloud Patches for Commerce package.
 1. Apply selected optional Commerce patches included in the Quality Patches Tool.
@@ -27,13 +27,13 @@ When you deploy changes to the remote environment, `ECE-Tools` uses `magento/mag
 
 >[!NOTE]
 >
->When you update `ECE-Tools` or the Cloud Patches for Commerce package, the latest required patches are applied the next time you deploy your project, or you can deploy them immediately using the `ece-patches apply` CLI command and redeploying your Cloud environment. You cannot skip [required patches](https://github.com/magento/magento-cloud-patches/tree/develop/patches) during the deployment process.
+>When you update the `ece-tools` package or the Cloud Patches for Commerce package, the latest required patches are applied the next time you deploy your project, or you can deploy them immediately using the `ece-patches apply` CLI command and redeploying your Cloud environment. You cannot skip [required patches](https://github.com/magento/magento-cloud-patches/tree/develop/patches) during the deployment process.
 
 ## Prerequisites
 
 {{upgrade-tip}}
 
-The Quality Patches Tool is a dependency for the Cloud Patches for Commerce and ECE-Tools packages. To apply the latest patches, you must have [the latest version of ECE-Tools](../dev-tools/update-package.md) installed. The minimum required version of ECE-Tools is 2002.1.2.
+The Quality Patches Tool is a dependency for the Cloud Patches for Commerce and the `ece-tools` package. To apply the latest patches, you must have [the latest version of ECE-Tools](../dev-tools/update-package.md) installed. The minimum required version of ECE-Tools is 2002.1.2.
 
 ## View available patches and status
 
@@ -174,7 +174,7 @@ You can apply patches manually in a local environment and test them before you d
 
 ## Apply a custom patch
 
-When you deploy, `ECE-Tools` applies all Adobe patches and any custom patches that you add to the `/m2-hotfixes` directory in the project root.
+When you deploy, ECE-Tools applies all Adobe patches and any custom patches that you add to the `/m2-hotfixes` directory in the project root.
 
 >[!NOTE]
 >

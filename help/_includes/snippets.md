@@ -72,7 +72,7 @@ Set the `_merge` option to one of the following:
 
 >[!NOTE]
 >
->With [!DNL ece-tools] 2002.1.0 and later, you can use the scenario-based deployment feature to customize the build, deploy, and post-deploy processes for your Adobe Commerce on cloud infrastructure project. See [Scenario-based deployment](/help/cloud-guide/deploy/scenario-based.md).
+>With [!DNL ECE-Tools] 2002.1.0 and later, you can use the scenario-based deployment feature to customize the build, deploy, and post-deploy processes for your Adobe Commerce on cloud infrastructure project. See [Scenario-based deployment](/help/cloud-guide/deploy/scenario-based.md).
 
 ## Service instruction {#service-instruction}
 
@@ -94,7 +94,7 @@ Use the following instructions for service setup on Pro Integration environments
 >
 >For help with stuck deployments, use the [Adobe Commerce deployment troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html) in the _Commerce Help Center_.
 
-## Update to ece-tools {#ece-tools-package}
+## Update to ECE-Tools {#ece-tools-package}
 
 >[!NOTE]
 >

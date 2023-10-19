@@ -274,7 +274,7 @@ Review the [service versions](../services/services-yaml.md#service-versions) inf
 
    >[!NOTE]
    >
-   >You must use the version constraint syntax to successfully update the `ECE-Tools` package. You can find the version constraint in the `composer.json` file for the version of the [application template](https://github.com/magento/magento-cloud/blob/master/composer.json) you are using for the upgrade.
+   >You must use the version constraint syntax to successfully update the `ece-tools` package. You can find the version constraint in the `composer.json` file for the version of the [application template](https://github.com/magento/magento-cloud/blob/master/composer.json) you are using for the upgrade.
 
 1. Update the project.
 
