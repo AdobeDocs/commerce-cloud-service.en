@@ -10,7 +10,7 @@ This topic discusses how to recover if a component fails to deploy properly. Typ
 
 You can recover from a failed deployment in any of the following ways:
 
-- [Restore a snapshot](../storage/snapshots.md#restore-a-snapshot)
+- [Restore a backup](../storage/snapshots.md#restore-a-snapshot)
 - Clean project and code from previous changes and redeploy
 
 ## Clean, remove, and redeploy
@@ -75,6 +75,6 @@ To clean up from the previous deployment, you may need to identify the component
 
 {{redeploy-warning}}
 
-See more about restoring an environment without a snapshot in [Restore an environment](../development/restore-environment.md).
+See more about restoring an environment without a backup in [Restore an environment](../development/restore-environment.md).
 
 {{stuck-deployment-tip}}

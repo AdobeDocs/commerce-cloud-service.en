@@ -79,7 +79,7 @@ The page provides a status for Adobe Commerce components and services followed b
 
 >[!TIP]
 >
->Learn how to navigate the Cloud Cloud Console.
+>Learn how to navigate the Cloud Console.
 >
 >**Next step**: [Cloud Console](web-interface.md)
 

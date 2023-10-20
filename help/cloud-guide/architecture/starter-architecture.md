@@ -123,7 +123,7 @@ Use the following files to configure the software versions that you want to use 
 
 ### Backup and disaster recovery
 
-You can create a snapshot of your database and file system using the Cloud Console or the CLI. See [Snapshots and backup management](../storage/snapshots.md).
+You can create a backup of your database and file system using the Cloud Console or the CLI. See [Backup management](../storage/snapshots.md).
 
 ## Prepare for development
 

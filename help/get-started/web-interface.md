@@ -6,7 +6,7 @@ recommendations: noDisplay, catalog
 
 # Cloud Console
 
-The Cloud Console provides interactive methods to build, manage, and deploy Commerce code. [Log in to the Cloud Console](https://console.magento.cloud) to view your project list.
+The Cloud Console provides interactive methods to build, manage, and deploy Commerce code. [Log in to the Cloud Console](https://console.adobecommerce.com) to view your project list.
 
 The License Owner, Technical Admin users, and developers can use the Cloud Console to manage all environments and branches, environment variables, environment settings, services, and routes.
 

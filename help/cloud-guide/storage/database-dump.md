@@ -13,7 +13,7 @@ Consider the following guidelines for DB dump:
 - For Production environments, Adobe recommends completing database dump operations during off-peak hours to minimize service disruptions that occur when the site is in maintenance mode.
 - If an error occurs during the dump operation, the command deletes the dump file to conserve disk space. Review the logs for details (`var/log/cloud.log`).
 - For Pro Production environments, this command dumps only from _one_ of the three high-availability nodes, so production data written to a different node during the dump might not be copied. The command generates a `var/dbdump.lock` file to prevent the command from running on more than one node.
-- For a backup of all environment services, Adobe recommends creating a [snapshot](snapshots.md).
+- For a backup of all environment services, Adobe recommends creating a [backup](snapshots.md).
 
 You can choose to back up multiple databases by appending the database names to the command. The following example backs up two databases: `main` and `sales`:
 

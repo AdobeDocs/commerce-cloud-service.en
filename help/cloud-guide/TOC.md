@@ -85,7 +85,7 @@ level: Intermediate
         + [Manage disk space](storage/manage-disk-space.md)
         + [Profile database queries](storage/profile-database-queries.md)
         + [Back up the database](storage/database-dump.md)
-        + [Snapshots and backup management](storage/snapshots.md)
+        + [Backup management](storage/snapshots.md)
     + Upgrades and patches {#upgrade}
         + [Best practices](development/best-practices.md)
         + [Upgrade Commerce version](development/commerce-version.md)

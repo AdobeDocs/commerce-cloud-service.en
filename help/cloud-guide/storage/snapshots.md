@@ -1,29 +1,30 @@
 ---
-title: Snapshots and backup management
+title: Backup management
 description: Learn how to manually back up and restore your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: 1cb00db7-2375-4761-9c07-1e20a74859e0
 ---
-# Snapshots and backup management
+# Backup management
 
-You can perform a manual backup of active Starter and Pro integration environments at any time using the **[!UICONTROL Snapshots]** button in the Cloud Console or using the `magento-cloud snapshot:create` command.
+You can perform a manual backup of active Starter environments at any time using the **[!UICONTROL Backup]** button in the Cloud Console or using the `magento-cloud snapshot:create` command.
 
 A _snapshot_ is a complete backup of environment data that includes all persistent data from running services (MySQL database) and any files stored on the mounted volumes (var, pub/media, app/etc). The snapshot does _not_ include code, since the code is already stored in the Git-based repository. You cannot download a copy of a snapshot.
 
-The snapshots feature does **not** apply to the Pro Staging and Production environments. The Pro Staging and Production environments receive regular backups for disaster recovery purposes by default, see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery). Unlike the automatic live backups on the Pro Staging and Production environments, snapshots are **not** automatic. It is _your_ responsibility to manually create a snapshot or set up a cron job to periodically take snapshots of your Starter or Pro integration environments.
+The backup or snapshots feature does **not** apply to the Pro environments. The Pro Staging and Production environments receive regular backups for disaster recovery purposes by default, see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery). Unlike the automatic live backups on the Pro Staging and Production environments, backups are **not** automatic. It is _your_ responsibility to manually create a backup or set up a cron job to periodically back up your Starter or Pro integration environments.
 
-## Create a snapshot
+## Create a backup
 
 You must have an [Admin role](../project/user-access.md) for the environment.
 
-**To create a snapshot using the Cloud Console**:
+**To create a Starter backup using the Cloud Console**:
 
-1. Log in to [the Cloud Console](https://console.magento.cloud).
-1. In the left pane, click the name of the environment to back up.
-1. In the top pane, click the **[!UICONTROL Snapshots]** icon. This option is not available for a Pro Production or Staging environment.
-1. Click **Create**.
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Select an environment from the project navigation bar.
+1. In the top pane, click **[!UICONTROL Backup]**. This option is not available for a Pro environment.
 
-**To create a snapshot using the `magento-cloud` CLI**:
+   ![Backup](../../assets/button-backup.png){width="150"}
+
+**To create a Starter snapshot using the `magento-cloud` CLI**:
 
 1. On your local workstation, change to your project directory.
 1. Check out the environment branch to snapshot.
@@ -65,9 +66,9 @@ You must have an [Admin role](../project/user-access.md) for the environment.
    +---------------------------+----------------------+------------+
    ```
 
-## Restore a snapshot
+## Restore a backup
 
-You must have [Admin access](../project/user-access.md) to the environment. You have up to **seven days** to _restore_ a snapshot. Restoring a snapshot does not change the code of the current git branch. Restoring a snapshot in this manner does not apply to Pro staging and production environments; see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery).
+You must have [Admin access](../project/user-access.md) to the environment. You have up to **seven days** to _restore_ a backup. Restoring a backup does not change the code of the current git branch. Restoring a backup in this manner does not apply to Pro staging and production environments; see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery).
 
 Restoration times vary depending on the size of your database:
 
@@ -77,18 +78,18 @@ Restoration times vary depending on the size of your database:
 
 >[!TIP]
 >
->Restoring without a snapshot:
+>Restoring without a backup:
 >
 >- To roll back to previous code or remove added extensions in an environment, see [Roll back code](#roll-back-code).
->- To restore an unstable environment that does _not_ have a snapshot, see [Restore an environment](../development/restore-environment.md).
+>- To restore an unstable environment that does _not_ have a backup, see [Restore an environment](../development/restore-environment.md).
 
-**To restore a snapshot using the Cloud Console**:
+**To restore a backup using the Cloud Console**:
 
-1. Log in to [the Cloud Console](https://console.magento.cloud).
-1. In the left pane, click the name of the environment to restore.
-1. In the environment messages, select **snapshot** from the _all types of_ drop-down list.
-1. Click **restore** next to the snapshot.
-1. Review the Snapshot restore date and click **Restore**.
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Select an environment from the project navigation bar.
+1. In the _Backups_ view, choose a backup from the Stored list.
+1. In the ![More](../../assets/icon-more.png){width="32"} (_more_) menu, click **Restore**.
+1. Review the Restore from backup information and click **Yes, restore**.
 
 **To restore a snapshot using the Cloud CLI**:
 
@@ -119,6 +120,6 @@ Restoration times vary depending on the size of your database:
 
 ## Roll back code
 
-Snapshots do _not_ include a copy of your code. Your code is already stored in the Git-based repository, so you can use Git-based commands to roll back (or revert) code. For example, use `git log --oneline` to scroll through previous commits; then use [`git revert`](https://git-scm.com/docs/git-revert) to restore code from a specific commit.
+Backups and snapshots do _not_ include a copy of your code. Your code is already stored in the Git-based repository, so you can use Git-based commands to roll back (or revert) code. For example, use `git log --oneline` to scroll through previous commits; then use [`git revert`](https://git-scm.com/docs/git-revert) to restore code from a specific commit.
 
 Also, you can choose to store code in an _inactive_ branch. Use git commands to create a branch instead of using `magento-cloud` commands. See about [Git commands](../dev-tools/cloud-cli-overview.md#git-commands) in the Cloud CLI topic.

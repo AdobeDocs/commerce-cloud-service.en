@@ -100,7 +100,7 @@ After cloning your project and updating the Adobe Commerce administrator account
    composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
    ```
 
-1. [_optional_] Create a [snapshot](../storage/snapshots.md) of the environment.
+1. [_optional_] Create a [backup](../storage/snapshots.md) of the environment.
 
 ### Merge a branch
 

@@ -12,7 +12,7 @@ When you are ready to deploy your store, you must complete deployment and testin
 
 >[!TIP]
 >
->Adobe recommends creating a [snapshot](../storage/snapshots.md) of the environment before deployments.
+>Adobe recommends creating a [backup](../storage/snapshots.md) of the environment before deployments.
 
 Also, you can enable [Track deployments with New Relic](../monitor/track-deployments.md) to monitor deployment events and help you analyze performance between deployments.
 
@@ -42,7 +42,7 @@ The Cloud Console provides features to create, manage, and deploy code in Integr
 1. Select the `integration` branch.
 1. Select the **Merge** option to deploy to Staging.
 
-    ![Merge](../../assets/icon-merge.png)
+    ![Merge](../../assets/button-merge.png){width="150"}
 
 1. Complete all [testing](../test/staging-and-production.md) in the Staging environment.
 1. When Staging is ready, select the **Merge** option to deploy to Production.
@@ -53,7 +53,7 @@ The Cloud Console provides features to create, manage, and deploy code in Integr
 1. Select the prepared code branch.
 1. Select the **Merge** option to deploy to Staging.
 
-    ![Merge](../../assets/icon-merge.png)
+    ![Merge](../../assets/button-merge.png){width="150"}
 
 1. Complete all [testing](../test/staging-and-production.md) in the Staging environment.
 1. When Staging is ready, select the **Merge** option to deploy to Production (`master`).
