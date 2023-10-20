@@ -1,6 +1,6 @@
 ---
 title: Backup management
-description: Learn how to manually back up and restore your Adobe Commerce on cloud infrastructure project.
+description: Learn how to manually create and restore a backup for your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: 1cb00db7-2375-4761-9c07-1e20a74859e0
 ---
@@ -8,23 +8,23 @@ exl-id: 1cb00db7-2375-4761-9c07-1e20a74859e0
 
 You can perform a manual backup of active Starter environments at any time using the **[!UICONTROL Backup]** button in the Cloud Console or using the `magento-cloud snapshot:create` command.
 
-A _snapshot_ is a complete backup of environment data that includes all persistent data from running services (MySQL database) and any files stored on the mounted volumes (var, pub/media, app/etc). The snapshot does _not_ include code, since the code is already stored in the Git-based repository. You cannot download a copy of a snapshot.
+A backup or _snapshot_ is a complete backup of environment data that includes all persistent data from running services (MySQL database) and any files stored on the mounted volumes (var, pub/media, app/etc). The snapshot does _not_ include code, since the code is already stored in the Git-based repository. You cannot download a copy of a snapshot.
 
-The backup or snapshots feature does **not** apply to the Pro environments. The Pro Staging and Production environments receive regular backups for disaster recovery purposes by default, see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery). Unlike the automatic live backups on the Pro Staging and Production environments, backups are **not** automatic. It is _your_ responsibility to manually create a backup or set up a cron job to periodically back up your Starter or Pro integration environments.
+The backup feature does **not** apply to the Pro environments. The Pro Staging and Production environments receive regular backups for disaster recovery purposes by default, see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery). Unlike the automatic live backups on the Pro Staging and Production environments, backups are **not** automatic. It is _your_ responsibility to manually create a backup or set up a cron job to periodically create a backup your Starter or Pro integration environments.
 
 ## Create a backup
 
-You must have an [Admin role](../project/user-access.md) for the environment.
+You can create a manual backup of your Starter environment from the Cloud Console or create a snapshot from the Cloud CLI. You must have an [Admin role](../project/user-access.md) for the environment.
 
-**To create a Starter backup using the Cloud Console**:
+**To create a backup using the Cloud Console**:
 
 1. Log in to [the Cloud Console](https://console.adobecommerce.com).
-1. Select an environment from the project navigation bar.
-1. In the top pane, click **[!UICONTROL Backup]**. This option is not available for a Pro environment.
+1. Select an environment from the project navigation bar. The environment must be active.
+1. In the _Backups_ view, click **[!UICONTROL Backup]**. This option is not available for a Pro environment.
 
    ![Backup](../../assets/button-backup.png){width="150"}
 
-**To create a Starter snapshot using the `magento-cloud` CLI**:
+**To create a snapshot using the `magento-cloud` CLI**:
 
 1. On your local workstation, change to your project directory.
 1. Check out the environment branch to snapshot.
@@ -87,7 +87,7 @@ Restoration times vary depending on the size of your database:
 
 1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 1. Select an environment from the project navigation bar.
-1. In the _Backups_ view, choose a backup from the Stored list.
+1. In the _Backups_ view, choose a backup from the _Stored_ list. The backup feature does **not** apply to the Pro environments.
 1. In the ![More](../../assets/icon-more.png){width="32"} (_more_) menu, click **Restore**.
 1. Review the Restore from backup information and click **Yes, restore**.
 

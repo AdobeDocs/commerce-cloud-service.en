@@ -130,7 +130,7 @@ git commit --allow-empty -m "<message>" && git push <origin> <branch>
 
 ## Reset the database
 
-If you have attempted to uninstall Adobe Commerce and the command failed or could not complete, you might need to manually reset the database.
+If you have attempted to uninstall Adobe Commerce and the command failed or could not complete, you can manually reset the database.
 
 **To reset the database**:
 

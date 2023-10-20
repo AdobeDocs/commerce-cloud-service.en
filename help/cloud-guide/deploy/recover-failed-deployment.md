@@ -15,7 +15,7 @@ You can recover from a failed deployment in any of the following ways:
 
 ## Clean, remove, and redeploy
 
-To clean up from the previous deployment, you may need to identify the component that was added or updated and then remove it. First, log in to the remote environment and manually clear the contents of the `var` directory. Then remove the component from the `composer.json` file and redeploy the environment.
+To clean up from the previous deployment, identify the component that was added or updated and then remove it. First, log in to the remote environment and manually clear the contents of the `var` directory. Then remove the component from the `composer.json` file and redeploy the environment.
 
 **To clean the `var` directories**:
 

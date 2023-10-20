@@ -10,7 +10,7 @@ The main view for each environment displays an **Activity** list of historical e
 
 ## View logs
 
-In the Activity list, click the status icon of an activity to view the log. Alternatively, click the (_more_) icon ![more](../../assets/icon-more.png) to access more options for managing the activity. The following shows a short log creating a backup. You can [use the Cloud CLI](#activity-stream-with-cloud-cli) to view the same log.
+In the Activity list, click the status icon of an activity to view the log. Alternatively, click the ![More](../../assets/icon-more.png){width="32"} (_more_) menu to access more options for managing the activity. The following shows a short log creating a backup. You can [use the Cloud CLI](#activity-stream-with-cloud-cli) to view the same log.
 
 ![Log view](../../assets/log-view.png)
 
