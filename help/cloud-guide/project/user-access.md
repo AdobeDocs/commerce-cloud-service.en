@@ -123,7 +123,7 @@ magento-cloud user:update alice@example.com -r production:a
 
 ## Manage users from the Cloud Console
 
-You can use the [Cloud Console](../../get-started/web-interface.md) to add permissions and use the _Edit_ feature to modify permissions for an existing user.
+You can use the [Cloud Console](../../get-started/cloud-console.md) to add permissions and use the _Edit_ feature to modify permissions for an existing user.
 
 >[!IMPORTANT]
 >

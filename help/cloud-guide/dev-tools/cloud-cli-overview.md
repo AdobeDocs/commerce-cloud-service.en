@@ -6,7 +6,7 @@ exl-id: 70dddd62-0269-4af4-bd2a-1a4fbf11a131
 
 # Cloud CLI
 
-The `magento-cloud` CLI tool enables developers and system administrators the ability to manage Cloud projects and environments, perform routines and run automation tasks. The `magento-cloud` CLI extends the features and functionality of the [Cloud Console](../../get-started/web-interface.md). After you install the `magento-cloud` CLI on your local workstation, you can use it to manage your Adobe Commerce on cloud infrastructure Starter and Pro integration environments.
+The `magento-cloud` CLI tool enables developers and system administrators the ability to manage Cloud projects and environments, perform routines and run automation tasks. The `magento-cloud` CLI extends the features and functionality of the [Cloud Console](../../get-started/cloud-console.md). After you install the `magento-cloud` CLI on your local workstation, you can use it to manage your Adobe Commerce on cloud infrastructure Starter and Pro integration environments.
 
 **To install the `magento-cloud` CLI**:
 
