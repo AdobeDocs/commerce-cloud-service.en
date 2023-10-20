@@ -12,7 +12,7 @@ A backup or _snapshot_ is a complete backup of environment data that includes al
 
 The backup feature does **not** apply to the Pro environments. The Pro Staging and Production environments receive regular backups for disaster recovery purposes by default, see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery). Unlike the automatic live backups on the Pro Staging and Production environments, backups are **not** automatic. It is _your_ responsibility to manually create a backup or set up a cron job to periodically create a backup your Starter or Pro integration environments.
 
-## Create a backup
+## Create a manual backup
 
 You can create a manual backup of your Starter environment from the Cloud Console or create a snapshot from the Cloud CLI. You must have an [Admin role](../project/user-access.md) for the environment.
 
@@ -66,9 +66,9 @@ You can create a manual backup of your Starter environment from the Cloud Consol
    +---------------------------+----------------------+------------+
    ```
 
-## Restore a backup
+## Restore a manual backup
 
-You must have [Admin access](../project/user-access.md) to the environment. You have up to **seven days** to _restore_ a backup. Restoring a backup does not change the code of the current git branch. Restoring a backup in this manner does not apply to Pro staging and production environments; see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery).
+You must have [Admin access](../project/user-access.md) to the environment. You have up to **seven days** to _restore_ a manual backup. Restoring a backup does not change the code of the current git branch. Restoring a backup in this manner does not apply to Pro staging and production environments; see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery).
 
 Restoration times vary depending on the size of your database:
 
