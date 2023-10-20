@@ -27,6 +27,10 @@ After you add your SSH public key to your Adobe Commerce on cloud infrastructure
 
 You can add SSH keys to your account using one of the following methods: Cloud CLI or Cloud Console.
 
+>[!BEGINTABS]
+
+>[!TAB CLI]
+
 ### Add your SSH key using the Cloud CLI
 
 1. On your local workstation, change to your project directory.
@@ -47,11 +51,13 @@ You can add SSH keys to your account using one of the following methods: Cloud C
 >
 >You can list and delete SSH keys using the Cloud CLI commands `ssh-key:list` and `ssh-key:delete`.
 
+>[!TAB Console]
+
 ### Add your SSH key using the Cloud Console
 
 **To add an SSH key to a new project**:
 
-1. Log in to [the Cloud Console](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 
 1. Click **No SSH key**. This icon is to the right of the command field and is visible when the project does not contain an SSH key.
 
@@ -63,15 +69,17 @@ You can add SSH keys to your account using one of the following methods: Cloud C
 
 **To add an SSH key to your Cloud profile**:
 
-1. Log in to [your Cloud account](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 
-1. On the account dashboard, click the **Account Settings** tab.
+1. In the upper-right account menu, click **My Profile**.
 
-1. Under _SSH keys_, click **Add a public key**.
+1. In the _SSH keys_ view, click **Add public key**.
 
 1. In the _Add an SSH key_ form, give your key a **Title**, and paste the public SSH key in the **Key** field.
 
 1. Click **Save**.
+
+>[!ENDTABS]
 
 ## Connect to a remote environment
 
@@ -101,7 +109,7 @@ The Cloud Console includes a list of Web and SSH access commands for each enviro
 
 **To copy the SSH command**:
 
-1. Log in to [the Cloud Console](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 

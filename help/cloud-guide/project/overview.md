@@ -11,7 +11,7 @@ Adobe provides a Cloud Console and developer tools to fully manage all aspects o
 
 ## Cloud Console
 
-The Cloud Console provides interactive methods to build, manage, and deploy Commerce code in a user-friendly format. [Log in to the Cloud Console](https://console.magento.cloud) to view your project list. You can only see projects that you have permission to access as an admin or for specific environment types. If you are an Adobe Solutions Partner, you may see multiple projects for clients that you support.
+The Cloud Console provides interactive methods to build, manage, and deploy Commerce code in a user-friendly format. [Log in to the Cloud Console](https://console.adobecommerce.com) to view your project list. You can only see projects that you have permission to access as an admin or for specific environment types. If you are an Adobe Solutions Partner, you may see multiple projects for clients that you support.
 
 >[!TIP]
 >

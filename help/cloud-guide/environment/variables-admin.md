@@ -44,7 +44,7 @@ magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master
 
 **To change the URL using the Cloud Console**:
 
-1. Log in to [the Cloud Console](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 

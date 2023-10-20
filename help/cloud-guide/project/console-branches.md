@@ -32,7 +32,7 @@ If you need additional active environments for development, submit a [Support ti
 
 **To add a branch**:
 
-1. Log in to [the Cloud Console](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -44,7 +44,7 @@ If you need additional active environments for development, submit a [Support ti
 
 1. Click **[!UICONTROL Branch]**.
 
-   ![Create a branch](../../assets/icon-branch.png){width="150"}
+   ![Create a branch](../../assets/button-branch.png){width="150"}
 
 1. In the _Branching from ..._ form, enter a branch name.
 
@@ -66,7 +66,7 @@ Before you can delete an environment, you must deactivate it. Once an environmen
 
 **To deactivate an environment**:
 
-1. Log in to [the Cloud Console](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -84,7 +84,7 @@ For Pro plan, you can sync from Staging and Production to your `master` branch. 
 
 **To sync an environment**:
 
-1. Log in to [the Cloud Console](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -92,7 +92,7 @@ For Pro plan, you can sync from Staging and Production to your `master` branch. 
 
 1. Click (sync).
 
-    ![Sync an environment](../../assets/icon-sync.png){width="150"}
+    ![Sync an environment](../../assets/button-sync.png){width="150"}
 
 1. Select the items to sync.
 
@@ -109,7 +109,7 @@ Merging an environment (or branch) is the same as `git push origin`. You merge t
 
 **To merge with the parent environment**:
 
-1. Log in to [the Cloud Console](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -117,7 +117,7 @@ Merging an environment (or branch) is the same as `git push origin`. You merge t
 
 1. Click (merge).
 
-   ![Merge an environment](../../assets/icon-merge.png){width="150"}
+   ![Merge an environment](../../assets/button-merge.png){width="150"}
 
 1. Click **Merge** and confirm the action.
 
@@ -135,13 +135,13 @@ For **Pro**, you can review the following logs in each environment:
 
 **To view logs in the Cloud Console**:
 
-1. Log in to [the Cloud Console](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
 1. Select an environment.
 
-   The environment view provides an [Activity list](activity-stream.md) that shows _recent_ events, one entry per action attempted including syncs, merges, branches, snapshots, and more. Click **All** for the full deployment history.
+   The environment view provides an [Activity list](activity-stream.md) that shows _recent_ events, one entry per action attempted including syncs, merges, branches, backups, and more. Click **All** for the full deployment history.
 
 1. To view the build log, select the Success or Failure link per deployment record on the account.
 
@@ -163,7 +163,7 @@ If you prefer that your project accesses multiple repositories, you can attach a
 
 **To find your SSH public key**:
 
-1. Log in to [the Cloud Console](https://console.magento.cloud).
+1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -239,7 +239,7 @@ You can access your project and environments from any location through a web bro
 
 **To secure environments**:
 
-1. Log in to your [Cloud Console](https://console.magento.cloud).
+1. Log in to your [Cloud Console](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 

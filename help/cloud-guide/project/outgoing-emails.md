@@ -17,8 +17,8 @@ Use the **[!UICONTROL Outgoing emails]** toggle in the _Configure environment_ v
 
 **To manage email support from the Cloud Console**:
 
-1. Log in to the [Cloud Console](https://console.magento.cloud).
-1. Select the project.
+1. Log in to the [Cloud Console](https://console.adobecommerce.com).
+1. Select a project from the _All projects_ list.
 1. On the Project dashboard, click the configuration icon in the upper right.
 1. Click **[!UICONTROL Environments]** and select a specific environment from the list.
 1. To enable or disable outgoing emails, toggle _Enable outgoing emails_ **On** or **Off**.

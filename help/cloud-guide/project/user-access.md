@@ -33,7 +33,7 @@ You can add users and assign roles using the `magento-cloud` CLI or the Cloud Co
 
 **Prerequisites:**
 
-- A registered user with an Adobe ID. A user must [register for an Adobe account](https://account.adobe.com) and then [initialize their Cloud account](https://console.magento.cloud) before you can add them to a Cloud project.
+- A registered user with an Adobe ID. A user must [register for an Adobe account](https://account.adobe.com) and then [initialize their Cloud account](https://console.adobecommerce.com) before you can add them to a Cloud project.
 - A user assigned the **Admin** role cannot manage users with the `magento-cloud` CLI. Only users that are granted the **Account Owner** role can manage users.
 
 >[!ENDSHADEBOX]
@@ -131,7 +131,7 @@ You can use the [Cloud Console](../../get-started/web-interface.md) to add permi
 
 ### Add a user to the project
 
-1. Log in to the [Cloud Console](https://console.magento.cloud/).
+1. Log in to the [Cloud Console](https://console.adobecommerce.com/).
 
 1. Select a project from the _All projects_ list.
 
@@ -188,7 +188,7 @@ Instructions for installing the authenticator application and enabling TFA are a
 
 **To enable TFA on your user account**:
 
-1. Log in to [your account](https://console.magento.cloud).
+1. Log in to [your account](https://console.adobecommerce.com).
 
 1. In the upper-right account menu, click **[!UICONTROL My Profile]**.
 
@@ -236,7 +236,7 @@ Instructions for installing the authenticator application and enabling TFA are a
 
 You can manage the TFA configuration for an Adobe Commerce on cloud infrastructure account from the _Security_ section on the _My Profile_ page.
 
-1. Log in to [your account](https://console.magento.cloud).
+1. Log in to [your account](https://console.adobecommerce.com).
 
 1. In the upper-right account menu, click **[!UICONTROL My Profile]**.
 
@@ -261,7 +261,7 @@ On projects that have MFA enforcement enabled, you must have an API token to ena
 
 **To create an API token**:
 
-1. Log in to [your account](https://console.magento.cloud).
+1. Log in to [your account](https://console.adobecommerce.com).
 
 1. In the upper-right account menu, click **[!UICONTROL My Profile]**.
 
