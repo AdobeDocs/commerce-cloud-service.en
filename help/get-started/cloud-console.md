@@ -44,4 +44,6 @@ Select an environment from the project navigation bar. The environment must be a
 
 **_Where is the list of configured routes for the environment_**?
 
-You can find the list of configured routes on the _Services_ tab for an environment. Select an environment from the project navigation bar. Select the **[!UICONTROL Services]** tab. The **Router** overview displays the configured routes. Currently, you cannot add a route from the new Cloud Console.
+You can find the list of configured routes on the _Services_ tab for an environment.
+
+Select an environment from the project navigation bar. Select the **[!UICONTROL Services]** tab. The **Router** overview displays the configured routes. Currently, you cannot add a route from the new Cloud Console.
