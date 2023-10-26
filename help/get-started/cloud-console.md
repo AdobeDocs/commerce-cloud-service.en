@@ -20,7 +20,7 @@ The new or improved features include:
 - Simple forms and guidance to add integrations
 - Web Content Accessibility Guidelines (WCAG) compliance
 
-**To Enable or disable Cloud Console**:
+**To enable or disable Cloud Console**:
 
 1. Open the original [Project Web Interface](https://accounts.magento.cloud/user).
 
@@ -38,9 +38,9 @@ The new or improved features include:
 
 **_Where can I find the Snapshots feature_**?
 
-For Starter projects, snapshots is now called _backups_. You can create a manual backup of your Starter environment from the Cloud Console or create a snapshot from the Cloud CLI. You must have an Admin role for the environment.
+For Starter projects, the Snapshots feature is now called _Backups_. You can create a manual backup of your Starter environment from the Cloud Console or create a snapshot from the Cloud CLI. You must have an Admin role for the environment.
 
-Select an environment from the project navigation bar. The environment must be active. Select the **[!UICONTROL Backups]** tab. Currently, this option is not available for a Pro environment.
+Select an environment from the project navigation bar. The environment must be active. Select the **[!UICONTROL Backups]** tab. Currently, this option is not available for Pro environments.
 
 **_Where is the list of configured routes for the environment_**?
 
