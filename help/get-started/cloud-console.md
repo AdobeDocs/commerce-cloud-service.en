@@ -40,8 +40,8 @@ The new or improved features include:
 
 For Starter projects, snapshots is now called _backups_. You can create a manual backup of your Starter environment from the Cloud Console or create a snapshot from the Cloud CLI. You must have an Admin role for the environment.
 
-Select an environment from the project navigation bar. The environment must be active. Select the **Backups** tab. Currently, this option is not available for a Pro environment.
+Select an environment from the project navigation bar. The environment must be active. Select the **[!UICONTROL Backups]** tab. Currently, this option is not available for a Pro environment.
 
 **_Where is the list of configured routes for the environment_**?
 
-You can find the list of configured routes on the _Services_ tab for an environment. Select an environment from the project navigation bar. Select the **Services** tab. The **Router** overview displays the configured routes. Currently, you cannot add a route.
+You can find the list of configured routes on the _Services_ tab for an environment. Select an environment from the project navigation bar. Select the **[!UICONTROL Services]** tab. The **Router** overview displays the configured routes. Currently, you cannot add a route from the new Cloud Console.
