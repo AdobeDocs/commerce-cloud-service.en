@@ -57,7 +57,7 @@ The License Owner can set up shared access for the account. Shared access allows
 
 ### Cloud Console
 
-You can use the [Cloud Console](web-interface.md) to manage your project, add user accounts, and begin developing your store. The License Owner, Technical Admin users, and developers can use the Cloud Console to manage all environments and branches, environment variables, environment settings, and routes.
+You can use the [Cloud Console](cloud-console.md) to manage your project, add user accounts, and begin developing your store. The License Owner, Technical Admin users, and developers can use the Cloud Console to manage all environments and branches, environment variables, environment settings, and routes.
 
 **To access the Cloud Console**:
 
