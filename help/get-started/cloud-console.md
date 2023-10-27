@@ -30,7 +30,7 @@ The new or improved features include:
 
 1. Click **[!UICONTROL Save]**.
 
-1. Open the new [Cloud Console](https://console.magento.cloud).
+1. Open the new [Cloud Console](https://console.adobecommerce.com).
 
 1. To disable default Cloud Console access, return to your account settings in the original Project Web Interface and deselect **[!UICONTROL Console (New UI) Beta Opt-in]**.
 
