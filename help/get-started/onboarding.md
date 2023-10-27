@@ -79,9 +79,9 @@ The page provides a status for Adobe Commerce components and services followed b
 
 >[!TIP]
 >
->Learn how to navigate the Cloud Console.
+> Open the new Cloud Console and view project and environment activities.
 >
->**Next step**: [Cloud Console](web-interface.md)
+>**Next step**: [Log in to Cloud Console](cloud-console.md)
 
 <!-- link definitions -->
 
