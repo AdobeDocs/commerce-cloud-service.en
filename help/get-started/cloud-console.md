@@ -2,8 +2,8 @@
 title: Cloud Console
 description: Learn about the Cloud Console for Adobe Commerce on Cloud infrastructure.
 recommendations: noDisplay, catalog
+exl-id: c19a36b6-e5e8-461c-a82c-68b7bf121999
 ---
-
 # What is the new Cloud Console?
 
 Adobe Commerce on Cloud infrastructure has a new look in beta that you can enable and test. This new Cloud Console provides a more modern, user-friendly experience and lays the foundation for future interface enhancements.
