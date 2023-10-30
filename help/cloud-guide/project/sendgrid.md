@@ -18,6 +18,8 @@ The SendGrid SMTP proxy is not intended for use as a general-purpose email serve
 >[!TIP]
 >
 >You can find SendGrid details for your account in the [Onboarding UI](https://cloud.magento.com) and select the **Project Details** > **Hosting Info** tab.
+>
+>All Cloud projects are managed under a central account, so only the support team has access to the SendGrid dashboard. SendGrid does not provide subaccount restriction features. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for activity logs, such as delivery status or a list of bounced, rejected, or blocked email addresses.
 
 ## Enable or disable email
 
@@ -106,4 +108,4 @@ There are no hard limits on the number of emails that can be sent in the Product
 
 ### Email sending reputation
 
-An email sending reputation is a score assigned by an Internet Service Provider (ISP) to a company sending email messages. The higher the score, the more likely an ISP delivers messages to a recipient's inbox. If the score falls below a certain level, the ISP may route messages to recipients' spam folder or even reject messages completely. The reputation score is determined by several factors such as a 30-day average of your IP addresses rank against other IP addresses and spam complaint rate. See [5 Ways to Check Your Sending Reputation](https://sendgrid.com/blog/5-ways-check-sending-reputation/).
+An email sending reputation is a score assigned by an Internet Service Provider (ISP) to a company sending email messages. The higher the score, the more likely an ISP is to deliver messages to a recipient's inbox. If the score falls below a certain level, the ISP may route messages to recipients' spam folder, or even reject messages completely. The reputation score is determined by several factors such as a 30-day average of your IP addresses rank against other IP addresses and spam complaint rate. See [5 Ways to Check Your Sending Reputation](https://sendgrid.com/blog/5-ways-check-sending-reputation/).
