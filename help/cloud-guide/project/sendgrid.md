@@ -18,12 +18,22 @@ The SendGrid SMTP proxy is not intended for use as a general-purpose email serve
 >[!TIP]
 >
 >You can find SendGrid details for your account in the [Onboarding UI](https://cloud.magento.com) and select the **Project Details** > **Hosting Info** tab.
->
->All Cloud projects are managed under a central account, so only the support team has access to the SendGrid dashboard. SendGrid does not provide subaccount restriction features. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for activity logs, such as delivery status or a list of bounced, rejected, or blocked email addresses.
 
 ## Enable or disable email
 
 By default, outgoing email is enabled on Production environments. The [!UICONTROL Outgoing emails] may appear off in the environment settings regardless of status until you set the `enable_smtp` property. You can enable outgoing emails for other environments to send two-factor authentication emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
+
+## SendGrid dashboard
+
+All Cloud projects are managed under a central account, so only the support team has access to the SendGrid dashboard. SendGrid does not provide subaccount restriction features.
+
+[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for activity logs, such as delivery status or a list of bounced, rejected, or blocked email addresses.
+
+If possible, include the following information with your request:
+
+* the affected email address(es)
+* the timeframe in question (within the past 30 days only)
+* the subject of the email
 
 ## DomainKeys Identified Mail (DKIM)
 
@@ -104,7 +114,7 @@ There are no hard limits on the number of emails that can be sent in the Product
 
 1. Check the `/var/log/mail.log` for `authentication failed : Maxium credits exceeded` entries.
 
-   If you see any `authentication failed` log entries, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a credit allotment increase.
+   If you see any `authentication failed` log entries and the **Email sending reputation** is at a minimum of 95, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a credit allotment increase.
 
 ### Email sending reputation
 
