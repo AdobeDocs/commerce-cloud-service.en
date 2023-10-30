@@ -31,7 +31,7 @@ All Cloud projects are managed under a central account, so only the support team
 
 If possible, include the following information with your request:
 
-* the affected email address(es)
+* the affected email address or addresses
 * the timeframe in question (within the past 30 days only)
 * the subject of the email
 
