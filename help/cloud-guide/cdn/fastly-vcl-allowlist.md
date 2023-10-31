@@ -57,7 +57,7 @@ Edge ACLs create IP address lists for managing access to your site. In this exam
 
 ## Create the custom VCL snippet to secure Admin access
 
-The following custom VCL snippet code (JSON format) shows the logic to filter requests to the Admin and allow access if the client IP address matches an address in the `allowlist` ACL. 
+The following custom VCL snippet code (JSON format) shows the logic to filter requests to the Admin and allow access if the client IP address matches an address in the `allowlist` ACL.
 
 ```json
 {
@@ -69,7 +69,7 @@ The following custom VCL snippet code (JSON format) shows the logic to filter re
 }
 ```
 
-Before [creating your own snippet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html#add-the-custom-vcl-snippet) from this example, review the values to determine whether you need to make any changes. You would then plug each value into the respective fields, i.e., `type` into the Type field, `content` into the Content field, and so on.
+Before [creating a custom snippet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html#add-the-custom-vcl-snippet) from this example, review the values to determine whether you need to make any changes. Then enter each value into the respective fields, such as `type` into the Type field, `content` into the Content field.
 
 -  `name` — Name for the VCL snippet. For this example, `allowlist`.
 
