@@ -47,7 +47,8 @@ When you are ready to launch your site, you must update the DNS configuration to
 
       We recommend a significantly lower TTL value when switching the DNS record. This value tells the DNS how long to cache the DNS record. When shortened, it refreshes the DNS faster. For example, you can change the TTL value from three days to 10 minutes when you are updating your site. Be advised that shortening the TTL value adds load to the DNS infrastructure. Restore the previous, higher value after site launch.
 
-1. Add CNAME records to point the top-level domains and subdomains for your Production environment to the Fastly service `prod.magentocloud.map.fastly.net`, for example:
+
+1. Add CNAME records to point the subdomains for your Production environment to the Fastly service `prod.magentocloud.map.fastly.net`, for example:
 
    | Domain or Subdomain     | CNAME                            |
    | ----------------------- | -------------------------------- |
@@ -62,6 +63,13 @@ When you are ready to launch your site, you must update the DNS configuration to
    | `<domain-name>.com` | `151.101.65.124`  |
    | `<domain-name>.com` | `151.101.129.124` |
    | `<domain-name>.com` | `151.101.193.124` |
+   
+>[!IMPORTANT]
+>
+>The DNS instructions in [RFC1034](https://www.rfc-editor.org/rfc/rfc1912) (**section 2.4**) state that:
+>_A CNAME record is not allowed to coexist with any other data. In other words, if suzy.podunk.xx is an alias for sue.podunk.xx, you can't also have an MX record for suzy.podunk.edu, or an A record, or even a TXT record._
+>
+>For this reason, DNS records should be type `CNAME` for subdomains and type `A` for apex domains (root domains). Discarding this rule can result in disruptions to your mail service or DNS propagation because you lose the ability to add other records, such as MX or NS. Some DNS providers may circumvent this by using internal customizations, but following the standard ensures stability and flexibility (such as change of the DNS provider).
 
 1. Update the Base URL.
 

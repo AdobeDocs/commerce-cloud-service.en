@@ -87,7 +87,7 @@ The Fastly module includes GeoIP handling to automatically redirect visitors or 
 
 1. For GeoIP Action, select if the visitor is automatically redirected with **Redirect** or provided a list of stores to select from with **Dialog**.
 
-1. For **Country Mapping**, select **Add** to enter a two-letter country code to map with a specific Adobe Commerce store from a list. For a list of country codes, see [this site](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
+1. For **Country Mapping**, select **Add** to enter a two-letter country code to map with a specific Adobe Commerce store from a list.
 
    ![Add GeoIP country maps](/help/assets/cdn/fastly-geo-code.png)
 
@@ -193,11 +193,9 @@ For both Starter and Pro projects, you can use the [!UICONTROL Domains] option t
 
 1. Click **Activate** to update the Fastly domain configuration.
 
-
 >[!NOTE]
 >
 >If the same domain has been configured on a different Fastly account, you must submit an Adobe Commerce support ticket to request Domain Delegation before you can add the domain to Adobe Commerce. See [Multiple Fastly accounts and assigned domains](fastly.md#multiple-fastly-accounts-and-assigned-domains).
-
 
 ## Enable Maintenance Mode
 

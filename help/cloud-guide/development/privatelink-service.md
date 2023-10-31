@@ -61,7 +61,7 @@ Choose one of the PrivateLink connection types best suited for your Adobe Commer
 
 ![check](../../assets/fix.svg) A Cloud account (AWS or Azure) in the same region as the Adobe Commerce on cloud infrastructure instance.
 
-![check](../../assets/fix.svg) A VPC in the customer environment that hosts the services to connect via PrivateLink. See the AWS or Azure documentation for help with VPC setup or contact your network administrator.
+![check](../../assets/fix.svg) A VPC in the customer environment that hosts the services to connect through PrivateLink. See the AWS or Azure documentation for help with VPC setup or contact your network administrator.
 
 ![check](../../assets/fix.svg) For bidirectional PrivateLink connections, you must create the endpoint service configuration for your application or service, and create an endpoint in your VPC environment before requesting PrivateLink enablement. See [Set up for bidirectional PrivateLink connections](#set-up-for-bidirectional-privatelink-connections).
 

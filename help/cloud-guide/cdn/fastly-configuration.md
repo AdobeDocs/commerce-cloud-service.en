@@ -187,7 +187,6 @@ To route traffic from your store URLs to the Fastly service update your DNS conf
 -  On Starter projects, add the domains to your Fastly service configuration. See [Manage domains](fastly-custom-cache-configuration.md#manage-domains).
 -  For information about updating the DNS configuration, check with your [DNS registrar](https://lookup.icann.org/) for the correct method for your domain service.
 
-
 **To update your DNS configuration for development**:
 
 1. Point pre-production URLs to the Fastly service by adding CNAME records: `prod.magentocloud.map.fastly.net`, for example:
@@ -236,7 +235,6 @@ To route traffic from your store URLs to the Fastly service update your DNS conf
    >[!NOTE]
    >
    >As an alternative to using the Cloud CLI, you can update the Base URL from the [Admin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html)
- 
 
 1. Restart web browser.
 
@@ -308,7 +306,6 @@ After you update the module, you must upload the VCL code to apply the changes t
 1. [Verify Fastly services](fastly-troubleshooting.md#verify-or-debug-fastly-services) on the Adobe Commerce Staging site.
 
 After you verify Fastly services on the Staging site, repeat the upgrade process in the Production environment.
-
 
 >[!TIP]
 >

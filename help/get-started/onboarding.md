@@ -91,7 +91,9 @@ Anyone working on your project can subscribe to the Adobe Commerce on cloud infr
 
 >[!TIP]
 >
->View the [Commerce on Cloud Infrastructure user guide](../cloud-guide/overview.md).
+> Open the new Cloud Console and view project and environment activities.
+>
+>**Next step**: [Log in to Cloud Console](cloud-console.md)
 
 <!--Link references-->
 

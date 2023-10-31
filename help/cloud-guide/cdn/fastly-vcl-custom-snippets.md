@@ -133,7 +133,6 @@ The following walk-through shows you how to create regular VCL snippet files and
 
 This tutorial provides the basic steps to add custom snippets using the Fastly API.
 
-
 >[!NOTE]
 >
 >To learn how to manage custom VCL snippets from the Adobe Commerce Admin, see [Manage VCL from the Adobe Commerce Admin](#manage-custom-vcl-from-admin).
