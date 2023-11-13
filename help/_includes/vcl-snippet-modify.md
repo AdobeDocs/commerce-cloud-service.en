@@ -8,7 +8,7 @@
 
 1. Expand **Full Page Cache** > **Fastly Configuration** > **Custom VCL Snippets**.
 
-   ![Manage custom VCL snippets]
+   ![Manage custom VCL snippets](../assets/cdn/fastly-manage-snippets.png)
 
 1. In the _Action_ column, click the settings icon next to the snippet to edit.
 
