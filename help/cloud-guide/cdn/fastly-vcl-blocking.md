@@ -6,7 +6,7 @@ exl-id: 1f637612-3858-49d0-91f7-9b8823933cc9
 ---
 # Custom VCL for blocking requests
 
-You can use the Fastly CDN module for Magento 2 to create an Edge ACL with a list of IP addresses that you want to block. Then, you can use that list with a VCL snippet to block incoming requests. The code checks the IP address of the incoming request. If it matches an IP address included in the ACL list, Fastly blocks the request from accessing your site and returns a `403 Forbidden error`. All other client IPs are allowed access.
+You can use the Fastly CDN module for Magento 2 to create an Edge ACL with a list of IP addresses that you want to block. Then, you can use that list with a VCL snippet to block incoming requests. The code checks the IP address of the incoming request. If it matches an IP address included in the ACL list, Fastly blocks the request from accessing your site and returns a `403 Forbidden error`. All other client IP addresses are allowed access.
 
 **Prerequisites:**
 
@@ -14,7 +14,7 @@ You can use the Fastly CDN module for Magento 2 to create an Edge ACL with a lis
 
 -  List of client IP addresses to block
 
-## Create Edge ACL for blocking client IPs
+## Create Edge ACL for blocking client IP addresses
 
 You create an Edge ACL to define the list of IP addresses to block. After creating the ACL, you can use it in a custom VCL snippet to manage access to your Staging or Production site.
 
@@ -24,7 +24,7 @@ Manage access for both Staging and Production sites by creating the Edge ACL wit
 1. Navigate to **Stores** > Settings > **Configuration** > **Advanced** > **System** > **Full Page Cache** > **Fastly Configuration**.
 1. Expand the **Edge ACL** section.
 1. Click **Add ACL** to create a list. For this example, name the list "blocklist".
-1. Enter IP address values in the list. Any client IPs added to this list are blocked and cannot access the site.
+1. Enter IP address values in the list. Any client IP addresses added to this list are blocked and cannot access the site.
 1. Optionally, select the **Negated** checkbox if needed.
 
 You reference the Edge ACL by name in your VCL snippet code.
