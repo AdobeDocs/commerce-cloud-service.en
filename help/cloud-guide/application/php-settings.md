@@ -15,7 +15,7 @@ type: php:<version>
 
 >[!TIP]
 >
->If upgrading to PHP 8.1 and later, remove JSON from the `Runtime` > `Extensions` section in the `.magento.app.yaml` file and redeploy. The JSON extension comes installed in Cloud environment since PHP 8.0.
+>If upgrading to PHP 8.1 and later, remove JSON from the [`runtime: extensions:` property](properties.md#runtime) in the `.magento.app.yaml` file and redeploy. The JSON extension comes installed in Cloud environment since PHP 8.0.
 
 ## Configure PHP
 
