@@ -13,6 +13,10 @@ name: mymagento
 type: php:<version>
 ```
 
+>[!TIP]
+>
+>If upgrading to PHP 8.1 and later, remove JSON from the `Runtime` > `Extensions` section in the `.magento.app.yaml` file and redeploy. The JSON extension comes installed in Cloud environment since PHP 8.0.
+
 ## Configure PHP
 
 You can customize the PHP settings for your environment using a `php.ini` file that is appended to the configuration maintained by Adobe Commerce.
