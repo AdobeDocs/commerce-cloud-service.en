@@ -8,7 +8,7 @@ exl-id: dc4500bf-f037-47f0-b7ec-5cd1291f73a1
 
 >[!WARNING]
 >
->To maintain PCI compliance for Adobe Commerce sites deployed on the Cloud platform, set up Fastly on your Starter main branch, Pro Production, and Pro Staging environments. If you use Adobe Commerce in a headless deployment, we highly recommend that you use Fastly to cache GraphQL responses. See [Caching with Fastly] in the *GraphQL Developer Guide*.
+>To maintain PCI compliance for Adobe Commerce sites deployed on the Cloud platform, set up Fastly on your Starter main branch, Pro Production, and Pro Staging environments. If you use Adobe Commerce in a headless deployment, we highly recommend that you use Fastly to cache GraphQL responses. See [Caching with Fastly](https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly) in the *GraphQL Developer Guide*.
 
 Fastly provides the following services to optimize and secure content delivery operations for Adobe Commerce on cloud infrastructure projects. These services are included with Adobe Commerce on cloud infrastructure at no additional cost.
 

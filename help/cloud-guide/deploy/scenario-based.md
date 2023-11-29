@@ -35,7 +35,7 @@ hooks:
 
 >[!NOTE]
 >
->With the release of `ece-tools` 2002.1.x, there is a new [hooks configuration] format. The legacy format from `ece-tools` 2002.0.x releases is still supported. However, you must update to the new format to use the scenario-based deployment feature.
+>With the release of `ece-tools` 2002.1.x, there is a new [hooks configuration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) format. The legacy format from `ece-tools` 2002.0.x releases is still supported. However, you must update to the new format to use the scenario-based deployment feature.
 
 ## Review scenario steps
 
