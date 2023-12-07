@@ -187,7 +187,7 @@ Where the routes configuration defines how the URLs are processed, the `web` pro
                        passthru: "/static/$resource"
            "/<website>":
                <<: *root
-               passthru: "website/index.php"
+               passthru: "<website>/index.php"
            "/<website>/static": *static
              ...
    ```
