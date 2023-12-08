@@ -28,4 +28,4 @@ Data sources for Adobe Commerce include:
 - **Infrastructure**—process and host metrics, such as CPU, storage, networking
 - **Logging**—logs for CDN, APM, and application server
 
-Log data contributes to a large part of ingestion. See how to [View and analyze log data](log-management.md#view-and-analyze-log-data) and work with your _Solution Account Manager_ to form a strategy for data ingestion and retention needs. Read more about [managing data ingest](https://docs.newrelic.com/docs/data-apis/manage-data/manage-data-coming-new-relic/) in the _New Relic documentation_.
+Log data contributes to a large part of ingestion. See how to [View and analyze log data](log-management.md#view-and-analyze-log-data) and work with your Adobe representative to form a strategy for data ingestion and retention needs. Read more about [managing data ingest](https://docs.newrelic.com/docs/data-apis/manage-data/manage-data-coming-new-relic/) in the _New Relic documentation_.
