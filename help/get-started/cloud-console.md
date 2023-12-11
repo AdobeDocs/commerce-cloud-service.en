@@ -7,13 +7,11 @@ exl-id: c19a36b6-e5e8-461c-a82c-68b7bf121999
 
 # Cloud Console
 
-The Cloud Console provides interactive methods to build, manage, and deploy Commerce code. [Log in to the Cloud Console](https://console.adobecommerce.com) to view your project list.
+The Cloud Console provides interactive methods to build, manage, and deploy Commerce code. The Cloud Console is a more modern, user-friendly experience and lays the foundation for future interface enhancements.
 
-## What is the new Cloud Console?
+[Log in to the Cloud Console](https://console.adobecommerce.com) to view your project list.
 
-Adobe Commerce on Cloud infrastructure has a new look in beta that you can enable and test. This new Cloud Console provides a more modern, user-friendly experience and lays the foundation for future interface enhancements.
-
-![Cloud Console](../assets/CloudConsole.svg)
+## New features
 
 The new or improved features include:
 
@@ -25,21 +23,7 @@ The new or improved features include:
 - Simple forms and guidance to add integrations
 - Web Content Accessibility Guidelines (WCAG) compliance
 
-**To enable or disable Cloud Console**:
-
-1. Open the original [Project Web Interface](https://accounts.magento.cloud/user).
-
-1. On the _Account Settings_ tab, select **[!UICONTROL Console (New UI) Beta Opt-in]** to enable default Cloud Console access for your user account.
-
-   ![Console opt-in beta](../assets/console-optin-beta.png)
-
-1. Click **[!UICONTROL Save]**.
-
-1. Open the new [Cloud Console](https://console.adobecommerce.com).
-
-1. To disable default Cloud Console access, return to your account settings in the original Project Web Interface and deselect **[!UICONTROL Console (New UI) Beta Opt-in]**.
-
-## New features
+![Cloud Console](../assets/CloudConsole.svg)
 
 The new or improved features are as follows:
 
@@ -53,7 +37,7 @@ The new or improved features are as follows:
 <!-- The following are features yet to be activated:
 | **Apps and services topology** | The Apps & Services topology is visible on Project and Environment views. This interactive diagram allows you to select a service and view the relationship details, such as name, type, version, port, and more. Click **[!UICONTROL View details]** to access the overview and configuration panel for each service. | -->
 
-## Feature questions
+## Console questions
 
 **_Where can I find the Snapshots feature_**?
 
