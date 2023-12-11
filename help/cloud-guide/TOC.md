@@ -165,5 +165,6 @@ feature: Cloud
         + [Account and user management](monitor/account-management.md)
         + Investigate performance {#investigate}
             + [Policies, alerts, and workflows](monitor/investigate-performance.md)
+            + [Data ingestion](monitor/ingest-data.md)
             + [Track deployments](monitor/track-deployments.md)
         + [Log management](monitor/log-management.md)
