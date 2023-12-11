@@ -205,7 +205,7 @@ After collecting and configuring access rules for the domains and IP addresses y
 
 To test your egress-filtering rules:
 
-1. Create a shell script of `curl` commands to access the domains and IP addresses in your rules. Include commands that test access to domains and IPs that should be blocked.
+1. Create a shell script of `curl` commands to access the domains and IP addresses in your rules. Include commands that test access to domains and IP addresses that should be blocked.
 
 1. Configure a `post_deploy` hook in your `.magento.app.yaml` file to run the script.
 

@@ -23,6 +23,18 @@ The SendGrid SMTP proxy is not intended for use as a general-purpose email serve
 
 By default, outgoing email is enabled on Production environments. The [!UICONTROL Outgoing emails] may appear off in the environment settings regardless of status until you set the `enable_smtp` property. You can enable outgoing emails for other environments to send two-factor authentication emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
 
+## SendGrid dashboard
+
+All Cloud projects are managed under a central account, so only Support has access to the SendGrid dashboard. SendGrid does not provide subaccount restriction features.
+
+[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for activity logs, such as delivery status or a list of bounced, rejected, or blocked email addresses.
+
+If possible, include the following information with your request:
+
+* the affected email address or addresses
+* the timeframe in question (within the past 30 days only)
+* the subject of the email
+
 ## DomainKeys Identified Mail (DKIM)
 
 DKIM is an email authentication technology that enables Internet Service Providers (ISPs) to identify both legitimate and fake sender addresses, a technique commonly used in phishing and email scams. DKIM relies on a domain owner managing the DNS records. When using DKIM, the sender server uses a private key to sign the messages. Also, the domain owner adds a DKIM record, which is a modified `TXT` record, to the sender-domain's DNS records. This `TXT` record contains a public key that recipient mail servers use to verify the signature of a message. The DKIM public-key cryptography procedure enables recipients to verify the authenticity of a sender. See [DKIM Records Explained](https://docs.sendgrid.com/ui/account-and-settings/dkim-records).
@@ -102,8 +114,8 @@ There are no hard limits on the number of emails that can be sent in the Product
 
 1. Check the `/var/log/mail.log` for `authentication failed : Maxium credits exceeded` entries.
 
-   If you see any `authentication failed` log entries, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a credit allotment increase.
+   If you see any `authentication failed` log entries and the **Email sending reputation** is at a minimum of 95, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a credit allotment increase.
 
 ### Email sending reputation
 
-An email sending reputation is a score assigned by an Internet Service Provider (ISP) to a company sending email messages. The higher the score, the more likely an ISP delivers messages to a recipient's inbox. If the score falls below a certain level, the ISP may route messages to recipients' spam folder or even reject messages completely. The reputation score is determined by several factors such as a 30-day average of your IP addresses rank against other IP addresses and spam complaint rate. See [5 Ways to Check Your Sending Reputation](https://sendgrid.com/blog/5-ways-check-sending-reputation/).
+An email sending reputation is a score assigned by an Internet Service Provider (ISP) to a company sending email messages. The higher the score, the more likely an ISP is to deliver messages to a recipient's inbox. If the score falls below a certain level, the ISP may route messages to recipients' spam folder, or even reject messages completely. The reputation score is determined by several factors such as a 30-day average of your IP addresses rank against other IP addresses and spam complaint rate. See [5 Ways to Check Your Sending Reputation](https://sendgrid.com/blog/5-ways-check-sending-reputation/).

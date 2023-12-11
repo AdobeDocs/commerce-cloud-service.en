@@ -2,6 +2,7 @@
 title: Cloud Console
 description: Learn about the Cloud Console for Adobe Commerce on Cloud infrastructure.
 recommendations: noDisplay, catalog
+exl-id: c19a36b6-e5e8-461c-a82c-68b7bf121999
 ---
 
 # Cloud Console

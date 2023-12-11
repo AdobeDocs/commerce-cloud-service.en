@@ -140,8 +140,7 @@ Adobe Commerce on cloud infrastructure supports accessing your environments usin
 Read-only sFTP connections are _not_ supported; sFTP access is provided with _write_ permission by default.
 
 >[!NOTE]
->
->For Pro Staging and Production, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with your **public** key attached. **Never provide your private SSH key.**
+>For Pro Staging and Production, if the sFTP connection is for a _generic_ user that does **not** need to be [added to the Cloud project](../project/user-access.md), you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with their **public** key attached. **Never provide your private SSH key.**
 
 When configuring sFTP, use the information from your SSH access environment command: `<project-id>-<environment-id>--<app-name>@ssh<cloud-host>`
 

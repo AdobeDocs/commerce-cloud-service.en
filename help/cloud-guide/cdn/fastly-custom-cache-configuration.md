@@ -159,7 +159,7 @@ access the Admin without requiring additional credentials.
 
 ## Create custom VCL snippets
 
-Fastly supports a customized version of the Varnish Configuration Language (VCL) to customize the Fastly service configuration. For example, you can allow, block, or redirect access for specific users or IPs using VCL code blocks with edge and Access Control List (ACL) dictionaries.
+Fastly supports a customized version of the Varnish Configuration Language (VCL) to customize the Fastly service configuration. For example, you can allow, block, or redirect access for specific users or IP addresses using VCL code blocks with edge and Access Control List (ACL) dictionaries.
 
 For instructions to create custom VCL snippets, edge dictionaries, and ACLs, see [Custom Fastly VCL snippets](fastly-vcl-custom-snippets.md).
 
