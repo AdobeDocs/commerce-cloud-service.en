@@ -131,9 +131,6 @@ Adobe Commerce on cloud infrastructure supports accessing your environments usin
 
 Read-only sFTP connections are _not_ supported; sFTP access is provided with _write_ permission by default.
 
->[!NOTE]
->For Pro Staging and Production, if the sFTP connection is for a _generic_ user that does **not** need to be [added to the Cloud project](../project/user-access.md), you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with their **public** key attached. **Never provide your private SSH key.**
-
 When configuring sFTP, use the information from your SSH access environment command: `<project-id>-<environment-id>--<app-name>@ssh<cloud-host>`
 
 - **Username**: All content before the `@` in your SSH access destination.
@@ -146,8 +143,11 @@ Depending on the client, additional options may be required to complete SSH auth
 
 For **Starter environments and Pro Integration environments**, you may also want to consider [adding a `mount`](../application/properties.md#mounts) for access to a specific directory. You would add the mount to your `.magento.app.yaml` file. For a list of writable directories, see [Project structure](../project/file-structure.md). This mount point only works in those environments.
 
-For **Pro Staging and Production environments**, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request sFTP access and a mount point for access to the specific `pub/media` folder.
+For **Pro Staging and Production environments**, if you don't currently have SSH access to the environment, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request sFTP access and a mount point for access to the specific folder, e.g., `pub/media`.
 
+>[!NOTE]
+>For Pro Staging and Production, if the sFTP connection is for a _generic_ user that does **not** need to be [added to the Cloud project](../project/user-access.md), you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with their **public** key attached. **Never provide your private SSH key.**
+   
 ## SSH tunneling
 
 You can use SSH tunneling to connect to a service from your local development environment as if the service were local. Before tunneling, configure your [SSH](#add-an-ssh-public-key-to-your-account).
