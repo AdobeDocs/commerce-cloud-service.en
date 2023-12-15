@@ -6,10 +6,7 @@ exl-id: 103e90d5-2ef2-4fef-845c-439344666b00
 ---
 # Pro project workflow
 
-The Pro project includes a single Git repository with a Global `master` and three main environments: the **Integration** environment for development and testing, the **Staging** environment for testing with all services, and the **Production** environment for launching and maintaining your live site. See [Pro architecture](pro-architecture.md) for an overview.
-
->[!NOTE]
->The cloud environment is read-only - in order to make any changes to the files on the server that are not in a [writable disk mount](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/properties.html?lang=en#mounts), you will have to follow the development and deployment workflow.
+The Pro project includes a single Git repository with a Global `master` and three main environments: the **Integration** environment for development and testing, the **Staging** environment for testing with all services, and the **Production** environment for launching and maintaining your live site. These environments are read-only, accepting deployed code changes from branches pushed from your local workspace. See [Pro architecture](pro-architecture.md) for an overview.
 
 The following graphic demonstrates the Pro develop and deploy workflow, which uses a simple, git-branching approach. You [develop](#development-workflow) code using an Active branch based on the Integration environment branch, _pushing_ and _pulling_ code changes to and from your remote, Active branch. You deploy verified code by _merging_ the remote branch to the base branch, which activates an automated [build and deploy](#deployment-workflow) process for that environment.
 
