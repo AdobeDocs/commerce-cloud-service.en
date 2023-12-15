@@ -143,10 +143,10 @@ Depending on the client, additional options may be required to complete SSH auth
 
 For **Starter environments and Pro Integration environments**, you may also want to consider [adding a `mount`](../application/properties.md#mounts) for access to a specific directory. You would add the mount to your `.magento.app.yaml` file. For a list of writable directories, see [Project structure](../project/file-structure.md). This mount point only works in those environments.
 
-For **Pro Staging and Production environments**, if you don't currently have SSH access to the environment, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request sFTP access and a mount point for access to the specific folder, e.g., `pub/media`.
+For **Pro Staging and Production environments**, if you do not have SSH access to the environment, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request sFTP access and a mount point for access to the specific folder, e.g., `pub/media`.
 
 >[!NOTE]
->For Pro Staging and Production, if the sFTP connection is for a _generic_ user that does **not** need to be [added to the Cloud project](../project/user-access.md), you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with their **public** key attached. **Never provide your private SSH key.**
+>For Pro Staging and Production, if the sFTP connection is for a _generic_ user that does **not** need to be [added to the Cloud project](../project/user-access.md), you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with their **public** key attached. **Never provide your private SSH key.**
    
 ## SSH tunneling
 
