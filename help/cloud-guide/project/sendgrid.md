@@ -9,7 +9,7 @@ The SendGrid Simple Mail Transfer Protocol (SMTP) proxy service provides outboun
 
 * All outbound transactional emails
 * Dedicated IP addresses
-* Domain registration, DomainKeys Identified Mail (DKIM) signatures for email domain validation (for Pro only)
+* Domain registration, DomainKeys Identified Mail (DKIM) signatures for email domain validation (for Pro Staging and Production environments only)
 * Custom domain registration (for Pro only)
 * Automated integration for Starter and Pro integration environments. Pro Production and Staging environments require manual provisioning and configuration during the Infrastructure as a Service (IaaS) hardware provisioning process
 
@@ -21,7 +21,7 @@ The SendGrid SMTP proxy is not intended for use as a general-purpose email serve
 
 ## Enable or disable email
 
-By default, outgoing email is enabled on Production environments. The [!UICONTROL Outgoing emails] may appear off in the environment settings regardless of status until you set the `enable_smtp` property. You can enable outgoing emails for other environments to send two-factor authentication emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
+By default, outgoing email is enabled on Pro Production and Staging environments. The [!UICONTROL Outgoing emails] may appear off in the environment settings regardless of status until you set the `enable_smtp` property. You can enable outgoing emails for other environments to send two-factor authentication emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
 
 ## SendGrid dashboard
 
@@ -45,11 +45,11 @@ DKIM is an email authentication technology that enables Internet Service Provide
 
 ### Sender and domain authentication
 
-For SendGrid to send transactional emails on your behalf from Pro Production environments, you must configure your DNS settings to include the three SendGrid subdomain DNS entries. Each SendGrid account is assigned a unique `TXT` record which is used to authenticate outbound emails.
+For SendGrid to send transactional emails on your behalf from Pro Production or Staging environments, you must configure your DNS settings to include the three SendGrid subdomain DNS entries. Each SendGrid account is assigned a unique `TXT` record which is used to authenticate outbound emails.
 
 **To enable domain authentication**:
 
-1. Submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) that requests to enable the DKIM for a specific domain.
+1. Submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) that requests to enable the DKIM for a specific domain (**Pro Staging and Production environments only**).
 1. Update your DNS configuration with the `TXT` and `CNAME` records provided to you in the support ticket.
 
 **Example `TXT` record with account ID**:
