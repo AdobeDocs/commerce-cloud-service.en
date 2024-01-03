@@ -19,7 +19,7 @@ The Cloud Console provides interactive methods to build, manage, and deploy Comm
 
 The _All projects_ view lists all projects that you have permission to access. You can click **[!UICONTROL Show filters]** and filter your project list by type, region, or plan.
 
-![Project list](../../assets/ui-projects-list.png)
+![Project list](../../assets/ui-allprojects-list.png)
 
 ### Project overview
 

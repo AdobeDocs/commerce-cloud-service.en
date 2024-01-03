@@ -20,7 +20,7 @@ Environment-level access is based on the environment type: production, staging, 
 
 | Permission level   |  Access     |  SSH access  |
 | ------------------ | ----------- | :----------: |
-| **Admin**          | Perform administrator tasks, such as change settings, push code, perform tasks and branch management, including merging with the parent environment | Yes |
+| **Admin**          | Perform administrator tasks, such as change settings, push code, perform tasks, and branch management, including merging with the parent environment | Yes |
 | **Contributor**    | Push code and branch the environment; cannot change settings or execute actions | Yes |
 | **Viewer**         | View-only access to the environment type | No |
 | **No access**      | No access to the environment type | No |
@@ -141,7 +141,7 @@ You can use the [Cloud Console](../../get-started/cloud-console.md) to add permi
 
 1. In the _Access_ view, click **[!UICONTROL Add]**.
 
-1. Complete the _Add User_ form:
+1. Complete the _[!UICONTROL Add User]_ form:
 
    - Enter the user email address.
 

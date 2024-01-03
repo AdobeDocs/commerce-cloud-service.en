@@ -52,9 +52,9 @@ The remote Integration, Staging, and Production environments are read only. The 
 >
 >In Production and Staging environments, each node in the three-node cluster has a `/tmp` directory that is not shared with the other nodes.
 
-## Ignoring files
+## Ignore files
 
-There is a base `.gitignore` file with the Adobe Commerce on cloud infrastructure project repository. See the latest [.gitignore file in the magento-cloud repository](https://github.com/magento/magento-cloud/blob/master/.gitignore). To add a file that is in the ignore list, you can use the `-f` (force) option when staging a commit:
+There is a base `.gitignore` file with the Adobe Commerce on cloud infrastructure project repository. See the latest [.gitignore file in the magento-cloud repository](https://github.com/magento/magento-cloud/blob/master/.gitignore). To add a file that is in the `.gitignore` list, you can use the `-f` (force) option when staging a commit:
 
 ```bash
 git add <path/filename> -f
