@@ -36,8 +36,8 @@ The project overview, as long as you do not have an environment selected, shows 
 
 And in the main project overview:
 
-- Environments list—Shows list or tree view of ![active branch](../../assets/icon-active.png){width="32"} (active) and ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactive) environments
-- [Activity stream](activity-stream.md)—Shows running, pending, and recent activities for the project.
+- Environments view shows a list or tree view of ![active branch](../../assets/icon-active.png){width="32"} (active) and ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactive) environments.
+- [Activity stream](activity-stream.md) shows running, pending, and recent activities for the project.
 <!-- - Apps & Services—Shows a topology of service containers -->
 
 For **Starter** projects, there is a hierarchy of branches starting from `master` (Production). Any branch that you create display as children from the `master` branch. Adobe recommends creating a `staging` branch, then create an `integration` branch for development. See [Starter architecture](../architecture/starter-architecture.md).
@@ -57,12 +57,16 @@ The environment overview shows a summary of environment details in the preview a
 - Environment name, type
 - Region, Project ID
 - Date and time of last activity, including backup
-- HTTP access  and search engine status
-- Machine name
+- HTTP access and search engine status
+- Machine name assigned to environment
 - Environment status (Active or Inactive)
 - Storefront URL with **[!UICONTROL Set a custom domain]** button
 
-The [Activity stream](activity-stream.md) makes up the main environment overview.
+And in the main environment overview:
+
+- [Activity stream](activity-stream.md) makes up the main environment overview and shows running, pending, and recent activities for the selected environment.
+<!-- - Services tab shows and Apps & Services menu, including overview and configuration tabs for each service. -->
+- [Backups tab](../storage/snapshots.md#create-a-manual-backup) provides a list of stored backups, history of backup actions, and the Backup button.
 
 ### Access storefront
 
