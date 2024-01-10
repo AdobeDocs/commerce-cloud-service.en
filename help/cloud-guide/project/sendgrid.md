@@ -27,7 +27,10 @@ By default, outgoing email is enabled on Pro Production and Staging environments
 
 All Cloud projects are managed under a central account, so only Support has access to the SendGrid dashboard. SendGrid does not provide subaccount restriction features.
 
-[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for activity logs, such as delivery status or a list of bounced, rejected, or blocked email addresses.
+[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for activity logs, such as delivery status or a list of bounced, rejected, or blocked email addresses. 
+
+>[!NOTE]
+>The activity logs are only retained for 30 days - it will not be possible for us to retrieve any logs from beyond that period.
 
 If possible, include the following information with your request:
 
