@@ -11,6 +11,9 @@ Think of the Adobe Commerce on cloud infrastructure as five functional layers, a
 ![Cloud stack](../../assets/CloudStack.svg)
 
 1. [**Cloud Infrastructure**](pro-architecture.md): Choose either Amazon Web Services (AWS) or Microsoft Azure as your Infrastructure as a Service (IaaS) foundation for your Adobe Commerce on cloud infrastructure Pro projects.
+
+   Adobe routinely analyzes your virtual compute resource (vCPU) usage and automatically allocates resources to optimize your long-term usage and mitigate the risk of exceeding your annual vCPU allotment. If you expect increased site traffic for specific time periods, you must continue to open a Support ticket to [request a temporary upsize](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html).
+
 1. [**Platform as a Service**](cloud-architecture.md): Each Adobe Commerce on cloud infrastructure project provides a Platform as a Service (PaaS) Integration environment for developing, testing, and integrating services.
 1. [**Adobe Commerce**](../project/overview.md): Adobe Commerce on cloud infrastructure provides a pre-provisioned infrastructure that includes PHP, MySQL (MariaDB), Redis, [!DNL RabbitMQ], and supported search engine technologies.
 1. [**Performance Tools**](../monitor/new-relic-service.md): New Relic performance tools enable you to debug, monitor, and manage your applications and infrastructure by collecting, analyzing, and displaying data from your Adobe Commerce on cloud infrastructure projects.
