@@ -113,9 +113,9 @@ Where the routes configuration defines how the URLs are processed, the `web` pro
                ...
    ```
 
-1. Create a pass for the website (`/website`) and reference the root using the alias from the previous step.
+1. Create a pass through for the website (`/website`) and reference the root using the alias from the previous step.
 
-   The alias allows `website` to access values from the root location. In this example, the website pass is on line 21.
+   The alias allows `website` to access values from the root location. In this example, the website passthru is on line 21.
 
    ```yaml
    web:
@@ -140,9 +140,7 @@ Where the routes configuration defines how the URLs are processed, the `web` pro
                        passthru: "/static/$resource"
            "/<website>": *app
              ...
-   ```
-
-1. Continue to [Set up websites, stores, and store views](#set-up-websites-stores-and-store-views).
+   ``` 
 
 **To configure a location with a different directory**:
 
@@ -162,6 +160,14 @@ Where the routes configuration defines how the URLs are processed, the `web` pro
                root: "pub/static"
    ```
 
+1. Create a subdirectory under pub called "<website>" (pub/<website>). Then take a copy of "pub/index.php" into "pub/<website>/index.php" and update the bootstrap path to  "/../../app/bootstrap.php".
+
+```
+try {
+    require __DIR__ . '/../../app/bootstrap.php';
+} catch (\Exception $e) { 
+```             
+            
 1. Create a pass through for the `index.php` file.
 
    ```yaml
@@ -192,6 +198,10 @@ Where the routes configuration defines how the URLs are processed, the `web` pro
              ...
    ```
 
+1. Push these files to GIT:
+   •	pub/<website>/index.php (you might have to force push due to .gitignore)
+   •	.magento.app.yaml
+   
 ### Set up websites, stores, and store views
 
 In the _Admin UI_, set up your Adobe Commerce **Websites**, **Stores**, and **Store Views**. See [Set up multiple websites, stores, and store views in the Admin](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) in the _Configuration Guide_.
