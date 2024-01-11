@@ -162,7 +162,7 @@ Where the routes configuration defines how the URLs are processed, the `web` pro
 
 1. Create a subdirectory for the website under the `pub` directory: `pub/<website>`
 
-1. Copy `pub/index.php` file into the `pub/<website>` directory and update the `bootstrap` path (`/../../app/bootstrap.php`).
+1. Copy the `pub/index.php` file into the `pub/<website>` directory and update the `bootstrap` path (`/../../app/bootstrap.php`).
 
     ```
     try {
