@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2023-09-15
+last-substantial-update: 2024-01-16
 exl-id: ae6b511b-a37d-4776-9a5e-ad7d9f9f6611
 ---
 # Cloud Patches for Commerce
@@ -23,7 +23,14 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.24 {#latest}
+## v1.0.25 {#latest}
+
+Release date: January 16, 2024
+
+- **Cache improvements**-This patch enhances layout cache efficiency, significantly reducing memory usage, for Adobe Commerce versions 2.4.4 and later.<!-- MCLOUD-11514 -->
+- **CRON Jobs improvements**-This patch fixes the issue where missed jobs unnecessarily wait for cron job locks for Adobe Commerce versions 2.4.4 and later.<!-- MCLOUD-11329 -->
+
+## v1.0.24
 
 Release date: September 15, 2023
 
