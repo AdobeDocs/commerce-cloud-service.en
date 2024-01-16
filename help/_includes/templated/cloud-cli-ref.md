@@ -1,7 +1,7 @@
 # magento-cloud (Adobe Commerce on cloud infrastructure)
 
 <!-- The template to render with above values -->
-**Version**: 1.46.0
+**Version**: 1.46.1
 
 This reference contains 119 commands available through the `magento-cloud` command-line tool.
 The initial list is auto generated using the `magento-cloud list` command at Adobe Commerce on cloud infrastructure.
@@ -5081,7 +5081,6 @@ Delete branches that do not exist on the remote
 
 The resources to use when initializing a new service ('minimum', 'default', 'manual', 'parent')
    
--  Default: `parent`
 -  Requires a value
 
 ### `--url`
@@ -5661,7 +5660,6 @@ Delete branches that do not exist on the remote
 
 The resources to use when initializing a new service ('minimum', 'default', 'manual', 'parent')
    
--  Default: `parent`
 -  Requires a value
 
 ### `--url`
