@@ -6,7 +6,9 @@ exl-id: 11aa0862-94c0-47fb-946a-0148f75cc24c
 ---
 # Variable levels
 
-Project variables apply to all environments within the project. Environment variables apply to a specific environment or branch. An environment _inherits_ variable definitions from the parent environment. You can override an inherited value by defining the variable specifically for the environment. For example, to set variables for development, define the variable values in the `.magento.env.yaml` file in the integration environment. All environments branching from the integration environment inherit those values. See [Deployment configuration](configure-env-yaml.md) for details about configuring your environment using the `.magento.env.yaml` file.
+Project variables apply to all environments within the project. Environment variables apply to a specific environment or branch. An environment _inherits_ variable definitions from the parent environment.
+
+You can override an inherited value by defining the variable specifically for the environment. For example, to set variables for development, define the variable values in the `.magento.env.yaml` file in the integration environment. All environments branching from the integration environment inherit those values. See [Deployment configuration](configure-env-yaml.md) for details about configuring your environment using the `.magento.env.yaml` file.
 
 >[!BEGINTABS]
 
@@ -36,7 +38,11 @@ After setting project-specific variables, you must manually redeploy the remote 
 
    ![Configure project](../../assets/icon-configure.png){width="36"}
 
-1. In the _Environments_ list, select an environment and click the **[!UICONTROL Variables]** tab.
+1. To set a project-level variable, under _Project Settings_ click **Variables**.
+
+   ![Project variables](../../assets/ui-project-variables.png)
+
+1. To set an environment-level variable, in the _Environments_ list, select an environment and click the **[!UICONTROL Variables]** tab.
 
    ![Environment variables tab](../../assets/ui-environment-variables.png)
 
@@ -47,12 +53,14 @@ After setting project-specific variables, you must manually redeploy the remote 
    - Available during runtime
    - Available during buildtime
    - JSON value
-   - Sensitive variable
-   - Make inheritable
+   - Sensitive variable (value hidden in the console and CLI responses)
+   - Make inheritable (child environments can inherit environment-level variables)
 
 1. Click **[!UICONTROL Create variable]**.
 
-Setting environment-specific variables in the Cloud Console automatically redeploys the environment.
+>[!CAUTION]
+>
+>Setting environment-specific variables in the Cloud Console automatically redeploys the environment.
 
 >[!ENDTABS]
 

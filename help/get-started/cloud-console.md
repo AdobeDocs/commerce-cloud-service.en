@@ -31,8 +31,9 @@ The new or improved features are as follows:
 | -------------- | ----------------------------------- |
 | [Activity stream](../cloud-guide/project/activity-stream.md) | Interact with a sortable list of running, pending, or historical actions. Select an activity and view logs or cancel a running build. |
 | [Project and Environment overviews](../cloud-guide/project/overview.md#project-overview) | Open your project to find a new overview of project details and environment list. The environment overview provides more details about the environment status. application access, and recent activities. |
-| Integration forms | Use simple forms and guidance to add integrations, such as Bitbucket or Slack notifications. |
+| [Integration forms](../cloud-guide/integrations/overview.md) | Use simple forms and guidance to add integrations, such as Bitbucket or Slack notifications. |
 | [Project list](../cloud-guide/project/overview.md#cloud-console) | The _All projects_ view lists all projects that you have permission to access. You can click **[!UICONTROL Show filters]** and filter your project list by type, region, or plan. |
+| [Variable visibility options](../cloud-guide/environment/variable-levels.md) | Limit the visibility of a project-level or environment-level variable during build or runtime. |
 
 <!-- The following are features yet to be activated:
 | **Apps and services topology** | The Apps & Services topology is visible on Project and Environment views. This interactive diagram allows you to select a service and view the relationship details, such as name, type, version, port, and more. Click **[!UICONTROL View details]** to access the overview and configuration panel for each service. | -->
