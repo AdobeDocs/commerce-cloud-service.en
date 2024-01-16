@@ -23,7 +23,14 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.24 {#latest}
+## v1.0.25 {#latest}
+
+Release date: January 16, 2024
+
+- **Cache improvements**-This patch enhances layout cache efficiency (memory usage reduced) for Adobe Commerce >=2.4.4 <2.4.7<!-- MCLOUD-11514 -->
+- **CRON Jobs improvements**-This patch fixes the issue where missed jobs unnecessarily wait for cron job locks for Adobe Commerce >=2.4.4 <2.4.7<!-- MCLOUD-11329 -->
+
+## v1.0.24
 
 Release date: September 15, 2023
 
