@@ -27,7 +27,7 @@ The release notes include:
 Release date: January 16, 2024
 
 -  ![fix icon](../../assets/fix.svg) **Validator for Elasticsearch & OpenSearch**—Fixed the validator that produced a misleading message to install a search service when LiveSearch is enabled.<!-- MCLOUD-10167 -->
--  ![fix icon](../../assets/fix.svg) **Deployment warning**—Fixed deployment warning about non empty directory.
+-  ![fix icon](../../assets/fix.svg) **Deployment warning**—Fixed an issue that resulted in deployment warnings about non-empty folders.<!-- MCLOUD-8958 -->
 
 ## v2002.1.16
 
