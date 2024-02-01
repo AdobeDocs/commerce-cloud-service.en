@@ -1,6 +1,6 @@
 ---
 title: Get Started with Adobe Commerce
-description: Get started with your new self-service Adobe Commerce on Cloud infrastructure and learn how to build and deploy an Adobe Commerce store in minutes.
+description: Get started with your new self-service Adobe Commerce on cloud infrastructure and learn how to build and deploy an Adobe Commerce store in minutes.
 recommendations: noDisplay, catalog
 exl-id: 0c0c8012-5e91-4b8b-9519-2ece23cd50cc
 ---
@@ -8,7 +8,7 @@ exl-id: 0c0c8012-5e91-4b8b-9519-2ece23cd50cc
 
 Welcome to Adobe Commerce!
 
-The Get Started section steps you through the procedures to initialize your Adobe Commerce account and access the Cloud Project UI. The _Next step_ link at the bottom of each topic opens the next concept and procedure. Each topic builds on the previous topics with new tasks and learning links.
+The Get Started section steps you through the procedures to initialize your Adobe Commerce account and access the [!DNL Cloud Console]. The _Next step_ link at the bottom of each topic opens the next concept and procedure. Each topic builds on the previous topics with new tasks and learning links.
 
 This guide assumes that you have some working knowledge and understanding of the Commerce application. You can refer to the latest Commerce Developer and Commerce User guides:
 

@@ -53,23 +53,11 @@ The main packages of this metapackage are the following:
 >
 >See [Cloud packages for Adobe Commerce](/help/cloud-guide/release-notes/cloud-packages.md) in the _Commerce Release notes_ for a list of dependencies and third-party licenses.
 
-## Gather credentials
+## Local workspace
 
-Before setting up a workspace, gather the following credentials and accounts:
+Before preparing your local workspace, see that you have your [credentials](../../get-started/prepare-workspace.md).
 
-- **Authentication keys (Composer keys)**
-
-    Authentication keys are 32-character authentication tokens that provide secure access to the Adobe Commerce Composer repository (repo.magento.com), and any other Git services required for application development such as GitHub. Your account can have multiple authentication keys. For the workspace setup, start with one specific key for your code repository. If you do not have any keys, contact the Account Owner to create them, or create the [authentication keys](authentication-keys.md) yourself.
-
-- **Cloud Project account**
-
-    The Account Owner or Technical Admin (Project admin) should invite you to the Adobe Commerce on cloud infrastructure project. When you receive the e-mail invitation, click the link and follow the prompts to create your account. See [Onboarding](../../get-started/onboarding.md) or [Access the Cloud Console](../project/overview.md) for details.
-
-- **Adobe Commerce Encryption Key**
-
-    When importing an existing system only, capture the encryption key used to protect your access and data for the database. For details on this key, see [Resolve issues with encryption key](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html)
-
-## Launch a Docker environment
+## Docker environment
 
 You can use the Cloud Docker for Commerce tool to emulate the Adobe Commerce on cloud infrastructure production and development environments for local development:
 

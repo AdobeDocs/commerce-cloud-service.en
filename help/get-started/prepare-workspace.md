@@ -6,7 +6,7 @@ recommendations: noDisplay, catalog
 
 # Prepare your workspace
 
-Whether you are new to Commerce or are an existing Commerce owner moving to the cloud infrastructure, use these steps to guide you in preparing a development workspace for your Cloud project. If you already completed some of these steps or have an existing Adobe Commerce developer environment, review the following for expected results and continue to the next step. Some configurations and workflows differ from a typical on-premises installation.
+Whether you are new to Commerce or are an existing Commerce owner moving to the cloud infrastructure, use these steps for preparing a development workspace for your Cloud project. If you already completed some of these steps or have an existing Adobe Commerce developer environment, review the following for expected results and continue to the next step. Some configurations and workflows differ from a typical on-premises installation.
 
 ## Credentials
 
@@ -18,7 +18,7 @@ Before setting up a workspace, gather the following keys and account access:
 
 - **Cloud Project account**
 
-  The Project Owner should invite you to the Adobe Commerce on cloud infrastructure project. When you receive the e-mail invitation, click the link and follow the prompts to create your account.
+  The Project Owner should invite you to the Adobe Commerce on cloud infrastructure project. When you receive the e-mail invitation, click the link and follow the prompts to create your account. See [Onboarding](onboarding.md).
 
 - **Adobe Commerce Encryption Key**
 
@@ -41,3 +41,23 @@ Before setting up a workspace, gather the following keys and account access:
 - **Integrate Git-based services**
 
   Optionally integrate a Git-based hosting service, such as GitHub or GitLab, with Adobe Commerce on cloud infrastructure. See [Integrations](../cloud-guide/integrations/overview.md).
+
+## Project code
+
+A secure connection is essential for interacting with the remote environments. For a new project, [log in to the Cloud Console](https://console.adobecommerce.com) and click **[!UICONTROL No SSH key]**. This icon is to the right of the command field and is visible when the project does not contain an SSH key. See [Secure connections](../cloud-guide/development/secure-connections.md#add-an-ssh-public-key-to-your-account).
+
+**To clone your codebase to your local workstation**:
+
+1. In the [Cloud Console](https://console.adobecommerce.com), click **[!UICONTROL code]** and select the Git tab.
+
+   ![Clone your code](../assets/ui-git-code.png){width="450"}
+
+1. Copy the `git clone...` command provided.
+
+1. In a terminal, create and change to your working directory.
+
+1. Paste and run the `git clone...` command.
+
+1. Review the [project file structure](../cloud-guide/project/file-structure.md) topic and learn about cloud templates.
+
+Optionally, you can use the Cloud CLI to clone project code instead of the `git clone` method.
