@@ -58,4 +58,6 @@ A secure connection is essential for interacting with the remote environments. F
 
 1. Paste and run the `git clone ...` command.
 
-1. Review the [project file structure](../cloud-guide/project/file-structure.md) topic and learn about cloud templates.
+>[!TIP]
+>
+>Adobe provisions your initial project environment using a template repository that includes package instructions for a specific version of Adobe Commerce. Review the [project file structure](../cloud-guide/project/file-structure.md) topic and learn more about important project files and cloud templates.
