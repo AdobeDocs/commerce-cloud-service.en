@@ -32,7 +32,7 @@ Before setting up a workspace, gather the following keys and account access:
 
 - **Install Docker for local development and testing**
 
-  Use the Docker environment to emulate the Commerce on cloud infrastructure `integration` environment for local development. You need three essential components: an Adobe Commerce v2 template, Docker Compose, and `ece-tools` package.
+  Optionally, use the Docker environment to emulate the Commerce on cloud infrastructure `integration` environment for local development. There are three essential components: an Adobe Commerce v2 template, Docker Compose, and `ece-tools` package.
 
   - [Docker architecture and common commands](../cloud-guide/dev-tools/cloud-docker.md)
   - [Launch Docker development environment](https://developer.adobe.com/commerce/cloud-tools/docker/setup/)
@@ -48,16 +48,14 @@ A secure connection is essential for interacting with the remote environments. F
 
 **To clone your codebase to your local workstation**:
 
-1. In the [Cloud Console](https://console.adobecommerce.com), click **[!UICONTROL code]** and select the Git tab.
+1. In the [Cloud Console](https://console.adobecommerce.com), click **[!UICONTROL code]** and select the **[!UICONTROL Git]** tab.
 
    ![Clone your code](../assets/ui-git-code.png){width="450"}
 
-1. Copy the `git clone...` command provided.
+1. Copy the `git clone ...` command provided.
 
 1. In a terminal, create and change to your working directory.
 
-1. Paste and run the `git clone...` command.
+1. Paste and run the `git clone ...` command.
 
 1. Review the [project file structure](../cloud-guide/project/file-structure.md) topic and learn about cloud templates.
-
-Optionally, you can use the Cloud CLI to clone project code instead of the `git clone` method.
