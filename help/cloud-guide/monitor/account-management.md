@@ -76,7 +76,7 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
 **To configure New Relic for Starter environments**:
 
-1. Find your New Relic license key from the Cloud Console or the Cloud CLI.
+1. Find your New Relic license key from the [!DNL Cloud Console] or the Cloud CLI.
 
    **Cloud Console method**:
 

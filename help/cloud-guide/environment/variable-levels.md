@@ -60,7 +60,7 @@ After setting project-specific variables, you must manually redeploy the remote 
 
 >[!CAUTION]
 >
->Setting environment-specific variables in the Cloud Console automatically redeploys the environment.
+>Setting environment-specific variables in the [!DNL Cloud Console] automatically redeploys the environment.
 
 >[!ENDTABS]
 
@@ -71,7 +71,7 @@ You can limit the visibility of a variable during build or runtime using the `--
 Use the following options to prevent a variable from being seen or inherited:
 
 - `--inheritable false`—disables inheritance for child environments. This is useful for setting production-only values on the `master` branch and allowing all other environments to use a project-level variable of the same name.
-- `--sensitive true`—marks the variable as _non-readable_ in the Cloud Console. You cannot view the variable in the user interface; however, you can view the variable from the application container, like any other variable.
+- `--sensitive true`—marks the variable as _non-readable_ in the [!DNL Cloud Console]. You cannot view the variable in the user interface; however, you can view the variable from the application container, like any other variable.
 
 The following demonstrates a specific case for preventing a variable from being seen or inherited. You can only specify these options in the CLI. This case does not pertain to all available environment variables.
 

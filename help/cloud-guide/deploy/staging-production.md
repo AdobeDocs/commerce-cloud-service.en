@@ -34,7 +34,7 @@ The Staging environment provides a near-production environment that includes a d
 
 ### Deploy code with the Cloud Console
 
-The Cloud Console provides features to create, manage, and deploy code in Integration, Staging, and Production environments for Starter and Pro plans.
+The [!DNL Cloud Console] provides features to create, manage, and deploy code in Integration, Staging, and Production environments for Starter and Pro plans.
 
 **For Pro projects, deploy the integration branch to staging**:
 
@@ -212,7 +212,7 @@ See [rsync](https://linux.die.net/man/1/rsync) help.
 
     >[!TIP]
     >
-    >To find the **SSH access** link in your Cloud Console, select the environment and click **Access Site**.
+    >To find the **SSH access** link in your [!DNL Cloud Console], select the environment and click **Access Site**.
 
    ```bash
    ssh -A <environment_ssh_link@ssh.region.magento.cloud>

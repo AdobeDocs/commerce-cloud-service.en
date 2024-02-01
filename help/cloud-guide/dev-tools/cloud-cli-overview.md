@@ -64,7 +64,7 @@ The following list of commonly used `magento-cloud` CLI commands includes requir
 | `magento-cloud variables`            | List variables in this environment.                |
 | `magento-cloud ssh`                  | Use SSH to connect to the remote environment.      |
 | `magento-cloud url`                  | Open the Adobe Commerce storefront in a browser.   |
-| `magento-cloud web`                  | Open the Cloud Console.                    |
+| `magento-cloud web`                  | Open the [!DNL Cloud Console].                    |
 
 ## Environment commands
 

@@ -27,7 +27,7 @@ Environment-level access is based on the environment type: production, staging, 
 
 {style="table-layout:auto"}
 
-You can add users and assign roles using the `magento-cloud` CLI or the Cloud Console.
+You can add users and assign roles using the `magento-cloud` CLI or the [!DNL Cloud Console].
 
 >[!BEGINSHADEBOX]
 
@@ -184,7 +184,7 @@ Adobe Commerce on cloud infrastructure supports TFA using any of the following a
 - [FreeOTP (Android)](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp)
 - [GAuth Authenticator (Firefox OS, desktop, others)](https://github.com/gbraad-apps/gauth)
 
-Instructions for installing the authenticator application and enabling TFA are available on the _Account settings_ page in the Cloud Console.
+Instructions for installing the authenticator application and enabling TFA are available on the _Account settings_ page in the [!DNL Cloud Console].
 
 **To enable TFA on your user account**:
 

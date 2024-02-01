@@ -48,7 +48,7 @@ Each project is unique, however, and requires performance monitoring to properly
 
 ### SSH access
 
-Certain files and logs, such as the `/app/<project-id>/var/log` directory, are not shared between nodes. Each node has a unique SSH access. You cannot use the `magento-cloud` CLI to log in to the service or web nodes, but you can find the node addresses in the SSH Access list in your Cloud Console.
+Certain files and logs, such as the `/app/<project-id>/var/log` directory, are not shared between nodes. Each node has a unique SSH access. You cannot use the `magento-cloud` CLI to log in to the service or web nodes, but you can find the node addresses in the SSH Access list in your [!DNL Cloud Console].
 
 ```bash
 ssh <node>.<project-ID>-<environment>-<user-ID>@ssh.<region>.magento.com

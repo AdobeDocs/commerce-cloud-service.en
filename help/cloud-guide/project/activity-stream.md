@@ -1,6 +1,6 @@
 ---
 title: Activity stream
-description: Learn how to read the activity stream in the Cloud Console or the Cloud CLI for Adobe Commerce on Cloud infrastructure.
+description: Learn how to read the activity stream in the [!DNL Cloud Console] or the Cloud CLI for Adobe Commerce on Cloud infrastructure.
 ---
 # Activity stream
 
@@ -16,7 +16,7 @@ In the Activity list, click the status icon of an activity to view the log. Alte
 
 ## Manage an activity
 
-Some activities are in a _running_ or _pending_ status. You can act on a running activity, such as canceling a running deployment. The following tabs show two methods of canceling an activity: the Cloud Console or the Cloud CLI.
+Some activities are in a _running_ or _pending_ status. You can act on a running activity, such as canceling a running deployment. The following tabs show two methods of canceling an activity: the [!DNL Cloud Console] or the Cloud CLI.
 
 >[!BEGINTABS]
 
@@ -30,7 +30,7 @@ Not all activities have the cancelation option. For example, the option to cance
 
 ![Cancel activity](../../assets/activity-icons/cancel-activity.png){width="450" align="center"}
 
-If you have a terminal running the deployment activity, canceling in the Cloud Console results in the cancellation in the terminal:
+If you have a terminal running the deployment activity, canceling in the [!DNL Cloud Console] results in the cancellation in the terminal:
 
 ![Activity cancelled in terminal](../../assets/activity-icons/activity-cancelled.png){width="300"}
 
@@ -68,7 +68,7 @@ The ability to filter the activity list is useful when you are looking for somet
 
 ## View stream with Cloud CLI
 
-The `magento-cloud` CLI provides most of the same abilities as the Cloud Console. The `activity` command can:
+The `magento-cloud` CLI provides most of the same abilities as the [!DNL Cloud Console]. The `activity` command can:
 
 - `list` the stream of activities for an environment
 - `get` details about a specific activity

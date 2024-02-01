@@ -18,7 +18,7 @@ The following table summarizes the differences between environments:
 
 |                                        | INTEGRATION | STAGING           | PRODUCTION           |
 | -------------------------------------- | ----------- | ----------------- | -------------------- |
-| Supports settings management in the Cloud Console | Yes         | Limited           | Limited              |
+| Supports settings management in the [!DNL Cloud Console] | Yes         | Limited           | Limited              |
 | Supports multiple branches             | Yes         | No (Staging only) | No (Production only) |
 | Uses YAML files for configuration      | Yes         | No                | No                   |
 | Runs on dedicated IaaS hardware        | No          | Yes               | Yes                  |

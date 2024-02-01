@@ -6,7 +6,7 @@ exl-id: 1cb00db7-2375-4761-9c07-1e20a74859e0
 ---
 # Backup management
 
-You can perform a manual backup of active Starter environments at any time using the **[!UICONTROL Backup]** button in the Cloud Console or using the `magento-cloud snapshot:create` command.
+You can perform a manual backup of active Starter environments at any time using the **[!UICONTROL Backup]** button in the [!DNL Cloud Console] or using the `magento-cloud snapshot:create` command.
 
 A backup or _snapshot_ is a complete backup of environment data that includes all persistent data from running services (MySQL database) and any files stored on the mounted volumes (var, pub/media, app/etc). The snapshot does _not_ include code, since the code is already stored in the Git-based repository. You cannot download a copy of a snapshot.
 
@@ -14,7 +14,7 @@ The backup feature does **not** apply to the Pro environments. The Pro Staging a
 
 ## Create a manual backup
 
-You can create a manual backup of your Starter environment from the Cloud Console or create a snapshot from the Cloud CLI. You must have an [Admin role](../project/user-access.md) for the environment.
+You can create a manual backup of your Starter environment from the [!DNL Cloud Console] or create a snapshot from the Cloud CLI. You must have an [Admin role](../project/user-access.md) for the environment.
 
 **To create a backup using the Cloud Console**:
 

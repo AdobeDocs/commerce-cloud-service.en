@@ -50,7 +50,7 @@ The method for viewing credentials is different for Pro and Starter projects.
   magento-cloud variable:get -e <environment-ID>
   ```
 
-- Cloud Console—Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
+- [!DNL Cloud Console]—Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
 
   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
 

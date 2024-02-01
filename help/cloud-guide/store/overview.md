@@ -8,7 +8,7 @@ exl-id: 06d477e4-02de-4742-8495-541458400e93
 
 There are many ways to customize your store, such as adding a custom theme, installing an extension, or enforcing a specific configuration across cloud infrastructure environments. You can configure settings for specific services directly in Staging and Production environments. You can set up multiple websites and stores. The Store configuration helps you to configure these options in your local workstation and deploying specific settings across environments.
 
-To access your storefront, use the `magento-cloud url` command and answer the prompts. Or you can find the url in the Cloud Console under **Access site**.
+To access your storefront, use the `magento-cloud url` command and answer the prompts. Or you can find the url in the [!DNL Cloud Console] under **Access site**.
 
 ## Configure store options
 

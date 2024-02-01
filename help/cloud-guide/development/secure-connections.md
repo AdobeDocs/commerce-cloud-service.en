@@ -25,7 +25,7 @@ Create an SSH key pair on every machine and workspace that requires access to yo
 
 After you add your SSH public key to your Adobe Commerce on cloud infrastructure account, redeploy all active environments on your account to install the key.
 
-You can add SSH keys to your account using one of the following methods: Cloud CLI or Cloud Console.
+You can add SSH keys to your account using one of the following methods: Cloud CLI or [!DNL Cloud Console].
 
 >[!BEGINTABS]
 
@@ -105,7 +105,7 @@ You can connect to a remote environment using the `magento-cloud` CLI or an SSH 
 
 ### Use an SSH command
 
-The Cloud Console includes a list of Web and SSH access commands for each environment.
+The [!DNL Cloud Console] includes a list of Web and SSH access commands for each environment.
 
 **To copy the SSH command**:
 
