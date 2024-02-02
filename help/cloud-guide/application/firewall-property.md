@@ -10,7 +10,7 @@ exl-id: f169c008-c62a-41b7-a98d-cccd81c7291a
 >
 >Starter projects only
 
-For Starter projects, the `firewall` property adds an _outbound_ firewall to the application. This firewall has no effect on incoming requests. It defines which `tcp` outbound requests can _leave_ an Adobe Commerce site. This is called egress filtering. The outbound firewall is filtering what can egress—exit or escape—your site. Limiting what can escape adds a powerful security tool to your server.
+For Starter projects, the `firewall` property adds an _outbound_ firewall to the application. This firewall has no effect on incoming requests. It defines which `tcp` outbound requests can _leave_ an Adobe Commerce site. This is called egress filtering. The outbound firewall filters what can egress—exit or escape your site. Limiting what can escape adds a powerful security tool to your server.
 
 ## Default restriction policies
 
