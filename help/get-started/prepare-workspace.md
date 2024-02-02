@@ -14,7 +14,7 @@ Before setting up a workspace, gather the following keys and account access:
 
 - **Authentication keys (Composer keys)**
 
-  Authentication keys are 32-character authentication tokens that provide secure access to the Adobe Commerce Composer repository (`repo.magento.com`), and any other Git services required for application development such as GitHub. Your account can have multiple authentication keys. For the workspace setup, start with one specific key for your code repository. If you do not have any keys, contact the project owner, or create the [authentication keys](../cloud-guide/development/authentication-keys.md) yourself.
+  Authentication keys are 32-character authentication tokens that provide secure access to the Adobe Commerce Composer repository (`repo.magento.com`) and any other Git services required for application development such as GitHub. Your account can have multiple authentication keys. For the workspace setup, start with one specific key for your code repository. If you do not have any keys, contact the project owner, or create the [authentication keys](../cloud-guide/development/authentication-keys.md) yourself.
 
 - **Cloud Project account**
 
