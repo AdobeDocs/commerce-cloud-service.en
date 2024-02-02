@@ -14,7 +14,7 @@ Before preparing your local workspace, see that you have your [credentials](../.
 
 ## Required packages
 
-Adobe Commerce on cloud infrastructure uses Composer to manage the dependencies and upgrades for projects. For local development, you  must install the PHP and Composer versions that are compatible with your Cloud project. For example, if you are using the Commerce 2.4.6 cloud template, you can see that [the `.magento.app.yaml` configuration file](https://github.com/magento/magento-cloud/blob/2.4.6/.magento.app.yaml) uses **PHP 8.2** and **Composer 2.2.21**.
+Adobe Commerce on cloud infrastructure uses Composer to manage the dependencies and upgrades for projects. For local development, you  must install the PHP and Composer versions that are compatible with your Cloud project. For example, if you are using the Commerce 2.4.6 cloud template, you can see that the [`.magento.app.yaml`](https://github.com/magento/magento-cloud/blob/2.4.6/.magento.app.yaml) configuration file uses **PHP 8.2** and **Composer 2.2.21**.
 
 Composer installs the required libraries and dependencies for your project in the `vendor` directory. The following required Composer files are in the project root directory:
 
@@ -48,7 +48,7 @@ For example, to use the latest Adobe Commerce version 2.4.5, set `2.4.5` as the 
 
 The main packages of this metapackage are the following:
 
-- **vendor/magento/ece-tools**—The `ece-tools` package is compatible with Adobe Commerce version 2.1.4 and later to provide a rich set of features you can use to manage your Adobe Commerce on cloud infrastructure project. It contains scripts and Adobe Commerce on cloud infrastructure commands designed to help manage your code and automatically build and deploy your projects. See [the `ece-tools` package overview](../dev-tools/package-overview.md).
+- **vendor/magento/ece-tools**—The `ece-tools` package is compatible with Adobe Commerce version 2.1.4 and later to provide a rich set of features you can use to manage your Adobe Commerce on cloud infrastructure project. It contains scripts and Adobe Commerce on cloud infrastructure commands designed to help manage your code and automatically build and deploy your projects. See the [`ece-tools` package overview](../dev-tools/package-overview.md).
 - **vendor/magento/product-enterprise-edition**—This metapackage requires application components, including modules, frameworks, themes, and more.
 - **vendor/fastly2/magento2**—This module manages the Fastly CDN and services for the Pro Staging and Production and Starter Production environments. See [Fastly services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 - **vendor/magento/module-paypal-on-boarding**—This module provides PayPal payment gateway checkout by connecting to your PayPal merchant account. See [PayPal On-Boarding tool](../store/paypal.md).

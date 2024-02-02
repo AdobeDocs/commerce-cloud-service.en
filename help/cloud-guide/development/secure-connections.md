@@ -67,7 +67,7 @@ You can add SSH keys to your account using one of the following methods: Cloud C
 
 **To add an SSH key to your Cloud profile**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [Cloud Console](https://console.adobecommerce.com).
 
 1. In the upper-right account menu, click **My Profile**.
 
@@ -111,7 +111,7 @@ The [!DNL Cloud Console] includes a list of Web and SSH access commands for each
 
 1. Select a project from the _All projects_ list.
 
-1. Select an enevironment.
+1. Select an environment.
 
 1. Click **[!UICONTROL SSH]**.
 
