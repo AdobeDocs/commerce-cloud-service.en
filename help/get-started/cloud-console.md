@@ -13,10 +13,6 @@ The [!DNL Cloud Console] provides interactive methods to build, manage, and depl
 
 ![Project list](../assets/ui-allprojects-list.png)
 
-Select your project and view the [!DNL Cloud Console] project dashaboard.
-
-![Project dashboard](../assets/CloudConsole.svg)
-
 ## Features
 
 The new or improved features include:
