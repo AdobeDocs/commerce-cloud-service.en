@@ -23,7 +23,7 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 | [`type`](#type-and-build) | Set the base container image | `php:8.1` | Yes |
 | [`variables`](variables-property.md) | Apply an environment variable for a specific Commerce version | — | No |
 | [`web`](web-property.md) | Handle external requests | — | Yes |
-| [`workers`](workers-property.md) | Handle external requests | — | Yes, if not using the web propert |
+| [`workers`](workers-property.md) | Handle external requests | — | Yes, if not using the web property |
 
 {style="table-layout:auto"}
 

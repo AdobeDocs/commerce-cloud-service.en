@@ -30,7 +30,7 @@ Adobe recommends fully testing in your `staging` branch before pushing to the `m
 
 Adobe recommends creating a branch called `staging` from `master`. The `staging` branch deploys code to the staging environment to provide a pre-production environment to test code, modules and extensions, payment gateways, shipping, product data, and much more. This environment provides the configuration for all services to match the production environment including Fastly, New Relic APM, and search.
 
-Additional sections in this guide provide instructions for final code deployments and testing production level interactions in a secure Staging environment. For best performance and feature testing, replicate your  database into the Staging environment.
+Additional sections in this guide provide instructions for final code deployments and testing production-level interactions in a secure Staging environment. For best performance and feature testing, replicate your database into the Staging environment.
 
 >[!WARNING]
 >

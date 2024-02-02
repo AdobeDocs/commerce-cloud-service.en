@@ -64,7 +64,7 @@ To enable or disable auto scaling for your Adobe Commerce on cloud infrastructur
 
 ### Load testing
 
-Adobe enables auto scaling on your Cloud project _staging_ cluster first. After you perform and complete load testing in your  environment, Adobe then enables auto scaling on your production cluster. For guidance on load testing, see [Performance testing](../launch/checklist.md#performance-testing).
+Adobe enables auto scaling on your Cloud project _staging_ cluster first. After you perform and complete load testing in your environment, Adobe then enables auto scaling on your production cluster. For guidance on load testing, see [Performance testing](../launch/checklist.md#performance-testing).
 
 ### IP allowlist
 

@@ -50,7 +50,7 @@ The `magento-cloud` CLI tool enables developers and system administrators the ab
 
 ## Common commands
 
-Adobe designed these commands to manage Cloud integration environments and recommends that you run the `magento-cloud` CLI from a project directory, so that you can omit the `-p <project-ID>` parameter.
+Adobe designed these commands to manage Cloud integration environments and recommends that you run the `magento-cloud` CLI from a project directory so you can omit the `-p <project-ID>` parameter.
 
 The following list of commonly used `magento-cloud` CLI commands includes required options only. You can use the `--help` option with any command to see more information.
 

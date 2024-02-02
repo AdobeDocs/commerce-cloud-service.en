@@ -36,7 +36,7 @@ Follow best practices for builds and deployment, and use the [Upgrades and patch
 
         - Free up disk space–Clear the cache, and clean the `/log` and `/tmp` directories before deploying.
 
-- **Plan and perform a successful upgrade on local and integration environments, before deploying to Staging**–After upgrade, test your deployment and resolve any issues.
+- **Plan and perform a successful upgrade on local and integration environments, before deploying to Staging**–After the upgrade, test your deployment and resolve any issues.
 
 - **Merge code to Staging, and then to Production**–Test and resolve any issues in the Staging environment before pushing changes to the Production environment.
 
