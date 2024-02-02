@@ -1,7 +1,7 @@
 # magento-cloud (Adobe Commerce on cloud infrastructure)
 
 <!-- The template to render with above values -->
-**Version**: 1.44.0
+**Version**: 1.46.1
 
 This reference contains 119 commands available through the `magento-cloud` command-line tool.
 The initial list is auto generated using the `magento-cloud list` command at Adobe Commerce on cloud infrastructure.
@@ -15,7 +15,7 @@ The initial list is auto generated using the `magento-cloud list` command at Ado
 Clear the CLI cache
 
 ```bash
-magento-cloud clear-cache
+magento-cloud cc
 ```
 
 ### `--help`, `-h`
@@ -403,7 +403,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `web`
 
-Open the Web UI
+Open the project in the Web UI
 
 ```bash
 magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
@@ -695,7 +695,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Get a list of activities for an environment or project
 
 ```bash
-magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud activities [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--type`, `-t`
@@ -1038,7 +1038,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 List apps in the project
 
 ```bash
-magento-cloud app:list [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud apps [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--refresh`
@@ -1173,7 +1173,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Log in to Magento Cloud via a browser
 
 ```bash
-magento-cloud auth:browser-login [-f|--force] [--browser BROWSER] [--pipe]
+magento-cloud login [-f|--force] [--browser BROWSER] [--pipe]
 ```
 
 ### `--force`, `-f`
@@ -1328,7 +1328,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Log out of Magento Cloud
 
 ```bash
-magento-cloud auth:logout [-a|--all] [--other]
+magento-cloud logout [-a|--all] [--other]
 ```
 
 ### `--all`, `-a`
@@ -1686,7 +1686,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 List project certificates
 
 ```bash
-magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
+magento-cloud certificates [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 ### `--domain`
@@ -1901,7 +1901,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 List commits
 
 ```bash
-magento-cloud commit:list [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
+magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2247,7 +2247,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Run SQL on the remote database
 
 ```bash
-magento-cloud db:sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
+magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
 ```
 
 
@@ -2615,7 +2615,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Get a list of all domains
 
 ```bash
-magento-cloud domain:list [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--format`
@@ -2973,7 +2973,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Check out an environment
 
 ```bash
-magento-cloud environment:checkout [-i|--identity-file IDENTITY-FILE] [--] [<id>]
+magento-cloud checkout [-i|--identity-file IDENTITY-FILE] [--] [<id>]
 ```
 
 
@@ -3171,7 +3171,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Update HTTP access settings for an environment
 
 ```bash
-magento-cloud environment:http-access [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 ### `--access`
@@ -3460,7 +3460,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Get a list of environments
 
 ```bash
-magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
+magento-cloud environments [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 ### `--no-inactive`, `-I`
@@ -3573,7 +3573,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Read an environment's logs
 
 ```bash
-magento-cloud environment:logs [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
+magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
 ```
 
 
@@ -3667,7 +3667,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Merge an environment
 
 ```bash
-magento-cloud environment:merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -3813,7 +3813,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Push code to an environment
 
 ```bash
-magento-cloud environment:push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
+magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
 ```
 
 
@@ -3826,7 +3826,7 @@ The source ref: a branch name or commit hash
 
 ### `--target`
 
-The target branch name
+The target branch name. Defaults to the current branch.
    
 -  Requires a value
 
@@ -3846,7 +3846,7 @@ Allow non-fast-forward updates, if the remote-tracking branch is up to date
 
 ### `--set-upstream`, `-u`
 
-Set the target environment as the upstream for the source branch
+Set the target environment as the upstream for the source branch. This will also set the target project as the remote for the local repository.
    
 -  Default: `false`
 -  Does not accept a value
@@ -3950,7 +3950,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Redeploy an environment
 
 ```bash
-magento-cloud environment:redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 ### `--project`, `-p`
@@ -4020,7 +4020,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Show an environment's relationships
 
 ```bash
-magento-cloud environment:relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
+magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
 ```
 
 
@@ -4177,7 +4177,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Copy files to and from an environment using scp
 
 ```bash
-magento-cloud environment:scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
+magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
 ```
 
 
@@ -4273,7 +4273,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 SSH to the current environment
 
 ```bash
-magento-cloud environment:ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
+magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
 ```
 
 
@@ -4376,7 +4376,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Synchronize an environment's code and/or data from its parent
 
 ```bash
-magento-cloud environment:synchronize [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
+magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
 ```
 
 
@@ -4462,7 +4462,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Get the public URLs of an environment
 
 ```bash
-magento-cloud environment:url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--primary`, `-1`
@@ -4538,7 +4538,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Open a tunnel to Xdebug on the environment
 
 ```bash
-magento-cloud environment:xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
+magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--port`
@@ -4726,7 +4726,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Get a list of activities for an integration
 
 ```bash
-magento-cloud integration:activity:list [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud int:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -4944,7 +4944,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Add an integration to the project
 
 ```bash
-magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BITBUCKET-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [--header HEADER] [-p|--project PROJECT] [-W|--no-wait] [--wait]
+magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BITBUCKET-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--resources-init RESOURCES-INIT] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [--header HEADER] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--type`
@@ -5075,6 +5075,12 @@ Fetch all branches from the remote (as inactive environments)
 Delete branches that do not exist on the remote
    
 -  Default: `true`
+-  Requires a value
+
+### `--resources-init`
+
+The resources to use when initializing a new service ('minimum', 'default', 'manual', 'parent')
+   
 -  Requires a value
 
 ### `--url`
@@ -5440,7 +5446,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 View a list of project integration(s)
 
 ```bash
-magento-cloud integration:list [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
+magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 ### `--format`
@@ -5511,7 +5517,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Update an integration
 
 ```bash
-magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BITBUCKET-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [--header HEADER] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BITBUCKET-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--resources-init RESOURCES-INIT] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [--header HEADER] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -5648,6 +5654,12 @@ Fetch all branches from the remote (as inactive environments)
 Delete branches that do not exist on the remote
    
 -  Default: `true`
+-  Requires a value
+
+### `--resources-init`
+
+The resources to use when initializing a new service ('minimum', 'default', 'manual', 'parent')
+   
 -  Requires a value
 
 ### `--url`
@@ -5916,7 +5928,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Build the current project locally
 
 ```bash
-magento-cloud local:build [-a|--abslinks] [-s|--source SOURCE] [-d|--destination DESTINATION] [-c|--copy] [--clone] [--run-deploy-hooks] [--no-clean] [--no-archive] [--no-backup] [--no-cache] [--no-build-hooks] [--no-deps] [--working-copy] [--concurrency CONCURRENCY] [--lock] [--] [<app>]...
+magento-cloud build [-a|--abslinks] [-s|--source SOURCE] [-d|--destination DESTINATION] [-c|--copy] [--clone] [--run-deploy-hooks] [--no-clean] [--no-archive] [--no-backup] [--no-cache] [--no-build-hooks] [--no-deps] [--working-copy] [--concurrency CONCURRENCY] [--lock] [--] [<app>]...
 ```
 
 
@@ -6072,7 +6084,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Find the local project root
 
 ```bash
-magento-cloud local:dir [<subdir>]
+magento-cloud dir [<subdir>]
 ```
 
 
@@ -6122,8 +6134,15 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 \<fg=white;bg=red> BETA \</> Show CPU, disk and memory metrics for an environment
 
 ```bash
-magento-cloud metrics [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud metrics [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
+
+### `--bytes`, `-B`
+
+Show sizes in bytes
+   
+-  Default: `false`
+-  Does not accept a value
 
 ### `--range`, `-r`
 
@@ -6133,7 +6152,7 @@ The time range. Metrics will be loaded for this duration until the end time (--t
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>, maximum \<comment>1h\</comment>.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>.
    
 -  Requires a value
 
@@ -6245,7 +6264,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 \<fg=white;bg=red> BETA \</> Show CPU usage of an environment
 
 ```bash
-magento-cloud metrics:cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 ### `--range`, `-r`
@@ -6256,7 +6275,7 @@ The time range. Metrics will be loaded for this duration until the end time (--t
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>, maximum \<comment>1h\</comment>.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>.
    
 -  Requires a value
 
@@ -6368,7 +6387,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Show disk usage of an environment
 
 ```bash
-magento-cloud metrics:disk-usage [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [--tmp] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud disk [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [--tmp] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 ### `--bytes`, `-B`
@@ -6386,7 +6405,7 @@ The time range. Metrics will be loaded for this duration until the end time (--t
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>, maximum \<comment>1h\</comment>.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>.
    
 -  Requires a value
 
@@ -6505,7 +6524,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 \<fg=white;bg=red> BETA \</> Show memory usage of an environment
 
 ```bash
-magento-cloud metrics:memory [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud mem [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 ### `--bytes`, `-B`
@@ -6523,7 +6542,7 @@ The time range. Metrics will be loaded for this duration until the end time (--t
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>, maximum \<comment>1h\</comment>.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>.
    
 -  Requires a value
 
@@ -6680,7 +6699,7 @@ File(s) to exclude from the download (pattern)
 
 ### `--include`
 
-File(s) to include in the download (pattern)
+File(s) not to exclude (pattern)
    
 -  Default: `[]`
 -  Requires a value
@@ -6769,7 +6788,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Get a list of mounts
 
 ```bash
-magento-cloud mount:list [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
+magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 ### `--paths`
@@ -7024,7 +7043,7 @@ File(s) to exclude from the upload (pattern)
 
 ### `--include`
 
-File(s) to include in the upload (pattern)
+File(s) not to exclude (pattern)
    
 -  Default: `[]`
 -  Requires a value
@@ -7113,7 +7132,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 \<fg=white;bg=red> BETA \</> List runtime operations on an environment
 
 ```bash
-magento-cloud operation:list [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--full`
@@ -7347,7 +7366,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Clone a project locally
 
 ```bash
-magento-cloud project:get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
+magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
 ```
 
 
@@ -7543,7 +7562,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Get a list of all active projects
 
 ```bash
-magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud projects [--pipe] [--region REGION] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 ### `--pipe`
@@ -7553,9 +7572,9 @@ Output a simple list of project IDs. Disables pagination.
 -  Default: `false`
 -  Does not accept a value
 
-### `--host`
+### `--region`
 
-Filter by region hostname (exact match)
+Filter by region (exact match)
    
 -  Requires a value
 
@@ -7614,7 +7633,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`
 
-Columns to display. Available columns: id*, title*, region*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
+Columns to display. Available columns: id*, title*, region*, created_at, organization_id, organization_label, organization_name, status (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -7674,7 +7693,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Set the remote project for the current Git repository
 
 ```bash
-magento-cloud project:set-remote [<project>]
+magento-cloud set-remote [<project>]
 ```
 
 
@@ -7882,7 +7901,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Read a directory or file in the project repository
 
 ```bash
-magento-cloud repo:read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -8057,7 +8076,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 List all routes for an environment
 
 ```bash
-magento-cloud route:list [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
+magento-cloud routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
 ```
 
 
@@ -8197,7 +8216,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Update the CLI to the latest version
 
 ```bash
-magento-cloud self:update [--no-major] [--unstable] [--manifest MANIFEST] [--current-version CURRENT-VERSION] [--timeout TIMEOUT]
+magento-cloud update [--no-major] [--unstable] [--manifest MANIFEST] [--current-version CURRENT-VERSION] [--timeout TIMEOUT]
 ```
 
 ### `--no-major`
@@ -8274,7 +8293,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 List services in the project
 
 ```bash
-magento-cloud service:list [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud services [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--refresh`
@@ -8365,7 +8384,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Create a binary archive dump of data from MongoDB
 
 ```bash
-magento-cloud service:mongo:dump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--collection`, `-c`
@@ -8459,7 +8478,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Export data from MongoDB
 
 ```bash
-magento-cloud service:mongo:export [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--collection`, `-c`
@@ -8559,7 +8578,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Restore a binary archive dump of data into MongoDB
 
 ```bash
-magento-cloud service:mongo:restore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--collection`, `-c`
@@ -8639,7 +8658,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Use the MongoDB shell
 
 ```bash
-magento-cloud service:mongo:shell [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--eval`
@@ -8719,7 +8738,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Access the Redis CLI
 
 ```bash
-magento-cloud service:redis-cli [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
+magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
 ```
 
 
@@ -8799,7 +8818,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Make a snapshot of an environment
 
 ```bash
-magento-cloud snapshot:create [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -9033,7 +9052,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 List available snapshots of an environment
 
 ```bash
-magento-cloud snapshot:list [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud snapshots [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--format`
@@ -9205,7 +9224,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 List source operations on an environment
 
 ```bash
-magento-cloud source-operation:list [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud source-ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--full`
@@ -9543,7 +9562,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Get a list of SSH keys in your account
 
 ```bash
-magento-cloud ssh-key:list [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud ssh-keys [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--format`
@@ -9772,7 +9791,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 View relationship info for SSH tunnels
 
 ```bash
-magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--property`, `-P`
@@ -9805,27 +9824,6 @@ The environment ID. Use "." to select the project's default environment.
 The remote application name
    
 -  Requires a value
-
-### `--format`
-
-The output format: table, csv, tsv, or plain
-   
--  Default: `table`
--  Requires a value
-
-### `--columns`
-
-Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
-   
--  Default: `[]`
--  Requires a value
-
-### `--no-header`
-
-Do not output the table header
-   
--  Default: `false`
--  Does not accept a value
 
 ### `--help`, `-h`
 
@@ -9868,7 +9866,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 List SSH tunnels
 
 ```bash
-magento-cloud tunnel:list [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--all`, `-a`
@@ -9905,7 +9903,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
+Columns to display. Available columns: port*, project*, environment*, app*, relationship*, url (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -10370,7 +10368,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 List project users
 
 ```bash
-magento-cloud user:list [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
+magento-cloud users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 ### `--format`
@@ -10382,7 +10380,7 @@ The output format: table, csv, tsv, or plain
 
 ### `--columns`, `-c`
 
-Columns to display. Available columns: email, id, name, role. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
+Columns to display. Available columns: email*, name*, role*, id*, granted_at, updated_at (* = default columns). The character "+" can be used as a placeholder for the default columns. The % or * characters may be used as a wildcard. Values may be split by commas (e.g. "a,b,c") and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -10750,7 +10748,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 View a variable
 
 ```bash
-magento-cloud variable:get [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
+magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
 ```
 
 
@@ -10852,7 +10850,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 List variables
 
 ```bash
-magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud variables [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--level`, `-l`
@@ -11072,7 +11070,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 Get a list of all deployed workers
 
 ```bash
-magento-cloud worker:list [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud workers [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--refresh`

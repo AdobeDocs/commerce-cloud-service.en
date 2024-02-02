@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2023-10-16
+last-substantial-update: 2024-01-16
 exl-id: a464b940-c56e-4a7c-9948-559539e25361
 ---
 # ECE-Tools release notes
@@ -22,7 +22,14 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.1.16 {#latest}
+## v2002.1.17 {#latest}
+
+Release date: January 16, 2024
+
+-  ![fix icon](../../assets/fix.svg) **Validator for Elasticsearch & OpenSearch**—Fixed the validator that produced a misleading message to install a search service when LiveSearch is enabled.<!-- MCLOUD-10167 -->
+-  ![fix icon](../../assets/fix.svg) **Deployment warning**—Fixed an issue that resulted in deployment warnings about non-empty folders.<!-- MCLOUD-8958 -->
+
+## v2002.1.16
 
 Release date: October 16, 2023
 
