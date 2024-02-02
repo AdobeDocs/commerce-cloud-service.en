@@ -10,9 +10,13 @@ exl-id: d4452d7d-d3dc-4f8d-8bd7-76f05d89f545
 
 Adobe Commerce on cloud infrastructure remote environments are **Read Only**, including all Starter environments and all Pro integration, Staging, and Production environments. In a local development environment, you can write and test code before pushing it to an integration environment for further testing and deployment to Staging and Production.
 
+Before preparing your local workspace, see that you have your [credentials](../../get-started/prepare-workspace.md). Local development requires PHP and Composer installation unless you opt to use [Cloud Docker for Commerce](#docker-environment).
+
 ## Required packages
 
-Adobe Commerce on cloud infrastructure uses Composer to manage the dependencies and upgrades for projects. Composer installs the required libraries and dependencies for your project in the `vendor` directory. The following required Composer files are in the project root directory:
+Adobe Commerce on cloud infrastructure uses Composer to manage the dependencies and upgrades for projects. For local development, you  must install the PHP and Composer versions that are compatible with your Cloud project. For example, if you are using the Commerce 2.4.6 cloud template, you can see that [the `.magento.app.yaml` configuration file](https://github.com/magento/magento-cloud/blob/2.4.6/.magento.app.yaml) uses **PHP 8.2** and **Composer 2.2.21**.
+
+Composer installs the required libraries and dependencies for your project in the `vendor` directory. The following required Composer files are in the project root directory:
 
 - `composer.json`—Use the `composer.json` file to manage product installations and upgrades.
 - `composer.lock`—The `composer.lock` file stores a set of exact version dependencies that satisfy the version constraints of every requirement for every package in the dependency tree of the project.
@@ -53,16 +57,13 @@ The main packages of this metapackage are the following:
 >
 >See [Cloud packages for Adobe Commerce](/help/cloud-guide/release-notes/cloud-packages.md) in the _Commerce Release notes_ for a list of dependencies and third-party licenses.
 
-## Local workspace
-
-Before preparing your local workspace, see that you have your [credentials](../../get-started/prepare-workspace.md).
-
 ## Docker environment
 
-You can use the Cloud Docker for Commerce tool to emulate the Adobe Commerce on cloud infrastructure production and development environments for local development:
+You can use the Cloud Docker for Commerce tool to emulate the Adobe Commerce on cloud infrastructure production and development environments for local development. Cloud Docker for Commerce does not require PHP and Composer to be installed locally.
 
+- [Local development with Cloud Docker](https://developer.adobe.com/commerce/cloud-tools/docker/setup/) in the Adobe Developer site
 - [Docker architecture and common commands](../dev-tools/cloud-docker.md)
-- [Launch Docker development environment](https://developer.adobe.com/commerce/cloud-tools/docker/setup/)
+- [Cloud Docker release notes](../release-notes/cloud-docker.md)
 
 >[!TIP]
 >

@@ -59,9 +59,7 @@ You can add SSH keys to your account using one of the following methods: Cloud C
 
 1. Log in to [the Cloud Console](https://console.adobecommerce.com).
 
-1. Click **No SSH key**. This icon is to the right of the command field and is visible when the project does not contain an SSH key.
-
-   ![No SSH key](../../assets/no-ssh-key.png)
+1. Click **[!UICONTROL No SSH key]**. This icon is to the right of the command field and is visible when the project does not contain an SSH key.
 
 1. Copy and paste the content of your public SSH key in the **Public key** field.
 
