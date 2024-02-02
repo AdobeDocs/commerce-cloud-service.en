@@ -192,7 +192,7 @@ Instructions for installing the authenticator application and enabling TFA are a
 
 1. In the upper-right account menu, click **[!UICONTROL My Profile]**.
 
-1. In the _Security_ tab, click **[!UICONTROL Set up application]**.
+1. On the _Security_ tab, click **[!UICONTROL Set up application]**.
 
 1. If you do not have an approved authenticator application on your mobile device, use the linked instructions to install one.
 
@@ -267,7 +267,7 @@ On projects that have MFA enforcement enabled, you must have an API token to ena
 
 1. On the _My Profile_ page, click the **[!UICONTROL API tokens]** tab.
 
-1. Click **[!UICONTROL Create API token]** and enter a name, for example specify a name that matches the machine user or automated process that uses the API token.
+1. Click **[!UICONTROL Create API token]** and enter a name, for example, specify a name that matches the machine user or automated process that uses the API token.
 
    ![API tokens](../../assets/api-token-name.png)
 

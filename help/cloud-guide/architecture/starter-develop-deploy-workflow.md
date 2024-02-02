@@ -117,7 +117,7 @@ Adobe Commerce on cloud infrastructure provides a set of two [Configuration Mana
 
 The generated file is `app/etc/config.php`.
 
-You generate the file in the integration environment where you configured Adobe Commerce. Step through the process of generating the file, adding it to your branch, and deploying it.
+Generate the file in the integration environment where you configured Adobe Commerce. Step through the process of generating the file, adding it to your branch, and deploying it.
 
 **Important notes** on Configuration Management:
 
@@ -211,13 +211,13 @@ See [Deployment process](../deploy/process.md).
 
 Always push your code in iterations to the `staging` environment for full testing. The first time you use this environment, you must configure a few services, including [Fastly](/help/cloud-guide/cdn/fastly.md) and [New Relic](../monitor/new-relic-service.md). Also, configure payment gateways, shipping, notifications, and other vital services with sandbox or testing credentials.
 
-Staging is a pre-production environment, providing all services and settings as close to production as possible. Thoroughly test every service, verify your performance testing tools, perform UAT testing as an administrator and customers, until you feel your store is ready for production.
+Staging is a pre-production environment, providing all services and settings as close to production as possible. Thoroughly test every service, verify your performance testing tools, perform UAT testing as an administrator and as a customer, until you feel your store is ready for production.
 
 See [Deploy your store](../deploy/staging-production.md).
 
 ### Push to Production
 
-When you push to the `master` branch, you are pushing to the `production` environment. Complete configuration and testing activities in the production environment like you did in the staging environment with one important difference. In the production environment, use live credentials for configuration and testing. The moment you launch your site, customers can complete purchases, and administrators can manage the live store.
+When you push to the `master` branch, you are pushing to the `production` environment. Complete configuration and testing activities in the production environment as you did in the staging environment with one important difference. In the production environment, use live credentials for configuration and testing. The moment you launch your site, customers can complete purchases, and administrators can manage the live store.
 
 See [Deploy your store](../deploy/staging-production.md).
 

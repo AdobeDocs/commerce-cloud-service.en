@@ -22,7 +22,6 @@ The Adobe Commerce on cloud infrastructure Project page in the ([!DNL Onboarding
 
 - Add a Technical Admin, a super user that can manage your project and branches
 - Access your project environment, including a link to the Cloud Console
-- Provide your developer with a getting started for local development
 - Complete a quick user acceptance test (UAT) checklist with links to further tests
 
 **To open the project page**:
