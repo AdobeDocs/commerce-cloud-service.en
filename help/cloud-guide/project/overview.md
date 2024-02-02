@@ -70,7 +70,7 @@ And in the main environment overview:
 
 ### Access storefront
 
-Each active environment has a storefront. Select an environment from the top navigation and click the URL in the environment overview. Also, there is a **[!UICONTROL URLs]** list on the right-had side above the Activity list.
+Each active environment has a storefront. Select an environment from the top navigation and click the URL in the environment overview. Also, there is a **[!UICONTROL URLs]** list on the right-hand side above the Activity list.
 
 The Web Access URL may include the following:
 

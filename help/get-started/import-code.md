@@ -13,5 +13,5 @@ Adobe recommends that you create a Commerce on cloud infrastructure project from
 The complete workflow for importing existing code includes the following steps:
 
 - Replace the template code
-- Import database, media content
-- Clear cache and verify import
+- Import database and media content
+- Clear the cache and verify import
