@@ -2,6 +2,7 @@
 title: "Log in to [!DNL Cloud Console]"
 description: Learn about the [!DNL Cloud Console] for Adobe Commerce on Cloud infrastructure.
 recommendations: noDisplay, catalog
+last-substantial-update: 2024-02-06
 exl-id: c19a36b6-e5e8-461c-a82c-68b7bf121999
 ---
 

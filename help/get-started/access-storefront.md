@@ -1,6 +1,7 @@
 ---
 title: Access your Commerce Admin panel
 description: Learn how to access your Commerce Admin panel.
+recommendations: noDisplay, catalog
 ---
 
 # Access your Commerce Admin panel

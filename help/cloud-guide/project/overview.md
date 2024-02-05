@@ -1,6 +1,7 @@
 ---
 title: Cloud infrastructure project
 description: Read an overview about the Adobe Commerce on cloud infrastructure [!DNL Cloud Console] and learn how to access the account settings.
+last-substantial-update: 2024-02-06
 exl-id: ae862898-9b4d-45ed-b370-e82cc6f99017
 ---
 # Cloud infrastructure project
