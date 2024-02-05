@@ -1,6 +1,6 @@
 ---
 title: Set cache for static files
-description: Learn to set cache storage options in the Commerce application configuration file.
+description: Learn to set cache storage options in the [!DNL Commerce] application configuration file.
 feature: Cloud, Configuration, Cache, SCD
 exl-id: ca6db004-47fc-45ea-b8db-c0ecc3c2136b
 ---

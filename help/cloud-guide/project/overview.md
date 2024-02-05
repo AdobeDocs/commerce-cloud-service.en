@@ -5,7 +5,7 @@ exl-id: ae862898-9b4d-45ed-b370-e82cc6f99017
 ---
 # Cloud infrastructure project
 
-The Adobe Commerce on cloud infrastructure project includes all code in Git branches, associated environments, and scripts to deploy the Commerce application. Environments contain services to support the Commerce application, including a database, web server, and caching server.
+The Adobe Commerce on cloud infrastructure project includes all code in Git branches, associated environments, and scripts to deploy the [!DNL Commerce] application. Environments contain services to support the [!DNL Commerce] application, including a database, web server, and caching server.
 
 Adobe provides a [!DNL Cloud Console] and developer tools to fully manage all aspects of your project. You, as the account owner, have full access to all environments.
 

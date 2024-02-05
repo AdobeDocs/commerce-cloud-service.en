@@ -1,6 +1,6 @@
 ---
 user-guide-title: Get Started with Commerce
-user-guide-description: Begin your initial set up of the Commerce application in the Cloud infrastructure.
+user-guide-description: Begin your initial set up of the [!DNL Commerce] application in the Cloud infrastructure.
 feature: Cloud
 product: magento
 recommendations: noDisplay, noCatalog

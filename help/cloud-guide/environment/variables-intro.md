@@ -8,7 +8,7 @@ exl-id: bfee2f69-93a6-4d26-bb9e-be8acc5673c3
 
 Adobe Commerce on cloud infrastructure enables you to assign environment variables to override configuration options. The `ece-tools` package sets values in the `env.php` file based on values from [Cloud variables](variables-cloud.md), variables set in the [!DNL Cloud Console], and the `.magento.env.yaml` configuration file.
 
-The environment variables in the `.magento.env.yaml` file customize the Cloud environment by overriding your existing Commerce configuration. If a default value is `Not Set`, then the `ece-tools` package takes **NO** action and uses the Commerce default or the value from the `MAGENTO_CLOUD_RELATIONSHIPS` configuration. If the default value is set, then the `ece-tools` package acts to set that default.
+The environment variables in the `.magento.env.yaml` file customize the Cloud environment by overriding your existing Commerce configuration. If a default value is `Not Set`, then the `ece-tools` package takes **NO** action and uses the [!DNL Commerce] default or the value from the `MAGENTO_CLOUD_RELATIONSHIPS` configuration. If the default value is set, then the `ece-tools` package acts to set that default.
 
 The types of environment variables include:
 

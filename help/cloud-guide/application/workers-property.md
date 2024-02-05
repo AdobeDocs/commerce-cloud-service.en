@@ -1,12 +1,12 @@
 ---
 title: Workers
-description: Learn how to configure the workers property in the Commerce application configuration file.
+description: Learn how to configure the workers property in the [!DNL Commerce] application configuration file.
 feature: Cloud, Configuration
 exl-id: d6816925-5912-45ca-8255-6c307e58542d
 ---
 # Workers property
 
-You can define a worker to run independently from the web instance without a running Nginx instance; however, the worker does use the same network storage used by the Commerce application. You do not need to set up a web server on the worker instance (using Node.js or Go) because the router cannot direct public requests to the worker. This makes the worker instance ideal for background tasks or continually running tasks that risk blocking a deployment.
+You can define a worker to run independently from the web instance without a running Nginx instance; however, the worker does use the same network storage used by the [!DNL Commerce] application. You do not need to set up a web server on the worker instance (using Node.js or Go) because the router cannot direct public requests to the worker. This makes the worker instance ideal for background tasks or continually running tasks that risk blocking a deployment.
 
 ## Configure a worker
 

@@ -10,7 +10,7 @@ Adobe deprecated the `magento/magento-cloud-configuration` and `magento/ece-patc
 
 >[!WARNING]
 >
->If your project contains the `ece-tools` package, you can skip the following upgrade. To verify, retrieve the Commerce version using the `php vendor/bin/ece-tools -V` command at your local project root directory.
+>If your project contains the `ece-tools` package, you can skip the following upgrade. To verify, retrieve the [!DNL Commerce] version using the `php vendor/bin/ece-tools -V` command at your local project root directory.
 
 This project upgrade process requires you to update the `magento/magento-cloud-metapackage` version constraint in the `composer.json` file at the root directory. This constraint enables updates for Adobe Commerce on cloud infrastructure metapackages—including removing deprecated packages—without upgrading your current Adobe Commerce version.
 

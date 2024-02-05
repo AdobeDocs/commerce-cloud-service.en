@@ -54,7 +54,7 @@ Set the `_merge` option to one of the following:
 
 >[!WARNING]
 >
->The deployment process begins when you perform a merge, push, or synchronization of your environment, or when you trigger a manual redeployment, during which the Commerce application is in maintenance mode. For a Production environment, Adobe recommends completing this work during off-peak hours to avoid service disruptions.
+>The deployment process begins when you perform a merge, push, or synchronization of your environment, or when you trigger a manual redeployment, during which the [!DNL Commerce] application is in maintenance mode. For a Production environment, Adobe recommends completing this work during off-peak hours to avoid service disruptions.
 
 ## Route placeholders {#route-placeholder}
 

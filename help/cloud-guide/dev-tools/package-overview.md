@@ -5,7 +5,7 @@ exl-id: 5583a685-29c5-4de5-8d2e-94cff5ff37ab
 ---
 # ECE-Tools Package
 
-The [!DNL ECE-Tools] package is a set of scripts and tools designed to manage and deploy the Commerce application. The `ece-tools` package simplifies many processes, such as managing cron jobs, verifying project configuration, and applying Adobe patches and hot fixes. You can view and contribute to the [open-source [!DNL ECE-Tools] code repository on GitHub][ece-repo].
+The [!DNL ECE-Tools] package is a set of scripts and tools designed to manage and deploy the [!DNL Commerce] application. The `ece-tools` package simplifies many processes, such as managing cron jobs, verifying project configuration, and applying Adobe patches and hot fixes. You can view and contribute to the [open-source [!DNL ECE-Tools] code repository on GitHub][ece-repo].
 
 {{ece-tools-package}}
 

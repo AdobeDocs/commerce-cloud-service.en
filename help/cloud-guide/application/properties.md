@@ -1,12 +1,12 @@
 ---
 title: Properties
-description: Use the property list as a reference when configurion the Commerce application for build and deploy to the cloud infrastructure.
+description: Use the property list as a reference when configurion the [!DNL Commerce] application for build and deploy to the cloud infrastructure.
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
 exl-id: 58a86136-a9f9-4519-af27-2f8fa4018038
 ---
 # Properties for application configuration
 
-The `.magento.app.yaml` file uses properties to manage environment support for the Commerce application.
+The `.magento.app.yaml` file uses properties to manage environment support for the [!DNL Commerce] application.
 
 | Name   | Description                       | Default | Required |
 | ------ | --------------------------------- | ------- | -------- |
@@ -19,7 +19,7 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 | [`mounts`](#mounts) | Set paths | Paths:<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | No |
 | [`name`](#name) | Define the application name | `mymagento` | Yes |
 | [`relationships`](#relationships) | Map services | Services:<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | No |
-| [`runtime`](#runtime) | Runtime property includes extensions that are required by the Commerce application. | Extensions:<ul><li>`xsl`</li><li>`newrelic`</li><li>`sodium`</li></ul> | Yes |
+| [`runtime`](#runtime) | Runtime property includes extensions that are required by the [!DNL Commerce] application. | Extensions:<ul><li>`xsl`</li><li>`newrelic`</li><li>`sodium`</li></ul> | Yes |
 | [`type`](#type-and-build) | Set the base container image | `php:8.1` | Yes |
 | [`variables`](variables-property.md) | Apply an environment variable for a specific Commerce version | — | No |
 | [`web`](web-property.md) | Handle external requests | — | Yes |

@@ -153,7 +153,7 @@ Your applications and all [backend](https://experienceleague.adobe.com/docs/comm
 
 >[!NOTE]
 >
->This phase puts the Commerce application in maintenance mode until deployment is complete.
+>This phase puts the [!DNL Commerce] application in maintenance mode until deployment is complete.
 
 The last step runs a deployment script, which you can use to anonymize data in development environments, clear caches, and query external continuous-integration tools. When this script runs, you have access to all the services in your environment, such as Redis.
 

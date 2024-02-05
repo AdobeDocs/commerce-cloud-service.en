@@ -10,7 +10,7 @@ exl-id: b76bd6c3-986e-4adc-abd0-5b27db0d8a3b
 If you encounter issues in the integration environment and do not have a [valid backup](../storage/snapshots.md), try restoring your environment using one of the following methods:
 
 - Reset or revert the code in the Git branch
-- Uninstall the Commerce application
+- Uninstall the [!DNL Commerce] application
 - Force a redeployment
 - Manually reset the database
 
@@ -59,7 +59,7 @@ Resetting your Git branch reverts the code to a stable state in the past.
 
 ## Uninstall Commerce
 
-Uninstalling the Commerce application returns your environment to an original state by restoring the database, removing the deployment configuration, and clearing the `var/` subdirectories. This guidance also resets your git branch to an earlier stable state. If you do not have a recent backup, but you can access the remote environment using SSH, follow these steps to restore your environment:
+Uninstalling the [!DNL Commerce] application returns your environment to an original state by restoring the database, removing the deployment configuration, and clearing the `var/` subdirectories. This guidance also resets your git branch to an earlier stable state. If you do not have a recent backup, but you can access the remote environment using SSH, follow these steps to restore your environment:
 
 - Disable configuration management
 - Uninstall Adobe Commerce

@@ -25,4 +25,4 @@ Think of the Adobe Commerce on cloud infrastructure as five functional layers, a
 
 Monolithic applications are resource-intensive and difficult to scale and serve rapidly. With the Cloud infrastructure, Commerce customers gain unparalleled access to SaaS-based microservices that are rich, intelligent, and performant. See [Supported software and services](cloud-architecture.md#supported-software-and-services).
 
-Use the [Commerce Get Started guide](../../get-started/overview.md) to set up your new Cloud program and begin managing your Commerce application in a cloud-native environment.
+Use the [Commerce Get Started guide](../../get-started/overview.md) to set up your new Cloud program and begin managing your [!DNL Commerce] application in a cloud-native environment.
