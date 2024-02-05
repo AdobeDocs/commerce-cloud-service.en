@@ -17,7 +17,7 @@ Once configured, you can debug CLI commands, web requests, and code. Remember th
 
 ## Requirements
 
-To run and use [!DNL Xdebug], you need the SSH URL for the environment. You can locate the information through the [Cloud Console](../project/overview.md) or your [!DNL Cloud Onboarding UI].
+To run and use [!DNL Xdebug], you need the SSH URL for the environment. You can locate the information through the [[!DNL Cloud Console]](../project/overview.md) or your [!DNL Cloud Onboarding UI].
 
 ## Configure Xdebug
 
@@ -212,7 +212,7 @@ To set up port forwarding (SSH tunneling) on Windows, you must configure your Wi
 
 ## SSH access to Xdebug environments
 
-For initiating debugging, performing setup, and more, you need the SSH commands for accessing the environments. You can get this information, through the [Cloud Console](../development/secure-connections.md#use-an-ssh-command) and your project spreadsheet.
+For initiating debugging, performing setup, and more, you need the SSH commands for accessing the environments. You can get this information, through the [[!DNL Cloud Console]](../development/secure-connections.md#use-an-ssh-command) and your project spreadsheet.
 
 For Starter environments and Pro integration environments, you can use the following `magento-cloud` CLI command to SSH into those environments:
 
@@ -242,7 +242,7 @@ To use [!DNL Xdebug] specifically on Pro plan Staging and Production environment
 
 You need the following:
 
--  SSH commands for accessing the environments. You can get this information, through the [Cloud Console](../project/overview.md) or your [!DNL Cloud Onboarding UI].
+-  SSH commands for accessing the environments. You can get this information, through the [[!DNL Cloud Console]](../project/overview.md) or your [!DNL Cloud Onboarding UI].
 -  The `xdebug_key` value set when configuring the Staging and Pro environments.
 
    The `xdebug_key` can be found by using SSH to log in to the primary node and executing:

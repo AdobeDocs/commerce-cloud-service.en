@@ -22,7 +22,7 @@ Some activities are in a _running_ or _pending_ status. You can act on a running
 
 >[!TAB Console]
 
-**To cancel an activity in the Cloud Console**:
+**To cancel an activity in the [!DNL Cloud Console]**:
 
 You can act on a running activity by accessing the ![More](../../assets/icon-more.png){width="32"} (_more_) menu and selecting an action, such as `Cancel` or `View log`. For this example, select the **Cancel** option to stop the running activity.
 
@@ -56,7 +56,7 @@ If you have a terminal running the deployment activity, canceling in the [!DNL C
 
 The ability to filter the activity list is useful when you are looking for something specific, such as a backup or a merge event.
 
-**To filter the activity list in the Cloud Console**:
+**To filter the activity list in the [!DNL Cloud Console]**:
 
 1. Select an environment and choose the Activity **[!UICONTROL All]** view to include the full event history.
 

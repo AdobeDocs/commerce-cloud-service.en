@@ -1,15 +1,15 @@
 ---
 title: "Log in to [!DNL Cloud Console]"
-description: Learn about the Cloud Console for Adobe Commerce on Cloud infrastructure.
+description: Learn about the [!DNL Cloud Console] for Adobe Commerce on Cloud infrastructure.
 recommendations: noDisplay, catalog
 exl-id: c19a36b6-e5e8-461c-a82c-68b7bf121999
 ---
 
-# Log in to Cloud Console
+# Log in to [!DNL Cloud Console]
 
 The [!DNL Cloud Console] provides interactive methods to build, manage, and deploy Commerce code. The [!DNL Cloud Console] is a more modern, user-friendly experience and lays the foundation for future interface enhancements.
 
-[Log in to the Cloud Console](https://console.adobecommerce.com) to view your project list.
+[Log in to the [!DNL Cloud Console]](https://console.adobecommerce.com) to view your project list.
 
 ![Project list](../assets/ui-allprojects-list.png)
 
@@ -25,7 +25,7 @@ The new or improved features include:
 - Simple forms and guidance to add integrations
 - Web Content Accessibility Guidelines (WCAG) compliance
 
-![Cloud Console](../assets/CloudConsole.svg)
+![[!DNL Cloud Console]](../assets/CloudConsole.svg)
 
 The new or improved features are as follows:
 

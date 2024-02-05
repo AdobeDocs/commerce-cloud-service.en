@@ -1,11 +1,11 @@
 ---
-title: Manage branches with the [!DNL Cloud Console]
+title: "Manage branches with the [!DNL Cloud Console]"
 description: Learn how to manage the environment branches for Adobe Commerce on cloud infrastructure using the [!DNL Cloud Console].
 role: Developer
 feature: Cloud, Install
 exl-id: 2c4ef149-fdb9-473f-91fd-5e6421ac5a43
 ---
-# Manage branches with the Cloud Console
+# Manage branches with the [!DNL Cloud Console]
 
 You can manage your environments using either the [!DNL Cloud Console] or the `magento-cloud` CLI. Your project files are stored in a Git repository. You can use Git commands to manage your code, but the `magento-cloud` CLI is designed to interact with platform features whereas the Git commands do not. See [Git commands](../dev-tools/cloud-cli-overview.md#git-commands) in the cloud CLI topic.
 
@@ -32,7 +32,7 @@ If you need additional active environments for development, submit a [Support ti
 
 **To add a branch**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -66,7 +66,7 @@ Before you can delete an environment, you must deactivate it. Once an environmen
 
 **To deactivate an environment**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -84,7 +84,7 @@ For Pro plan, you can sync from Staging and Production to your `master` branch. 
 
 **To sync an environment**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -109,7 +109,7 @@ Merging an environment (or branch) is the same as `git push origin`. You merge t
 
 **To merge with the parent environment**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -133,9 +133,9 @@ For **Pro**, you can review the following logs in each environment:
 - Staging—Build logs and deployment history. Use SSH to log into the server to view deploy logs.
 - Production—Build logs and deployment history. Use SSH to log into the server to view deploy logs.
 
-**To view logs in the Cloud Console**:
+**To view logs in the [!DNL Cloud Console]**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -163,7 +163,7 @@ If you prefer that your project accesses multiple repositories, you can attach a
 
 **To find your SSH public key**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -239,7 +239,7 @@ You can access your project and environments from any location through a web bro
 
 **To secure environments**:
 
-1. Log in to your [Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 

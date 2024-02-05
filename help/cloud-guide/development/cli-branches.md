@@ -9,7 +9,7 @@ exl-id: a871c7e2-4506-4a05-8fc2-fc5ef2afe609
 
 To install the `magento-cloud` CLI, see the [Cloud CLI reference](../dev-tools/cloud-cli-overview.md). After you install the `magento-cloud` CLI and set up SSH keys for remote access to your cloud infrastructure, you can use `magento-cloud` CLI commands to manage the environments for your projects. For information about the environment architecture, see [Starter architecture](../architecture/starter-architecture.md) or [Pro architecture](../architecture/pro-architecture.md).
 
-To manage the branches and environments with the [!DNL Cloud Console], see [Manage branches with the Cloud Console](../project/console-branches.md).
+To manage the branches and environments with the [!DNL Cloud Console], see [Manage branches with the [!DNL Cloud Console]](../project/console-branches.md).
 
 ## Use CLI commands
 

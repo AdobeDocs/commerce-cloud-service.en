@@ -42,7 +42,7 @@ In the integration environment, you can log in to the Admin to modify system con
 
 **To change locale and static file optimization settings**:
 
-1. Log in to the integration environment Admin. You can access this URL through the [Cloud Console](../project/overview.md).
+1. Log in to the integration environment Admin. You can access this URL through the [[!DNL Cloud Console]](../project/overview.md).
 1. Navigate to **Stores** > Settings > **Configuration** > General > **General**.
 1. In the page navigation, expand **Locale Options**.
 1. From the **Locale** list, change the locale. You can change it back later.

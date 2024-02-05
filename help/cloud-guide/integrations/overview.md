@@ -45,7 +45,7 @@ Sample response:
 
 >[!TAB Console]
 
-**To add an integration using the Cloud Console**:
+**To add an integration using the [!DNL Cloud Console]**:
 
 1. In _Project Settings_, click **[!UICONTROL Integrations]**.
 

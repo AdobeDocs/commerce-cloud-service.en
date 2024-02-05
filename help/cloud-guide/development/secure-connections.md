@@ -53,11 +53,11 @@ You can add SSH keys to your account using one of the following methods: Cloud C
 
 >[!TAB Console]
 
-### Add your SSH key using the Cloud Console
+### Add your SSH key using the [!DNL Cloud Console]
 
 **To add an SSH key to a new project**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
 1. Click **[!UICONTROL No SSH key]**. This icon is to the right of the command field and is visible when the project does not contain an SSH key.
 
@@ -67,7 +67,7 @@ You can add SSH keys to your account using one of the following methods: Cloud C
 
 **To add an SSH key to your Cloud profile**:
 
-1. Log in to the [Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
 1. In the upper-right account menu, click **My Profile**.
 
@@ -107,7 +107,7 @@ The [!DNL Cloud Console] includes a list of Web and SSH access commands for each
 
 **To copy the SSH command**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 
@@ -133,7 +133,7 @@ The [!DNL Cloud Console] includes a list of Web and SSH access commands for each
 
 ## sFTP
 
-Adobe Commerce on cloud infrastructure supports accessing your environments using sFTP (secure FTP) with SSH authentication. Use a client that supports SSH key authentication for sFTP and use your public SSH key. Your public SSH key must be added to the target environment. For Starter environments and Pro integration environments, you can [add it through the Cloud Console](#add-your-ssh-key-using-the-project-web-interface).
+Adobe Commerce on cloud infrastructure supports accessing your environments using sFTP (secure FTP) with SSH authentication. Use a client that supports SSH key authentication for sFTP and use your public SSH key. Your public SSH key must be added to the target environment. For Starter environments and Pro integration environments, you can [add it through the [!DNL Cloud Console]](#add-your-ssh-key-using-the-project-web-interface).
 
 Read-only sFTP connections are _not_ supported; sFTP access is provided with _write_ permission by default.
 

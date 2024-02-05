@@ -42,9 +42,9 @@ magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master
 >
 >The `ADMIN_URL` value accepts letters (a-z or A-Z), numbers (0-9), and the underscore character (_) for a custom admin path. Spaces or other characters are **not** accepted.
 
-**To change the URL using the Cloud Console**:
+**To change the URL using the [!DNL Cloud Console]**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
 1. Select a project from the _All projects_ list.
 

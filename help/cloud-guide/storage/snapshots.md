@@ -16,9 +16,9 @@ The backup feature does **not** apply to the Pro environments. The Pro Staging a
 
 You can create a manual backup of your Starter environment from the [!DNL Cloud Console] or create a snapshot from the Cloud CLI. You must have an [Admin role](../project/user-access.md) for the environment.
 
-**To create a backup using the Cloud Console**:
+**To create a backup using the [!DNL Cloud Console]**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 1. Select an environment from the project navigation bar. The environment must be active.
 1. In the _Backups_ view, click **[!UICONTROL Backup]**. This option is not available for a Pro environment.
 
@@ -83,9 +83,9 @@ Restoration times vary depending on the size of your database:
 >- To roll back to previous code or remove added extensions in an environment, see [Roll back code](#roll-back-code).
 >- To restore an unstable environment that does _not_ have a backup, see [Restore an environment](../development/restore-environment.md).
 
-**To restore a backup using the Cloud Console**:
+**To restore a backup using the [!DNL Cloud Console]**:
 
-1. Log in to [the Cloud Console](https://console.adobecommerce.com).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 1. Select an environment from the project navigation bar.
 1. In the _Backups_ view, choose a backup from the _Stored_ list. The backup feature does **not** apply to the Pro environments.
 1. In the ![More](../../assets/icon-more.png){width="32"} (_more_) menu, click **Restore**.

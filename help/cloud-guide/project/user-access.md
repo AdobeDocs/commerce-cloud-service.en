@@ -121,9 +121,9 @@ To update user environment permissions to `admin` on the `Production` environmen
 magento-cloud user:update alice@example.com -r production:a
 ```
 
-## Manage users from the Cloud Console
+## Manage users from the [!DNL Cloud Console]
 
-You can use the [Cloud Console](../../get-started/cloud-console.md) to add permissions and use the _Edit_ feature to modify permissions for an existing user.
+You can use the [[!DNL Cloud Console]](../../get-started/cloud-console.md) to add permissions and use the _Edit_ feature to modify permissions for an existing user.
 
 >[!IMPORTANT]
 >
@@ -131,7 +131,7 @@ You can use the [Cloud Console](../../get-started/cloud-console.md) to add permi
 
 ### Add a user to the project
 
-1. Log in to the [Cloud Console](https://console.adobecommerce.com/).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com/).
 
 1. Select a project from the _All projects_ list.
 

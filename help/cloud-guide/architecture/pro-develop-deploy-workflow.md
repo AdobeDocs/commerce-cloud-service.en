@@ -14,7 +14,7 @@ The Pro project includes a single Git repository with a global `master` branch a
 
 ![Pro environment list](../../assets/pro-environments.png)
 
-These environments are `read-only`, accepting deployed code changes from branches pushed from your local workspace. See [Pro architecture](pro-architecture.md) for a complete overview of the Pro environments. See [Cloud Console](../project/overview.md#cloud-console) for an overview of the Pro environments list in the project view.
+These environments are `read-only`, accepting deployed code changes from branches pushed from your local workspace. See [Pro architecture](pro-architecture.md) for a complete overview of the Pro environments. See [[!DNL Cloud Console]](../project/overview.md#cloud-console) for an overview of the Pro environments list in the project view.
 
 The following graphic demonstrates the Pro develop and deploy workflow, which uses a simple, git-branching approach. You [develop](#development-workflow) code using an active branch based on the `integration` environment, _pushing_ and _pulling_ code changes to and from your remote, Active branch. You deploy verified code by _merging_ the remote branch to the base branch, which activates an automated [build and deploy](#deployment-workflow) process for that environment.
 
@@ -44,7 +44,7 @@ With a developed code branch and the corresponding configuration files, your cod
 
 -  **Generating configuration management files**—Some configuration settings are _Read Only_ in a deployed environment.
 
--  **Configuring your store**—You should fully configure all store settings using the integration environment. You can find the **Store Admin URL** on the _integration_ environment view in the _Cloud Console_.
+-  **Configuring your store**—You should fully configure all store settings using the integration environment. You can find the **Store Admin URL** on the _integration_ environment view in the _[!DNL Cloud Console]_.
 
 ## Deployment workflow
 

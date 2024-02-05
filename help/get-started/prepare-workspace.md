@@ -44,11 +44,11 @@ Before setting up a workspace, gather the following keys and account access:
 
 ## Project code
 
-A secure connection is essential for interacting with the remote environments. For a new project, [log in to the Cloud Console](https://console.adobecommerce.com) and click **[!UICONTROL No SSH key]**. This icon is to the right of the command field and is visible when the project does not contain an SSH key. See [Secure connections](../cloud-guide/development/secure-connections.md#add-an-ssh-public-key-to-your-account).
+A secure connection is essential for interacting with the remote environments. For a new project, [log in to the [!DNL Cloud Console]](https://console.adobecommerce.com) and click **[!UICONTROL No SSH key]**. This icon is to the right of the command field and is visible when the project does not contain an SSH key. See [Secure connections](../cloud-guide/development/secure-connections.md#add-an-ssh-public-key-to-your-account).
 
 **To clone your codebase to your local workstation**:
 
-1. In the [Cloud Console](https://console.adobecommerce.com), click **[!UICONTROL code]** and select the **[!UICONTROL Git]** tab.
+1. In the [[!DNL Cloud Console]](https://console.adobecommerce.com), click **[!UICONTROL code]** and select the **[!UICONTROL Git]** tab.
 
    ![Clone your code](../assets/ui-git-code.png){width="450"}
 

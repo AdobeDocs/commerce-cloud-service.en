@@ -12,7 +12,7 @@ You can view the logs from the file system, the [!DNL Cloud Console], and the `m
 
 - **File system**—The `/var/log` system directory contains logs for all environments. The `var/log/` directory contains app-specific logs unique to a particular environment. These directories are not shared between nodes in a cluster. In Pro Production and Staging environments, you must check the logs on each node.
 
-- **Cloud Console**—You can see build, deploy, and post-deploy log information in the environment _messages_ list.
+- **[!DNL Cloud Console]**—You can see build, deploy, and post-deploy log information in the environment _messages_ list.
 
 - **Cloud CLI**—You can view local environment logs using the `magento-cloud log` command or remote environment logs using the `magento-cloud ssh` command.
 

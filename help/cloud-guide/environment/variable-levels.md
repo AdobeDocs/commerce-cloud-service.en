@@ -32,9 +32,9 @@ After setting project-specific variables, you must manually redeploy the remote 
 
 >[!TAB Console]
 
-**To set variables using the Cloud Console**:
+**To set variables using the [!DNL Cloud Console]**:
 
-1. In the _Cloud Console_, click the configuration icon on the right side of the project navigation.
+1. In the _[!DNL Cloud Console]_, click the configuration icon on the right side of the project navigation.
 
    ![Configure project](../../assets/icon-configure.png){width="36"}
 

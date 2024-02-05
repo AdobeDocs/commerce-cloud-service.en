@@ -9,9 +9,9 @@ The Adobe Commerce on cloud infrastructure project includes all code in Git bran
 
 Adobe provides a [!DNL Cloud Console] and developer tools to fully manage all aspects of your project. You, as the account owner, have full access to all environments.
 
-## Cloud Console
+## [!DNL Cloud Console]
 
-The [!DNL Cloud Console] provides interactive methods to build, manage, and deploy Commerce code in a user-friendly format. [Log in to the Cloud Console](https://console.adobecommerce.com) to view your project list. You can only see projects that you have permission to access as an admin or for specific environment types. If you are an Adobe Solutions Partner, you may see multiple projects for clients that you support.
+The [!DNL Cloud Console] provides interactive methods to build, manage, and deploy Commerce code in a user-friendly format. [Log in to the [!DNL Cloud Console]](https://console.adobecommerce.com) to view your project list. You can only see projects that you have permission to access as an admin or for specific environment types. If you are an Adobe Solutions Partner, you may see multiple projects for clients that you support.
 
 >[!TIP]
 >

@@ -13,7 +13,7 @@ You can submit a password change request using either of the following methods:
 
 - Locate the welcome email sent to the License Owner email address and follow the link and change your password.
 
-- Copy the store URL from the [Cloud Console](../cloud-guide/project/overview.md) into a browser. Then, append `/admin` to the end of the URL to open the sign-in page. Click the **Forgot password?** link to send a password change request to the License Owner email address.
+- Copy the store URL from the [[!DNL Cloud Console]](../cloud-guide/project/overview.md) into a browser. Then, append `/admin` to the end of the URL to open the sign-in page. Click the **Forgot password?** link to send a password change request to the License Owner email address.
 
 After you submit the password change request, check your email for the password reset notification. If you do not get the email, check your spam folder.
 

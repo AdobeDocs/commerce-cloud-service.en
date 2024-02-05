@@ -30,9 +30,9 @@ For detailed information of the process, see [Pro Develop and Deploy Workflow](.
 
 ## Deploy code to staging
 
-The Staging environment provides a near-production environment that includes a database, web server, and all services including Fastly and New Relic. You can fully push, merge, and deploy through the [Cloud Console](../project/overview.md) or [Cloud CLI commands](../dev-tools/cloud-cli-overview.md) through a terminal application.
+The Staging environment provides a near-production environment that includes a database, web server, and all services including Fastly and New Relic. You can fully push, merge, and deploy through the [[!DNL Cloud Console]](../project/overview.md) or [Cloud CLI commands](../dev-tools/cloud-cli-overview.md) through a terminal application.
 
-### Deploy code with the Cloud Console
+### Deploy code with the [!DNL Cloud Console]
 
 The [!DNL Cloud Console] provides features to create, manage, and deploy code in Integration, Staging, and Production environments for Starter and Pro plans.
 

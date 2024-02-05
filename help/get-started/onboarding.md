@@ -21,7 +21,7 @@ If you do not have an Adobe Commerce on cloud infrastructure account, contact [S
 The Adobe Commerce on cloud infrastructure Project page in the ([!DNL Onboarding] UI) provides a Getting Started checklist to set up your project and services, determine access, and get started with development. From the OBUI, you can:
 
 - Add a Technical Admin, a super user that can manage your project and branches
-- Access your project environment, including a link to the Cloud Console
+- Access your project environment, including a link to the [!DNL Cloud Console]
 - Complete a quick user acceptance test (UAT) checklist with links to further tests
 
 **To open the project page**:
@@ -44,7 +44,7 @@ The License Owner can add user accounts to provide access to code, manage branch
 
 Typically, the only user the License Owner must create is the _Technical Admin_. The Technical Admin needs a user account with admin access to create user accounts for developers, set environment permissions, and manage all branches and environments. The Technical Admin can be a developer, a consultant, an [Adobe Solution Partner](https://business.adobe.com/products/magento/partners.html), or yourself.
 
-You can create a Technical Admin through the Project portal, from the Cloud Console, or from the command line using the `magento-cloud` CLI.
+You can create a Technical Admin through the Project portal, from the [!DNL Cloud Console], or from the command line using the `magento-cloud` CLI.
 
 ### User registration
 
@@ -54,11 +54,11 @@ You can only add registered users to your Adobe Commerce on cloud infrastructure
 
 The License Owner can set up shared access for the account. Shared access allows trusted employees and service providers to use the Help center to submit and track Support tickets related to your Adobe Commerce on cloud infrastructure projects. For setup instructions, see the [Shared Access][] article in the Help Center.
 
-### Cloud Console
+### [!DNL Cloud Console]
 
-You can use the [Cloud Console](cloud-console.md) to manage your project, add user accounts, and begin developing your store. The License Owner, Technical Admin users, and developers can use the Cloud Console to manage all environments and branches, environment variables, environment settings, and routes.
+You can use the [[!DNL Cloud Console]](cloud-console.md) to manage your project, add user accounts, and begin developing your store. The License Owner, Technical Admin users, and developers can use the [!DNL Cloud Console] to manage all environments and branches, environment variables, environment settings, and routes.
 
-**To access the Cloud Console**:
+**To access the [!DNL Cloud Console]**:
 
 1. Log in to [My account](https://account.magento.com/customer/account/login).
 
@@ -78,9 +78,9 @@ The page provides a status for Adobe Commerce components and services followed b
 
 >[!TIP]
 >
-> Open the new Cloud Console and view project and environment activities.
+> Open the new [!DNL Cloud Console] and view project and environment activities.
 >
->**Next step**: [Log in to Cloud Console](cloud-console.md)
+>**Next step**: [Log in to Cl[!DNL ]oud Console](cloud-console.md)
 
 <!-- link definitions -->
 
