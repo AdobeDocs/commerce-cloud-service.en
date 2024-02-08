@@ -35,4 +35,4 @@ Complete a few UAT tests in your live store to confirm that everything is loadin
 
 Adobe checks and monitors the site to ensure that all services and access are in the green. We remain on hand as needed to walk through and check that all system logs, services, caching, and functions are working as you and your customers need.
 
-If any issues occur, create and track issues with Support. Include as much information as possible including date/time, specific feature with a problem, symptoms and odd behaviors, extensions, and so on. We investigate the logs, the issue, and work with you to resolve quickly as possible.
+If any issues occur, create and track issues with Support. Include as much information as possible including date/time, specific feature with a problem, symptoms and odd behaviors, extensions, and more. We investigate the logs, the issue, and work with you to resolve quickly as possible.

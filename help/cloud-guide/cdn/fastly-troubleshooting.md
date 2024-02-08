@@ -235,7 +235,7 @@ Based on the status returned, use the following instructions to update the Fastl
 
 -  `Module does not exist`—If the module does not exist [install and configure](https://github.com/fastly/fastly-magento2/blob/master/Documentation/INSTALLATION.md) the Fastly CDN Module for Magento 2 in an integration branch. After installation completes, enable and configure the module. See [Set up Fastly](fastly-configuration.md).
 
--  `Module is disabled`—If the Fastly module is disabled, update the environment configuration on an integration branch in your local environment to enable it. Then, push the changes to Staging and Production. See [Manage extensions](../store/extensions.md#install-an-extension).
+-  `Module is disabled`—If the Fastly module is disabled, update the environment configuration on an `integration` branch in your local environment to enable it. Then, push the changes to Staging and Production. See [Manage extensions](../store/extensions.md#install-an-extension).
 
    If you use [Configuration Management](../store/store-settings.md#configure-store), check the Fastly CDN module status in the `app/etc/config.php` configuration file before you push changes to the Production or Staging environment.
 

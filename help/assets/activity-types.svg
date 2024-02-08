@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 509 364">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-dasharray: 0 0 7.93 7.93;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke: #366;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        font-family: Helvetica, Helvetica;
+        font-size: 14px;
+      }
+
+      .cls-2 {
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-dasharray: 0 0 7.84 7.84;
+      }
+
+      .cls-6 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="iconbox">
+    <g>
+      <rect class="cls-6" width="509" height="364"/>
+      <g>
+        <image id="push" width="64" height="58" transform="translate(34 212)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA6BAMAAADy/kJKAAAAFVBMVEX///+goKmgoKhAQVKnp69QUGDd3eAY433+AAAAcUlEQVR4AWKgGRgFo4BRAU5jB8JGMBqHAcbGDiCaxdhYAbsBxqYJIJot2NgIhwFhEFYqgFA6tgEAhGEguP/WLt28dD06IPkTAZxooIkDQQRwIoETDZwIoAkf8BV+pL/pQXnUXpbXzWCcHKN19tsoGAUA27EhNUbOCzkAAAAASUVORK5CYII="/>
+        <circle class="cls-2" cx="65.58" cy="240.5" r="36.06"/>
+      </g>
+      <g>
+        <image id="branch" width="72" height="64" transform="translate(156.11 30.67)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABACAMAAACOYMEYAAAAgVBMVEX///9AQVJERFb7+/xlZXPCwsh9fomgoKn19fbKys/Jyc6+vsT+/v7Z2dzNzdHOztLw8PFfX26BgY1HR1jExMp1dYJZWWhLS1tBQVPn5+nw8PJFRVbR0dbExMmPj5l/f4v8/PxWV2ZGRlff3+Kfn6d4eIR2doJNTV3U1Nj4+PmenqdIP6V3AAAAt0lEQVR4Xu3Qtw7DMAxFUVKSu9N77/X/PzAE4ojwkCAqI+/I4QCP4JIkSZI0waZZ1wJ9g5+m+b8Q2noWyhVfO85QBlyi/CB2WPKFhoyw5AOpJBhiKXzagKWgZ6c6Y4mdtFIu0IgcgJY0fjuaQAeoepLTkvaHxgGS5gtwjKXlqnGo9QbAX9oi7jQD/lJdljVAqHQ8QXhnpC4QoStBtxjQHakY0CMWBAL9TCCBDKKJAhXGFN8ASZKkFxbzBg3ourDvAAAAAElFTkSuQmCC"/>
+        <circle class="cls-2" cx="191.92" cy="62.96" r="36.06"/>
+      </g>
+      <g>
+        <image id="merge" width="60" height="66" transform="translate(415 28)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABCCAMAAAA8CkXxAAAAV1BMVEX///+urraYmKH7+/ygoKlAQVJ9fonOztKwsLjNzdFLS1tKSlvIyM38/Pzc3N+Pj5lNTV3AwMZBQVN4eITCwshERFZGRlff3+LQ0NRXV2bHx8xpaXfLy9Agh67fAAAAj0lEQVR4Ae3RRQKDQBBE0cbijsv9z5nODoepiVN/gz4YEcYYm85xPdj6QbDycAtrtbBWC2u1sFYL63XQaGOEt7u63R/EvECTkYiJjzb4ZIPPai+gvd4Uh5iNYrVJits4+qjN8rxArZSPU9AqrmszK1VsoGsv1z9WzcJlzdZ0OQ/XbE3PwANbU+R5Jn8cY+wO6F0KQS4m+GYAAAAASUVORK5CYII="/>
+        <circle class="cls-2" cx="445.31" cy="62.96" r="36.06"/>
+      </g>
+      <g>
+        <image id="clear" width="66" height="62" transform="translate(285.33 31)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAA+CAMAAACoaj1gAAAApVBMVEX///9UVGNcXGubm6RiYnC+vsTCwshubnt7e4egoKmFhZD8/PxYWGj9/f3y8vNjY3H6+vtUVGRWVmXj4+bl5edsa3n39/fV1dnU1NiMjJbv7/CPj5lgYG+srLOko6ympq+5ub+SkZtXV2bV1dh0dIDi4uXz8/T7+/vj4+VeXm1tbXrW1trAwMaRkZu1tby2tr3r6+3g4OOqqrG6usBycn9VVGSzs7oGOUbLAAAA6ElEQVR4Xu3QN44DQRQDUdbvGbn13nvv/d7/aDuR0EFLBCZYQEC/iFEFVFVVlZQCACL1LjDVtxFMhfoh0z+BOguaSEFGHTKRZCWYlwDfCJcIObgEMsx3i5Sw5ARGyEkYSVbacAVvE1hRySWwZALm9QB25a0DyypaAw7lrQLH6rRN00r5GgJb8raBHXUaaKR8jYA9efvAKPskWwfAQF4LHJUTY+BE3ilwVk6cAxfyJsCgnLgCruU1wE05cQtwJ+ceeFA5oUfgSc4zMJmVeAFe5Qww3uS8Y3zI+mSusTx9ff8wy/BX/66qqj9LMwik5owqWwAAAABJRU5ErkJggg=="/>
+        <circle class="cls-2" cx="318.65" cy="62.96" r="36.06"/>
+      </g>
+      <g>
+        <image id="sync" width="58" height="66" transform="translate(289 208)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAABCCAMAAAAxFDW2AAABp1BMVEX///+zs7phYXC8vcL8/PxAQVJBQVKXl6H9/f12doLy8vRfYG7p6etVVWXe3uH29vbNzdKioqtNTV3R0dXFxct9fYlERVZHR1jFxstgYG9XV2f6+vuVlZ9BQVN5eYVubntkZHKYmKJ3eITz8/T4+PlpaXZDQ1SIiJPg4OOcnKWKipVcXGvW1tpKSlvBwcfDw8hvb3xbW2rf3+K/v8Xw8PL39/dkZXP39/h0dIHy8vPd3eBGRldMTFzl5eekpK3+/v6enqdCQlOWlp/8/P37+/tSUmKen6evr7ZUVWTExMlMTF319fZOT1/Jys6MjJaPj5qSkpxjY3HIyM1YWGfm5ujt7e/s7O63t75ISVn09PVeXm3X19qhoapwcH3V1diCgo6mpq+NjZhFRVa1tbxTU2PHx83x8fLKys+8vMJPT1/6+vpjY3J2doPj4+ZERFWnp6+BgY1ISFnu7vDMzNFycn/b29729vdZWWhGR1fOztNCQ1RubnzX19vn5+nq6uy4uL/S0tbT09eBgo3Q0NTNzdGio6ujo6uQkJuLi5Z6eoaOjpiamqSRkZvEJMewAAABn0lEQVR4AezSU3ckURRH8RPs2LZt2zbGyngytm1/6KTNu866Xc/9e/2v3ag6EmcUF5eQmOSwTIaU1DRnLUB6huOUzCzHKdk5sXa5efl4FRTG9ISKiksIKC2zLwvLCVNhG1ZWVROuxrLMqAWguq4en4ZGu7KpGaCltc3/hKvbbc+iA6CzK/ByunvEUi9AX6P40/4B35A1OKSXw9nAyKj/hhkb9w0Tk0xNq+kMUNomHrNz8wuL/mEBqNLKpWVgJXhRErAKrM0q6TqwsWlaRreAbSXdAXbN0x7QrqT7wAnzlDXFyVNK2g2cFrMzZ8dFkQIp+u2o6ayz9Bxw3ll6AbhonhovHVzW0ivAVfN0Da63KekNYN+4JN8Ebinp4SRw27TcAe7eE0UrcD/ZMDzQj8nl4SPgsWF4Ak+fiaoKmHxu+MwXBy9F9+o18GZVnHj7DuD9Bwn4OPjJsv3cAlBd80U8vn4r4d13y/bHMgApP8XlVwrAb7F0+GcegDSRNDx6xdrLvylQKy5/ga3YntrLf/+PBw4c7+QeTxWGoQ1GwSgYBQDNBjaCGZzNSAAAAABJRU5ErkJggg=="/>
+        <circle class="cls-2" cx="318.31" cy="240.96" r="36.06"/>
+      </g>
+      <g>
+        <image id="redeploy" width="62" height="62" transform="translate(161 210)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAMAAABEH1h2AAABUFBMVEX///9UVGNAQVKRkZtYWGenp69BQVK3t77U1Nizs7rIyM1LS1z29vfg4OPx8fKOjphUVGT09PWZmaKBgYzz8/R4eITHx8zd3eBlZXN+fon+/v7q6uxVVWS1tbxtbXqMjJZbXGrFxcpMTFxNTl5CQlT7+/xyc3/5+flDQ1R/foqmpq9VVGTx8fNERVb19faSkpxpaXZ0dIGKipWjo6zc3N9bW2ptbHpaWWn39/j9/f3j4+ZcW2qIiJPl5eeCgo1hYW9wcH3X19t+foq5ub9ZWWiQkJqqqrLOztOTkpx/f4tpaXe9vcPDw8iUlJ6wsLe3t72NjZebm6Tg4OLGxstycn7s7O1vb3zn5+nS0tbb293Ly9BWVmWNjZiamqNoaHVxcX2VlZ9kZHJzc4BubntiYnFVVWWoqLDu7u9eXm20tLvOztJfX21qanerq7KTk52jo6vxLQjFAAABXUlEQVR4Xu3MxXLDMBSG0SvZYWaGMjMzMzMz8/tzr6KmdZKFZXXT6fjbSPOPjuA/ZmZmNvQrPayOJuW1e4LSoLROTlNKrRlZ3kNZbQtyOlpLC9WMyWiPi34VbzCuW/vodzl94G1q6dDounqqyabLxwkhVZrfGrU8pKebSSkHuwOrxvDIeHW0h+nuipmtINAi6s52Wf5AsFWQ5TbUXSDNc8jX5Xk/8l7gxXy+mEE+gHyQC6eVUqtTkFc+i1AsYoyPIA9wkWc8z0EKtV+ATyKf4sTCuIWDGeSzAnwO+TwnYcXlUsIcLCFfFuAryLPFwe0uAhX5mgAPpNFvlK+bBEuBQFvI1e1SveNHvQsi7ano9w+0+pBN/iMQykaw+PGPtpyw5RQEOyMsn51jxzlhXYBwl6TQVej65vaO37NgoHtSVgIMZU9o8eMTGO1ZeeE2/foGUnmcwfePKPyVzMzMPgHEDxzRlIubTAAAAABJRU5ErkJggg=="/>
+        <circle class="cls-2" cx="192.31" cy="240.96" r="36.06"/>
+      </g>
+      <g>
+        <image id="update" width="60" height="62" transform="translate(415 211)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA+CAMAAABA6ohLAAAB4FBMVEX///9AQVJCQlNBQVJeXmxKSlubm6SsrLRDQ1RcXGuVlZ/AwMXAwMZ3d4NCQlT+/v7c3N+goKn7+/zExMpYWGiZmaKzs7rJyc76+vrh4eS7u8H8/PxaWmn29vfn5+nj4+XT09eWlqBXV2a1try6usD9/f1CQ1S1tbx8fIhISFiLi5ZNTV38/P2FhZGFhZDg4OP5+fnX19ucnKW/v8SZmqOkpa1FRlejo6va2t3Z2dx3d4TV1dnIyM1gYW/k5Oe9vcPl5edeX21sbHmAgIuGhpHGxsve3uFOTl7MzNGJiZRYWGfBwceysrmDg46wsLdWVmWXl6FBQVPv7/Hp6euBgYx6eoZiYnBzc4BhYXBJSVq+vsSnp6/R0dVsbHrW1tpqanfCwsdWVmavr7ZpaXempq7b2955eYZTU2P09PWsrLNdXWxHR1iurrXPz9Tz8/Smpq+QkJpfX25ZWWiEhJBVVWXo6OpUVGT29vZUVGOlpa1LS1z9/f6rq7NeXm3Q0NXPz9O5ucBRUWGUlJ5gYG+hoapERVZqanjU1Niurrb7+/tVVmXf3+K/v8WIiJOoqLCfn6iWlp/Q0NTt7e96eofi4+VnZ3VlZnSamqOQkJtDRFVwcH34+Pnz9PXx8fLl5eiNjpjYbqT9AAACg0lEQVR4Xu3VRa/kPBCF4fMmzQyXmZmZaZCZmRk+ZmZmxr86kTqK7iLuqFezmH52XhyrZJfLekaqqlrn43vC4eH9OxZVsbfP4orlVKkknnQFscmX09ebtQ+49H3+tgWDvVronNmtYOqJAUsbm7AlxxCwnO+DWI8CdWdwcU+OW7jI9CtAv4XnPTmyIVxY3QE1Z2D4fMcZYPgTOaTxtAVXPu95CzJlKz8Rg6++lrIHv73aIJfaE0fvSstOOrYms3eAOhk8BGpldhN4opJCaiwUDofGUgWV1AM7ZfZqH9x5XQ4V47jiRTmUPQMcUBl54IKkbMTGY0eykj4Atppl1nsR+EhSBKBlNBodbQGISEoAKzLKpQcBLktFG+ZmR+QYmZ0DuyjtAq4dqmuQr8UYADekQhzmJuWanIN4Qb1HAOhqlJ8dAJx7X0oBs/LMAqnSPQIn5ec+PJh69FjSGLSMyDPSAmOS1l94EbDk5yWvB0Iwqm1GIVTa5hQgP69AsrQIQ1TbRCFcWjSZwq/BdFA4aQq/AUMBZetNU/hdsAcO58wHpuNNH5rC8wAcS5muajwEwMfy03oWgFVDkygNgN1kGNXJfZtAh397tlvAp5/tldEGUOv/MKaAL76UWfMSEPV/khEgoTIOAKcn/IdB6ymw62W2E1g3jaFGYEBmtcA3MlgB4jJbi0FXm9R6NNEuT0fiuwmprQb4IWjo1/z4089gpcdL0dQqcLp+736g5oTK6bZwue2cO4anpk3l9WdwcVyOw4as+Yvty/8yCAflGIAju351s8F2z3QuSL/Bud+T00M2HNLEH3/af3nZYJ146iT9/Y8q8O8eXF0Nqth//wNgnWzU86aq6inH2FPOcnKYRgAAAABJRU5ErkJggg=="/>
+        <circle class="cls-2" cx="445.31" cy="240.96" r="36.06"/>
+      </g>
+      <g>
+        <image id="backup" width="76" height="84" transform="translate(36 28) scale(.78)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABUCAMAAAAfzCHvAAAAP1BMVEX////ExMllZXNAQVJnZ3XLy89XV2ZbW2qZmqPd3eCZmaJaWmn19fa/v8X09PVZWmnNzdJqandfYG5sbHnT09ddIwwTAAAAd0lEQVR4Ae3VtQHDQBBEUTHruP9WzRQZx/xftNHhQgYAAPBqeVFeUNXZtZryoja7VnmFNy7WdH0/NJrFxmkdTaNksXkbzpLFzDY0+sXk1xR8gH1/ary/AvSFrmxBenBe+AHt184AZgAzgBmgLPQgbEExZScAAFgCdEsO9GAI5MIAAAAASUVORK5CYII="/>
+        <circle class="cls-2" cx="65.31" cy="62.96" r="36.06"/>
+      </g>
+      <text class="cls-5" transform="translate(17.1 124.43)"><tspan x="0" y="0">Backup created</tspan><tspan x="1.95" y="16.8">or environment</tspan><tspan x="22.96" y="33.6">restored</tspan></text>
+      <g>
+        <line class="cls-3" x1="125.5" y1="27" x2="125.5" y2="31"/>
+        <line class="cls-4" x1="125.5" y1="38.84" x2="125.5" y2="348.58"/>
+        <line class="cls-3" x1="125.5" y1="352.5" x2="125.5" y2="356.5"/>
+      </g>
+      <g>
+        <line class="cls-3" x1="255.5" y1="27" x2="255.5" y2="31"/>
+        <line class="cls-4" x1="255.5" y1="38.84" x2="255.5" y2="348.58"/>
+        <line class="cls-3" x1="255.5" y1="352.5" x2="255.5" y2="356.5"/>
+      </g>
+      <text class="cls-5" transform="translate(421.51 123.93)"><tspan x="0" y="0">Merged</tspan><tspan x="-14.79" y="16.8">environment</tspan></text>
+      <text id="Cleared_project_build_cache" data-name="Cleared project build cache" class="cls-5" transform="translate(293.73 123.93)"><tspan x="0" y="0">Cleared</tspan><tspan x="-13.23" y="16.8">project build</tspan><tspan x="5.83" y="33.6">cache</tspan></text>
+      <text class="cls-5" transform="translate(162.28 123.93)"><tspan x="0" y="0">Branched</tspan><tspan x="-8.56" y="16.8">environment</tspan></text>
+      <text class="cls-5" transform="translate(24.38 303.33)"><tspan x="0" y="0">Pushed code</tspan><tspan x="11.3" y="16.8">to remote</tspan></text>
+      <text class="cls-5" transform="translate(154.43 303.33)"><tspan x="0" y="0">Redeployed</tspan><tspan x="-1.16" y="16.8">environment</tspan></text>
+      <text class="cls-5" transform="translate(278.32 303.33)"><tspan x="0" y="0">Synced code</tspan><tspan x="4.29" y="16.8">or data with</tspan><tspan x="1.95" y="33.6">environment</tspan></text>
+      <text id="Updated_environment_settings" data-name="Updated environment settings" class="cls-5" transform="translate(419.32 303.33)"><tspan x="0" y="0">Updated</tspan><tspan x="-12.06" y="16.8">environment</tspan><tspan x="2.34" y="33.6">settings</tspan></text>
+      <g>
+        <line class="cls-3" x1="501.5" y1="183.5" x2="497.5" y2="183.51"/>
+        <line class="cls-1" x1="489.57" y1="183.52" x2="17.53" y2="184.08"/>
+        <line class="cls-3" x1="13.56" y1="184.08" x2="9.56" y2="184.08"/>
+      </g>
+      <g>
+        <line class="cls-3" x1="381.56" y1="21.83" x2="381.56" y2="25.83"/>
+        <line class="cls-4" x1="381.56" y1="33.67" x2="381.56" y2="343.41"/>
+        <line class="cls-3" x1="381.56" y1="347.33" x2="381.56" y2="351.33"/>
+      </g>
+    </g>
+  </g>
+</svg>

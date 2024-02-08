@@ -6,7 +6,7 @@ exl-id: 70dddd62-0269-4af4-bd2a-1a4fbf11a131
 
 # Cloud CLI
 
-The `magento-cloud` CLI tool enables developers and system administrators the ability to manage Cloud projects and environments, perform routines and run automation tasks. The `magento-cloud` CLI extends the features and functionality of the Project Web Interface. After you install the `magento-cloud` CLI on your local workstation, you can use it to manage your Adobe Commerce on cloud infrastructure Starter and Pro Integration environments.
+The `magento-cloud` CLI tool enables developers and system administrators the ability to manage Cloud projects and environments, perform routines and run automation tasks. The `magento-cloud` CLI extends the features and functionality of the [[!DNL Cloud Console]](../../get-started/cloud-console.md). After you install the `magento-cloud` CLI on your local workstation, you can use it to manage your Adobe Commerce on cloud infrastructure Starter and Pro integration environments.
 
 **To install the `magento-cloud` CLI**:
 
@@ -50,7 +50,7 @@ The `magento-cloud` CLI tool enables developers and system administrators the ab
 
 ## Common commands
 
-Adobe designed these commands to manage Cloud Integration environments and recommends that you run the `magento-cloud` CLI from a project directory, so that you can omit the `-p <project-ID>` parameter.
+Adobe designed these commands to manage Cloud integration environments and recommends that you run the `magento-cloud` CLI from a project directory so you can omit the `-p <project-ID>` parameter.
 
 The following list of commonly used `magento-cloud` CLI commands includes required options only. You can use the `--help` option with any command to see more information.
 
@@ -64,7 +64,7 @@ The following list of commonly used `magento-cloud` CLI commands includes requir
 | `magento-cloud variables`            | List variables in this environment.                |
 | `magento-cloud ssh`                  | Use SSH to connect to the remote environment.      |
 | `magento-cloud url`                  | Open the Adobe Commerce storefront in a browser.   |
-| `magento-cloud web`                  | Open the Project Web Interface.                    |
+| `magento-cloud web`                  | Open the [!DNL Cloud Console].                    |
 
 ## Environment commands
 

@@ -32,9 +32,9 @@ _"Our monitoring has detected files storage on your cluster (project-id-environm
 >
 >It is recommended that you regularly monitor your storage capacity and maintain it well under 90% to avoid these automatic increases. Once allocated, the storage increase for Pro staging and production cannot be reverted.
 
-## Check Integration environment
+## Check integration environment
 
-You can check disk space usage for your Integration environment using the `magento-cloud` CLI.
+You can check disk space usage for your integration environment using the `magento-cloud` CLI.
 
 **To check approximate disk space usage**:
 
@@ -122,7 +122,7 @@ Filesystem                                    Size  Used Avail Use% Mounted on
 
 ## Allocate disk space
 
-Two [configuration files](../environment/overview.md) control the allocation of disk space in the Cloud environments: the `.magento.app.yaml` file and the `.magento/services.yaml` file. Each file contains the `disk` property, which defines the disk size value in MB for the respective configuration. You can only change disk space allocation on Pro Integration and Starter environments.
+Two [configuration files](../environment/overview.md) control the allocation of disk space in the Cloud environments: the `.magento.app.yaml` file and the `.magento/services.yaml` file. Each file contains the `disk` property, which defines the disk size value in MB for the respective configuration. You can only change disk space allocation on Pro integration and Starter environments.
 
 >[!IMPORTANT]
 >

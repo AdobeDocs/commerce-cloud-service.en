@@ -7,7 +7,7 @@ exl-id: 8d1e2ad6-14d0-4754-9703-960d93e135a9
 ---
 # New Relic monitoring
 
-New Relic connects and monitors your infrastructure and Commerce application using PHP agents. After a Cloud environment connects to New Relic, you can log in to your New Relic account to review the data collected by the agent.
+New Relic connects and monitors your infrastructure and [!DNL Commerce] application using PHP agents. After a Cloud environment connects to New Relic, you can log in to your New Relic account to review the data collected by the agent.
 
 On the _APM & Services_ page, select the **Summary** to view transactional information about your application. This view helps you identify potential failures and check the overall health of your application and services.
 
@@ -45,7 +45,7 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
 >[!TIP]
 >
->For Pro Staging and Integration environments and Starter environments, use [Health notifications](../integrations/health-notifications.md) to monitor disk space.
+>For Pro Staging and integration environments and Starter environments, use [Health notifications](../integrations/health-notifications.md) to monitor disk space.
 
 >[!PREREQUISITES]
 >

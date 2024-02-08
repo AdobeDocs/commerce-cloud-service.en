@@ -91,7 +91,7 @@ The valid permission levels are:
 
 - `ro`: Only SELECT queries are allowed.
 - `rw`: SELECT queries and INSERT, UPDATE, and DELETE queries are allowed.
-- `admin`: All queries are allowed, including DDL queries (CREATE TABLE, DROP TABLE, and so on).
+- `admin`: All queries are allowed, including DDL queries (CREATE TABLE, DROP TABLE, and more).
 
 For example:
 

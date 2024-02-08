@@ -11,7 +11,7 @@ The SendGrid Simple Mail Transfer Protocol (SMTP) proxy service provides outboun
 * Dedicated IP addresses
 * Domain registration, DomainKeys Identified Mail (DKIM) signatures for email domain validation (for Pro Staging and Production environments only)
 * Custom domain registration (for Pro only)
-* Automated integration for Starter and Pro Integration environments. Pro Production and Staging environments require manual provisioning and configuration during the Infrastructure as a Service (IaaS) hardware provisioning process
+* Automated integration for Starter and Pro integration environments. Pro Production and Staging environments require manual provisioning and configuration during the Infrastructure as a Service (IaaS) hardware provisioning process
 
 The SendGrid SMTP proxy is not intended for use as a general-purpose email server to receive incoming email or for use with email marketing campaigns.
 

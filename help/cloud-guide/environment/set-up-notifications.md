@@ -18,7 +18,7 @@ Before you configure notifications, consider the following:
 -  How much detail do you want to see in the logs?
 -  Where do you want to set up notifications (Integration, Staging, Production)?
 
-For example, during initial development you may prefer email notifications that show detailed logs about your Integration environment to help you debug issues before deploying to the Staging environment. When you are ready to deploy to the Staging or Production environment, you may prefer a Slack message that contains less detailed information.
+For example, during initial development you may prefer email notifications that show detailed logs about your integration environment to help you debug issues before deploying to the Staging environment. When you are ready to deploy to the Staging or Production environment, you may prefer a Slack message that contains less detailed information.
 
 >[!NOTE]
 >

@@ -150,7 +150,7 @@ By default, Fastly hides all Adobe Commerce errors behind the *503 Service Unava
       nslookup {your_project_id}.ent.magento.cloud
       ```
 
-   -  For Pro Integration environments and Starter environments:
+   -  For Pro integration environments and Starter environments:
 
       ```bash
       nslookup gw.{your_region}.magentosite.cloud

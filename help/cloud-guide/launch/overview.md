@@ -9,7 +9,7 @@ When you have completed deployment and testing in Integration and Staging enviro
 
 If you checked this information before deploying and testing in Staging, consider reviewing the benefits of testing in Staging first in the next section. Staging is a near-production environment running on similar hardware, configurations, architecture, and services. It can reduce your downtime and make your extension, service, custom configurations, and merchant User Acceptance Testing vital components to releasing your sites and stores.
 
-## Why test fully in Integration, Staging, and Production?
+## Why test fully in integration, staging, and production?
 
 We strongly recommend testing in the Integration, Staging, and Production environments due to the complexity of ensuring that your custom code, themes, extensions, and third-party integrations all work together to operate your stores. The following are common issues that you can discover and resolve when you complete testing in the Integration and Staging environments before updating your Production environment:
 
@@ -21,7 +21,7 @@ We strongly recommend testing in the Integration, Staging, and Production enviro
 
 -  [Fully test](../test/guidance.md) your site with various tools in Staging for load, stress, performance, and site assets.
 
--  Because Integration environments may only have databases populated with test data, not matching a production-like environment, you might find additional errors or unexpected behavior when testing in Staging or Production environments.
+-  Because integration environments may only have databases populated with test data, not matching a production-like environment, you might find additional errors or unexpected behavior when testing in Staging or Production environments.
 
 ## Prerequisites for site launch
 

@@ -32,7 +32,7 @@ Adobe enables the WAF service on new accounts within 2 to 3 weeks after provisio
 
 ## How it works
 
-The WAF service integrates with Fastly and uses the cache logic within the Fastly CDN service to filter traffic at the Fastly global nodes. We enable the WAF service in your Production environment with a default WAF policy based on [ModSecurity Rules from Trustwave SpiderLabs](https://github.com/SpiderLabs/ModSecurity) and the OWASP Top Ten security threats.
+The WAF service integrates with Fastly and uses the cache logic within the Fastly CDN service to filter traffic at the Fastly global nodes. We enable the WAF service in your Production environment with a default WAF policy based on [ModSecurity Rules from Trustwave SpiderLabs](https://github.com/owasp-modsecurity/ModSecurity) and the OWASP Top Ten security threats.
 
 The WAF service filters HTTP and HTTPS traffic (GET and POST requests) against the WAF ruleset and blocks traffic that is malicious or does not comply with specific rules. The service filters only origin-bound traffic that attempts to refresh the cache. As a result, we stop most attack traffic at the Fastly cache, protecting your origin traffic from malicious attacks. By processing only origin traffic, the WAF service preserves cache performance, introducing only an estimated 1.5 milliseconds to 20 milliseconds of latency to every non-cached request.
 
@@ -50,7 +50,7 @@ If your Adobe Commerce admin page or storefront returns a `403 Forbidden` error 
 
 Fastly maintains and updates the WAF ruleset based on rule updates from commercial third parties, Fastly research, and open sources. Fastly updates the published rules into a policy as needed, or when changes to the rules are available from their respective sources. Also, Fastly can add rules that match the published classes of rules into the WAF instance of any service after the WAF service is enabled. These updates ensure immediate coverage for new or evolving exploits.
 
-Adobe and Fastly manage the update process to ensure that new or modified WAF rules work effectively in your Production environment before the updates are deployed in blocking mode. See [Fastly WAF rule set update and maintenance](https://docs.fastly.com/en/guides/fastly-waf-rule-set-updates-maintenance-legacy).
+Adobe and Fastly manage the update process to ensure that new or modified WAF rules work effectively in your Production environment before the updates are deployed in blocking mode.
 
 ## Limitations
 
