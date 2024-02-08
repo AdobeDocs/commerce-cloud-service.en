@@ -25,7 +25,7 @@ Set the `_merge` option to one of the following:
 
 >[!NOTE]
 >
->We strongly recommend using a private repository for your Adobe Commerce on cloud infrastructure project to protect any proprietary information or development work, such as extensions and sensitive configurations.
+>Adobe strongly recommends using a private repository for your Adobe Commerce on cloud infrastructure project to protect any proprietary information or development work, such as extensions and sensitive configurations.
 
 ## Pro self-service warning {#pro-self-service-warning}
 
@@ -56,7 +56,7 @@ Set the `_merge` option to one of the following:
 >
 >The deployment process begins when you perform a merge, push, or synchronization of your environment, or when you trigger a manual redeployment, during which the [!DNL Commerce] application is in maintenance mode. For a Production environment, Adobe recommends completing this work during off-peak hours to avoid service disruptions.
 
-## Route placeholders {#route-placeholder}
+## Route placeholder {#route-placeholder}
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Use the following instructions for service setup on Pro Integration environments
 
 >[!TIP]
 >
->After initial service setup, you can change the software version for an installed service by updating the `services.yaml` and `.magento.app.yaml` configuration files. See [Change service version](/help/cloud-guide/services/services-yaml.md#change-service-version).
+>After initial service setup, you can change the software version for an installed service by updating the `services.yaml` and `.magento.app.yaml` configuration files. See [Change service version](/help/cloud-guide/services/services-yaml.md#change-service-version) for guidance on upgrading or downgrading a service.
 
 ## Stuck deployment tip {#stuck-deployment-tip}
 

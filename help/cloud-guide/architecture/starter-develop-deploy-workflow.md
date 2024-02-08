@@ -25,7 +25,7 @@ Development and deployment on Starter plans begin with your initial project. You
 The development workflow includes the following:
 
 -  [Clone and branch](#clone-and-branch) from the `master` to create `staging` and development branches
--  [Develop code](#develop-code) and install extensions locally in a development branch
+-  [Develop code](#develop-code) and install extensions locally in a development branch, including [!DNL Composer] updates
 -  [Configure](#configure-store) your store and extension settings
 -  [Generate configuration](#generate-configuration-management-files) management files
 -  [Push code](#push-code-and-test) and configuration to build and deploy to the `staging` and `production` environments
