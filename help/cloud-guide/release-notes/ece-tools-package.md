@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2023-10-16
+last-substantial-update: 2024-01-16
 exl-id: a464b940-c56e-4a7c-9948-559539e25361
 ---
 # ECE-Tools release notes
@@ -22,7 +22,14 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.1.16 {#latest}
+## v2002.1.17 {#latest}
+
+Release date: January 16, 2024
+
+-  ![fix icon](../../assets/fix.svg) **Validator for Elasticsearch & OpenSearch**—Fixed the validator that produced a misleading message to install a search service when LiveSearch is enabled.<!-- MCLOUD-10167 -->
+-  ![fix icon](../../assets/fix.svg) **Deployment warning**—Fixed an issue that resulted in deployment warnings about non-empty folders.<!-- MCLOUD-8958 -->
+
+## v2002.1.16
 
 Release date: October 16, 2023
 
@@ -91,7 +98,7 @@ Release date: March 10, 2022
 
 Release date: October 25, 2021
 
--  ![new icon](../../assets/new.svg) **Alternative dump location**—Added the `--dump-directory` option so that you can choose a target directory for a DB dump. Now `/app/var/dump-main` is the default target directory for a DB dump. See [Snapshots and backup management: Dump your database](../storage/database-dump.md)<!-- MCLOUD-8063 -->
+-  ![new icon](../../assets/new.svg) **Alternative dump location**—Added the `--dump-directory` option so that you can choose a target directory for a DB dump. Now `/app/var/dump-main` is the default target directory for a DB dump. See [Backup management: Dump your database](../storage/database-dump.md)<!-- MCLOUD-8063 -->
 -  ![fix icon](../../assets/fix.svg) **Update Monolog**—Updated the minimum version required for the `monolog` package to `^2.3`.<!-- ACMP-1263 -->
 -  ![fix icon](../../assets/fix.svg) **Update Symfony**—Updated the Symfony dependencies to be compatible with Adobe Commerce 2.4.4.<!-- ACMP-1533 -->
 -  ![fix icon](../../assets/fix.svg) **Feature/resolve autoload**—Fixed an issue when deploying to an integration environment and seeing the `CRITICAL: [9] Required configuration is missed in autoload section of composer.json file.` error.<!-- https://github.com/magento/ece-tools/pull/799 -->

@@ -217,7 +217,7 @@ hooks:
 
 ## Add a custom module to extend `ece-tools`
 
-The `ece-tools` package provides default API interfaces that follow Semantic Version standards. All API interfaces are marked with **@api** annotation. You can replace the default API interface implementation with your own by creating a custom module and modifying the default code as needed.
+The `ece-tools` package provides default API interfaces that follow Semantic Version standards. All API interfaces are marked with **@api** annotation. You can replace the default API implementation with your own by creating a custom module and modifying the default code as needed.
 
 To use the custom module with Adobe Commerce on cloud infrastructure, you must register your module in the extensions list for the `ece-tools` package. The registration process is similar to the process that you use to register modules in Adobe Commerce.
 

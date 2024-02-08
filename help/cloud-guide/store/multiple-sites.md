@@ -34,17 +34,17 @@ https://store.com/second/
 
 ## Add Domains
 
-Custom domains can be added to Pro Staging and any Production environment; they cannot be added to Integration environments.
+Custom domains can be added to Pro Staging and any Production environment; they cannot be added to integration environments.
 
 The process to add a domain depends on the type of Cloud account:
 
--  For Pro Staging and Production
+- For Pro Staging and Production
 
    Add the new domain to Fastly, see [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains), or open a support ticket to request assistance. In addition, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request new domains to be added to a cluster.
 
--  For Starter Production only
+- For Starter Production only
 
-   Add the new domain to Fastly, see [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains), or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request assistance. In addition, you must add the new domain to the **Domains** tab in the Project Web Interface: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+   Add the new domain to Fastly, see [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains), or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request assistance. In addition, you must add the new domain to the **Domains** tab in the [!DNL Cloud Console]: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Configure local installation
 
@@ -54,8 +54,8 @@ After successfully creating and testing the local installation to use multiple s
 
 1. **Configure routes or locations**—specify how incoming URLs are handled by Adobe Commerce
 
-   -  [Routes for separate domains](#configure-routes-for-separate-domains)
-   -  [Locations for shared domains](#configure-locations-for-shared-domains)
+   - [Routes for separate domains](#configure-routes-for-separate-domains)
+   - [Locations for shared domains](#configure-locations-for-shared-domains)
 
 1. **Set up websites, stores, and store views**—configure using the Adobe Commerce Admin UI
 1. **Modify variables**—specify the values of the `MAGE_RUN_TYPE` and `MAGE_RUN_CODE` variables in the `magento-vars.php` file
@@ -113,9 +113,9 @@ Where the routes configuration defines how the URLs are processed, the `web` pro
                ...
    ```
 
-1. Create a pass for the website (`/website`) and reference the root using the alias from the previous step.
+1. Create a pass-through for the website (`/website`) and reference the root using the alias from the previous step.
 
-   The alias allows `website` to access values from the root location. In this example, the website pass is on line 21.
+   The alias allows `website` to access values from the root location. In this example, the website `passthru` is on line 21.
 
    ```yaml
    web:
@@ -140,9 +140,7 @@ Where the routes configuration defines how the URLs are processed, the `web` pro
                        passthru: "/static/$resource"
            "/<website>": *app
              ...
-   ```
-
-1. Continue to [Set up websites, stores, and store views](#set-up-websites-stores-and-store-views).
+   ``` 
 
 **To configure a location with a different directory**:
 
@@ -162,7 +160,17 @@ Where the routes configuration defines how the URLs are processed, the `web` pro
                root: "pub/static"
    ```
 
-1. Create a pass through for the `index.php` file.
+1. Create a subdirectory for the website under the `pub` directory: `pub/<website>`
+
+1. Copy the `pub/index.php` file into the `pub/<website>` directory and update the `bootstrap` path (`/../../app/bootstrap.php`).
+
+    ```
+    try {
+        require __DIR__ . '/../../app/bootstrap.php';
+    } catch (\Exception $e) { 
+    ```
+
+1. Create a pass-through for the `index.php` file.
 
    ```yaml
    web:
@@ -191,6 +199,11 @@ Where the routes configuration defines how the URLs are processed, the `web` pro
            "/<website>/static": *static
              ...
    ```
+
+1. Commit and push the changed files.
+
+   - `pub/<website>/index.php` (If this file is in `.gitignore`, the push may require the force option.)
+   - `.magento.app.yaml`
 
 ### Set up websites, stores, and store views
 
@@ -247,11 +260,11 @@ Instead of configuring an NGINX virtual host, pass the `MAGE_RUN_CODE` and `MAGE
    ```
 
 1. Replace the following values in the `if (isHttpHost("example.com"))` block:
-   -  `example.com`—with the base URL of your _website_
-   -  `default`—with the unique CODE for your _website_ or _store view_
-   -  `store`—with one of the following values:
-      -  `website`—load the _website_ in the storefront
-      -  `store`—load a _store view_ in the storefront
+   - `example.com`—with the base URL of your _website_
+   - `default`—with the unique CODE for your _website_ or _store view_
+   - `store`—with one of the following values:
+      - `website`—load the _website_ in the storefront
+      - `store`—load a _store view_ in the storefront
 
    For multiple sites using unique domains:
 
@@ -302,7 +315,7 @@ Instead of configuring an NGINX virtual host, pass the `MAGE_RUN_CODE` and `MAGE
 
 1. Save your changes to the `magento-vars.php` file.
 
-### Deploy and test on the Integration server
+### Deploy and test on the integration server
 
 Push your changes to your Adobe Commerce on cloud infrastructure integration environment and test your site.
 
@@ -328,7 +341,7 @@ Push your changes to your Adobe Commerce on cloud infrastructure integration env
 
 ## Deploy to Staging and Production
 
-Follow the deployment process for [deploying to Staging and Production](../deploy/staging-production.md). For Starter and Pro environments, you use the Project Web Interface to push code across environments.
+Follow the deployment process for [deploying to Staging and Production](../deploy/staging-production.md). For Starter and Pro environments, you use the [!DNL Cloud Console] to push code across environments.
 
 Adobe recommends fully testing in the Staging environment before pushing to the Production environment. Make code changes in the integration environment and begin the process to deploy across environments again.
 

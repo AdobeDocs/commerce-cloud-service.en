@@ -42,23 +42,25 @@ magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master
 >
 >The `ADMIN_URL` value accepts letters (a-z or A-Z), numbers (0-9), and the underscore character (_) for a custom admin path. Spaces or other characters are **not** accepted.
 
-**To change the URL using the Project Web Interface**:
+**To change the URL using the [!DNL Cloud Console]**:
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
-1. In the Project dashboard, select the environment and click **Configure environment**.
+1. Select a project from the _All projects_ list.
 
-   ![Project without code](../../assets/ui-configure-environment.png)
+1. In the project overview, select the environment and click the configuration icon.
+
+   ![Project configuration](../../assets/icon-configure.png){width="36"}
 
 1. Select the **Variables** tab.
 
-1. Click **Add Variable**.
+1. Click **Create Variable**.
 
 1. Enter the following:
 
-    - **Name** = `ADMIN_URL`
-    - **Value** = New URL. For example, set the Admin URL to `magento_A8v10`.
+    - **Variable name** = `ADMIN_URL`
+    - **value** = New URL. For example, set the Admin URL to `magento_A8v10`.
 
-    By default, `Enabled` and `Inheritable by child environments` are selected.
+    By default, `Available during runtime` and `Make inheritable` are selected.
 
-1. Click **Add variable** and wait until deployment completes.
+1. Click **Create variable** and wait until deployment completes. This button is only visible when the required fields contain values.

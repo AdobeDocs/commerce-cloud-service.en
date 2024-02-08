@@ -4,15 +4,20 @@ description: Prepare for local development with an Adobe Commerce on cloud infra
 role: Developer
 feature: Cloud, Install
 topic: Development
+last-substantial-update: 2024-02-06
 exl-id: d4452d7d-d3dc-4f8d-8bd7-76f05d89f545
 ---
 # Development overview
 
-Adobe Commerce on cloud infrastructure remote environments are **Read Only**, including all Starter environments and all Pro Integration, Staging, and Production environments. In a local development environment, you can write and test code before pushing it to an integration environment for further testing and deployment to Staging and Production.
+Adobe Commerce on cloud infrastructure remote environments are **Read Only**, including all Starter environments and all Pro integration, Staging, and Production environments. In a local development environment, you can write and test code before pushing it to an integration environment for further testing and deployment to Staging and Production.
+
+Before preparing your local workspace, ensure that you have your [credentials](../../get-started/prepare-workspace.md). Local development requires PHP and Composer installation unless you opt to use [Cloud Docker for Commerce](#docker-environment).
 
 ## Required packages
 
-Adobe Commerce on cloud infrastructure uses Composer to manage the dependencies and upgrades for projects. Composer installs the required libraries and dependencies for your project in the `vendor` directory. The following required Composer files are in the project root directory:
+Adobe Commerce on cloud infrastructure uses Composer to manage the dependencies and upgrades for projects. For local development, you  must install the PHP and Composer versions that are compatible with your Cloud project. For example, if you are using the [!DNL Commerce] 2.4.6 cloud template, you can see that the [`.magento.app.yaml`](https://github.com/magento/magento-cloud/blob/2.4.6/.magento.app.yaml) configuration file uses **PHP 8.2** and **Composer 2.2.21**.
+
+Composer installs the required libraries and dependencies for your project in the `vendor` directory. The following required Composer files are in the project root directory:
 
 - `composer.json`—Use the `composer.json` file to manage product installations and upgrades.
 - `composer.lock`—The `composer.lock` file stores a set of exact version dependencies that satisfy the version constraints of every requirement for every package in the dependency tree of the project.
@@ -44,8 +49,8 @@ For example, to use the latest Adobe Commerce version 2.4.5, set `2.4.5` as the 
 
 The main packages of this metapackage are the following:
 
-- **vendor/magento/ece-tools**—The `ece-tools` package is compatible with Adobe Commerce version 2.1.4 and later to provide a rich set of features you can use to manage your Adobe Commerce on cloud infrastructure project. It contains scripts and Adobe Commerce on cloud infrastructure commands designed to help manage your code and automatically build and deploy your projects. See [Ece-tools package overview](../dev-tools/package-overview.md).
-- **vendor/magento/product-enterprise-edition**—This metapackage requires application components, including modules, frameworks, themes, and so on.
+- **vendor/magento/ece-tools**—The `ece-tools` package is compatible with Adobe Commerce version 2.1.4 and later to provide a rich set of features you can use to manage your Adobe Commerce on cloud infrastructure project. It contains scripts and Adobe Commerce on cloud infrastructure commands designed to help manage your code and automatically build and deploy your projects. See the [`ece-tools` package overview](../dev-tools/package-overview.md).
+- **vendor/magento/product-enterprise-edition**—This metapackage requires application components, including modules, frameworks, themes, and more.
 - **vendor/fastly2/magento2**—This module manages the Fastly CDN and services for the Pro Staging and Production and Starter Production environments. See [Fastly services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 - **vendor/magento/module-paypal-on-boarding**—This module provides PayPal payment gateway checkout by connecting to your PayPal merchant account. See [PayPal On-Boarding tool](../store/paypal.md).
 
@@ -53,28 +58,13 @@ The main packages of this metapackage are the following:
 >
 >See [Cloud packages for Adobe Commerce](/help/cloud-guide/release-notes/cloud-packages.md) in the _Commerce Release notes_ for a list of dependencies and third-party licenses.
 
-## Gather credentials
+## Docker environment
 
-Before setting up a workspace, gather the following credentials and accounts:
+You can use the Cloud Docker for Commerce tool to emulate the Adobe Commerce on cloud infrastructure production and development environments for local development. Cloud Docker for Commerce does not require PHP and Composer to be installed locally.
 
-- **Authentication keys (Composer keys)**
-
-    Authentication keys are 32-character authentication tokens that provide secure access to the Adobe Commerce Composer repository (repo.magento.com), and any other Git services required for application development such as GitHub. Your account can have multiple authentication keys. For the workspace setup, start with one specific key for your code repository. If you do not have any keys, contact the Account Owner to create them, or create the [authentication keys](authentication-keys.md) yourself.
-
-- **Cloud Project account**
-
-    The Account Owner or Technical Admin (Super User) should invite you to the Adobe Commerce on cloud infrastructure project. When you receive the e-mail invitation, click the link and follow the prompts to create your account. See [Onboarding](../../get-started/onboarding.md) or [Access the Project Web Interface](../project/overview.md) for details.
-
-- **Adobe Commerce Encryption Key**
-
-    When importing an existing system only, capture the encryption key used to protect your access and data for the database. For details on this key, see [Resolve issues with encryption key](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html)
-
-## Launch a Docker environment
-
-You can use the Cloud Docker for Commerce tool to emulate the Adobe Commerce on cloud infrastructure production and development environments for local development:
-
+- [Local development with Cloud Docker](https://developer.adobe.com/commerce/cloud-tools/docker/setup/) in the Adobe Developer site
 - [Docker architecture and common commands](../dev-tools/cloud-docker.md)
-- [Launch Docker development environment](https://developer.adobe.com/commerce/cloud-tools/docker/setup/)
+- [Cloud Docker release notes](../release-notes/cloud-docker.md)
 
 >[!TIP]
 >

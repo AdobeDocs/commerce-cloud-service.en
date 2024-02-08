@@ -37,7 +37,7 @@ For Brazil, you must have an existing PayPal business account to connect. You ca
 
 To configure PayPal Express Checkout:
 
-1. Access the Admin Console for the environment.
+1. Access the Admin for the environment.
 1. In the left-side navigation, select **Stores** > **Configuration**, then select **Sales** > **Payment Methods**.
 1. For PayPal, select **Configure**. Configuration fields display in expandable sections for Express Checkout, Advertise PayPal Credit, and Basic and Advanced settings.
 1. Connect your PayPal account. Until the account is connected, the options to enable are disabled. For details on available and supported accounts to connect and limitations, see [PayPal account](#paypal-account).

@@ -76,9 +76,9 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 
 **To configure New Relic for Starter environments**:
 
-1. Find your New Relic license key from the Project Web UI or the Cloud CLI.
+1. Find your New Relic license key from the [!DNL Cloud Console] or the Cloud CLI.
 
-   **Project Web UI method**:
+   **[!DNL Cloud Console] method**:
 
    - Open your cloud project [account page](https://accounts.magento.cloud/user).
 

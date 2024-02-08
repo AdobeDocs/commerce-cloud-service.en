@@ -10,15 +10,15 @@ exl-id: d10d5760-44da-4ffe-b4b7-093406d8b702
 Your Adobe Commerce on cloud infrastructure Pro architecture supports multiple environments that you can use to develop, test, and launch your store.
 
 - **Master**—Provides a `master` branch deployed to Platform as a service (PaaS) containers.
-- **Integration**—Provides a single environment branch, and you can create one additional, environment branch. This allows for up to two _active_ branches deployed to Platform as a service (PaaS) containers.
-- **Staging**—Provides a single environment branch deployed to dedicated Infrastructure as a service (IaaS) containers.
-- **Production**—Provides a single environment branch deployed to dedicated Infrastructure as a service (IaaS) containers.
+- **Integration**—Provides a single `integration` branch for development, though you can create one additional branch. This allows for up to two _active_ branches deployed to Platform as a service (PaaS) containers.
+- **Staging**—Provides a single `staging` branch deployed to dedicated Infrastructure as a service (IaaS) containers.
+- **Production**—Provides a single `production` branch deployed to dedicated Infrastructure as a service (IaaS) containers.
 
 The following table summarizes the differences between environments:
 
 |                                        | INTEGRATION | STAGING           | PRODUCTION           |
 | -------------------------------------- | ----------- | ----------------- | -------------------- |
-| Supports settings management in the UI | Yes         | Limited           | Limited              |
+| Supports settings management in the [!DNL Cloud Console] | Yes         | Limited           | Limited              |
 | Supports multiple branches             | Yes         | No (Staging only) | No (Production only) |
 | Uses YAML files for configuration      | Yes         | No                | No                   |
 | Runs on dedicated IaaS hardware        | No          | Yes               | Yes                  |
@@ -28,31 +28,31 @@ The following table summarizes the differences between environments:
 
 >[!NOTE]
 >
->Adobe also provides the Cloud Docker for Commerce solution for deploying to a local Cloud Docker environment so that you can develop and test Adobe Commerce projects. See [Docker development](../dev-tools/cloud-docker.md).
+>Adobe provides the Cloud Docker for Commerce tool for deploying to a local Cloud Docker environment so that you can develop and test Adobe Commerce projects. See [Docker development](../dev-tools/cloud-docker.md).
 
-## Pro environment architecture
+## Environment architecture
 
-Your project is a single Git repository with three, main environment branches for Integration, Staging, and Production. The following diagram shows the hierarchical relationship of the environments:
+Your project is a single Git repository with three main environment branches: `integration`, `staging`, and `production`. The following diagram shows the hierarchical relationship of Pro environments:
 
-![High-level view of Pro Environment architecture](../../assets/pro-branch-architecture.png)
+![High-level view of Pro environment architecture](../../assets/pro-branch-architecture.png)
 
 ### Master environment
 
-On Pro projects, the `master` branch provides an active PaaS environment with your Production environment. Always push a copy of the Production code to the `master` environment so that you can debug the Production environment without interrupting services.
+On Pro projects, the `master` branch provides an active PaaS environment with your production environment. Always push a copy of the production code to the `master` environment so that you can debug the production environment without interrupting services.
 
 **Caveats:**
 
-- Do **not** create a branch based on the `master` branch. Use the integration environment branch to create new, active branches.
+- Do **not** create a branch based on the `master` branch. Use the integration environment to create active branches for development.
 
 - Do not use the `master` environment for development, UAT, or performance testing
 
 ### Integration environment
 
-The integration environment runs in a Linux container (LXC) on a grid of servers known as Platform as a service (PaaS). Each environment includes a web server and database to test your site. See [Regional IP Addresses](../project/regional-ip-addresses.md) for a list of AWS and Azure IP addresses.
+The integration environment runs in a Linux container (LXC) on a grid of servers known as PaaS. Each environment includes a web server and database to test your site. See [Regional IP Addresses](../project/regional-ip-addresses.md) for a list of AWS and Azure IP addresses.
 
 **Recommended use cases:**
 
-Integration environments are designed for limited testing and development before moving changes to Staging and Production. For example, you can use the integration environment to complete the following tasks:
+Integration environments are designed for limited testing and development before moving changes to staging and production environments. For example, you can use the integration environment to complete the following tasks:
 
 - Ensure that changes to continuous integration (CI) processes are Cloud compatible
 
@@ -70,23 +70,23 @@ For best performance in the integration environment follow these best practices:
 
 - Fastly CDN and New Relic services are not accessible in an integration environment
 
-- The integration environment architecture does not match the Production and Staging architecture
+- The integration environment architecture does not match the Staging and Production architecture
 
-- Do not use the integration environment for development testing, performance testing, or user acceptance testing (UAT)
+- Do not use the `integration` environment for development testing, performance testing, or user acceptance testing (UAT)
 
-- Do not use the integration environment to test B2B for Adobe Commerce functionality
+- Do not use the `integration` environment to test B2B for Adobe Commerce functionality
 
-- You cannot restore the Integration database from Production or Staging
+- You cannot restore the database in the integration environment from the database production or staging
 
 {{enhanced-integration-envs}}
 
 ### Staging environment
 
-The Staging environment provides a near-production environment to test your site. This environment, which is hosted on dedicated IaaS hardware, includes all services, such as Fastly CDN, New Relic APM, and search.
+The staging environment provides a near-production environment to test your site. This environment, which is hosted on dedicated IaaS hardware, includes all services, such as Fastly CDN, New Relic APM, and search.
 
 **Recommended use cases:**
 
-The Staging environment matches the Production architecture and is designed for UAT, content staging, and final review before pushing features to the Production environment. For example, you can use the Staging environment to complete the following tasks:
+The environment matches the production architecture and is designed for UAT, content staging, and final review before pushing features to the `production` environment. For example, you can use the `staging` environment to complete the following tasks:
 
 - Regression testing against production data
 
@@ -104,13 +104,13 @@ See [Deployment workflow](pro-develop-deploy-workflow.md#deployment-workflow) an
 
 **Caveats:**
 
-- After launching the Production site, use the Staging environment primarily to test patches for Production-critical bug fixes.
+- After launching the production site, use the staging environment primarily to test patches for production-critical bug fixes.
 
 - You cannot create a branch from the `staging` branch. Instead, you push code changes from the `integration` branch to the `staging` branch.
 
 ### Production environment
 
-The Production environment runs your public-facing single and multi-site storefronts. This environment runs on dedicated IaaS hardware featuring redundant, high-availability nodes for continuous access and failover protection for your customers. The Production environment includes all services in the Staging environment, plus the [New Relic Infrastructure (NRI)](../monitor/new-relic-service.md#new-relic-infrastructure) service, which automatically connects with the application data and performance analytics to provide dynamic server monitoring.
+The production environment runs your public-facing single and multi-site storefronts. This environment runs on dedicated IaaS hardware featuring redundant, high-availability nodes for continuous access and failover protection for your customers. The production environment includes all services in the staging environment, plus the [New Relic Infrastructure (NRI)](../monitor/new-relic-service.md#new-relic-infrastructure) service, which automatically connects with the application data and performance analytics to provide dynamic server monitoring.
 
 **Caveat:**
 
@@ -118,7 +118,7 @@ You cannot create a branch from the `production` branch. Instead, you push code 
 
 ### Production technology stack
 
-The Production environment has three virtual machines (VMs) behind an Elastic Load Balancer managed by an HAProxy per VM. Each VM includes the following technologies:
+The production environment has three virtual machines (VMs) behind an Elastic Load Balancer managed by an HAProxy per VM. Each VM includes the following technologies:
 
 - **Fastly CDN**—HTTP caching and CDN
 
@@ -139,7 +139,7 @@ The Production environment has three virtual machines (VMs) behind an Elastic Lo
 
 - **Galera**—database cluster with one MariaDB MySQL database per node with an auto-increment setting of three for unique IDs across every database
 
-The following figure shows the technologies used in the Production environment:
+The following figure shows the technologies used in the production environment:
 
 ![Production technology stack](../../assets/az-stack-diagram.png)
 
@@ -147,7 +147,7 @@ The following figure shows the technologies used in the Production environment:
 
 Rather than running a traditional, active-passive `master` or a primary-secondary setup, Adobe Commerce on cloud infrastructure runs a _redundant architecture_ where all three instances accept reads and writes. This architecture offers zero downtime when scaling and provides guaranteed transactional integrity.
 
-Because of the unique, redundant hardware, Adobe can provide three gateway servers. Most external services enable you to add multiple IP addresses to an allowlist, so having more than one fixed IP address is not a problem. The three gateways map to the three servers in your Production environment cluster and retain static IP addresses. It is fully redundant and highly available at every level:
+Because of the unique, redundant hardware, Adobe can provide three gateway servers. Most external services enable you to add multiple IP addresses to an allowlist, so having more than one fixed IP address is not a problem. The three gateways map to the three servers in your production environment cluster and retain static IP addresses. It is fully redundant and highly available at every level:
 
 - DNS
 - Content Delivery Network (CDN)
@@ -156,13 +156,13 @@ Because of the unique, redundant hardware, Adobe can provide three gateway serve
 
 ## Backup and disaster recovery
 
-Adobe Commerce on cloud infrastructure uses a high-availability architecture that replicates each Pro project on three separate AWS or Azure Availability Zones, each zone with a separate data center. In addition to this redundancy, Pro Staging and Production environments receive regular, live backups that are designed to use in cases of _catastrophic failure_.
+Adobe Commerce on cloud infrastructure uses a high-availability architecture that replicates each Pro project on three separate AWS or Azure Availability Zones, each zone with a separate data center. In addition to this redundancy, Pro staging and production environments receive regular, live backups that are designed for use in cases of _catastrophic failure_.
 
-**Automatic backups** include persistent data from all running services, such as the MySQL database and files stored on the mounted volumes. The backups are saved to encrypted Elastic Block Storage (EBS) in the same region as the Production environment. The automatic backups are not publicly accessible because they are stored in a separate system.
+**Automatic backups** include persistent data from all running services, such as the MySQL database and files stored on the mounted volumes. The backups are saved to encrypted Elastic Block Storage (EBS) in the same region as the production environment. The automatic backups are not publicly accessible because they are stored in a separate system.
 
 {{pro-backups}}
 
-You can create a **manual backup** of the database for your Production and Staging environments using CLI commands. See [Back up the database](../storage/database-dump.md). For integration environments, Adobe recommends creating a snapshot as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Snapshots and backup management](../storage/snapshots.md).
+You can create a **manual backup** of the database for your Staging and Production environments using CLI commands. See [Back up the database](../storage/database-dump.md). For `integration` environments, Adobe recommends creating a backup as a first step after accessing your Adobe Commerce on cloud infrastructure project and before applying any major changes. See [Backup management](../storage/snapshots.md).
 
 ### Recovery Point Objective
 
@@ -186,16 +186,16 @@ This policy may vary depending on your cloud infrastructure plan.
 
 RTO depends on the size of the storage. Large EBS volumes take more time to restore. Restoration times may vary depending on the size of your database:
 
-- large database (200+ GB) can take 5 hours
-- medium database (150 GB) can take 2 1/2 hours
-- small database (60 GB) can take 1 hour
+- A large database (200+ GB) can take 5 hours
+- A medium database (150 GB) can take 2 1/2 hours
+- A small database (60 GB) can take 1 hour
 
 {{pro-backups}}
 
 ## Pro cluster scaling
 
-The Pro cluster sizing and compute configurations vary depending on the chosen cloud provider (AWS, Azure), region, and service dependencies. Adobe cloud infrastructure can scale Pro clusters to accommodate traffic expectations and service requirements as demands change.
+The Pro cluster sizing and _compute_ configurations vary depending on the chosen cloud provider (AWS, Azure), region, and service dependencies. Adobe cloud infrastructure can scale Pro clusters to accommodate traffic expectations and service requirements as demands change.
 
 The redundant architecture empowers Adobe cloud infrastructure to upscale without downtime. When upscaling, each of the three instances rotates to upgrade capacity without impacting site operation. For example, you can add extra web servers to an existing cluster should the constriction be at the PHP level rather than the database level. This provides _horizontal scaling_ to complement the vertical scaling provided by extra CPUs on the database level. See [Scaled architecture](scaled-architecture.md).
 
-If you expect a significant increase in traffic for an event or other reason, you can request a temporary increase in capacity. See [How to request temporary upsize](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) in the _Commerce Help Center_.
+If you expect a significant increase in traffic for an event or other reason, you can request a temporary increase in capacity. See [How to request a temporary upsize](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) in the _Commerce Help Center_.

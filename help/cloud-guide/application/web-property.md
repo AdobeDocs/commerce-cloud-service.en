@@ -1,6 +1,6 @@
 ---
 title: Web property
-description: See examples on how to configure the web property in the Commerce application configuration file.
+description: See examples on how to configure the web property in the [!DNL Commerce] application configuration file.
 feature: Cloud, Configuration
 exl-id: 2ca94908-6fe1-42fd-bc3b-ef2dd473f1bb
 ---
@@ -19,7 +19,7 @@ You can fine-tune your `locations` configuration using the following key values 
 
 | Attribute  | Description |
 | :--- | :--- |
-| `allow` | Serve files that do not match "rules". Default value = `true` |
+| `allow` | Serve files that do not match the "rules". Default value = `true` |
 | `expires` | Set the number of seconds to cache content in the browser. This key enables the `cache-control` and `expires` headers for static content. If this value is not set, the `expires` directive and resulting headers are not included when serving static content files. A negative 1 (`-1`) value results in no caching and is the default value. You can express time value with the following units:  `ms` (milliseconds), `s` (seconds), `m` (minutes), `h` (hours), `d` (days), `w` (weeks), `M` (months, 30d), or `y` (years, 365d) |
 | `headers` | Set custom headers, such as `X-Frame-Options`, for static content served from this location. |
 | `index` | List the static files to serve your application, such as the `index.html` file. This key expects a collection. This only works if access to the file or files is "allowed" by the `allow` or `rules` key for this location. |

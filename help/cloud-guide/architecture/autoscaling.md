@@ -7,7 +7,7 @@ exl-id: 2ba49c55-d821-4934-965f-f35bd18ac95f
 ---
 # Auto scaling
 
-Auto scaling automatically adds or removes resources to the cloud infrastructure in order to maintain optimal performance and reasonable costs. Currently, this feature is only available for projects configured with a [Scaled architecture](scaled-architecture.md).
+Auto scaling automatically adds or removes resources to the cloud infrastructure to maintain optimal performance and reasonable costs. Currently, this feature is only available for projects configured with a [Scaled architecture](scaled-architecture.md).
 
 ## Web server nodes
 
@@ -31,7 +31,7 @@ You can use the [New Relic service](../monitor/new-relic-service.md) to monitor 
 
 ### Host count
 
-The following example New Relic query shows host count within the environment:
+The following example New Relic query shows the host count within the environment:
 
 ```sql
 SELECT uniqueCount(SystemSample.entityId) AS 'Infrastructure hosts', uniqueCount(Transaction.host) AS 'APM hosts seen' FROM SystemSample, Transaction where (Transaction.appName = 'cluster-id_stg' AND Transaction.transactionType = 'Web') OR SystemSample.apmApplicationNames LIKE '%|cluster-id_stg|%' TIMESERIES SINCE 3 HOURS AGO
@@ -64,14 +64,14 @@ To enable or disable auto scaling for your Adobe Commerce on cloud infrastructur
 
 ### Load testing
 
-Adobe enables auto scaling on your Cloud project _staging_ cluster first. After you perform and complete load testing in your Staging environment, Adobe then enables auto scaling on your production cluster. For guidance on load testing, see [Performance testing](../launch/checklist.md#performance-testing).
+Adobe enables auto scaling on your Cloud project _staging_ cluster first. After you perform and complete load testing in your environment, Adobe then enables auto scaling on your production cluster. For guidance on load testing, see [Performance testing](../launch/checklist.md#performance-testing).
 
 ### IP allowlist
 
-After enabling auto scaling, the outbound web node traffic originates from the IP addresses of the service nodes. If you use an allowlist with a third-party service that is not bundled with your Adobe Commerce on cloud infrastructure project, then you may need to update the IP addresses in the third-party service allowlist.
+After enabling auto scaling, the outbound web node traffic originates from the IP addresses of the service nodes. If you use an allowlist with a third-party service that is not bundled with your Adobe Commerce on cloud infrastructure project, then verify the IP addresses in the third-party service allowlist.
 
 For example:
 
 - If the allowlist contains the IP addresses for your service nodes (1, 2, and 3), then there is no action required.
 - If the allowlist contains the IP addresses for your service nodes (1, 2, and 3) and web nodes (4, 5, and 6)—in this case all six nodes—then there is no action required.
-- If the allowlist contains the IP addresses _only_ for your web nodes (4, 5, and 6), then you need to update the allowlist to include the IP addresses for the service nodes.
+- If the allowlist contains the IP addresses _only_ for your web nodes (4, 5, and 6), then you must update the allowlist to include the IP addresses for the service nodes.

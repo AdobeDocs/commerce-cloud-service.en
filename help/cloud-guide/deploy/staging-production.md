@@ -12,7 +12,7 @@ When you are ready to deploy your store, you must complete deployment and testin
 
 >[!TIP]
 >
->Adobe recommends creating a [snapshot](../storage/snapshots.md) of the environment before deployments.
+>Adobe recommends creating a [backup](../storage/snapshots.md) of the environment before deployments.
 
 Also, you can enable [Track deployments with New Relic](../monitor/track-deployments.md) to monitor deployment events and help you analyze performance between deployments.
 
@@ -30,30 +30,30 @@ For detailed information of the process, see [Pro Develop and Deploy Workflow](.
 
 ## Deploy code to staging
 
-The Staging environment provides a near-production environment that includes a database, web server, and all services including Fastly and New Relic. You can fully push, merge, and deploy through the [Project Web Interface](../project/overview.md) or [Cloud CLI commands](../dev-tools/cloud-cli-overview.md) through a terminal application.
+The Staging environment provides a near-production environment that includes a database, web server, and all services including Fastly and New Relic. You can fully push, merge, and deploy through the [[!DNL Cloud Console]](../project/overview.md) or [Cloud CLI commands](../dev-tools/cloud-cli-overview.md) through a terminal application.
 
-### Deploy code with the Project Web Interface
+### Deploy code with the [!DNL Cloud Console]
 
-The Project Web Interface provides features to create, manage, and deploy code in Integration, Staging, and Production environments for Starter and Pro plans.
+The [!DNL Cloud Console] provides features to create, manage, and deploy code in Integration, Staging, and Production environments for Starter and Pro plans.
 
-**For Pro projects, deploy the Integration branch to Staging**:
+**For Pro projects, deploy the integration branch to staging**:
 
 1. [Log in](https://accounts.magento.cloud) to your project.
 1. Select the `integration` branch.
 1. Select the **Merge** option to deploy to Staging.
 
-    ![Merge](../../assets/icon-merge.png)
+    ![Merge](../../assets/button-merge.png){width="150"}
 
 1. Complete all [testing](../test/staging-and-production.md) in the Staging environment.
 1. When Staging is ready, select the **Merge** option to deploy to Production.
 
-**For Starter, deploy the development branch to Staging**:
+**For Starter, deploy the development branch to staging**:
 
 1. [Log in](https://accounts.magento.cloud) to your project.
 1. Select the prepared code branch.
 1. Select the **Merge** option to deploy to Staging.
 
-    ![Merge](../../assets/icon-merge.png)
+    ![Merge](../../assets/button-merge.png){width="150"}
 
 1. Complete all [testing](../test/staging-and-production.md) in the Staging environment.
 1. When Staging is ready, select the **Merge** option to deploy to Production (`master`).
@@ -212,7 +212,7 @@ See [rsync](https://linux.die.net/man/1/rsync) help.
 
     >[!TIP]
     >
-    >To find the **SSH access** link in your Project Web Interface, select the environment and click **Access Site**.
+    >To find the **SSH access** link in your [!DNL Cloud Console], select the environment and click **Access Site**.
 
    ```bash
    ssh -A <environment_ssh_link@ssh.region.magento.cloud>
@@ -268,7 +268,7 @@ It is a best practice to create a backup of the database. The following procedur
 
 1. Create a backup of the database. To choose a target directory for the DB dump, use the `--dump-directory` option.
 
-   For Starter environments and Pro Integration environments, use `main` as the name of the database:
+   For Starter environments and Pro integration environments, use `main` as the name of the database:
 
    ```bash
    php vendor/bin/ece-tools db-dump main
@@ -278,7 +278,7 @@ It is a best practice to create a backup of the database. The following procedur
    - `--dump-directory=<dir>`—Choose a target directory for the database dump
    - `--remove-definers`—Remove DEFINER statements from the database dump
 
-1. Though the Ece-tools method is preferred, another method is to create a database dump file using native MySQL in GZIP format.
+1. Though the ECE-Tools method is preferred, another method is to create a database dump file using native MySQL in GZIP format.
 
    ```bash
    mysqldump -h <database-host> --user=<database-username> --password=<password> --single-transaction --triggers <database-name> | gzip - > /tmp/database.sql.gz

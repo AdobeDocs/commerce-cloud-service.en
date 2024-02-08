@@ -2,8 +2,8 @@
 title: Data ingestion
 description: Learn how to view and manage Commerce data ingestion in New Relic.
 feature: Cloud, Observability
+exl-id: f88bf20c-604b-4986-b71c-bb726b2f00b8
 ---
-
 # Data ingestion
 
 New Relic depends on rich data to provide effective monitoring and analysis, but large data sets can affect timely results, performance, and compliance. This topic provides some guidance on managing data ingestion and strategies to refine your data so that it is most effective.
