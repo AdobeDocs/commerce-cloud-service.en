@@ -53,7 +53,7 @@ See [Configure Redis](https://experienceleague.adobe.com/docs/commerce-operation
 
 Assuming your Redis relationship is named `redis`, you can access it using the `redis-cli` tool.
 
-1. Use SSH to connect to the Integration environment with Redis installed and configured.
+1. Use SSH to connect to the integration environment with Redis installed and configured.
 
 1. Open an SSH tunnel to a host.
 
@@ -63,7 +63,7 @@ Assuming your Redis relationship is named `redis`, you can access it using the `
 
 ## Get installed Redis version
 
-Use the following command to get the Redis version installed on an Integration environment:
+Use the following command to get the Redis version installed on an integration environment:
 
 ```bash
 redis-cli -h redis.internal info | grep version

@@ -25,11 +25,11 @@ Create an SSH key pair on every machine and workspace that requires access to yo
 
 After you add your SSH public key to your Adobe Commerce on cloud infrastructure account, redeploy all active environments on your account to install the key.
 
-You can add SSH keys to your account using one of the following methods:
+You can add SSH keys to your account using one of the following methods: Cloud CLI or [!DNL Cloud Console].
 
-- Cloud CLI
-- Project Web Interface
-- Cloud account console
+>[!BEGINTABS]
+
+>[!TAB CLI]
 
 ### Add your SSH key using the Cloud CLI
 
@@ -51,33 +51,37 @@ You can add SSH keys to your account using one of the following methods:
 >
 >You can list and delete SSH keys using the Cloud CLI commands `ssh-key:list` and `ssh-key:delete`.
 
-### Add your SSH key using the Project Web Interface
+>[!TAB Console]
 
-1. Log in to [the Project Web Interface](https://accounts.magento.cloud/user/).
+### Add your SSH key using the [!DNL Cloud Console]
 
-1. Click **No SSH key**. This icon is to the right of the command field and is visible when the project does not contain an SSH key.
+**To add an SSH key to a new project**:
 
-   ![No SSH key](../../assets/no-ssh-key.png)
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
+
+1. Click **[!UICONTROL No SSH key]**. This icon is to the right of the command field and is visible when the project does not contain an SSH key.
 
 1. Copy and paste the content of your public SSH key in the **Public key** field.
 
 1. Follow the remaining prompts.
 
-### Add a key from the Cloud Account dashboard
+**To add an SSH key to your Cloud profile**:
 
-1. Log in to [your Cloud account](https://accounts.magento.cloud/user/).
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
-1. On the account dashboard, click the **Account Settings** tab.
+1. In the upper-right account menu, click **My Profile**.
 
-1. Under _SSH keys_, click **Add a public key**.
+1. In the _SSH keys_ view, click **Add public key**.
 
 1. In the _Add an SSH key_ form, give your key a **Title**, and paste the public SSH key in the **Key** field.
 
 1. Click **Save**.
 
+>[!ENDTABS]
+
 ## Connect to a remote environment
 
-You can connect to a remote environment using the `magento-cloud` CLI or an SSH command. The `magento-cloud` CLI commands can only be used in Starter and Pro Integration environments.
+You can connect to a remote environment using the `magento-cloud` CLI or an SSH command. The `magento-cloud` CLI commands can only be used in Starter and Pro integration environments.
 
 ### Use the Cloud CLI
 
@@ -99,19 +103,21 @@ You can connect to a remote environment using the `magento-cloud` CLI or an SSH 
 
 ### Use an SSH command
 
-The Project Web Interface includes a list of Web and SSH access commands for each environment.
+The [!DNL Cloud Console] includes a list of Web and SSH access commands for each environment.
 
 **To copy the SSH command**:
 
-1. Log in to the Project Web Interface.
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 
-1. Select an environment or branch to access.
+1. Select a project from the _All projects_ list.
 
-1. Click **[Access site](../project/overview.md#access-site)**.
+1. Select an environment.
 
-1. In the _SSH access_ section, click the clipboard button to copy the full SSH command to the clipboard.
+1. Click **[!UICONTROL SSH]**.
 
-1. Open the SSH connection.
+1. In the _SSH_ tab, click the copy button to copy the full SSH command to the clipboard.
+
+1. Open a terminal and paste the SSH command to create a connection.
 
    ```bash
    ssh abcdefg123abc-branch-a12b34c--mymagento@ssh.us-2.magento.cloud
@@ -127,7 +133,7 @@ The Project Web Interface includes a list of Web and SSH access commands for eac
 
 ## sFTP
 
-Adobe Commerce on cloud infrastructure supports accessing your environments using sFTP (secure FTP) with SSH authentication. Use a client that supports SSH key authentication for sFTP and use your public SSH key. Your public SSH key must be added to the target environment. For Starter environments and Pro Integration environments, you can [add it through the Project Web Interface](#add-your-ssh-key-using-the-project-web-interface).
+Adobe Commerce on cloud infrastructure supports accessing your environments using sFTP (secure FTP) with SSH authentication. Use a client that supports SSH key authentication for sFTP and use your public SSH key. Your public SSH key must be added to the target environment. For Starter environments and Pro integration environments, you can [add it through the [!DNL Cloud Console]](#add-your-ssh-key-using-the-project-web-interface).
 
 Read-only sFTP connections are _not_ supported; sFTP access is provided with _write_ permission by default.
 
@@ -141,7 +147,7 @@ When configuring sFTP, use the information from your SSH access environment comm
 
 Depending on the client, additional options may be required to complete SSH authentication for sFTP. Review the documentation for your selected client.
 
-For **Starter environments and Pro Integration environments**, you may also want to consider [adding a `mount`](../application/properties.md#mounts) for access to a specific directory. You would add the mount to your `.magento.app.yaml` file. For a list of writable directories, see [Project structure](../project/file-structure.md). This mount point only works in those environments.
+For **Starter environments and Pro integration environments**, you may also want to consider [adding a `mount`](../application/properties.md#mounts) for access to a specific directory. You would add the mount to your `.magento.app.yaml` file. For a list of writable directories, see [Project structure](../project/file-structure.md). This mount point only works in those environments.
 
 For **Pro Staging and Production environments**, if you do not have SSH access to the environment, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request sFTP access and a mount point for access to the specific folder, e.g., `pub/media`.
 

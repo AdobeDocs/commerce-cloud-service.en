@@ -9,7 +9,7 @@ exl-id: 754b2c22-f197-49be-a699-fb3bedf053fc
 
 For added security, Adobe Commerce on cloud infrastructure provides multi-factor authentication (MFA) enforcement to manage authentication requirements for SSH access to Cloud environments.
 
-When MFA is enabled on a project, all Adobe Commerce on cloud infrastructure accounts with SSH access must follow an authentication workflow that requires either a two-factor authentication (TFA) code or an API token and SSH certificate to access the environment.
+When MFA is enabled on a project, all user accounts with SSH access require either a two-factor authentication (TFA) code or an API token and SSH certificate to access the environment.
 
 >[!NOTE]
 >
@@ -33,13 +33,13 @@ You can configure your local environment to generate the SSH certificate automat
 
 **To add SSH certificate auto-generation to your `magento-cloud` CLI configuration**:
 
-1. On your local work environment, create a file named `config.yaml` in the `.magento-cloud` folder in your home directory if it does not exist.
+1. On your local workstation, create a file named `config.yaml` in the `.magento-cloud` folder in your home directory if it does not exist.
 
    ```bash
    touch ~/.magento-cloud/config.yaml
    ```
 
-1. Edit the `config.yaml` file to add the following configuration.
+1. Add the following configuration to the `config.yaml` file.
 
    ```yaml
    api:
@@ -83,19 +83,23 @@ You can configure your local environment to generate the SSH certificate automat
 
 ## Connect to an environment using SSH with TFA
 
-When MFA is enabled on a project, any user that connects to a Cloud environment using SSH must have TFA enabled on their account. See [Enable TFA](user-access.md#enable-tfa-for-cloud-accounts).
+When MFA is enabled on a project, you must have TFA enabled on your account before you can connect to a remote environment using an SSH. See [Enable TFA](user-access.md#enable-tfa-for-cloud-accounts).
+
+>[!BEGINSHADEBOX]
 
 **Prerequisites:**
 
-For Adobe Commerce on cloud infrastructure projects enabled for MFA enforcement, SSH access requires the following permissions and account settings:
+For projects enabled with MFA enforcement, SSH access requires the following permissions and account settings:
 
--  [Admin or contributor access to the environment](user-access.md)
--  [SSH access key configured on account](../development/secure-connections.md#add-an-ssh-public-key-to-your-account)
--  [TFA enabled on account](user-access.md#enable-tfa-for-cloud-accounts)
+- [Admin or contributor access to the environment](user-access.md)
+- [SSH access key configured on account](../development/secure-connections.md#add-an-ssh-public-key-to-your-account)
+- [TFA enabled on account](user-access.md#enable-tfa-for-cloud-accounts)
+
+>[!ENDSHADEBOX]
 
 **To connect using SSH with TFA user account credentials**:
 
-1. Log in to [your account](https://accounts.magento.cloud/user/).
+1. Log in to [your account](https://console.adobecommerce.com).
 
 1. On your local workstation, use the `magento-cloud` CLI to generate the SSH certificate.
 
@@ -116,7 +120,7 @@ For Adobe Commerce on cloud infrastructure projects enabled for MFA enforcement,
    Configuration file updated successfully: /Users/<user-name>/.ssh/config
    ```
 
-1. Connect to the Cloud environment using SSH.
+1. Use an SSH to connect to the remote environment.
 
    ```bash
    ssh abcdef7uyxabce-master-7rqtwti--mymagento@ssh.us-5.magento.cloud
@@ -143,7 +147,7 @@ When managing source code for Adobe Commerce on cloud infrastructure projects, y
 
 **To connect using SSH with TFA user account credentials**:
 
-1. Log in to [your account](https://accounts.magento.cloud/user/) and authenticate using TFA.
+1. Log in to [your account](https://console.adobecommerce.com) and authenticate using TFA.
 
    >[!NOTE]
    >
@@ -183,16 +187,20 @@ When managing source code for Adobe Commerce on cloud infrastructure projects, y
    Receiving objects: 100% (22/22), 82.42 KiB | 16.48 MiB/s, done.
    ```
 
-## Connect to an environment using SSH with API token
+## Connect to an environment using SSH with an API token
 
-When MFA is enabled on a project, automated processes that require SSH access to a Cloud environment must authenticate using an API token. You can generate the token from an Adobe Commerce on cloud infrastructure account with Admin or Contributor access on the project.
+When MFA is enabled on a project, automated processes that require SSH access to a Cloud environment require an API token. You can generate the token from an Adobe Commerce on cloud infrastructure account with Admin or Contributor access on the project.
 
 Authenticating with an API token still requires generating an SSH certificate. Automated processes must also automate the generation of an SSH certificate.
 
+>[!BEGINSHADEBOX]
+
 **Prerequisites:**
 
--  [Admin or Contributor access to the Adobe Commerce on cloud infrastructure environment](user-access.md)
--  [Valid API token available on account](user-access.md#create-an-api-token)
+- [Admin or Contributor access to the Adobe Commerce on cloud infrastructure environment](user-access.md)
+- [Valid API token available on account](user-access.md#create-an-api-token)
+
+>[!ENDSHADEBOX]
 
 **To connect using SSH with an API token credential**:
 
@@ -230,13 +238,13 @@ echo "export MAGENTO_CLOUD_CLI_TOKEN=<your api token>" >> ~/.bash_profile
 
 **Option 2**: Add the token to the `config.yaml` file
 
-1. On your local work environment, create a file named `config.yaml` in the `.magento-cloud` folder in your home directory if it does not exist.
+1. On your local workstation, create a file named `config.yaml` in the `.magento-cloud` folder in your home directory if it does not exist.
 
    ```bash
    touch ~/.magento-cloud/config.yaml
    ```
 
-1. Edit the `config.yaml` file to add the following configuration.
+1. Add the following configuration to the `config.yaml` file.
 
    ```yaml
    api:
@@ -267,20 +275,20 @@ authenticated, but could not connect to service abcdef7uyxabce-master-7rqtabc--m
 
 Try the following troubleshooting procedures to resolve the connection issue:
 
--  Verify the account TFA configuration
--  Authenticate again, and then reload the certificate
+- Verify the account TFA configuration
+- Authenticate again, and then reload the certificate
 
 **To verify TFA configuration and authentication**:
 
-1. Log in to [your account](https://accounts.magento.cloud/user/).
+1. Log in to [your account](https://console.adobecommerce.com).
 
-1. Click **Account settings** > **Security**.
+1. In the upper-right account menu, click **[!UICONTROL My Profile]**.
 
-   If TFA is enabled, the Security section provides options to manage the TFA configuration:
+1. On the _My Profile_ page, click the **[!UICONTROL Security]** tab.
 
-   ![Cloud manage TFA config](../../assets/tfa-security.png)
+   If TFA is enabled, the Security section provides options to manage the TFA configuration.
 
-1. If TFA is not set up, click **Set up application** and follow the instructions to enable it. See [Enable TFA](user-access.md#enable-tfa-for-cloud-accounts).
+1. If TFA is not set up, click **[!UICONTROL Set up application]** and follow the instructions to enable it. See [Enable TFA](user-access.md#enable-tfa-for-cloud-accounts).
 
 1. If TFA is configured, try authenticating again.
 
@@ -311,7 +319,7 @@ Hello user-test (UUID: abaacca12-5cd1-4b123-9096-411add578998), you successfully
 oh2wi6klp5ytk-mc-35985-integration-nnulm4a--mymagento@ssh.eu-3.magento.cloud: Permission denied (publickey).
 ```
 
-To fix the problem, you might need to add the SSH key to your current session, or update the SSH configuration file to load your SSH keys automatically. See [Add a public SSH key](../development/secure-connections.md#add-an-ssh-public-key-to-your-account).
+To fix the problem, add the SSH key to your current session, or update the SSH configuration file to load your SSH keys automatically. See [Add a public SSH key](../development/secure-connections.md#add-an-ssh-public-key-to-your-account).
 
 ### Unable to access projects without MFA
 

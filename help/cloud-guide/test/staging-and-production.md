@@ -76,7 +76,7 @@ Check the configuration settings through the Admin panel including the Base URL,
 
 Complete User Acceptance Testing (UAT) on Staging and Production. The following tests are a quick list of possible tasks and areas to test as a Merchant and Customer. Your list may be longer and include additional tests for custom modules, extensions, and third-party integrations. When testing, use desktops, laptops, and mobile devices.
 
-If you encounter issues, save your reproduction steps, error messages, strange screen captures, and links. Use this information to investigate and fix issues in Integration environment code and configurations or environment settings.
+If you encounter issues, save your reproduction steps, error messages, strange screen captures, and links. Use this information to investigate and fix issues in integration environment code and configurations or environment settings.
 
 <table>
 <tr>
@@ -199,7 +199,7 @@ For best results, use the following tools:
 -  [Application performance test](../environment/variables-post-deploy.md#ttfb_tested_pages)—Test application performance by configuring the `TTFB_TESTED_PAGES` environment variable to test site response time.
 -  [Siege](https://www.joedog.org/siege-home/)—Traffic shaping and testing software to push your store to the limit. Hit your site with a configurable number of simulated clients. Siege supports basic authentication, cookies, HTTP, HTTPS, and FTP protocols.
 -  [Jmeter](https://jmeter.apache.org)—Excellent load testing to help gauge performance for spiked traffic, like for flash sales. Create custom tests to run against your site.
--  [New Relic](../monitor/new-relic-service.md) (provided)—Helps locate processes and areas of the site causing slow performance with tracked time spent per action like transmitting data, queries, Redis, and so on.
+-  [New Relic](../monitor/new-relic-service.md) (provided)—Helps locate processes and areas of the site causing slow performance with tracked time spent per action like transmitting data, queries, Redis, and more.
 -  [WebPageTest](https://www.webpagetest.org) and [Pingdom](https://www.pingdom.com)—Real-time analysis of your site pages load time with different origin locations. Pingdom may require a fee. WebPageTest is a free tool.
 
 ## Functional testing

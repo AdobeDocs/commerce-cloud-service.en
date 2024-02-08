@@ -46,7 +46,7 @@ For additional steps, you can continue with instructions with [Schedule Changes 
 
 ## Price Rules
 
-Price rules can include logic and conditions as limitless as your marketing imagination. Some popular examples include Buy One Get One Free, Buy One Get One 50% Off, a $25 dollars off on orders over $100 dollars, and so on.
+Price rules can include logic and conditions as limitless as your marketing imagination. Some popular examples include Buy One Get One Free, Buy One Get One 50% Off, a $25 dollars off on orders over $100 dollars, and more.
 
 To create a Price Rule, see [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html).
 

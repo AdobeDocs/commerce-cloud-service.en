@@ -1,6 +1,6 @@
 ---
 title: Crons property
-description: See examples on how to configure the `crons` property in the Commerce application configuration file.
+description: See examples on how to configure the `crons` property in the [!DNL Commerce] application configuration file.
 feature: Cloud, Configuration
 exl-id: 67d592c1-2933-4cdf-b4f6-d73cd44b9f59
 ---
@@ -67,7 +67,7 @@ MAILTO=""
 
 ## Build a cron job
 
-A cron job includes the schedule and timing specification and the command to run at the scheduled time. For Starter environments and Pro Integration environments, the minimum interval is once per five minutes. For Pro Staging and Production environments, the minimum interval is once per minute. On Adobe Commerce on cloud infrastructure, you add custom cron jobs to the `.magento.app.yaml` file in the `crons` section. The general format is `spec` for scheduling and `cmd` to specify the command or custom script to run.
+A cron job includes the schedule and timing specification and the command to run at the scheduled time. For Starter environments and Pro `integration` environments, the minimum interval is once per five minutes. For Pro Staging and Production environments, the minimum interval is once per minute. On Adobe Commerce on cloud infrastructure, you add custom cron jobs to the `.magento.app.yaml` file in the `crons` section. The general format is `spec` for scheduling and `cmd` to specify the command or custom script to run.
 
 ### Specification
 
@@ -81,8 +81,8 @@ Adobe Commerce uses a five-value expression for a `crons` specification (spec): 
 
 Some examples:
 
-- `00 */3 * * *` runs every three hours at the first minute (12:00 am, 3:00 am, 6:00 am, and so on)
-- `20 */8 * * *` runs every 8 hours at minute 20 (12:20 am, 8:20 am, 4:20 pm, and so on)
+- `00 */3 * * *` runs every three hours at the first minute (12:00 am, 3:00 am, 6:00 am)
+- `20 */8 * * *` runs every 8 hours at minute 20 (12:20 am, 8:20 am, 4:20 pm)
 - `00 00 * * *` runs once a day at midnight
 - `00 * * * 1` runs once a week on Monday at midnight.
 
@@ -108,7 +108,7 @@ crons:
     cmd: "/usr/bin/php /app/abc123edf890/bin/magento export:start catalog_category_product"
 ```
 
-In this example, `<path-to-php-binary>` is `/usr/bin/php`. The install directory, which includes the Project ID is `/app/abc123edf890/bin/magento`, and the script action is `export:start catalog_category_product`.
+In this example, `<path-to-php-binary>` is `/usr/bin/php`. The install directory, which includes the project ID is `/app/abc123edf890/bin/magento`, and the script action is `export:start catalog_category_product`.
 
 ### Add custom cron jobs to your project
 
@@ -116,7 +116,7 @@ On the Adobe Commerce on cloud infrastructure platform, you can add customizatio
 
 >[!NOTE]
 >
->For Starter environments and Pro Integration environments, the minimum interval is once per five minutes. For Pro Staging and Production environments, the minimum interval is once per minute. You cannot configure more frequent intervals than the default minimums.
+>For Starter environments and Pro `integration` environments, the minimum interval is once per five minutes. For Pro Staging and Production environments, the minimum interval is once per minute. You cannot configure more frequent intervals than the default minimums.
 
 On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must be enabled on your project before you can add custom cron jobs to Staging and Production environments using the `.magento.app.yaml` file. If this feature is not enabled, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable auto-crons.
 
@@ -156,7 +156,7 @@ On Adobe Commerce Pro projects, the [auto-crons feature](#set-up-cron-jobs) must
 
 ### Update cron jobs
 
-To add, remove, or update a customized job, change the configuration in the `crons` section of the `.magento.app.yaml` file. Then, test the updates in the remote `integration` environment before pushing the changes to the Production and Staging environments.
+To add, remove, or update a customized job, change the configuration in the `crons` section of the `.magento.app.yaml` file. Then, test the updates in the remote `integration` environment before pushing the changes to the Staging and Production environments.
 
 ## Disable cron jobs
 

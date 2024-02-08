@@ -7,7 +7,7 @@ exl-id: 613f0694-5338-4037-8ee4-ac5eca376159
 ---
 # New Relic service overview
 
-All Adobe Commerce projects on cloud infrastructure include access to the New Relic service to help monitor performance and investigate events of the Commerce application and cloud infrastructure.
+All Adobe Commerce projects on cloud infrastructure include access to the New Relic service to help monitor performance and investigate events of the [!DNL Commerce] application and cloud infrastructure.
 
 The following New Relic features are available for use with Production and Staging environments:
 

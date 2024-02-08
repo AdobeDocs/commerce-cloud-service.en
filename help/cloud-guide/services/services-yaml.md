@@ -13,7 +13,7 @@ The deploy script uses the configuration files in the `.magento` directory to pr
 Changing a service configuration causes a deployment to provision the environment with the updated services, which affects the following environments:
 
 - All Starter environments including Production `master`
-- Pro Integration environments
+- Pro integration environments
 
 {{pro-update-service}}
 
@@ -82,7 +82,7 @@ redis2:
 Renaming a service in the `services.yaml` file **permanently removes** the following:
 
 - The existing service before creating a service with the new name you specify.
-- All existing data for the service is removed. Adobe strongly recommends that you create a [snapshot your environment](../storage/snapshots.md) before you change the name of an existing service.
+- All existing data for the service is removed. Adobe strongly recommends that you [backup your Starter environment](../storage/snapshots.md) before you change the name of an existing service.
 
 ### `type`
 

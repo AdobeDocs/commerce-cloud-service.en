@@ -61,7 +61,7 @@ Generating static content requires access to themes and locales. Adobe Commerce 
 
 ### Setting the SCD on demand
 
-Generating SCD on demand is optimal for a development workflow in the Integration environment. It decreases deployment time so that you can quickly review your implementations and run integration tests. Enable the [SCD_ON_DEMAND](../environment/variables-global.md#scdondemand) environment variable in the global stage of the `.magento.env.yaml` file. The SCD_ON_DEMAND variable overrides all other configurations related to SCD and clears existing content from the `~/pub/static` directory.
+Generating SCD on demand is optimal for a development workflow in the integration environment. It decreases deployment time so that you can quickly review your implementations and run integration tests. Enable the [SCD_ON_DEMAND](../environment/variables-global.md#scdondemand) environment variable in the global stage of the `.magento.env.yaml` file. The SCD_ON_DEMAND variable overrides all other configurations related to SCD and clears existing content from the `~/pub/static` directory.
 
 When using the SCD on-demand strategy, it helps to preload the cache with pages you expect to request, such as the home page. Add your list of expected pages in the [WARM_UP_PAGES](../environment/variables-post-deploy.md#warmuppages) environment variable in the post-deploy stage of the `.magento.env.yaml` file.
 

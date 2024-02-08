@@ -72,7 +72,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![fix icon](../../assets/fix.svg) Fixed an issue when running the `setup:upgrade` command that did not interrupt the deployment process when a failure occurred during the `app:config:import` task.<!-- MAGECLOUD-3806 -->
 
--  ![new icon](../../assets/new.svg) Changed the default log level for the file handler to `debug` to reduce the amount of detail in the log displayed in the Project Web Interface, while still providing detailed information for debugging.<!-- MAGECLOUD-3871 -->
+-  ![new icon](../../assets/new.svg) Changed the default log level for the file handler to `debug` to reduce the amount of detail in the log displayed in the [!DNL Cloud Console], while still providing detailed information for debugging.<!-- MAGECLOUD-3871 -->
 
 -  ![fix icon](../../assets/fix.svg) Fixed an issue that caused an error with static content deployment during build. After an installation and `ece-tools` config dump, an error occurred if there was no locale specified for the admin user in the `config.php` file. Now, there is a default locale for the admin user in the `config.php` file.<!-- MAGECLOUD-3957 -->
 
@@ -484,7 +484,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  **New environment variable**—Added the `SCD_ON_DEMAND` global environment variable to generate static content when requested.<!-- MAGECLOUD-1738 -->
 
-   -  **Post-deploy hook**—Added a `post_deploy` hook for the `.magento.app.yaml` file that clears the cache and pre-loads (warms) the cache _after_ the container begins accepting connections. It is available only for Pro projects that contain Staging and Production environments in the Project Web Interface and for Starter projects. Although not required, this works in tandem with the `SCD_ON_DEMAND` environment variable.<!-- MAGECLOUD-1788 -->
+   -  **Post-deploy hook**—Added a `post_deploy` hook for the `.magento.app.yaml` file that clears the cache and pre-loads (warms) the cache _after_ the container begins accepting connections. It is available only for Pro projects that contain Staging and Production environments in the [!DNL Cloud Console] and for Starter projects. Although not required, this works in tandem with the `SCD_ON_DEMAND` environment variable.<!-- MAGECLOUD-1788 -->
 
 -  ![new icon](../../assets/new.svg) **Optimization**—Optimized moving or copying files during deployment to improve deployment speed and decrease loads on the file system.<!-- MAGECLOUD-1842 -->
 
@@ -622,7 +622,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  **Configuration management**—We now auto-generate an `app/etc/config.php` file in your Git repository during the build phase if it does not already exist. The auto-generated file includes only a list of modules and extensions. If the file already exists, the build phase continues as normal. If you follow [Configuration Management](../store/store-settings.md) at a later time, the commands update the file without requiring additional steps. Refer to [Deployment process](https://devdocs.magento.com/cloud/reference/discover-deploy.html) for more information.
 
--  **Database dumps**—We added a `magento/ece-tools` CLI command for creating database dumps in all environments. For Pro plan Production environments, this command only dumps from one of three high-availability nodes, so production data written to a different node during the dump may not be copied. We recommend putting the application in maintenance mode before doing a database dump in Production environments. See [Snapshots and backup management](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump) for more information.
+-  **Database dumps**—We added a `magento/ece-tools` CLI command for creating database dumps in all environments. For Pro plan Production environments, this command only dumps from one of three high-availability nodes, so production data written to a different node during the dump may not be copied. We recommend putting the application in maintenance mode before doing a database dump in Production environments. See [Backup management](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump) for more information.
 
 -  **Cron interval limitations lifted**—The default cron interval for all environments provisioned in the us-3, eu-3, and ap-3 regions is 1 minute. The default cron interval in all other regions is 5 minutes for Pro Integration environments and 1 minute for Pro Staging and Production environments. To modify your existing cron jobs, edit your settings in `.magento.app.yaml` or create a support ticket for Production/Staging environments. Refer to [Set up cron jobs](../application/crons-property.md#set-up-cron-jobs) for more information.
 

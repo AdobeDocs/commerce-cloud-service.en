@@ -3,22 +3,28 @@ title: Integrations overview
 description: Learn about third-party integration options for your Adobe Commerce on cloud infrastructure project.
 role: Developer
 feature: Cloud, Integration
+last-substantial-update: 2024-02-06
 exl-id: 2dddba73-5b88-4b5d-a0e1-2f1c1f52354c
 ---
 # Integrations overview
 
 Integrations are useful for using external services—such as Git hosting or Slack bots—and maintaining your current development processes, such as using the code review pull request function in GitHub. You can add the following integrations to your Adobe Commerce on cloud infrastructure project:
 
--  [Health notifications](health-notifications.md):
-   -  Email
-   -  Slack interactive bot
-   -  PagerDuty integration
--  Git-based hosting services:
-   -  [Bitbucket](bitbucket.md)
-   -  [GitHub](github.md)
-   -  [GitLab](gitlab.md)
+![Integrations](/help/assets/integrations.png)
 
-Use the `magento-cloud` CLI to list the integrations configured for your project:
+>[!BEGINTABS]
+
+>[!TAB CLI]
+
+**To add an integration using the Cloud CLI**:
+
+The following command begins interactive prompts to select the type and options for the new integration.
+
+```bash
+magento-cloud integration:add
+```
+
+**To list the integrations configured for your project**:
 
 ```bash
 magento-cloud integration:list
@@ -37,6 +43,20 @@ Sample response:
 |          |              | To: them@example.com                                                      |
 +----------+--------------+---------------------------------------------------------------------------+
 ```
+
+>[!TAB Console]
+
+**To add an integration using the [!DNL Cloud Console]**:
+
+1. In _Project Settings_, click **[!UICONTROL Integrations]**.
+
+1. Click on an integration type or click **[!UICONTROL Add integration]**.
+
+1. Step through the integration type selection and configuration steps.
+
+1. After adding the integration, it appears in the list on the Integrations view.
+
+>[!ENDTABS]
 
 ## Commerce webhooks
 

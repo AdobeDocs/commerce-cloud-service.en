@@ -33,6 +33,7 @@ feature: Cloud
     + [Project structure](project/file-structure.md)
     + [User access](project/user-access.md)
     + [Multi-factor authentication](project/multi-factor-authentication.md)
+    + [Activity stream](project/activity-stream.md)
     + [Outgoing emails](project/outgoing-emails.md)
     + [SendGrid email service](project/sendgrid.md)
     + [Console branch management](project/console-branches.md)
@@ -83,7 +84,7 @@ feature: Cloud
         + [Manage disk space](storage/manage-disk-space.md)
         + [Profile database queries](storage/profile-database-queries.md)
         + [Back up the database](storage/database-dump.md)
-        + [Snapshots and backup management](storage/snapshots.md)
+        + [Backup management](storage/snapshots.md)
     + Upgrades and patches {#upgrade}
         + [Best practices](development/best-practices.md)
         + [Upgrade Commerce version](development/commerce-version.md)

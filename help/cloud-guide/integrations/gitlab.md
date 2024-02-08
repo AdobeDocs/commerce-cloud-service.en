@@ -89,7 +89,7 @@ magento-cloud integration:add --type=gitlab --project=<project-ID> --token=<your
 | Option | Description |
 | ------ | ----------- |
 | `<project-ID>` | Your Adobe Commerce on cloud infrastructure project ID |
-| `<your-GitLab-token>` | The personal access token you generated for GitLab |
+| `<your-GitLab-token>` | The personal access token that you generated for GitLab |
 | `--base-url` | URL of GitLab (`https://gitlab.com/` if GitLab is used in its SaaS version) |
 | `--server-project` | Project name in GitLab (part after the base url) |
 | `--build-merge-requests` | An _optional_ parameter that instructs Adobe Commerce on cloud infrastructure to build a new environment for every merge request (`true` by default) |
@@ -140,7 +140,7 @@ magento-cloud integration:add --type=gitlab --project=<project-ID> --token=<your
 
 ### Add the webhook in GitLab
 
-In order to communicate events —such as a push or merge requests— with your Cloud Git server, you must [create a webhook](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#overview) for your GitLab repository
+To communicate events —such as a push or merge requests— with your Cloud Git server, you must [create a webhook](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#overview) for your GitLab repository
 
 1. In your GitLab repository, click the **Settings** tab.
 
@@ -177,9 +177,7 @@ Or you can test it by pushing a simple change to your GitLab repository.
    git add . && git commit -m "Testing GitLab integration" && git push
    ```
 
-1. Log in to the [Project Web Interface](../project/overview.md) and verify that your commit message is displayed and your project deploying.
-
-![Successful GitLab integration](../../assets/gitlab-integration-success.png)
+1. Log in to the [[!DNL Cloud Console]](../project/overview.md) and verify that your commit message is displayed and your project deploying.
 
 ## Create a Cloud branch
 

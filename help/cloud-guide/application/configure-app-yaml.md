@@ -1,6 +1,6 @@
 ---
 title: Configure application deployment
-description: Learn how to configure the properties in the application configuration file that control the way the Commerce application builds and deploys to the Cloud environment.
+description: Learn how to configure the properties in the application configuration file that control the way the [!DNL Commerce] application builds and deploys to the Cloud environment.
 feature: Cloud, Configuration, Build, Deploy
 exl-id: 900da20d-98d2-4c9f-97ec-578aee775b55
 ---
@@ -13,6 +13,6 @@ The `.magento.app.yaml` has many default values, see [a sample `.magento.app.yam
 Use the `.magento.app.yaml` file to define the following configuration values:
 
 - [Properties](properties.md)—Define property values for application instance.
-- [Variables property](variables-property.md)—Review environment variables required for the Commerce application version.
+- [Variables property](variables-property.md)—Review environment variables required for the [!DNL Commerce] application version.
 - [PHP settings](php-settings.md)—Configure runtime PHP options.
 - [Set Cache For Static Files](set-cache.md)—Set cache TTL for your media and static files.
