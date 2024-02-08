@@ -32,7 +32,7 @@ The project environments support a flexible, continuous integration process. Beg
 
 -  **Branch** from `integration`
 
--  **Develop** code on a local workstation
+-  **Develop** code on a local workstation, including [!DNL Composer] updates
 
 -  **Push** code changes to remote and validate
 
