@@ -10,7 +10,7 @@ You can upgrade the Adobe Commerce code base to a newer version. Before upgradin
 
 Depending on your project configuration, your upgrade tasks may include the following:
 
--  Update services for compatibility with new Adobe Commerce versions. See [Change service version](../services/services-yaml.md#change-service-version).
+-  Update services—such as MariaDB (MySQL), OpenSearch, RabbitMQ, and Redis—for compatibility with new Adobe Commerce versions.
 -  Convert an older configuration management file.
 -  Update the `.magento.app.yaml` file with new settings for hooks and environment variables.
 -  Upgrade third-party extensions to the latest supported version.
