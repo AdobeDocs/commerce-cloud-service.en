@@ -212,7 +212,7 @@ To set up port forwarding (SSH tunneling) on Windows, you must configure your Wi
 
 ## SSH access to Xdebug environments
 
-For initiating debugging, performing setup, and more, you need the SSH commands for accessing the environments. You can get this information, through the [[!DNL Cloud Console]](../development/secure-connections.md#use-an-ssh-command) and your project spreadsheet.
+For initiating debugging, performing setup, and more, you need the SSH commands for accessing the environments. You can get this information through the [[!DNL Cloud Console]](../development/secure-connections.md#use-an-ssh-command) and your project spreadsheet.
 
 For Starter environments and Pro integration environments, you can use the following `magento-cloud` CLI command to SSH into those environments:
 
@@ -242,7 +242,7 @@ To use [!DNL Xdebug] specifically on Pro plan Staging and Production environment
 
 You need the following:
 
--  SSH commands for accessing the environments. You can get this information, through the [[!DNL Cloud Console]](../project/overview.md) or your [!DNL Cloud Onboarding UI].
+-  SSH commands for accessing the environments. You can get this information through the [[!DNL Cloud Console]](../project/overview.md) or your [!DNL Cloud Onboarding UI].
 -  The `xdebug_key` value set when configuring the Staging and Pro environments.
 
    The `xdebug_key` can be found by using SSH to log in to the primary node and executing:
@@ -342,7 +342,7 @@ This section discusses how to use [!DNL Xdebug] in Chrome using the [!DNL Xdebug
 
 1. Create an [SSH tunnel](#ssh-access-to-xdebug-environments) to the Cloud server.
 
-1. Install the [Xdebug Helper extension](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=en) from the Chrome store.
+1. Install the [Xdebug Helper extension](https://chromewebstore.google.com/detail/eadndfjplgieldjbigjakmdgkmoaaaoc) from the Chrome store.
 
 1. Enable the extension in Chrome as shown in the following figure.
 
