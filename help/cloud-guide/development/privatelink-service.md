@@ -6,7 +6,7 @@ exl-id: b25548b8-312b-4a74-b242-f4e2ac6cf945
 ---
 # PrivateLink service
 
-Adobe Commerce on cloud infrastructure supports integration with the [AWS PrivateLink](https://aws.amazon.com/privatelink/) or [Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/) service. You can use PrivateLink to establish secure, private communication between Adobe Commerce on cloud infrastructure environments with services and applications hosted on external systems. Both the Adobe Commerce application and external systems must be accessible through Virtual Private Cloud (VPC) endpoints configured within the same Cloud region (AWS or Azure).
+Adobe Commerce on cloud infrastructure supports integration with the [AWS PrivateLink](https://aws.amazon.com/privatelink/) or [Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/) service. You can use PrivateLink to establish secure, private communication between Adobe Commerce on cloud infrastructure environments with services and applications hosted on external systems. Both the Adobe Commerce application and external systems must be accessible through Virtual Private Cloud (VPC) endpoints configured on the same cloud platform (AWS or Azure) within the same cloud region.
 
 >[!TIP]
 >
@@ -16,7 +16,7 @@ Adobe Commerce on cloud infrastructure supports integration with the [AWS Privat
 
 The PrivateLink service integration for Adobe Commerce on cloud infrastructure projects includes the following features and support:
 
-- A secure connection between a customer Virtual Private Cloud (VPC) and the Adobe VPC within the same Cloud region.
+- A secure connection between a customer Virtual Private Cloud (VPC) and the Adobe VPC on the same cloud platform (AWS or Azure) within the same Cloud region.
 - Support for unidirectional or bidirectional communication between endpoint services available at Adobe and Customer VPCs.
 - Service enablement:
 
