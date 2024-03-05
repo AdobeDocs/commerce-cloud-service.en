@@ -28,60 +28,58 @@ Track your Commerce project deployment events in New Relic by creating a _script
 1. Create an `action-integration.js` file. Copy the following code and paste it in the `action-integration.js` file and save:
 
     ```javascript
-    function variables() {
-        var vars = {};
-        activity.payload.deployment.variables.forEach(function(variable) {
-            vars[variable.name] = variable.value;
-        });
-        return vars;
-    }
-
     function trackDeployments() {
-        const envName = activity.payload.environment.name;
-        const config = JSON.parse(variables()['env:NR_CONFIG'].replace(/'/g, '"'));
-        const commitSha = activity.payload.commits ? activity.payload.commits[0].sha : activity.payload.environment.head_commit;
-        const deploymentType = activity.type;
-
-        if (!(envName in config)) {
-            throw new Error('There is no configuration for ' + envName);
+      const envName = activity.payload.environment.name;
+      let variables;
+      activity.payload.deployment.variables.forEach(function(variable) {
+        if (variable.name === "env:NR_CONFIG") {
+          variables = variable.value;
         }
-    
-        const configEnv = config[envName];
+      });
+      const config = JSON.parse(variables.replace(/'/g, '"'));
+      const commitSha = activity.payload.commits ? activity.payload.commits[0].sha : activity.payload.environment.head_commit;
+      const deploymentType = activity.type;
 
-        if (!configEnv.NR_APP_GUID || !configEnv.NR_API_KEY || !configEnv.NR_API_URL) {
-            throw new Error('You must define the next configuation in the env variable NR_CONFIG: NR_APP_GUID, NR_API_KEY and NR_API_URL');
+      if (!(envName in config)) {
+        throw new Error('There is no configuration for ' + envName);
+      }
+
+      const configEnv = config[envName];
+
+      if (!configEnv.NR_APP_GUID || !configEnv.NR_API_KEY || !configEnv.NR_API_URL) {
+        throw new Error('You must define the next configuation in the env variable NR_CONFIG: NR_APP_GUID, NR_API_KEY and NR_API_URL');
+      }
+
+      const query = `mutation {
+        changeTrackingCreateDeployment(
+        deployment: {
+            version: "${commitSha}",
+            entityGuid: "${configEnv.NR_APP_GUID}",
+            commit: "${commitSha}",
+            changelog: "${deploymentType}"
         }
-
-        const query = `mutation {
-            changeTrackingCreateDeployment(
-            deployment: {
-                version: "${commitSha}",
-                entityGuid: "${configEnv.NR_APP_GUID}",
-                commit: "${commitSha}",
-                changelog: "${deploymentType}"
-            }
-            ) {
-              deploymentId
-              entityGuid
-            }
-        }`;
-
-        var resp = fetch(configEnv.NR_API_URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'API-Key': configEnv.NR_API_KEY
-            },
-            body: JSON.stringify({
-                query
-            })
-        });
-
-        if (!resp.ok) {
-            console.log('Sending new relic change tracking failed: ' + resp.text());
-        } else {
-            console.log(resp.text());
+        ) {
+          deploymentId
+          entityGuid
         }
+      }`;
+
+      var resp = fetch(configEnv.NR_API_URL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'API-Key': configEnv.NR_API_KEY
+        },
+        body: JSON.stringify({
+            query
+        })
+      });
+
+      if (!resp.ok) {
+        console.log('Sending new relic change tracking failed: ' + resp.text());
+      } else {
+        console.log(resp.text());
+      }
     }
 
     trackDeployments();
