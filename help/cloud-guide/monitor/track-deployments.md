@@ -218,6 +218,6 @@ Track your Commerce project deployment events in New Relic by creating a _script
 
 1. In the Explorer navigation menu, click **[!UICONTROL APM & Services]**. Select your environment [!UICONTROL Name] and [!UICONTROL Account].
 
-1. Under _Events_, click **[!UICONTROL Deployments]**.
+1. Under _Events_, click **[!UICONTROL Change tracking]**.
 
    ![Deployments](../../assets/new-relic/deployments.png)
