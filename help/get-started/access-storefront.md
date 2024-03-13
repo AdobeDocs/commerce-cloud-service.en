@@ -2,8 +2,8 @@
 title: Access your Commerce Admin panel
 description: Learn how to access your Commerce Admin panel.
 recommendations: noDisplay, catalog
+exl-id: 9a8a0a49-b108-48bd-b413-ec9431370c06
 ---
-
 # Access your Commerce Admin panel
 
 Users that have administrative access to the Commerce Admin panel can add users, configure store services, complete store setup and customization work, and more.

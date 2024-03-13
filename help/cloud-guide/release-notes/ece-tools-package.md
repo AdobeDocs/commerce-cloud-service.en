@@ -139,7 +139,7 @@ Release date: February 1, 2021
 
 -  ![new icon](../../assets/new.svg) **Remote storage**—Added the `REMOTE_STORAGE` environment variable to enable Cloud Projects for remote storage of media files using a storage service, such as AWS S3. This configuration option is part of the ECE-Tools package, but is not supported on Adobe Commerce on cloud infrastructure.<!--MCLOUD-7153-->
 
--  ![new icon](../../assets/new.svg) **New cloud:config:validate command**—Added command `php vendor/bin/ece-tools cloud:config:validate` to validate the `.magento.env.yaml` configuration before pushing changes to the remote Cloud environment.<!--MCLOUD-7120-->
+-  ![new icon](../../assets/new.svg) **New `cloud:config:validate` command**—Added command `php vendor/bin/ece-tools cloud:config:validate` to validate the `.magento.env.yaml` configuration before pushing changes to the remote Cloud environment.<!--MCLOUD-7120-->
 
 -  ![new icon](../../assets/new.svg) **Flushing the opcache**—Added support for the `opcache.enable_cli` PHP option to flush the OPcache before running the deploy hook. This configuration resets the cache configuration to ensure that the current configuration settings are applied on each deployment.<!--MCLOUD-7015-->
 
