@@ -14,7 +14,7 @@ Please make sure that "/" is writable by the web-server.
 
 With Adobe Commerce on cloud infrastructure, you can only write to specific directories, such as `var`, `pub/media`, `pub/static`, or `app/etc`. When you generate the `sitemap.xml` file using the Admin panel, you must specify the `/media/` path.
 
-You do not have to generate a `robots.txt` file because it generates the `robots.txt` content on demand and stores it in the database. You can view the content in your browser with the `<domain.your.project>/robots.txt` link.
+You do not have to generate a `robots.txt` file because it generates the `robots.txt` content on demand and stores it in the database. You can view the content in your browser with the `<domain.your.project>/robots.txt` or `<domain.your.project>/robots` link.
 
 This requires ECE-Tools version 2002.0.12 and later with an updated `.magento.app.yaml` file. See an example of these rules in the [magento-cloud repository](https://github.com/magento/magento-cloud/blob/master/.magento.app.yaml#L43-L49).
 
@@ -39,7 +39,7 @@ This requires ECE-Tools version 2002.0.12 and later with an updated `.magento.ap
 1. In the _Main Website_ view, click **Search Engine Robots**.
 1. Update the **Edit custom instruction of robots.txt** field.
 1. Click **Save Configuration**.
-1. Verify the `<domain.your.project>/robots.txt` file in your browser.
+1. Verify the `<domain.your.project>/robots.txt` file or `<domain.your.project>/robots` URL in your browser.
 
 >[!NOTE]
 >
