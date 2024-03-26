@@ -24,7 +24,7 @@ You can create a manual backup of any active Starter environment and integration
 
    ![Backup](../../assets/button-backup.png){width="150"}
 
-**To create a backup of integration environment using the [!DNL Cloud Console]**:
+**To create a backup of an integration environment using the [!DNL Cloud Console]**:
 
 1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 1. Select an integration/development environment from the project navigation bar. The environment must be active.
