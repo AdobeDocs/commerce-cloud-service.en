@@ -49,7 +49,7 @@ DKIM is an email authentication technology that enables Internet Service Provide
 
 >[!WARNING]
 >
->The SendGrid DKIM signatures and domain authentication support are available only for Pro projects and not Starter. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) in the _Admin Systems guide_.
+>The SendGrid DKIM signatures and domain authentication support are available only for Pro projects and not Starter. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) in the _Admin Systems guide_.
 
 ### Sender and domain authentication
 
@@ -108,7 +108,7 @@ dig CNAME s2._domainkey.domain_name
 
 The transactional email threshold refers to the number of transactional email messages that you can send from Pro environments within a specific time period, such as 12,000 emails per month from non-production environments. The threshold is designed to protect against sending spam and potentially damaging your email reputation.
 
-There are no hard limits on the number of emails that can be sent in the Production environment, as long as the Sender Reputation score is over 95%. The reputation is affected by the number of bounced or rejected emails and whether DNS-based spam registries have flagged your domain as a potential spam source. See [Emails not sent when SendGrid credits exceeded on Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded.html) in the _Commerce Support Knowledge Base_.
+There are no hard limits on the number of emails that can be sent in the Production environment, as long as the Sender Reputation score is over 95%. The reputation is affected by the number of bounced or rejected emails and whether DNS-based spam registries have flagged your domain as a potential spam source. See [Emails not sent when SendGrid credits exceeded on Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded) in the _Commerce Support Knowledge Base_.
 
 **To check if maximum credits are exceeded**:
 
