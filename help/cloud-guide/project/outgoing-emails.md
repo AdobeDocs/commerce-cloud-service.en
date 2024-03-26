@@ -7,13 +7,13 @@ exl-id: 814fe2a9-15bf-4bcb-a8de-ae288fd7f284
 
 You can enable and disable outgoing emails for each environment from the [!DNL Cloud Console] or from the command line. Enable outgoing emails for integration and staging environments to send two-factor authentication or reset password emails for Cloud project users.
 
-By default, outgoing email is enabled in Production environments. The [!UICONTROL Enable outgoing emails] may appear disabled in the environment settings regardless of status until you set the [`enable_smtp` property](#enable-emails-in-the-cli).
+By default, outgoing emails are enabled in Production and Staging environments. However, [!UICONTROL Enable outgoing emails] may appear disabled in the environment settings until you set the `enable_smtp` property through the [command line](#enable-emails-in-the-cli) or [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console).
 
 Updating the [!UICONTROL enable_smtp] property value by [command line](#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the Cloud Console. And vice versa.
 
 {{redeploy-warning}}
 
-## Enable emails in the [!DNL Cloud Console]
+## Enable emails in the Cloud Console
 
 Use the **[!UICONTROL Outgoing emails]** toggle in the _Configure environment_ view to enable or disable email support.
 

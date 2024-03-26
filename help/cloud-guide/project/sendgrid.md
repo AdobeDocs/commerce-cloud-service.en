@@ -23,11 +23,13 @@ The SendGrid SMTP proxy is not intended for use as a general-purpose email serve
 
 You can enable and disable outgoing emails for each environment from the Cloud Console or from the command line.
 
-By default, outgoing emails are enabled on Pro Production and Staging environments. The [!UICONTROL Outgoing emails] may appear disabled in the environment settings regardless of status until you set the `enable_smtp` property from the command line. You can enable outgoing emails for different environments to send two-factor authentication emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
+By default, outgoing emails are enabled on Pro Production and Staging environments. However, [!UICONTROL Outgoing emails] may appear disabled in the environment settings until you set the `enable_smtp` property through the [command line](outgoing-emails.md#enable-emails-in-the-cli) or [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console). You can enable outgoing emails for integration and staging environments to send two-factor authentication or reset password emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
+
+If outgoing emails need to be disabled or re-enabled on Pro Production or Staging environments, please submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 >[!TIP]
 >
->Updating the [!UICONTROL enable_smtp] property value by [command line](outgoing-emails.md#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the Cloud Console. And vice versa.
+>Updating the [!UICONTROL enable_smtp] property value by [command line](outgoing-emails.md#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console). And vice versa.
 
 ## SendGrid dashboard
 
