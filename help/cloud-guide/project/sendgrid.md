@@ -35,7 +35,7 @@ If outgoing emails must be disabled or re-enabled on Pro Production or Staging e
 
 All Cloud projects are managed under a central account, so only Support has access to the SendGrid dashboard. SendGrid does not provide subaccount restriction features.
 
-To review the Activity logs for delivery status or a list of bounced, rejected, or blocked email addresses, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). The Support team **cannot** retrieve activity logs older than 30 days.
+To review the Activity logs for delivery status or a list of bounced, rejected, or blocked email addresses, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). The Support team **cannot** retrieve activity logs older than 30 days.
 
 If possible, include the following information with your request:
 
@@ -122,7 +122,7 @@ There are no hard limits on the number of emails that can be sent in the Product
 
 1. Check the `/var/log/mail.log` for `authentication failed : Maxium credits exceeded` entries.
 
-   If you see any `authentication failed` log entries and the **Email sending reputation** is at a minimum of 95, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request a credit allotment increase.
+   If you see any `authentication failed` log entries and the **Email sending reputation** is at a minimum of 95, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) to request a credit allotment increase.
 
 ### Email sending reputation
 
