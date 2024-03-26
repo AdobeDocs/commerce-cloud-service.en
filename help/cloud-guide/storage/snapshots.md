@@ -14,15 +14,22 @@ The backup feature does **not** apply to the Pro environments. The Pro Staging a
 
 ## Create a manual backup
 
-You can create a manual backup of your Starter environment from the [!DNL Cloud Console] or create a snapshot from the Cloud CLI. You must have an [Admin role](../project/user-access.md) for the environment.
+You can create a manual backup of any active Starter environment and integration Pro environment from the [!DNL Cloud Console] or create a snapshot from the Cloud CLI. You must have an [Admin role](../project/user-access.md) for the environment.
 
-**To create a backup using the [!DNL Cloud Console]**:
+**To create a backup of any Starter environment using the [!DNL Cloud Console]**:
 
 1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 1. Select an environment from the project navigation bar. The environment must be active.
 1. In the _Backups_ view, click **[!UICONTROL Backup]**. This option is not available for a Pro environment.
 
    ![Backup](../../assets/button-backup.png){width="150"}
+
+**To create a backup of an integration environment using the [!DNL Cloud Console]**:
+
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
+1. Select an integration/development environment from the project navigation bar. The environment must be active.
+1. Select the **[!UICONTROL Backup]** option in the top-right menu. This option is available for both Starter and Pro environments.
+1. Click the **[!UICONTROL Yes]** button.
 
 **To create a snapshot using the `magento-cloud` CLI**:
 
