@@ -57,7 +57,7 @@ For SendGrid to send transactional emails on your behalf from Pro Production or 
 
 **To enable domain authentication**:
 
-1. Submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) that requests to enable the DKIM for a specific domain (**Pro Staging and Production environments only**).
+1. Submit a [support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) that requests to enable the DKIM for a specific domain (**Pro Staging and Production environments only**).
 1. Update your DNS configuration with the `TXT` and `CNAME` records provided to you in the support ticket.
 
 **Example `TXT` record with account ID**:
