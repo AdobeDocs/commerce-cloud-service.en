@@ -25,7 +25,7 @@ You can enable and disable outgoing emails for each environment from the Cloud C
 
 By default, outgoing emails are enabled on Pro Production and Staging environments. However, [!UICONTROL Outgoing emails] may appear disabled in the environment settings until you set the `enable_smtp` property through the [command line](outgoing-emails.md#enable-emails-in-the-cli) or [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console). You can enable outgoing emails for integration and staging environments to send two-factor authentication or reset password emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
 
-If outgoing emails must be disabled or re-enabled on Pro Production or Staging environments, please submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+If outgoing emails must be disabled or re-enabled on Pro Production or Staging environments, you can submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 >[!TIP]
 >
