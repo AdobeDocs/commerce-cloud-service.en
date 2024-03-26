@@ -9,11 +9,17 @@ You can enable and disable outgoing emails for each environment from the [!DNL C
 
 By default, outgoing email is enabled in Production environments. The [!UICONTROL Enable outgoing emails] may appear disabled in the environment settings regardless of status until you set the [`enable_smtp` property](#enable-emails-in-the-cli).
 
+Updating the [!UICONTROL enable_smtp] property value by [command line](#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the Cloud Console. And vice versa.
+
 {{redeploy-warning}}
 
 ## Enable emails in the [!DNL Cloud Console]
 
 Use the **[!UICONTROL Outgoing emails]** toggle in the _Configure environment_ view to enable or disable email support.
+
+>[!TIP]
+>
+>Outgoing emails status may not be reflected for Pro environments on the Cloud Console. In this case you must use [command line](#enable-emails-in-the-cli) for outgoing emails enabling and testing.
 
 **To manage email support from the [!DNL Cloud Console]**:
 
@@ -53,6 +59,12 @@ You can change the email configuration for an active environment using the `mage
 
 1. Verify that the email works; send a test email to an address that you can check.
 
-      ```bash
-      php -r 'mail("mail@example.com", "test message", "just testing", "From: tester@example.com");'
-      ```
+   ```bash
+   php -r 'mail("mail@example.com", "test message", "just testing", "From: tester@example.com");'
+   ```
+
+1. Verify that the email is picked up by Sendgrid.
+
+   ```bash
+   grep mail@example.com /var/log/mail.log
+   ```
