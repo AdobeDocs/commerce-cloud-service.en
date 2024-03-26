@@ -17,6 +17,8 @@ Updating the [!UICONTROL enable_smtp] property value by [command line](#enable-e
 
 Use the **[!UICONTROL Outgoing emails]** toggle in the _Configure environment_ view to enable or disable email support.
 
+If outgoing emails need to be disabled or re-enabled on Pro Production or Staging environments, please submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+
 >[!TIP]
 >
 >Outgoing emails status may not be reflected for Pro environments on the Cloud Console. In this case you must use [command line](#enable-emails-in-the-cli) for outgoing emails enabling and testing.
