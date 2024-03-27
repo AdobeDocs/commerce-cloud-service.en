@@ -25,7 +25,6 @@ feature: Cloud
     + [Cloud Docker package](release-notes/cloud-docker.md)
     + [Cloud Components](release-notes/cloud-components.md)
     + [Cloud Packages](release-notes/cloud-packages.md)
-    + [Cloud Packages (Beta)](release-notes/cloud-packages-beta.md)
     + [Backward-incompatible changes](release-notes/backward-incompatible-changes.md)
     + [Release notes archive](release-notes/cloud-release-archive.md)
 + Cloud project {#project}
