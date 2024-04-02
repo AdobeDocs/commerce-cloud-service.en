@@ -1,9 +1,9 @@
 # Cloud packages for Adobe Commerce
 
-<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock_beta.json' file
+<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock.json' file
  -->
 
-<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock_beta.json' file
+<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock.json' file
  -->
 
 <!-- The 'product' variable contains data of the 'magento/magento-cloud-metapackage' package
@@ -821,13 +821,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/php-fig/clock.git">psr/clock</a>
-    </td>
-    <td>library</td>
-    <td>Common interface for reading the clock.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/php-fig/container.git">psr/container</a>
     </td>
     <td>library</td>
@@ -1115,13 +1108,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/process.git">symfony/process</a>
-    </td>
-    <td>library</td>
-    <td>Executes commands in sub-processes</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/symfony/proxy-manager-bridge.git">symfony/proxy-manager-bridge</a>
     </td>
     <td>symfony-bridge</td>
@@ -1225,27 +1211,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>
-      paypal/module-braintree-customer-balance
-    </td>
-    <td>magento2-module</td>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <td>
-      paypal/module-braintree-gift-card-account
-    </td>
-    <td>magento2-module</td>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <td>
-      paypal/module-braintree-gift-wrapping
-    </td>
-    <td>magento2-module</td>
-    <td>N/A</td>
-  </tr>
   <tr>
     <td>
       paypal/module-braintree-graph-ql
