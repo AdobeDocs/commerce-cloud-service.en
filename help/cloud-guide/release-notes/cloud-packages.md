@@ -1,8 +1,8 @@
 ---
 title: Cloud packages for Adobe Commerce
 description: Learn about all dependencies and third-party licenses used in Adobe Commerce.
-exl-id: 775ec1ca-ce62-40da-a55a-7b783a988ce0
 recommendations: noDisplay
+exl-id: 96c317ab-232c-405b-93b9-35b0e667d3f7
 ---
 # Cloud packages for Adobe Commerce
 
