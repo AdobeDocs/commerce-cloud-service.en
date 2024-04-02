@@ -1101,10 +1101,10 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/polyfill-php83.git">symfony/polyfill-php83</a>
+      <a href="https://github.com/symfony/process.git">symfony/process</a>
     </td>
     <td>library</td>
-    <td>Symfony polyfill backporting some PHP 8.3+ features to lower PHP versions</td>
+    <td>Executes commands in sub-processes</td>
   </tr>
   <tr>
     <td>
