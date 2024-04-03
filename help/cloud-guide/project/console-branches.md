@@ -66,6 +66,7 @@ You cannot create an inactive branch from the Adobe Commerce Cloud console or CL
 
    ```bash
    git push -o "environment.Parent=<parent branch>" <origin> <branch>
+   ```
 
 ## Delete an environment
 
