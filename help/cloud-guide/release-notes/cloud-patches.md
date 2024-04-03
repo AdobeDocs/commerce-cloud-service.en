@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-01-16
+last-substantial-update: 2024-04-08
 exl-id: ae6b511b-a37d-4776-9a5e-ad7d9f9f6611
 ---
 # Cloud Patches for Commerce
@@ -22,8 +22,13 @@ The Cloud Patches for Commerce package is a dependency for the ECE-Tools package
 The `magento/magento-cloud-patches` package uses the following version sequence: `<major>.<minor>.<patch>`
 
 <!--Add release notes below-->
+## v1.0.26 {#latest}
 
-## v1.0.25 {#latest}
+Release date: April 8, 2024
+
+-  ![new icon](../../assets/new.svg) **PHP** — Added support for PHP 8.3.
+
+## v1.0.25
 
 Release date: January 16, 2024
 
