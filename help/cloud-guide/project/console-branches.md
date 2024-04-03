@@ -62,11 +62,10 @@ If you need additional active environments for development, submit a [Support ti
 
 ## Create inactive branch
 
-Inactive branches can't be created from the Adobe Commerce Cloud console or cli. If you want to create an inactive branch you need to create it on git repository and push it using the `environment.Parent` option on the git push command. 
+You cannot create an inactive branch from the Adobe Commerce Cloud console or CLI. If you want to create an inactive branch, create it on the Git repository and push using the `environment.Parent` option on the command. 
 
-   ```text
+   ```bash
    git push -o "environment.Parent=<parent branch>" <origin> <branch>
-   ```
 
 ## Delete an environment
 
