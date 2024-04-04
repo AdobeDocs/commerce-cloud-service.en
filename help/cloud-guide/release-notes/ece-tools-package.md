@@ -28,7 +28,7 @@ The release notes include:
 Release date: April 8, 2024
 
 -  ![new icon](../../assets/new.svg) **PHP** — Added support for PHP 8.3.
--  ![fix icon](../../assets/fix.svg) Validator - Updated EOL validator
+-  ![fix icon](../../assets/fix.svg) Validator - Updated EOL validator.
 
 ## v2002.1.17
 
