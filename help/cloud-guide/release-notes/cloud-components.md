@@ -16,6 +16,7 @@ The release notes include:
 -  ![fix icon](../../assets/fix.svg) Fixes and improvements
 
 <!--Add release notes below-->
+
 ## v1.0.14 {#latest}
 
 Release date: April 8, 2024
