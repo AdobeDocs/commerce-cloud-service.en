@@ -26,6 +26,7 @@
                 intl<br>
                 libxml<br>
                 mysqli<br>
+                openswoole<br>
                 pcntl<br>
                 pdo_mysql<br>
                 Reflection<br>
