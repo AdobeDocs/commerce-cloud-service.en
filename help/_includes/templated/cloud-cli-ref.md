@@ -6131,7 +6131,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `metrics:all`
 
-\<fg=white;bg=red> BETA \</> Show CPU, disk and memory metrics for an environment
+Show CPU, disk and memory metrics for an environment
 
 ```bash
 magento-cloud metrics [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -6261,7 +6261,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `metrics:cpu`
 
-\<fg=white;bg=red> BETA \</> Show CPU usage of an environment
+Show CPU usage of an environment
 
 ```bash
 magento-cloud cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -6521,7 +6521,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `metrics:memory`
 
-\<fg=white;bg=red> BETA \</> Show memory usage of an environment
+Show memory usage of an environment
 
 ```bash
 magento-cloud mem [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -7129,7 +7129,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `operation:list`
 
-\<fg=white;bg=red> BETA \</> List runtime operations on an environment
+List runtime operations on an environment
 
 ```bash
 magento-cloud ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
@@ -7225,7 +7225,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `operation:run`
 
-\<fg=white;bg=red> BETA \</> Run an operation on the environment
+Run an operation on the environment
 
 ```bash
 magento-cloud operation:run [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-W|--no-wait] [--wait] [--] [<operation>]
