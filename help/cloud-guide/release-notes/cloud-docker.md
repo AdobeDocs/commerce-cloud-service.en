@@ -24,7 +24,7 @@ The release notes include:
 Release date: April 8, 2024
 
 -  ![new icon](../../assets/new.svg) **PHP** — Added support for PHP 8.3 and PHP 8.3 images.
--  ![new icon](../../assets/new.svg) **Nginx** — Added image nginx v. 1.24
+-  ![new icon](../../assets/new.svg) **Nginx** — Added image nginx v. 1.24.
 -  ![new icon](../../assets/new.svg) **Opensearch** - Added image OpenSearch v. 2.12, 1.3.
 -  ![new icon](../../assets/new.svg) **Composer** - Updated Composer version to 2.2.23.
 
