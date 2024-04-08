@@ -17,7 +17,13 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.0.13 {#latest}
+## v1.0.14 {#latest}
+
+Release date: April 8, 2024
+
+-  ![new icon](../../assets/new.svg) **PHP** — Added support for PHP 8.3.
+
+## v1.0.13
 
 Release date: March 10, 2023
 
