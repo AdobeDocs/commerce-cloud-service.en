@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-01-16
+last-substantial-update: 2024-04-08
 exl-id: a464b940-c56e-4a7c-9948-559539e25361
 ---
 # ECE-Tools release notes
@@ -22,7 +22,15 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.1.17 {#latest}
+
+## v2002.1.18 {#latest}
+
+Release date: April 8, 2024
+
+-  ![new icon](../../assets/new.svg) **PHP** — Added support for PHP 8.3.
+-  ![fix icon](../../assets/fix.svg) Validator - Updated EOL validator.
+
+## v2002.1.17
 
 Release date: January 16, 2024
 
@@ -264,7 +272,7 @@ Release date: June 25, 2020
       ```text
       Your application does not have the "post_deploy" hook enabled.
       ```
-      
+
       <!--MCLOUD-4077-->
 
    -  ![new icon](../../assets/new.svg) **Added validation for Zend Framework dependencies**—Added composer dependency validation for the Zend Framework which has migrated to the Laminas project. If the required dependencies are missing, the following error message displays during the build process.
