@@ -1,26 +1,57 @@
 # ece-tools
 
 <!-- The template to render with above values -->
-**Version**: 2002.1.14
+**Version**: 2002.1.18
 
-This reference contains 32 commands available through the `ece-tools` command-line tool.
+This reference contains 34 commands available through the `ece-tools` command-line tool.
 The initial list is auto generated using the `ece-tools list` command at Adobe Commerce on cloud infrastructure.
 
 >[!NOTE]
 >
 >This reference is generated from the application codebase. To change the content, you can update the source code for the corresponding command implementation in the [codebase](https://github.com/magento/magento-cloud-cli) repository and submit your changes for review. Another way is to _Give us feedback_ (find the link at the upper right). For contribution guidelines, see [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
-## `build`
+## `_complete`
 
-Builds application.
+Internal command to provide shell completion suggestions
 
 ```bash
-ece-tools build
+ece-tools _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
+
+### `--shell`, `-s`
+
+The shell type ("bash", "fish", "zsh")
+   
+-  Requires a value
+
+### `--input`, `-i`
+
+An array of input tokens (e.g. COMP_WORDS or argv)
+   
+-  Default: `[]`
+-  Requires a value
+
+### `--current`, `-c`
+
+The index of the "input" array that the cursor is in (e.g. COMP_CWORD)
+   
+-  Requires a value
+
+### `--api-version`, `-a`
+
+The API version of the completion script
+   
+-  Requires a value
+
+### `--symfony`, `-S`
+
+deprecated
+   
+-  Requires a value
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -48,14 +79,140 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`, `-n`
+
+Do not ask any interactive question
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `build`
+
+Builds application.
+
+```bash
+ece-tools build
+```
+
+### `--help`, `-h`
+
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force (or disable --no-ansi) ANSI output
+   
+-  Does not accept a value
+
+### `--no-ansi`
+
+Negate the "--ansi" option
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`, `-n`
+
+Do not ask any interactive question
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `completion`
+
+Dump the shell completion script
+
+```bash
+ece-tools completion [--debug] [--] [<shell>]
+```
+
+
+### `shell`
+
+The shell type (e.g. "bash"), the value of the "$SHELL" env var will be used if this is not given
+   
+
+### `--debug`
+
+Tail the completion debug log
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--help`, `-h`
+
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force (or disable --no-ansi) ANSI output
+   
+-  Does not accept a value
+
+### `--no-ansi`
+
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -100,7 +257,7 @@ Use alternative directory for saving dump
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -128,14 +285,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -158,7 +314,7 @@ ece-tools deploy
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -186,14 +342,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -238,7 +393,7 @@ To output raw command help
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -266,14 +421,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -291,7 +445,7 @@ Do not ask any interactive question
 List commands
 
 ```bash
-ece-tools list [--raw] [--format FORMAT] [--] [<namespace>]
+ece-tools list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 
@@ -314,18 +468,16 @@ The output format (txt, xml, json, or md)
 -  Default: `txt`
 -  Requires a value
 
+### `--short`
 
-## `patch`
-
-Applies custom patches.
-
-```bash
-ece-tools patch
-```
+To skip describing commands' arguments
+   
+-  Default: `false`
+-  Does not accept a value
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -353,14 +505,70 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`, `-n`
+
+Do not ask any interactive question
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `patch`
+
+Applies custom patches.
+
+```bash
+ece-tools patch
+```
+
+### `--help`, `-h`
+
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force (or disable --no-ansi) ANSI output
+   
+-  Does not accept a value
+
+### `--no-ansi`
+
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -383,7 +591,7 @@ ece-tools post-deploy
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -411,14 +619,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -451,7 +658,7 @@ Scenario(s)
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -479,14 +686,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -509,7 +715,7 @@ ece-tools backup:list
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -537,14 +743,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -580,7 +785,7 @@ A specific file recovery path
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -608,14 +813,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -638,7 +842,7 @@ ece-tools build:generate
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -666,14 +870,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -696,7 +899,7 @@ ece-tools build:transfer
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -724,14 +927,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -761,7 +963,7 @@ Configuration in JSON format
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -789,14 +991,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -826,7 +1027,7 @@ Configuration in JSON format
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -854,14 +1055,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -884,7 +1084,7 @@ ece-tools cloud:config:validate
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -912,14 +1112,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -947,7 +1146,7 @@ ece-tools dump
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -975,14 +1174,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1005,7 +1203,7 @@ ece-tools cron:disable
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1033,14 +1231,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1063,7 +1260,7 @@ ece-tools cron:enable
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1091,14 +1288,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1121,7 +1317,7 @@ ece-tools cron:kill
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1149,14 +1345,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1186,7 +1381,7 @@ Cron job code to unlock.
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1214,14 +1409,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1244,7 +1438,7 @@ ece-tools dev:generate:schema-error
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1272,14 +1466,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1302,7 +1495,7 @@ ece-tools dev:git:update-composer
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1330,14 +1523,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1369,7 +1561,7 @@ Environment variables to display, possible options: services,routes,variables
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1397,14 +1589,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1440,7 +1631,7 @@ Used for getting result in JSON format
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1468,14 +1659,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1498,7 +1688,7 @@ ece-tools module:refresh
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1526,14 +1716,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1556,7 +1745,7 @@ ece-tools schema:generate
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1584,14 +1773,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1614,7 +1802,7 @@ ece-tools wizard:ideal-state
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1642,14 +1830,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1672,7 +1859,7 @@ ece-tools wizard:master-slave
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1700,14 +1887,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1730,7 +1916,7 @@ ece-tools wizard:scd-on-build
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1758,14 +1944,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1788,7 +1973,7 @@ ece-tools wizard:scd-on-demand
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1816,14 +2001,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1846,7 +2030,7 @@ ece-tools wizard:scd-on-deploy
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1874,14 +2058,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1904,7 +2087,7 @@ ece-tools wizard:split-db-state
 
 ### `--help`, `-h`
 
-Display this help message
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1932,14 +2115,13 @@ Display this application version
 
 ### `--ansi`
 
-Force ANSI output
+Force (or disable --no-ansi) ANSI output
    
--  Default: `false`
 -  Does not accept a value
 
 ### `--no-ansi`
 
-Disable ANSI output
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
