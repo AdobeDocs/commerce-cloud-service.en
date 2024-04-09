@@ -16,17 +16,17 @@ Adobe Commerce on cloud infrastructure uses Composer to manage PHP packages.
 
 The `composer.json` file declares the list of packages, whereas the `composer.lock` file stores a complete list of the packages (a full version of each package and its dependencies) used to build an installation of Adobe Commerce or Magento Open Source.
 
-The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in Adobe Commerce on cloud infrastructure 2.4.6.
+The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in Adobe Commerce on cloud infrastructure 2.4.7.
 
 ## Dependencies
 
-`magento/magento-cloud-metapackage 2.4.6` has the following dependencies:
+`magento/magento-cloud-metapackage 2.4.7` has the following dependencies:
 
 ```config
 fastly/magento2: ^1.2.34
 magento/ece-tools: ^2002.1.0
 magento/module-paypal-on-boarding: ~100.5.0
-magento/product-enterprise-edition: >=2.4.6 <2.4.7
+magento/product-enterprise-edition: >=2.4.7 <2.4.8
 ```
 
 ## Third-party licenses
@@ -44,7 +44,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   <tbody>
   <tr>
     <td>
-      elasticsearch/elasticsearch
+      <a href="https://github.com/elastic/elasticsearch-php.git">elasticsearch/elasticsearch</a>
     </td>
     <td>library</td>
     <td>PHP Client for Elasticsearch</td>
@@ -125,13 +125,6 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
     </td>
     <td>library</td>
     <td>BaconQrCode is a QR code generator for PHP.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/beberlei/assert.git">beberlei/assert</a>
-    </td>
-    <td>library</td>
-    <td>Thin assertion library for input validation in business models.</td>
   </tr>
   <tr>
     <td>
@@ -429,13 +422,6 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-zendframework-bridge.git">laminas/laminas-zendframework-bridge</a>
-    </td>
-    <td>library</td>
-    <td>Alias legacy ZF class names to Laminas Project equivalents.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/nikic/PHP-Parser.git">nikic/php-parser</a>
     </td>
     <td>library</td>
@@ -475,6 +461,27 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
     </td>
     <td>magento-module</td>
     <td>Zend_Cache backend using Redis with full support for tags.</td>
+  </tr>
+  </tbody>
+</table>
+
+### ISC
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <a href="https://github.com/paragonie/sodium_compat.git">paragonie/sodium_compat</a>
+    </td>
+    <td>library</td>
+    <td>Pure PHP implementation of libsodium; uses the PHP extension if it exists</td>
   </tr>
   </tbody>
 </table>
@@ -538,6 +545,13 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
     </td>
     <td>library</td>
     <td>A powerful alternative to var_export(), which can export closures and objects without __set_state()</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/CarbonPHP/carbon-doctrine-types.git">carbonphp/carbon-doctrine-types</a>
+    </td>
+    <td>library</td>
+    <td>Types to use Carbon in Doctrine</td>
   </tr>
   <tr>
     <td>
@@ -608,27 +622,6 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
     </td>
     <td>library</td>
     <td>Restarts a process without Xdebug.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/doctrine/annotations.git">doctrine/annotations</a>
-    </td>
-    <td>library</td>
-    <td>Docblock Annotations Parser</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/doctrine/deprecations.git">doctrine/deprecations</a>
-    </td>
-    <td>library</td>
-    <td>A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all deprecations or selectively for packages.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/doctrine/lexer.git">doctrine/lexer</a>
-    </td>
-    <td>library</td>
-    <td>PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.</td>
   </tr>
   <tr>
     <td>
@@ -796,7 +789,14 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       <a href="https://github.com/PhpGt/Dom.git">phpgt/dom</a>
     </td>
     <td>library</td>
-    <td>The modern DOM API for PHP projects.</td>
+    <td>Modern DOM API.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/PhpGt/PropFunc.git">phpgt/propfunc</a>
+    </td>
+    <td>library</td>
+    <td>Property accessor and mutator functions.</td>
   </tr>
   <tr>
     <td>
@@ -814,10 +814,10 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/php-fig/cache.git">psr/cache</a>
+      <a href="https://github.com/php-fig/clock.git">psr/clock</a>
     </td>
     <td>library</td>
-    <td>Common interface for caching libraries</td>
+    <td>Common interface for reading the clock.</td>
   </tr>
   <tr>
     <td>
@@ -898,7 +898,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/sabberworm/PHP-CSS-Parser.git">sabberworm/php-css-parser</a>
+      <a href="https://github.com/MyIntervals/PHP-CSS-Parser.git">sabberworm/php-css-parser</a>
     </td>
     <td>library</td>
     <td>Parser for CSS Files written in PHP</td>
@@ -1017,6 +1017,20 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/http-client.git">symfony/http-client</a>
+    </td>
+    <td>library</td>
+    <td>Provides powerful methods to fetch HTTP resources synchronously or asynchronously</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/http-client-contracts.git">symfony/http-client-contracts</a>
+    </td>
+    <td>library</td>
+    <td>Generic abstractions related to HTTP clients</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/http-foundation.git">symfony/http-foundation</a>
     </td>
     <td>library</td>
@@ -1034,7 +1048,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       <a href="https://github.com/symfony/intl.git">symfony/intl</a>
     </td>
     <td>library</td>
-    <td>Provides a PHP replacement layer for the C intl extension that includes additional data from the ICU library</td>
+    <td>Provides access to the localization data of the ICU library</td>
   </tr>
   <tr>
     <td>
@@ -1101,6 +1115,13 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/polyfill-php83.git">symfony/polyfill-php83</a>
+    </td>
+    <td>library</td>
+    <td>Symfony polyfill backporting some PHP 8.3+ features to lower PHP versions</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/process.git">symfony/process</a>
     </td>
     <td>library</td>
@@ -1157,17 +1178,17 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/var-exporter.git">symfony/var-exporter</a>
+    </td>
+    <td>library</td>
+    <td>Allows exporting any serializable PHP data structure to plain PHP code</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/yaml.git">symfony/yaml</a>
     </td>
     <td>library</td>
     <td>Loads and dumps YAML files</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/thecodingmachine/safe.git">thecodingmachine/safe</a>
-    </td>
-    <td>library</td>
-    <td>PHP core functions that throw exceptions instead of returning FALSE on error</td>
   </tr>
   <tr>
     <td>
@@ -1213,17 +1234,31 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   <tbody>
   <tr>
     <td>
-      paypal/module-braintree-graph-ql
+      paypal/module-braintree-customer-balance
     </td>
     <td>magento2-module</td>
     <td>N/A</td>
   </tr>
   <tr>
     <td>
-      temando/module-shipping-remover
+      paypal/module-braintree-gift-card-account
     </td>
     <td>magento2-module</td>
-    <td>Removes Temando multi-carrier shipping extension from Magento 2</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>
+      paypal/module-braintree-gift-wrapping
+    </td>
+    <td>magento2-module</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>
+      paypal/module-braintree-graph-ql
+    </td>
+    <td>magento2-module</td>
+    <td>N/A</td>
   </tr>
   </tbody>
 </table>
@@ -1239,13 +1274,6 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>
-      temando/module-shipping
-    </td>
-    <td>metapackage</td>
-    <td>Temando multi-carrier shipping extension for Magento 2</td>
-  </tr>
   </tbody>
 </table>
 
