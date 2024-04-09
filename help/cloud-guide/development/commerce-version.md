@@ -118,7 +118,7 @@ Before upgrading the application, you must update your project configuration fil
 
 ### .magento.app.yaml
 
-Always review the values contained in the [.magento.app.yaml](../application/configure-app-yaml.md) file for your installed version, because it controls the way your application builds and deploys to the cloud infrastructure. The following example is for version 2.4.6 and uses Composer 2.2.21. The `build: flavor:` property is not used for Composer 2.x; see [Installing and using Composer 2](../application/properties.md#installing-and-using-composer-2).
+Always review the values contained in the [.magento.app.yaml](../application/configure-app-yaml.md) file for your installed version, because it controls the way your application builds and deploys to the cloud infrastructure. The following example is for version 2.4.7 and uses Composer 2.7.2. The `build: flavor:` property is not used for Composer 2.x; see [Installing and using Composer 2](../application/properties.md#installing-and-using-composer-2).
 
 **To update the `.magento.app.yaml` file**:
 
@@ -129,13 +129,13 @@ Always review the values contained in the [.magento.app.yaml](../application/con
 1. Update the PHP options.
 
    ```yaml
-   type: php:8.2
+   type: php:8.3
 
    build:
        flavor: none
    dependencies:
        php:
-           composer/composer: '2.2.21'
+           composer/composer: '2.7.2'
    ```
 
 1. Modify the `hooks` property `build` and `deploy` commands.
