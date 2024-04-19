@@ -48,7 +48,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -105,7 +105,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -171,7 +171,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -237,7 +237,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -314,7 +314,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -395,7 +395,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -464,7 +464,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -547,7 +547,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -602,7 +602,7 @@ Filter by result (when selecting a default activity): success or failure
 
 ### `--incomplete`, `-i`
 
-Include only incomplete activities (when selecting a default activity). This is a shorthand for \<info>--state=in_progress,pending\</info>
+Include only incomplete activities (when selecting a default activity). This is a shorthand for <info>--state=in_progress,pending</info>
    
 -  Default: `false`
 -  Does not accept a value
@@ -684,7 +684,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -822,7 +822,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -885,7 +885,7 @@ Filter by result (when selecting a default activity): success or failure
 
 ### `--incomplete`, `-i`
 
-Include only incomplete activities (when selecting a default activity). This is a shorthand for \<info>--state=in_progress,pending\</info>
+Include only incomplete activities (when selecting a default activity). This is a shorthand for <info>--state=in_progress,pending</info>
    
 -  Default: `false`
 -  Does not accept a value
@@ -946,7 +946,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1027,7 +1027,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1118,7 +1118,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1162,7 +1162,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1226,7 +1226,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1317,7 +1317,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1375,7 +1375,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1451,7 +1451,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1534,7 +1534,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1605,7 +1605,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1675,7 +1675,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1813,7 +1813,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1890,7 +1890,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -1987,7 +1987,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2127,7 +2127,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2236,7 +2236,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2329,7 +2329,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2431,7 +2431,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2508,7 +2508,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2604,7 +2604,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2681,7 +2681,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2777,7 +2777,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2862,7 +2862,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -2962,7 +2962,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3018,7 +3018,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3160,7 +3160,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3250,7 +3250,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3366,7 +3366,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3449,7 +3449,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3562,7 +3562,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3656,7 +3656,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3732,7 +3732,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3802,7 +3802,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -3939,7 +3939,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4009,7 +4009,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4096,7 +4096,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4166,7 +4166,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4262,7 +4262,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4365,7 +4365,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4451,7 +4451,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4527,7 +4527,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4614,7 +4614,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4715,7 +4715,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4852,7 +4852,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -4933,7 +4933,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5282,7 +5282,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5352,7 +5352,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5435,7 +5435,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5506,7 +5506,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5861,7 +5861,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -5917,7 +5917,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6073,7 +6073,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6123,7 +6123,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6131,7 +6131,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `metrics:all`
 
-Show CPU, disk and memory metrics for an environment
+<fg=white;bg=red> BETA </> Show CPU, disk and memory metrics for an environment
 
 ```bash
 magento-cloud metrics [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -6146,13 +6146,13 @@ Show sizes in bytes
 
 ### `--range`, `-r`
 
-The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>5m\</comment>, maximum \<comment>8h\</comment> or more (depending on the project), default \<comment>10m\</comment>.
+The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum <comment>5m</comment>, maximum <comment>8h</comment> or more (depending on the project), default <comment>10m</comment>.
    
 -  Requires a value
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum <comment>1m</comment>.
    
 -  Requires a value
 
@@ -6253,7 +6253,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6261,7 +6261,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `metrics:cpu`
 
-Show CPU usage of an environment
+<fg=white;bg=red> BETA </> Show CPU usage of an environment
 
 ```bash
 magento-cloud cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -6269,13 +6269,13 @@ magento-cloud cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--la
 
 ### `--range`, `-r`
 
-The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>5m\</comment>, maximum \<comment>8h\</comment> or more (depending on the project), default \<comment>10m\</comment>.
+The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum <comment>5m</comment>, maximum <comment>8h</comment> or more (depending on the project), default <comment>10m</comment>.
    
 -  Requires a value
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum <comment>1m</comment>.
    
 -  Requires a value
 
@@ -6376,7 +6376,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6399,13 +6399,13 @@ Show sizes in bytes
 
 ### `--range`, `-r`
 
-The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>5m\</comment>, maximum \<comment>8h\</comment> or more (depending on the project), default \<comment>10m\</comment>.
+The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum <comment>5m</comment>, maximum <comment>8h</comment> or more (depending on the project), default <comment>10m</comment>.
    
 -  Requires a value
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum <comment>1m</comment>.
    
 -  Requires a value
 
@@ -6513,7 +6513,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6521,7 +6521,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `metrics:memory`
 
-Show memory usage of an environment
+<fg=white;bg=red> BETA </> Show memory usage of an environment
 
 ```bash
 magento-cloud mem [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -6536,13 +6536,13 @@ Show sizes in bytes
 
 ### `--range`, `-r`
 
-The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>5m\</comment>, maximum \<comment>8h\</comment> or more (depending on the project), default \<comment>10m\</comment>.
+The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum <comment>5m</comment>, maximum <comment>8h</comment> or more (depending on the project), default <comment>10m</comment>.
    
 -  Requires a value
 
 ### `--interval`, `-i`
 
-The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum \<comment>1m\</comment>.
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum <comment>1m</comment>.
    
 -  Requires a value
 
@@ -6643,7 +6643,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6777,7 +6777,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -6886,7 +6886,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7001,7 +7001,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7121,7 +7121,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7129,7 +7129,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `operation:list`
 
-List runtime operations on an environment
+<fg=white;bg=red> BETA </> List runtime operations on an environment
 
 ```bash
 magento-cloud ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
@@ -7217,7 +7217,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7225,7 +7225,7 @@ Do not ask any interactive questions; accept default values. Equivalent to using
 
 ## `operation:run`
 
-Run an operation on the environment
+<fg=white;bg=red> BETA </> Run an operation on the environment
 
 ```bash
 magento-cloud operation:run [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-W|--no-wait] [--wait] [--] [<operation>]
@@ -7305,7 +7305,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7355,7 +7355,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7441,7 +7441,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7551,7 +7551,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7682,7 +7682,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7732,7 +7732,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7801,7 +7801,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7890,7 +7890,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -7958,7 +7958,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8065,7 +8065,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8155,7 +8155,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8205,7 +8205,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8282,7 +8282,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8373,7 +8373,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8467,7 +8467,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8567,7 +8567,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8647,7 +8647,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8727,7 +8727,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8807,7 +8807,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8890,7 +8890,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -8966,7 +8966,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9041,7 +9041,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9125,7 +9125,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9213,7 +9213,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9297,7 +9297,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9319,7 +9319,7 @@ The operation name
 
 ### `--variable`
 
-A variable to set during the operation, in the format \<info>type:name=value\</info>
+A variable to set during the operation, in the format <info>type:name=value</info>
    
 -  Default: `[]`
 -  Requires a value
@@ -9380,7 +9380,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9445,7 +9445,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9501,7 +9501,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9551,7 +9551,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9616,7 +9616,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9711,7 +9711,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9780,7 +9780,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9855,7 +9855,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -9945,7 +9945,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10020,7 +10020,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10107,7 +10107,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10191,7 +10191,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10262,7 +10262,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10357,7 +10357,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10428,7 +10428,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10505,7 +10505,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10654,7 +10654,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10737,7 +10737,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10839,7 +10839,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -10922,7 +10922,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -11059,7 +11059,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
@@ -11150,7 +11150,7 @@ Answer "yes" to confirmation questions; accept the default value for other quest
 
 ### `--no-interaction`
 
-Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: \<comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1\</comment>
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: <comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1</comment>
    
 -  Default: `false`
 -  Does not accept a value
