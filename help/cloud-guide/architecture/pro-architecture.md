@@ -190,8 +190,6 @@ RTO depends on the size of the storage. Large EBS volumes take more time to rest
 - A medium database (150 GB) can take 2 1/2 hours
 - A small database (60 GB) can take 1 hour
 
-{{pro-backups}}
-
 ## Pro cluster scaling
 
 The Pro cluster sizing and _compute_ configurations vary depending on the chosen cloud provider (AWS, Azure), region, and service dependencies. Adobe cloud infrastructure can scale Pro clusters to accommodate traffic expectations and service requirements as demands change.
