@@ -15,7 +15,7 @@ Before preparing your local workspace, ensure that you have your [credentials](.
 
 ## Required packages
 
-Adobe Commerce on cloud infrastructure uses Composer to manage the dependencies and upgrades for projects. For local development, you  must install the PHP and Composer versions that are compatible with your Cloud project. For example, if you are using the [!DNL Commerce] 2.4.6 cloud template, you can see that the [`.magento.app.yaml`](https://github.com/magento/magento-cloud/blob/2.4.6/.magento.app.yaml) configuration file uses **PHP 8.2** and **Composer 2.2.21**.
+Adobe Commerce on cloud infrastructure uses Composer to manage the dependencies and upgrades for projects. For local development, you must install the PHP and Composer versions that are compatible with your Cloud project. For example, if you are using the [!DNL Commerce] 2.4.7 cloud template, you can see that the [`.magento.app.yaml`](https://github.com/magento/magento-cloud/blob/2.4.7/.magento.app.yaml) configuration file uses **PHP 8.3** and **Composer 2.7.2**.
 
 Composer installs the required libraries and dependencies for your project in the `vendor` directory. The following required Composer files are in the project root directory:
 
@@ -41,10 +41,10 @@ Adobe Commerce on cloud infrastructure uses a metapackage that requires `magento
 >=current_version <next_version
 ```
 
-For example, to use the latest Adobe Commerce version 2.4.5, set `2.4.5` as the "current" version and `2.4.6` as the "next" version in the `composer.json` file:
+For example, to use the latest Adobe Commerce version 2.4.7, set `2.4.7` as the "current" version and `2.4.8` as the "next" version in the `composer.json` file:
 
 ```text
-"magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6"
+"magento/magento-cloud-metapackage": ">=2.4.7 <2.4.8"
 ```
 
 The main packages of this metapackage are the following:

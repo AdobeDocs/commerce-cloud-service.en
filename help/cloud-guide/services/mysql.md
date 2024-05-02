@@ -203,6 +203,10 @@ Accessing the MariaDB database directly requires you to use an SSH to log in to 
 
 ## Connect to secondary database
 
+>[!IMPORTANT]
+>
+>This feature is available on Pro Production and Staging clusters only.
+
 Sometimes, you have to connect to the secondary database to improve database performance or resolve database locking issues. If this configuration is required, use `"port" : 3304` to establish the connection. See the [Best practice to configure the MySQL slave connection](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/mysql-configuration.html) topic in the _Implementation Best Practices_ guide.
 
 ## Troubleshooting

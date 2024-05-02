@@ -38,11 +38,11 @@ If you want to install Adobe Commerce `2.3.5-p2`, set `current_version` to `2.3.
 
 You can always find the latest metapackage constraint in the [`magento-cloud` template](https://github.com/magento/magento-cloud/blob/master/composer.json).
 
-The following example places a constraint for the Adobe Commerce on cloud infrastructure metapackage to any version greater than or equal to the current version 2.4.5 and lower than next version 2.4.6:
+The following example places a constraint for the Adobe Commerce on cloud infrastructure metapackage to any version greater than or equal to the current version 2.4.7 and lower than next version 2.4.8:
 
 ```json
 "require": {
-    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6"
+    "magento/magento-cloud-metapackage": ">=2.4.7 <2.4.8"
 },
 ```
 
@@ -55,7 +55,7 @@ To upgrade your project to use the `ece-tools` package, you must update the meta
 1. Update the `magento/magento-cloud-metapackage` version constraint in the `composer.json` file.
 
     ```bash
-    composer require "magento/magento-cloud-metapackage":">=2.4.5 <2.4.6" --no-update
+    composer require "magento/magento-cloud-metapackage":">=2.4.7 <2.4.8" --no-update
     ```
 
 1. Update the metapackage.

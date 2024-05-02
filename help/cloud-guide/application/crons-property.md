@@ -50,7 +50,7 @@ Although you can use `crontab` to review configuration on Pro projects, Adobe Co
 
    >[!NOTE]
    >
-   >If the `crontab -l` command returns a `Command not found` error, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable the auto-crons self-service configuration option on your Pro project.
+   >If the `crontab -l` command returns a `Command not found` error (in Pro Staging and Production environments only), you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to enable the auto-crons self-service configuration option on your project.
 
 The following example shows the `crontab` output for an environment that has only the default `crons` configuration:
 

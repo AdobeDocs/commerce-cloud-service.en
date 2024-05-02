@@ -155,7 +155,11 @@ You can use the [[!DNL Cloud Console]](../../get-started/cloud-console.md) to ad
 
 1. Click **[!UICONTROL Add User]**.
 
-1. After adding users, redeploy all environments to apply the changes. Adding a user does not trigger a deployment automatically. Redeployment is an important step to ensure that the user can access an environment using SSH.
+   >[!IMPORTANT]
+   >
+   >Adding a user does not trigger a deployment automatically.
+
+1. After adding users, redeploy all environments to apply the changes. Adding a user does not trigger a deployment automatically. Redeployment is an important step to ensure that the user can access an environment using SSH or perform administrator tasks.
 
 After you add the user, Adobe sends an email to the specified address with instructions for accessing the Adobe Commerce on cloud infrastructure project.
 
