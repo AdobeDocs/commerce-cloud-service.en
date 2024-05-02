@@ -21,7 +21,7 @@ If outgoing emails must be disabled or re-enabled on Pro Production or Staging e
 
 >[!TIP]
 >
->Outgoing email status may not be reflected for Pro environments on the Cloud Console. In this case, you must use [command line](#enable-emails-in-the-cli) for outgoing emails enabling and testing.
+>Outgoing email status may not be reflected for Pro environments on the Cloud Console. Instead, use the [command line](#enable-emails-in-the-cli) for enabling and testing outgoing emails.
 
 **To manage email support from the [!DNL Cloud Console]**:
 
