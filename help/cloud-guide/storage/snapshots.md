@@ -127,7 +127,7 @@ Restoration times vary depending on the size of your database:
 
 ## Restore a Disaster Recovery Snapshot
 
-To restore the Disaster Recovery Snapshot in the Pro Staging and Production environments, refer to the [Import the database dump directly from the server](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) method.
+To restore the Disaster Recovery Snapshot in Pro Staging and Production environments, [Import the database dump directly from the server](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Roll back code
 
