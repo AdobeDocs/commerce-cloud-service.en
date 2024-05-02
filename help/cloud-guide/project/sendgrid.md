@@ -21,7 +21,7 @@ The SendGrid SMTP proxy is not intended for use as a general-purpose email serve
 
 ## Enable or disable email
 
-You can enable and disable outgoing emails for each environment from the Cloud Console or from the command line.
+You can enable or disable outgoing emails for each environment from the Cloud Console or from the command line.
 
 By default, outgoing emails are enabled on Pro Production and Staging environments. However, [!UICONTROL Outgoing emails] may appear disabled in the environment settings until you set the `enable_smtp` property through the [command line](outgoing-emails.md#enable-emails-in-the-cli) or [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console). You can enable outgoing emails for integration and staging environments to send two-factor authentication or reset password emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
 
