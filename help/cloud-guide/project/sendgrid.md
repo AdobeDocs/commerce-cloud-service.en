@@ -29,7 +29,7 @@ If outgoing emails must be disabled or re-enabled on Pro Production or Staging e
 
 >[!TIP]
 >
->Updating the [!UICONTROL enable_smtp] property value by [command line](outgoing-emails.md#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console). And the opposite way.
+>Updating the [!UICONTROL enable_smtp] property value by [command line](outgoing-emails.md#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console).
 
 ## SendGrid dashboard
 
