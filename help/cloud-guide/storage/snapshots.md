@@ -125,6 +125,10 @@ Restoration times vary depending on the size of your database:
    magento-cloud snapshot:restore <snapshot-id>
    ```
 
+## Restore a Disaster Recovery Snapshot
+
+To restore the Disaster Recovery Snapshot in Pro Staging and Production environments, [Import the database dump directly from the server](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+
 ## Roll back code
 
 Backups and snapshots do _not_ include a copy of your code. Your code is already stored in the Git-based repository, so you can use Git-based commands to roll back (or revert) code. For example, use `git log --oneline` to scroll through previous commits; then use [`git revert`](https://git-scm.com/docs/git-revert) to restore code from a specific commit.
