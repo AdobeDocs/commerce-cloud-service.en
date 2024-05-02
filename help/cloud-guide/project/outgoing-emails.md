@@ -9,7 +9,7 @@ You can enable and disable outgoing emails for each environment from the [!DNL C
 
 By default, outgoing emails are enabled in Production and Staging environments. However, [!UICONTROL Enable outgoing emails] may appear disabled in the environment settings until you set the `enable_smtp` property through the [command line](#enable-emails-in-the-cli) or [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console).
 
-Updating the [!UICONTROL enable_smtp] property value by [command line](#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the Cloud Console. And the opposite way.
+Updating the [!UICONTROL enable_smtp] property value by [command line](#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the Cloud Console.
 
 {{redeploy-warning}}
 
