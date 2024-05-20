@@ -27,8 +27,7 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 Release date: May 21, 2024
 
--  **Support for PHP 8.3** — Composer packages version compatibility errors for php 8.3
-
+-  **Support for PHP 8.3**—This patch resolves compatibility errors between php 8.3 and the composer package version.
 
 ## v1.0.26
 
