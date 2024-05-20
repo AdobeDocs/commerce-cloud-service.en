@@ -25,10 +25,8 @@ The release notes include:
 
 Release date: May 21, 2024
 
--  ![new icon](../../assets/new.svg) **Lua** — Added option useLua for CACHE_CONFIGURATION.
--  ![fix icon](../../assets/fix.svg) **Validator** - Updated  validators for new versions of Redis and RabbitMQ.
-
-
+-  ![new icon](../../assets/new.svg) **Lua**—Added option useLua for CACHE_CONFIGURATION.
+-  ![fix icon](../../assets/fix.svg) **Validator**—Updated validators for new versions of Redis and RabbitMQ.
 
 ## v2002.1.18
 
