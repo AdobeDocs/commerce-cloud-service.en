@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-04-08
+last-substantial-update: 2024-05-21
 exl-id: a464b940-c56e-4a7c-9948-559539e25361
 ---
 # ECE-Tools release notes
@@ -22,8 +22,14 @@ The release notes include:
 
 <!--Add release notes below-->
 
+## v2002.1.19 {#latest}
 
-## v2002.1.18 {#latest}
+Release date: May 21, 2024
+
+-  ![new icon](../../assets/new.svg) **Lua**—Added option useLua for CACHE_CONFIGURATION.
+-  ![fix icon](../../assets/fix.svg) **Validator**—Updated validators for new versions of Redis and RabbitMQ.
+
+## v2002.1.18
 
 Release date: April 8, 2024
 
