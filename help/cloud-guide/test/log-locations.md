@@ -70,7 +70,7 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 
 >[!TIP]
 >
->For Pro environments, automatic log rotation, compression, and removal are enabled for log files with a fixed file name. Each log file type has a rotating pattern and lifetime. Starter environments do not have log rotation. Full details of the environment's log rotation and lifespan of compressed logs can be found in: `/etc/logrotate.conf` and `/etc/logrotate.d/<various>`
+>For Pro Staging and Production environments, automatic log rotation, compression, and removal are enabled for log files with a fixed file name. Each log file type has a rotating pattern and lifetime. Starter environments do not have log rotation. Full details of the environment's log rotation and lifespan of compressed logs can be found in: `/etc/logrotate.conf` and `/etc/logrotate.d/<various>`. Log rotation cannot be configured in Pro Integration environments. For Pro Integration, you must implement a custom solution/script and [configure your cron](../application/crons-property.md) to run the script as needed.
 
 ## Build and Deploy logs
 
