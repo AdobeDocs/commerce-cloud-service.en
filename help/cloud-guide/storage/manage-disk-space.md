@@ -126,7 +126,7 @@ Two [configuration files](../environment/overview.md) control the allocation of 
 
 >[!IMPORTANT]
 >
->For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production cannot be reverted. Storage cannot be reallocated or redistributed between resources. To allow more space to be added to the file storage, reduce the disk space allocated for Mysql.
+>For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production cannot be reverted. Storage cannot be reallocated or redistributed between resources. To add more file storage space, reduce the disk space allocated for MySQL.
 
 ### Application disk space
 
