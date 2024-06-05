@@ -108,7 +108,8 @@ For debugging purposes, it is useful to directly connect to a service instance i
    }
    ```
 
-1. Enable local port forwarding to RabbitMQ (if your project is located on a different region such as US-3, EU-5, or AP-3 region, subsitute ``us-3``/``eu-5``/``ap-3`` for ``us``)
+1. Enable local port forwarding to RabbitMQ (if your project is located on a different region such as US-3, EU-5, or AP-3 region, substitute ``us-3``/``eu-5``/``ap-3`` for ``us``)
+
    ```bash
    ssh -L <port-number>:rabbitmq.internal:<port-number> <project-ID>-<branch-ID>@ssh.us.magentosite.cloud
    ```
