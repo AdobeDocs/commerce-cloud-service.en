@@ -8,6 +8,10 @@ exl-id: 9c6e98ca-85da-4342-8402-d576eb382ba2
 
 You can extend your Adobe Commerce application capabilities by adding an extension from the [Commerce Marketplace](https://marketplace.magento.com). For example, you can add a theme to change the look and feel of your storefront, or you can add a language package to localize your storefront and Admin.
 
+>[!NOTE]
+>
+>To avoid installation issues, all Marketplace purchases must be completed using the same account (MAGEID) that owns the cloud project.
+
 ## Composer name of an extension
 
 Although this section discusses how to get the Composer name and version of an extension from Commerce Marketplace, you can find the name and version of _any_ module in the Composer file of the module. Open the `composer.json` file in a text editor and note the `"name"` and `"version"` values.
