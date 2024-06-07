@@ -11,7 +11,7 @@ exl-id: 3357a3ea-bf86-4a65-95d1-6b24f1152248
 
 Adobe Commerce projects on cloud infrastructure use role-based access. There are two roles available at the project level:
 
-- **Project admin**—Write access to all project environments and can manage users, push code, and update project settings.
+- **Project admin**—Write access to all project environments and can manage users, push code, and update project settings. (Previously known as **Super admin**)
 - **Project viewer**—View-only access to all project environments.
 
 Project viewers cannot perform tasks on any environment; however, you can grant project viewers write access to a specific environment type.
