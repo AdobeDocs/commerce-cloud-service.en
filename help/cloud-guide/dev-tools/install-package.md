@@ -27,7 +27,7 @@ Before performing an upgrade to use the `ece-tools` package, check the `composer
 
 Each Adobe Commerce version requires a different constraint based on the following:
 
-```terminal
+```
 >=current_version <next_version
 ```
 
@@ -99,7 +99,7 @@ To upgrade your project to use the `ece-tools` package, you must update the meta
 
 1. Add and commit the code changes. In this example, the following files were updated:
 
-   ```terminal
+   ```
    .magento.app.yaml
    composer.json
    composer.lock

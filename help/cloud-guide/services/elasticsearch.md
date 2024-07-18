@@ -104,7 +104,7 @@ Service version and compatibility support for Adobe Commerce on cloud infrastruc
 
    In the response, check the installed version in the `versions` property.
 
-   ```terminal
+   ```
    name     : elasticsearch/elasticsearch
    descrip. : PHP Client for Elasticsearch
    keywords : client, elasticsearch, search
@@ -129,7 +129,7 @@ Service version and compatibility support for Adobe Commerce on cloud infrastruc
 
    In the response, find the IP address for the Elasticsearch service endpoint:
 
-   ```terminal
+   ```
    | elasticsearch:                                                                                                  |
    +------------------------------------------+----------------------------------------------------------------------+
    | username                                 | null                                                                 |
@@ -156,7 +156,7 @@ Service version and compatibility support for Adobe Commerce on cloud infrastruc
    curl -XGET <elasticsearch-service-endpoint-ip-address>:9200/
    ```
 
-   ```terminal
+   ```
    {
       "name" : "-AqGi9D",
       "cluster_name" : "elasticsearch",

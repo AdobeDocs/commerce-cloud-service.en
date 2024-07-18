@@ -14,7 +14,7 @@ magento-cloud subscription:info | grep storage
 
 Sample response:
 
-```terminal
+```
 | storage              | 51200
 ```
 
@@ -44,7 +44,7 @@ magento-cloud db:size
 
 Sample response:
 
-```terminal
+```
 Checking database service mysql...
 
 +----------------+-----------------+--------+
@@ -64,7 +64,7 @@ magento-cloud mount:size
 
 Sample response:
 
-```terminal
+```
 Checking disk usage for all mounts on <project>-<environment>-mymagento@ssh.us.magento.cloud...
 
 +------------+-----------+---------+-----------+-----------+--------+
@@ -89,7 +89,7 @@ The `-h` option displays the report using a human-readable format (KB, MB, or GB
 
 In the following sample response, the `/mnt/shared` mount shows the disk space for media and `/data/mysql/` mount shows disk space for the database:
 
-```terminal
+```
 Filesystem                                    Size  Used Avail Use% Mounted on
 udev                                           16G     0   16G   0% /dev
 tmpfs                                         3.2G  9.1M  3.2G   1% /run
@@ -115,7 +115,7 @@ df -h var/
 
 Sample response:
 
-```terminal
+```
 Filesystem                                    Size  Used Avail Use% Mounted on
 192.168.5.5:/shared/project/var         9.8G  591M  9.3G   6% /app/project/var
 ```

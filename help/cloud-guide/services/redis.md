@@ -71,7 +71,7 @@ redis-cli -h redis.internal info | grep version
 
 Sample response:
 
-```terminal
+```
 redis_version:7.0.5
 gcc_version:8.3.0
 ```
@@ -84,7 +84,7 @@ To get the Redis version installed on a Staging or Production environment, use t
 redis-server -v
 ```
 
-```terminal
+```
 Redis server v=7.0.5 ...
 ```
 
@@ -96,7 +96,7 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
 
 Sample response:
 
-```terminal
+```
 "redis" : [
     {
         "cluster" : "project-master-123abc4",

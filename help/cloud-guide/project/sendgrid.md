@@ -98,7 +98,7 @@ After domain authentication is set up, SendGrid automatically handles Security P
 
 To test your DNS configuration:
 
-```terminal
+```
 dig CNAME em.domain_name
 dig CNAME s1._domainkey.domain_name
 dig CNAME s2._domainkey.domain_name

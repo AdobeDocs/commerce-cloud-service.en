@@ -280,7 +280,7 @@ http://bar.add-theme-projectID.us.magentosite.cloud/
 
 You can view the route pattern for non-mapped domains by establishing an SSH connection to the environment, and using the `magento-cloud` CLI to list the routes:
 
-```terminal
+```
 web@mymagento.0:~$ vendor/bin/ece-tools env:config:show routes
 
 Magento Cloud Routes:

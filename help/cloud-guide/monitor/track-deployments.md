@@ -93,7 +93,7 @@ Track your Commerce project deployment events in New Relic by creating a _script
 
    Sample response:
 
-    ```terminal
+    ```
     Created integration 767u4hathojjw (type: script)
     +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
     | Property              | Value                                                                                                                                   |
@@ -181,7 +181,7 @@ Track your Commerce project deployment events in New Relic by creating a _script
 
 1. Make a note of the integration ID for later use. In this example, the ID is:
 
-    ```terminal
+    ```
     Created integration 767u4hathojjw (type: script)
     ```
 
@@ -201,7 +201,7 @@ Track your Commerce project deployment events in New Relic by creating a _script
 
    Response:
 
-    ```terminal
+    ```
     Integration ID: 767u4hathojjw
     Activity ID: poxqidsfajkmg
     Type: integration.script
