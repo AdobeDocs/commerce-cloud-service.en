@@ -32,7 +32,7 @@ Resetting your Git branch reverts the code to a stable state in the past.
 
    Sample response:
 
-   ```terminal
+   ```
    6bf9f45 (HEAD -> master, magento/master, magento/develop, magento/HEAD, develop) Create composer.lock
    34d7434 2.4.6 upgrade
    b69803c Update composer.lock
@@ -100,7 +100,7 @@ Uninstalling the Adobe Commerce software drops and restores the database, remove
 
    The following message displays to confirm a successful uninstallation:
 
-   ```terminal
+   ```
    [SUCCESS]: Magento uninstallation complete.
    ```
 

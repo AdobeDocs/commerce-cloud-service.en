@@ -123,7 +123,7 @@ You can only use your New Relic license key on three active environments. If the
 
    Sample response:
 
-   ```terminal
+   ```
     +----------------------+-------------+----------------------+---------+
     | Name                 | Level       | Value                | Enabled |
     +----------------------+-------------+----------------------+---------+

@@ -73,7 +73,7 @@ Clone your Adobe Commerce on cloud infrastructure project from an existing envir
 
    Expected response:
 
-   ```terminal
+   ```
    origin git@github.com:<user-name>/<repo-name>.git (fetch)
    origin git@github.com:<user-name>/<repo-name>.git (push)
    ```
@@ -139,7 +139,7 @@ magento-cloud integration:add --help
 
 1. Copy the **Payload URL** displayed by the return output.
 
-   ```terminal
+   ```
    Created integration <integration-ID> (type: github)
    Repository: myUserName/myrepo
    Build PRs: yes

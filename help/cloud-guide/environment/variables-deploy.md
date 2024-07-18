@@ -234,7 +234,7 @@ stage:
 
 Sample output:
 
-```terminal
+```
 MariaDB [main]> SHOW TABLES;
 +-------------------------------------+
 | Tables_in_main                      |

@@ -146,7 +146,7 @@ magento-cloud mount:download
 
 Sample response:
 
-```terminal
+```
 Enter a number to choose a mount to download from:
   [0] app/etc
   [1] pub/static
@@ -170,7 +170,7 @@ magento-cloud mount:upload --source /path/to/project/pub/media/ --mount pub/medi
 
 Sample response:
 
-```terminal
+```
 Uploading files from pub/media to the remote mount pub/media
 
 Are you sure you want to continue? [Y/n] Y
