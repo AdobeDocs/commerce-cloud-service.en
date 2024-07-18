@@ -26,7 +26,7 @@ magento-cloud p:curl --project PROJECT_ID /settings | grep -i outbound
 
 Unless you requested `deny` for your policy, the command should show your policy set to `allow`:
 
-```
+```json
 "outbound_restrictions_default_policy": "allow"
 ```
 
