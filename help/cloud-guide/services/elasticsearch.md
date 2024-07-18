@@ -156,7 +156,7 @@ Service version and compatibility support for Adobe Commerce on cloud infrastruc
    curl -XGET <elasticsearch-service-endpoint-ip-address>:9200/
    ```
 
-   ```
+   ```json
    {
       "name" : "-AqGi9D",
       "cluster_name" : "elasticsearch",

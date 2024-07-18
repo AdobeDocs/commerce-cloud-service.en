@@ -96,7 +96,7 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
 
 Sample response:
 
-```
+```json
 "redis" : [
     {
         "cluster" : "project-master-123abc4",
