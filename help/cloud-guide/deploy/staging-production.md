@@ -334,6 +334,8 @@ When importing data, you must drop and create a database.
    create database main;
    ```
 
+1. Import the database.
+
    Import for Production:
 
    ```shell
@@ -345,3 +347,5 @@ When importing data, you must drop and create a database.
    ```shell
    zcat <cluster-ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <database-username> <database-name>;
    ```
+
+   These commands decompress the database dump file, remove the DEFINER statements, and import the database using the specified credentials.
