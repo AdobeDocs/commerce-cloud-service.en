@@ -35,6 +35,7 @@
                 sockets<br>
                 SPL<br>
                 standard<br>
+                swoole<br>
                 sysvmsg<br>
                 sysvsem<br>
                 sysvshm<br>
