@@ -27,7 +27,6 @@
                 libxml<br>
                 mysqli<br>
                 opcache<br>
-                openswoole<br>
                 pcntl<br>
                 pdo_mysql<br>
                 Reflection<br>
