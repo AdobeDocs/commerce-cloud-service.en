@@ -30,6 +30,8 @@ http://{default}/:
     to: http://www.{default}/
 ```
 
+Import note: ece-tools may have trouble configuring URL routes in core_config_data tables if the `http://{default}/:` is not of type upstream.
+
 ## Partial-route redirects
 
 In the `.magento/routes.yaml` file, you can add partial redirect rules to existing routes based on pattern matching:
@@ -90,7 +92,7 @@ Use the following format to configure redirect requests for paths that begin wit
 http://{default}/:
     type: upstream
     redirects:
-    paths:
+      paths:
         "/from": { to: "https://{default}/to", prefix: true }
 ```
 
@@ -110,7 +112,7 @@ Use the following format to configure redirect requests which append the path su
 http://{default}/:
     type: upstream
     redirects:
-    paths: "/from": { to: "https://{default}/to", append_suffix: false }
+      paths: "/from": { to: "https://{default}/to", append_suffix: false }
 ```
 
 This configuration works as follows:
@@ -128,7 +130,7 @@ http://{default}/:
     type: upstream
     redirects:
     expires: 1d
-    paths:
+      paths:
         "/from": { to: "https://example.com/" }
         "/here": { to: "https://example.com/there", expires: "2w" }
 ```
