@@ -30,7 +30,14 @@ http://{default}/:
     to: http://www.{default}/
 ```
 
-Import note: ece-tools may have trouble configuring URL routes in core_config_data tables if the `http://{default}/:` is not of type upstream.
+>[!NOTE]
+>
+>If the `http://{default}/:` type is not set to `upstream`, `ece-tools` can encounter issues configuring URL routes in `core_config_data` tables.
+>
+>```yaml
+>http://{default}/:
+>    type: upstream
+>```
 
 ## Partial-route redirects
 
