@@ -26,7 +26,7 @@ Examples for Production and Staging domains:
 
 See [Set up multiple websites or stores](../cloud-guide/store/multiple-sites.md) in the _Commerce on Cloud Infrastructure_ guide for further guidance on multiple or unique domains.
 
-See [Multiple Fastly Accounts and assigned domains](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains) if you have an existing Fastly account that links the same apex and subdomains used on your Adobe Commerce site. 
+See [Multiple Fastly Accounts and assigned domains](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"} if you have an existing Fastly account that links the same apex and subdomains used on your Adobe Commerce site. 
 
 ## Transactional email domain
 
