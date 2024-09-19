@@ -49,11 +49,15 @@ DKIM is an email authentication technology that enables Internet Service Provide
 
 >[!WARNING]
 >
->The SendGrid DKIM signatures and domain authentication support are only available for Pro projects and not Starter projects. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve the message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) in the _Admin Systems guide_.
+>The SendGrid DKIM signatures and domain authentication support are only available on the Production and Staging environments for Pro projects, but not for all Starter environments. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve the message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) in the _Admin Systems guide_.
 
 ### Sender and domain authentication
 
 For SendGrid to send transactional emails on your behalf from Pro Production or Staging environments, you must configure your DNS settings to include the three SendGrid subdomain DNS entries. Each SendGrid account is assigned a unique `TXT` record which is used to authenticate outbound emails.
+
+>[!TIP]
+>
+>Make sure that you configure the **[!UICONTROLStore Email Addresses]** with the proper domain in **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. The domain authentication is performed on the sender's email address. If the default setting (`example.com`) is configured, the emails from `example.com` would be blocked by Sendgrid.
 
 **To enable domain authentication**:
 
@@ -98,7 +102,7 @@ After domain authentication is set up, SendGrid automatically handles Security P
 
 To test your DNS configuration:
 
-```terminal
+```
 dig CNAME em.domain_name
 dig CNAME s1._domainkey.domain_name
 dig CNAME s2._domainkey.domain_name

@@ -63,7 +63,7 @@ Clone your Adobe Commerce on cloud infrastructure project from an existing envir
 
    Expected response:
 
-   ```terminal
+   ```
    origin git@gitlab.com:<user-name>/<repo-name>.git (fetch)
    origin git@gitlab.com:<user-name>/<repo-name>.git (push)
    ```
@@ -111,7 +111,7 @@ magento-cloud integration:add --type=gitlab --project=<project-ID> --token=<your
 
 1. When prompted, enter `y` to add the integration.
 
-   ```terminal
+   ```
    Warning: adding a 'gitlab' integration will automatically synchronize code from the external Git repository.
    This means it can overwrite all the code in your project.
    Are you sure you want to continue? [y/N] y
@@ -119,7 +119,7 @@ magento-cloud integration:add --type=gitlab --project=<project-ID> --token=<your
 
 1. Copy the **Hook URL** displayed by the return output.
 
-   ```terminal
+   ```
    Hook URL: https://eu-3.magento.cloud/api/projects/3txxjf32gtryos/integrations/eolmpfizzg9lu/hook
    Created integration eolmpfizzg9lu (type: gitlab)
    +----------------------------------+---------------------------------------------------------------------------------------+

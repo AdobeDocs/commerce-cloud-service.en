@@ -178,7 +178,7 @@ Verify that the returned response contains the following information:
 
 The following excerpt from the cURL command output shows the correct values for the `Pragma`, `X-Magento-Tags`, and `Fastly-Module-Enabled` headers:
 
-```terminal
+```
 
 * STATE: INIT => CONNECT handle 0x600057800; line 1402 (connection #-5000)
 * Rebuilt URL to: https://www.mymagento.biz.c.sv7gVom4qrpek.ent.magento.cloud/
