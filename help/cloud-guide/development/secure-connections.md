@@ -190,7 +190,7 @@ magento-cloud tunnel:open -e sprint5 --app mymagento
 
 Sample response:
 
-```terminal
+```
 SSH tunnel opened on port 30004 to relationship: redis
 SSH tunnel opened on port 30005 to relationship: database
 Logs are written to: /home/magento_user/.magento/tunnels.log

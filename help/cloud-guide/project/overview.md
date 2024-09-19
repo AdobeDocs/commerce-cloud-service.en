@@ -75,7 +75,7 @@ Each active environment has a storefront. Select an environment from the top nav
 
 The Web Access URL may include the following:
 
-```terminal
+```
 https://<branch>-<unique-ID>-<project-ID>.<region>.magentosite.cloud/
 ```
 

@@ -58,7 +58,9 @@ Integration environments are designed for limited testing and development. For e
 
 For best performance in the integration environment follow these best practices:
 
-- Restrict catalog size
+- Restrict the catalog size - For reference, the Sample Data contains about 2,048 products. Try reducing your catalog size to around 4,000-5,000 products.
+
+- Reduce the number of customer groups - Having too many customer groups can affect the indexing performance and overall performance.
 
 - Limit use to one or two concurrent users
 

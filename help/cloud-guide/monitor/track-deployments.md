@@ -16,7 +16,7 @@ The Deployments data collection helps analyze the impact of deployment changes t
 >
 >- `NR_API_URL`: New Relic API endpoint, in this case NerdGraph API URL `https://api.newrelic.com/graphql`
 >- `NR_API_KEY`: Create a user key, see [New Relic API Keys](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys) in the _New Relic_ documentation.
->- `NR_APP_GUID`: An entity that reports data to New Relic has a unique ID (GUID). As an example, to enable on a Staging environment, adjust the Staging environment `NR_APP_GUID` cloud variable with the _staging entity GUID_ from New Relic. See the [NerdGraph tutorial: View entity data](https://docs.newrelic.com/docs/apis/nerdgraph/examples/nerdgraph-entities-api-tutorial/) in the _New Relic_ documentation.
+>- `NR_APP_GUID`: An entity that reports data to New Relic has a unique ID (GUID). As an example, to enable on a Staging environment, adjust the Staging environment `NR_APP_GUID` cloud variable with the _staging entity GUID_ from New Relic. See the [Learn about New Relic entities](https://docs.newrelic.com/docs/new-relic-solutions/new-relic-one/core-concepts/what-entity-new-relic/) and [NerdGraph tutorial: View entity data](https://docs.newrelic.com/docs/apis/nerdgraph/examples/nerdgraph-entities-api-tutorial/) in the _New Relic_ documentation.
 
 ## Enable Track deployments
 
@@ -28,60 +28,58 @@ Track your Commerce project deployment events in New Relic by creating a _script
 1. Create an `action-integration.js` file. Copy the following code and paste it in the `action-integration.js` file and save:
 
     ```javascript
-    function variables() {
-        var vars = {};
-        activity.payload.deployment.variables.forEach(function(variable) {
-            vars[variable.name] = variable.value;
-        });
-        return vars;
-    }
-
     function trackDeployments() {
-        const envName = activity.payload.environment.name;
-        const config = JSON.parse(variables()['env:NR_CONFIG'].replace(/'/g, '"'));
-        const commitSha = activity.payload.commits ? activity.payload.commits[0].sha : activity.payload.environment.head_commit;
-        const deploymentType = activity.type;
-
-        if (!(envName in config)) {
-            throw new Error('There is no configuration for ' + envName);
+      const envName = activity.payload.environment.name;
+      let variables;
+      activity.payload.deployment.variables.forEach(function(variable) {
+        if (variable.name === "env:NR_CONFIG") {
+          variables = variable.value;
         }
-    
-        const configEnv = config[envName];
+      });
+      const config = JSON.parse(variables.replace(/'/g, '"'));
+      const commitSha = activity.payload.commits ? activity.payload.commits[0].sha : activity.payload.environment.head_commit;
+      const deploymentType = activity.type;
 
-        if (!configEnv.NR_APP_GUID || !configEnv.NR_API_KEY || !configEnv.NR_API_URL) {
-            throw new Error('You must define the next configuation in the env variable NR_CONFIG: NR_APP_GUID, NR_API_KEY and NR_API_URL');
+      if (!(envName in config)) {
+        throw new Error('There is no configuration for ' + envName);
+      }
+
+      const configEnv = config[envName];
+
+      if (!configEnv.NR_APP_GUID || !configEnv.NR_API_KEY || !configEnv.NR_API_URL) {
+        throw new Error('You must define the next configuation in the env variable NR_CONFIG: NR_APP_GUID, NR_API_KEY and NR_API_URL');
+      }
+
+      const query = `mutation {
+        changeTrackingCreateDeployment(
+        deployment: {
+            version: "${commitSha}",
+            entityGuid: "${configEnv.NR_APP_GUID}",
+            commit: "${commitSha}",
+            changelog: "${deploymentType}"
         }
-
-        const query = `mutation {
-            changeTrackingCreateDeployment(
-            deployment: {
-                version: "${commitSha}",
-                entityGuid: "${configEnv.NR_APP_GUID}",
-                commit: "${commitSha}",
-                changelog: "${deploymentType}"
-            }
-            ) {
-              deploymentId
-              entityGuid
-            }
-        }`;
-
-        var resp = fetch(configEnv.NR_API_URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'API-Key': configEnv.NR_API_KEY
-            },
-            body: JSON.stringify({
-                query
-            })
-        });
-
-        if (!resp.ok) {
-            console.log('Sending new relic change tracking failed: ' + resp.text());
-        } else {
-            console.log(resp.text());
+        ) {
+          deploymentId
+          entityGuid
         }
+      }`;
+
+      var resp = fetch(configEnv.NR_API_URL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'API-Key': configEnv.NR_API_KEY
+        },
+        body: JSON.stringify({
+            query
+        })
+      });
+
+      if (!resp.ok) {
+        console.log('Sending new relic change tracking failed: ' + resp.text());
+      } else {
+        console.log(resp.text());
+      }
     }
 
     trackDeployments();
@@ -95,7 +93,7 @@ Track your Commerce project deployment events in New Relic by creating a _script
 
    Sample response:
 
-    ```terminal
+    ```
     Created integration 767u4hathojjw (type: script)
     +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
     | Property              | Value                                                                                                                                   |
@@ -183,7 +181,7 @@ Track your Commerce project deployment events in New Relic by creating a _script
 
 1. Make a note of the integration ID for later use. In this example, the ID is:
 
-    ```terminal
+    ```
     Created integration 767u4hathojjw (type: script)
     ```
 
@@ -203,7 +201,7 @@ Track your Commerce project deployment events in New Relic by creating a _script
 
    Response:
 
-    ```terminal
+    ```
     Integration ID: 767u4hathojjw
     Activity ID: poxqidsfajkmg
     Type: integration.script
@@ -220,6 +218,6 @@ Track your Commerce project deployment events in New Relic by creating a _script
 
 1. In the Explorer navigation menu, click **[!UICONTROL APM & Services]**. Select your environment [!UICONTROL Name] and [!UICONTROL Account].
 
-1. Under _Events_, click **[!UICONTROL Deployments]**.
+1. Under _Events_, click **[!UICONTROL Change tracking]**.
 
    ![Deployments](../../assets/new-relic/deployments.png)

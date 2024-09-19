@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-01-16
+last-substantial-update: 2024-05-21
 exl-id: ae6b511b-a37d-4776-9a5e-ad7d9f9f6611
 ---
 # Cloud Patches for Commerce
@@ -23,7 +23,19 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.25 {#latest}
+## v1.0.27 {#latest}
+
+Release date: May 21, 2024
+
+-  **Support for PHP 8.3**—This patch resolves compatibility errors between php 8.3 and the composer package version.
+
+## v1.0.26
+
+Release date: April 8, 2024
+
+-  ![new icon](../../assets/new.svg) **PHP** — Added support for PHP 8.3.
+
+## v1.0.25
 
 Release date: January 16, 2024
 
