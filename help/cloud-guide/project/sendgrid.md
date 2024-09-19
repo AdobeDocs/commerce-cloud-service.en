@@ -57,7 +57,7 @@ For SendGrid to send transactional emails on your behalf from Pro Production or 
 
 >[!TIP]
 >
->Make sure that you configure the Store Email Addresses with the proper domain in Stores > Configuration > General > Store Email Addresses. The domain authentication is performed on the Sender's email address - if the default setting (example.com) is configured, the emails from example.com would be blocked by Sendgrid.
+>Make sure that you configure the **[!UICONTROLStore Email Addresses]** with the proper domain in **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. The domain authentication is performed on the sender's email address. If the default setting (`example.com`) is configured, the emails from `example.com` would be blocked by Sendgrid.
 
 **To enable domain authentication**:
 
