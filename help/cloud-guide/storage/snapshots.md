@@ -45,7 +45,7 @@ You can create a manual backup of any active Starter environment and integration
 
    Sample response:
 
-   ```terminal
+   ```
    Creating a snapshot of develop-branch
    Waiting for the activity ID (User created a backup of develop-branch):
 
@@ -64,7 +64,7 @@ You can create a manual backup of any active Starter environment and integration
 
    The list returns information about the snapshot status:
 
-   ```terminal
+   ```
    Snapshots on the project (project-id), environment develop-branch (type: development):
    +---------------------------+----------------------+------------+
    | Created                   | Snapshot ID          | Restorable |
@@ -110,7 +110,7 @@ Restoration times vary depending on the size of your database:
 
    The list returns information about the available snapshots:
 
-   ```terminal
+   ```
    Snapshots on the project (project-id), environment develop-branch (type: development):
    +---------------------------+----------------------+------------+
    | Created                   | Snapshot ID          | Restorable |

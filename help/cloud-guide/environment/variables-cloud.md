@@ -55,7 +55,7 @@ php ./vendor/bin/ece-tools env:config:show variables
 
 Sample output for the `variables` option:
 
-```terminal
+```
 Magento Cloud Environment Variables:
 +-----------------------------------+----------------------------------+
 | Variable name                     | Value                            |

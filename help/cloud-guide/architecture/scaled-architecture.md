@@ -64,7 +64,7 @@ ssh <node>.<project-ID>-<environment>-<user-ID>@ssh.<region>.magento.com
 
 Example response as you log in to a **service node** includes the _unified_ role:
 
-```terminal
+```
  __  __                   _          ___ _             _
 |  \/  |__ _ __ _ ___ _ _| |_ ___   / __| |___ _  _ __| |
 | |\/| / _` / _` / -_) ' \  _/ _ \ | (__| / _ \ || / _` |
@@ -80,7 +80,7 @@ project-id@server-id:~$
 
 Example response as you log in to a **web node** includes the _web_ role:
 
-```terminal
+```
  __  __                   _          ___ _             _
 |  \/  |__ _ __ _ ___ _ _| |_ ___   / __| |___ _  _ __| |
 | |\/| / _` / _` / -_) ' \  _/ _ \ | (__| / _ \ || / _` |
