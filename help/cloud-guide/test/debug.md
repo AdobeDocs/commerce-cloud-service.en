@@ -270,8 +270,8 @@ You need the following:
 >[NOTE]
 >
 >To obtain the correct value for `USERNAME@CLUSTER.ent.magento.cloud`:
->Method 1: magento-cloud CLI: `magento-cloud ssh --all`
->Method 2: Commerce Console: https://CONSOLE-URL/ENVIRONMENT, click the `SSH v` dropdown
+>- Method 1: magento-cloud CLI: `magento-cloud ssh --all`
+>- Method 2: Commerce Console: https://CONSOLE-URL/ENVIRONMENT, click the `SSH v` dropdown
 
 **To start debugging using the environment URL**:
 
