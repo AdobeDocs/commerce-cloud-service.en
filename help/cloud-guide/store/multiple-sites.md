@@ -16,14 +16,14 @@ The process to set up multiple stores depends on whether you choose to use uniqu
 
 Multiple stores with unique domains:
 
-```terminal
+```
 https://first.store.com/
 https://second.store.com/
 ```
 
 Multiple stores with the same domain:
 
-```terminal
+```
 https://store.com/first/
 https://store.com/second/
 ```

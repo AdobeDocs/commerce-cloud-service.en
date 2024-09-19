@@ -56,7 +56,7 @@ Clone your Adobe Commerce on cloud infrastructure project from an existing envir
 
    Expected response:
 
-   ```terminal
+   ```
    origin git@bitbucket.org:<user-name>/<repo-name>.git (fetch)
    origin git@bitbucket.org:<user-name>/<repo-name>.git (push)
    ```
@@ -140,7 +140,7 @@ The Bitbucket integration requires an [OAuth consumer](https://support.atlassian
    magento-cloud integrations -p <project-ID>
    ```
 
-   ```terminal
+   ```
    +----------+-----------+--------------------------------------------------------------------------------+
    | ID       | Type      | Summary                                                                        |
    +----------+-----------+--------------------------------------------------------------------------------+
@@ -214,7 +214,7 @@ The Bitbucket integration cannot activate new environments in your Adobe Commerc
    magento-cloud environment:push from-bitbucket
    ```
 
-   ```terminal
+   ```
    Pushing from-bitbucket to the new environment from-bitbucket
    Activate from-bitbucket after pushing? [Y/n] y
    Parent environment [master]: integration
@@ -227,7 +227,7 @@ The Bitbucket integration cannot activate new environments in your Adobe Commerc
    magento-cloud environment:list
    ```
 
-   ```terminal
+   ```
    Your environments are:
    +---------------------+----------------+--------+
    | ID                  | Name           | Status |
