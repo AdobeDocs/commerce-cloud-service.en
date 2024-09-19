@@ -47,7 +47,7 @@ php ./vendor/bin/ece-tools env:config:show <option>
 
 Sample output for the `services` option:
 
-```terminal
+```
 Magento Cloud Services:
 +-----------------------------------+----------------------------------+
 | Service Configuration             | Value                            |
@@ -79,7 +79,7 @@ php ./vendor/bin/ece-tools wizard:ideal-state
 
 Sample output:
 
-```terminal
+```
 Ideal state is configured
 ```
 

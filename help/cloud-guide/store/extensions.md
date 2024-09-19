@@ -92,7 +92,7 @@ Adobe recommends working in a development branch when adding an extension to you
 
    Sample response:
 
-   ```terminal
+   ```
    Module is enabled
    ```
 

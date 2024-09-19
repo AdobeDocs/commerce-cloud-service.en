@@ -66,7 +66,7 @@ The following examples use the `magento-cloud` CLI to add a user, configure role
 
    > Sample prompts
 
-   ```terminal
+   ```
    Enter the user's email address: alice@example.com
 
    Email address: alice@example.com
@@ -100,7 +100,7 @@ magento-cloud user:get alice@example.com
 
 >Sample response:
 
-```terminal
+```
 Current role(s) of User (alice@example.com) on Production (project_id):
   Project role: admin
 ```
