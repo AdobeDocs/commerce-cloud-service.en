@@ -45,7 +45,7 @@ php ./vendor/bin/ece-patches status
 
 Sample response:
 
-```terminal
+```
 More detailed information about patches you can find on https://support.magento.com/
 ╔════════════════╤═════════════════════════════════════════════════╤══════════╤═════════════╤═════════════════════════════════╗
 ║ Id             │ Title                                           │ Type     │ Status      │ Details                         ║
