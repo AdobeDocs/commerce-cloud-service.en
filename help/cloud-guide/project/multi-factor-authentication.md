@@ -62,7 +62,7 @@ You can configure your local environment to generate the SSH certificate automat
 
    >Follow the response:
 
-   ```terminal
+   ```
    Please open the following URL in a browser and log in:
    http://127.0.0.1:5000
 
@@ -109,7 +109,7 @@ For projects enabled with MFA enforcement, SSH access requires the following per
 
    > Sample response:
 
-   ```terminal
+   ```
    Generating SSH certificate...
      Expires at: 2020-07-13T15:28:13-04:00
      Multi-factor authentication: verified
@@ -126,7 +126,7 @@ For projects enabled with MFA enforcement, SSH access requires the following per
    ssh abcdef7uyxabce-master-7rqtwti--mymagento@ssh.us-5.magento.cloud
    ```
 
-   ```terminal
+   ```
     __  __                   _          ___ _             _
    |  \/  |__ _ __ _ ___ _ _| |_ ___   / __| |___ _  _ __| |
    | |\/| / _` / _` / -_) ' \  _/ _ \ | (__| / _ \ || / _` |
@@ -161,7 +161,7 @@ When managing source code for Adobe Commerce on cloud infrastructure projects, y
 
    > Sample response:
 
-   ```terminal
+   ```
    Generating SSH certificate...
      Expires at: 2020-07-13T15:28:13-04:00
      Multi-factor authentication: verified
@@ -180,7 +180,7 @@ When managing source code for Adobe Commerce on cloud infrastructure projects, y
 
    > Sample response:
 
-   ```terminal
+   ```
    Cloning into 'myproject'...
    Connection to git.us-3.magento.cloud port 22 [tcp/ssh] succeeded!
    remote: counting objects: 22, done.
@@ -212,7 +212,7 @@ Authenticating with an API token still requires generating an SSH certificate. A
 
 1. At the prompt, enter the value for a valid API token.
 
-   ```terminal
+   ```
    Please enter an API token:
    >
 
@@ -267,7 +267,7 @@ Use the following information to resolve SSH connection requests failures due to
 
 If your request does not provide a valid certificate, a message similar to the following displays:
 
-```terminal
+```
 to Hello user-test (UUID: abaacca12-5cd1-4b123-9096-411add578998), you successfully
 authenticated, but could not connect to service abcdef7uyxabce-master-7rqtabc--mymagento@ssh.us-3.magento.cloud:>
 (reason: access requires MFA)
@@ -314,7 +314,7 @@ Try the following troubleshooting procedures to resolve the connection issue:
 
 If the SSH key is missing or invalid, the SSH connection request returns a `Permission denied (publickey)` error.
 
-```terminal
+```
 Hello user-test (UUID: abaacca12-5cd1-4b123-9096-411add578998), you successfully authenticated, but could not connect to service oh2wi6klp5ytk-mc-35985-integration-nnulm4a--mymagento (reason: service doesn't exist or you do not have access to it)
 oh2wi6klp5ytk-mc-35985-integration-nnulm4a--mymagento@ssh.eu-3.magento.cloud: Permission denied (publickey).
 ```
@@ -331,7 +331,7 @@ ssh abcdef7uyxabce-master-7rqtabc--mymagento@ssh.us-3.magento.cloud
 
 Sample response:
 
-```terminal
+```
 abcdef7uyxabce-master-7rqtabc--mymagento@ssh.us-3.magento.cloud: Permission denied (publickey).
 ```
 

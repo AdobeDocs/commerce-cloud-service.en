@@ -154,7 +154,7 @@ Map the `XDEBUG` connection from the server to your local system. To do any type
 
    Sample response:
 
-   ```terminal
+   ```
    dd2q5ct7mhgus        5504  0.0  0.0  82612  3664 ?      S    18:45   0:00 sshd: dd2q5ct7mhgus@pts/0
    ```
 

@@ -54,7 +54,7 @@ Although you can use `crontab` to review configuration on Pro projects, Adobe Co
 
 The following example shows the `crontab` output for an environment that has only the default `crons` configuration:
 
-```terminal
+```
 username@hostname:~$ crontab -l
 # Crontab is managed by the system, attempts to edit it directly will fail.
 SHELL=/etc/platform/6fck2obu3244c/cron-run

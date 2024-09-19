@@ -11,7 +11,7 @@ exl-id: 3357a3ea-bf86-4a65-95d1-6b24f1152248
 
 Adobe Commerce projects on cloud infrastructure use role-based access. There are two roles available at the project level:
 
-- **Project admin**—Write access to all project environments and can manage users, push code, and update project settings.
+- **Project admin**—Write access to all project environments and can manage users, push code, and update project settings. (Previously known as **Super admin**)
 - **Project viewer**—View-only access to all project environments.
 
 Project viewers cannot perform tasks on any environment; however, you can grant project viewers write access to a specific environment type.
@@ -66,7 +66,7 @@ The following examples use the `magento-cloud` CLI to add a user, configure role
 
    > Sample prompts
 
-   ```terminal
+   ```
    Enter the user's email address: alice@example.com
 
    Email address: alice@example.com
@@ -100,7 +100,7 @@ magento-cloud user:get alice@example.com
 
 >Sample response:
 
-```terminal
+```
 Current role(s) of User (alice@example.com) on Production (project_id):
   Project role: admin
 ```

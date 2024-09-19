@@ -709,7 +709,7 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/justinrainbow/json-schema.git">justinrainbow/json-schema</a>
+      <a href="https://github.com/jsonrainbow/json-schema.git">justinrainbow/json-schema</a>
     </td>
     <td>library</td>
     <td>A library to validate a json schema.</td>
@@ -814,6 +814,13 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/php-fig/cache.git">psr/cache</a>
+    </td>
+    <td>library</td>
+    <td>Common interface for caching libraries</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/php-fig/clock.git">psr/clock</a>
     </td>
     <td>library</td>
@@ -845,7 +852,7 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
       <a href="https://github.com/php-fig/http-factory.git">psr/http-factory</a>
     </td>
     <td>library</td>
-    <td>Common interfaces for PSR-7 HTTP message factories</td>
+    <td>PSR-17: Common interfaces for PSR-7 HTTP message factories</td>
   </tr>
   <tr>
     <td>
