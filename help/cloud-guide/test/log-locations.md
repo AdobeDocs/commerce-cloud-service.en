@@ -38,7 +38,7 @@ magento-cloud ssh -p <project-ID> -e <environment-ID> --all
 
 Sample response:
 
-```terminal
+```
 1.ent-project-environment-id@ssh.region.magento.cloud
 2.ent-project-environment-id@ssh.region.magento.cloud
 3.ent-project-environment-id@ssh.region.magento.cloud
@@ -78,7 +78,7 @@ After pushing changes to your environment, you can review the logging from each 
 
 Check the timestamps on log entries, verify, and locate the logs for a specific deployment. The following is a condensed example of log output that you can use for troubleshooting:
 
-```terminal
+```
 Re-deploying environment project-integration-ID
   Executing post deploy hook for service `mymagento`
     [2019-01-03 19:44:11] NOTICE: Starting post-deploy.
@@ -123,7 +123,7 @@ magento-cloud log -e <environment-ID> deploy
 
 Sample response:
 
-```terminal
+```
 Reading log file projectID-branchname-ID--mymagento@ssh.zone.magento.cloud:/var/log/'deploy.log'
 
 [2023-04-24 18:58:03.080678] Launching command 'b'php ./vendor/bin/ece-tools run scenario/deploy.xml\n''.
@@ -147,7 +147,7 @@ magento-cloud ssh -e <environment-ID> "./vendor/bin/ece-tools error:show"
 
 Sample response:
 
-```terminal
+```
 errorCode: 1001
 stage: build
 step: validate-config
@@ -204,7 +204,7 @@ For Pro Staging and Production environments, the Deploy, Post-deploy, and Cron l
 
 The application logs are compressed and archived once per day and kept for one year. The compressed logs are named using a unique ID that corresponds to the `Number of Days Ago + 1`. For example, on Pro production environments a PHP access log for 21 days in the past is stored and named as follows:
 
-```terminal
+```
 /var/log/platform/<project-ID>/php.access.log.22.gz
 ```
 

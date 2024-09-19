@@ -30,13 +30,13 @@ As an example, you can verify that your configuration properly enables the SCD o
 
 A successful configuration returns:
 
-```terminal
+```
 SCD on-demand is enabled
 ```
 
 A failed configuration returns:
 
-```terminal
+```
 SCD on-demand is disabled
 ```
 
@@ -44,7 +44,7 @@ SCD on-demand is disabled
 
 The _ideal_ configuration for your Cloud project helps to minimize deployment downtime by warming the cache and generating static content when requested by the user. This wizard automatically runs during the deployment process. If your Cloud is not configured for this _ideal state_, then you receive a message similar to the following:
 
-```terminal
+```
 - SCD on build is not configured
 - Post-deploy hook is not configured
 - Skip HTML minification is disabled
@@ -75,6 +75,6 @@ Based on the output, you need to make the following corrections to your configur
 
 1. Push your code changes and run the test again. When your configuration is _ideal_, you receive the following message.
 
-   ```terminal
+   ```
    Ideal state is configured
    ```

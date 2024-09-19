@@ -158,14 +158,14 @@ When you delete an environment, the environment is set to _inactive_. The code i
 
 1. Respond to the prompts to delete the local environment and the corresponding remote environment.
 
-   ```terminal
+   ```
    The environment <environment-ID> is currently active: deleting it will delete all associated data.
    Are you sure you want to delete the environment <environment-ID>? [Y/n]
    ```
 
    Deleting the environment places it in an _inactive_ state.
 
-   ```terminal
+   ```
    Delete the remote Git branch too? [Y/n]
    ```
 
@@ -173,7 +173,7 @@ When you delete an environment, the environment is set to _inactive_. The code i
 
 1. Wait for the environment to delete.
 
-   ```terminal
+   ```
    Deleting environment <environment-ID>
    Waiting for the activity...
      Deleting environment <project-id>-<environment-ID>-xxxxxx
