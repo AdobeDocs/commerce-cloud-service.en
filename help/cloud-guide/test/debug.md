@@ -267,9 +267,11 @@ You need the following:
    ssh -R /run/platform/USERNAME/xdebug.sock:localhost:9000 -N USERNAME@CLUSTER.ent.magento.cloud
    ```
 
->[NOTE] To obtain the correct value for `USERNAME@CLUSTER.ent.magento.cloud`
-> Method 1: magento-cloud CLI: `magento-cloud ssh --all`
-> Method 2: from the Commerce Console: https://CONSOLE-URL/ENVIRONMENT, click on the `SSH v` dropdown
+>[NOTE]
+>
+>To obtain the correct value for `USERNAME@CLUSTER.ent.magento.cloud`:
+>Method 1: magento-cloud CLI: `magento-cloud ssh --all`
+>Method 2: Commerce Console: https://CONSOLE-URL/ENVIRONMENT, click the `SSH v` dropdown
 
 **To start debugging using the environment URL**:
 
