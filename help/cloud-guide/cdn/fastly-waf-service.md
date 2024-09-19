@@ -54,7 +54,7 @@ Adobe and Fastly manage the update process to ensure that new or modified WAF ru
 
 ## Problems
 
-If you find that the WAF is blocking legitimate requests, these are often false positives and will need to be bypassed or have a workaround implemented at the WAF service. Submit a Support ticket and include the impacted URL, exact steps to reproduce the error, and the error reference in text form (as opposed to an screenshot, to avoid transcription errors.)
+If you find that the WAF is blocking legitimate requests, these are often false positives and will need to be bypassed or have a workaround implemented at the WAF service. Submit a Support ticket and include the impacted URL, exact steps to reproduce the error, and the error reference in text form (as opposed to a screenshot) to avoid transcription errors.
 
 ## Limitations
 
