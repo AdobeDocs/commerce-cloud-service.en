@@ -49,11 +49,15 @@ DKIM is an email authentication technology that enables Internet Service Provide
 
 >[!WARNING]
 >
->The SendGrid DKIM signatures and domain authentication support are only available for Pro projects and not Starter projects. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve the message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) in the _Admin Systems guide_.
+>The SendGrid DKIM signatures and domain authentication support are only available on the Production and Staging environments for Pro projects, but not for all Starter environments. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve the message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) in the _Admin Systems guide_.
 
 ### Sender and domain authentication
 
 For SendGrid to send transactional emails on your behalf from Pro Production or Staging environments, you must configure your DNS settings to include the three SendGrid subdomain DNS entries. Each SendGrid account is assigned a unique `TXT` record which is used to authenticate outbound emails.
+
+>[!TIP]
+>
+>Make sure that you configure the **[!UICONTROLStore Email Addresses]** with the proper domain in **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. The domain authentication is performed on the sender's email address. If the default setting (`example.com`) is configured, the emails from `example.com` would be blocked by Sendgrid.
 
 **To enable domain authentication**:
 
@@ -98,7 +102,7 @@ After domain authentication is set up, SendGrid automatically handles Security P
 
 To test your DNS configuration:
 
-```terminal
+```
 dig CNAME em.domain_name
 dig CNAME s1._domainkey.domain_name
 dig CNAME s2._domainkey.domain_name
@@ -127,3 +131,13 @@ There are no hard limits on the number of emails that can be sent in the Product
 ### Email sending reputation
 
 An email sending reputation is a score assigned by an Internet Service Provider (ISP) to a company sending email messages. The higher the score, the more likely an ISP is to deliver messages to a recipient's inbox. If the score falls below a certain level, the ISP may route messages to recipients' spam folder, or even reject messages completely. The reputation score is determined by several factors such as a 30-day average of your IP addresses rank against other IP addresses and spam complaint rate. See [8 Ways to Check Your Email Sending Reputation](https://sendgrid.com/en-us/blog/5-ways-check-sending-reputation).
+
+### Email suppression lists
+
+An email suppression list is a list of recipients that emails should not be sent to if doing so would hurt your sending reputation and delivery rates. It is required by the CAN-SPAM Act to ensure that email senders have a method of opting-out recipients who unsubscribed or marked email as spam. The suppression list also collects emails that bounce, are blocked, or invalid. 
+
+To prevent emails from being sent to the spam folder in the first place, follow Sendgrid's best practices article, [Why Are My Emails Going to Spam?](https://sendgrid.com/en-us/blog/10-tips-to-keep-email-out-of-the-spam-folder).
+
+If some recipients are not receiving your emails, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) to request a review of the suppression lists and remove the recipient(s) if necessary.
+
+For more details, refer to [What Is a Suppression List?](https://sendgrid.com/en-us/blog/what-is-a-suppression-list)

@@ -8,7 +8,7 @@ exl-id: b98f43fa-1878-466d-8ea0-1e7207af8b60
 
 An attempt to generate and write the `sitemap.xml` file to the root directory results in the following error:
 
-```terminal
+```
 Please make sure that "/" is writable by the web-server.
 ```
 

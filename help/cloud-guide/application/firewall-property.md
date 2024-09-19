@@ -26,7 +26,7 @@ magento-cloud p:curl --project PROJECT_ID /settings | grep -i outbound
 
 Unless you requested `deny` for your policy, the command should show your policy set to `allow`:
 
-```terminal
+```json
 "outbound_restrictions_default_policy": "allow"
 ```
 
@@ -151,7 +151,7 @@ The `ips` option allows a list of IP addresses in the CIDR notation. You can spe
 
 To specify a single IP address, add the `/32` CIDR prefix to the end of your IP address:
 
-```terminal
+```
 172.217.11.174/32  # google.com
 ```
 
@@ -183,7 +183,7 @@ awk '($5 ~/query/)' /var/log/dns.log | awk '{print $6}' | sort | uniq -c | sort 
 
 This command also shows DNS requests that were made but blocked by your egress-filtering rules. The output does not show which domains were blocked, only that requests were made. The output does not show requests made using an IP address.
 
-```terminal
+```
 Example output:
 
 97 magento.com
