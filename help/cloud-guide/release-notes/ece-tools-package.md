@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-01-16
+last-substantial-update: 2024-05-21
 exl-id: a464b940-c56e-4a7c-9948-559539e25361
 ---
 # ECE-Tools release notes
@@ -22,7 +22,21 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.1.17 {#latest}
+## v2002.1.19 {#latest}
+
+Release date: May 21, 2024
+
+-  ![new icon](../../assets/new.svg) **Lua**—Added option useLua for CACHE_CONFIGURATION.
+-  ![fix icon](../../assets/fix.svg) **Validator**—Updated validators for new versions of Redis and RabbitMQ.
+
+## v2002.1.18
+
+Release date: April 8, 2024
+
+-  ![new icon](../../assets/new.svg) **PHP** — Added support for PHP 8.3.
+-  ![fix icon](../../assets/fix.svg) Validator - Updated EOL validator.
+
+## v2002.1.17
 
 Release date: January 16, 2024
 
@@ -139,7 +153,7 @@ Release date: February 1, 2021
 
 -  ![new icon](../../assets/new.svg) **Remote storage**—Added the `REMOTE_STORAGE` environment variable to enable Cloud Projects for remote storage of media files using a storage service, such as AWS S3. This configuration option is part of the ECE-Tools package, but is not supported on Adobe Commerce on cloud infrastructure.<!--MCLOUD-7153-->
 
--  ![new icon](../../assets/new.svg) **New cloud:config:validate command**—Added command `php vendor/bin/ece-tools cloud:config:validate` to validate the `.magento.env.yaml` configuration before pushing changes to the remote Cloud environment.<!--MCLOUD-7120-->
+-  ![new icon](../../assets/new.svg) **New `cloud:config:validate` command**—Added command `php vendor/bin/ece-tools cloud:config:validate` to validate the `.magento.env.yaml` configuration before pushing changes to the remote Cloud environment.<!--MCLOUD-7120-->
 
 -  ![new icon](../../assets/new.svg) **Flushing the opcache**—Added support for the `opcache.enable_cli` PHP option to flush the OPcache before running the deploy hook. This configuration resets the cache configuration to ensure that the current configuration settings are applied on each deployment.<!--MCLOUD-7015-->
 
@@ -264,7 +278,7 @@ Release date: June 25, 2020
       ```text
       Your application does not have the "post_deploy" hook enabled.
       ```
-      
+
       <!--MCLOUD-4077-->
 
    -  ![new icon](../../assets/new.svg) **Added validation for Zend Framework dependencies**—Added composer dependency validation for the Zend Framework which has migrated to the Laminas project. If the required dependencies are missing, the following error message displays during the build process.

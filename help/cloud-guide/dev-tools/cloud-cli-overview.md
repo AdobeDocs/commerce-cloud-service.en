@@ -6,11 +6,17 @@ exl-id: 70dddd62-0269-4af4-bd2a-1a4fbf11a131
 
 # Cloud CLI
 
-The `magento-cloud` CLI tool enables developers and system administrators the ability to manage Cloud projects and environments, perform routines and run automation tasks. The `magento-cloud` CLI extends the features and functionality of the [[!DNL Cloud Console]](../../get-started/cloud-console.md). After you install the `magento-cloud` CLI on your local workstation, you can use it to manage your Adobe Commerce on cloud infrastructure Starter and Pro integration environments.
+The `magento-cloud` CLI tool enables developers and system administrators the ability to manage Cloud projects and environments, perform routines and run automation tasks locally. The `magento-cloud` CLI extends the features and functionality of the [[!DNL Cloud Console]](../../get-started/cloud-console.md). After you install the `magento-cloud` CLI on your local workstation, you can use it to manage your Adobe Commerce on cloud infrastructure Starter and Pro integration environments.
+
+>[!NOTE]
+>
+>This is a local tool and cannot be installed on the Cloud environment (which is read-only) using this method. You can only install modules on the Cloud environment through the **deployment workflow**
+>- [Pro deployment workflow](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [Starter deployment workflow](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow)
 
 **To install the `magento-cloud` CLI**:
 
-1. On your local workstation, change to the directory where you intend to clone the Cloud project and where the [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) has _write_ access.
+1. On your _local workstation_, change to the directory where you intend to clone the Cloud project and where the [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) has _write_ access.
 
 1. Install the `magento-cloud` CLI.
 
@@ -36,7 +42,7 @@ The `magento-cloud` CLI tool enables developers and system administrators the ab
    magento-cloud
    ```
 
-   ```terminal
+   ```
    Welcome to Magento Cloud!
    Please log in using your Magento Cloud account.
    Your email address or username:
@@ -88,7 +94,7 @@ magento-cloud environment:redeploy
 
 Sample response:
 
-```terminal
+```
 Are you sure you want to redeploy the environment <environment-name>? [Y/n]
 ```
 
@@ -187,7 +193,7 @@ If your `magento-cloud` CLI is up to date, you see the following response:
 magento-cloud update
 ```
 
-```terminal
+```
 Checking for Magento Cloud CLI updates (current version: X.XX.X)
 No updates found
 ```

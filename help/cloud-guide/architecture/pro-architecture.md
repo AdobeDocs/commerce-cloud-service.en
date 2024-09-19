@@ -60,7 +60,9 @@ Integration environments are designed for limited testing and development before
 
 For best performance in the integration environment follow these best practices:
 
-- Restrict catalog size
+- Restrict the catalog size - For reference, the Sample Data contains about 2,048 products. Try reducing your catalog size to around 4,000-5,000 products.
+
+- Reduce the number of customer groups - Having too many customer groups can affect the indexing performance and overall performance.
 
 - Limit use to one or two concurrent users
 
@@ -193,8 +195,6 @@ RTO depends on the size of the storage. Large EBS volumes take more time to rest
 - A large database (200+ GB) can take 5 hours
 - A medium database (150 GB) can take 2 1/2 hours
 - A small database (60 GB) can take 1 hour
-
-{{pro-backups}}
 
 ## Pro cluster scaling
 

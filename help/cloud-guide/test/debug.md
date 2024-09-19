@@ -154,7 +154,7 @@ Map the `XDEBUG` connection from the server to your local system. To do any type
 
    Sample response:
 
-   ```terminal
+   ```
    dd2q5ct7mhgus        5504  0.0  0.0  82612  3664 ?      S    18:45   0:00 sshd: dd2q5ct7mhgus@pts/0
    ```
 
@@ -266,6 +266,12 @@ You need the following:
    ```bash
    ssh -R /run/platform/USERNAME/xdebug.sock:localhost:9000 -N USERNAME@CLUSTER.ent.magento.cloud
    ```
+
+>[!NOTE]
+>
+>To obtain the correct value for `USERNAME@CLUSTER.ent.magento.cloud`:
+>- Method 1: magento-cloud CLI: `magento-cloud ssh --all`
+>- Method 2: Commerce Console: https://CONSOLE-URL/ENVIRONMENT, click the `SSH v` dropdown
 
 **To start debugging using the environment URL**:
 
