@@ -17,4 +17,6 @@ Use the `.magento.app.yaml` file to define the following configuration values:
 - [PHP settings](php-settings.md)—Configure runtime PHP options.
 - [Set Cache For Static Files](set-cache.md)—Set cache TTL for your media and static files.
 
->[!NOTE]: The .magento.app.yaml file is managed locally or via the repository - the configuration is only read for the purpose of the deployment and build process and gets removed once the deployment has been completed, so you will not find them on the server.
+>[!NOTE]
+>
+>The `.magento.app.yaml` file is managed locally or in the git repository. The configuration is only read for the purpose of the deployment and build process and gets removed after the deployment has been completed, so you will not find it on the server.
