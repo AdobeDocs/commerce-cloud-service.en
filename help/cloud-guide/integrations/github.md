@@ -102,7 +102,7 @@ You can choose to step through the CLI prompts using `magento-cloud integration:
 
 | Option                  | Required? | Description                       |
 | ----------------------- | --------- | --------------------------------- |
-| `--base-url`            | Yes       | The base URL of the server installation, which may be `https://github.com/` or a custom. Omit this option if your repository is hosted with public Github. |
+| `--base-url`            | Yes       | The base URL of the server installation, which may be `https://github.com/` or a custom. Omit this option if your repository is hosted with public Github or if your repository is not hosted on private servers. Omit this option if your repository URL is similar to `https://github.com/{account}/{repository-name}`. This can cause errors like `Unable to connect to GitHub: repository not found`.  |
 | `--token`               | Yes       | The personal access token that you generated for GitHub |
 | `--repository`          | Yes       | The repository name: `owner-or-organisation/repository` |
 | `--build-pull-requests` | Optional  | Instructs Adobe Commerce on cloud infrastructure to deploy after you merge a pull request (`true` by default) |
