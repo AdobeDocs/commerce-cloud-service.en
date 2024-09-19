@@ -112,7 +112,7 @@ Service version and compatibility support is determined by versions tested and d
 
    In the response, find the IP address and port for the OpenSearch service endpoint:
 
-   ```terminal
+   ```
    +------------------------------------------+--------------------------------------------------------+
    | opensearch:                                                                                       |
    +------------------------------------------+--------------------------------------------------------+
@@ -140,7 +140,7 @@ Service version and compatibility support is determined by versions tested and d
    curl -XGET <opensearch-service-endpoint-ip-address>:9200
    ```
 
-   ```terminal
+   ```json
    {
       "name" : "opensearch.0",
       "cluster_name" : "opensearch",
