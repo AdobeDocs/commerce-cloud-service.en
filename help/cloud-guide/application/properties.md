@@ -20,7 +20,7 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 | [`name`](#name) | Define the application name | `mymagento` | Yes |
 | [`relationships`](#relationships) | Map services | Services:<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | No |
 | [`runtime`](#runtime) | Runtime property includes extensions that are required by the [!DNL Commerce] application. | Extensions:<ul><li>`xsl`</li><li>`newrelic`</li><li>`sodium`</li></ul> | Yes |
-| [`type`](#type-and-build) | Set the base container image | `php:8.1` | Yes |
+| [`type`](#type-and-build) | Set the base container image | `php:8.3` | Yes |
 | [`variables`](variables-property.md) | Apply an environment variable for a specific Commerce version | — | No |
 | [`web`](web-property.md) | Handle external requests | — | Yes |
 | [`workers`](workers-property.md) | Handle external requests | — | Yes, if not using the web property |
@@ -49,13 +49,13 @@ The `build` property determines what happens by default when building the projec
 
 ```yaml
 # The toolstack used to build the application.
-type: php:8.1
+type: php:8.3
 build:
     flavor: none
 
 dependencies:
     php:
-        composer/composer: '2.2.4'
+        composer/composer: '2.7.2'
 ```
 
 ### Installing and using Composer 2
@@ -135,6 +135,8 @@ The minimal recommended disk size is 256 MB. If you see the error `UserError: Er
 >[!NOTE]
 >
 >For Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
+>
+>It is not possible to temporarily increase the disk storage in Staging or Production; this process is not reversible. 
 
 ## `relationships`
 

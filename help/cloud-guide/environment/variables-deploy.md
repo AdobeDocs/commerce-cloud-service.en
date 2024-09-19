@@ -234,7 +234,7 @@ stage:
 
 Sample output:
 
-```terminal
+```
 MariaDB [main]> SHOW TABLES;
 +-------------------------------------+
 | Tables_in_main                      |
@@ -269,6 +269,16 @@ stage:
         number_of_shards: 1
         number_of_replicas: 0
 ```
+
+>[!NOTE]
+>
+>On a Pro Staging/Production cluster that has three nodes (or three service nodes on [Scaled Architecture](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture#service-tier), the `indices_settings` should be set as follows:
+>
+>```yaml
+>      indices_settings:
+>        number_of_shards: 3
+>        number_of_replicas: 2
+>```
 
 {{merge-options}}
 
@@ -607,12 +617,12 @@ Elasticsearch configuration:
 ```yaml
 stage:
   deploy:
-   SEARCH_CONFIGURATION:
-     engine: elasticsearch
-     elasticsearch_server_hostname: http://elasticsearch.internal
-     elasticsearch_server_port: '9200'
-     elasticsearch_index_prefix: magento2
-     elasticsearch_server_timeout: '15'
+    SEARCH_CONFIGURATION:
+      engine: elasticsearch
+      elasticsearch_server_hostname: http://elasticsearch.internal
+      elasticsearch_server_port: '9200'
+      elasticsearch_index_prefix: magento2
+      elasticsearch_server_timeout: '15'
 ```
 
 OpenSearch configuration (for Commerce 2.4.6 and later):
@@ -620,12 +630,12 @@ OpenSearch configuration (for Commerce 2.4.6 and later):
 ```yaml
 stage:
   deploy:
-   SEARCH_CONFIGURATION:
-     engine: opensearch
-     opensearch_server_hostname: 'http://opensearch.internal'
-     opensearch_server_port: '9200'
-     opensearch_index_prefix: 'magento2'
-     opensearch_server_timeout: '15'
+    SEARCH_CONFIGURATION:
+      engine: opensearch
+      opensearch_server_hostname: 'http://opensearch.internal'
+      opensearch_server_port: '9200'
+      opensearch_index_prefix: 'magento2'
+      opensearch_server_timeout: '15'
 ```
 
 {{merge-options}}

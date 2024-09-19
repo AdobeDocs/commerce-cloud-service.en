@@ -7,7 +7,7 @@ exl-id: b76bd6c3-986e-4adc-abd0-5b27db0d8a3b
 ---
 # Restore an environment
 
-If you encounter issues in the integration environment and do not have a [valid backup](../storage/snapshots.md), try restoring your environment using one of the following methods:
+If you encounter issues in the integration environment and do not have a [valid backup](../storage/snapshots.md), or would like to reset the environment to a blank slate, you may restore/reset your environment using one of the following methods:
 
 - Reset or revert the code in the Git branch
 - Uninstall the [!DNL Commerce] application
@@ -32,7 +32,7 @@ Resetting your Git branch reverts the code to a stable state in the past.
 
    Sample response:
 
-   ```terminal
+   ```
    6bf9f45 (HEAD -> master, magento/master, magento/develop, magento/HEAD, develop) Create composer.lock
    34d7434 2.4.6 upgrade
    b69803c Update composer.lock
@@ -100,7 +100,7 @@ Uninstalling the Adobe Commerce software drops and restores the database, remove
 
    The following message displays to confirm a successful uninstallation:
 
-   ```terminal
+   ```
    [SUCCESS]: Magento uninstallation complete.
    ```
 

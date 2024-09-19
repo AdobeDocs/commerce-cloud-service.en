@@ -60,6 +60,14 @@ If you need additional active environments for development, submit a [Support ti
 
    During deployment, the environment status is  **In process**. After a successful deployment, the status changes to a green check mark for **success**.
 
+## Create inactive branch
+
+You cannot create an inactive branch from the Adobe Commerce Cloud console or CLI. If you want to create an inactive branch, create it on the Git repository and push using the `environment.Parent` option on the command. 
+
+   ```bash
+   git push -o "environment.Parent=<parent branch>" <origin> <branch>
+   ```
+
 ## Delete an environment
 
 Before you can delete an environment, you must deactivate it. Once an environment is inactive, you can delete it.

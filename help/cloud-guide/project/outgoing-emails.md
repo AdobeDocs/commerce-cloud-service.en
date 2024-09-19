@@ -7,13 +7,21 @@ exl-id: 814fe2a9-15bf-4bcb-a8de-ae288fd7f284
 
 You can enable and disable outgoing emails for each environment from the [!DNL Cloud Console] or from the command line. Enable outgoing emails for integration (and staging for Starter only) environments to send two-factor authentication or reset password emails for Cloud project users.
 
-By default, outgoing email is enabled in Production and Staging (Pro only) environments. The **[!UICONTROL Enable outgoing emails]** setting may appear disabled in the environment settings regardless of status until you set the [`enable_smtp](#enable-emails-in-the-cli) property.
+By default, outgoing emails are enabled in Production and Staging (Pro only) environments. However, the **[!UICONTROL Enable outgoing emails]** setting may appear disabled in the environment settings regardless of status until you set the `enable_smtp` property through the [command line](#enable-emails-in-the-cli) or [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console).
+
+Updating the `enable_smtp` property value by [command line](#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the Cloud Console.
 
 {{redeploy-warning}}
 
-## Enable emails in the [!DNL Cloud Console]
+## Enable emails in the Cloud Console
 
 Use the **[!UICONTROL Outgoing emails]** toggle in the _Configure environment_ view to enable or disable email support.
+
+If outgoing emails must be disabled or re-enabled on Pro Production or Staging environments, you can submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+
+>[!TIP]
+>
+>Outgoing email status may not be reflected for Pro environments on the Cloud Console. Instead, use the [command line](#enable-emails-in-the-cli) for enabling and testing outgoing emails.
 
 **To manage email support from the [!DNL Cloud Console]**:
 
@@ -53,6 +61,12 @@ You can change the email configuration for an active environment using the `mage
 
 1. Verify that the email works; send a test email to an address that you can check.
 
-      ```bash
-      php -r 'mail("mail@example.com", "test message", "just testing", "From: tester@example.com");'
-      ```
+   ```bash
+   php -r 'mail("mail@example.com", "test message", "just testing", "From: tester@example.com");'
+   ```
+
+1. Verify that the email is picked up by SendGrid.
+
+   ```bash
+   grep mail@example.com /var/log/mail.log
+   ```

@@ -39,7 +39,7 @@ stage:
 
 After you specify the pages to test and commit your changes, the _Time To First Byte_ test runs during the post-deploy phase and posts results for each path to the cloud log:
 
-```terminal
+```
 [2019-06-20 20:42:22] INFO: TTFB test result: 0.313s {"url":"https://staging-tkyicst-xkmwgjkwmwfuk.us-4.magentosite.cloud/customer/account/create","status":200}
 [2019-06-20 20:42:22] INFO: TTFB test result: 0.408s {"url":"https://staging-tkyicst-xkmwgjkwmwfuk.us-4.magentosite.cloud/checkout/cart","status":200}
 ```
@@ -87,7 +87,7 @@ Customize the list of pages used to preload the cache in the `post_deploy` stage
 
 -  **multiple pages**—Use the following format to cache multiple pages according to a specific regular expression pattern:
 
-   ```terminal
+   ```
    <entity_type>:<pattern|url|product_sku>:<store_id|store_code>
    ```
 
