@@ -52,6 +52,10 @@ Fastly updates and rolls out patches for new CVEs/templated rules based on rule 
 
 Adobe and Fastly manage the update process to ensure that new or modified WAF rules work effectively in your Production environment before the updates are deployed in blocking mode.
 
+## Problems
+
+If you find that the WAF is blocking legitimate requests, these are often false positives and will need to be bypassed or have a workaround implemented at the WAF service. Submit a Support ticket and include the impacted URL, exact steps to reproduce the error, and the error reference in text form (as opposed to a screenshot) to avoid transcription errors.
+
 ## Limitations
 
 The standard WAF service powered by Fastly does not support the following features:

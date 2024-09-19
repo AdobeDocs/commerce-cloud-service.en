@@ -135,6 +135,8 @@ The minimal recommended disk size is 256 MB. If you see the error `UserError: Er
 >[!NOTE]
 >
 >For Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
+>
+>It is not possible to temporarily increase the disk storage in Staging or Production; this process is not reversible. 
 
 ## `relationships`
 
