@@ -271,7 +271,8 @@ stage:
 ```
 
 >[!NOTE]
->On a Pro Staging/Production cluster that has 3 nodes (or 3 service nodes on [Scaled Architecture](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture#service-tier), the `indices_settings` should be set as follows:
+>
+>On a Pro Staging/Production cluster that has three nodes (or three service nodes on [Scaled Architecture](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture#service-tier), the `indices_settings` should be set as follows:
 >
 >```yaml
 >      indices_settings:
