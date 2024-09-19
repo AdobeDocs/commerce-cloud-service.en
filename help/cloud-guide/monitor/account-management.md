@@ -11,20 +11,9 @@ When Adobe provisions your cloud infrastructure project, the License Owner recei
 
 ## Manage user access
 
-A New Relic account can have only one person assigned to the Owner role. If you must change the account owner, assign the Admin role to the current Owner, and then assign the Owner role to another user. See [Update the account owner](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/) in the _New Relic documentation_ for instructions.
-
-Guidelines for managing New Relic access:
-
-- Project Owners and Admin users can add and remove users from the New Relic account.
-- Do not create more than five full-access **Users**.
-- Only grant full access to users that strictly require access to the complete feature set.
-- There is no specific guidance on free **Restricted** users.
-
->[!TIP]
+>[!NOTE]
 >
->Before assigning the Owner role to a user, verify that the user exists on the New Relic account for Adobe Commerce on cloud infrastructure. If you must add the user to that account and an existing account Owner or Admin cannot help, any user with access to the [Adobe Partnership Owner Account](https://account.newrelic.com/accounts/1311131/users) for New Relic can add users on behalf of the customer.
-
-Add at least one **Admin** user to your New Relic account that can manage all access, integrations, and tool usage.
+>Only grant full access to users that strictly require access to the complete feature set.
 
 **To access User management in New Relic**:
 
@@ -123,7 +112,7 @@ You can only use your New Relic license key on three active environments. If the
 
    Sample response:
 
-   ```terminal
+   ```
     +----------------------+-------------+----------------------+---------+
     | Name                 | Level       | Value                | Enabled |
     +----------------------+-------------+----------------------+---------+

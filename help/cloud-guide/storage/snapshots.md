@@ -10,19 +10,26 @@ You can perform a manual backup of active Starter environments at any time using
 
 A backup or _snapshot_ is a complete backup of environment data that includes all persistent data from running services (MySQL database) and any files stored on the mounted volumes (var, pub/media, app/etc). The snapshot does _not_ include code, since the code is already stored in the Git-based repository. You cannot download a copy of a snapshot.
 
-The backup feature does **not** apply to the Pro environments. The Pro Staging and Production environments receive regular backups for disaster recovery purposes by default, see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery). Unlike the automatic live backups on the Pro Staging and Production environments, backups are **not** automatic. It is _your_ responsibility to manually create a backup or set up a cron job to periodically create a backup of your Starter or Pro integration environments.
+The backup/snapshot feature does **not** apply to the Pro Staging and Production environments, which receive regular backups for disaster recovery purposes by default. Refer to [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery) for more information. Unlike the automatic live backups on the Pro Staging and Production environments, backups are **not** automatic. It is _your_ responsibility to manually create a backup or set up a cron job to periodically create a backup of your Starter or Pro integration environments.
 
 ## Create a manual backup
 
-You can create a manual backup of your Starter environment from the [!DNL Cloud Console] or create a snapshot from the Cloud CLI. You must have an [Admin role](../project/user-access.md) for the environment.
+You can create a manual backup of any active Starter environment and integration Pro environment from the [!DNL Cloud Console] or create a snapshot from the Cloud CLI. You must have an [Admin role](../project/user-access.md) for the environment.
 
-**To create a backup using the [!DNL Cloud Console]**:
+**To create a backup of any Starter environment using the [!DNL Cloud Console]**:
 
 1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 1. Select an environment from the project navigation bar. The environment must be active.
 1. In the _Backups_ view, click **[!UICONTROL Backup]**. This option is not available for a Pro environment.
 
    ![Backup](../../assets/button-backup.png){width="150"}
+
+**To create a backup of an integration environment using the [!DNL Cloud Console]**:
+
+1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
+1. Select an integration/development environment from the project navigation bar. The environment must be active.
+1. Select the **[!UICONTROL Backup]** option in the top-right menu. This option is available for both Starter and Pro environments.
+1. Click the **[!UICONTROL Yes]** button.
 
 **To create a snapshot using the `magento-cloud` CLI**:
 
@@ -38,7 +45,7 @@ You can create a manual backup of your Starter environment from the [!DNL Cloud 
 
    Sample response:
 
-   ```terminal
+   ```
    Creating a snapshot of develop-branch
    Waiting for the activity ID (User created a backup of develop-branch):
 
@@ -57,7 +64,7 @@ You can create a manual backup of your Starter environment from the [!DNL Cloud 
 
    The list returns information about the snapshot status:
 
-   ```terminal
+   ```
    Snapshots on the project (project-id), environment develop-branch (type: development):
    +---------------------------+----------------------+------------+
    | Created                   | Snapshot ID          | Restorable |
@@ -103,7 +110,7 @@ Restoration times vary depending on the size of your database:
 
    The list returns information about the available snapshots:
 
-   ```terminal
+   ```
    Snapshots on the project (project-id), environment develop-branch (type: development):
    +---------------------------+----------------------+------------+
    | Created                   | Snapshot ID          | Restorable |
@@ -117,6 +124,10 @@ Restoration times vary depending on the size of your database:
    ```bash
    magento-cloud snapshot:restore <snapshot-id>
    ```
+
+## Restore a Disaster Recovery Snapshot
+
+To restore the Disaster Recovery Snapshot in Pro Staging and Production environments, [Import the database dump directly from the server](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Roll back code
 

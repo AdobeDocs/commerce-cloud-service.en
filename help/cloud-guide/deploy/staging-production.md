@@ -146,7 +146,7 @@ magento-cloud mount:download
 
 Sample response:
 
-```terminal
+```
 Enter a number to choose a mount to download from:
   [0] app/etc
   [1] pub/static
@@ -170,7 +170,7 @@ magento-cloud mount:upload --source /path/to/project/pub/media/ --mount pub/medi
 
 Sample response:
 
-```terminal
+```
 Uploading files from pub/media to the remote mount pub/media
 
 Are you sure you want to continue? [Y/n] Y
@@ -334,6 +334,8 @@ When importing data, you must drop and create a database.
    create database main;
    ```
 
+1. Import the database.
+
    Import for Production:
 
    ```shell
@@ -345,3 +347,5 @@ When importing data, you must drop and create a database.
    ```shell
    zcat <cluster-ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <database-username> <database-name>;
    ```
+
+   These commands decompress the database dump file, remove the `DEFINER` statements, and import the database using the specified credentials.

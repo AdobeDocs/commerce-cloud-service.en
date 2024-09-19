@@ -156,7 +156,7 @@ When you modify your environment through the Admin and run the command again, ne
 
 Copies of the original `app/etc/env.php` and `app/etc/config.php` files were created during the deployment process and store in the same folder. The following shows the BAK (backup files) and PHP (original files) in the same `app/etc` folder:
 
-```terminal
+```
 ...
 config.php.bak
 di.xml
@@ -186,7 +186,7 @@ Older configurations used the `app/etc/config.local.php` file. See [Migrate olde
 
    Sample response:
 
-   ```terminal
+   ```
    The list of backup files:
    app/etc/env.php
    app/etc/config.php

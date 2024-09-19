@@ -2,8 +2,8 @@
 title: Prepare for development
 description: Gather credentials and learn about the tools available to set up a development workspace for use with your Commerce on cloud infrastructure project.
 recommendations: noDisplay, catalog
+exl-id: 8f88161f-3580-453b-b977-2c6e3824cc02
 ---
-
 # Prepare for development
 
 Whether you are new to Commerce or are an existing Commerce owner moving to the cloud infrastructure, use these steps for preparing a development workspace for your Cloud project. If you already completed some of these steps or have an existing Adobe Commerce developer environment, review the following for expected results and continue to the next step. Some configurations and workflows differ from a typical on-premises installation.
