@@ -128,7 +128,7 @@ You can retrieve the configuration data for all service relationships from the [
 
    >Abbreviated sample response
 
-   ```terminal
+   ```yaml
    redis:
        -
    ...

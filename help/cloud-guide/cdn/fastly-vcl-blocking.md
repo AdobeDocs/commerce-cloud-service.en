@@ -103,7 +103,15 @@ The following examples show how to block requests using inline condition stateme
 
 >[!WARNING]
 >
->In these examples, the VCL code is formatted as a JSON payload that can be saved to a file and submitted in a Fastly API request. You can submit the [VCL snippet from the Admin](#add-the-custom-vcl-snippet), or as a JSON string using the Fastly API. To prevent validation when you use the Fastly API with a JSON string, you must use a backslash to escape special characters.
+>In these examples, the VCL code is formatted as a JSON payload that can be saved to a file and submitted in a Fastly API request. You can submit the [VCL snippet from the Admin](#add-the-custom-vcl-snippet), or as a JSON string using the Fastly API. To prevent validation errors when you use the Fastly API with a JSON string, you must use a backslash to escape special characters.
+
+>[!NOTE]
+>If you are submitting the VCL snippet from the Admin, extract the individual values from the sample VCL code and enter them into to the corresponding fields. For example:
+>- Name: `<name of the VCL>`
+>- Dynamic: `<0/1>`
+>- Type: `<type>`
+>- Priority: `<priority>`
+>- Content: `<content>`
 
 See [Using dynamic VCL snippets](https://docs.fastly.com/vcl/vcl-snippets/) in the Fastly VCL documentation.
 

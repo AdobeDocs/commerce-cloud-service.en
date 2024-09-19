@@ -113,7 +113,7 @@ When a 503 error occurs, Fastly returns the reason on the error and maintenance 
 
 If the apex domain and subdomains for your Adobe Commerce on cloud infrastructure project are already associated with an existing Fastly account with an assigned Service ID, you cannot launch until you update your Fastly configuration:
 
--  Update the apex and subdomain configuration on the existing Fastly account. See [Multiple Fastly accounts and assigned domains](fastly.md#domain).
+-  Update the apex and subdomain configuration on the existing Fastly account. See [Multiple Fastly accounts and assigned domains](fastly.md#multiple-fastly-accounts-and-assigned-domains).
 
 -  [Enable and configure Fastly](fastly-configuration.md#enable-fastly-caching) and complete the [DNS configuration](../launch/checklist.md#update-dns-configuration-with-production-settings)
 
@@ -178,7 +178,7 @@ Verify that the returned response contains the following information:
 
 The following excerpt from the cURL command output shows the correct values for the `Pragma`, `X-Magento-Tags`, and `Fastly-Module-Enabled` headers:
 
-```terminal
+```
 
 * STATE: INIT => CONNECT handle 0x600057800; line 1402 (connection #-5000)
 * Rebuilt URL to: https://www.mymagento.biz.c.sv7gVom4qrpek.ent.magento.cloud/
