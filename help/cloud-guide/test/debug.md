@@ -267,7 +267,7 @@ You need the following:
    ssh -R /run/platform/USERNAME/xdebug.sock:localhost:9000 -N USERNAME@CLUSTER.ent.magento.cloud
    ```
 
->[NOTE]
+>[!NOTE]
 >
 >To obtain the correct value for `USERNAME@CLUSTER.ent.magento.cloud`:
 >- Method 1: magento-cloud CLI: `magento-cloud ssh --all`
