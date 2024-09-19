@@ -14,7 +14,7 @@ magento-cloud subscription:info | grep storage
 
 Sample response:
 
-```terminal
+```
 | storage              | 51200
 ```
 
@@ -44,7 +44,7 @@ magento-cloud db:size
 
 Sample response:
 
-```terminal
+```
 Checking database service mysql...
 
 +----------------+-----------------+--------+
@@ -64,7 +64,7 @@ magento-cloud mount:size
 
 Sample response:
 
-```terminal
+```
 Checking disk usage for all mounts on <project>-<environment>-mymagento@ssh.us.magento.cloud...
 
 +------------+-----------+---------+-----------+-----------+--------+
@@ -89,7 +89,7 @@ The `-h` option displays the report using a human-readable format (KB, MB, or GB
 
 In the following sample response, the `/mnt/shared` mount shows the disk space for media and `/data/mysql/` mount shows disk space for the database:
 
-```terminal
+```
 Filesystem                                    Size  Used Avail Use% Mounted on
 udev                                           16G     0   16G   0% /dev
 tmpfs                                         3.2G  9.1M  3.2G   1% /run
@@ -115,7 +115,7 @@ df -h var/
 
 Sample response:
 
-```terminal
+```
 Filesystem                                    Size  Used Avail Use% Mounted on
 192.168.5.5:/shared/project/var         9.8G  591M  9.3G   6% /app/project/var
 ```
@@ -126,7 +126,7 @@ Two [configuration files](../environment/overview.md) control the allocation of 
 
 >[!IMPORTANT]
 >
->For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production cannot be reverted.
+>For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production cannot be reverted. Storage cannot be reallocated or redistributed between resources. To add more file storage space, reduce the disk space allocated for MySQL.
 
 ### Application disk space
 

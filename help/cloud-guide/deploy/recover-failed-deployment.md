@@ -53,7 +53,7 @@ To clean up from the previous deployment, identify the component that was added 
 
    If the following message displays, you do not need to do anything further:
 
-   ```terminal
+   ```
    Package "<name>:<version>" listed for update is not installed. Ignoring.
    ```
 
