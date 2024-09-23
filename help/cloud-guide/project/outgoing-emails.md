@@ -5,11 +5,13 @@ exl-id: 814fe2a9-15bf-4bcb-a8de-ae288fd7f284
 ---
 # Configure outgoing emails
 
-You can enable and disable outgoing emails for each environment from the [!DNL Cloud Console] or from the command line. Enable outgoing emails for integration (and staging for Starter only) environments to send two-factor authentication or reset password emails for Cloud project users.
+You can enable and disable outgoing emails for integration (and staging for Starter only) environments from the [!DNL Cloud Console] or from the command line. Enable outgoing emails to send two-factor authentication or reset password emails for Cloud project users.
 
 By default, outgoing emails are enabled in Production and Staging (Pro only) environments. However, the **[!UICONTROL Enable outgoing emails]** setting may appear disabled in the environment settings regardless of status until you set the `enable_smtp` property through the [command line](#enable-emails-in-the-cli) or [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console).
 
-Updating the `enable_smtp` property value by [command line](#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the Cloud Console.
+Updating the `enable_smtp` property value by [command line](#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the Cloud Console. 
+
+>[!NOTE] Enabling/disabling the **[!UICONTROL Enable outgoing emails]** setting will not enable/disable emails in the Pro Staging or Production environments.
 
 {{redeploy-warning}}
 
@@ -21,14 +23,14 @@ If outgoing emails must be disabled or re-enabled on Pro Production or Staging e
 
 >[!TIP]
 >
->Outgoing email status may not be reflected for Pro environments on the Cloud Console. Instead, use the [command line](#enable-emails-in-the-cli) for enabling and testing outgoing emails.
+>Outgoing email status may not be reflected for Pro Staging or Production environments on the Cloud Console. 
 
 **To manage email support from the [!DNL Cloud Console]**:
 
 1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 1. Select a project from the _All projects_ list.
 1. On the Project dashboard, click the configuration icon in the upper right.
-1. Click **[!UICONTROL Environments]** and select a specific environment from the list.
+1. Click **[!UICONTROL Environments]** and select a specific environment from the list - except Staging and Production for Pro.
 1. To enable or disable outgoing emails, toggle _Enable outgoing emails_ **On** or **Off**.
 
    ![Enable outgoing email configuration](../../assets/outgoing-emails.png)
