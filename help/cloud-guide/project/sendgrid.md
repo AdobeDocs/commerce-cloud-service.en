@@ -17,7 +17,7 @@ The SendGrid SMTP proxy is not intended for use as a general-purpose email serve
 
 >[!TIP]
 >
->You can find SendGrid details for your account in the [Onboarding UI](https://cloud.magento.com) and select the **Project Details** > **Hosting Info** tab.
+>Make sure that you have configured the appropriate Store Email Addresses in the Commerce Admin Panel by going to Stores > Configuration > General to avoid issues with deliverability and domain verification. You must uncheck "[!UICONTROL Use Default]" and replace the default values with a domain that you own - public/shared-domain email services such as gmail.com, outlook.com, etc. should not be configured as the Sender email address when sending emails through Sendgrid.
 
 ## Enable or disable email
 
