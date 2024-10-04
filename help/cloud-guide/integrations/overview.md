@@ -32,7 +32,7 @@ magento-cloud integration:list
 
 Sample response:
 
-```terminal
+```
 +----------+--------------+---------------------------------------------------------------------------+
 | ID       | Type         | Summary                                                                   |
 +----------+--------------+---------------------------------------------------------------------------+
@@ -79,7 +79,7 @@ The sample response shows a series of prompts that provide an opportunity to cus
 
 You can customize the integration to report specific [events](#events-to-report), such as pushing code to a branch. For example, you can specify the `environment.push` event to send a message when a user pushes code to a branch:
 
-```terminal
+```
 Events to report (--events)
 A list of events to report, e.g. environment.push
 Default: *
@@ -89,7 +89,7 @@ Enter comma-separated values (or leave this blank)
 
 You can choose to report events in a `pending`, `in_progress`, or `complete` state:
 
-```terminal
+```
 States to report (--states)
 A list of states to report, e.g. pending, in_progress, complete
 Default: complete
@@ -99,7 +99,7 @@ Enter comma-separated values (or leave this blank)
 
 And you can _include_ or _exclude_ messages for specific environments:
 
-```terminal
+```
 Included environments (--environments)
 The environment IDs to include
 Default: *
@@ -114,7 +114,7 @@ Enter comma-separated values (or leave this blank)
 
 When the integration is complete, you receive a summary of the values:
 
-```terminal
+```
 Created integration integration-ID (type: webhook)
 +-----------------------+------------------------------+
 | Property              | Value                        |
@@ -139,7 +139,7 @@ magento-cloud integration:update --states=pending <int-id>
 
 Sample response:
 
-```terminal
+```
 Integration integration-ID (webhook) updated
 +-----------------------+------------------------------+
 | Property              | Value                        |

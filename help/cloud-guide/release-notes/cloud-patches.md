@@ -30,7 +30,11 @@ Release date: October 7, 2024
 -  ![fix icon](../../assets/fix.svg) **Upgraded Monolog version**—Added support for monolog 3.6 <!-- MCLOUD-12855 - -->
 -  ![fix icon](../../assets/fix.svg) **Patch for Application Server** — There is a known issue with GrpahQL Application Server, that `CatalogGraphQl\Model\Config\AttributeReader` in 2.4.7 contains a rare bug that can cause a GraphQL request to get a response using previous state of Attributes configuration.<!-- ACPT-1876 -->
 
+## v1.0.27
 
+Release date: May 21, 2024
+
+-  **Support for PHP 8.3**—This patch resolves compatibility errors between php 8.3 and the composer package version.
 
 ## v1.0.26
 

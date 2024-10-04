@@ -21,7 +21,6 @@ The release notes include:
 -  ![fix icon](../../assets/fix.svg) Fixes and improvements
 
 <!--Add release notes below-->
-
 ## v2002.2.0 {#latest}
 
 Release date: October 7, 2024
@@ -31,6 +30,12 @@ Release date: October 7, 2024
 -  ![fix icon](../../assets/fix.svg) **Upgraded Monolog version**—Added support for monolog 3.6 <!-- MCLOUD-12855 - -->
 -  ![fix icon](../../assets/fix.svg) **Validator for RabbitMQ, MariaDB and php**—Fixed the validator that produced a misleading message about wrong version of service.
 
+## v2002.1.19
+
+Release date: May 21, 2024
+
+-  ![new icon](../../assets/new.svg) **Lua**—Added option useLua for CACHE_CONFIGURATION.
+-  ![fix icon](../../assets/fix.svg) **Validator**—Updated validators for new versions of Redis and RabbitMQ.
 
 ## v2002.1.18
 

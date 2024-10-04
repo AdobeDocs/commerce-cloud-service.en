@@ -376,7 +376,7 @@ Adobe strongly recommends upgrading your Production environment _before_ includi
 
 If the upgrade failed, you receive an error message in the browser indicating that you cannot access your storefront or the Admin panel:
 
-```terminal
+```
 There has been an error processing your request
 Exception printing is disabled by default for security reasons.
   Error log record number: <error-number>
