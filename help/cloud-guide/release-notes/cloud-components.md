@@ -16,12 +16,20 @@ The release notes include:
 -  ![fix icon](../../assets/fix.svg) Fixes and improvements
 
 <!--Add release notes below-->
+## v1.1.0 {#latest}
 
-## v1.0.14 {#latest}
+Release date: October 7, 2024
+
+-  ![fix icon](../../assets/fix.svg) **Refactored code**—Removed support of old php versions 7.4, 7.3, 7.2 and  related libraries <!-- MCLOUD-9278 - -->
+-  ![fix icon](../../assets/fix.svg) **Upgraded Monolog version**—Added support for monolog 3.6 <!-- MCLOUD-12855 - -->
+
+
+
+## v1.0.14
 
 Release date: April 8, 2024
 
--  ![new icon](../../assets/new.svg) **PHP** — Added support for PHP 8.3.
+-  ![new icon](../../assets/new.svg) **PHP**—Added support for PHP 8.3.
 
 ## v1.0.13
 
