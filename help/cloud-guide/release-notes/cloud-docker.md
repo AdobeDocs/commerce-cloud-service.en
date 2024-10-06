@@ -24,6 +24,7 @@ The release notes include:
 Release date: October 7, 2024
 
 -  ![fix icon](../../assets/fix.svg) **Refactored code**—Removed support of old PHP versions (7.4, 7.3, 7.2) and related libraries and images.
+
 ## v1.3.7
 
 Release date: April 8, 2024
