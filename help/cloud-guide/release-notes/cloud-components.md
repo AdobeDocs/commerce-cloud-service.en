@@ -21,7 +21,7 @@ The release notes include:
 Release date: October 7, 2024
 
 -  ![fix icon](../../assets/fix.svg) **Refactored code**—Removed support of old PHP versions 7.4, 7.3, 7.2 and  related libraries.<!-- MCLOUD-9278 - -->
--  ![fix icon](../../assets/fix.svg) **Upgraded Monolog version**—Added support for monolog 3.6 <!-- MCLOUD-12855 - -->
+-  ![fix icon](../../assets/fix.svg) **Upgraded Monolog version**—Added support for monolog 3.6.<!-- MCLOUD-12855 - -->
 
 
 
