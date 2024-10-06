@@ -24,7 +24,6 @@ Release date: October 7, 2024
 -  ![fix icon](../../assets/fix.svg) **Upgraded Monolog version**—Added support for monolog 3.6.<!-- MCLOUD-12855 - -->
 
 
-
 ## v1.0.14
 
 Release date: April 8, 2024
