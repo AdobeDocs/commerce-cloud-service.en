@@ -22,6 +22,7 @@ The Cloud Patches for Commerce package is a dependency for the ECE-Tools package
 The `magento/magento-cloud-patches` package uses the following version sequence: `<major>.<minor>.<patch>`
 
 <!--Add release notes below-->
+
 ## v1.1.0 {#latest}
 
 Release date: October 7, 2024
