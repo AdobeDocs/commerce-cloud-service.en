@@ -111,10 +111,11 @@ In the `sitemap` admin config, you must specify the location of the file using `
 
 ### Configure indexing by search engine
 
-To activate `robots.txt` customizations, you must enable the **Indexing by search engines is On for `<environment-name>`** option in your project settings.
+To activate `robots.txt` customizations in Production, you must enable the **Indexing by search engines is On for `<environment-name>`** option in your project settings.
 
 ![Use the [!DNL Cloud Console] to manage environments](../../assets/robots-indexing-by-search-engine.png)
 
 >[!NOTE]
+>Indexing by search engines can only be enabled in Production but not in any of the lower environments
 >
 >If you are using PWA Studio and are unable to access your configured `robots.txt` file, add `robots.txt` to the [Front Name Allowlist](https://github.com/magento/magento2-upward-connector#front-name-allowlist) at **Stores** > Configuration > **General** > **Web** > UPWARD PWA Configuration.
