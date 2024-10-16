@@ -2,11 +2,11 @@
 ---
 # magento-cloud (Adobe Commerce on cloud infrastructure)
 
-{%- assign tool = 'magento-cloud' %}
+{%- assign tool = 'magento-cloud' -%}
 
-{%- assign file = site.data.magento-cloud %}
+{%- assign file = site.data.magento-cloud -%}
 
-{%- assign edition = site.data.names.cloud %}
+{%- assign edition = site.data.names.cloud -%}
 
 {% capture intro -%}
 
@@ -15,4 +15,4 @@ This reference is generated from the application codebase. To change the content
 {%- endcapture %}
 
 <!-- The template to render with above values -->
-{%- include reference/cli-template.html %}
+{% include reference/cli-template.html -%}

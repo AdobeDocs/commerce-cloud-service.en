@@ -1,8 +1,7 @@
 # magento-cloud (Adobe Commerce on cloud infrastructure)
 
-
-
 <!-- The template to render with above values -->
+
 **Version**: 1.46.1
 
 This reference contains 119 commands available through the `magento-cloud` command-line tool.
@@ -7697,4 +7696,3 @@ Do not output the table header
 
 - Default: `false`
 - Does not accept a value
-

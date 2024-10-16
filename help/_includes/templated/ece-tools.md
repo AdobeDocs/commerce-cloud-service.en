@@ -1,8 +1,5 @@
 # ece-tools
 
-
-
-<!-- The template to render with above values -->
 **Version**: 2002.2.0
 
 This reference contains 34 commands available through the `ece-tools` command-line tool.
@@ -746,4 +743,3 @@ Verifies ability to split DB and whether DB was already split or not.
 ### Options
 
 For global options, see [Global options](#global-options).
-
