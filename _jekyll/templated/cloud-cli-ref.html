@@ -2,11 +2,17 @@
 ---
 # magento-cloud (Adobe Commerce on cloud infrastructure)
 
-{%- assign tool = 'magento-cloud' %}
+{%- assign tool = 'magento-cloud' -%}
 
-{%- assign file = site.data.magento-cloud %}
+{%- assign file = site.data.magento-cloud -%}
 
-{%- assign edition = site.data.names.cloud %}
+{%- assign edition = site.data.names.cloud -%}
+
+{% capture intro -%}
+
+This reference is generated from the application codebase. To change the content, you can update the source code for the corresponding command implementation in the [codebase](https://github.com/magento/magento-cloud-cli) repository and submit your changes for review. Another way is to _Give us feedback_ (find the link at the upper right). For contribution guidelines, see [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+
+{%- endcapture %}
 
 <!-- The template to render with above values -->
-{%- include cli-template.html %}
+{% include reference/cli-template.html -%}
