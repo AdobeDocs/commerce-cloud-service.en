@@ -46,6 +46,11 @@ You can customize this error response page from the Admin. See [Customize the WA
 
 If your Adobe Commerce admin page or storefront returns a `403 Forbidden` error page in response to a legitimate URL request, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Copy the reference ID from the error response page and paste it into the ticket description.
 
+To identify the WAF response for a particular request using New Relic, refer to the following:
+
+- `Agent_response`—Indicates the WAF response code (`200` means good and `406` means blocked)
+- `sigsci` tags—Tags the request to a particular signal sciences tag based on the nature of the request
+
 ## WAF maintenance and updates
 
 Fastly updates and rolls out patches for new CVEs/templated rules based on rule updates from commercial third parties, Fastly research, and open sources. Fastly updates the published rules into a policy as needed, or when changes to the rules are available from their respective sources. Also, Fastly can add rules that match the published classes of rules into the WAF instance of any service after the WAF service is enabled. These updates ensure immediate coverage for new or evolving exploits.
