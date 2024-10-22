@@ -59,6 +59,11 @@ Integration environments are designed for limited testing and development. For e
 For best performance in the integration environment follow these best practices:
 
 - Restrict the catalog size - For reference, the Sample Data contains about 2,048 products. Try reducing your catalog size to around 4,000-5,000 products.
+  To check the number of products in the catalog, run the following MySQL query:
+  
+  ```
+  select distinct count(entity_id) from catalog_product_entity;
+  ```
 
 - Reduce the number of customer groups - Having too many customer groups can affect the indexing performance and overall performance.
 
