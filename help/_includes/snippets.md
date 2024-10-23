@@ -30,17 +30,21 @@ Set the `_merge` option to one of the following:
 ## Pro self-service warning {#pro-self-service-warning}
 
 >[!WARNING]
->
+>For changes to a live Production environment (Pro only), a minimum of 48 hours notice is required. This allows the Cloud infrastructure team sufficient time to marshal resources and conduct a secure upgrade. The notice period begins when the Infrastructure team acknowledges the request and schedules the upgrade, excluding weekends. For example, to have service upgrades completed on a Monday, an acknowledgement of the scheduled upgrade must be received by Wednesday.
+
+
+
 >Some **Pro projects** require a support ticket to update the route configuration in the `routes.yaml` file and the cron configuration in the `.magento.app.yaml` file. Adobe recommends updating and testing YAML configuration files in an Integration environment, then deploying changes to the Staging environment. If your changes are not applied to Staging sites after you redeploy and there are no related error messages in the log, then you **MUST** [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) that describes the attempted configuration changes. Include any updated YAML configuration files in the ticket.
 
 ## Pro services support {#pro-update-service}
 
 >[!TIP]
+>
 >For Pro projects, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install or update [services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) in `Staging` and `Production` environments only.
 >
 >Indicate the service changes needed, include your updated `.magento.app.yaml` and `services.yaml` files, and state the PHP version in the ticket. For self-service changes to PHP version, extensions, or environment settings, see [PHP settings](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in _Application configuration_.
 >
->For changes to a _live_ Production environment (**Pro only**), you must provide a minimum of 48 hours notice to allow the Cloud infrastructure team sufficient time to marshal resources and conduct a secure upgrade. The notice period does not include weekends. For example, if you want your service upgrades done on a Monday, you must submit the request by the previous Wednesday.
+>For changes to a live Production environment (**Pro only**), a minimum of 48 hours notice is required. This allows the Cloud infrastructure team sufficient time to marshal resources and conduct a secure upgrade. The notice period begins when the Infrastructure team acknowledges the request and schedules the upgrade, excluding weekends. For example, to have service upgrades completed on a Monday, an acknowledgement of the scheduled upgrade must be received by Wednesday.
 
 ## Pro backups {#pro-backups}
 
