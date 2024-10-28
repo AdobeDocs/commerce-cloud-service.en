@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-05-21
+last-substantial-update: 2024-10-07
 exl-id: ae6b511b-a37d-4776-9a5e-ad7d9f9f6611
 ---
 # Cloud Patches for Commerce
@@ -23,7 +23,15 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.27 {#latest}
+## v1.1.0 {#latest}
+
+Release date: October 7, 2024
+
+-  ![fix icon](../../assets/fix.svg) **Refactored code**—Removed support of old PHP versions (7.4, 7.3, 7.2) and  related libraries.<!-- MCLOUD-9278 - -->
+-  ![fix icon](../../assets/fix.svg) **Upgraded Monolog version**—Added support for monolog 3.6.<!-- MCLOUD-12855 - -->
+-  ![fix icon](../../assets/fix.svg) **Patch for Application Server**—Resolves a known issue with the GraphQL Application Server. Specifically, the `CatalogGraphQl\\Model\\Config\\AttributeReader` in version 2.4.7 contained a bug that could lead to GraphQL requests retrieving responses based on outdated Attributes configuration.<!-- ACPT-1876 -->
+
+## v1.0.27
 
 Release date: May 21, 2024
 

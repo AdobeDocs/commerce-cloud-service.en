@@ -112,6 +112,7 @@ PHP module requirements are tied to the Adobe Commerce version. See [PHP require
 
 For Pro projects, the following extensions require additional support to install:
 
+- `ioncube`
 - `sourceguardian`
 
 For example, to set up PHP to execute only SourceGuardian-protected scripts in all environments, the following option must be set in the `php.ini` file:

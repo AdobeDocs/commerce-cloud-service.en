@@ -52,7 +52,9 @@ On initial provisioning or upgrade of your Adobe Commerce project, Adobe install
 
 ## Fastly service account and credentials
 
-Adobe Commerces on cloud infrastructure projects do not require a dedicated Fastly account or account owner. Instead, each Staging and Production environment has unique Fastly credentials (API token and service ID) to configure and manage Fastly services from the Admin. You also need the credentials to submit Fastly API requests.
+Adobe Commerce on cloud infrastructure projects are not given a dedicated Fastly account. The Fastly service is managed in a centralized account registered to Adobe, and the management dashboard is only accessible to the Cloud Support team.
+
+Instead, each Staging and Production environment has unique Fastly credentials (API token and service ID) to configure and manage Fastly services from the Commerce Admin. The Fastly API is available for performing advanced management of the Fastly service, which will require the credentials to submit those requests.
 
 During project provisioning, Adobe adds your project to the Fastly service account for Adobe Commerce on cloud infrastructure and adds the Fastly credentials to the configuration for the Staging and Production environments. See [Get Fastly credentials](fastly-configuration.md#get-fastly-credentials).
 

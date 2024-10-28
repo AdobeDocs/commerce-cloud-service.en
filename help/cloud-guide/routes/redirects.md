@@ -85,7 +85,7 @@ Use the following format to configure redirect requests based on a regular expre
 http://{default}/:
     type: upstream
     redirects:
-    paths:
+      paths:
         "/regexp/(.*)/match": { to: "http://example.com/$1", regexp: true }
 ```
 

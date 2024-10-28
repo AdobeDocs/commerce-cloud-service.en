@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-05-21
+last-substantial-update: 2024-10-07
 exl-id: a464b940-c56e-4a7c-9948-559539e25361
 ---
 # ECE-Tools release notes
@@ -22,7 +22,16 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.1.19 {#latest}
+## v2002.2.0 {#latest}
+
+Release date: October 7, 2024
+
+-  ![new icon](../../assets/new.svg) **MariaDB 11.4**-Added support of MariaDB 11.4.
+-  ![fix icon](../../assets/fix.svg) **Refactored code**-Removed support of old PHP versions 7.4, 7.3, 7.2 and  related libraries.<!-- MCLOUD-9278 -->
+-  ![fix icon](../../assets/fix.svg) **Upgraded Monolog version**-Added support for monolog 3.6.<!-- MCLOUD-12855 -->
+-  ![fix icon](../../assets/fix.svg) **Validator for RabbitMQ, MariaDB, and PHP**-Fixed the validator that produced a misleading message about the wrong version of service.
+
+## v2002.1.19
 
 Release date: May 21, 2024
 
@@ -34,7 +43,7 @@ Release date: May 21, 2024
 Release date: April 8, 2024
 
 -  ![new icon](../../assets/new.svg) **PHP** — Added support for PHP 8.3.
--  ![fix icon](../../assets/fix.svg) Validator - Updated EOL validator.
+-  ![fix icon](../../assets/fix.svg) **Validator** - Updated EOL validator.
 
 ## v2002.1.17
 
