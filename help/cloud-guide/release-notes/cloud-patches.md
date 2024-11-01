@@ -23,7 +23,19 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.0 {#latest}
+## v1.1.2 {#latest}
+
+Release date: November 5, 2024
+
+-  ![fix icon](../../assets/fix.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update fixes critical [CVE-2024-45115](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73) vulnerability for Adobe Commerce using B2B module.<!-- MCLOUD-12980 - -->
+
+## v1.1.1
+
+Release date: November 5, 2024
+
+-  ![fix icon](../../assets/fix.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update applies patch for critical [CVE-2024-34102](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102?lang=en) CosmicSting vulnerability.<!-- MCLOUD-12980 - -->
+
+## v1.1.0
 
 Release date: October 7, 2024
 
