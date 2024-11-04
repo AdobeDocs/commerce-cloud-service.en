@@ -27,7 +27,7 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 Release date: November 5, 2024
 
--  ![fix icon](../../assets/fix.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update fixes critical [CVE-2024-45115](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73) vulnerability for Adobe Commerce using B2B module.<!-- MCLOUD-12980 - -->
+-  ![fix icon](../../assets/fix.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update fixes a critical [CVE-2024-45115](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73) vulnerability for Adobe Commerce when using the B2B module.<!-- MCLOUD-12980 - -->
 
 ## v1.1.1
 
