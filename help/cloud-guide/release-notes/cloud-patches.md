@@ -33,7 +33,7 @@ Release date: November 5, 2024
 
 Release date: November 5, 2024
 
--  ![fix icon](../../assets/fix.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update applies patch for critical [CVE-2024-34102](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102?lang=en) CosmicSting vulnerability.<!-- MCLOUD-12980 - -->
+-  ![fix icon](../../assets/fix.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update patches a critical [CVE-2024-34102](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102?lang=en) CosmicSting vulnerability.<!-- MCLOUD-12980 - -->
 
 ## v1.1.0
 
