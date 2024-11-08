@@ -1,6 +1,6 @@
 ---
 title: Second staging environment
-description:
+description: Learn the benefits and uses of having a second staging environment for parallel testing, issue isolation, version control, and more.
 ---
 
 # Second staging environment
