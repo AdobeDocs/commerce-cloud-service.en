@@ -79,7 +79,7 @@ Set the `_merge` option to one of the following:
 
 >[!NOTE]
 >
->Some projects demand a more sophisticated development workflow. To support this need, Adobe offers an [additional staging environment](../test/second-staging.md) as an add-on option to your cloud infrastructure.
+>Some projects demand a more sophisticated development workflow. To support this need, Adobe offers an [additional staging environment](/help/cloud-guide/test/second-staging.md) as an add-on option to your cloud infrastructure.
 
 ## Service instruction {#service-instruction}
 
