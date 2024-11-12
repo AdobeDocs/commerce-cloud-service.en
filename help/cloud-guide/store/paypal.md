@@ -53,7 +53,7 @@ To configure PayPal Express Checkout:
    *  **Sandbox Mode** select Yes or No to indicate if the credentials you entered are for sandbox. If you entered production credentials, select No.
    *  **API Uses Proxy** select Yes or No to set if the system uses a proxy server to establish a connection between Adobe Commerce and the PayPal payment system. If Yes, enter the proxy host and port.
 
-1. For detailed information and steps for configuring your account, see [PayPal Express Checkout](https://docs.magento.com/user-guide/payment/paypal-express-checkout.html) starting with Step 2 Complete the Required Settings.
+1. For detailed information and steps for configuring your account, see [PayPal Express Checkout](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout) starting with Step 2 Complete the Required Settings.
 
 With the account configured and authenticated, you can enable and disable PayPal payment options under Required PayPal Settings:
 

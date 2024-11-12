@@ -2,11 +2,19 @@
 ---
 # ece-tools
 
-{%- assign tool = 'ece-tools' %}
+{%- assign tool = 'ece-tools' -%}
 
-{%- assign file = site.data.ece-tools %}
+{%- assign file = site.data.ece-tools -%}
 
-{%- assign edition = site.data.names.cloud %}
+{%- assign edition = site.data.names.cloud -%}
 
-<!-- The template to render with above values -->
-{%- include cli-template.html %}
+{% capture intro -%}
+
+This reference is generated from the application codebase. To change the content, _Give us feedback_ (find the link at the upper right). For contribution guidelines, see [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+
+{%- endcapture -%}
+
+{% comment -%}
+THE TEMPLATE TO RENDER WITH THE ASSIGNED DATA
+{%- endcomment %}
+{% include reference/cli-template.html -%}

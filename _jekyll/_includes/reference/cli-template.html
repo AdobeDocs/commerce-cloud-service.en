@@ -1,0 +1,58 @@
+{%- assign app = file.application %}
+
+{%- assign commands = file.commands %}
+
+{%- if file %}
+
+{%- if app.version %}
+**Version**: {{ app.version }}
+
+{%- endif %}
+
+This reference contains {{ commands | size }} commands available through the `{{ tool }}` command-line tool.
+The initial list is auto generated using the `{{ tool }} list` command at {{ edition }}.
+
+## General
+
+{{ intro }}
+
+{%- include reference/global-options.html %}
+
+{%- comment %}
+# COMMAND REFERENCE
+{%- endcomment %}
+
+{%- for command in commands %}
+  {%- assign arguments = command.definition.arguments %}
+  {%- assign options = command.definition.options %}
+
+## `{{ command.name }}`
+
+```bash
+{{ tool }} {{ command.usage }}
+```
+
+{{ command.description | strip_html }}
+{% unless command.help == command.description or command.help == empty %}
+```
+{{ command.help | strip_html }}
+```
+{% endunless %}
+
+{%- include reference/arguments.html -%}
+{%- unless options.size == 0 %}
+### Options
+
+For global options, see [Global options](#global-options).
+{% for option in options %}
+{%- unless global_options contains option[0] %}
+{% include reference/options.html -%}
+{% endunless -%}
+{% endfor -%}
+{% endunless -%}
+{% endfor -%}
+{%- else %}
+
+There is no data available for this reference at the moment.
+
+{%- endif -%}
