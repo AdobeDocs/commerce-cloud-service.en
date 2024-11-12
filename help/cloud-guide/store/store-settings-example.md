@@ -23,7 +23,7 @@ The example uses the following procedure defined in [Store settings](store-setti
 
 For example, you may want to set the following settings:
 
-*  Disable [locale](https://glossary.magento.com/locale) and static file optimization settings in your integration environment
+*  Disable locale and static file optimization settings in your integration environment
 *  Enable static file optimization in Staging and Production environments
 *  Configure Fastly in Staging and Production with specific credentials for each
 
@@ -50,7 +50,7 @@ In the integration environment, you can log in to the Admin to modify system con
    ![Change the locale](../../assets/locale-options.png)
 
 1. Click **Save Config**.
-1. If prompted, [flush the cache](https://docs.magento.com/user-guide/system/cache-management.html).
+1. If prompted, [flush the cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
 1. Log out of the Admin.
 
 ## Export values and transfer config.php to your local system
@@ -153,7 +153,7 @@ To add configuration values in the integration environment Admin. This example m
 1. In the right pane, expand **JavaScript Settings**.
 1. From the **Merge JavaScript Files** list, click **Yes**.
 1. Click **Save Config**.
-1. If prompted, [flush the cache](https://docs.magento.com/user-guide/system/cache-management.html).
+1. If prompted, [flush the cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
 1. Log out of the Admin.
 
 By running the dump command again, the new configuration is appended to the file.
