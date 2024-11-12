@@ -1,2135 +1,745 @@
 # ece-tools
 
-<!-- The template to render with above values -->
 **Version**: 2002.2.0
 
 This reference contains 34 commands available through the `ece-tools` command-line tool.
 The initial list is auto generated using the `ece-tools list` command at Adobe Commerce on cloud infrastructure.
 
->[!NOTE]
->
->This reference is generated from the application codebase. To change the content, you can update the source code for the corresponding command implementation in the [codebase](https://github.com/magento/magento-cloud-cli) repository and submit your changes for review. Another way is to _Give us feedback_ (find the link at the upper right). For contribution guidelines, see [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+## General
+
+This reference is generated from the application codebase. To change the content, _Give us feedback_ (find the link at the upper right). For contribution guidelines, see [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+
+### Global options
+
+#### `--help`, `-h`
+
+Display help for the given command. When no command is given display help for the list command
+
+- Default: `false`
+- Does not accept a value
+
+#### `--quiet`, `-q`
+
+Do not output any message
+
+- Default: `false`
+- Does not accept a value
+
+#### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+- Default: `false`
+- Does not accept a value
+
+#### `--version`, `-V`
+
+Display this application version
+
+- Default: `false`
+- Does not accept a value
+
+#### `--ansi`
+
+Force (or disable --no-ansi) ANSI output
+
+- Does not accept a value
+
+#### `--no-ansi`
+
+Negate the "--ansi" option
+
+- Default: `false`
+- Does not accept a value
+
+#### `--no-interaction`, `-n`
+
+Do not ask any interactive question
+
+- Default: `false`
+- Does not accept a value
+
 
 ## `_complete`
-
-Internal command to provide shell completion suggestions
 
 ```bash
 ece-tools _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
-### `--shell`, `-s`
+Internal command to provide shell completion suggestions
+
+### Options
+
+For global options, see [Global options](#global-options).
+
+#### `--shell`, `-s`
 
 The shell type ("bash", "fish", "zsh")
-   
--  Requires a value
 
-### `--input`, `-i`
+- Requires a value
+
+#### `--input`, `-i`
 
 An array of input tokens (e.g. COMP_WORDS or argv)
-   
--  Default: `[]`
--  Requires a value
 
-### `--current`, `-c`
+- Default: `[]`
+- Requires a value
+
+#### `--current`, `-c`
 
 The index of the "input" array that the cursor is in (e.g. COMP_CWORD)
-   
--  Requires a value
 
-### `--api-version`, `-a`
+- Requires a value
+
+#### `--api-version`, `-a`
 
 The API version of the completion script
-   
--  Requires a value
 
-### `--symfony`, `-S`
+- Requires a value
+
+#### `--symfony`, `-S`
 
 deprecated
-   
--  Requires a value
 
-### `--help`, `-h`
-
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+- Requires a value
 
 
 ## `build`
-
-Builds application.
 
 ```bash
 ece-tools build
 ```
 
-### `--help`, `-h`
+Builds application.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `completion`
-
-Dump the shell completion script
 
 ```bash
 ece-tools completion [--debug] [--] [<shell>]
 ```
 
+Dump the shell completion script
 
-### `shell`
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently, bash, fish, zsh completion are supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    bin/ece-tools completion  | sudo tee /etc/bash_completion.d/ece-tools
+
+Or dump the script to a local file and source it:
+
+    bin/ece-tools completion  > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/jenkins/workspace/gendocs-ece-tools-cli/bin/ece-tools completion )"
+```
+
+### Arguments
+
+#### `shell`
 
 The shell type (e.g. "bash"), the value of the "$SHELL" env var will be used if this is not given
-   
 
-### `--debug`
+### Options
+
+For global options, see [Global options](#global-options).
+
+#### `--debug`
 
 Tail the completion debug log
-   
--  Default: `false`
--  Does not accept a value
 
-### `--help`, `-h`
-
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+- Default: `false`
+- Does not accept a value
 
 
 ## `db-dump`
-
-Creates database backups.
 
 ```bash
 ece-tools db-dump [-d|--remove-definers] [-a|--dump-directory DUMP-DIRECTORY] [--] [<databases>...]
 ```
 
+Creates database backups.
 
-### `databases`
+### Arguments
+
+#### `databases`
 
 Databases for backup. Available Values: [ main quote sales ]. If the argument value is not specified, database backups will be created using the credentials stored in the `MAGENTO_CLOUD_RELATIONSHIP` environment variable or/and the `stage.deploy.DATABASE_CONFIGURATION` property of the .magento.env.yaml configuration file.
-   
--  Default: `[]`
-   
--  Array
 
-### `--remove-definers`, `-d`
+- Default: `[]`
+- Array
+   
+### Options
+
+For global options, see [Global options](#global-options).
+
+#### `--remove-definers`, `-d`
 
 Remove definers from the database dump
-   
--  Default: `false`
--  Does not accept a value
 
-### `--dump-directory`, `-a`
+- Default: `false`
+- Does not accept a value
+
+#### `--dump-directory`, `-a`
 
 Use alternative directory for saving dump
-   
--  Requires a value
 
-### `--help`, `-h`
-
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+- Requires a value
 
 
 ## `deploy`
-
-Deploys the application.
 
 ```bash
 ece-tools deploy
 ```
 
-### `--help`, `-h`
+Deploys the application.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `help`
-
-Display help for a command
 
 ```bash
 ece-tools help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
+Display help for a command
 
-### `command_name`
+```
+The help command displays help for a given command:
+
+  bin/ece-tools help list
+
+You can also output the help in other formats by using the --format option:
+
+  bin/ece-tools help --format=xml list
+
+To display the list of available commands, please use the list command.
+```
+
+### Arguments
+
+#### `command_name`
 
 The command name
-   
--  Default: `help`
-   
 
-### `--format`
+- Default: `help`
+
+### Options
+
+For global options, see [Global options](#global-options).
+
+#### `--format`
 
 The output format (txt, xml, json, or md)
-   
--  Default: `txt`
--  Requires a value
 
-### `--raw`
+- Default: `txt`
+- Requires a value
+
+#### `--raw`
 
 To output raw command help
-   
--  Default: `false`
--  Does not accept a value
 
-### `--help`, `-h`
-
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+- Default: `false`
+- Does not accept a value
 
 
 ## `list`
-
-List commands
 
 ```bash
 ece-tools list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
+List commands
 
-### `namespace`
+```
+The list command lists all commands:
+
+  bin/ece-tools list
+
+You can also display the commands for a specific namespace:
+
+  bin/ece-tools list test
+
+You can also output the information in other formats by using the --format option:
+
+  bin/ece-tools list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  bin/ece-tools list --raw
+```
+
+### Arguments
+
+#### `namespace`
 
 The namespace name
-   
 
-### `--raw`
+### Options
+
+For global options, see [Global options](#global-options).
+
+#### `--raw`
 
 To output raw command list
-   
--  Default: `false`
--  Does not accept a value
 
-### `--format`
+- Default: `false`
+- Does not accept a value
+
+#### `--format`
 
 The output format (txt, xml, json, or md)
-   
--  Default: `txt`
--  Requires a value
 
-### `--short`
+- Default: `txt`
+- Requires a value
+
+#### `--short`
 
 To skip describing commands' arguments
-   
--  Default: `false`
--  Does not accept a value
 
-### `--help`, `-h`
-
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+- Default: `false`
+- Does not accept a value
 
 
 ## `patch`
-
-Applies custom patches.
 
 ```bash
 ece-tools patch
 ```
 
-### `--help`, `-h`
+Applies custom patches.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `post-deploy`
-
-Performs after deploy operations.
 
 ```bash
 ece-tools post-deploy
 ```
 
-### `--help`, `-h`
+Performs after deploy operations.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `run`
-
-Execute scenario(s).
 
 ```bash
 ece-tools run <scenario>...
 ```
 
+Execute scenario(s).
 
-### `scenario`
+### Arguments
+
+#### `scenario`
 
 Scenario(s)
+
+- Default: `[]`
+- Required
+
+- Array
    
--  Default: `[]`
-   
--  Required
--  Array
+### Options
 
-### `--help`, `-h`
-
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `backup:list`
-
-Shows the list of backup files.
 
 ```bash
 ece-tools backup:list
 ```
 
-### `--help`, `-h`
+Shows the list of backup files.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `backup:restore`
-
-Restore important configuration files. Run backup:list to show the list of backup files.
 
 ```bash
 ece-tools backup:restore [-f|--force] [--file [FILE]]
 ```
 
-### `--force`, `-f`
+Restore important configuration files. Run backup:list to show the list of backup files.
+
+### Options
+
+For global options, see [Global options](#global-options).
+
+#### `--force`, `-f`
 
 Overwrite existing files during restoring a backup
-   
--  Default: `false`
--  Does not accept a value
 
-### `--file`
+- Default: `false`
+- Does not accept a value
+
+#### `--file`
 
 A specific file recovery path
-   
--  Accepts a value
 
-### `--help`, `-h`
-
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+- Accepts a value
 
 
 ## `build:generate`
-
-Generates all necessary files for build stage.
 
 ```bash
 ece-tools build:generate
 ```
 
-### `--help`, `-h`
+Generates all necessary files for build stage.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `build:transfer`
-
-Transfers generated files into init directory.
 
 ```bash
 ece-tools build:transfer
 ```
 
-### `--help`, `-h`
+Transfers generated files into init directory.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `cloud:config:create`
-
-Creates a `.magento.env.yaml` file with the specified build, deploy, and post-deploy variable configuration. Overwrites any existing `.magento,.env.yaml` file.
 
 ```bash
 ece-tools cloud:config:create <configuration>
 ```
 
+Creates a `.magento.env.yaml` file with the specified build, deploy, and post-deploy variable configuration. Overwrites any existing `.magento,.env.yaml` file.
 
-### `configuration`
+### Arguments
+
+#### `configuration`
 
 Configuration in JSON format
-   
--  Required
 
-### `--help`, `-h`
+- Required
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `cloud:config:update`
-
-Updates the existing `.magento.env.yaml` file with the specified configuration. Creates `.magento.env.yaml` file if it does not exist.
 
 ```bash
 ece-tools cloud:config:update <configuration>
 ```
 
+Updates the existing `.magento.env.yaml` file with the specified configuration. Creates `.magento.env.yaml` file if it does not exist.
 
-### `configuration`
+### Arguments
+
+#### `configuration`
 
 Configuration in JSON format
-   
--  Required
 
-### `--help`, `-h`
+- Required
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `cloud:config:validate`
-
-Validates `.magento.env.yaml` configuration file
 
 ```bash
 ece-tools cloud:config:validate
 ```
 
-### `--help`, `-h`
+Validates `.magento.env.yaml` configuration file
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `config:dump`
 
+```bash
+ece-tools config:dumpdump
+```
+
 Dump configuration for static content deployment.
 
-```bash
-ece-tools config:dump
-```
+### Options
 
-
-```bash
-ece-tools dump
-```
-
-### `--help`, `-h`
-
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `cron:disable`
-
-Disable all Magento cron processes and terminates all running processes.
 
 ```bash
 ece-tools cron:disable
 ```
 
-### `--help`, `-h`
+Disable all Magento cron processes and terminates all running processes.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `cron:enable`
-
-Enables Magento cron processes.
 
 ```bash
 ece-tools cron:enable
 ```
 
-### `--help`, `-h`
+Enables Magento cron processes.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `cron:kill`
-
-Terminates all Magento cron processes.
 
 ```bash
 ece-tools cron:kill
 ```
 
-### `--help`, `-h`
+Terminates all Magento cron processes.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `cron:unlock`
-
-Unlock cron jobs that stuck in "running" state.
 
 ```bash
 ece-tools cron:unlock [--job-code [JOB-CODE]]
 ```
 
-### `--job-code`
+Unlock cron jobs that stuck in "running" state.
+
+### Options
+
+For global options, see [Global options](#global-options).
+
+#### `--job-code`
 
 Cron job code to unlock.
-   
--  Default: `[]`
--  Accepts multiple values
 
-### `--help`, `-h`
-
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+- Default: `[]`
+- Accepts multiple values
 
 
 ## `dev:generate:schema-error`
-
-Generates the dist/error-codes.md file from the schema.error.yaml file.
 
 ```bash
 ece-tools dev:generate:schema-error
 ```
 
-### `--help`, `-h`
+Generates the dist/error-codes.md file from the schema.error.yaml file.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `dev:git:update-composer`
-
-Updates composer for deployment from git.
 
 ```bash
 ece-tools dev:git:update-composer
 ```
 
-### `--help`, `-h`
+Updates composer for deployment from git.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `env:config:show`
-
-Display encoded cloud configuration environment variables.
 
 ```bash
 ece-tools env:config:show [<variable>...]
 ```
 
+Display encoded cloud configuration environment variables.
 
-### `variable`
+### Arguments
+
+#### `variable`
 
 Environment variables to display, possible options: services,routes,variables
+
+- Default: `[]`
+- Array
    
--  Default: `[]`
-   
--  Array
+### Options
 
-### `--help`, `-h`
-
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `error:show`
-
-Displays info about error by error id or info about all errors from the last deployment.
 
 ```bash
 ece-tools error:show [-j|--json] [--] [<error-code>]
 ```
 
+Displays info about error by error id or info about all errors from the last deployment.
 
-### `error-code`
+### Arguments
+
+#### `error-code`
 
 Error code, if not passed command display info about all errors from the last deployment
-   
 
-### `--json`, `-j`
+### Options
+
+For global options, see [Global options](#global-options).
+
+#### `--json`, `-j`
 
 Used for getting result in JSON format
-   
--  Default: `false`
--  Does not accept a value
 
-### `--help`, `-h`
-
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+- Default: `false`
+- Does not accept a value
 
 
 ## `module:refresh`
-
-Refreshes the configuration to enable newly added modules.
 
 ```bash
 ece-tools module:refresh
 ```
 
-### `--help`, `-h`
+Refreshes the configuration to enable newly added modules.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `schema:generate`
-
-Generates the schema *.dist file.
 
 ```bash
 ece-tools schema:generate
 ```
 
-### `--help`, `-h`
+Generates the schema *.dist file.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `wizard:ideal-state`
-
-Verifies ideal state of configuration.
 
 ```bash
 ece-tools wizard:ideal-state
 ```
 
-### `--help`, `-h`
+Verifies ideal state of configuration.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `wizard:master-slave`
-
-Verifies master-slave configuration.
 
 ```bash
 ece-tools wizard:master-slave
 ```
 
-### `--help`, `-h`
+Verifies master-slave configuration.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `wizard:scd-on-build`
-
-Verifies SCD on build configuration.
 
 ```bash
 ece-tools wizard:scd-on-build
 ```
 
-### `--help`, `-h`
+Verifies SCD on build configuration.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `wizard:scd-on-demand`
-
-Verifies SCD on demand configuration.
 
 ```bash
 ece-tools wizard:scd-on-demand
 ```
 
-### `--help`, `-h`
+Verifies SCD on demand configuration.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `wizard:scd-on-deploy`
-
-Verifies SCD on deploy configuration.
 
 ```bash
 ece-tools wizard:scd-on-deploy
 ```
 
-### `--help`, `-h`
+Verifies SCD on deploy configuration.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
+For global options, see [Global options](#global-options).
 
 
 ## `wizard:split-db-state`
-
-Verifies ability to split DB and whether DB was already split or not.
 
 ```bash
 ece-tools wizard:split-db-state
 ```
 
-### `--help`, `-h`
+Verifies ability to split DB and whether DB was already split or not.
 
-Display help for the given command. When no command is given display help for the list command
-   
--  Default: `false`
--  Does not accept a value
+### Options
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-   
--  Default: `false`
--  Does not accept a value
-
-### `--version`, `-V`
-
-Display this application version
-   
--  Default: `false`
--  Does not accept a value
-
-### `--ansi`
-
-Force (or disable --no-ansi) ANSI output
-   
--  Does not accept a value
-
-### `--no-ansi`
-
-Negate the "--ansi" option
-   
--  Default: `false`
--  Does not accept a value
-
-### `--no-interaction`, `-n`
-
-Do not ask any interactive question
-   
--  Default: `false`
--  Does not accept a value
-
+For global options, see [Global options](#global-options).
