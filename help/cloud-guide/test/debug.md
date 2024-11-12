@@ -116,7 +116,9 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 
 This enables the application to have the correct debug settings to handle the request from the Adobe Commerce Application. 
 
-1. click Add Configuration
+>[!VIDEO](https://video.tv.adobe.com/v/3437426?learn=on)
+
+1. Once the PHPStorm application is open, in the middle near the top find and click Add Configuration
 
 1. Click add new run configuration
 
