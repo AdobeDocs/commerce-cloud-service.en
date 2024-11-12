@@ -284,15 +284,15 @@ Review the [service versions](../services/services-yaml.md#service-versions) inf
 
 1. Review the patches that are currently applied:
 
-- If there are any patches installed in the m2-hotfixes folder, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) and verify with Support on which of the Adobe Commerce patches can still be applied to the new version. Remove any non-applicable patch(es) from the m2-hotfixes folder.
+   - If there are any patches installed in the `m2-hotfixes` directory, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) and work with Adobe Commerce Support to verify which patches can still be applied to the new version. Remove the non-applicable patch(es) from the `m2-hotfixes` directory.
 
-- If there are any [Quality Patches] applied in the .magento.env.yaml, verify whether they can still be applied to the new version. Remove any non-applicable patch(es) from the QUALITY_PATCHES section of the .magento.env.yaml file.
+   - If there are any [Quality Patches] applied in the `.magento.env.yaml` file, verify whether they can still be applied to the new version. Remove the non-applicable patch(es) from the `QUALITY_PATCHES` section of the `.magento.env.yaml` file.
 
-  Method 1: Verify the applicable versions: [Quality Patches Release Notes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Method 1**: [Verify the applicable versions in the Quality Patches release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
   
-  Method 2: [View available patches and status](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Method 2**: [View available patches and status](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
   
-  Method 3: [Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
+   **Method 3**: [Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
 
 
 5. Add, commit, and push code changes.
