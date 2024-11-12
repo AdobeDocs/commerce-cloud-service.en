@@ -106,7 +106,7 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
       -  Production: `/app/<project_code>/`
       -  Staging:  `/app/<project_code>_stg/`
 
-1. Change the [!DNL Xdebug] port to 9000 in the **PHP** > **Debug** > **Xdebug** > **Debug Port** panel.
+1. Change the [!DNL Xdebug] port to `9000,9003` or you can limit it to just `9000` in the **PHP** > **Debug** > **Xdebug** > **Debug Port** panel.
 
 1. Click **Apply**.
 
