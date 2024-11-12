@@ -11,7 +11,9 @@ By default, outgoing emails are enabled in Production and Staging (Pro only) env
 
 Updating the `enable_smtp` property value by [command line](#enable-emails-in-the-cli) also changes the [!UICONTROL Enable outgoing emails] setting value for this environment on the Cloud Console. 
 
->[!NOTE] Enabling/disabling the **[!UICONTROL Enable outgoing emails]** setting will not enable/disable emails in the Pro Staging or Production environments.
+>[!NOTE]
+>
+>Enabling/disabling the **[!UICONTROL Enable outgoing emails]** setting will not enable/disable emails in the Pro Staging or Production environments.
 
 {{redeploy-warning}}
 
@@ -23,14 +25,14 @@ If outgoing emails must be disabled or re-enabled on Pro Production or Staging e
 
 >[!TIP]
 >
->Outgoing email status may not be reflected for Pro Staging or Production environments on the Cloud Console. 
+>Outgoing email status may not be reflected for Pro Staging or Production environments in the Cloud Console. 
 
 **To manage email support from the [!DNL Cloud Console]**:
 
 1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
 1. Select a project from the _All projects_ list.
 1. On the Project dashboard, click the configuration icon in the upper right.
-1. Click **[!UICONTROL Environments]** and select a specific environment from the list - except Staging and Production for Pro.
+1. Click **[!UICONTROL Environments]** and select a specific environment from the list (except Staging and Production for Pro).
 1. To enable or disable outgoing emails, toggle _Enable outgoing emails_ **On** or **Off**.
 
    ![Enable outgoing email configuration](../../assets/outgoing-emails.png)
