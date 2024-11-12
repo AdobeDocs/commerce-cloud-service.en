@@ -82,10 +82,10 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 
 1. In your PhpStorm project, open the **Settings** panel.
 
-   -  _macOS_—Select **PhpStorm** > **Preferences**.
+   -  _macOS_—Select **PhpStorm** > **Settings**.
    -  _Windows/Linux_—Select **File** > **Settings**.
 
-1. In the _Settings_ panel, expand and locate the **Languages & Frameworks** > **PHP** > **Servers** section.
+1. In the _Settings_ panel, expand the **PHP** section and click on **Servers**.
 
 1. Click the **+** to add a server configuration. The project name is in gray at the top.
 
