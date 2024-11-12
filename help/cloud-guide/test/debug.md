@@ -76,9 +76,9 @@ When deployed to Starter environments and Pro integration environments, [!DNL Xd
 
 ### Configure PhpStorm
 
-The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to properly work with [!DNL Xdebug].
-
 >[!VIDEO](https://video.tv.adobe.com/v/3437409?learn=on)
+
+The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to properly work with [!DNL Xdebug].
 
 **To configure PhpStorm to work with Xdebug**:
 
@@ -113,6 +113,8 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 1. Click **Apply**.
 
 ### Set up port forwarding
+
+>[!VIDEO](https://video.tv.adobe.com/v/3437410?learn=on) 
 
 Map the `XDEBUG` connection from the server to your local system. To do any type of debugging, you must forward port 9000 from your Adobe Commerce on cloud infrastructure server to your local machine. See one of the following sections:
 
