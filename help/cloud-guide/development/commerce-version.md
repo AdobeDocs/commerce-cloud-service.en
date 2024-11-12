@@ -295,7 +295,7 @@ Review the [service versions](../services/services-yaml.md#service-versions) inf
    **Method 3**: [Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
 
 
-5. Add, commit, and push code changes.
+1. Add, commit, and push code changes.
 
    ```bash
    git add -A
