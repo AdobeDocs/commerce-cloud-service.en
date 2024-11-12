@@ -17,7 +17,7 @@ The SendGrid SMTP proxy is not intended for use as a general-purpose email serve
 
 >[!TIP]
 >
->Make sure that you have configured the appropriate Store Email Addresses in the Commerce Admin Panel by going to Stores > Configuration > General to avoid issues with deliverability and domain verification. You must uncheck "[!UICONTROL Use Default]" and replace the default values with a domain that you own - public/shared-domain email services such as gmail.com, outlook.com, etc. should not be configured as the Sender email address when sending emails through Sendgrid.
+>Make sure that you have configured the appropriate store email addresses in the Admin by going to Stores > Configuration > General to avoid issues with deliverability and domain verification. You must uncheck **[!UICONTROL Use Default]** and replace the default values with a domain that you own. Public/shared-domain email services, such as gmail.com and outlook.com, should not be configured as the sender email address when sending emails through Sendgrid.
 
 ## Enable or disable email
 
