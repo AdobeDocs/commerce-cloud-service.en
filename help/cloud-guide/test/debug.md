@@ -36,6 +36,8 @@ To add [!DNL Xdebug], Adobe recommends working in [a development branch](../dev-
 
 You can enable [!DNL Xdebug] directly to all Starter environments and Pro integration environments. This configuration step is not required for Pro Production & Staging environments. See [Debug for Pro Staging and Production](#debug-for-pro-staging-and-production).
 
+>[!VIDEO](https://video.tv.adobe.com/v/3437407?learn=on)
+
 To enable [!DNL Xdebug] for your project, add `xdebug` to the `runtime:extensions` section of the `.magento.app.yaml` file.
 
 **To enable Xdebug**:
@@ -59,11 +61,11 @@ To enable [!DNL Xdebug] for your project, add `xdebug` to the `runtime:extension
 1. Add, commit, and push the changes to redeploy the environment.
 
    ```bash
-   git add -A
+   git add .magento.app.yaml
    ```
 
    ```bash
-   git commit -m "Add xdebug"
+   git commit -m "add xdebug"
    ```
 
    ```bash
