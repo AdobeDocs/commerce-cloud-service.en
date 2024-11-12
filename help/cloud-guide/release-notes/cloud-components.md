@@ -17,11 +17,18 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.0.14 {#latest}
+## v1.1.0 {#latest}
+
+Release date: October 7, 2024
+
+-  ![fix icon](../../assets/fix.svg) **Refactored code**—Removed support of old PHP versions 7.4, 7.3, 7.2 and  related libraries.<!-- MCLOUD-9278 - -->
+-  ![fix icon](../../assets/fix.svg) **Upgraded Monolog version**—Added support for monolog 3.6.<!-- MCLOUD-12855 - -->
+
+## v1.0.14
 
 Release date: April 8, 2024
 
--  ![new icon](../../assets/new.svg) **PHP** — Added support for PHP 8.3.
+-  ![new icon](../../assets/new.svg) **PHP**—Added support for PHP 8.3.
 
 ## v1.0.13
 
@@ -33,7 +40,7 @@ Release date: March 10, 2023
 
 Release date: September 13, 2022
 
--  ![fix icon](../../assets/fix.svg) **Errors on warmup**—Fixed an issue that attempted to [warmup](../environment/variables-post-deploy.md#warm_up_pages) when the page visibility is set to [**Not Visible Individually**](https://docs.magento.com/user-guide/system/data-attributes-product.html#simple-product-csv-file-structure) in the Admin, resulting in `ERROR: Warming up failed: <link to page>` errors in the deployment log.<!-- MCLOUD-9134 -->
+-  ![fix icon](../../assets/fix.svg) **Errors on warmup**—Fixed an issue that attempted to [warmup](../environment/variables-post-deploy.md#warm_up_pages) when the page visibility is set to [**Not Visible Individually**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) in the Admin, resulting in `ERROR: Warming up failed: <link to page>` errors in the deployment log.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 

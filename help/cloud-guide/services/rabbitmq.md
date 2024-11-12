@@ -6,7 +6,7 @@ exl-id: 85794b8f-2260-4a6e-b5a6-a1b4c356594e
 ---
 # Set up [!DNL RabbitMQ] service
 
-The [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) is a system within Adobe Commerce that allows a [module](https://glossary.magento.com/module) to publish messages to queues. It also defines the consumers that receive the messages asynchronously.
+The [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) is a system within Adobe Commerce that allows a [module](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/glossary#module) to publish messages to queues. It also defines the consumers that receive the messages asynchronously.
 
 The MQF uses [RabbitMQ](https://www.rabbitmq.com/) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. [!DNL RabbitMQ] is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
 
@@ -138,4 +138,4 @@ When you log in to your PHP container, you enter any `amqp-` command available t
 
 ### Connect from your PHP application
 
-To connect to RabbitMQ using your PHP application, add a PHP [library](https://glossary.magento.com/library) to your source tree.
+To connect to RabbitMQ using your PHP application, add a PHP library to your source tree.

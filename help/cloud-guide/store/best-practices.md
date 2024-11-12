@@ -52,7 +52,7 @@ To create a Price Rule, see [Adobe Commerce User Guide](https://experienceleague
 
 The following provides an example of creating a Price Rule for a First Order Only discount. For this discount, you would want to:
 
-*  Create a price rule with a [customer segment](https://docs.magento.com/user-guide/marketing/customer-segment-price-rule.html) with a condition: Total Number of Orders less than 1
+*  Create a price rule with a [customer segment](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segment-price-rule) with a condition: Total Number of Orders less than 1
 *  Add this customer segment as a condition to the cart rule
 *  Optional - Add conditions and rules to apply the discounts to specific SKUs or categories of products for focused purchases
 
