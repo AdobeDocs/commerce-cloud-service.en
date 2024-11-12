@@ -48,5 +48,5 @@ The page provides a status for Adobe Commerce components and services followed b
 <!-- link definitions -->
 
 [Sales]: https://business.adobe.com/products/magento/get-demo.html
-[Shared Access]: [https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access)
+[Shared Access]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access
 [Status page]: https://status.adobe.com/products/503473
