@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-05-21
+last-substantial-update: 2024-10-07
 exl-id: ae6b511b-a37d-4776-9a5e-ad7d9f9f6611
 ---
 # Cloud Patches for Commerce
@@ -23,7 +23,27 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.0.27 {#latest}
+## v1.1.2 {#latest}
+
+Release date: November 5, 2024
+
+-  ![fix icon](../../assets/fix.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update fixes a critical [CVE-2024-45115](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73) vulnerability for Adobe Commerce when using the B2B module.<!-- MCLOUD-12980 - -->
+
+## v1.1.1
+
+Release date: November 5, 2024
+
+-  ![fix icon](../../assets/fix.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update patches a critical [CVE-2024-34102](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102?lang=en) CosmicSting vulnerability.<!-- MCLOUD-12980 - -->
+
+## v1.1.0
+
+Release date: October 7, 2024
+
+-  ![fix icon](../../assets/fix.svg) **Refactored code**—Removed support of old PHP versions (7.4, 7.3, 7.2) and  related libraries.<!-- MCLOUD-9278 - -->
+-  ![fix icon](../../assets/fix.svg) **Upgraded Monolog version**—Added support for monolog 3.6.<!-- MCLOUD-12855 - -->
+-  ![fix icon](../../assets/fix.svg) **Patch for Application Server**—Resolves a known issue with the GraphQL Application Server. Specifically, the `CatalogGraphQl\\Model\\Config\\AttributeReader` in version 2.4.7 contained a bug that could lead to GraphQL requests retrieving responses based on outdated Attributes configuration.<!-- ACPT-1876 -->
+
+## v1.0.27
 
 Release date: May 21, 2024
 
@@ -140,7 +160,7 @@ Release date: August 12, 2021
 
 Critical patch for Adobe Commerce 2.4.3 and 2.3.7-p1:
 
--  **Issue with API rate limiting**—This patch corrects a default rate limit that prevented Web APIs from processing requests with more than 20 items in an array. This patch raises the default value of the rate limit. See the Adobe Commerce [2.4.3 release notes](https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-3.html#apply-mc-43048__set_rate_limits__243patch-to-address-issue-with-api-rate-limiting) and the [2.3.7 release notes](https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p1.html#apply-mc-43048__set_rate_limits__237-p1patch-to-address-issue-with-api-rate-limiting).<!-- MC-43048 -->
+-  **Issue with API rate limiting**—This patch corrects a default rate limit that prevented Web APIs from processing requests with more than 20 items in an array. This patch raises the default value of the rate limit. See the Adobe Commerce [2.4.3 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-3#apply-mc-43048__set_rate_limits__243patch-to-address-issue-with-api-rate-limiting).<!-- MC-43048 -->
 
 ## v1.0.11
 
@@ -208,7 +228,7 @@ Release date:
 
 Release date: June 26, 2020
 
--  **Redis performance improvements**—Adds Redis optimization features to Adobe Commerce versions 2.3.3 and 2.3.4. These fixes were included in the Adobe Commerce version 2.3.5 release. See [Performance boosts](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#performance-boosts) in the _Adobe Commerce 2.3.5 Release Notes_.<!--MCLOUD-5771-->
+-  **Redis performance improvements**—Adds Redis optimization features to Adobe Commerce versions 2.3.3 and 2.3.4. These fixes were included in the Adobe Commerce version 2.3.5 release.<!--MCLOUD-5771-->
 
 -  **New Relic log enricher**—Adds the Monolog ProcessorInterface required to support improvements to New Relic logging capabilities introduced in Cloud Components of Commerce version 1.0.4. This patch is required to deploy Adobe Commerce 2.1.x. If the patch is not applied, the build fails during the `di:compile` process.<!--MCLOUD-6029-->
 
