@@ -298,6 +298,10 @@ You need the following:
 
 **To start debugging using the environment URL**:
 
+This is a demonstration of the configurations used as well as a demonstration of the GET parameter to start a remote debugging session.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3437417?learn=on) 
+
 1. Enable remote debugging; visit the site in the browser and append the following to the URL where `KEY` is value for `xdebug_key`.
 
    ```http
