@@ -78,6 +78,8 @@ When deployed to Starter environments and Pro integration environments, [!DNL Xd
 
 The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to properly work with [!DNL Xdebug].
 
+>[!VIDEO](https://video.tv.adobe.com/v/3437409?learn=on)
+
 **To configure PhpStorm to work with Xdebug**:
 
 1. In your PhpStorm project, open the **Settings** panel.
