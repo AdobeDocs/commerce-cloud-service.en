@@ -25,7 +25,7 @@ To configure [!DNL Xdebug], follow these steps:
 
 -  [Work in a branch to push file updates](#get-started-with-a-branch)
 -  [Enable [!DNL Xdebug] for environments](#enable-xdebug-in-your-environment)
--  [Configure your IDE](#configure-phpstorm)
+-  [Configure PHPStorm server](#configure-phpstorm-server)
 -  [Set up port forwarding](#set-up-port-forwarding)
 
 ### Get started with a branch
@@ -74,7 +74,7 @@ To enable [!DNL Xdebug] for your project, add `xdebug` to the `runtime:extension
 
 When deployed to Starter environments and Pro integration environments, [!DNL Xdebug] is now available. Continue configuring your IDE. For PhpStorm, see [Configure PhpStorm](#configure-phpstorm).
 
-### Configure PhpStorm
+### Configure PhpStorm Server
 
 >[!VIDEO](https://video.tv.adobe.com/v/3437409?learn=on)
 
@@ -111,6 +111,23 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 1. Change the [!DNL Xdebug] port to `9000,9003` or you can limit it to just `9000` in the **PHP** > **Debug** > **Xdebug** > **Debug Port** panel.
 
 1. Click **Apply**.
+
+### Create the PHPStorm Run/Debug configuration
+
+This enables the application to have the correct debug settings to handle the request from the Adobe Commerce Application. 
+
+1. click Add Configuration
+
+1. Click add new run configuration
+
+1. Find and select PHP Remote Debug
+
+   - Name can be anything pick something unique but recognizable
+   - check filter by IDE Key
+   - Find the server you created before. If you have not, you can create one now, but refer to that part of the setup guide: [Configure PHPStorm server](#configure-phpstorm-server)
+   - IDE Key(session id) use `PHPSTORM` in call capital letters. We will be using this in other parts of the setup so keeping this the same is important. If you choose another string, you will need to remember to use it elsewhere in the setup and configuration process.
+
+1. click Apply then OK
 
 ### Set up port forwarding
 
