@@ -120,16 +120,16 @@ This enables the application to have the correct debug settings to handle the re
 
 1. Open the PHPStorm application and click **[!UICONTROL Add Configuration]** in the upper-right side of the screen.
 
-1. Click add new run configuration
+1. Click **[!UICONTROL Add new run configuration]**.
 
-1. Find and select PHP Remote Debug
+1. Select the **[!UICONTROL PHP Remote Debug]** option.
 
-   - Name can be anything pick something unique but recognizable
-   - check filter by IDE Key
-   - Find the server you created before. If you have not, you can create one now, but refer to that part of the setup guide: [Configure PHPStorm server](#configure-phpstorm-server)
-   - IDE Key(session id) use `PHPSTORM` in call capital letters. We will be using this in other parts of the setup so keeping this the same is important. If you choose another string, you will need to remember to use it elsewhere in the setup and configuration process.
+   - Enter a unique, but recognizable name.
+   - Check the [!UICONTROL Filter debug connection by IDE key]** checkbox.
+   - Select the server that you created in the [previous section](#configure-phpstorm-server). If you have not created it yet, you can create one now, but refer to that part of the setup guide.
+   - In the **[!UICONTROL IDE key(session id)]** text field, enter `PHPSTORM` in capital letters. We will be using this in other parts of the setup, so keeping this the same is important. If you choose another string, you must remember to use it elsewhere in the setup and configuration process.
 
-1. click Apply then OK
+1. Click **[!UICONTROL Apply]** > **[!UICONTROL OK]**.
 
 ### Set up port forwarding
 
