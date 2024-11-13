@@ -86,6 +86,8 @@ Staging is a pre-production environment that provides all services and settings 
 
 It is best to thoroughly test every service, verify your performance testing tools, and perform UAT testing as an administrator and as a customer, until you feel that your store is ready for the production environment. See [Deploy your store](../deploy/staging-production.md).
 
+{{second-staging}}
+
 ### Merge to Production
 
 After thorough testing in the staging environment, merge to the production environment and thoroughly test using live credentials. The moment you launch your production site customers must be able to complete purchases and administrators must be able to manage the live store. See the following topics for a detailed, clear walk-through for deploying your store and going live:
