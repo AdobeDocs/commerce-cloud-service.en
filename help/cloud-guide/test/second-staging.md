@@ -1,8 +1,8 @@
 ---
 title: Second staging environment
 description: Learn the benefits and uses of having a second staging environment for parallel testing, issue isolation, version control, and more.
+exl-id: 0afaebf9-fe3d-4ba3-b496-b37cb1f07b35
 ---
-
 # Second staging environment
 
 In Adobe Commerce Cloud infrastructure, the staging environment ensures comprehensive testing and validation in a setting that can mirror the production environment. This environment allows you to safely identify and resolve bugs, while ensuring that any new features or changes are seamlessly integrated before they impact your live site.
