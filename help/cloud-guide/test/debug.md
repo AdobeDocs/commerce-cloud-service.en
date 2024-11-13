@@ -25,7 +25,7 @@ To configure [!DNL Xdebug], follow these steps:
 
 -  [Work in a branch to push file updates](#get-started-with-a-branch)
 -  [Enable [!DNL Xdebug] for environments](#enable-xdebug-in-your-environment)
--  [Configure your IDE](#configure-phpstorm)
+-  [Configure PHPStorm server](#configure-phpstorm-server)
 -  [Set up port forwarding](#set-up-port-forwarding)
 
 ### Get started with a branch
@@ -35,6 +35,8 @@ To add [!DNL Xdebug], Adobe recommends working in [a development branch](../dev-
 ### Enable Xdebug in your environment
 
 You can enable [!DNL Xdebug] directly to all Starter environments and Pro integration environments. This configuration step is not required for Pro Production & Staging environments. See [Debug for Pro Staging and Production](#debug-for-pro-staging-and-production).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3437407?learn=on)
 
 To enable [!DNL Xdebug] for your project, add `xdebug` to the `runtime:extensions` section of the `.magento.app.yaml` file.
 
@@ -59,11 +61,11 @@ To enable [!DNL Xdebug] for your project, add `xdebug` to the `runtime:extension
 1. Add, commit, and push the changes to redeploy the environment.
 
    ```bash
-   git add -A
+   git add .magento.app.yaml
    ```
 
    ```bash
-   git commit -m "Add xdebug"
+   git commit -m "add xdebug"
    ```
 
    ```bash
@@ -72,7 +74,9 @@ To enable [!DNL Xdebug] for your project, add `xdebug` to the `runtime:extension
 
 When deployed to Starter environments and Pro integration environments, [!DNL Xdebug] is now available. Continue configuring your IDE. For PhpStorm, see [Configure PhpStorm](#configure-phpstorm).
 
-### Configure PhpStorm
+### Configure PhpStorm Server
+
+>[!VIDEO](https://video.tv.adobe.com/v/3437409?learn=on)
 
 The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to properly work with [!DNL Xdebug].
 
@@ -80,10 +84,10 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
 
 1. In your PhpStorm project, open the **Settings** panel.
 
-   -  _macOS_—Select **PhpStorm** > **Preferences**.
+   -  _macOS_—Select **PhpStorm** > **Settings**.
    -  _Windows/Linux_—Select **File** > **Settings**.
 
-1. In the _Settings_ panel, expand and locate the **Languages & Frameworks** > **PHP** > **Servers** section.
+1. In the _Settings_ panel, expand the **PHP** section and click on **Servers**.
 
 1. Click the **+** to add a server configuration. The project name is in gray at the top.
 
@@ -104,11 +108,32 @@ The [PhpStorm](https://www.jetbrains.com/phpstorm/) IDE must be configured to pr
       -  Production: `/app/<project_code>/`
       -  Staging:  `/app/<project_code>_stg/`
 
-1. Change the [!DNL Xdebug] port to 9000 in the **Languages & Frameworks** > **PHP** > **Debug** > **Xdebug** > **Debug Port** panel.
+1. Change the [!DNL Xdebug] port to `9000,9003` or you can limit it to just `9000` in the **PHP** > **Debug** > **Xdebug** > **Debug Port** panel.
 
 1. Click **Apply**.
 
+### Create the PHPStorm Run/Debug configuration
+
+This enables the application to have the correct debug settings to handle the request from the Adobe Commerce application.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3437426?learn=on)
+
+1. Open the PHPStorm application and click **[!UICONTROL Add Configuration]** in the upper-right side of the screen.
+
+1. Click **[!UICONTROL Add new run configuration]**.
+
+1. Select the **[!UICONTROL PHP Remote Debug]** option.
+
+   - Enter a unique, but recognizable name.
+   - Check the [!UICONTROL Filter debug connection by IDE key]** checkbox.
+   - Select the server that you created in the [previous section](#configure-phpstorm-server). If you have not created it yet, you can create one now, but refer to that part of the setup guide.
+   - In the **[!UICONTROL IDE key(session id)]** text field, enter `PHPSTORM` in capital letters. We will be using this in other parts of the setup, so keeping this the same is important. If you choose another string, you must remember to use it elsewhere in the setup and configuration process.
+
+1. Click **[!UICONTROL Apply]** > **[!UICONTROL OK]**.
+
 ### Set up port forwarding
+
+>[!VIDEO](https://video.tv.adobe.com/v/3437410?learn=on) 
 
 Map the `XDEBUG` connection from the server to your local system. To do any type of debugging, you must forward port 9000 from your Adobe Commerce on cloud infrastructure server to your local machine. See one of the following sections:
 
@@ -274,6 +299,10 @@ You need the following:
 >- Method 2: Commerce Console: https://CONSOLE-URL/ENVIRONMENT, click the `SSH v` dropdown
 
 **To start debugging using the environment URL**:
+
+This is a demonstration of the configurations used as well as a demonstration of the GET parameter to start a remote debugging session.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3437417?learn=on) 
 
 1. Enable remote debugging; visit the site in the browser and append the following to the URL where `KEY` is value for `xdebug_key`.
 
