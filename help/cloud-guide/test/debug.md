@@ -118,7 +118,7 @@ This enables the application to have the correct debug settings to handle the re
 
 >[!VIDEO](https://video.tv.adobe.com/v/3437426?learn=on)
 
-1. Once the PHPStorm application is open, in the middle near the top find and click Add Configuration
+1. Open the PHPStorm application and click **[!UICONTROL Add Configuration]** in the upper-right side of the screen.
 
 1. Click add new run configuration
 
