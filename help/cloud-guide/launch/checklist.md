@@ -133,7 +133,7 @@ You can also test using the following third-party options:
 
 -  [Secure configuration for Admin user](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
 
--  [Secure configuration for Admin URL]https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
+-  [Secure configuration for Admin URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
 
 -  [Remove any users no longer on the Adobe Commerce on cloud infrastructure project](../project/user-access.md)
 
