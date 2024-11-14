@@ -13,7 +13,7 @@ The following New Relic features are available for use with Production and Stagi
 
 - [New Relic APM](#new-relic-apm) (Pro and Starter)
 - [New Relic Infrastructure](#new-relic-infrastructure) (Pro only)
-- [New Relic Log Management](#new-relic-logs) (Pro only)
+- [New Relic Log Management](#new-relic-log-management) (Pro only)
 
 >[!INFO]
 >
