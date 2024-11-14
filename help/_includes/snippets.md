@@ -75,6 +75,12 @@ Set the `_merge` option to one of the following:
 >
 >With [!DNL ECE-Tools] 2002.1.0 and later, you can use the scenario-based deployment feature to customize the build, deploy, and post-deploy processes for your Adobe Commerce on cloud infrastructure project. See [Scenario-based deployment](/help/cloud-guide/deploy/scenario-based.md).
 
+## Second staging {#second-staging}
+
+>[!NOTE]
+>
+>Some projects demand a more sophisticated development workflow. To support this need, Adobe offers an [additional staging environment](/help/cloud-guide/test/second-staging.md) as an add-on option to your cloud infrastructure.
+
 ## Service instruction {#service-instruction}
 
 Use the following instructions for service setup on Pro Integration environments and Starter environments, including the `master` branch.

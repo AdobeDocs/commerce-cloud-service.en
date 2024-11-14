@@ -115,6 +115,8 @@ See [Deployment workflow](pro-develop-deploy-workflow.md#deployment-workflow) an
 
 - You cannot create a branch from the `staging` branch. Instead, you push code changes from the `integration` branch to the `staging` branch.
 
+{{second-staging}}
+
 ### Production environment
 
 The production environment runs your public-facing single and multi-site storefronts. This environment runs on dedicated IaaS hardware featuring redundant, high-availability nodes for continuous access and failover protection for your customers. The production environment includes all services in the staging environment, plus the [New Relic Infrastructure (NRI)](../monitor/new-relic-service.md#new-relic-infrastructure) service, which automatically connects with the application data and performance analytics to provide dynamic server monitoring.
