@@ -26,7 +26,7 @@ Developers and advanced VCL users can use custom VCL to retrieve the service ID 
 log {"syslog"} req.service_id {" my_logging_endpoint_name :: "}
 ```
 
-You can use the same VCL for Production and Staging environments. See [How to configure vcl_log](https://support.fastly.com/hc/en-us/community/posts/360040447172-How-to-configure-vcl-log).
+You can use the same VCL for Production and Staging environments. See [`vcl_log`](https://www.fastly.com/documentation/reference/vcl/subroutines/log/) in the _Fastly Documentation_.
 
 ## Site performance, purge, and cache issues
 
