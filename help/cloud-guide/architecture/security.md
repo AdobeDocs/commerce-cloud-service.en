@@ -2,8 +2,8 @@
 title: Cloud infrastructure security
 description: Learn about how Adobe keeps Adobe Commerce on cloud infrastructure secure.
 feature: Cloud, Security
+exl-id: fcdcaa07-fac7-46a7-864b-16525fc7ff9d
 ---
-
 # Security
 
 The Adobe Commerce [Pro plan architecture](pro-architecture.md) is designed to provide a highly secure environment. Each customer is deployed into their own isolated server environment, separated from other customers. The security details of the production environment are described below.
