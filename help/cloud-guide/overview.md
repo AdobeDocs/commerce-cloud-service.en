@@ -14,6 +14,10 @@ Adobe Commerce on cloud infrastructure provides an automated hosting platform wi
 
 ![Cloud benefits](../assets/CloudBenefits.svg)
 
+>[!NOTE] 
+>
+>For more information on security, refer to the [security launch checklist](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist#security-configuration).
+
 View the [Technology stack](architecture/tech-stack.md) in detail or learn more about specific features and supported products in [Cloud architecture for Commerce](architecture/cloud-architecture.md).
 
 <div id="recs-overview-body-1"></div>

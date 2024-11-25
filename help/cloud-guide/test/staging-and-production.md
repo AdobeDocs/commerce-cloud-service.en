@@ -7,6 +7,8 @@ exl-id: 5b762d59-04c5-4e89-a637-719141759158
 
 After a successful migration of your code, files, and data to Staging or Production, use the environment URLs to test your sites and stores. The following provides information on verifying logs, testing Fastly configurations, user acceptance testing (UAT), and more.
 
+{{second-staging}}
+
 ## Log files
 
 If you encounter errors on deployment or other issues when testing, check the log files. Log files are located under the `var/log` directory.
