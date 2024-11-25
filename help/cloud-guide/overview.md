@@ -27,6 +27,26 @@ View the [Technology stack](architecture/tech-stack.md) in detail or learn more 
 <div id="recs-overview-body-5"></div>
 <div id="recs-overview-body-6"></div>
 
+## Cloud regions
+
+The following sections provide details about the different AWS and Azure regions that are available for Adobe Commerce on cloud infrastructure.
+
+## AWS regions
+
+![Diagram showing AWS regions](../assets/aws-regions.svg){zoomable="yes"}
+
+>[!NOTE]
+>
+> Only on-premises in China and Russia.
+
+## Azure regions
+
+![Diagram showing Azure regions](../assets/azure-regions.svg){zoomable="yes"}
+
+>[!NOTE]
+>
+> Only on-premises in China and Russia. All merchants that require Integration environments must use US regions.
+
 ## Adobe Commerce documentation
 
 The Commerce on cloud infrastructure guide assumes that you have some working knowledge and understanding of the Adobe Commerce application. You can refer to the [!DNL Commerce] Developer and User guides below:

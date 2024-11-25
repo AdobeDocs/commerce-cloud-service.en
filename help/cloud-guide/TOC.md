@@ -10,6 +10,7 @@ feature: Cloud
 + [Commerce](overview.md)
 + Architecture {#architecture}
     + [Cloud infrastructure](architecture/cloud-architecture.md)
+    + [Security](architecture/security.md)
     + [Technology stack](architecture/tech-stack.md)
     + [Starter architecture](architecture/starter-architecture.md)
     + [Starter workflow](architecture/starter-develop-deploy-workflow.md)
