@@ -30,6 +30,15 @@ http://{default}/:
     to: http://www.{default}/
 ```
 
+>[!NOTE]
+>
+>If the `http://{default}/:` type is not set to `upstream`, `ece-tools` can encounter issues configuring URL routes in `core_config_data` tables.
+>
+>```yaml
+>http://{default}/:
+>    type: upstream
+>```
+
 ## Partial-route redirects
 
 In the `.magento/routes.yaml` file, you can add partial redirect rules to existing routes based on pattern matching:
