@@ -64,7 +64,7 @@ The following custom VCL snippet code (JSON format) shows the logic to check and
   "dynamic": "0",
   "type": "recv",
   "priority": "5",
-  "content": "set req.http.Referer-Host = regsub(req.http.Referer, \"^https?:\/\/?([^:\/s]+).*$\", \"\\1\"); if (table.lookup(referrer_blocklist, req.http.Referer-Host)) { error 403 \"Forbidden\"; }"
+  "content": "if (req.http.Referer ~ \"^(.*:)//([A-Za-z0-9\-\.]+)(:[0-9]+)?(.*)$\") {set req.http.Referer-Host = re.group.2;}if (table.lookup(referrer_blocklist, req.http.Referer-Host)) {error 403 \"Forbidden\";}"
 }
 ```
 
@@ -107,8 +107,9 @@ After reviewing and updating the code for your environment, use either of the fo
    -  **VCL** snippet content —
 
       ```conf
-      set req.http.Referer-Host = regsub(req.http.Referer,
-      "^https?://?([^:/\s]+).*$", "1");
+      if (req.http.Referer ~ "^(.*:)//([A-Za-z0-9\-\.]+)(:[0-9]+)?(.*)$") {
+        set req.http.Referer-Host = re.group.2;  
+      }
       if (table.lookup(referrer_blocklist, req.http.Referer-Host)) {
         error 403 "Forbidden";
       }
