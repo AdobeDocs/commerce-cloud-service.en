@@ -56,7 +56,7 @@ See [Manage disk space](../cloud-guide/storage/manage-disk-space.md) in the _Com
 
 Choose either Amazon Web Services (AWS) or Microsoft Azure as your Infrastructure as a Service (IaaS) foundation for your Adobe Commerce on cloud infrastructure Pro projects. Each service provider operates in multiple regions and provides multiple availability zones. Select a region convenient to your location and reduce the potential for latency and higher costs.
 
-See [a map of Adobe Commerce cloud regions](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/regions.html) in the _Implementation Playbook_.
+See [a map of Adobe Commerce cloud regions](../cloud-guide/overview.md).
 
 ## Connection service
 
