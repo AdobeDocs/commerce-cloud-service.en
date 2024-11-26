@@ -112,7 +112,7 @@ This phase also runs `composer install` to retrieve dependencies.
 This phase builds the codebase and runs hooks in the `build` section of `.magento.app.yaml`. The default build hook is the `php ./vendor/bin/ece-tools` command and performs the following:
 
 -  Applies patches in `vendor/magento/ece-patches`, and optional, project-specific patches in `m2-hotfixes`
--  Regenerates code and the [dependency injection](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html) configuration (that is, the `generated/` directory, which includes `generated/code` and `generated/metapackage`) using `bin/magento setup:di:compile`.
+-  Regenerates code and the [dependency injection](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) configuration (that is, the `generated/` directory, which includes `generated/code` and `generated/metapackage`) using `bin/magento setup:di:compile`.
 -  Checks if the [`app/etc/config.php`](../store/store-settings.md) file exists in the codebase. Adobe Commerce auto-generates this file if it does not detect it during the build phase and includes a list of modules and extensions. If it exists, the build phase continues as normal, compresses static files using GZIP, and deploys, which reduces downtime in the deployment phase. Refer to [build options](../environment/variables-build.md) to learn about customizing or disabling file compression.
 
 >[!WARNING]
@@ -139,7 +139,7 @@ The slug includes all files and folders **excluding the following** mounts confi
 
 ### Phase 4: Deploy slugs and cluster
 
-Your applications and all [backend](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html) services provision as follows:
+Your applications and all [backend](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) services provision as follows:
 
 -  Mounts each service in a container, such as web server, OpenSearch, [!DNL RabbitMQ]
 -  Mounts the read-write file system (mounted on a highly available distributed storage grid)

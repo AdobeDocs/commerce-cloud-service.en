@@ -134,7 +134,7 @@ The Cloud CLI provides commands to deploy code. You need SSH and Git access to y
 
 ## Migrate static files
 
-[Static files](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html) are stored in `mounts`. There are two methods for migrating files from a source mount location, such as your local environment, to a destination mount location. Both methods use the `rsync` utility, but Adobe recommends using the `magento-cloud` CLI for moving files between the local and remote environment. And Adobe recommends using the `rsync` method when moving files from a remote source to a different remote location.
+[Static files](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) are stored in `mounts`. There are two methods for migrating files from a source mount location, such as your local environment, to a destination mount location. Both methods use the `rsync` utility, but Adobe recommends using the `magento-cloud` CLI for moving files between the local and remote environment. And Adobe recommends using the `rsync` method when moving files from a remote source to a different remote location.
 
 ### Migrate files using the CLI
 
