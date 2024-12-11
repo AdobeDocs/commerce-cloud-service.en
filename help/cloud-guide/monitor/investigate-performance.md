@@ -79,11 +79,11 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
 Do not modify any alerts included in the Managed Alerts for Adobe Commerce policy. Adobe updates and improves the alert conditions in this policy over time, which overwrites any customizations you add to the policy.
 
-Instead of modifying an existing alert, you can create an alert policy. Then, copy the alert conditions to the new policy. See [Update policies or conditions](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-policies/update-or-disable-policies-conditions/) in the _New Relic_ documentation.
+Instead of modifying an existing alert, you can create an alert policy. Then, copy the alert conditions to the new policy.
 
 >[!TIP]
 >
->See [Introduction to alerts](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/learn-alerts/alerts-concepts-workflow/) in the _New Relic_ documentation for more detailed information about Alerts, alert policies, and workflows.
+>See [Introduction to alerts](https://docs.newrelic.com/docs/alerts/overview/) in the _New Relic_ documentation for more detailed information about Alerts, alert policies, and workflows.
 
 ## Set up a workflow for notifications
 
