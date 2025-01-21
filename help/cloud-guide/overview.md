@@ -14,6 +14,10 @@ Adobe Commerce on cloud infrastructure provides an automated hosting platform wi
 
 ![Cloud benefits](../assets/CloudBenefits.svg)
 
+>[!NOTE] 
+>
+>For more information on security, refer to the [security launch checklist](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist#security-configuration).
+
 View the [Technology stack](architecture/tech-stack.md) in detail or learn more about specific features and supported products in [Cloud architecture for Commerce](architecture/cloud-architecture.md).
 
 <div id="recs-overview-body-1"></div>
@@ -22,6 +26,26 @@ View the [Technology stack](architecture/tech-stack.md) in detail or learn more 
 <div id="recs-overview-body-4"></div>
 <div id="recs-overview-body-5"></div>
 <div id="recs-overview-body-6"></div>
+
+## Cloud regions
+
+The following sections provide details about the different AWS and Azure regions that are available for Adobe Commerce on cloud infrastructure.
+
+## AWS regions
+
+![Diagram showing AWS regions](../assets/aws-regions.svg){zoomable="yes"}
+
+>[!NOTE]
+>
+> Only on-premises in China and Russia.
+
+## Azure regions
+
+![Diagram showing Azure regions](../assets/azure-regions.svg){zoomable="yes"}
+
+>[!NOTE]
+>
+> Only on-premises in China and Russia. All merchants that require Integration environments must use US regions.
 
 ## Adobe Commerce documentation
 

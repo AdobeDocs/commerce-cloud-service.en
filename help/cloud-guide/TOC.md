@@ -10,6 +10,7 @@ feature: Cloud
 + [Commerce](overview.md)
 + Architecture {#architecture}
     + [Cloud infrastructure](architecture/cloud-architecture.md)
+    + [Security](architecture/security.md)
     + [Technology stack](architecture/tech-stack.md)
     + [Starter architecture](architecture/starter-architecture.md)
     + [Starter workflow](architecture/starter-develop-deploy-workflow.md)
@@ -76,6 +77,7 @@ feature: Cloud
         + [Xdebug](test/debug.md)
         + [Sample data](test/sample-data.md)
         + [Staging and Production](test/staging-and-production.md)
+        + [Second staging environment](test/second-staging.md)
     + [PrivateLink service](development/privatelink-service.md)
     + [Protective block](development/protective-block.md)
     + [Restore environment](development/restore-environment.md)

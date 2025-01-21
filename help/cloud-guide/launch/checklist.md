@@ -99,7 +99,7 @@ The following are recommended changes and checks:
 
 -  [Completed Outgoing email testing](../project/outgoing-emails.md)
 
--  [Secure configuration for Admin credentials and Base Admin URL](https://docs.magento.com/user-guide/stores/security-admin.html)
+-  [Secure configuration for Admin credentials and Base Admin URL](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
 
 -  [Optimize all images for the web](../cdn/fastly-image-optimization.md)
 
@@ -131,13 +131,13 @@ You can also test using the following third-party options:
 
 -  [Set up your Security Scan](overview.md#set-up-the-security-scan-tool)
 
--  [Secure configuration for Admin user](https://docs.magento.com/user-guide/stores/security-admin.html)
+-  [Secure configuration for Admin user](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
 
--  [Secure configuration for Admin URL](https://docs.magento.com/user-guide/stores/store-urls-custom-admin.html)
+-  [Secure configuration for Admin URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
 
 -  [Remove any users no longer on the Adobe Commerce on cloud infrastructure project](../project/user-access.md)
 
--  [Configure two-factor authentication](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html)
+-  [Configure two-factor authentication](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/)
 
 ## Performance monitoring
 

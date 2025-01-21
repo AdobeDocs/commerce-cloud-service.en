@@ -40,7 +40,7 @@ Release date: March 10, 2023
 
 Release date: September 13, 2022
 
--  ![fix icon](../../assets/fix.svg) **Errors on warmup**—Fixed an issue that attempted to [warmup](../environment/variables-post-deploy.md#warm_up_pages) when the page visibility is set to [**Not Visible Individually**](https://docs.magento.com/user-guide/system/data-attributes-product.html#simple-product-csv-file-structure) in the Admin, resulting in `ERROR: Warming up failed: <link to page>` errors in the deployment log.<!-- MCLOUD-9134 -->
+-  ![fix icon](../../assets/fix.svg) **Errors on warmup**—Fixed an issue that attempted to [warmup](../environment/variables-post-deploy.md#warm_up_pages) when the page visibility is set to [**Not Visible Individually**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) in the Admin, resulting in `ERROR: Warming up failed: <link to page>` errors in the deployment log.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 

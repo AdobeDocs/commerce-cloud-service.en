@@ -70,7 +70,18 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 
 >[!TIP]
 >
->For Pro Staging and Production environments, automatic log rotation, compression, and removal are enabled for log files with a fixed file name. Each log file type has a rotating pattern and lifetime. Starter environments do not have log rotation. Full details of the environment's log rotation and lifespan of compressed logs can be found in: `/etc/logrotate.conf` and `/etc/logrotate.d/<various>`. Log rotation cannot be configured in Pro Integration environments. For Pro Integration, you must implement a custom solution/script and [configure your cron](../application/crons-property.md) to run the script as needed.
+>For Pro Staging and Pro Production environments, automatic log rotation, compression, and removal are enabled for log files with a fixed file name. Each log file type has a rotating pattern and lifetime.
+>Full details of the environment's log rotation and lifespan of compressed logs can be found in: `/etc/logrotate.conf` and `/etc/logrotate.d/<various>`.
+>For Pro Staging and Pro Production environments, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to ask for changes in the log rotation configuration.
+
+>[!TIP]
+>
+>Log rotation cannot be configured in Pro Integration environments.
+>For Pro Integration, you must implement a custom solution/script and [configure your cron](../application/crons-property.md) to run the script as needed.
+
+>[!NOTE]
+>
+>Starter Project environments do not have log rotation.
 
 ## Build and Deploy logs
 
@@ -202,7 +213,7 @@ For Pro Staging and Production environments, the Deploy, Post-deploy, and Cron l
 
 ### Archived log files
 
-The application logs are compressed and archived once per day and kept for one year. The compressed logs are named using a unique ID that corresponds to the `Number of Days Ago + 1`. For example, on Pro production environments a PHP access log for 21 days in the past is stored and named as follows:
+The application logs are compressed and archived once per day and kept for **30 days**. The compressed logs are named using a unique ID that corresponds to the `Number of Days Ago + 1`. For example, on Pro production environments a PHP access log for 21 days in the past is stored and named as follows:
 
 ```
 /var/log/platform/<project-ID>/php.access.log.22.gz
