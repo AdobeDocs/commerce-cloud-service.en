@@ -179,7 +179,7 @@ You can create a **manual backup** of the database for your Staging and Producti
 
 ### Recovery Point Objective
 
-Contact your customer success manager for details about the Recovery Point Objective time to last backup. The frequency of backups depends on the backup schedule of your plan and the volume of changes to write to the storage service.
+Contact your Adobe Customer Success Manager for details about the Recovery Point Objective time to last backup. The frequency of backups depends on the backup schedule of your plan and the volume of changes to write to the storage service.
 
 ### Retention policy
 
@@ -197,7 +197,7 @@ This policy may vary depending on your cloud infrastructure plan.
 
 ### Recovery Time Objective
 
-RTO depends on the size of the storage. Large EBS volumes take more time to restore. Restoration times may vary depending on the size of your database. Contact your customer success manager for details.
+RTO depends on the size of the storage. Large EBS volumes take more time to restore. Restoration times may vary depending on the size of your database. Contact your Adobe Customer Success Manager for details.
 
 ## Pro cluster scaling
 
